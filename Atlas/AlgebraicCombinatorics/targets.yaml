@@ -1,0 +1,237 @@
+- description: There does not exist a circulant Hadamard matrix $H$ of order $2^{k}$,
+    $k \geq 3$.
+  kind: theorem
+  location: Main text (statement before proof development)
+  name: Theorem 1
+- description: The polynomial $p_{k}(x) = x^{2^{k-1}} + 1$ is irreducible over $\mathbb{Q}$.
+  kind: lemma
+  location: Main text (after statement of Theorem 1)
+  name: Lemma 2
+- description: For $0 \leq j \leq n-1$ we have $|\gamma_{j}| = \sqrt{n}$. Thus all
+    the factors appearing on the left-hand side of (3) have absolute value $\sqrt{n}$.
+  kind: lemma
+  location: Main text (after equation (3))
+  name: Lemma 3
+- description: We have $2 = (1 - \zeta)^{n/2} u$, where $u$ is a unit in $\mathbb{Z}[\zeta]$.
+  kind: lemma
+  location: Main text (after Lemma 3)
+  name: Lemma 4
+- description: We have $\mathbb{Z}[\zeta]/(1-\zeta) \cong \mathbb{F}_{2}$.
+  kind: lemma
+  location: Main text (after Lemma 4)
+  name: Lemma 5
+- description: For all $0 \leq j \leq n-1$ there is an integer $h_{j} \geq 0$ such
+    that $a_{0} + a_{1} \zeta^{j} + a_{2} \zeta^{2j} + \cdots + a_{n-1} \zeta^{(n-1)j}
+    = v_{j}(1 - \zeta)^{h_{j}}$, where $v_{j}$ is a unit in $\mathbb{Z}[\zeta]$.
+  kind: lemma
+  location: Main text (after Lemma 5)
+  name: Lemma 6
+- description: Either $\gamma_{0}/\gamma_{1} \in \mathbb{Z}[\zeta]$ or $\gamma_{1}/\gamma_{0}
+    \in \mathbb{Z}[\zeta]$. (In fact, both $\gamma_{0}/\gamma_{1} \in \mathbb{Z}[\zeta]$
+    and $\gamma_{1}/\gamma_{0} \in \mathbb{Z}[\zeta]$, as will soon become apparent,
+    but we don't need this fact here.)
+  kind: corollary
+  location: Main text (after Lemma 6)
+  name: Corollary 7
+- description: Let $\theta$ be an algebraic integer such that $\theta$ and all its
+    conjugates have absolute value one. Then $\theta$ is a root of unity.
+  kind: lemma
+  location: Section 3 (preceding Section 4)
+  name: Lemma 8
+- description: Let $\tau$ be any root of unity and $\alpha \in \mathbb{Q}[\tau]$ with
+    $|\alpha|=1$. Then $\alpha$ is a root of unity.
+  kind: theorem
+  location: Section 3 (preceding Section 4)
+  name: Theorem 9 (Kronecker)
+- description: 'A poset (short for partially ordered set) $P$ is a finite set, also
+    denoted $P$, together with a binary relation denoted $\leq$ satisfying the following
+    axioms: (P1) (reflexivity) $x \leq x$ for all $x \in P$; (P2) (antisymmetry) If
+    $x \leq y$ and $y \leq x$, then $x=y$; (P3) (transitivity) If $x \leq y$ and $y
+    \leq z$, then $x \leq z$.'
+  kind: definition
+  location: Section 4
+  name: Definition 4.1
+- description: 'Let $P$ be a graded poset of rank $n$. We say that $P$ has the Sperner
+    property or is a Sperner poset if $$\max \{|A|: A \text{ is an antichain of }
+    P\}=\max \{|P_{i}|: 0 \leq i \leq n\}.$$ In other words, no antichain is larger
+    than the largest level $P_{i}$.'
+  kind: definition
+  location: Section 4
+  name: Definition 4.2
+- description: Let $P$ be a graded poset of rank $n$. Suppose there exists an integer
+    $0 \leq j \leq n$ and order-matchings $$P_{0} \rightarrow P_{1} \rightarrow P_{2}
+    \rightarrow \cdots \rightarrow P_{j} \leftarrow P_{j+1} \leftarrow P_{j+2} \leftarrow
+    \cdots \leftarrow P_{n}.$$ Then $P$ is rank-unimodal and Sperner.
+  kind: proposition
+  location: Section 4
+  name: Proposition 4.4
+- description: 'Suppose there exists a linear transformation $U: \mathbb{R} P_{i}
+    \rightarrow \mathbb{R} P_{i+1}$ satisfying: (1) $U$ is one-to-one, and (2) for
+    all $x \in P_{i}$, $U(x)$ is a linear combination of elements $y \in P_{i+1}$
+    satisfying $x<y$ (i.e., $U$ is an order-raising operator). Then there exists an
+    order-matching $\mu: P_{i} \rightarrow P_{i+1}$. Similarly, suppose there exists
+    a linear transformation $U: \mathbb{R} P_{i} \rightarrow \mathbb{R} P_{i+1}$ satisfying:
+    (1) $U$ is onto, and (2) $U$ is an order-raising operator. Then there exists an
+    order-matching $\mu: P_{i+1} \rightarrow P_{i}$.'
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.5
+- description: Let $0 \leq i \leq n$. Then $D_{i+1} U_{i} - U_{i-1} D_{i} = (n-2i)
+    I_{i}$, where $U_i$ and $D_i$ are the order-raising and order-lowering operators
+    on $B_n$ defined by $U_i(x) = \sum_{\substack{y \in (B_n)_{i+1} \\ y > x}} y$
+    and $D_i(y) = \sum_{\substack{x \in (B_n)_{i-1} \\ x < y}} x$, with $U_n = 0$
+    and $D_0 = 0$, and $I_i$ is the identity transformation on $\mathbb{R}(B_n)_i$.
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.6
+- description: The operator $U_{i}$ defined by $U_i(x) = \sum_{\substack{y \in (B_n)_{i+1}
+    \\ y > x}} y$ is one-to-one if $i < n/2$ and is onto if $i \geq n/2$.
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.7
+- description: The boolean algebra $B_{n}$ has the Sperner property.
+  kind: corollary
+  location: Section 4
+  name: Corollary 4.8
+- description: 'Let $G$ be a subgroup of $\mathfrak{S}_{n}$. Define the quotient poset
+    $B_{n} / G$ as follows: The elements of $B_{n} / G$ are the orbits of $G$. If
+    $\mathcal{O}$ and $\mathcal{O}^{\prime}$ are two orbits, then define $\mathcal{O}
+    \leq \mathcal{O}^{\prime}$ in $B_{n} / G$ if there exist $x \in \mathcal{O}$ and
+    $y \in \mathcal{O}^{\prime}$ such that $x \leq y$ in $B_{n}$. (It''s easy to check
+    that this relation $\leq$ is indeed a partial order.)'
+  kind: definition
+  location: Section 5
+  name: Definition 5.4
+- description: The quotient poset $B_{n} / G$ defined above is graded of rank $n$
+    and rank-symmetric.
+  kind: proposition
+  location: Section 5
+  name: Proposition 5.6
+- description: A basis for $\mathbb{R}(B_{n})_{i}^{G}$ consists of the elements $v_{\mathcal{O}}
+    := \sum_{x \in \mathcal{O}} x$ where $\mathcal{O} \in (B_{n})_{i} / G$, the set
+    of $G$-orbits for the action of $G$ on $(B_{n})_{i}$.
+  kind: lemma
+  location: Section 5
+  name: Lemma 5.7
+- description: If $v \in \mathbb{R}(B_{n})_{i}^{G}$, then $U_{i}(v) \in \mathbb{R}(B_{n})_{i+1}^{G}$.
+  kind: lemma
+  location: Section 5
+  name: Lemma 5.8
+- description: Let $G$ be a subgroup of $\mathfrak{S}_{n}$. Then the quotient poset
+    $B_{n} / G$ is graded of rank $n$, rank-symmetric, rank-unimodal, and Sperner.
+  kind: theorem
+  location: Section 5
+  name: Theorem 5.9
+- description: (a) Fix $m \geq 1$. Let $p_{i}$ be the number of nonisomorphic simple
+    graphs with $m$ vertices and $i$ edges. Then the sequence $p_{0}, p_{1}, \ldots,
+    p_{\binom{m}{2}}$ is symmetric and unimodal. (b) Let $T$ be a collection of nonisomorphic
+    simple graphs with $m$ vertices such that no element of $T$ is isomorphic to a
+    subset of another element of $T$. Then $|T|$ is maximized by taking $T$ to consist
+    of all nonisomorphic simple graphs with $\left\lfloor\frac{1}{2}\binom{m}{2}\right\rfloor$
+    edges.
+  kind: theorem
+  location: Section 5
+  name: Theorem 5.10
+- description: $L(m, n)$ is graded of rank $mn$ and rank-symmetric. The rank of a
+    partition $\lambda$ is just $|\lambda|$ (the sum of the parts of $\lambda$ or
+    the number of squares in its Young diagram).
+  kind: proposition
+  location: Section 6
+  name: Proposition 6.2
+- description: We have $|L(m, n)| = \binom{m+n}{m}$.
+  kind: proposition
+  location: Section 6
+  name: Proposition 6.3
+- description: We have $$\left[\begin{array}{c} k \\ j \end{array}\right] = \left[\begin{array}{c}
+    k-1 \\ j \end{array}\right] + q^{k-j}\left[\begin{array}{c} k-1 \\ j-1 \end{array}\right]$$
+    whenever $k \geq 1$, with the initial conditions $\left[\begin{array}{c} 0 \\
+    0 \end{array}\right]=1$, $\left[\begin{array}{c} k \\ j \end{array}\right]=0$
+    if $j<0$ or $j>k$ (the same initial conditions satisfied by the binomial coefficients
+    $\binom{k}{j}$).
+  kind: lemma
+  location: Section 6
+  name: Lemma 6.5
+- description: Let $p_{i}(m, n)$ denote the number of elements of $L(m, n)$ of rank
+    $i$. Then $$\sum_{i \geq 0} p_{i}(m, n) q^{i}=\left[\begin{array}{c}m+n \\ m\end{array}\right].$$
+    (Note. The sum on the left-hand side is really a finite sum, since $p_{i}(m, n)=
+    0$ if $i>mn$.)
+  kind: theorem
+  location: Section 6
+  name: Theorem 6.6
+- description: Every orbit $\mathcal{O}$ of the action of $G_{mn}$ on $B_{R}$ contains
+    exactly one Young diagram $D$ (i.e., exactly one subset $D \subseteq R$ such that
+    $D$ is left-justified, and if $\lambda_{i}$ is the number of elements of $D$ in
+    row $i$ of $R$, then $\lambda_{1} \geq \lambda_{2} \geq \cdots \geq \lambda_{m}$).
+  kind: lemma
+  location: Section 6
+  name: Lemma 6.8
+- description: The quotient poset $B_{R_{mn}} / G_{mn}$ is isomorphic to $L(m, n)$.
+  kind: theorem
+  location: Section 6
+  name: Theorem 6.9
+- description: The posets $L(m, n)$ are rank-symmetric, rank-unimodal, and Sperner.
+  kind: corollary
+  location: Section 6
+  name: Corollary 6.10
+- description: Let $S \in\binom{\mathbb{R}^{+}}{n}$, $\alpha \in \mathbb{R}^{+}$,
+    and $k \in \mathbb{P}$. Then $f_{k}(S, \alpha) \leq f_{k}([n],\lfloor k(n+1) /
+    2\rfloor)$.
+  kind: theorem
+  location: Section 7 (preceding Section 8)
+  name: Theorem 6.11
+- description: 'Suppose $w=D^{s_{k}} U^{r_{k}} \cdots D^{s_{2}} U^{r_{2}} D^{s_{1}}
+    U^{r_{1}}$, where $r_{i} \geq 0$ and $s_{i} \geq 0$. Let $\lambda \vdash n$. Then
+    there exists a Hasse walk of type $w$ from $\varnothing$ to $\lambda$ if and only
+    if: $\sum_{i=1}^{k}(r_{i}-s_{i})=n$ and $\sum_{i=1}^{j}(r_{i}-s_{i}) \geq 0$ for
+    $1 \leq j \leq k$.'
+  kind: lemma
+  location: Section 8
+  name: Lemma 8.1
+- description: For any $i \geq 0$ we have $D_{i+1} U_{i} - U_{i-1} D_{i} = I_{i}$,
+    the identity linear transformation on $\mathbb{R} Y_{i}$.
+  kind: lemma
+  location: Section 8
+  name: Lemma 8.2
+- description: 'Let $\lambda$ be a partition and $w=A_{n} A_{n-1} \cdots A_{1}$ a
+    valid $\lambda$-word. Let $S_{w}=\{i: A_{i}=D\}$. For each $i \in S_{w}$, let
+    $a_{i}$ be the number of $D$''s in $w$ to the right of $A_{i}$, and let $b_{i}$
+    be the number of $U$''s in $w$ to the right of $A_{i}$. Then $\alpha(w, \lambda)=f^{\lambda}
+    \prod_{i \in S_{w}}(b_{i}-a_{i})$.'
+  kind: theorem
+  location: Section 8
+  name: Theorem 8.3
+- description: We have $\alpha(D^{n} U^{n}, \varnothing)=\sum_{\lambda \vdash n}(f^{\lambda})^{2}=n!$.
+  kind: corollary
+  location: Section 8
+  name: Corollary 8.4
+- description: We have $b_{i j}(\ell)=0$ if $\ell-i-j$ is odd. If $\ell-i-j=2m$ then
+    $b_{i j}(\ell)=\frac{\ell!}{2^{m} i! j! m!}$.
+  kind: lemma
+  location: Section 8
+  name: Lemma 8.5
+- description: Let $\ell \geq n$ and $\lambda \vdash n$, with $\ell - n$ even. Then
+    $$\beta(\ell, \lambda) = \binom{\ell}{n}(1 \cdot 3 \cdot 5 \cdots (\ell - n -
+    1)) f^\lambda.$$
+  kind: theorem
+  location: Section 8
+  name: Theorem 8.6
+- description: The total number of Hasse walks in $Y$ of length $2m$ from $\varnothing$
+    to $\varnothing$ is given by $$\beta(2m, \emptyset) = 1 \cdot 3 \cdot 5 \cdots
+    (2m-1).$$
+  kind: corollary
+  location: Section 8
+  name: Corollary 8.7
+- description: 'The eigenvalues of $Y_{j-1,j}$ are given as follows: 0 is an eigenvalue
+    of multiplicity $p(j) - p(j-1)$; and for $1 \leq s \leq j$, the numbers $\pm\sqrt{s}$
+    are eigenvalues of multiplicity $p(j-s) - p(j-s-1)$.'
+  kind: theorem
+  location: Section 8
+  name: Theorem 8.8
+- description: Fix $j \geq 1$. The number of ways to choose a partition $\lambda$
+    of $j$, then delete a square from $\lambda$ (keeping it a partition), then insert
+    a square, then delete a square, etc., for a total of $m$ insertions and $m$ deletions,
+    ending back at $\lambda$, is given by $$\sum_{s=1}^{j}[p(j-s) - p(j-s-1)]\, s^m,
+    \quad m > 0.$$
+  kind: corollary
+  location: Section 8
+  name: Corollary 8.9

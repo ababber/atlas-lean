@@ -1,0 +1,898 @@
+- description: Let M by an n × n matrix. Suppose that Mx = λx for x ∈ ℝⁿ, x ≠ 0, and
+    λ ∈ ℝ. Then we call x an eigenvector and λ an eigenvalue of M.
+  kind: definition
+  location: Lecture 1, Section 2
+  name: Definition 1
+- description: 'If M is a symmetric n × n matrix, then: (1) If v and w are eigenvectors
+    of M with different eigenvalues, then v and w are orthogonal (v · w = 0). (2)
+    If v and w are eigenvectors of M with the same eigenvalue, then so is q = av +
+    bw, so eigenvectors with the same eigenvalue need not be orthogonal. (3) M has
+    a full orthonormal basis of eigenvectors v₁, …, vₙ. All eigenvalues and eigenvectors
+    are real. (4) M is diagonalizable: M = VΛVᵀ where V is orthogonal (VVᵀ = Iₙ),
+    with columns equal to v₁, …, vₙ, and Λ is diagonal, with the corresponding eigenvalues
+    of M as its diagonal entries. So M = Σᵢ₌₁ⁿ λᵢvᵢvᵢᵀ.'
+  kind: proposition
+  location: Lecture 1, Section 2
+  name: Proposition 2
+- description: We call the span of the eigenvectors with the same eigenvalue an eigenspace.
+  kind: definition
+  location: Lecture 1, Section 2
+  name: Definition 3
+- description: For a graph G, the adjacency matrix A = A_G is the n × n matrix given
+    by A_{i,j} = 1 if (i,j) ∈ E, and 0 otherwise.
+  kind: definition
+  location: Lecture 1, Section 3
+  name: Definition 4
+- description: Let L_e be the Laplacian of the graph on n vertices consisting of just
+    the edge e.
+  kind: definition
+  location: Lecture 2, Section 3.2
+  name: Definition 5
+- description: 'The following results hold about the eigenvalues λᵢ and corresponding
+    eigenvectors vᵢ of L_G: (1) Order the eigenvalues so λ₁ ≤ … ≤ λₙ, with corresponding
+    eigenvectors v₁, …, vₙ. Then v₁ = 1 and λ₁ = 0. So for all i, λᵢ ≥ 0. (2) One
+    can get much information about the graph G from just the first few nontrivial
+    eigenvectors.'
+  kind: proposition
+  location: Lecture 1, Section 4
+  name: Proposition 6
+- description: If G and H are two graphs on the same vertex set with disjoint edge
+    sets, then L_{G∪H} = L_G + L_H (additivity).
+  kind: lemma
+  location: Lecture 2, Section 3.1
+  name: Lemma 1 (Edge Union)
+- description: If a vertex i ∈ G is isolated, then the corresponding row and column
+    of the Laplacian are zero, i.e. [L_G]_{i,j} = [L_G]_{j,i} = 0 for all j.
+  kind: lemma
+  location: Lecture 2, Section 3.1
+  name: Lemma 2 (Isolated Vertices)
+- description: 'The Laplacian of the disjoint union of G and H is direct sum of L_G
+    and L_H, i.e.: L_{G∐H} = L_G ⊕ L_H = (L_G  0; 0  L_H).'
+  kind: lemma
+  location: Lecture 2, Section 3.1
+  name: Lemma 3 (Disjoint Union)
+- description: If L_G has eigenvectors v₁, …, vₙ with eigenvalues λ₁, …, λₙ, and L_H
+    has eigenvectors w₁, …, wₙ with eigenvalues μ₁, …, μₙ, then L_{G∐H} has eigenvectors
+    v₁⊕0, …, vₙ⊕0, 0⊕w₁, …, 0⊕wₙ with corresponding eigenvalues λ₁, …, λₙ, μ₁, …,
+    μₙ.
+  kind: theorem
+  location: Lecture 2, Section 3.1
+  name: Theorem 4 (Disjoint Union Spectrum)
+- description: A symmetric matrix M is positive semidefinite (PSD) if ∀x ∈ ℝⁿ, xᵀMx
+    ≥ 0. M is positive definite (PD) if the inequality is strict ∀x ≠ 0.
+  kind: definition
+  location: Lecture 2, Section 3.3
+  name: Definition 6
+- description: M is PSD iff all eigenvalues λᵢ ≥ 0. Similarly M is PD iff all eigenvalues
+    λᵢ > 0.
+  kind: lemma
+  location: Lecture 2, Section 3.3
+  name: Lemma 7
+- description: M is PSD iff there exists a matrix A such that M = AᵀA. Note that A
+    can be (n × k) for any k, and that it need not be square. Importantly, note that
+    A is not unique.
+  kind: lemma
+  location: Lecture 2, Section 3.3
+  name: Lemma 8 (PSD Matrix Decomposition)
+- description: 'Let m be the number of edges and n be the number of vertices. Then
+    the incidence matrix ∇ = ∇_G is the m × n matrix given by: ∇_{e,v} = 1 if e =
+    (v,w) and v < w, -1 if e = (v,w) and v > w, 0 otherwise.'
+  kind: definition
+  location: Lecture 2, Section 3.4
+  name: Definition 9
+- description: L_G = ∇ᵀ∇.
+  kind: lemma
+  location: Lecture 2, Section 3.4
+  name: Lemma 10
+- description: xᵀL_Gx = ||∇x||² = Σ_{(i,j)∈E} (xᵢ - xⱼ)². This gives another proof
+    that L is PSD.
+  kind: corollary
+  location: Lecture 2, Section 3.4
+  name: Corollary 11
+- description: If G is connected, the null space is 1-dimensional and spanned by the
+    vector 1.
+  kind: theorem
+  location: Lecture 2, Section 3.5
+  name: Theorem 12
+- description: If G is connected, λ₂ > 0.
+  kind: corollary
+  location: Lecture 2, Section 3.5
+  name: Corollary 13
+- description: The dimension of the null space of L_G is exactly the number of connected
+    components of G.
+  kind: corollary
+  location: Lecture 2, Section 3.5
+  name: Corollary 14
+- description: The Laplacian for the complete graph Kₙ on n vertices has eigenvalue
+    0 with multiplicity 1 and eigenvalue n with multiplicity n-1 and associated eigenspace
+    {x | x·1 = 0}.
+  kind: lemma
+  location: Lecture 2, Section 4
+  name: Lemma 15 (Complete graph)
+- description: The Laplacian for the ring graph Rₙ on n vertices has eigenvectors
+    x_k(u) = sin(2πku/n) and y_k(u) = cos(2πku/n) for 0 ≤ k ≤ n/2. Both x_k and y_k
+    have eigenvalue 2 - 2cos(2πk/n). Note that x₀ = 0 should be ignored and y₀ is
+    1, and when n is even x_{n/2} = 0 should be ignored and we only have y_{n/2}.
+  kind: lemma
+  location: Lecture 2, Section 4
+  name: Lemma 16 (Ring graph)
+- description: The Laplacian for the path graph Pₙ on n vertices has the same eigenvalues
+    as R_{2n} and eigenvectors v_k(u) = sin(πku/n + π/2n) for 0 ≤ k < n.
+  kind: lemma
+  location: Lecture 2, Section 4
+  name: Lemma 17 (Path graph)
+- description: 'Let G = (V, E), and H = (W, F). The product graph G × H has vertex
+    set V × W and edge set: ((v₁, w), (v₂, w)) for all (v₁, v₂) ∈ E, w ∈ W, and ((v,
+    w₁), (v, w₂)) for all (w₁, w₂) ∈ F, v ∈ V.'
+  kind: definition
+  location: Lecture 2, Section 4.1
+  name: Definition 18
+- description: If L_G has eigenvectors v₁, …, vₙ with eigenvalues λ₁, …, λₙ, and L_H
+    has eigenvectors w₁, …, w_k with eigenvalues μ₁, …, μ_k, then L_{G×H} has, for
+    all 1 ≤ i ≤ n, 1 ≤ j ≤ k, an eigenvector z_{ij}(v,w) = xᵢ(v)yⱼ(w) of eigenvalue
+    λᵢ + μⱼ.
+  kind: theorem
+  location: Lecture 2, Section 4.1
+  name: Theorem 19 (Graph Products)
+- description: G_{n,m} has eigenvectors and eigenvalues completely determined by those
+    of Pₙ and P_m as above.
+  kind: corollary
+  location: Lecture 2, Section 4.1
+  name: Corollary 20
+- description: Given an n-vertex graph G with degrees dᵢ, where d_max = maxᵢ dᵢ, and
+    Laplacian L_G with eigenvalues λᵢ, then Σᵢ λᵢ = Σᵢ dᵢ ≤ d_max · n.
+  kind: lemma
+  location: Lecture 2, Section 6
+  name: Lemma 21 (Sum of the eigenvalues)
+- description: Given λᵢ and dᵢ as above, λ₂ ≤ (Σᵢ dᵢ)/(n-1) and λₙ ≥ (Σᵢ dᵢ)/(n-1).
+  kind: lemma
+  location: Lecture 2, Section 6
+  name: Lemma 22 (Bounds on λ₂ and λₙ)
+- description: For any n × n symmetric matrix A, λ₁ = min_{||x||=1} xᵀAx = min_{x≠0}
+    (xᵀAx)/(xᵀx), λ₂ = min_{||x||=1, x⊥v₁} xᵀAx = min_{x≠0, x⊥v₁} (xᵀAx)/(xᵀx), λ_max
+    = max_{||x||=1} xᵀAx = max_{x≠0} (xᵀAx)/(xᵀx).
+  kind: theorem
+  location: Lecture 2, Section 7
+  name: Theorem 23 (Courant-Fischer Formula)
+- description: Letting G = (V, E) be a graph with Laplacian L_G, λ_1 = 0 with v_1
+    = 1, λ_2 = min_{x⊥v_1, x≠0} (x^T L_G x)/(x^T x) = min_{∑x=0, x≠0} (∑_{(i,j)∈E}
+    (x_i - x_j)^2)/(∑_{i∈V} x_i^2), and λ_max = max_{x≠0} (x^T L_G x)/(x^T x) = max_{x≠0}
+    (∑_{(i,j)∈E} (x_i - x_j)^2)/(∑_{i∈V} x_i^2).
+  kind: corollary
+  location: Section 7
+  name: Corollary 24 (Rayleigh Quotient)
+- description: Let G = (V, E) be a graph and L be the Laplacian of G. The smallest
+    eigenvalue is λ_1 = 0 with eigenvector v_1 = 1. By the Courant-Fischer Formula,
+    λ_2 = min_{x≠0, x⊥1} (∑_{(i,j)∈E} (x_i - x_j)^2)/(∑_{i∈V} x_i^2), and λ_max =
+    max_{x≠0} (∑_{(i,j)∈E} (x_i - x_j)^2)/(∑_{i∈V} x_i^2).
+  kind: corollary
+  location: Lecture 3, Section 2
+  name: Corollary 2 (Rayleigh Quotient)
+- description: The cut ratio φ of a cut S - S̄ is given by φ(S) = e(S)/min(|S|, |S̄|).
+    The cut of minimum ratio is the cut that minimizes φ(S). The isoperimetric number
+    of a graph G is the value of the minimum cut, φ(G) = min_{S⊂V} φ(S).
+  kind: definition
+  location: Lecture 3, Section 3.1
+  name: Definition 3 (Cut Ratio)
+- description: Given a graph G, φ(G)^2/(2d_max) ≤ λ_2 ≤ 2φ(G), where d_max is the
+    maximum degree in G.
+  kind: theorem
+  location: Lecture 3, Section 4
+  name: Theorem 4 (Cheeger's Inequality)
+- description: For any x ⊥ 1, x_1 ≤ x_2 ≤ … ≤ x_n, there is some i for which (x^T
+    L x)/(x^T x) ≥ φ({1,…,i})^2/(2d_max).
+  kind: theorem
+  location: Lecture 3, Section 4.1
+  name: Theorem 5
+- description: With y defined by y_i = x_i - x_m, (x^T L x)/(x^T x) ≥ (y^T L y)/(y^T
+    y).
+  kind: claim
+  location: Lecture 3, Section 4.2.1
+  name: Claim 6
+- description: (∑_{(i,j)∈E} (y_i - y_j)^2)/(∑_{i∈V} y_i^2) ≥ (∑_{(i,j)∈E'} (y_i -
+    y_j)^2)/(∑_{i∈V} y_i^2), where E' is the edge set obtained by replacing any edge
+    (i,j) crossing y_m = 0 with two edges (i,m) and (m,j).
+  kind: claim
+  location: Lecture 3, Section 4.2.2
+  name: Claim 7
+- description: For any z_1 ≤ … ≤ z_m = 0, ∑_{(i,j)∈E'_-} |z_i - z_j| ≥ φ ∑_{i=1}^m
+    |z_i|.
+  kind: lemma
+  location: Lecture 3, Section 4.2.4
+  name: Lemma 8 (Summation by Parts)
+- description: π is a probability distribution, where π(u) = d(u)/(∑_{v∈V(G)} d(v)).
+  kind: claim
+  location: Lecture 4, Section 2
+  name: Claim 1
+- description: W · π = π, where W = W_G is the walk matrix and π is the stationary
+    distribution.
+  kind: claim
+  location: Lecture 4, Section 2
+  name: Claim 2
+- description: The matrices N and W have the same eigenvalues and related eigenvectors.
+  kind: claim
+  location: Lecture 4, Section 3
+  name: Claim 3
+- description: For any $G$, $\delta \le \frac{\ln(n)}{\lambda}$ where $\delta$ is
+    the diameter of $G$, $n$ is the number of vertices in the graph, and $\lambda
+    = 1 - \mu_2$, where $\mu_2$ is the second largest eigenvalue of the $M$ associated
+    with $G$.
+  kind: claim
+  location: Section 1.1 (A First Bound), Lecture 6
+  name: Claim 4
+- description: Let $p_0$ be an arbitrary initial distribution, and $p_t$ be the distribution
+    after $t$ steps of the lazy random walk. Then, $||p_t - \pi||_2 \le (1 - \lambda)^t
+    \cdot \sqrt{\frac{\max_x d(x)}{\min_y d(y)}}$.
+  kind: theorem
+  location: Section 5 ($\ell_2$ Convergence)
+  name: Theorem 5
+- description: For any vertex $v \in V(G)$, $|p_t(v) - \pi(v)| \le (1 - \lambda)^t
+    \cdot \sqrt{\frac{d(v)}{\min_y d(y)}}$.
+  kind: theorem
+  location: Section 5 ($\ell_2$ Convergence)
+  name: Theorem 6
+- description: For $S \subseteq V(G)$, let $\Phi(S) = \frac{e(S)}{\min\left(\sum_{v
+    \in S} d(v), \sum_{v \in \bar{S}} d(v)\right)}$. We define the conductance to
+    be $\Phi(G) = \min_{S \subset V} \Phi(S)$.
+  kind: definition
+  location: Section 6 (Conductance)
+  name: Definition 7 (Conductance)
+- description: The probability that $R$ fails to $\epsilon$-approximate $\mathbf{E}[R]$
+    is $\mathbf{Pr}\left[|R - \mathbf{E}[R]| \ge \epsilon \mathbf{E}[R]\right] \le
+    2e^{-np\epsilon^2/12} = 2e^{-\mathbf{E}[R]\epsilon^2/12}$.
+  kind: theorem
+  location: Section 7 (Introduction to Monte Carlo methods)
+  name: Theorem 8 (One version of the Chernoff bound)
+- description: The diameter, $\delta$, is the longest, shortest path between any two
+    vertices of a graph. In other words, we can define the distance between two vertices
+    $u$ and $v$ in $G$ as the shortest path connecting the two. The diameter of $G$
+    is the largest distance between any two vertices in $G$.
+  kind: definition
+  location: Section 1 (Diameters and Eigenvalues), Lecture 6
+  name: Definition 1
+- description: A fully-polynomial randomized approximation scheme, or FPRAS, is an
+    $(\epsilon, \delta)$ approximation scheme with a runtime that is polynomial in
+    $n$, $1/\epsilon$, and $\log 1/\delta$.
+  kind: definition
+  location: Section 2 (Review of Monte Carlo Methods), Lecture 5
+  name: Definition 2
+- description: 'A lazy random walk is simply a random walk along a graph with self
+    loops added in: $M = \frac{A}{2d} + \frac{I}{2}$ where $A$ is the graph''s adjacency
+    matrix and $I$ is the identity matrix.'
+  kind: definition
+  location: Section 1 (Diameters and Eigenvalues), Lecture 6
+  name: Definition 3
+- description: For a given $n \times n$ matrix $M$, the determinant is given by $\det(M)
+    = \sum_{\pi \in S_n} \mathrm{sgn}(\pi) \prod_{i=1}^n M_{i,\pi(i)}$.
+  kind: definition
+  location: Section 4 (Approximating the Permanent of a 0-1 Matrix), Lecture 5
+  name: Definition 4 (Determinant)
+- description: For a given $n \times n$ matrix $M$, the permanent is given by $\mathrm{per}(M)
+    = \sum_{\pi \in S_n} \prod_{i=1}^n M_{i,\pi(i)}$.
+  kind: definition
+  location: Section 4 (Approximating the Permanent of a 0-1 Matrix), Lecture 5
+  name: Definition 5 (Permanent)
+- description: Let $G$ be a bipartite graph of minimum degree $\geq n/2$. Then every
+    partial matching in $M_{k-1}$ has an augmenting path of length $\leq 3$.
+  kind: lemma
+  location: Section 4.2.3 (Bounding the $r_k$), Lecture 5
+  name: Lemma 6
+- description: Let $G$ be a bipartite graph of minimum degree $\geq n/2$. Then $1/n^2
+    \leq r_k \leq n^2$ for all $k$.
+  kind: theorem
+  location: Section 4.2.3 (Bounding the $r_k$), Lecture 5
+  name: Theorem 7
+- description: Let $G = (V, E)$ be a graph for which we wish to bound $\Phi(G)$. For
+    every $v, w \in V$, we specify a canonical path $p_{v,w}$ from $v$ to $w$. Suppose
+    that for some constant $b$ and for all $e \in E$, we have $\sum_{v,w \in V} \mathbf{I}[e
+    \in p_{v,w}] \le b|V|$, that is, at most $b|V|$ of the canonical paths run through
+    any given edge $e$. Then $\Phi(G) \ge \frac{1}{4bd_{max}}$, where $d_{max}$ is
+    the maximum degree of any vertex.
+  kind: lemma
+  location: Section 4.2.4 (How to Sample (Approximately) Uniformly), Lecture 5
+  name: Lemma 8
+- description: Let $s \in M_n$. Then at most $O(n^2)$ other nodes $s' \in M_n \cup
+    M_{n-1}$ have $s$ as their partner.
+  kind: lemma
+  location: Section 4.2.6 (Canonical Paths), Lecture 5
+  name: Lemma 10
+- description: Let $T$ be a transition (i.e. an edge of $C_n$). Then the number of
+    pairs $s, t \in M_n$ that contain $T$ on their type B canonical path is bounded
+    by $|C_n|$.
+  kind: lemma
+  location: Section 4.2.6 (Canonical Paths), Lecture 5
+  name: Lemma 11
+- description: The conductance of our graph has the following bound $\Phi(C_n) = \Theta\left(\frac{1}{n^6}\right)$.
+  kind: theorem
+  location: Section 4.2.6 (Canonical Paths), Lecture 5
+  name: Theorem 12
+- description: $G$ is a $d$-regular graph (this is for simplicity and not really a
+    limiting assumption).
+  kind: claim
+  location: Section 1 (Diameters and Eigenvalues), Lecture 6
+  name: Assumption 2
+- description: A d-regular bipartite graph is an (α, β)-expander if every set S on
+    the left with |S| ≤ αn has N(S) ≥ β|S|.
+  kind: definition
+  location: Section 3.2
+  name: Definition 1
+- description: The previous algorithm finds a matching of S and T in O(log n) steps.
+  kind: claim
+  location: Section 3.2
+  name: Claim 4
+- description: Suppose p has degree k, p(1) = 1, and |p(μᵢ)| < 1/n for all i ≥ 2,
+    then δ ≤ k.
+  kind: claim
+  location: Section 1.2
+  name: Claim 5
+- description: 'For any t ∈ (0,1), there exists a polynomial p_k^{(t)} with the following
+    properties: (1) p_k^{(t)} is of degree k, (2) p_k^{(t)}(1) = 1, (3) |p_k^{(t)}(x)|
+    ≤ 2(1 + √(2t))^{-k} for any x ∈ [0, 1-t].'
+  kind: claim
+  location: Section 1.2
+  name: Claim 6
+- description: 'For a given ρ, order the arcs such that ρ(e₁) ≥ ρ(e₂) ≥ … ≥ ρ(e_{2m}).
+    We define I : [0, 2m] → [0, 1] as follows: For each k ∈ {0, …, 2m}, I(k) = Σᵢ₌₁ᵏ
+    ρ(eᵢ). We extend I to the complete interval by interpolating it piecewise linearly.'
+  kind: definition
+  location: Section 4.3
+  name: Definition 7 (Lovasz-Simonovits curve)
+- description: (G_n)_n is expander family if φ(G) ≥ c' for some constant c' and all
+    n.
+  kind: definition
+  location: Section 2.1
+  name: Definition 8
+- description: For all x and t, I^t(x) ≤ I^{t-1}(x).
+  kind: claim
+  location: Section 4.3
+  name: Claim 9
+- description: 'Expander Mixing Lemma: If you choose any two vertex sets, S and T,
+    the difference in the total number of edges between the two and the expected number
+    for a random graph is bounded. Formally, |e(S,T) - d|S||T|/n| ≤ (μ₂/n)√(|S||S̄||T||T̄|)
+    ≤ μ₂√(min(|S|,|S̄|)·min(|T|,|T̄|)).'
+  kind: claim
+  location: Section 2.3
+  name: Claim 10
+- description: A characteristic vector, x, of a set S is a vector of length n that
+    has x_i = 1 if v_i ∈ S, and x_i = 0 otherwise.
+  kind: definition
+  location: Section 2.3
+  name: Definition 11
+- description: N(X) ≥ d²|X| / (μ² + (d² - μ²)|X|/n).
+  kind: claim
+  location: Section 2.5
+  name: Claim 12
+- description: G is an (α, β)-expander if for αβ < 1 and all sets S with |S| ≤ αn
+    have |N(S)| ≥ β|S|.
+  kind: definition
+  location: Section 2.5
+  name: Definition 13
+- description: A d-regular bipartite graph is an (α, β)-expander if every set S on
+    the left with |S| ≤ αn has N(S) ≥ β|S|.
+  kind: definition
+  location: Section 2.6
+  name: Definition 14
+- description: A d-Multibutterfly with N nodes in each layer can route any permutation
+    of 2αN inputs to 2αN outputs.
+  kind: claim
+  location: Section 3.2
+  name: Claim 2
+- description: A bipartite graph G has a perfect matching if and only if every set
+    S on the left has at least |S| neighbors on the right.
+  kind: theorem
+  location: Section 3.2
+  name: Theorem 3 (Hall)
+- description: For any set S of size |S| ≤ αN, the number of vertices in T with exactly
+    one neighbor in S is at least (2β - d)|S|.
+  kind: lemma
+  location: Section 3.2
+  name: Lemma 5
+- description: For all i, |S_{i+1}|/|S_i| ≤ 2(1 - β/d).
+  kind: lemma
+  location: Section 3.2
+  name: Lemma 6
+- description: For any c₁, …, c_{2m} ≤ 1, Σᵢ₌₁^{2m} cᵢρ(eᵢ) ≤ I(Σᵢ₌₁^{2m} cᵢ).
+  kind: claim
+  location: Section 4.3
+  name: Claim 8
+- description: For every initial distribution p⁰, all t, and every x ∈ [0, m], I^t(x)
+    ≤ (1/2)(I^{t-1}(x - 2φ_G x) + I^{t-1}(x + 2φ_G x)), and for every x ∈ [m, 2m],
+    I^t(x) ≤ (1/2)(I^{t-1}(x - 2φ_G(2m - x)) + I^{t-1}(x + 2φ_G(2m - x))).
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 10
+- description: For all initial distribution $p^0$ and every $t$, $$I^{t}(x) \le \min(\sqrt{x},
+    \sqrt{2m-x}) \left(1 - \frac{1}{2}\phi_{G}^{2}\right)^{t} + \frac{x}{2m}.$$
+  kind: theorem
+  location: Lecture 7
+  name: Theorem 11 (Lovasz-Simonovits)
+- description: For $W$ a set of vertices, and $x = \sum_{w \in W} d_w$, $$\left| \sum_{w
+    \in W} p^t(w) - \pi(w) \right| \le \min(\sqrt{x}, \sqrt{2m - x}) \left( 1 - \frac{1}{2}
+    \phi_G^2 \right)^t.$$
+  kind: corollary
+  location: Lecture 7
+  name: Corollary 12
+- description: 'Let $G = (V, E)$ be a connected, undirected graph with $m$ edges and
+    let $\pi(x)$ be its stationary distribution $\frac{d_x}{\sum_{v \in V} d_v}$.
+    For every subset of vertices $W \subset V$ and every time $t$, if $x \equiv \sum_{w
+    \in W} d_w$ and $\varphi(W)$ is the conductance of the cut $(W, \overline{W})$,
+    then the following inequality holds: $$\left| \sum_{w \in W} p^t(w) - \pi(w) \right|
+    \le \min\left(\sqrt{x}, \sqrt{2m - x}\right) \left(1 - \frac{1}{2}\phi(W)^2\right)^t.$$'
+  kind: corollary
+  location: Lecture 8, Section 2.4
+  name: Corollary 1
+- description: $\operatorname{pr}_{\alpha}(s)$ is unique.
+  kind: proposition
+  location: Lecture 8, Section 3.2
+  name: Proposition 2 (Uniqueness)
+- description: $\operatorname{pr}_{\alpha}(cv+dw) = c \cdot \operatorname{pr}_{\alpha}(v)
+    + d \cdot \operatorname{pr}_{\alpha}(w)$.
+  kind: proposition
+  location: Lecture 8, Section 3.2
+  name: Proposition 3 (Linearity)
+- description: $\operatorname{pr}_{\alpha}(Ws) = W \operatorname{pr}_{\alpha}(s)$.
+  kind: proposition
+  location: Lecture 8, Section 3.2
+  name: Proposition 4 (Commutativity with W)
+- description: $p' = \operatorname{pr}_{\alpha}(s - r')$.
+  kind: proposition
+  location: Lecture 8, Section 3.3
+  name: Proposition 5
+- description: $\|r'\|_1 \le \|r\|_1 - \alpha r(u)$.
+  kind: proposition
+  location: Lecture 8, Section 3.3
+  name: Proposition 6
+- description: 'Fix $\epsilon > 0$. Suppose that in each iteration we pick a vertex
+    $u$ with the property that $r(u) \ge \epsilon d(u)$. Then the process terminates
+    in $O(\frac{1}{\epsilon \alpha})$ iterations with vectors $p$ and $r$ that satisfy
+    the following properties: 1. $\max_{v} \frac{r(v)}{d(v)} \le \epsilon$. 2. $\operatorname{vol}(\operatorname{supp}(p))
+    \leq \frac{1}{\epsilon \alpha}$, where $\operatorname{supp}(p)$ is the set of
+    vertices for which $p$ is nonzero and $\operatorname{vol}(S) \equiv \sum_{x \in
+    S} d_x$.'
+  kind: theorem
+  location: Lecture 8, Section 3.3
+  name: Theorem 7
+- description: If $G$ has a min-cut of size $c$, then the number of cuts of value
+    $\alpha c$ or less is at most $n^{2\alpha}$.
+  kind: theorem
+  location: Lecture 9, Section 1.1
+  name: Theorem 1 (Karger)
+- description: Let $X_1, \ldots, X_n$ be random variables so that $X_i \in [0, 1]$,
+    and let $X = \sum X_i$. Then, $$Pr[|X - E[X]| \ge \epsilon X] \le 2e^{-\Theta(1)\epsilon^2
+    E[X]}.$$
+  kind: theorem
+  location: Lecture 9, Section 1.2
+  name: Theorem 2 (Chernoff Bound)
+- description: A Spectral Sparsifier $G'$ of a graph $G$ is one for which the relation
+    $(1 - \epsilon)x^T L_{G'} \le x^T L_G x \le (1 + \epsilon)x^T L_{G'} x$ for all
+    $x \in [0,1]^n$.
+  kind: definition
+  location: Lecture 9, Section 2
+  name: Definition 3
+- description: We write that $M \succeq N$ if $x^T M x \ge x^T N x$ for all $x \in
+    \mathbb{R}^n$.
+  kind: definition
+  location: Lecture 9, Section 2.1
+  name: Definition 4
+- description: Given graphs $G$ and $H$, say that $G \succeq H$ if $L_G \succeq L_H$.
+  kind: definition
+  location: Lecture 9, Section 2.1
+  name: Definition 5
+- description: Let $G = (V, E_G, w_G)$ and $H = (V, E_H, w_H)$ be weighted graphs
+    on the same vertex set such that $w_G(i,j) \ge w_H(i,j)$ for all edges $(i,j)
+    \in E$. Then, $G \succeq H$.
+  kind: claim
+  location: Lecture 9, Section 2.1
+  name: Claim 6
+- description: 'The Minkowski functional of an origin symmetric convex body C is the
+    map $p_C : \mathbb{R}^n \to \mathbb{R}$ defined by $p_C(x) = \inf_{\lambda > 0}
+    \{ x \in \lambda C \}$.'
+  kind: definition
+  location: Lecture 11, Section 4
+  name: Definition 5
+- description: For any n-dimensional, origin-symmetric convex body K, $d(K, B_2^n)
+    \leq \sqrt{n}$.
+  kind: theorem
+  location: Lecture 11, Section 6
+  name: Theorem 7
+- description: 'For distributions on vectors y where $\|y\| \le t$ and $\|Eyy^T\|_2
+    \le 1$ (where we are using the $l_2$ norm) then: $E \| Eyy^T - \frac{1}{q} \sum_{i=1}^q
+    y_i y_i^T \|_2 \le kt \sqrt{\frac{\log q}{q}}$.'
+  kind: theorem
+  location: Lecture 10, Section 1.2
+  name: Theorem 1 (RV Theorem)
+- description: 'We say a set $C \subseteq \mathbb{R}^n$ is convex when for all $x,
+    y \in C$ and $t \in [0, 1]$, $tx + (1 - t)y \in C$. A function $f : \mathbb{R}^n
+    \to \mathbb{R}$ is convex iff the region above its graph (in $\mathbb{R}^{n+1}$)
+    is convex. A function $f : \mathbb{R}^n \to \mathbb{R}$ is concave iff $-f$ is
+    convex. A convex body is a convex set which is both compact and has non-empty
+    interior.'
+  kind: definition
+  location: Lecture 10, Section 2
+  name: Definition 2
+- description: The polar of a convex body C is given by $C^* = \{ x \in \mathbb{R}^n
+    | x \cdot c < 1 \ \forall c \in C \}$.
+  kind: definition
+  location: Lecture 11, Section 3
+  name: Definition 1
+- description: For a polytope C given by $C = \{x | a_i \cdot x \leq b_i, i = 1, \dots,
+    k\}$, the sets $C_1 = C_2$ where $C_1 = \{x \in \mathbb{R}^n | x \cdot c \leq
+    1 \ \forall c \in C\}$ and $C_2 = \text{conv}(a_1, \dots, a_k)$.
+  kind: proposition
+  location: Lecture 11, Section 3
+  name: Proposition 2
+- description: Let K be a convex body. Then $K^{**} = K$.
+  kind: theorem
+  location: Lecture 11, Section 3.2
+  name: Theorem 4
+- description: Let K and L be two convex bodies. The Banach–Mazur distance d(K, L)
+    is the least positive $d \in \mathbb{R}$ for which there is a linear image L'
+    of L such that $L' \subseteq K \subseteq dL'$, where dL' is the convex body obtained
+    by multiplying every vector in L' by the scalar d.
+  kind: definition
+  location: Lecture 11, Section 5
+  name: Definition 6
+- description: 'Let K be an origin-symmetric convex body. Then K contains a unique
+    ellipsoid of maximal volume. Moreover, this largest ellipsoid is $B_2^n$ if and
+    only if the following conditions hold: (1) $B_2^n \subseteq K$; (2) There are
+    unit vectors $u_1, u_2, \ldots, u_m$ on the boundary of K and positive real numbers
+    $c_1, c_2, \ldots, c_m$ such that $\sum_{i=1}^{m} c_i u_i = 0$, and for all vectors
+    x, $\sum_{i=1}^{m} c_i \langle x, u_i \rangle^2 = |x|^2$.'
+  kind: theorem
+  location: Lecture 11, Section 6
+  name: Theorem 8
+- description: If K is a convex body and p is a point not contained in K, then there
+    exists a hyperplane that strongly separates them.
+  kind: theorem
+  location: Lecture 11, Section 3.1 Separating Hyperplanes
+  name: Theorem 3 (Separating Hyperplane Theorem)
+- description: For $A, B \in \mathbb{R}^n$, the Minkowski sum $A \oplus B$ is given
+    by $A \oplus B = \{a + b | a \in A, b \in B\}$.
+  kind: definition
+  location: Section 6
+  name: Definition 6
+- description: Let $A, B \subseteq \mathbb{R}^n$ be compact measurable sets. Then
+    $(\mathrm{Vol}(A \oplus B))^{1/n} \ge (\mathrm{Vol}(A))^{1/n} + (\mathrm{Vol}(B))^{1/n}$.
+    The equality holds when A is a translation of a dilation of B (up to zero-measure
+    sets).
+  kind: theorem
+  location: Lecture 13, Section 2
+  name: Theorem 1
+- description: Let K be a convex body, and let $v_K(t)$ be defined as the (n-1)-dimensional
+    volume of the parallel slice $K_t = K \cap \{x \in \mathbb{R}^n | x_1 = t\}$.
+    Then the function $v_K(t)^{\frac{1}{n-1}}$ is concave.
+  kind: theorem
+  location: Lecture 13, Section 3.1
+  name: Theorem 2 (Brunn's Theorem)
+- description: Let K be a body. The surface area of K is defined as the differential
+    rate of volume increase as we add a small Euclidean ball to the body, i.e., $S(K)
+    = \mathrm{Vol}(\partial K) = \lim_{\epsilon \to 0} \frac{\mathrm{Vol}(K \oplus
+    \epsilon B_2^n) - \mathrm{Vol}(K)}{\epsilon}$.
+  kind: definition
+  location: Lecture 13, Section 3.2
+  name: Definition 3
+- description: For any convex body K, with n-dimensional volume V(K) and surface area
+    S(K), $\left(\frac{V(K)}{V(B_2^n)}\right)^{1/n} \le \left(\frac{S(K)}{S(B_2^n)}\right)^{\frac{1}{n-1}}$.
+  kind: theorem
+  location: Lecture 13, Section 3.2
+  name: Theorem 4 (Isoperimetric inequality)
+- description: $\mathrm{Vol}(A \oplus B) \ge \max\{\mathrm{Vol}(A), \mathrm{Vol}(B)\}$
+  kind: claim
+  location: Section 6
+  name: Fact 7
+- description: $\mathrm{Vol}(A \oplus B) \ge \mathrm{Vol}(A) + \mathrm{Vol}(B)$
+  kind: claim
+  location: Section 6
+  name: Fact 8
+- description: Let A and B be boxes in $\mathbb{R}^n$. Then $\mathrm{Vol}(A \oplus
+    B)^{1/n} \ge \mathrm{Vol}(A)^{1/n} + \mathrm{Vol}(B)^{1/n}$.
+  kind: lemma
+  location: Section 6
+  name: Lemma 9
+- description: Let $L = C \cap \{x_1 \leq \bar{x}_1\}$ be the left side of the cone
+    (which is $x_1$-aligned with vertex at the origin). Then $\frac{1}{2} \geq \frac{V(L)}{V(C)}
+    \geq \frac{1}{e}$.
+  kind: lemma
+  location: Lecture 13, Section 3.3
+  name: Lemma 5
+- description: Let K be a convex body, and divide it into $K_1$ and $K_2$ using a
+    hyperplane. If $K_1$ contains the centroid of K, then $\frac{\mathrm{Vol}(K_1)}{\mathrm{Vol}(K)}
+    \ge \frac{1}{e}$.
+  kind: theorem
+  location: Lecture 13, Section 3.3
+  name: Theorem 6 (Grunbaum's Theorem)
+- description: K' is convex.
+  kind: lemma
+  location: Lecture 13, Section 3.3
+  name: Lemma 7
+- description: We can turn K' into a cone while decreasing the ratio.
+  kind: lemma
+  location: Section 3.3
+  name: Lemma 8
+- description: Let $x \in \{\pm 1\}^n$ be independent random variables with $p[x_i
+    = 1] = .5$, and $a_1, \ldots, a_n$ satisfying $\sum a_i^2 = 1$ (some can be negative).
+    Then $\Pr\left[\left|\sum_{i=1}^{n} a_i x_i\right| > t\right] \le 2e^{-t^2/2}$.
+  kind: theorem
+  location: Lecture 15, Section 8.1
+  name: Theorem 1 (Chernoff bound / Concentration of Measure)
+- description: There is no deterministic poly time algorithm that, given a membership
+    oracle for K, computes $\operatorname{Vol}(K)$ within a polynomial factor.
+  kind: theorem
+  location: Lecture 14, Section 1
+  name: Theorem 2
+- description: $\sum a_i x_i = a \cdot x = $ distance of $x$ from hyperplane $H_a
+    = \{x | a \cdot x = 0\}$.
+  kind: claim
+  location: Lecture 15, Section 8.1
+  name: Claim 2
+- description: 'If f is Lipschitz, M is its median, and $\epsilon > 0$, then $\operatorname{Vol}(\{x
+    : |f(x) - M| > \epsilon\}) \le 2e^{-n\epsilon^2/2}$.'
+  kind: theorem
+  location: Lecture 16
+  name: Theorem 3
+- description: 'A function $f: A \to B$ is c-Lipschitz if, for any $u, v \in A$, we
+    have $\|f(u) - f(v)\| \le c \cdot \|u - v\|$.'
+  kind: definition
+  location: Lecture 17, Section 1.1
+  name: Definition 2 (c-Lipschitz)
+- description: For any $A \subset S^{n-1}$ and any $\epsilon > 0$, $\operatorname{Vol}(A_{\epsilon})
+    > 1 - \frac{2e^{-n\epsilon^2/16}}{\operatorname{Vol}(A)}$.
+  kind: theorem
+  location: Lecture 16
+  name: Theorem 4
+- description: 'The modulus of convexity $\delta$ for a sphere is $\delta(\epsilon)
+    = \inf \left\{ 1 - \left| \frac{x+y}{2} \right| : x, y \in S^{n-1}, |x-y| \ge
+    \epsilon \right\}$.'
+  kind: definition
+  location: Lecture 16
+  name: Definition 5 (Modulus of Convexity)
+- description: 'For a unit vector $x \in \mathbb{S}^{n-1}$, and $f(x) = \sqrt{x_1^2
+    + x_2^2 + \dots + x_k^2}$. Let x be a vector randomly chosen with uniform distribution
+    from $\mathbb{S}^{n-1}$ and M be the median of f(x). Then f(x) is sharply concentrated
+    with: $\Pr[|f(x) - M| \ge t] \le 2e^{-t^2n/2}$.'
+  kind: lemma
+  location: Lecture 17, Section 1.1
+  name: Lemma 3
+- description: 'Suppose that $X = \{x_1, x_2, \dots x_n\}$ is a finite set, d is a
+    metric on X, and $f: X \to \mathbb{R}^k$ is 1-Lipschitz, with $\|f(x_i) - f(x_j)\|
+    \le d(x_i, x_j)$. The "distortion" of f is the minimum D for which $\|f(x_i) -
+    f(x_j)\| \le d(x_i, x_j) \le D\|f(x_i) - f(x_j)\|$ for some positive constant
+    $\alpha$. We refer to f as a D-embedding of X.'
+  kind: definition
+  location: Lecture 17, Section 1.2
+  name: Definition 4 (D-embedding)
+- description: Let $X = \{x_1, x_2, \dots x_n\} \in \mathbb{R}^m$ (for any m) and
+    let $k = O(\varepsilon^{-2} \log n)$. Let $\mathfrak{L} \subseteq \mathbb{R}^m$
+    be a uniform random k dimensional subspace, $\{y_1, y_2, \cdots y_n\}$ be projections
+    of $x_i$ on $\mathfrak{L}$, and $y_i' = cy_i$ for some fixed constant $c = \Theta(\frac{k}{m})$.
+    Then, with high probability $\mathfrak{L}$ is a $(1+\varepsilon)$-embedding of
+    X into $\mathbb{R}^k$, i.e. for $x_i, x_j \in X$, $\|x_i - x_j\| \le \|y_i' -
+    y_j'\| \le (1 + \varepsilon)\|x_i - x_j\|$.
+  kind: theorem
+  location: Lecture 17, Section 1.3
+  name: Theorem 5 (Johnson-Lindenstrauss)
+- description: For any full rank lattice L and measurable set $S \subseteq \mathbf{R}^n$
+    with $\operatorname{Vol}(S) > \det(L)$, there exist distinct $z_1, z_2 \in S$
+    such that $z_1 - z_2 \in L$.
+  kind: theorem
+  location: Lecture 19, Section 1
+  name: Theorem 1 (Blichfield)
+- description: There is a positive constant c > 0 such that, for all $\varepsilon$
+    and n, every n-dimensional origin-symmetric convex body has a section within distance
+    $1 + \varepsilon$ of the unit ball of dimension $k \geq \frac{c\varepsilon^2}{\log(1+\varepsilon^{-1})}\log
+    n$.
+  kind: theorem
+  location: Lecture 17, Section 2
+  name: Theorem 6 (Dvoretsky)
+- description: If L is a full rank lattice, and S any centrally-symmetric convex set
+    of volume greater than $2^n \cdot \det(L)$, then S contains a nonzero point of
+    L.
+  kind: theorem
+  location: Lecture 19, Section 2
+  name: Theorem 2 (Minkowski's Theorem)
+- description: For any full-rank lattice L, $\lambda_1(L) \leq \sqrt{n} \cdot (\det
+    L)^{1/n}$.
+  kind: corollary
+  location: Lecture 19, Section 2
+  name: Corollary 3
+- description: For any nonzero $b \in L(B)$, $\|b\| \ge \min_i \|b_i^{\star}\|$.
+  kind: lemma
+  location: Lecture 19, Section 4.1
+  name: Lemma 4
+- description: A reduced basis for a 2-dimensional lattice contains the first two
+    successive minima of L.
+  kind: proposition
+  location: Lecture 19, Section 4.2
+  name: Proposition 5
+- description: 'Let $\{b_1, \ldots, b_n\}$ be a basis for a lattice L and let M be
+    its Gram-Schmidt matrix. Then $\{b_1, \ldots, b_n\}$ is a reduced basis if it
+    meets the following two conditions: (1) All the non-diagonal entries of M satisfy
+    $|\mu_{ik}| \leq 1/2$. (2) For each i, $\|\pi_{S_i}b_i\|^2 \leq \frac{4}{3}\|\pi_{S_i}b_{i+1}\|^2$,
+    where $S_i$ is the subspace orthogonal to $\operatorname{span}(b_1,\ldots,b_{i-1})$.'
+  kind: definition
+  location: Lecture 19, Section 4.3
+  name: Definition 6 (Reduced bases)
+- description: 'Let $\{b_1, \ldots, b_n\}$ be a basis for a lattice L and let M be
+    its GS matrix. $\{b_1, \ldots, b_n\}$ is a reduced basis if it meets the following
+    two conditions: Condition 1: all the non-diagonal entries of M satisfy $|\mu_{ik}|
+    \leq 1/2$. Condition 2: for each i, $\|\pi_{S_i}b_i\|^2 \leq \frac{4}{3}\|\pi_{S_i}b_{i+1}\|^2$,
+    where $S_i$ is the orthogonal complement of $\operatorname{span}(b_1,\ldots,b_{i-1})$,
+    and $\pi_{S_i}$ is the projection operator to $S_i$.'
+  kind: definition
+  location: Lecture 20, Section 2.1
+  name: Definition 1 (Reduced Basis)
+- description: Given n linearly independent vectors $b_1, \dots, b_n \in \mathbb{R}^m$,
+    the lattice generated by them is defined as $L(b_1, b_2, \dots b_n) = \{\sum x_i
+    b_i | x_i \in \mathbb{Z}\}$. We refer to $b_1, \dots, b_n$ as a basis of the lattice.
+    Equivalently, if we define B as the $m \times n$ matrix whose columns are $b_1,
+    \dots, b_n$, then the lattice generated by B is $L(B) = L(b_1, b_2, \dots, b_n)
+    = \{Bx | x \in \mathbb{Z}^n\}$. We say that the rank of the lattice is n and its
+    dimension is m. If n = m, the lattice is called a full-rank lattice.
+  kind: definition
+  location: Lecture 18, Section 1
+  name: Definition (Lattice)
+- description: For matrix B, $P(B) = \{Bx | x \in [0,1)^n\}$ is the fundamental parallelepiped
+    of B.
+  kind: definition
+  location: Lecture 18, Section 1
+  name: Definition (Fundamental parallelepiped)
+- description: Let $\Lambda$ be a rank n full-rank lattice and B an invertible $n
+    \times n$ matrix. Then B is a basis (of $\Lambda$) if and only if $P(B) \cap \Lambda
+    = \{0\}$.
+  kind: lemma
+  location: Lecture 18, Section 1
+  name: Lemma (Basis characterization via fundamental parallelepiped)
+- description: A square matrix U is unimodular if all entries are integer and $\det(U)
+    = \pm 1$.
+  kind: definition
+  location: Lecture 18, Section 1
+  name: Definition (Unimodular matrix)
+- description: U is unimodular iff $U^{-1}$ is unimodular.
+  kind: lemma
+  location: Lecture 18, Section 1
+  name: Lemma (Unimodular inverse)
+- description: Nonsingular matrices $B_1, B_2$ are equivalent bases if and only if
+    $B_2 = B_1U$ for some unimodular matrix U.
+  kind: lemma
+  location: Lecture 18, Section 1
+  name: Lemma (Equivalent bases and unimodular matrices)
+- description: 'Nonsingular matrices $B_1$, $B_2$ are equivalent if and only if one
+    can be obtained from the other by the following operations on columns: (1) $b_i
+    \leftrightarrow b_i + kb_j$ for some $k \in \mathbb{Z}$, (2) $b_i \leftrightarrow
+    b_j$, (3) $b_i \leftarrow -b_i$.'
+  kind: corollary
+  location: Lecture 18, Section 1
+  name: Corollary (Equivalent bases via column operations)
+- description: Let L = L(B) be a lattice of rank n. We define the determinant of L,
+    denoted det(L), as the n-dimensional volume of P(B), ie $\det(L) = \sqrt{\det(B^TB)}$.
+    In particular if L is a full rank lattice, $\det(L) = |\det(B)|$.
+  kind: definition
+  location: Lecture 18, Section 1
+  name: Definition (Determinant of lattice)
+- description: 'The dual $\Lambda^*$ of lattice $\Lambda$ is $\{x \in \mathbb{R}^n
+    : \forall v \in \Lambda, x \cdot v \in \mathbb{Z}\}$.'
+  kind: definition
+  location: Lecture 18, Section 1.1
+  name: Definition (Dual lattice)
+- description: For matrix B, its dual basis $B^*$ is the unique basis that satisfies
+    (1) $\text{span}(B) = \text{span}(B^*)$ and (2) $B^T B^* = I$.
+  kind: definition
+  location: Lecture 18, Section 1.1
+  name: Definition (Dual basis)
+- description: The $i$th successive minimum of lattice $\Lambda$, $\lambda_i(\Lambda)$,
+    is defined to be $\inf\{r | \dim(\text{span}(\Lambda \cap \bar{B}(0,r)) \geq i\}$.
+  kind: definition
+  location: Lecture 18, Section 2
+  name: Definition (Successive minima)
+- description: For any full-rank lattice $\Lambda$ and (measurable) set $S \subseteq
+    \mathbb{R}^n$ with $\text{vol}(S) > \det(\Lambda)$, there exist distinct $z_1,
+    z_2 \in S$ such that $z_1 - z_2 \in \Lambda$.
+  kind: theorem
+  location: Lecture 18, Section 2
+  name: Theorem (Blichfield)
+- description: Let $\Lambda$ be a full-rank lattice of rank n. Any centrally-symmetric
+    convex set S with $\text{vol}(S) > 2^n \det(\Lambda)$ contains a nonzero lattice
+    point.
+  kind: theorem
+  location: Lecture 18, Section 2
+  name: Theorem (Minkowski)
+- description: 'The spectral radius $\rho$ of a symmetric matrix M is the absolute
+    value of its largest eigenvalue: $\rho = |\lambda_{\text{max}}|$.'
+  kind: definition
+  location: Lecture 21, Section 2.4
+  name: Definition 1
+- description: If $b_1, \ldots, b_n$ is a reduced basis, then $||b_1|| \leq 2^{\frac{n-1}{2}}
+    \lambda_1(L)$.
+  kind: claim
+  location: Section 3.1
+  name: Claim 2
+- description: If our polytope/convex body is in $\mathbb{R}^n$ for any constant n,
+    then there exists a polynomial time algorithm for integer programming.
+  kind: theorem
+  location: Section 4.2.2
+  name: Theorem 3 (Lenstra)
+- description: Let $b_1, \ldots, b_n$ be any basis for L with $||b_1||^2 \le \cdots
+    \le ||b_n||^2$. Then for every $x \in \mathbb{R}^n$, there exists a lattice point
+    y such that $||x - y||^2 \le \frac{1}{4}(||b_1||^2 + \dots + ||b_n||^2) \le \frac{1}{4}n||b_n||^2$.
+  kind: lemma
+  location: Section 4.2.2
+  name: Lemma 4
+- description: For a reduced basis $b_1, \ldots, b_n$ ordered as above, $\prod_{i=1}^{n}
+    ||b_i|| \le 2^{n(n-1)/4} \det(L)$. Consequently, if we let $H = span(b_1, \ldots,
+    b_{n-1})$, then $2^{-n(n-1)/4}||b_n|| \le dist(H, b_n) \le ||b_n||$.
+  kind: lemma
+  location: Section 4.2.2
+  name: Lemma 5
+- description: Suppose A is a square matrix admitting a decomposition A = L + S where
+    L is invertible and the largest singular value of $L^{-1}S$ has absolute value
+    $\rho < 1$. Then the iteration given by (1), (2) for solving Ax = b converges
+    to the correct answer as $\rho^k$.
+  kind: theorem
+  location: Lecture 21, Section 2.4
+  name: Theorem 2
+- description: If the current error vector $e_i$ is an eigenvector of A, then the
+    subsequent descent step moves directly to the correct answer. That is, $e_{i+1}
+    = 0$.
+  kind: claim
+  location: Lecture 21, Section 4.3
+  name: Claim 3
+- description: The energy norm of a vector e is given by $||e||_A = e^T A e$.
+  kind: definition
+  location: Lecture 21, Section 4.3
+  name: Definition 4
+- description: Let $e_i$ denote the error vector at step i of steepest descent. Let
+    $\{v_j\}_{j=1}^n$ be a normalized eigenbasis of A with corresponding eigenvalues
+    $\lambda_j$, and let $e_i = \sum_j \xi_j v_j$ denote the expansion of $e_i$ with
+    respect to this eigenbasis. Then $||e_{i+1}||_A^2 = ||e_i||_A^2 \left( 1 - \frac{(\sum_j
+    \xi_j^2 \lambda_j^2)^2}{(\sum_j \xi_j^2 \lambda_j^3)(\sum_j \xi_j^2 \lambda_j)}
+    \right)$.
+  kind: theorem
+  location: Lecture 21, Section 4.3
+  name: Theorem 5
+- description: Given a graph G with n vertices and m edges, it is possible to obtain
+    a graph H with n + t log^{O(1)} n edges such that L_H ≤ L_G ≤ (n/t)L_H, independent
+    of m.
+  kind: theorem
+  location: Lecture 23, Section 4.1
+  name: Theorem 1
+- description: Let P_{u,v} be a path from u to v of length k, and let E_{u,v} be the
+    graph that just has one edge from u to v. Then E_{u,v} ⪯ kP_{u,v}.
+  kind: lemma
+  location: Lecture 23, Section 4.1.1
+  name: Lemma 2
+- description: Any graph G has a spanning tree T into which it can be embedded such
+    that ∑_{(i,j)∈E(G)} stretch(i,j) ≤ m log^c n.
+  kind: theorem
+  location: Lecture 23, Section 4.1.2
+  name: Theorem 3
+- description: Let m_i^t denote the number of mistakes that expert i makes in the
+    first t games and m^t denote the number of mistakes that Mr. X makes in the first
+    t games. Then for all i and t, m^t ≤ (2 log(n))/ε + 2(1+ε)m_i^t, and in particular,
+    this holds for the i that minimizes m_i^t.
+  kind: theorem
+  location: Lecture 24, Section on Multiplicative Weights
+  name: Theorem (Multiplicative Weights, deterministic)
+- description: Let m_i^t denote the number of mistakes that expert i makes in the
+    first t games and let m^t denote the random variable equal to the number of mistakes
+    that Mr. X makes in the first t games. Then for ε < 1/2 and for all i and t, E(m^t)
+    ≤ log(n)/ε + (1+ε)m_i^t, and in particular, this holds for the i that minimizes
+    m_i^t.
+  kind: theorem
+  location: Lecture 24, Section on Multiplicative Weights
+  name: Theorem (Multiplicative Weights, randomized)
+- description: 'Let D^t denote the probability distribution {p_1^t, …, p_n^t} with
+    which we pick experts to make a prediction for event t. Let M(D^t, j^t) denote
+    the expected value of our penalty when following the distribution D^t for event
+    t and when the actual outcome is j^t. Then for ε ≤ 1/2 and for all T and i, ∑_{t=1}^T
+    M(D^t, j^t) ≤ (ρ log(n))/ε + (1+ε) ∑_{t: M(i,j^t)≥0} M(i, j^t) + (1−ε) ∑_{t: M(i,j^t)<0}
+    M(i, j^t).'
+  kind: theorem
+  location: Lecture 24, Section on Multiplicative Weights
+  name: Theorem (General Multiplicative Weights)
+- description: 'For any δ, for ε ≤ min(1/2, δ/(4ρ)), for T = 16ρ² log(n)/δ² rounds
+    and for all i, the average penalty we get per round obeys: (∑_{t=1}^T M(D^t, j^t))/T
+    ≤ δ + (∑_{t=1}^T M(i, j^t))/T, and in particular our average penalty per round
+    is at most δ bigger than the average penalty of the best expert.'
+  kind: corollary
+  location: Lecture 24, Section on Multiplicative Weights
+  name: Corollary (General Multiplicative Weights)

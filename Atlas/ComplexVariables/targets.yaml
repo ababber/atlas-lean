@@ -1,0 +1,231 @@
+- description: $b^{x}=E(x L(b)), \forall x \in \mathbb{R}$.
+  kind: theorem
+  location: 'Lecture 2: Exponential function & Logarithm for a complex argument'
+  name: Theorem 1
+- description: For any $b>0, x, y \in \mathbb{R}$, we have $b^{x+y}=b^{x} b^{y}$.
+  kind: corollary
+  location: 'Lecture 2: Exponential function & Logarithm for a complex argument'
+  name: Corollary 1
+- description: $e^{z+w}=e^{z} e^{w}$ for all $z, w \in \mathbb{C}$.
+  kind: proposition
+  location: Section on complex exponential
+  name: Proposition 1
+- description: The roots of $z^{n}=1$ are $1, \omega, \omega^{2}, \cdots, \omega^{n-1}$,
+    where $\omega=\cos \frac{2 \pi}{n}+i \sin \frac{2 \pi}{n}$.
+  kind: theorem
+  location: Section on complex exponential and roots of unity
+  name: Theorem 2
+- description: In slit plane, $\operatorname{Log}\left(z_{1} z_{2}\right)=\operatorname{Log}\left(z_{1}\right)+\operatorname{Log}\left(z_{2}\right)+n
+    \cdot 2 \pi i$, where $n=0$ or $\pm 1$, and $n=0$ if $-\pi<\operatorname{Arg}\left(z_{1}\right)+\operatorname{Arg}\left(z_{2}\right)<\pi$.
+  kind: theorem
+  location: Section on complex logarithm
+  name: Theorem 3
+- description: The smallest convex set which contains all the zeros of $P(z)$ also
+    contains the zeros of $P'(z)$.
+  kind: theorem
+  location: 'Lecture 3: Analytic Functions; Rational Functions, Remarks on Lecture
+    3'
+  name: Theorem 1 (Stronger version)
+- description: Given $a_{1}, \cdots, a_{n} \in \mathbb{C}$, the set $$\left\{\sum_{i=1}^{n}
+    m_{i} a_{i} \mid m_{i} \geq 0, \sum_{i=1}^{n} m_{i}=1\right\}$$ is the intersection
+    $C$ of all convex sets containing all $a_{i}$ (which is called the convex hull
+    of $a_{1}, \cdots, a_{n}$).
+  kind: proposition
+  location: 'Lecture 3: Analytic Functions; Rational Functions, Remarks on Lecture
+    3'
+  name: Proposition 1
+- description: If $A$ and $B$ are two nonintersecting circles there exists a linear
+    transformation mapping $A$ and $B$ into concentric circles.
+  kind: theorem
+  location: 'Lecture 6: Conformal Maps; Linear Transformations'
+  name: Theorem 1
+- description: '- $S$ is parabolic if either it is the identity or has exactly one
+    fixed point.
+
+    - $S$ is strictly hyperbolic if $k>0$ in (12) but $k \neq 1$.
+
+    - $S$ is elliptic if $|k|=1$ in (12) p. 86 but $S$ is not identity.'
+  kind: definition
+  location: 'Lecture 7: Linear Transformations'
+  name: Definition 1
+- description: Let $w=\varphi(z)$ be a holomorphic function on a region $\Omega$.
+    Let $\gamma$ be a curve in $\Omega$, then $$\int_{\varphi(\gamma)} f(w) dw = \int_{\gamma}
+    f(\varphi(z)) \varphi'(z) dz$$
+  kind: theorem
+  location: 'Lecture 8: Line Integrals, Remarks on Lecture 8'
+  name: Theorem 1
+- description: Let $R$ be a rational function on $\mathbb{C}$. Then $$\int_{\gamma}
+    R\left(z^{2}\right) d z=0$$ for every circle $\gamma$ around the origin provided
+    $R\left(z^{2}\right) \neq 0$ on $\gamma$.
+  kind: theorem
+  location: Lecture 8, Exercise 3 on page 108
+  name: Theorem 2
+- description: If $f(z)$ is analytic in a region $\Omega$ containing $a$, one has
+    $$f(z)=f(a)+\frac{f^{\prime}(a)}{1!}(z-a)+\cdots+\frac{f^{n-1}(a)}{(n-1)!}(z-a)^{n-1}+f_{n}(z)(z-a)^{n},$$
+    where $f_{n}(z)$ is analytic in $\Omega$. Moreover, if $C$ is the boundary of
+    a closed disk contained in $\Omega$ with center $a$, then $f_{n}(z)$ has the representation
+    $$f_{n}(z)=\frac{1}{2\pi i} \int_{C} \frac{f(\zeta) d\zeta}{(\zeta-a)^{n}(\zeta-z)}
+    \quad(z \text{ inside } C).$$
+  kind: theorem
+  location: Lecture 10, Remarks on Lecture 10
+  name: Theorem 1 (Taylor's Theorem)
+- description: A holomorphic function comes arbitrarily close to any complex value
+    in every neighborhood of an essential singularity.
+  kind: theorem
+  location: 'Lecture 11: Isolated Singularities'
+  name: Theorem 9
+- description: A closed curve $\gamma$ in an open set $\Omega$ is homologous to 0
+    (written $\gamma \sim 0$) with respect to $\Omega$ if $n(\gamma, a)=0$ for all
+    $a \notin \Omega$.
+  kind: definition
+  location: 'Lecture 13: The General Cauchy Theorem'
+  name: Definition 1
+- description: A region is simply connected if its complement with respect to the
+    extended plane is connected.
+  kind: definition
+  location: 'Lecture 13: The General Cauchy Theorem'
+  name: Definition 2
+- description: If $f$ is analytic in an open set $\Omega$, then $\int_{\gamma} f(z)\,
+    dz = 0$ for every closed curve $\gamma \subset \Omega$ such that $\gamma \sim
+    0$. In particular, if $\Omega$ is simply connected then $\int_{\gamma} f(z)\,
+    dz = 0$ for every closed $\gamma \subset \Omega$.
+  kind: theorem
+  location: 'Lecture 13: The General Cauchy Theorem'
+  name: Theorem 1 (Cauchy's Theorem)
+- description: Let $f$ be holomorphic in an open set $\Omega$. Then $n(\gamma, z)
+    f(z) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(\zeta)}{\zeta - z}\, d\zeta$ where
+    $\gamma \sim 0$ with respect to $\Omega$.
+  kind: theorem
+  location: 'Lecture 13: The General Cauchy Theorem'
+  name: Theorem 2 (Cauchy's Integral Formula)
+- description: $g$ is continuous on $\Omega \times \Omega$ and holomorphic in each
+    variable and $g(z, \zeta) = g(\zeta, z)$, where $g(z,\zeta) = \frac{f(\zeta)-f(z)}{\zeta-z}$
+    for $z \neq \zeta$ and $g(z,\zeta) = f'(z)$ for $z = \zeta$.
+  kind: claim
+  location: 'Lecture 13: The General Cauchy Theorem'
+  name: Claim 1
+- description: The residue is defined as $$R = \operatorname{Res}_{z=a} f(z) \triangleq
+    \frac{1}{2\pi i} \int_{C} f(z) dz$$ where $C$ is any circle contained in $\Omega$
+    with center $a$, and $f(z)$ is holomorphic in $\Omega' = \Omega - a$.
+  kind: definition
+  location: 'Lecture 14: The Residue Theorem and Application'
+  name: Definition 1
+- description: Let $f$ be analytic except for isolated singularities $a_j$ in a region
+    $\Omega$. Let $\gamma$ be a simple closed curve which has interior contained in
+    $\Omega$ and $a_j \notin \gamma$ (all $j$). Then $$\frac{1}{2\pi i} \int_{\gamma}
+    f(z) dz = \sum_{j} \operatorname{Res}_{z=a_j} f(z)$$ where the sum ranges over
+    all $a_j$ inside $\gamma$.
+  kind: theorem
+  location: 'Lecture 14: The Residue Theorem and Application'
+  name: Theorem 17'
+- description: $h$ is holomorphic, where $h$ is defined on $\mathbb{C}$ by $h(z) =
+    \frac{1}{2\pi i} \int_{\gamma} g(z, \zeta) d\zeta$ for $z \in \Omega$ and $h(z)
+    = \frac{1}{2\pi i} \int_{\gamma} \frac{f(\zeta)}{\zeta - z} d\zeta$ for $z \in
+    \Omega'$.
+  kind: claim
+  location: Proof of Theorem 2 (Cauchy's Integral Formula)
+  name: Claim 2
+- description: $h \equiv 0$, so the Cauchy Integral Formula (1) holds.
+  kind: claim
+  location: Proof of Theorem 2 (Cauchy's Integral Formula)
+  name: Claim 3
+- description: Let $f(z)$ be meromorphic in $\Omega$, $\gamma \subset \Omega$ a simple
+    closed curve with interior inside $\Omega$. Assume $\gamma$ passes through no
+    zeros nor poles of $f$. Then $$\frac{1}{2\pi i}\int_{\gamma}\frac{f'(z)}{f(z)}dz
+    = N - P$$ where $N$ is the number of zeros, $P$ the number of poles inside $\gamma$,
+    all counted with multiplicity.
+  kind: theorem
+  location: 'Application: The Argument Principle'
+  name: Theorem 18'
+- description: Let $f$ and $g$ be holomorphic in a region $\Omega$. Let $\gamma$ be
+    a simple closed curve in $\Omega$ with interior $\subset \Omega$. Assume $$|f(z)-g(z)|<|f(z)|
+    \quad \text{on} \quad \gamma.$$ Then $f$ and $g$ have the same number of zeros
+    inside $\gamma$, say $N_f$ and $N_g$.
+  kind: corollary
+  location: 'Application: The Argument Principle'
+  name: Corollary 1 (Rouche's Theorem)
+- description: A real-valued function $u(z)=u(x, y)$ in a region $\Omega$ is harmonic
+    if it is $C^{2}$ and satisfying the equation $$\frac{\partial^{2} u}{\partial
+    x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}=0.$$
+  kind: definition
+  location: 'Lecture 16: Harmonic Functions'
+  name: Definition 1
+- description: If $\Omega$ is simply connected and $u$ harmonic in $\Omega$, there
+    exists a holomorphic function $f(z)$ such that $$u(z)=\operatorname{Re} f(z).$$
+  kind: theorem
+  location: 'Lecture 16: Harmonic Functions'
+  name: Theorem 1
+- description: If $u$ is harmonic in $\Omega$, then if the disk $|z-z_{0}| \leq r$
+    lies in $\Omega$, $$u(z_{0})=\frac{1}{2\pi} \int_{0}^{2\pi} u(z_{0}+re^{i\theta})\,
+    d\theta.$$
+  kind: corollary
+  location: 'Lecture 16: Harmonic Functions'
+  name: Corollary 1
+- description: 'If $u$ is harmonic in $\Omega$, and $\{z: r_{1} \leq |z-z_{0}| \leq
+    r_{2}\} \in \Omega$, then $$\frac{1}{2\pi} \int_{0}^{2\pi} u(z_{0}+re^{i\theta})\,
+    d\theta = \alpha \log r + \beta, \quad r_{1} \leq r \leq r_{2}$$ where $\alpha$
+    and $\beta$ are constants.'
+  kind: theorem
+  location: 'Lecture 16: Harmonic Functions'
+  name: Theorem 20
+- description: Let $U$ be a real piecewise continuous function on $|z|=1$ and define
+    the Poisson integral $u(z)=P_{U}(z)$ by $$u(a)=\frac{1}{2\pi} \int_{0}^{2\pi}
+    \frac{1-|a|^{2}}{|a-e^{i\varphi}|^{2}} U(e^{i\varphi})\, d\varphi, \quad |a|<1.$$
+    Then $u$ is harmonic, and $$\lim_{z \rightarrow e^{i\varphi_{0}}} u(z)=U(e^{i\varphi_{0}})$$
+    if $U$ is continuous at $e^{i\varphi_{0}}$.
+  kind: theorem
+  location: 'Lecture 16: Harmonic Functions, Schwarz'' Theorem'
+  name: Theorem 2 (Schwarz' Theorem)
+- description: Let $\{b_{\nu}\}$ be a sequence in $\mathbb{C}$ such that $\lim_{\nu
+    \rightarrow \infty} b_{\nu}=\infty$ and $P_{\nu}(\zeta)$ polynomials without constant
+    term. Then there exist functions $f$ meromorphic in $\mathbb{C}$ with poles at
+    just the points $b_{\nu}$ and corresponding singular parts $P_{\nu}\left(\frac{1}{z-b_{\nu}}\right)$.
+    The most general $f(z)$ of this kind can be written $$f(z)=g(z)+\sum_{\nu}\left[P_{\nu}\left(\frac{1}{z-b_{\nu}}\right)-p_{\nu}(z)\right]$$
+    where $g$ is holomorphic in $z$ and the $p_{\nu}$ are polynomials.
+  kind: theorem
+  location: 'Lecture 17: Mittag-Leffer''s Theorem'
+  name: Theorem 1 (Mittag-Leffer's Theorem)
+- description: If $(A_{n})$ is bounded, $v_{n} \rightarrow 0$, and $\sum_{n=1}^{\infty}\left|v_{n}-v_{n+1}\right|<\infty$,
+    then $\sum_{n=0}^{\infty} a_{n} v_{n}$ converges.
+  kind: lemma
+  location: Lecture 17, Exercise 3 on p. 178
+  name: Lemma 1
+- description: 'For $x>0, y>0$, $$\int_{0}^{1} t^{x-1}(1-t)^{y-1} dt = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}.$$
+    This extends to $\operatorname{Re} z > 0, \operatorname{Re} w > 0$: $\int_{0}^{1}
+    t^{z-1}(1-t)^{w-1} dt = \frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}$.'
+  kind: proposition
+  location: Lecture 18, properties of the Gamma function, item (iii)
+  name: Proposition (iii)
+- description: Let $\Omega \subset \mathbb{C}$ be a region, $\mathcal{F}$ a family
+    of holomorphic functions on $\Omega$ such that for each compact $E \subset \Omega$,
+    $\mathcal{F}$ is uniformly bounded on $E$. Then $\mathcal{F}$ has a subsequence
+    converging uniformly on each compact subset of $\Omega$.
+  kind: theorem
+  location: 'Lecture 19: Normal Families'
+  name: Theorem 1
+- description: $\frac{1}{\zeta(s)}=\prod_{1}^{\infty}\left(1-p_{n}^{-s}\right)$ for
+    $\operatorname{Re} s>1$.
+  kind: theorem
+  location: 'Lecture 21 and 22: The Prime Number Theorem'
+  name: I
+- description: $\zeta(s)-\frac{1}{s-1}$ extends to a holomorphic function in $\operatorname{Re}
+    s>0$.
+  kind: theorem
+  location: 'Lecture 21 and 22: The Prime Number Theorem'
+  name: II
+- description: $\mathcal{V}(x)=O(x)$.
+  kind: theorem
+  location: 'Lecture 21 and 22: The Prime Number Theorem'
+  name: III
+- description: $\zeta(s) \neq 0$ and $\Phi(s)-\frac{1}{s-1}$ is holomorphic for $\operatorname{Re}
+    s \geq 1$.
+  kind: theorem
+  location: 'Lecture 21 and 22: The Prime Number Theorem'
+  name: IV
+- description: Let $f(t)$ ($t \geq 0$) be bounded and locally integrable and assume
+    the function $g(z)=\int_{0}^{\infty} e^{-z t} f(t) d t$ for $\operatorname{Re}(z)>0$
+    extends to a holomorphic function on $\operatorname{Re}(z) \geq 0$, then $\lim_{T
+    \rightarrow \infty} \int_{0}^{T} f(t) d t$ exists and equals $g(0)$.
+  kind: theorem
+  location: Section V (within proof of Prime Number Theorem)
+  name: Theorem 1 (Analytic Theorem)

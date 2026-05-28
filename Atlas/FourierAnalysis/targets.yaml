@@ -1,0 +1,242 @@
+- description: If $f$ and $g$ belong to $L^1(\mathbf{T})$, then $f * g \in L^1(\mathbf{T})$
+    and $\|f * g\|_p \le \|f\|_p \|g\|_1$.
+  kind: proposition
+  location: Fourier Series, Continued (part 3)
+  name: Proposition 1
+- description: 'Let $f \in C(\mathbb{R}/2\pi\mathbb{Z})$, that is, $f$ is a continuous
+    function on $\mathbb{R}$ such that $f(x+2\pi) = f(x)$. Let $K_N(x)$ satisfy: i)
+    $\frac{1}{2\pi} \int_{-\pi}^{\pi} K_N(x) dx = 1$, ii) $\sup_{N} \int_{-\pi}^{\pi}
+    |K_N(x)| dx \le M$, iii) For any $\delta > 0$, $\int_{\delta \le |x| \le \pi}
+    |K_N(x)| dx \to 0$ as $N \to \infty$. Then $\max_{x} |f(x) - f * K_N(x)| \to 0$
+    as $N \to \infty$.'
+  kind: lemma
+  location: Fourier Series 2
+  name: Lemma 1 (Approximate Identity Lemma)
+- description: Let $f \in L^1(\mathbf{T})$. Then $\lim_{N\to\infty} \|f - \sigma_N
+    f\|_1 = 0$. In particular, trigonometric polynomials are dense in $L^1(\mathbf{T})$.
+  kind: theorem
+  location: Fourier Series, Continued (part 3)
+  name: Theorem 1
+- description: Trigonometric polynomials are dense in continuous, periodic of $2\pi$
+    functions in the uniform norm.
+  kind: corollary
+  location: Fourier Series 2
+  name: Corollary 1
+- description: The functions $e^{inx}$, $n \in \mathbf{Z}$ form an orthonormal basis
+    for $L^2(\mathbf{T})$. In particular, for all $f \in L^2(\mathbf{T})$, $\lim_{N
+    \to \infty} \|s_N - f\|_2 = 0$, and $\|f\|_2^2 = \sum_{n \in \mathbf{Z}} |\hat{f}(n)|^2$.
+  kind: corollary
+  location: Section 1, Fourier Series, Part 1
+  name: Corollary 2
+- description: If $f \in L^2(\mathbb{R}) \cap L^1(\mathbb{R})$, then the definition
+    by continuity in Corollary 2 for $\hat{f}$ coincides with the definition $\hat{f}(\xi)
+    = \int_{-\infty}^{\infty} f(x)e^{-ix\xi} dx$.
+  kind: proposition
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Proposition 1
+- description: If $f \in \mathcal{S}(\mathbb{R})$, then $\hat{f} \in \mathcal{S}(\mathbb{R})$
+    and $f(x) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \hat{f}(\xi) e^{ix\xi} d\xi$.
+    Thus the inverse operator to the Fourier transform is given by $\check{g}(x) =
+    \frac{1}{2\pi} \int_{-\infty}^{\infty} g(\xi) e^{ix\xi} d\xi = \frac{1}{2\pi}
+    \hat{g}(-x)$.
+  kind: theorem
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Theorem 1
+- description: If $f \in \mathcal{S}(\mathbb{R})$, then $2\pi \int_{\mathbb{R}} |f(x)|^2
+    dx = \int_{\mathbb{R}} |\hat{f}(\xi)|^2 d\xi$.
+  kind: corollary
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Corollary 1
+- description: 'If $h \in L^1(\mathbb{R}) \cap L^2(\mathbb{R})$, then the inverse
+    Fourier transform obtained by continuity in the $L^2$ norm coincides with the
+    $L^1$ definition: $\mathcal{G}(h)(x) = \frac{1}{2\pi} \int_{-\infty}^{\infty}
+    h(\xi) e^{ix\xi} d\xi$.'
+  kind: proposition
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Proposition 2
+- description: Suppose that $f \in L^2(\mathbb{R})$. Then $\hat{f}(\xi)1_{[-N,N]}(\xi)$
+    is in $L^2(\mathbb{R}) \cap L^1(\mathbb{R})$ and $s_N(x) = \frac{1}{2\pi} \int_{-N}^{N}
+    \hat{f}(\xi) e^{ix\xi} d\xi$ satisfies $\lim_{N \to \infty} \|f - s_N\|_{L^2}
+    = 0$.
+  kind: theorem
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Theorem 2
+- description: Let $f \in L^2(\mathbb{R})$ and let $f_j \in \mathcal{S}(\mathbb{R})$
+    be such that $\|f - f_j\|_2 \to 0$ as $j \to \infty$. Then $\hat{f}_j$ is a Cauchy
+    sequence in $L^2(\mathbb{R})$ and the limit (in the $L^2$ metric) is independent
+    of the choice of sequence approximating $f$. Thus there is a unique function denoted
+    $\hat{f} \in L^2(\mathbb{R})$ for which $\lim_{j \to \infty} \|\hat{f} - \hat{f}_j\|_2
+    = 0$. Furthermore, $\|\hat{f}\|_2^2 = 2\pi \|f\|_2^2$.
+  kind: corollary
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Corollary 2
+- description: If $f \in L^2(\mathbb{R})$, and $\hat{f} = 0$ almost everywhere, then
+    $f = 0$.
+  kind: corollary
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Corollary 3
+- description: Let $\mathcal{G}(f)(x) = \frac{1}{2\pi}\hat{f}(-x)$. Then for all $f
+    \in L^2(\mathbb{R})$, $\mathcal{G} \circ \mathcal{F}(f) = \mathcal{F} \circ \mathcal{G}(f)
+    = f$. Thus, up to the factor $2\pi$, the Fourier transform is an isometry (distance
+    preserving) from $L^2(\mathbb{R})$ to itself.
+  kind: corollary
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Corollary 4 (Fourier inversion on $L^2$)
+- description: Let $f \in L^1(\mathbb{R})$ and denote $\sigma_N(x) = \frac{1}{2\pi}
+    \int_{-N}^{N} (1 - |\xi/N|)^+ \hat{f}(\xi) e^{ix\xi} d\xi$. Then $\lim_{N\to\infty}
+    \|f - \sigma_N\|_{L^1} = 0$.
+  kind: theorem
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Theorem 3
+- description: If $f \in L^1(\mathbb{R})$, and $\hat{f} = 0$, then $f = 0$.
+  kind: corollary
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Corollary 5
+- description: If $K \in L^1(\mathbb{R})$, $K_{\epsilon}(x) = (1/\epsilon)K(x/\epsilon)$,
+    and $\int_{-\infty}^{\infty} K(x)\, dx = 1$, then $\|K_{\epsilon} * f - f\|_1
+    \to 0$ for all $f \in L^1(\mathbb{R})$.
+  kind: theorem
+  location: 'Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$'
+  name: Theorem 4 (Approximate identity)
+- description: 'For $\mu \in M_+(\mathbb{R})$, we define the Fourier transform by
+    $\mathcal{F}(\mu) = \hat{\mu}(\xi) = \int_{\mathbb{R}} e^{-ix\xi}\, d\mu(x)$.
+    Then $\mathcal{F}: M_+(\mathbb{R}) \to C_b(\mathbb{R})$ where $C_b(\mathbb{R})$
+    is the space of bounded continuous functions.'
+  kind: proposition
+  location: Section 1, Fourier Integrals of finite measures
+  name: Proposition 1
+- description: Let $\mu \in M_+(\mathbb{R})$. Then $\mu$ is uniquely determined by
+    $\hat{\mu}$.
+  kind: theorem
+  location: Section 1, Fourier Integrals of finite measures
+  name: Theorem 1 (Uniqueness)
+- description: If $\mu_j$ and $\mu$ belong to $M^+(\mathbb{R})$, and for each $\xi
+    \in \mathbb{R}$, $\lim_{j\to\infty}\hat{\mu}_j(\xi)=\hat{\mu}(\xi)$, then $\lim_{j
+    \to \infty} \int_{\mathbb{R}} f\, d\mu_j = \int_{\mathbb{R}} f\, d\mu$ for all
+    $f \in \mathcal{S}(\mathbb{R})$.
+  kind: proposition
+  location: Section 1, Fourier Integrals of finite measures
+  name: Proposition 2
+- description: If $\lim_{j \to \infty} \int_{\mathbb{R}} f\, d\mu_j = \int_{\mathbb{R}}
+    f\, d\mu$ for all $f \in C_0^{\infty}(\mathbb{R})$, then $\limsup_{j \to \infty}
+    \mu_j((a, b)) \le \mu([a, b])$ and $\liminf_{j \to \infty} \mu_j((a, b)) \ge \mu((a,
+    b))$. In particular if $\mu$ is continuous then $\mu_j((a,b)) \to \mu((a,b)) =
+    \mu([a,b])$.
+  kind: proposition
+  location: Section 1, Fourier Integrals of finite measures
+  name: Proposition 3
+- description: Let $X_1, X_2, \ldots$ be independent, identically distributed random
+    variables such that $\mathbb{E}(X_1) = M$, $\mathbb{E}[(X_1 - M)^2] = \sigma^2$,
+    and $\mathbb{E}(|X_1|^{2+\alpha}) = A < \infty$ for some $\alpha > 0$. Then $\mathbb{E}\left(a
+    < \frac{X_1 + \dots + X_n - nM}{\sqrt{n}} < b\right) \longrightarrow \int_a^b
+    g_\sigma(x)\, dx$.
+  kind: theorem
+  location: Section 2, An application to the central limit theorem
+  name: Theorem 2 (Central Limit Theorem)
+- description: $e^{ix} = 1 + ix + (ix)^2/2 + R(x)$ with $|R(x)| \le 4\min(|x|^2, |x|^3)
+    \le 4|x|^{2+\alpha}$ for all $\alpha$, $0 < \alpha < 1$.
+  kind: lemma
+  location: Section 2, An application to the central limit theorem
+  name: Lemma 1
+- description: If $T \in \mathcal{S}'(\mathbb{R})$, and define $S$ by $S(\varphi)
+    = T(\check{\varphi})$, then $S \in \mathcal{S}'(\mathbb{R})$ and $\hat{S} = T$.
+    In other words, the mapping $T \mapsto \check{T}$ defined by $\check{T}(\varphi)
+    = T(\check{\varphi})$ inverts the Fourier transform on $\mathcal{S}'(\mathbb{R})$.
+  kind: proposition
+  location: Section 3, $\mathcal{S}'(\mathbb{R})$, the class of tempered distributions
+  name: Proposition 4
+- description: If $\|u_n - u\| \to 0$ and $\|v_n - v\| \to 0$ as $n \to \infty$, then
+    $\|u_n\| \to \|u\|$; $\langle u_n, v_n \rangle \to \langle u, v \rangle$.
+  kind: proposition
+  location: Orthonormal Bases
+  name: Proposition 1 (Continuity)
+- description: $\varphi_n$ is called an orthonormal sequence, $n = 1, 2, \ldots$,
+    if $\langle \varphi_n, \varphi_m \rangle = 0$ for $n \neq m$ and $\langle \varphi_n,
+    \varphi_n \rangle = \|\varphi_n\|^2 = 1$.
+  kind: definition
+  location: Orthonormal Bases
+  name: Definition 1
+- description: A Hilbert space is defined as a complete inner product space (under
+    the distance $d(u, v) = \|u - v\|$).
+  kind: definition
+  location: Orthonormal Bases
+  name: Definition 2
+- description: For $1 \le p < \infty$, $L^p(X, \mu)$ is a Banach space.
+  kind: theorem
+  location: Section 1, Completeness of L^p
+  name: Theorem 1
+- description: Let $\varphi_n$ be an orthonormal sequence in a Hilbert space $H$,
+    and $\sum |a_n|^2 < \infty$, $\sum |b_n|^2 < \infty$. Then $u = \sum_{n=1}^{\infty}
+    a_n \varphi_n$, $v = \sum_{n=1}^{\infty} b_n \varphi_n$ are convergent series
+    in $H$ norm and $\langle u, v \rangle = \sum_{n=1}^{\infty} a_n \overline{b_n}$.
+  kind: proposition
+  location: Orthonormal Bases
+  name: Proposition 2
+- description: $C_0^{\infty}(\mathbf{R}^n)$ is dense in $L^p(\mathbf{R}^n)$ for $1
+    \le p < \infty$.
+  kind: theorem
+  location: Section 2, Density in L^p
+  name: Theorem 2
+- description: Let $0 \le t_0 < t_1 < t_2 < \dots < t_m$ and let $I_1 \times I_2 \times
+    \dots I_m \subset \mathbb{R}^m$ be a rectangle (product of intervals). Let $\sigma_j
+    > 0$ be such that $\sigma_j^2 = t_j - t_{j-1}$. Then $$\lim_{n \to \infty} P[(f_n(t_1)
+    - f_n(t_0), f_n(t_2) - f_n(t_1), \dots, f_n(t_m) - f_n(t_{m-1})) \in I_1 \times
+    \dots \times I_m] = \int_{I_1 \times \dots \times I_m} \prod_{j=1}^m g_{\sigma_j}(x_j)
+    \, dx_1 \cdots dx_m$$
+  kind: theorem
+  location: Chapter 1 (Brownian Motion)
+  name: Theorem 1
+- description: Let W be given by (3). Then W(0) = 0 and (a) B(t) = W(t) satisfies
+    (2) (or equivalently (1)) on $0 \le t \le \pi$. (b) W is almost surely continuous
+    in t.
+  kind: theorem
+  location: Chapter 1 (Brownian Motion)
+  name: Theorem 2
+- description: If $X_k$ are independent gaussians with mean 0 and variance $\sigma_k^2$
+    with $\sum_k \sigma_k^2 < \infty$, then $X_1 + X_2 + \cdots$ converges in $L^2(\Omega)$
+    to a gaussian random variable with mean zero and variance $\sigma^2 = \sum_k \sigma_k^2$.
+  kind: proposition
+  location: Chapter 1 (Brownian Motion)
+  name: Proposition 1
+- description: Let $X = (X_1, \dots, X_m)$ be independent gaussian random variables
+    with mean zero. Let $A = (a_{ik})$ be an invertible (real-valued) matrix and define
+    $Y = (Y_1, \dots, Y_m)$ by $Y_j = \sum_{k=1}^m a_{jk} X_k$. Then for every $a
+    = (a_1, \dots, a_m) \in \mathbb{R}^m$, $a \cdot Y = \sum_{j=1}^{m} a_j Y_j$ is
+    a gaussian random variable with mean 0. Conversely, if $Z = (Z_1, \dots, Z_m)$
+    are random variables such that for every $a = (a_1, \dots, a_m)$, $a \cdot Z =
+    \sum_{j=1}^{m} a_j Z_j$ is a gaussian random variable with mean 0 and covariances
+    coincide with those of Y, $\mathbb{E}(Z_i Z_k) = \mathbb{E}(Y_i Y_k)$, then the
+    joint distribution of $Z = (Z_1, \dots, Z_m)$ is the same as that of Y. In other
+    words, $P(Z \in E) = P(Y \in E)$ for all Borel sets $E \subset \mathbb{R}^m$.
+    Moreover, $A^{-1}Z$ has the same probability distribution as X.
+  kind: lemma
+  location: Chapter 1 (Brownian Motion)
+  name: Lemma 1
+- description: Suppose that B(t) is such that B(0) = 0. Then B satisfies property
+    (2) if and only if (a) $\sum_{j=1}^{m} \xi_j B(t_j)$ is a Gaussian random variable
+    with mean 0, and (b) $\mathbb{E}(B(s)B(t)) = s \wedge t$, ($s \wedge t = \min(s,t)$).
+  kind: proposition
+  location: Chapter 1 (Brownian Motion)
+  name: Proposition 2
+- description: If $a_k$ are mean zero variance 1 gaussians, then $\mathbb{E}(|a_{i_1}a_{i_2}a_{i_3}a_{i_4}|)
+    \le \mathbb{E}(|a_1|^4) = 3 < \infty$.
+  kind: lemma
+  location: Chapter 1 (Brownian Motion)
+  name: Lemma 2
+- description: For $m \ge 1$ and $0 \le \beta \le 2$, $$R_{\beta}(m) = \int_{0}^{1}
+    r^{m} (1-r)^{\beta} dr \leq 100\, m^{-1-\beta}.$$
+  kind: lemma
+  location: Chapter 1 (Brownian Motion)
+  name: Lemma 3
+- description: For any $\beta > 1$, $$\mathbb{E} \int_{0}^{2\pi} \int_{0}^{1} |\nabla
+    F(re^{it})|^{4} (1-r)^{\beta} r \, dr \, dt < \infty,$$ and, consequently $$\int_0^{2\pi}
+    \int_0^1 |\nabla F(re^{it})|^4 (1-r)^\beta r \, dr \, dt < \infty,$$ almost surely.
+  kind: lemma
+  location: Chapter 1 (Brownian Motion)
+  name: Lemma 4
+- description: If F satisfies (5) on $|z| \leq 1$, for some $\alpha$, $0 < \alpha
+    \leq 1$, then $F(e^{it})$ is Hölder continuous with exponent $\alpha$, that is,
+    $|F(e^{t_1}) - F(e^{it_2})| \le C|t_1 - t_2|^{\alpha}$.
+  kind: lemma
+  location: Chapter 1 (Brownian Motion)
+  name: Lemma 5

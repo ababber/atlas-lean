@@ -1,0 +1,213 @@
+- name: Claim 1 (matching characterization)
+  kind: claim
+  location: Polyhedral Combinatorics, Sept 16 (introduction)
+  description: Any vector x = (x_e)_{e in E} satisfying x_e in {0,1} for all e in E and sum_{e in delta(v)}
+    x_e <= 1 for all v in V is the indicator vector of a matching of G = (V, E).
+- name: Theorem 2 (Minkowski-Weyl)
+  kind: theorem
+  location: Polyhedral Combinatorics, Sept 16 (Review of linear algebra and convexity)
+  description: Every convex polytope (the convex hull of a finite set of points in R^n) is a polyhedron
+    (the intersection of finitely many closed half-spaces).
+- name: Theorem 1 (matching polytope of bipartite graphs)
+  kind: theorem
+  location: The Matching Polytope - Bipartite Graphs, Sept 18
+  description: Let G = (V, E) be a bipartite graph and let M be the convex hull of the indicator vectors
+    of all matchings of G. Define the relaxed polytope P as the set of x in R^E_{>=0} such that sum_{e
+    in delta(v)} x_e <= 1 for all v in V. Then P = M, i.e. every vertex of P is the indicator vector of
+    a matching.
+- name: Observation 2 (integrality of vertex solutions)
+  kind: observation
+  location: The Matching Polytope - Bipartite Graphs, Sept 18 (Proof II)
+  description: Let A be an integer m x n matrix and b an integer vector, and let y be a vertex of the
+    polyhedron P = {x such that Ax <= b} given by an n x n nonsingular submatrix A_1 of A and corresponding
+    subvector b_1 of b satisfying A_1 y = b_1. If det(A_1) = +/- 1 then y is integral.
+- name: Definition 3 (totally unimodular matrix)
+  kind: definition
+  location: The Matching Polytope - Bipartite Graphs, Sept 18
+  description: A matrix A is said to be totally unimodular if every square submatrix of A has determinant
+    in {-1, 0, 1}.
+- name: Lemma 4 (constraint matrix is totally unimodular)
+  kind: lemma
+  location: The Matching Polytope - Bipartite Graphs, Sept 18
+  description: Let G = (V, E) be a bipartite graph. The constraint matrix obtained by stacking the |V|
+    x |E| vertex-edge incidence matrix of G on top of the negative of the |E| x |E| identity matrix is
+    totally unimodular.
+- name: Theorem 1 (Edmonds, perfect matching polytope)
+  kind: theorem
+  location: The Matching Polytope - General graphs, Sept 23
+  description: Let G = (V, E) be any graph (not necessarily bipartite) with |V| even, and let PM(G) be
+    the convex hull of indicator vectors of perfect matchings of G. Define P to be the set of x in R^E
+    satisfying (1) x_e >= 0 for all e in E, (2) sum_{e in delta(v)} x_e = 1 for all v in V, and (3) sum_{e
+    in delta(S)} x_e >= 1 for every odd-sized subset S of V. Then P = PM(G).
+- name: Claim 2 (decomposition into perfect matchings)
+  kind: claim
+  location: The Matching Polytope - General graphs, Sept 23 (proof of Edmonds' theorem)
+  description: 'With the notation in the proof of Edmonds'' theorem (a candidate non-integral vertex x
+    of P, a tight odd cut (W, W_bar), and the contracted decompositions x'' = sum_{M''} lambda_{M''} chi^{M''}
+    in PM(G'') and x'''' = sum_{M''''} alpha_{M''''} chi^{M''''} in PM(G'''')), one has x = sum_{e in
+    (W, W_bar)} sum_{M : e in M} (lambda_{M''} alpha_{M''''} / x_e) chi^M, exhibiting x as a convex combination
+    of perfect matchings of G.'
+- name: Lemma 1 (success probability of contraction algorithm)
+  kind: lemma
+  location: Minimum Cuts, Oct 2 (Randomized minimum cut algorithm)
+  description: When the randomized contraction algorithm is run on an undirected multigraph on n vertices,
+    any particular minimum cut is returned as the output with probability at least 1 / C(n, 2), which
+    is approximately 2 / n^2.
+- name: Weak Duality Theorem
+  kind: theorem
+  location: Linear Programs, Oct 14
+  description: For the standard primal LP max c^T x subject to Ax <= b, x >= 0, and its dual min b^T y
+    subject to A^T y >= c, y >= 0, max{c^T x such that Ax <= b, x >= 0} <= min{b^T y such that A^T y >=
+    c, y >= 0}.
+- name: Theorem 1 (complementary slackness)
+  kind: theorem
+  location: The Primal-dual Algorithm, Oct 28
+  description: 'For the standard primal-dual pair (P) max{c^T x such that Ax <= b, x >= 0} and (D) min{b^T
+    y such that A^T y >= c, y >= 0}, suppose x and y are feasible solutions to (P) and (D). Then x and
+    y are simultaneously optimal if and only if the complementary slackness conditions hold: for all i,
+    (b_i - sum_j a_{ij} x_j) y_i = 0; and for all j, (sum_i a_{ij} y_i - c_j) x_j = 0.'
+- name: Theorem 1 (Menger)
+  kind: theorem
+  location: Flow Duality and algorithms, Sept 25-30 (Introduction)
+  description: A directed graph G = (V, E) admits k edge-disjoint paths from a source s to a sink t if
+    and only if k is at most the size of every directed s-t cut; equivalently, the maximum number of edge-disjoint
+    s-t paths equals the size of the minimum directed s-t cut.
+- name: Lemma 2 (flow bounded by cut capacity)
+  kind: lemma
+  location: Flow Duality and algorithms, Sept 25-30 (Max Flow-Min Cut)
+  description: Let f be an s-t flow in a directed network G with capacities c, and let (S, S_bar) be any
+    s-t cut with s in S and t in S_bar. Then the value f of the flow satisfies f <= c(S, S_bar), where
+    c(S, S_bar) is the sum of the capacities of edges from S to S_bar.
+- name: Theorem 3 (max-flow no augmenting path)
+  kind: theorem
+  location: Flow Duality and algorithms, Sept 25-30 (Max Flow-Min Cut)
+  description: An s-t flow f in a directed network G is of maximum value if and only if there is no f-augmenting
+    path in G; equivalently, no directed s-t path in the residual graph Res(G).
+- name: Theorem 4 (Max Flow-Min Cut)
+  kind: theorem
+  location: Flow Duality and algorithms, Sept 25-30 (Max Flow-Min Cut)
+  description: In a directed network with a source s and a sink t, the value of a maximum s-t flow equals
+    the capacity of a minimum s-t cut.
+- name: Claim 1 (augmenting paths via residual graph)
+  kind: claim
+  location: Flow Duality and algorithms, Sept 25-30 (Weakly Polynomial Algorithm)
+  description: An augmenting path for a flow f in G corresponds to a directed s-t path in the residual
+    graph Res(G), and conversely every directed s-t path in Res(G) corresponds to an f-augmenting path
+    in G.
+- name: Claim 2 (flow path decomposition)
+  kind: claim
+  location: Flow Duality and algorithms, Sept 25-30 (Weakly Polynomial Algorithm)
+  description: Any s-t flow f in a directed network with m edges can be decomposed into at most m flow
+    paths from s to t (excluding flow on cycles).
+- name: Theorem 5 (large augmenting path exists)
+  kind: theorem
+  location: Flow Duality and algorithms, Sept 25-30 (Weakly Polynomial Algorithm)
+  description: Let f be a flow of value f in a directed network with m edges and let f* be the value of
+    the maximum flow. There exists an f-augmenting path P in the residual graph with capacity c(P) >=
+    (f* - f) / m.
+- name: Observation (monotonicity of shortest augmenting path)
+  kind: observation
+  location: Flow Duality and algorithms, Sept 25-30 (Strongly Polynomial Algorithm)
+  description: In the shortest-augmenting-path max-flow algorithm, the lengths of the shortest augmenting
+    paths from s to t are non-decreasing across iterations.
+- name: Lemma 6 (bottleneck edge bound)
+  kind: lemma
+  location: Flow Duality and algorithms, Sept 25-30 (Strongly Polynomial Algorithm)
+  description: In the shortest-augmenting-path max-flow algorithm on a network with n vertices, the total
+    number of times any single edge can serve as the minimum-capacity edge along the chosen augmenting
+    path is O(n).
+- name: Theorem 1 (Hall, perfect matching condition)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11
+  description: Let G be a bipartite graph with vertex partition (A, B). Then G has a perfect matching
+    if and only if |A| = |B| and for every U subset of A, |N(U)| >= |U|, where N(U) is the set of vertices
+    in B adjacent to some vertex in U.
+- name: Lemma 2 (Berge, max matching iff no augmenting path)
+  kind: lemma
+  location: Matching Algorithms, Sept 4-9-11
+  description: A matching M of an undirected graph G is of maximum cardinality if and only if G contains
+    no M-augmenting path (an alternating path whose endpoints are both unmatched by M).
+- name: Lemma 3 (forest characterization of maximum matching)
+  kind: lemma
+  location: Matching Algorithms, Sept 4-9-11 (Bipartite graphs)
+  description: Let G be a bipartite graph with vertex partition (A, B), let M be a matching of G, and
+    let A^U and B^U be the vertices of A and B unmatched by M. Build the alternating forest F starting
+    from the unmatched vertices A^U as in Section 1. Then M is a maximum matching if and only if no vertex
+    of B^U lies in F.
+- name: Theorem 4 (Konig)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11 (Bipartite graphs)
+  description: Let G be a bipartite graph. The size of a maximum matching in G equals the size of a minimum
+    vertex cover of G.
+- name: Theorem 5 (Frobenius-Hall)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11 (Bipartite graphs)
+  description: Let G be a bipartite graph with vertex partition (A, B). Then A admits a matching into
+    B (i.e. a matching of size |A|) if and only if for every subset X of A, |X| <= |Gamma(X)|, where Gamma(X)
+    is the set of neighbors of X in B.
+- name: Theorem 6 (Hopcroft-Karp running time)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11 (Bipartite graphs)
+  description: A maximum matching in a bipartite graph G with n vertices and m edges can be computed in
+    time O(m * sqrt(n)).
+- name: Observation 7 (shortest augmenting path grows by phase)
+  kind: observation
+  location: Matching Algorithms, Sept 4-9-11 (Bipartite graphs)
+  description: In the bipartite-matching algorithm that augments along a maximal set of vertex-disjoint
+    shortest augmenting paths in each phase, the length of the shortest augmenting path strictly increases
+    between consecutive phases.
+- name: Lemma 8 (Cycle Shrinking / Edmonds)
+  kind: lemma
+  location: Matching Algorithms, Sept 4-9-11 (General graphs)
+  description: Let M be a matching of an undirected graph G and let B be a blossom (an odd-length cycle
+    of length 2k+1 containing exactly k edges of M) which is vertex-disjoint from M outside of B. Let
+    G' be the graph obtained from G by contracting B to a single vertex, and let M' be the matching of
+    G' induced by M. Then M' is a maximum matching of G' if and only if M is a maximum matching of G.
+- name: Lemma 9 (progress lemma for Edmonds' algorithm)
+  kind: lemma
+  location: Matching Algorithms, Sept 4-9-11 (General graphs)
+  description: 'At each step of Edmonds'' blossom algorithm for matching in a general graph, exactly one
+    of the following occurs: the alternating forest F is extended; the underlying graph G is reduced by
+    a blossom contraction; an augmenting path is found; or the algorithm terminates with a maximum matching.'
+- name: Theorem 10 (Edmonds' algorithm running time)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11 (General graphs)
+  description: A maximum matching in an arbitrary undirected graph G with n vertices and m edges can be
+    computed in time O(n^4) (more precisely O(m n^2)) by Edmonds' blossom algorithm.
+- name: Theorem 11 (Tutte)
+  kind: theorem
+  location: Matching Algorithms, Sept 4-9-11 (General graphs)
+  description: An undirected graph G has a perfect matching if and only if for every subset X of vertices,
+    the number of odd-sized connected components of the graph G \ X obtained by deleting X from G is at
+    most |X|.
+- name: Lemma 1 (Farkas)
+  kind: lemma
+  location: The Simplex Algorithm, Oct 16-23
+  description: 'Let A be a real m x n matrix and b in R^m. Exactly one of the following holds: (1) there
+    exists x in R^n with x >= 0 and Ax = b; or (2) there exists y in R^m with A^T y >= 0 and b^T y < 0.'
+- name: Theorem 2 (weak duality for standard form)
+  kind: theorem
+  location: The Simplex Algorithm, Oct 16-23
+  description: For the standard-form primal-dual pair (P) max{c^T x such that Ax = b, x >= 0} and (D)
+    min{b^T y such that A^T y >= c}, if both (P) and (D) are feasible then opt(P) <= opt(D) and both optima
+    are finite. In particular (P) is bounded.
+- name: Corollary 3 (feasibility consequence of weak duality)
+  kind: corollary
+  location: The Simplex Algorithm, Oct 16-23
+  description: For the standard-form primal-dual LPs (P) and (D), if (D) is feasible then (P) is either
+    bounded or infeasible, and if (P) is feasible then (D) is either bounded or infeasible.
+- name: Theorem 4 (Strong duality)
+  kind: theorem
+  location: The Simplex Algorithm, Oct 16-23 (Strong duality)
+  description: 'For the standard-form primal-dual LPs (P) and (D), exactly one of the following four cases
+    occurs: (1) both (P) and (D) are bounded and feasible and opt(P) = opt(D); (2) (P) is infeasible and
+    (D) is unbounded but feasible; (3) (P) is unbounded but feasible and (D) is infeasible; (4) both (P)
+    and (D) are infeasible.'
+- name: Lemma 1 (volume contraction of the ellipsoid update)
+  kind: lemma
+  location: The Ellipsoid Algorithm, Oct 30 - Nov 4
+  description: Let D be a positive-definite n x n matrix, z in R^n, and a in R^n nonzero, and let Ell(D,
+    z) = {x such that (x - z)^T D^{-1} (x - z) <= 1}. The minimum-volume ellipsoid containing the half-ellipsoid
+    Ell(D, z) intersected with {x such that a . x <= a . z} is the ellipsoid E' = Ell(D', z') with z'
+    = z - (1 / (n + 1)) * (D a) / sqrt(a^T D a) and D' = (n^2 / (n^2 - 1)) * (D - (2 / (n + 1)) * (D a
+    a^T D) / (a^T D a)). Moreover vol(E') / vol(E) <= exp(-1 / (2n + 2)).

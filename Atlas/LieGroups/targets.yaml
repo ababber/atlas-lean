@@ -1,0 +1,1197 @@
+- description: 'A continuous representation of $G$ is a topological vector space $V$
+    with a continuous linear action $a: G \times V \rightarrow V$.'
+  kind: definition
+  location: Section 1, Subsection 1.2
+  name: Definition 1.2
+- description: 'A continuous representation is called unitary if $V$ is a Hilbert
+    space and for all $g \in G$, the operator $\pi(g): V \rightarrow V$ is unitary;
+    in other words, $\pi$ lands in the unitary group $U(V) \subset \operatorname{Aut}(V)$.'
+  kind: definition
+  location: Section 1, Subsection 1.2
+  name: Definition 1.3
+- description: 'If $V$ is a Banach space then a representation $(V, \pi)$ of $G$ is
+    continuous if and only if the map $\pi: G \rightarrow \operatorname{Aut}(V)$ is
+    continuous in the strong topology.'
+  kind: proposition
+  location: Section 1, Subsection 1.2
+  name: Proposition 1.6
+- description: A subrepresentation of a continuous representation $V$ of $G$ is a
+    closed $G$-invariant subspace of $V$. We say that $V$ is irreducible if its only
+    subrepresentations are 0 and $V$.
+  kind: definition
+  location: Section 1, Subsection 1.3
+  name: Definition 1.8
+- description: A vector $v \in V$ is $K$-finite if it is contained in a finite-dimensional
+    subrepresentation of $V$. The space of $K$-finite vectors of $V$ is denoted by
+    $V^{\text{fin}}$.
+  kind: definition
+  location: Section 2, Subsection 2.1
+  name: Definition 2.1
+- description: 'The natural $K$-invariant linear map $\xi: \oplus_{\rho \in \operatorname{Irr}
+    K} \operatorname{Hom}(\rho, V) \otimes \rho \rightarrow V^{\mathrm{fin}}$ defined
+    by $\xi(h \otimes u) = h(u)$ is an isomorphism.'
+  kind: lemma
+  location: Section 2, Subsection 2.1
+  name: Lemma 2.2
+- description: $L^{2}(K)^{\mathrm{fin}}$ is a dense subspace of $L^{2}(K)$. Hence
+    $\{\psi_{\rho i j}\}$ form an orthonormal basis of $L^{2}(K)$, and we have $L^{2}(K)
+    = \widehat{\oplus}_{\rho \in \operatorname{Irr} K} \rho^{*} \otimes \rho$ (completed
+    orthogonal direct sum under the Hilbert space norm).
+  kind: theorem
+  location: Section 2, Subsection 2.3
+  name: Theorem 2.4 (Peter-Weyl)
+- description: (i) If a sequence $\{\mu_n, n \geq 1\} \in C(X)^{*}$ is Cauchy then
+    there is a compact subset $K \subset X$ such that $\mu_n \in C(K)^{*} \subset
+    C(X)^{*}$ for all $n$. (ii) $C(X)^{*}$ is sequentially complete.
+  kind: lemma
+  location: Section 3, Subsection 3.1
+  name: Lemma 3.2
+- description: If $f \in C(X)$ and $\left.f\right|_{\operatorname{supp} \mu} = 0$
+    then $\mu(f) = 0$.
+  kind: proposition
+  location: Section 3, Subsection 3.2
+  name: Proposition 3.3
+- description: $\operatorname{Meas}_{c}^{0}(X)$ is a sequentially dense (in particular,
+    dense) subspace in $\operatorname{Meas}_{c}(X)$, i.e., every element $\mu \in
+    \operatorname{Meas}_{c}(X)$ is the limit of a sequence $\mu_n \in \operatorname{Meas}_{c}^{0}(X)$
+    in the weak topology.
+  kind: lemma
+  location: Section 3, Subsection 3.3
+  name: Lemma 3.4
+- description: 'If $X, Y$ are locally compact second countable Hausdorff spaces then
+    the natural bilinear map $\boxtimes: \operatorname{Meas}_{c}^{0}(X) \times \operatorname{Meas}_{c}^{0}(Y)
+    \rightarrow \operatorname{Meas}_{c}(X \times Y)$ uniquely extends to a bilinear
+    map $\boxtimes: \operatorname{Meas}_{c}(X) \times \operatorname{Meas}_{c}(Y) \rightarrow
+    \operatorname{Meas}_{c}(X \times Y)$ which is continuous in each variable.'
+  kind: corollary
+  location: Section 3, Subsection 3.3
+  name: Corollary 3.5
+- description: The map $\mathbb{C} G \times V \rightarrow V$ given by $g \mapsto \pi(g)
+    v$ is continuous. Thus $\pi$ is continuous in the weak topology of $\mathbb{C}
+    G$ and strong topology of $\operatorname{End}(V)$.
+  kind: lemma
+  location: Section 3.4
+  name: Lemma 3.7
+- description: 'If $(V, \pi)$ is a continuous representation of $G$ then the action
+    $G \times V \rightarrow V$ uniquely extends to a continuous bilinear map $\operatorname{Meas}_{c}(G)
+    \times V \rightarrow V$, which gives rise to a continuous unital algebra homomorphism
+    $\pi: \operatorname{Meas}_{c}(G) \rightarrow \operatorname{End}(V)$.'
+  kind: corollary
+  location: Section 3.4
+  name: Corollary 3.8
+- description: Let $K$ be a compact group and $f_{1}, f_{2} \in L^{2}(K)$. Then $\left(f_{1},
+    f_{2}\right)=\sum_{\rho \in \operatorname{Irr} K} \operatorname{dim} \rho \cdot
+    \operatorname{Tr}\left(\pi_{\rho}\left(f_{1}\right) \pi_{\rho}\left(f_{2}\right)^{\dagger}\right)$
+    and this series is absolutely convergent.
+  kind: proposition
+  location: Section 4.1
+  name: Proposition 4.1 (Plancherel's theorem for compact groups)
+- description: If $K$ is a compact Lie group and $f \in C^{\infty}(K)$ then $f(1)=\sum_{\rho
+    \in \operatorname{Irr} K} \operatorname{dim} \rho \cdot \operatorname{Tr}\left(\pi_{\rho}(f)\right)$
+    and this series is absolutely convergent.
+  kind: proposition
+  location: Section 4.1
+  name: Proposition 4.3 (Plancherel's formula)
+- description: There exists a sequence $\phi_{n} \in C_{c}(G)$ such that $\phi_{n}
+    \rightarrow \delta_{1}$ in the weak topology as $n \rightarrow \infty$. Moreover,
+    if $G$ is a Lie group, we can choose $\phi_{n} \in C_{c}^{\infty}(G)$.
+  kind: lemma
+  location: Section 4.2
+  name: Lemma 4.5
+- description: $C_{c}(G)$ is sequentially dense in $\operatorname{Meas}_{c}(G)$. For
+    Lie groups, $C_{c}^{\infty}(G)$ is sequentially dense in $\operatorname{Meas}_{c}(G)$.
+  kind: corollary
+  location: Section 4.2
+  name: Corollary 4.6
+- description: Let $V$ be a continuous representation of a compact group $K$. Then
+    $V^{\text{fin}}$ is dense in $V$.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.7
+- description: $L^{2}(K)^{\mathrm{fin}} \subset C(K)$ is a dense subspace. Moreover,
+    if $K$ is a Lie group then $L^{2}(K)^{\mathrm{fin}} \subset C^{k}(K)$ is a dense
+    subspace for $0 \leq k \leq \infty$.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.8
+- description: If $V$ is an irreducible continuous representation of $K$ then $V$
+    is finite-dimensional.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.9
+- description: Let $(V, \pi)$ be a continuous representation of a Lie group $G$. A
+    vector $v \in V$ is called smooth if the map $G \rightarrow V$ given by $g \mapsto
+    \pi(g) v$ is smooth, i.e., belongs to $C^{\infty}(G, V)$. The space of smooth
+    vectors is denoted by $V^{\infty}$.
+  kind: definition
+  location: Section 4.4
+  name: Definition 4.11
+- description: 'Let $(V, \pi)$ be a continuous representation of a Lie group $G$ with
+    $\mathfrak{g}=\operatorname{Lie}(G)$. Let $v \in V^{\infty}$. Then we have a linear
+    map $\pi_{*, v}: \mathfrak{g} \rightarrow V^{\infty}$ given by $\pi_{*, v}(b)=\left.\frac{d}{d
+    t}\right|_{t=0} \pi\left(e^{t b}\right) v$. This defines a Lie algebra homomorphism
+    $\pi_{*}: \mathfrak{g} \rightarrow \operatorname{End}_{\mathbb{C}}\left(V^{\infty}\right)$
+    given by $\pi_{*}(b) v:=\pi_{*, v}(b)$.'
+  kind: proposition
+  location: Section 4.4
+  name: Proposition 4.13
+- description: (i) $V^{\infty}$ is dense in $V$. (ii) $V^{\text{fin}} \subset V^{\infty}$.
+  kind: proposition
+  location: Section 4.4
+  name: Proposition 4.15
+- description: $V$ is said to be $K$-admissible (or of finite $K$-type) if for every
+    finite-dimensional irreducible representation $\rho$ of $K$, the space $\operatorname{Hom}_{K}(\rho,
+    V)$ is finite-dimensional.
+  kind: definition
+  location: Section 5.1
+  name: Definition 5.1
+- description: If $V$ is $K$-admissible then $V^{K\text{-fin}} \subset V^{\infty}$,
+    and it is a $\mathfrak{g}$-submodule (although not in general a $G$-submodule).
+  kind: proposition
+  location: Section 5.1
+  name: Proposition 5.4
+- description: Let $(\mathfrak{g}, K)$ be a Harish-Chandra pair. (i) A $(\mathfrak{g},
+    K)$-module is a vector space $M$ with actions of $K$ and $\mathfrak{g}$ such that
+    $M$ is a direct sum of finite-dimensional continuous $K$-modules, and the two
+    actions of $\mathfrak{k}$ on $M$ (coming from the actions of $\mathfrak{g}$ and
+    $K$) coincide. (ii) Such a module is said to be admissible if for every $\rho
+    \in \operatorname{Irr} K$ we have $\operatorname{dim} \operatorname{Hom}_{K}(\rho,
+    M)<\infty$. (iii) An admissible $(\mathfrak{g}, K)$-module which is finitely generated
+    over $U(\mathfrak{g})$ is called a Harish-Chandra module.
+  kind: definition
+  location: Section 5.2
+  name: Definition 5.7
+- description: If $V$ is a $K$-admissible continuous representation of $G$ then $V^{K-\text{fin}}$
+    is an admissible $(\mathfrak{g}, K)$-module.
+  kind: proposition
+  location: Section 5.2
+  name: Proposition 5.10
+- description: Every semisimple Lie group $G$ has a maximal compact subgroup $K \subset
+    G$ which is unique up to conjugation.
+  kind: theorem
+  location: Section 5.3
+  name: Theorem 5.13 (E. Cartan)
+- description: Every irreducible unitary representation of a semisimple Lie group
+    is admissible.
+  kind: theorem
+  location: Section 5.3
+  name: Theorem 5.15 (Harish-Chandra's admissibility theorem)
+- description: A vector $v \in V$ is called weakly analytic if for each $h \in V^{*}$
+    the matrix coefficient $h(gv)$ is a real analytic function of $g$.
+  kind: definition
+  location: Section 6.1
+  name: Definition 6.1
+- description: If $V$ is an admissible representation of a semisimple Lie group $G$
+    with maximal compact subgroup $K$ then every $v \in V^{K-\text{fin}}$ is a weakly
+    analytic vector.
+  kind: theorem
+  location: Section 6.1
+  name: Theorem 6.3 (Harish-Chandra's analyticity theorem)
+- description: We say that $D$ is elliptic at $x$ if $\sigma(D)_{x}(p) \neq 0$ for
+    nonzero $p \in T_{x}^{*} X$. We say that $D$ is elliptic (on $X$) if it is elliptic
+    at all points $x \in X$.
+  kind: definition
+  location: Section 6.2
+  name: Definition 6.4
+- description: Suppose $D$ is an elliptic operator with real analytic coefficients
+    on an open set $U \subset \mathbb{R}^{N}$, and $f(x)$ is a smooth solution of
+    the PDE $Df=0$ on $U$. Then $f$ is real analytic on $U$.
+  kind: theorem
+  location: Section 6.2
+  name: Theorem 6.6 (Elliptic regularity)
+- description: Let $X$ be a real analytic manifold and $D$ an elliptic operator on
+    $X$ with analytic coefficients. Then every smooth solution of the equation $Df=0$
+    on $X$ is actually real analytic.
+  kind: corollary
+  location: Section 6.2
+  name: Corollary 6.7
+- description: The action of $G$ on $V$ is completely determined by the corresponding
+    $(\mathfrak{g}, K)$-module $V^{K\text{-fin}}$.
+  kind: corollary
+  location: Section 6.4
+  name: Corollary 6.11
+- description: Let $W \subset V^{K\text{-fin}}$ be a sub-$(\mathfrak{g}, K)$-module.
+    Then the closure $\bar{W} \subset V$ is $G$-invariant.
+  kind: corollary
+  location: Section 6.4
+  name: Corollary 6.12
+- description: 'Let $V$ be an admissible representation of $G$. There is a bijection
+    between subrepresentations of $V$ and $(\mathfrak{g}, K)$-submodules of $V^{K\text{-fin}}$,
+    given by $\alpha: U \subset V \mapsto U^{K\text{-fin}}$. The inverse is given
+    by $\beta: W \mapsto \bar{W}$.'
+  kind: corollary
+  location: Section 6.4
+  name: Corollary 6.13
+- description: If $V$ is irreducible then $V^{K\text{-fin}}$ is an irreducible $(\mathfrak{g},
+    K)$-module, and vice versa.
+  kind: corollary
+  location: Section 6.4
+  name: Corollary 6.14
+- description: If $V$ is of finite length then $V^{K-\text{fin}}$ is a Harish-Chandra
+    module.
+  kind: corollary
+  location: Section 6.4
+  name: Corollary 6.15
+- description: The assignment $V \mapsto V^{K\text{-fin}}$ defines an exact, faithful
+    functor $\operatorname{Rep} G \rightarrow \mathcal{HC}_{G}$, which maps irreducibles
+    to irreducibles.
+  kind: theorem
+  location: Section 6.4
+  name: Theorem 6.16
+- description: Let $V, W$ be two unitary representations in $\operatorname{Rep} G$.
+    If $V^{K-\mathrm{fin}} \cong W^{K-\mathrm{fin}}$ as Harish-Chandra modules, then
+    $V \cong W$ as unitary representations. In other words, infinitesimally equivalent
+    unitary representations in $\operatorname{Rep} G$ are isomorphic.
+  kind: proposition
+  location: Section 7.1
+  name: Proposition 7.1
+- description: 'Let $A$ be a countable-dimensional $\mathbb{C}$-algebra and $M$ a
+    simple $A$-module. Then $\operatorname{End}_{A}(M)=\mathbb{C}$. In particular,
+    the center $Z$ of $A$ acts on $M$ by a character $\chi: Z \rightarrow \mathbb{C}$.'
+  kind: lemma
+  location: Section 7.2
+  name: Lemma 7.2 (Dixmier)
+- description: 'Any endomorphism of an irreducible $(\mathfrak{g}, K)$-module $M$
+    is a scalar. Thus the center $Z(\mathfrak{g})$ of $U(\mathfrak{g})$ acts on $M$
+    by an infinitesimal character $\chi: Z(\mathfrak{g}) \rightarrow \mathbb{C}$.'
+  kind: corollary
+  location: Section 7.2
+  name: Corollary 7.3 (Schur's lemma for $(\mathfrak{g}, K)$-modules)
+- description: Every unitary irreducible Harish-Chandra module $M$ for $G$ uniquely
+    integrates (=globalizes) to an irreducible admissible unitary representation of
+    $G$.
+  kind: theorem
+  location: Section 7.3
+  name: Theorem 7.5 (Harish-Chandra's globalization theorem)
+- description: For a semisimple Lie group $G$, the assignment $V \mapsto V^{K-\mathrm{fin}}$
+    is an equivalence of categories between unitary representations of $G$ of finite
+    length and unitary Harish-Chandra modules of finite length (i.e., Harish-Chandra
+    modules which admit an invariant positive Hermitian inner product).
+  kind: corollary
+  location: Section 7.3
+  name: Corollary 7.6
+- description: Let $V$ be a representation of $\mathfrak{g}$ (possibly infinite-dimensional).
+    Then a vector $v \in V$ is said to have weight $\lambda$ if $hv=\lambda(h)v$ for
+    all $h \in \mathfrak{h}$. The subspace of such vectors is denoted by $V[\lambda]$.
+    If $V[\lambda] \neq 0$, we say that $\lambda$ is a weight of $V$, and the set
+    of weights of $V$ is denoted by $P(V)$.
+  kind: definition
+  location: Section 8.1
+  name: Definition 8.1
+- description: We say that $V$ has a weight decomposition (with respect to a Cartan
+    subalgebra $\mathfrak{h} \subset \mathfrak{g}$), or is $\mathfrak{h}$-semisimple
+    if $V'=V$, i.e., if $V=\oplus_{\lambda \in \mathfrak{h}^{*}} V[\lambda]$.
+  kind: definition
+  location: Section 8.1
+  name: Definition 8.2
+- description: A vector $v$ in $V[\lambda]$ is called a singular (or highest weight)
+    vector of weight $\lambda$ if $e_{i} v=0$ for all $i$, i.e., if $\mathfrak{n}_{+}
+    v=0$. A representation $V$ of $\mathfrak{g}$ is a highest weight representation
+    with highest weight $\lambda$ if it is generated by such a nonzero vector.
+  kind: definition
+  location: Section 8.1
+  name: Definition 8.3
+- description: Let $I_{\lambda} \in U(\mathfrak{g})$ be the left ideal generated by
+    the elements $h-\lambda(h), h \in \mathfrak{h}$ and $e_{i}, i=1, \ldots, r$. Then
+    the Verma module $M_{\lambda}$ is the quotient $U(\mathfrak{g})/I_{\lambda}$.
+  kind: definition
+  location: Section 8.2
+  name: Definition 8.4
+- description: 'The map $\phi: U(\mathfrak{n}_{-}) \rightarrow M_{\lambda}$ given
+    by $\phi(x)=xv_{\lambda}$ is an isomorphism of left $U(\mathfrak{n}_{-})$-modules.'
+  kind: proposition
+  location: Section 8.2
+  name: Proposition 8.5
+- description: $M_{\lambda}$ has a weight decomposition with $P(M_{\lambda}) = \lambda
+    - Q_+$, $\dim M_{\lambda}[\lambda] = 1$, and weight subspaces of $M_{\lambda}$
+    are finite-dimensional.
+  kind: corollary
+  location: Section 8, Subsection 8.2
+  name: Corollary 8.7
+- description: '(i) If $V$ is a representation of $\mathfrak{g}$ and $v \in V$ is
+    a vector such that $hv = \lambda(h)v$ for $h \in \mathfrak{h}$ and $e_i v = 0$
+    then there is a unique homomorphism $\eta: M_{\lambda} \rightarrow V$ such that
+    $\eta(v_{\lambda}) = v$. In particular, if $V$ is generated by such $v \neq 0$
+    (i.e., $V$ is a highest weight representation with highest weight vector $v$)
+    then $V$ is a quotient of $M_{\lambda}$. (ii) Every highest weight representation
+    has a weight decomposition into finite-dimensional weight subspaces. (iii) Every
+    highest weight representation $V$ has a unique highest weight generator, up to
+    scaling.'
+  kind: proposition
+  location: Section 8, Subsection 8.2
+  name: Proposition 8.8
+- description: For every $\lambda \in \mathfrak{h}^*$, the Verma module $M_{\lambda}$
+    has a unique irreducible quotient $L_{\lambda}$. Moreover, $L_{\lambda}$ is a
+    quotient of every highest weight $\mathfrak{g}$-module $V$ with highest weight
+    $\lambda$.
+  kind: proposition
+  location: Section 8, Subsection 8.3
+  name: Proposition 8.9
+- description: Irreducible highest weight $\mathfrak{g}$-modules are classified by
+    their highest weight $\lambda \in \mathfrak{h}^*$, via the bijection $\lambda
+    \mapsto L_{\lambda}$.
+  kind: corollary
+  location: Section 8, Subsection 8.3
+  name: Corollary 8.10
+- description: $L_{\lambda}$ is finite-dimensional if and only if $\lambda \in P_+$.
+  kind: proposition
+  location: Section 8, Subsection 8.3
+  name: Proposition 8.12
+- description: The simple $(\mathfrak{g}, K)$-modules (or equivalently, Harish-Chandra
+    modules) are $L_m$, $m \in \mathbb{Z}_{\geq 0}$, $M_m^-$, $M_{-m}^+$, $m \in \mathbb{Z}_{\geq
+    1}$, and $P_+(s)$, $s \notin 2\mathbb{Z}+1$, $P_-(s)$, $s \notin 2\mathbb{Z}$,
+    with the only isomorphisms $P_{\pm}(s) \cong P_{\pm}(-s)$.
+  kind: proposition
+  location: Section 9, Subsection 9.1
+  name: Proposition 9.1
+- description: 'The irreducible unitary representations of $SL_2(\mathbb{R})$ are
+    Hilbert space completions of the following unitary Harish-Chandra modules: Discrete
+    series and limit of discrete series $M_m^-$, $M_{-m}^+$, $m \in \mathbb{Z}_{\geq
+    1}$; Unitary principal series $P_{\pm}(s)$, $s \in i\mathbb{R}$, $s \neq 0$; The
+    complementary series $P_+(s)$, $s \in \mathbb{R}$, $0 < |s| < 1$; The trivial
+    representation $\mathbb{C}$. Here $P_{\pm}(s) \cong P_{\pm}(-s)$ and there are
+    no other isomorphisms.'
+  kind: theorem
+  location: Section 9, Subsection 9.3
+  name: Theorem 9.3 (Gelfand-Naimark, Bargmann)
+- description: '(i) $\operatorname{Res}(F) \in \mathbb{C}[\mathfrak{h}]^W$. (ii) The
+    map $\operatorname{Res}: \mathbb{C}[\mathfrak{g}]^{\mathfrak{g}} \rightarrow \mathbb{C}[\mathfrak{h}]^W$
+    is a graded algebra isomorphism.'
+  kind: theorem
+  location: Section 10, Subsection 10.1
+  name: Theorem 10.1 (Chevalley restriction theorem)
+- description: 'A diagonalizable automorphism $g: V \rightarrow V$ of a finite-dimensional
+    complex vector space $V$ is called a complex reflection if $\operatorname{rank}(g-1)
+    = 1$; in other words, in some basis $g = \operatorname{diag}(\lambda, 1, \ldots,
+    1)$ where $\lambda \neq 0, 1$. A complex reflection group is a finite subgroup
+    $G \subset GL(V)$ generated by complex reflections.'
+  kind: definition
+  location: Section 10, Subsection 10.2
+  name: Definition 10.5
+- description: Let $V$ be a finite-dimensional complex vector space and $G \subset
+    GL(V)$ be a finite subgroup. Then $\mathbb{C}[V]^G$ is a polynomial algebra if
+    and only if $G$ is a complex reflection group.
+  kind: theorem
+  location: Section 10, Subsection 10.2
+  name: Theorem 10.6 (Chevalley-Shephard-Todd theorem, part I)
+- description: Let $G \subset GL(V)$ be a finite subgroup, and $I \subset \mathbb{C}[V]$
+    be the ideal generated by positive degree elements of $\mathbb{C}[V]^G$. Let $f_1,
+    \ldots, f_r \in \mathbb{C}[V]^G$ be homogeneous generators of $I$. Then the algebra
+    $\mathbb{C}[V]^G$ is generated by $f_1, \ldots, f_r$; in particular, it is finitely
+    generated.
+  kind: lemma
+  location: Section 11, Subsection 11.1
+  name: Lemma 11.1
+- description: Assume that $G$ is a complex reflection group. Let $I$ be the ideal
+    in $\mathbb{C}[V]$ generated by positive degree elements of $\mathbb{C}[V]^G$,
+    $F_1, \ldots, F_m \in \mathbb{C}[V]^G$ be homogeneous, and suppose that $F_1$
+    does not belong to the ideal in $\mathbb{C}[V]^G$ generated by $F_2, \ldots, F_m$.
+    Suppose $g_i \in \mathbb{C}[V]$ for $1 \leq i \leq m$ are homogeneous and $\sum_{i=1}^{m}
+    g_i F_i = 0$. Then $g_1 \in I$.
+  kind: lemma
+  location: Section 11, Subsection 11.1
+  name: Lemma 11.3
+- description: Let $G$ be a complex reflection group, $f_1, \ldots, f_r \in \mathbb{C}[V]^G$
+    homogeneous of positive degree forming a minimal set of homogeneous generators
+    of the ideal $I$. Then $f_1, \ldots, f_r$ are algebraically independent.
+  kind: lemma
+  location: Section 11, Subsection 11.1
+  name: Lemma 11.4
+- description: 'Let $U$ be an affine space over $\mathbb{C}$ and $G$ a finite group
+    acting on $U$ by polynomial automorphisms. (i) Let $u \in U$ be a point with trivial
+    stabilizer in $G$. Then there exists a local coordinate system on $U$ near $u$
+    consisting of elements of $\mathbb{C}[U]^G$. (ii) Maximal ideals in $\mathbb{C}[U]^G$
+    (i.e., characters $\chi: \mathbb{C}[U]^G \rightarrow \mathbb{C}$) are in bijection
+    with $G$-orbits on $U$, which assigns to an orbit $Gu$ the character $\chi_u(f)
+    := f(u)$. Thus the set of maximal ideals in $\mathbb{C}[U]^G$ is $U/G$.'
+  kind: lemma
+  location: Section 11, Subsection 11.2
+  name: Lemma 11.6
+- description: Let $R$ be a commutative ring. Let $A$ be a commutative $R$-algebra
+    with an $R$-linear action of a finite group $G$. (i) $A$ is integral over $A^{G}$.
+    In particular, if $A$ is finitely generated then it is module-finite over $A^{G}$.
+    (ii) If $R$ is Noetherian and $A$ is finitely generated then so is $A^{G}$.
+  kind: proposition
+  location: Section 12.2
+  name: Proposition 12.1 (Hilbert-Noether theorem)
+- description: If $G$ is a complex reflection group then for any irreducible representation
+    $\rho$ of $G$, the $\mathbb{C}[V]^{G}$-module $\operatorname{Hom}_{G}(\rho, \mathbb{C}[V])$
+    is free of rank $\operatorname{dim} \rho$. Thus the $G$-module $R_{0}=\mathbb{C}[x_{1},
+    \ldots, x_{n}]/(f_{1}, \ldots, f_{n})$ is the regular representation and $\prod_{i=1}^{n}
+    d_{i}=|G|$. Moreover, the Hilbert polynomial $H(R_{0}, q):=\sum_{N \geq 0} \operatorname{dim}
+    R_{0}[N] q^{N}$ is $H(R_{0}, q)=\prod_{i=1}^{n}[d_{i}]_{q}$ where $[d]_{q}:=\frac{1-q^{d}}{1-q}=1+q+\ldots+q^{d-1}$.
+  kind: theorem
+  location: Section 12.2
+  name: Theorem 12.2 (Chevalley-Shephard-Todd theorem, part II)
+- description: (i) Any homogeneous lift $\{v_{i}^{*}\}$ of a homogeneous basis $\{v_{i}\}$
+    of $M_{0}$ to $M$ is a system of generators for $M$; in particular, if $\operatorname{dim}
+    M_{0}<\infty$ then $M$ is finitely generated. (ii) If in addition $M$ is projective,
+    then $\{v_{i}^{*}\}$ is actually a basis of $M$ (in particular, $M$ is free).
+    Thus if $\operatorname{dim} M_{0}[i]<\infty$ for all $i$ then $H(M, q)=H(M_{0},
+    q) H(S, q)$. In particular, if $S=k[f_{1}, \ldots, f_{n}]$ then $H(M, q)=\frac{H(M_{0},
+    q)}{\prod_{i=1}^{n}(1-q^{d_{i}})}$.
+  kind: lemma
+  location: Section 12.3
+  name: Lemma 12.3
+- description: If $i>n$ then for any $k[x_{1}, \ldots, x_{n}]$-modules $M, N$, one
+    has $\operatorname{Ext}^{i}(M, N)=0$.
+  kind: proposition
+  location: Section 12.4
+  name: Proposition 12.4
+- description: We have $H(M, q)=\frac{p(q)}{(1-q)^{n}}$ where $p$ is a polynomial
+    with integer coefficients.
+  kind: theorem
+  location: Section 12.5
+  name: Theorem 12.5 (Hilbert syzygies theorem)
+- description: Let $f \in \mathfrak{m}$. Then $\operatorname{dim}_{\mathfrak{m}}(R/f)
+    \geq \operatorname{dim}_{\mathfrak{m}} R - 1$.
+  kind: lemma
+  location: Section 12.6
+  name: Lemma 12.6
+- description: Let $f_{1}, \ldots, f_{m} \in k[x_{1}, \ldots, x_{n}]$ be homogeneous
+    polynomials of positive degrees. Let $Z$ be an irreducible component of the zero
+    set $Z(f_{1}, \ldots, f_{m}) \subset k^{n}$. Then $\operatorname{dim}_{\mathfrak{m}_{0}}
+    k[Z] \geq n-m$.
+  kind: corollary
+  location: Section 12.6
+  name: Corollary 12.7
+- description: If $f_{1}, \ldots, f_{n} \in R$ is a regular sequence then the complex
+    $K_{R}(f_{1}, \ldots, f_{n})$ is exact in negative degrees.
+  kind: lemma
+  location: Section 12.7
+  name: Lemma 12.8
+- description: Suppose $f_{1}, \ldots, f_{n} \in R:=k[x_{1}, \ldots, x_{n}]$ are homogeneous
+    polynomials of positive degree such that the zero set $Z(f_{1}, \ldots, f_{n})$
+    consists of the origin. Then $f_{1}, \ldots, f_{n}$ is a regular sequence.
+  kind: proposition
+  location: Section 12.7
+  name: Proposition 12.9
+- description: Suppose $f_{1}, \ldots, f_{n} \in R:=k[x_{1}, \ldots, x_{n}]$ are homogeneous
+    polynomials of degrees $d_{1}, \ldots, d_{n}>0$ such that $R$ is a finitely generated
+    module over $S:=k[f_{1}, \ldots, f_{n}]$. Then this module is free of rank $\prod_{i=1}^{n}
+    d_{i}$. Moreover, the Hilbert polynomial of $R_{0}:=k[x_{1}, \ldots, x_{n}]/(f_{1},
+    \ldots, f_{m})$ (or, equivalently, of a space of free homogeneous generators of
+    this module) is $H(R_{0}, q)=\prod_{i=1}^{n}[d_{i}]_{q}$.
+  kind: proposition
+  location: Section 12.7
+  name: Proposition 12.10
+- description: $S\mathfrak{g}$ is a free $(S\mathfrak{g})^{\mathfrak{g}}$-module.
+    Moreover, for every finite-dimensional irreducible representation $V$ of $\mathfrak{g}$,
+    the space $\operatorname{Hom}_{\mathfrak{g}}(V, S\mathfrak{g})$ is a free $(S\mathfrak{g})^{\mathfrak{g}}$
+    module of rank $\operatorname{dim} V[0]$, the dimension of the zero weight space
+    of $V$.
+  kind: theorem
+  location: Section 13.1
+  name: Theorem 13.1 (Kostant)
+- description: As $q \rightarrow 1$ in $(0,1)$, the function $F_{q}(x):=\prod_{\alpha
+    \in R_{+}} \frac{1-e^{i\alpha(x)}}{1-qe^{i\alpha(x)}}$ goes to 1 in $L^{2}(\mathfrak{h}/Q^{\vee})$.
+  kind: lemma
+  location: Section 13.1
+  name: Lemma 13.2
+- description: For $\lambda \in P_{+}$ we have $H\left(\operatorname{Hom}_{\mathfrak{g}}\left(L_{\lambda}^{*},(S\mathfrak{g})_{0}\right),
+    q\right)=\frac{\prod_{i=1}^{r}[d_{i}]_{q}}{|W|} \mathrm{CT}\left(\prod_{\alpha
+    \in R} \frac{1-e^{\alpha}}{1-qe^{\alpha}} \chi_{L_{\lambda}}\right)= \prod_{i=1}^{r}[d_{i}]_{q}
+    \cdot \mathrm{CT}\left(\frac{e^{\lambda} \prod_{\alpha \in R_{+}}(1-e^{\alpha})}{\prod_{\alpha
+    \in R}(1-qe^{\alpha})}\right)$.
+  kind: theorem
+  location: Section 13.2
+  name: Theorem 13.3 (Kostant)
+- description: $\frac{1}{|W|} \mathrm{CT}\left(\prod_{\alpha \in R} \frac{1-e^{\alpha}}{1-qe^{\alpha}}\right)=\mathrm{CT}\left(\frac{\prod_{\alpha
+    \in R_{+}}(1-e^{\alpha})}{\prod_{\alpha \in R}(1-qe^{\alpha})}\right)=\frac{1}{\prod_{i=1}^{r}[d_{i}]_{q}}$.
+  kind: corollary
+  location: Section 13.2
+  name: Corollary 13.4
+- description: (i) The center $Z(\mathfrak{g})=U(\mathfrak{g})^{\mathfrak{g}}$ of
+    $U(\mathfrak{g})$ is a polynomial algebra in $r$ generators $C_{i}$ of Poincaré-Birkhoff-Witt
+    filtration degrees $d_{i}$. (ii) $U(\mathfrak{g})$ is a free module over $Z(\mathfrak{g})$,
+    and for every irreducible finite-dimensional representation $V$ of $\mathfrak{g}$,
+    the space $\operatorname{Hom}_{\mathfrak{g}}(V, U(\mathfrak{g}))$ is a free $Z(\mathfrak{g})$-module
+    of rank $\operatorname{dim} V[0]$.
+  kind: theorem
+  location: Section 13.3
+  name: Theorem 13.5 (Kostant)
+- description: '(i) If $b \in U(\mathfrak{g})$ and $c \in Z(\mathfrak{g})$ then $HC(bc)=HC(b)HC(c)$.
+    In particular, the restriction of $HC$ to $Z(\mathfrak{g})$ is an algebra homomorphism.
+    (ii) Define the shifted action of $W$ on $\mathfrak{h}^{*}$ by $w \bullet x:=w(x+\rho)-\rho$
+    where $\rho$ is the half sum of positive roots. Then $HC$ maps $Z(\mathfrak{g})$
+    into the space of invariants $\mathbb{C}[\mathfrak{h}^{*}]^{W\bullet}$. That is,
+    for any $b \in Z(\mathfrak{g})$ we have $HC(b)(\lambda)=f_{b}(\lambda+\rho)$ for
+    some $f_{b} \in \mathbb{C}[\mathfrak{h}^{*}]^{W}$. (iii) If $V$ is a highest weight
+    representation of $\mathfrak{g}$ with highest weight $\lambda$ then $f_{b}(\lambda+\rho)=(v_{\lambda}^{*},
+    bv_{\lambda})$ where $v_{\lambda}$ is a highest weight vector of $V$ and $v_{\lambda}^{*}$
+    the lowest weight vector of $V^{*}$ such that $(v_{\lambda}^{*}, v_{\lambda})=1$.
+    Thus if $b \in Z(\mathfrak{g})$ then $HC(b)(\lambda)$ is the scalar by which $b$
+    acts on a highest weight module with highest weight $\lambda$. (iv) The map $HC:
+    Z(\mathfrak{g}) \rightarrow \mathbb{C}[\mathfrak{h}^{*}]^{W\bullet}$ is a filtered
+    algebra homomorphism and $\operatorname{gr}(HC)=\operatorname{Res}$, the Chevalley
+    restriction homomorphism $(S\mathfrak{g})^{\mathfrak{g}} \rightarrow (S\mathfrak{h})^{W}$.
+    (v) $HC$ is an algebra isomorphism.'
+  kind: theorem
+  location: Section 14.1
+  name: Theorem 14.1 (Harish-Chandra)
+- description: For any finite-dimensional irreducible $\mathfrak{g}$-module $V$ we
+    have $\dim \operatorname{Hom}_{\mathfrak{g}}(V, U_{\chi})=\dim V[0]$, where $\mathfrak{g}$
+    acts on $U_{\chi}$ by the adjoint action. Thus $U_{\chi}$ is a Harish-Chandra
+    $\mathfrak{g}$-bimodule.
+  kind: corollary
+  location: Section 14.2
+  name: Corollary 14.3
+- description: If $V$ is a finite-dimensional $\mathfrak{g}$-bimodule then $V \otimes
+    U_{\chi}$ is a Harish-Chandra $\mathfrak{g}$-bimodule.
+  kind: corollary
+  location: Section 14.2
+  name: Corollary 14.4
+- description: (i) Every irreducible $\mathfrak{g}$-bimodule $M$ locally finite under
+    the adjoint $\mathfrak{g}$-action is a quotient of $V \otimes U_{\chi}$ for some
+    finite-dimensional irreducible $\mathfrak{g}$-module $V$ with trivial right action
+    of $\mathfrak{g}$, where $\chi$ is the right infinitesimal character of $M$. (ii)
+    Every irreducible $\mathfrak{g}$-bimodule locally finite under the adjoint $\mathfrak{g}$-action
+    is a Harish-Chandra bimodule.
+  kind: corollary
+  location: Section 14.2
+  name: Corollary 14.5
+- description: The category $\mathcal{O}=\mathcal{O}_{\mathfrak{g}}$ is the full subcategory
+    of $\mathfrak{g}$-mod, which consists of finitely generated $\mathfrak{g}$-modules
+    $M$ with weight decomposition and $P(M) \subset \cup_{i=1}^{m}(\lambda_{i}-Q_{+})$,
+    where $\lambda_{1}, \ldots, \lambda_{m} \in \mathfrak{h}^{*}$.
+  kind: definition
+  location: Section 15.1
+  name: Definition 15.1
+- description: If $M \in \mathcal{O}$ then the weight subspaces of $M$ are finite-dimensional.
+  kind: lemma
+  location: Section 15.1
+  name: Lemma 15.3
+- description: The action of $Z(\mathfrak{g})$ on every $M \in \mathcal{O}$ factors
+    through a finite-dimensional quotient.
+  kind: corollary
+  location: Section 15.1
+  name: Corollary 15.4
+- description: (i) Any $M \in \mathcal{O}$ has a canonical decomposition $M=\oplus_{\chi
+    \in \mathfrak{h}^{*}/W} M(\chi)$ where $M(\chi)$ is the generalized eigenspace
+    of $Z(\mathfrak{g})$ in $M$ with eigenvalue $\chi$, and this direct sum is finite.
+    In other words, $\mathcal{O}=\oplus_{\chi \in \mathfrak{h}^{*}/W} \mathcal{O}_{\chi}$
+    where $\mathcal{O}_{\chi}$ is the subcategory of $\mathcal{O}$ of modules where
+    every $z \in Z(\mathfrak{g})$ acts with generalized eigenvalue $\chi(z)$. (ii)
+    Each $M \in \mathcal{O}_{\chi}$ has a finite filtration with successive quotients
+    having infinitesimal character $\chi$.
+  kind: corollary
+  location: Section 15.1
+  name: Corollary 15.7
+- description: Every object of $\mathcal{O}$ has finite length.
+  kind: lemma
+  location: Section 15.1
+  name: Lemma 15.9
+- description: Let $\lambda, \mu \in \mathfrak{h}^{*}$ and $\mu \preceq \lambda$.
+    Then $\dim \operatorname{Hom}(M_{\mu-\rho}, M_{\lambda-\rho})=1$ and $M_{\mu-\rho}$
+    can be uniquely realized as a submodule of $M_{\lambda-\rho}$. In particular,
+    $L_{\mu-\rho}$ occurs in the composition series of $M_{\lambda-\rho}$.
+  kind: theorem
+  location: Section 15.3
+  name: Theorem 15.11 (D. N. Verma)
+- description: $W_{x}$ is generated by the reflections $s_{\alpha} \in W_{x}$. Moreover,
+    the roots $\alpha$ such that $s_{\alpha} \in W_{x}$ form a root system $R_{x}
+    \subset R$, and $W_{x}$ is the Weyl group of $R_{x}$. The corresponding dual root
+    system $R_{x}^{\vee}$ is a root subsystem of $R^{\vee}$, i.e., $R_{x}^{\vee}=\operatorname{span}_{\mathbb{Z}}(R_{x}^{\vee})
+    \cap R^{\vee}$.
+  kind: proposition
+  location: Section 15.4
+  name: Proposition 15.12
+- description: 'The following conditions on a weight $\lambda \in \mathfrak{h}^{*}$
+    are equivalent: (i) $\lambda$ is dominant for $\leq$; (ii) $\lambda$ is dominant
+    for $\preceq$; (iii) For every root $\alpha \in R_{+}$, $(\lambda, \alpha^{\vee})
+    \notin \mathbb{Z}_{<0}$; (iv) For every $w \in W_{\lambda+Q}$, $w\lambda \preceq
+    \lambda$; (v) For every $w \in W_{\lambda+Q}$, $w\lambda \leq \lambda$.'
+  kind: corollary
+  location: Section 16.1
+  name: Corollary 16.1
+- description: 'Let $\mathcal{C}$ be a Noetherian abelian category with enough projectives
+    and finite-dimensional Hom spaces over an algebraically closed field $k$. Then
+    (i) Let $I$ be the set labeling the isomorphism classes of indecomposable projectives
+    $P_{i}$ of $\mathcal{C}$. Then the isomorphism classes of simple objects $L_{i}$
+    of $\mathcal{C}$ are labeled by the same set $I$, and $\dim \operatorname{Hom}(P_{i},
+    L_{j})=\delta_{ij}$, $i, j \in I$. (ii) For $M \in \mathcal{C}$ of finite length,
+    the multiplicities $[M: L_{i}]$ equal $\dim \operatorname{Hom}(P_{i}, M)$.'
+  kind: proposition
+  location: Section 16.2
+  name: Proposition 16.2
+- description: If $\lambda$ is dominant then $M_{\lambda-\rho}$ is a projective object
+    in $\mathcal{O}$.
+  kind: proposition
+  location: Section 16.3
+  name: Proposition 16.4
+- description: (i) If $P \in \mathcal{O}$ is projective then so is $V \otimes P$.
+    (ii) If $\lambda \in \mathfrak{h}^{*}$ is dominant then the object $V \otimes
+    M_{\lambda-\rho} \in \mathcal{O}$ is projective.
+  kind: corollary
+  location: Section 16.3
+  name: Corollary 16.5
+- description: (i) For every $\mu \in \mathfrak{h}^{*}$, there exists dominant $\lambda
+    \in \mathfrak{h}^{*}$ and a finite-dimensional $\mathfrak{g}$-module $V$ such
+    that $\operatorname{Hom}(V \otimes M_{\lambda-\rho}, L_{\mu}) \neq 0$. Thus $\mathcal{O}$
+    has enough projectives. (ii) Every projective object $P$ of $\mathcal{O}$ is a
+    free $U(\mathfrak{n}_{-})$-module.
+  kind: corollary
+  location: Section 16.3
+  name: Corollary 16.6
+- description: The restriction of the adjoint representation of $\mathfrak{g}$ to
+    its principal $\mathfrak{sl}_{2}$-subalgebra is isomorphic to $L_{2m_{1}} \oplus
+    \ldots \oplus L_{2m_{r}}$ for appropriate $m_{i} \in \mathbb{Z}_{>0}$.
+  kind: lemma
+  location: Section 17.2
+  name: Lemma 17.1
+- description: The element $e=\sum_{i=1}^{r} e_{i}$ is regular.
+  kind: lemma
+  location: Section 17.3
+  name: Lemma 17.2
+- description: Let $B_{+}$ be the Borel subgroup of $G$ with Lie algebra $\mathfrak{b}_{+}:=\mathfrak{h}
+    \oplus \mathfrak{n}_{+}$. Then $\operatorname{Ad}(B_{+}) e$ is the set of elements
+    $\sum_{\alpha \in R_{+}} c_{\alpha} e_{\alpha}$ with $c_{\alpha} \in \mathbb{C}$
+    and $c_{\alpha_{i}} \neq 0$ for all $i$.
+  kind: corollary
+  location: Section 17.3
+  name: Corollary 17.3
+- description: The nilpotent cone is reduced.
+  kind: proposition
+  location: Section 17.4
+  name: Proposition 17.4
+- description: (i) The orbit $O_{e}:=\operatorname{Ad}(G) e$ is open and dense in
+    $\mathcal{N}$. (ii) All regular nilpotent elements in $\mathfrak{g}$ are conjugate
+    to $e$. (iii) $\mathcal{N}$ is an irreducible affine variety. Thus $(S\mathfrak{g})_{0}$
+    is an integral domain.
+  kind: proposition
+  location: Section 17.4
+  name: Proposition 17.6
+- description: $U_{\chi}$ is an integral domain for all $\chi$.
+  kind: corollary
+  location: Section 17.4
+  name: Corollary 17.7
+- description: If $M, N \in \mathcal{O}$ then $\operatorname{Hom}_{\mathrm{fin}}(M,
+    N)$ is an admissible $\mathfrak{g}$-bimodule.
+  kind: proposition
+  location: Section 18.1
+  name: Proposition 18.2
+- description: For $M, N \in \mathcal{O}$ and a finite-dimensional $\mathfrak{g}$-module
+    $V$ we have $\operatorname{Hom}_{\mathrm{fin}}(M, V \otimes N)=V \otimes \operatorname{Hom}_{\mathrm{fin}}(M,
+    N)$.
+  kind: proposition
+  location: Section 18.1
+  name: Proposition 18.3
+- description: Let $V$ be a finite-dimensional $\mathfrak{g}$-module. Then for any
+    $\lambda \in \mathfrak{h}^{*}$, we have $\dim \operatorname{Hom}_{\mathfrak{g}}(M_{\lambda},
+    V \otimes M_{\lambda})=\dim V[0]$. Thus the multiplicity of $V$ in $\operatorname{Hom}_{\mathrm{fin}}(M_{\lambda},
+    M_{\lambda})$ equals $\dim V[0]$.
+  kind: proposition
+  location: Section 18.1
+  name: Proposition 18.5
+- description: 'The action homomorphism $\phi: U_{\chi_{\lambda+\rho}} \rightarrow
+    \operatorname{Hom}_{\mathrm{fin}}(M_{\lambda}, M_{\lambda})$ is injective.'
+  kind: proposition
+  location: Section 18.2
+  name: Proposition 18.7
+- description: '$\phi$ is an isomorphism, i.e., the action homomorphism $\phi: U_{\chi_{\lambda+\rho}}
+    \rightarrow \operatorname{Hom}_{\mathrm{fin}}(M_{\lambda}, M_{\lambda})$ is an
+    isomorphism.'
+  kind: corollary
+  location: Section 18.2
+  name: Corollary 18.8 (The Duflo-Joseph theorem)
+- description: If $V$ is a finite-dimensional $\mathfrak{g}$-module then the natural
+    map $V \otimes U_{\chi_{\lambda+\rho}} \rightarrow \operatorname{Hom}_{\mathrm{fin}}(M_{\lambda},
+    V \otimes M_{\lambda})$ is an isomorphism.
+  kind: corollary
+  location: Section 18.2
+  name: Corollary 18.9
+- description: Let $V$ be a finite-dimensional $\mathfrak{g}$-module and $\lambda
+    \in \mathfrak{h}^{*}$. (i) The left infinitesimal characters occurring in $V \otimes
+    U_{\chi_{\lambda}}$ are $\chi_{\lambda+\nu}$ where $\nu$ runs over weights of
+    $V$. (ii) If $M$ is a $\mathfrak{g}$-module with infinitesimal character $\chi_{\lambda}$
+    then the infinitesimal characters occurring in $V \otimes M$ are among $\chi_{\lambda+\nu}$
+    where $\nu$ runs over weights of $V$. (iii) If $M$ is a nonzero Harish-Chandra
+    $\mathfrak{g}$-bimodule with infinitesimal character $(\chi_{\lambda}, \chi_{\mu})$
+    then there is $w \in W$ such that $w\lambda-\mu \in P$.
+  kind: corollary
+  location: Section 18.3
+  name: Corollary 18.10
+- description: 'The category of Harish-Chandra $\mathfrak{g}$-bimodules $HC(\mathfrak{g})$
+    has a decomposition according to generalized infinitesimal characters: $HC(\mathfrak{g})=\oplus_{\gamma,
+    \lambda} HC_{\chi_{\lambda+\gamma}, \chi_{\lambda}}(\mathfrak{g})$ where $\gamma
+    \in P_{+}$ and $\lambda \in \mathfrak{h}^{*}/\operatorname{Stab}(\gamma)$ (here
+    $\operatorname{Stab}(\gamma)$ is the stabilizer of $\gamma$ in $W$). In particular,
+    if $(\theta, \chi)$ cannot be written as $(\chi_{\lambda+\gamma}, \chi_{\lambda})$,
+    $\lambda \in \mathfrak{h}^{*}$, $\gamma \in P_{+}$, then $HC_{\theta, \chi}(\mathfrak{g})=0$.'
+  kind: corollary
+  location: Section 18.3
+  name: Corollary 18.11
+- description: 'The homomorphism $\phi: U(\mathfrak{g}) \rightarrow \prod_{\lambda
+    \in P_{+}} \operatorname{End}(L_{\lambda})$ is injective.'
+  kind: proposition
+  location: Section 19.1
+  name: Proposition 19.1
+- description: Let $X \in HC(\mathfrak{g})$. Then $\operatorname{Hom}_{\mathfrak{g}-\operatorname{bimod}}(X,
+    \mathbf{M}(\lambda, \mu)) \cong \operatorname{Hom}_{(\mathfrak{b}_{-}, \mathfrak{b}_{+})-\operatorname{bimod}}(X
+    \otimes \mathbb{C}_{\lambda-\rho}, \mathbb{C}_{\mu-\rho})$ where the $(\mathfrak{b}_{-},
+    \mathfrak{b}_{+})$-bimodule structure on $\mathbb{C}_{\mu-\rho}$ is defined by
+    the character $(\mu-\rho, 0)$ and on $\mathbb{C}_{\lambda-\rho}$ by the character
+    $(0, \lambda-\rho)$.
+  kind: proposition
+  location: Section 19.2
+  name: Proposition 19.3
+- description: The right action of $\mathfrak{g}$ on $\mathbf{M}(\lambda, \mu)$ is
+    given by the formula $\Phi_{V}(v \otimes \ell) \cdot b=\Phi_{\mathfrak{g} \otimes
+    V}\left([b \otimes v] \bigotimes\left[(\lambda-\rho) \otimes \ell+\sum_{\alpha
+    \in R_{+}} f_{\alpha}^{*} \otimes f_{\alpha} \ell\right]\right)$.
+  kind: proposition
+  location: Section 19.2
+  name: Proposition 19.4
+- description: 'We have an isomorphism $\xi: \mathbf{M}(\lambda, \mu) \rightarrow
+    C_{\lambda-\rho, \mu-\rho}^{\infty}(G / B)^{\mathrm{fin}}$ as Harish-Chandra bimodules.
+    Namely, $\xi(\Phi_{v, \ell})$ is the matrix coefficient $\psi_{v, \ell}(g):=(v,
+    g \ell), g \in G_{c}$.'
+  kind: proposition
+  location: Section 19.2
+  name: Proposition 19.5
+- description: The functor $H_{\lambda}$ is exact when $\lambda$ is dominant.
+  kind: proposition
+  location: Section 19.3
+  name: Proposition 19.7
+- description: Let $X \in \mathcal{O}$ be a free $U(\mathfrak{n}_{-})$-module. Then
+    for any $\mu \in \mathfrak{h}^{*}$ we have $\operatorname{Ext}_{\mathcal{O}}^{i}(X,
+    M_{\mu}^{\vee})=0$ for $i>0$.
+  kind: lemma
+  location: Section 20.1
+  name: Lemma 20.1
+- description: If $X$ is standardly filtered then $\operatorname{Ext}_{\mathcal{O}}^{i}(X,
+    M_{\mu}^{\vee})=0$ for all $\mu \in \mathfrak{h}^{*}$ and $i>0$.
+  kind: corollary
+  location: Section 20.2
+  name: Corollary 20.2
+- description: $X$ is standardly filtered if and only if $\operatorname{Ext}_{\mathcal{O}}^{1}(X,
+    M_{\lambda}^{\vee})=0$ for all $\lambda \in \mathfrak{h}^{*}$.
+  kind: theorem
+  location: Section 20.2
+  name: Theorem 20.3
+- description: 'Let $E$ be a finite-dimensional vector space, and suppose we have
+    a short exact sequence in $\mathcal{O}$: $0 \rightarrow K \rightarrow E \otimes
+    M_{\lambda} \rightarrow Z \rightarrow 0$ with $K[\lambda]=0$. If $\operatorname{Ext}_{\mathcal{O}}^{1}(Z,
+    M_{\mu}^{\vee})=0$ for all $\mu \in \mathfrak{h}^{*}$ then $K=0$ and $Z \cong
+    E \otimes M_{\lambda}$.'
+  kind: lemma
+  location: Section 20.2
+  name: Lemma 20.4
+- description: (i) Every $X \in \mathcal{O}$ which is a free $U(\mathfrak{n}_{-})$-module
+    is standardly filtered. In particular, for any $\lambda \in \mathfrak{h}^{*}$
+    and finite-dimensional $\mathfrak{g}$-module $V$, the module $V \otimes M_{\lambda}$
+    is standardly filtered. (ii) Any projective object $P \in \mathcal{O}$ is standardly
+    filtered.
+  kind: corollary
+  location: Section 20.2
+  name: Corollary 20.5
+- description: We have $d_{\lambda \mu}^{*}=d_{\mu \lambda}$.
+  kind: theorem
+  location: Section 20.3
+  name: Theorem 20.6 (BGG reciprocity)
+- description: We have $c_{\lambda \mu}=\sum_{\nu} d_{\nu \lambda} d_{\nu \mu}$. In
+    other words, $C=D^{T} D$ where $D=(d_{\lambda \mu})$.
+  kind: corollary
+  location: Section 20.3
+  name: Corollary 20.7
+- description: (i) $X^{\vee} \in \mathcal{O}$ and has the same character and composition
+    series as $X$. (ii) $(M_{\lambda})^{\vee}=M_{\lambda}^{\vee}, L_{\lambda}^{\vee}=L_{\lambda}$.
+    (iii) The assignment $X \mapsto X^{\vee}$ is an involutive equivalence of categories
+    $\mathcal{O} \rightarrow \mathcal{O}^{\mathrm{op}}$ which preserves the decomposition
+    into $\mathcal{O}_{\chi}(S)$.
+  kind: proposition
+  location: Section 20.4
+  name: Proposition 20.9
+- description: $\mathcal{O}$ has enough injectives, namely the injective hull of $L_{\lambda}$
+    is $P_{\lambda}^{\vee}$.
+  kind: corollary
+  location: Section 20.4
+  name: Corollary 20.10
+- description: If $L_{\mu-\rho}$ occurs in the composition series of $M_{\lambda-\rho}$
+    (i.e., $d_{\lambda-\rho, \mu-\rho} \neq 0$) then $\mu \preceq \lambda$.
+  kind: theorem
+  location: Section 20.6
+  name: Theorem 20.13 (Bernstein - I. Gelfand - S. Gelfand)
+- description: The following conditions on $\mu \leq \lambda$ are equivalent. (i)
+    $\mu \preceq \lambda$. (ii) $L_{\mu-\rho}$ occurs in $M_{\lambda-\rho}$. (iii)
+    $\dim \operatorname{Hom}(M_{\mu-\rho}, M_{\lambda-\rho}) \neq 0$.
+  kind: corollary
+  location: Section 20.6
+  name: Corollary 20.14
+- description: $T_{w}, w \in W$ are linearly independent, so they form a basis of
+    $H_{q}(W)$. Thus $H_{q}(W)$ is a free $\mathbb{Z}[q^{\frac{1}{2}}, q^{-\frac{1}{2}}]$-module
+    of rank $|W|$.
+  kind: proposition
+  location: Section 21.1
+  name: Proposition 21.1
+- description: There exist unique polynomials $P_{y, w} \in \mathbb{Z}[q]$ such that
+    (a) $P_{y, w}=0$ unless $y \leq w$, and $P_{w, w}=1$; (b) If $y<w$ then $P_{y,
+    w}$ has degree at most $\frac{\ell(w)-\ell(y)-1}{2}$; (c) The elements $C_{w}:=q^{-\frac{\ell(w)}{2}}
+    \sum_{y} P_{y, w}(q) T_{y} \in H_{q}(W)$ satisfy $D(C_{w})=C_{w}$.
+  kind: theorem
+  location: Section 21.3
+  name: Theorem 21.5
+- description: '(i) $P_{y, w}$ has non-negative coefficients. (ii) The multiplicity
+    $[M_{y \bullet \lambda}: L_{w \bullet \lambda}]$ equals $P_{y, w}(1)$.'
+  kind: theorem
+  location: Section 21.4
+  name: Theorem 21.6
+- description: A projective functor is an endofunctor of $\operatorname{Rep}(\mathfrak{g})_{f}$
+    which is isomorphic to a direct summand in $F_{V}$ for some finite-dimensional
+    $\mathfrak{g}$-module $V$.
+  kind: definition
+  location: Section 22.1
+  name: Definition 22.1
+- description: A projective $\theta$-functor is a direct summand in $F_{V}(\theta)$.
+  kind: definition
+  location: Section 22.1
+  name: Definition 22.3
+- description: 'Let $F_{1}, F_{2}$ be projective $\theta$-functors for $\theta=\chi_{\lambda}$.
+    Let $i_{\lambda}: \operatorname{Hom}(F_{1}, F_{2}) \rightarrow \operatorname{Hom}(F_{1}(M_{\lambda-\rho}),
+    F_{2}(M_{\lambda-\rho}))$. Then $i_{\lambda}$ is an isomorphism.'
+  kind: theorem
+  location: Section 22.1
+  name: Theorem 22.4
+- description: '(i) If F_1, F_2 are projective functors then every morphism φ: F_1(θ)
+    → F_2(θ) lifts to a morphism φ̂: F_1|_{Rep(𝔤)_θ} → F_2|_{Rep(𝔤)_θ}. (ii) If F_1
+    = F_2 and φ² = φ then we can choose φ̂ so that φ̂² = φ̂. (iii) If φ is an isomorphism
+    then so is φ̂.'
+  kind: proposition
+  location: Section 22.2
+  name: Proposition 22.5
+- description: '(i) Let F_1, F_2 be projective functors. Then: any isomorphism F_1(M_{λ−ρ})
+    ≅ F_2(M_{λ−ρ}) lifts to an isomorphism F_1|_{Rep(𝔤)_{χ_λ}} → F_2|_{Rep(𝔤)_{χ_λ}};
+    (ii) Let F be a projective functor. Then any decomposition F(M_{λ−ρ}) = ⊕_i M_i
+    can be lifted to a decomposition F = ⊕_i F_i where F_i are projective functors
+    and F_i(M_{λ−ρ}) = M_i; (iii) Every projective θ-functor is of the form F(θ) for
+    a projective functor F.'
+  kind: corollary
+  location: Section 22.2
+  name: Corollary 22.6
+- description: (i) Each projective functor F is a direct sum of indecomposable projective
+    functors. Moreover, for F ∘ Π_θ this sum is finite. (ii) If F = F ∘ Π_{χ_λ} for
+    dominant λ is an indecomposable projective functor then F(M_{λ−ρ}) = P_{μ−ρ} for
+    some μ ∈ 𝔥*.
+  kind: proposition
+  location: Section 22.3
+  name: Proposition 22.7
+- description: (i) If F_1, F_2 are projective functors with [F_1] = [F_2] then F_1
+    ≅ F_2. (ii) If (F, F^∨) are an adjoint pair of projective functors then [F] is
+    adjoint to [F^∨] under the inner product on K(𝒪). (iii) For a projective functor
+    F, its left and right adjoint are isomorphic.
+  kind: theorem
+  location: Section 23.1
+  name: Theorem 23.1
+- description: If F is a projective functor then [F] commutes with W on K(𝒪).
+  kind: theorem
+  location: Section 23.2
+  name: Theorem 23.2
+- description: When λ dominates χ then (i) Theorem 23.2 holds; (ii) For each μ ∈ S
+    there exists an indecomposable projective functor F_μ sending M_{λ−ρ} to P_{μ−ρ}.
+  kind: lemma
+  location: Section 23.2
+  name: Lemma 23.3
+- description: Let λ ∈ 𝔥* be dominant and φ, ψ ∈ λ + P, ψ ⪯ φ. Then (λ − φ)² ≤ (λ
+    − ψ)², and if (λ − φ)² = (λ − ψ)² then ψ ∈ W_λ φ.
+  kind: lemma
+  location: Section 23.2
+  name: Lemma 23.4
+- description: For any ξ ∈ Ξ there exists an indecomposable projective functor F_ξ
+    such that F_ξ(M_{ν−ρ}) = 0 if χ_ν ≠ χ_λ and F_ξ(M_{λ−ρ}) = P_{μ−ρ} for any proper
+    representation (μ, λ) of ξ. The assignment ξ ↦ F_ξ is a bijection between Ξ and
+    the set of isomorphism classes of indecomposable projective functors.
+  kind: theorem
+  location: Section 23.3
+  name: Theorem 23.6
+- description: If F is an indecomposable projective functor with F = F ∘ Π_{χ_λ} for
+    some dominant λ and F(M_{λ−ρ}) = P_{μ−ρ} for some μ, then S_*(F) = ξ := W(μ, λ)
+    and (μ, λ) is a proper representation of ξ.
+  kind: lemma
+  location: Section 23.3
+  name: Lemma 23.7
+- description: 'If W_λ = W_μ and V has extremal weight μ − λ then F_{χ,V,θ}: Rep(𝔤)_θ
+    → Rep(𝔤)_χ is an equivalence of categories. A quasi-inverse equivalence is given
+    by the functor F_{θ,V*,χ}.'
+  kind: theorem
+  location: Section 24.1
+  name: Theorem 24.1
+- description: (i) I ⊂ J iff ν(I) ⊂ ν(J). In particular, ν is injective. (ii) The
+    image of ν is the set of submodules of M_{λ−ρ} which are quotients of direct sums
+    of P_{μ−ρ} where χ_μ = χ_λ, μ ⪯ λ and μ ⪯ W_λ μ. (iii) If λ is regular (i.e.,
+    W_λ = 1) then ν is an isomorphism of lattices.
+  kind: theorem
+  location: Section 24.2
+  name: Theorem 24.4
+- description: Let θ = χ_λ where λ is dominant. If M_{λ−ρ} is irreducible then U_θ
+    is a simple algebra. Conversely, if U_θ is simple then M_{μ−ρ} is irreducible
+    for all μ with χ_μ = θ.
+  kind: corollary
+  location: Section 24.2
+  name: Corollary 24.5
+- description: A proper 2-sided ideal I in a (possibly non-commutative) ring R is
+    prime if whenever the product XY of two 2-sided ideals X, Y ⊂ R is contained in
+    I, either X or Y must be contained in I.
+  kind: definition
+  location: Section 25.1
+  name: Definition 25.1
+- description: An ideal I ⊂ R is primitive if it is the annihilator of a simple R-module
+    M.
+  kind: definition
+  location: Section 25.1
+  name: Definition 25.2
+- description: Every prime ideal J ⊂ U_θ is primitive and moreover is the annihilator
+    of a simple highest weight module L_{μ−ρ}, where χ_μ = θ.
+  kind: theorem
+  location: Section 25.1
+  name: Theorem 25.4
+- description: The abelian category HC_θ^1 has enough projectives.
+  kind: lemma
+  location: Section 25.2
+  name: Lemma 25.5
+- description: The simples (and indecomposable projectives) in HC_θ^1 are labeled
+    by the set Ξ, via ξ ∈ Ξ ↦ L_ξ, P_ξ. Namely, if ξ = (μ, λ) is a proper representation
+    then P_ξ is the unique indecomposable projective in HC_θ^1 such that P_ξ ⊗_{U(𝔤)}
+    M_{λ−ρ} = P_{μ−ρ}.
+  kind: theorem
+  location: Section 25.2
+  name: Theorem 25.6
+- description: Objects in HC_θ^1, hence in HC_θ and HC, have finite length.
+  kind: corollary
+  location: Section 25.2
+  name: Corollary 25.7
+- description: (J. Bernstein-S. Gelfand) (i) If λ is a regular weight then the functor
+    T_λ is an equivalence of categories, with quasi-inverse H_λ. (ii) In general,
+    T_λ is fully faithful and defines an equivalence HC_θ^1 ≅ 𝒪(λ) with quasi-inverse
+    H_λ.
+  kind: theorem
+  location: Section 25.3
+  name: Theorem 25.8
+- description: 'Let 𝒜, ℬ be abelian categories such that 𝒜 has enough projectives
+    and T: 𝒜 → ℬ a right exact functor which maps projectives to projectives. Suppose
+    that T is fully faithful on projectives, i.e., for any projectives P_0, P_1 ∈
+    𝒜, the natural map Hom(P_1, P_0) → Hom(T(P_1), T(P_0)) is an isomorphism. Then
+    T is fully faithful, and defines an equivalence of 𝒜 onto the subcategory of objects
+    Y ∈ ℬ which admit a presentation T(P_1) → T(P_0) → Y → 0 for some projectives
+    P_0, P_1 ∈ 𝒜.'
+  kind: proposition
+  location: Section 25.3
+  name: Proposition 25.10
+- description: Every Harish-Chandra bimodule M with right infinitesimal character
+    θ is realizable as 𝕍^fin where 𝕍 is a (not necessarily unitary) admissible representation
+    of the complex simply connected group G corresponding to 𝔤 on a Hilbert space.
+  kind: corollary
+  location: Section 25.3
+  name: Corollary 25.11
+- description: (i) The principal series bimodule M(λ, μ) is irreducible and isomorphic
+    to M(−λ, −μ) unless λ, μ are nonzero integers of the same sign. Otherwise such
+    bimodules are pairwise nonisomorphic. (ii) If λ, μ are both nonzero integers of
+    the same sign then M(λ, μ) is indecomposable and has a finite-dimensional constituent
+    L_{|λ|−1}* ⊗ L_{|μ|−1}, which is a submodule if λ > 0 and quotient if λ < 0. The
+    other composition factor is M(λ, −μ) ≅ M(−λ, μ), which is irreducible. (iii) If
+    ξ = (μ, λ) is a proper representation with λ ∉ ℤ_{≥1} then L_ξ = M(λ, μ). If ξ
+    = (μ, λ) where λ ∈ ℤ_{≥1} then L_ξ = L_{λ−1}* ⊗ L_{μ−1} if μ ≥ 1 and L_ξ = M(λ,
+    μ) if μ ≤ 0.
+  kind: proposition
+  location: Section 26.1
+  name: Proposition 26.1
+- description: 'The irreducible unitary representations of $\mathrm{SL}_{2}(\mathbb{C})$
+    are Hilbert space completions of the following unitary Harish-Chandra modules:
+    (1) Unitary principal series $\mathbf{M}\left(-\frac{m}{2}+s, \frac{m}{2}+s\right),
+    m \in \mathbb{Z}, s \in i\mathbb{R}$; (2) Complementary series $\mathbf{M}(s,
+    s), -1<s<1$; (3) The trivial representation $\mathbb{C}$. Here $\mathbf{M}\left(-\frac{m}{2}+s,
+    \frac{m}{2}+s\right) \cong \mathbf{M}\left(\frac{m}{2}-s,-\frac{m}{2}-s\right)$,
+    $\mathbf{M}(s, s)=\mathbf{M}(-s,-s)$ and there are no other isomorphisms.'
+  kind: theorem
+  location: Section 26, Subsection 26.2
+  name: Theorem 26.3 (Gelfand-Naimark)
+- description: Let $\lambda \in P$. If $\lambda \in P_{+}$ then we have an isomorphism
+    of $G$-modules $\Gamma\left(G / B, \mathcal{L}_{-\lambda}\right) \cong L_{\lambda}^{*}$.
+    If $\lambda \notin P_{+}$ then $\Gamma\left(G / B, \mathcal{L}_{-\lambda}\right)=0$.
+  kind: theorem
+  location: Section 27, Subsection 27.1
+  name: Theorem 27.3 (Borel-Weil)
+- description: Let $\lambda \in P$ with $\left(\lambda, \alpha_{i}^{\vee}\right)=0,
+    i \in S$. Then $\Gamma\left(G / P_{S}, \mathcal{L}_{-\lambda, S}\right) \cong
+    L_{\lambda}^{*}$ if $\lambda \in P_{+}$, otherwise $\Gamma\left(G / P_{S}, \mathcal{L}_{-\lambda,
+    S}\right)=0$.
+  kind: corollary
+  location: Section 27, Subsection 27.1
+  name: Corollary 27.5
+- description: 'The Springer map $p: T^{*}\mathcal{F} \to \mathcal{N}$ is birational
+    and projective, so it is a resolution of singularities.'
+  kind: theorem
+  location: Section 27, Subsection 27.2
+  name: Theorem 27.8
+- description: Let $G$ be a connected real or complex Lie group or complex algebraic
+    group. Then every $G$-orbit in $\mathfrak{g}^{*}$ has a natural symplectic structure.
+  kind: theorem
+  location: Section 27, Subsection 27.3
+  name: Theorem 27.11 (Kirillov-Kostant)
+- description: The singular locus of the nilpotent cone $\mathcal{N}$ has codimension
+    $\geq 2$.
+  kind: corollary
+  location: Section 27, Subsection 27.3
+  name: Corollary 27.12
+- description: $\mathcal{N}$ is normal (i.e., the algebra $\mathcal{O}(\mathcal{N})$
+    is integrally closed in its quotient field).
+  kind: corollary
+  location: Section 27, Subsection 27.3
+  name: Corollary 27.13
+- description: 'Let $Y$ be an irreducible normal algebraic variety. Then (i) The singular
+    locus of $Y$ has codimension $\geq 2$. (ii) If $U \subset Y$ is an open subset
+    and $Y \backslash U$ has codimension $\geq 2$ then any regular function $f$ on
+    $U$ extends to a regular function on $Y$. In particular, any regular function
+    on the smooth locus of $Y$ extends to a regular function on $Y$. (iii) (Zariski
+    main theorem) If $X$ is irreducible and $p: X \rightarrow Y$ is a proper birational
+    morphism then fibers of $p$ are connected.'
+  kind: proposition
+  location: Section 27, Subsection 27.4
+  name: Proposition 27.14
+- description: 'Let $Y$ be an irreducible normal affine algebraic variety and $p:
+    X \rightarrow Y$ be a resolution of singularities. Then the homomorphism $p^{*}:
+    \mathcal{O}(Y) \rightarrow \mathcal{O}(X)$ is an isomorphism.'
+  kind: proposition
+  location: Section 27, Subsection 27.4
+  name: Proposition 27.15
+- description: 'Let $p: T^{*} \mathcal{F} \rightarrow \mathcal{N}$ be the Springer
+    resolution. Then the map $p^{*}: \mathcal{O}(\mathcal{N}) \rightarrow \mathcal{O}\left(T^{*}
+    \mathcal{F}\right)$ is an isomorphism of graded algebras.'
+  kind: theorem
+  location: Section 27, Subsection 27.4
+  name: Theorem 27.16
+- description: $D(X)$ is called the algebra of differential operators on $X$.
+  kind: definition
+  location: Section 28, Subsection 28.1
+  name: Definition 28.1
+- description: A left (respectively, right) $D$-module on $X$ is a left (respectively,
+    right) $D(X)$-module.
+  kind: definition
+  location: Section 28, Subsection 28.2
+  name: Definition 28.3
+- description: A left (respectively, right) $D$-module on $X$ is a quasicoherent sheaf
+    of left (respectively, right) $D_{X}$-modules. The categories of left (respectively,
+    right) $D$-modules on $X$ (with obviously defined morphisms) are denoted by $\mathcal{M}_{l}(X)$
+    and $\mathcal{M}_{r}(X)$.
+  kind: definition
+  location: Section 28, Subsection 28.3
+  name: Definition 28.6
+- description: 'A connection on an $\mathcal{O}_{X}$-module $M$ is a $\mathbf{k}$-linear
+    morphism of sheaves $\nabla: M \rightarrow M \otimes_{\mathcal{O}_{X}} \Omega_{X}^{1}$
+    such that $\nabla(f m)=f \nabla(m)+m \otimes d f$ for local sections $f$ of $\mathcal{O}_{X}$
+    and $m$ of $M$.'
+  kind: definition
+  location: Section 28, Subsection 28.4
+  name: Definition 28.7
+- description: A left $D_{X}$-module is the same thing as an $\mathcal{O}_{X}$-module
+    with a flat connection.
+  kind: proposition
+  location: Section 28, Subsection 28.4
+  name: Proposition 28.9
+- description: '(i) The homomorphism $a: U(\mathfrak{g}) \rightarrow D(\mathcal{F})$
+    factors through a homomorphism $a_{0}: U_{0} \rightarrow D(\mathcal{F})$. (ii)
+    One has $\operatorname{gr}(a_{0})=p^{*}$ where $p$ is the Springer map $T^{*}
+    \mathcal{F} \rightarrow \mathcal{N}$. (iii) $\operatorname{gr} D(\mathcal{F})=\mathcal{O}(T^{*}
+    \mathcal{F})$ and $a_{0}$ is an isomorphism.'
+  kind: theorem
+  location: Section 29, Subsection 29.1
+  name: Theorem 29.1 (Beilinson-Bernstein)
+- description: The functors $\Gamma$ and $\operatorname{Loc}$ are mutually inverse
+    equivalences. Thus the category $U_{0}-\bmod$ is canonically equivalent to the
+    category of $D$-modules on the flag variety $\mathcal{F}$.
+  kind: theorem
+  location: Section 29, Subsection 29.1
+  name: Theorem 29.2 (Beilinson-Bernstein localization theorem)
+- description: 'A smooth algebraic variety $X$ is said to be $D$-affine if the global
+    sections functor $\Gamma: \mathcal{M}(X) \rightarrow D(X)-\bmod$ is an equivalence
+    (hence $\operatorname{Loc}$ is its inverse).'
+  kind: definition
+  location: Section 29, Subsection 29.1
+  name: Definition 29.3
+- description: Partial flag varieties of semisimple algebraic groups are $D$-affine.
+  kind: corollary
+  location: Section 29, Subsection 29.1
+  name: Corollary 29.4
+- description: '(i) The map $a: U(\mathfrak{g}) \rightarrow D_{\lambda}(\mathcal{F})$
+    factors through a map $a_{\lambda}: U_{\lambda} \rightarrow D_{\lambda}(\mathcal{F})$.
+    (ii) One has $\operatorname{gr}(a_{\lambda})=p^{*}$ where $p$ is the Springer
+    map $T^{*} \mathcal{F} \rightarrow \mathcal{N}$. (iii) $\operatorname{gr} D_{\lambda}(\mathcal{F})=\mathcal{O}(T^{*}
+    \mathcal{F})$ and $a_{\lambda}$ is an isomorphism.'
+  kind: theorem
+  location: Section 29, Subsection 29.3
+  name: Theorem 29.6 (Beilinson-Bernstein)
+- description: If $\lambda$ is antidominant then the functors $\Gamma$ and $\operatorname{Loc}$
+    are mutually inverse equivalences. Thus the category $U_{\lambda}-\bmod$ is canonically
+    equivalent to the category of $D_{\lambda}$-modules on the flag variety $\mathcal{F}$.
+  kind: theorem
+  location: Section 29, Subsection 29.3
+  name: Theorem 29.7 (Beilinson-Bernstein localization theorem)
+- description: The support of an irreducible $D$-module is irreducible.
+  kind: proposition
+  location: Section 30, Subsection 30.2
+  name: Proposition 30.2
+- description: The functor $i^{\dagger}$ is an equivalence of categories $\mathcal{M}_{Z}(X)
+    \rightarrow \mathcal{M}(Z)$.
+  kind: theorem
+  location: Section 30, Subsection 30.3
+  name: Theorem 30.4 (Kashiwara)
+- description: 'A $G$-equivariant quasicoherent sheaf on $X$ is a quasicoherent sheaf
+    $\mathcal{E}$ on $X$ equipped with an isomorphism $\phi: \rho^{*} \mathcal{E}
+    \cong \mathcal{O}_{G} \boxtimes \mathcal{E}$ making the appropriate diagram commutative.
+    Thus $\phi$ comprises all the isomorphisms $\phi_{g}$, which therefore satisfy
+    the equality $\phi_{gh}=\phi_{g} \circ g(\phi_{h})$ and depend on $g$ algebraically.'
+  kind: definition
+  location: Section 30.4
+  name: Definition 30.7
+- description: A weakly $G$-equivariant $D$-module on $X$ is a $D_{X}$-module $\mathcal{E}$
+    with a $G$-equivariant quasicoherent sheaf structure, where $\phi$ is $D_{X}$-linear.
+  kind: definition
+  location: Section 30.4
+  name: Definition 30.8
+- description: 'A (strongly) $G$-equivariant $D_{X}$-module is a weakly $G$-equivariant
+    $D_{X}$-module where the two $\mathfrak{g}$-actions agree: $b_{\phi}=b_{0}$ (or,
+    equivalently, where $\phi$ is $D_{G \times X}$-linear).'
+  kind: definition
+  location: Section 30.4
+  name: Definition 30.9
+- description: A monodromic $D_{X}$-module (with respect to the bundle $\widetilde{X}
+    \rightarrow X$) is a weakly $T$-equivariant $D_{\widetilde{X}}$-module.
+  kind: definition
+  location: Section 30.4
+  name: Definition 30.16
+- description: Assume that $X$ is a $D$-affine variety and that $K$ is an affine algebraic
+    group acting on $X$. Let $D(X)$ be the ring of global sections of $D_{X}$. Then
+    the category of $K$-equivariant $D_{X}$-modules is equivalent to the category
+    of $D(X)$-modules $M$ endowed with a locally finite $K$-action whose differential
+    coincides with the action of $\operatorname{Lie}(K)$ on $M$ coming from the map
+    $\operatorname{Lie}(K) \rightarrow D(X)$.
+  kind: proposition
+  location: Section 30.4
+  name: Proposition 30.18
+- description: If $\lambda \in \mathfrak{h}^{*}$ is antidominant then the functors
+    $\Gamma$, Loc restrict to mutually inverse equivalences between the category of
+    $(\mathfrak{g}, K)$-modules with infinitesimal character $\chi_{\lambda-\rho}$
+    and the category of $K$-equivariant $D_{\lambda}$-modules on $\mathcal{F}$.
+  kind: corollary
+  location: Section 30.4
+  name: Corollary 30.20
+- description: Let $X$ be a smooth variety and $K$ a connected algebraic group acting
+    on $X$ with finitely many orbits. Then there are finitely many irreducible $K$-equivariant
+    $D$-modules on $X$. Namely, they are parametrized by pairs $(O, V)$ where $O$
+    is an orbit of $K$ on $X$ and $V$ is an irreducible representation of the component
+    group $H/H_{0}$ of the stabilizer $H:=K_{x}$ for $x \in O$, $(O, V) \mapsto M(O,
+    V)$.
+  kind: theorem
+  location: Section 31.1
+  name: Theorem 31.1
+- description: The group $K$ acts on $\mathcal{F}$ with finitely many orbits.
+  kind: proposition
+  location: Section 31.2
+  name: Proposition 31.3
+- description: Irreducible $(\mathfrak{g}, K)$-modules with (pure) infinitesimal character
+    $\chi$ are $\pi(O, V)$ where $O$ is a $K$-orbit on $\mathcal{F}$ and $V$ an irreducible
+    representation of $K_{x}$, $x \in O$ such that $\operatorname{Lie}(K_{x})$ acts
+    via the character $\lambda_{x}$. Namely, $\pi(O, V)$ corresponds to $M(O, V)$
+    under the Beilinson-Bernstein equivalence.
+  kind: theorem
+  location: Section 31.2
+  name: Theorem 31.4

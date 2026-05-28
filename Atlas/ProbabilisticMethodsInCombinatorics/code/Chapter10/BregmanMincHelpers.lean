@@ -1,0 +1,49 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Mathlib.LinearAlgebra.Matrix.Permanent
+import Mathlib.GroupTheory.Perm.Fin
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Logic.Equiv.Fin.Basic
+import Mathlib.Data.Fin.SuccPred
+import Mathlib.Data.Real.Basic
+
+open Finset Matrix BigOperators Equiv Classical
+
+noncomputable section
+
+namespace BregmanMinc
+
+/-- $N_i(A, \sigma, \tau)$: number of columns $j$ such that $A_{ij} = 1$ and no earlier
+row in the $\tau$-ordering (i.e., $\tau^{-1}(m) < \tau^{-1}(i)$) has $\sigma(m) = j$.
+This counts the available choices at row $i$ in the Brégman-Minc proof. -/
+def N_i {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
+    (σ τ : Equiv.Perm (Fin n)) (i : Fin n) : ℕ :=
+  (Finset.univ.filter (fun j : Fin n =>
+    A i j = 1 ∧ ∀ m : Fin n, τ.symm m < τ.symm i → σ m ≠ j)).card
+
+section PermanentCounting
+
+end PermanentCounting
+
+section TreeIdentity
+
+/-- Tree identity used in the proof of Brégman-Minc: for every row-ordering $\tau$,
+$\sum_\sigma \prod_i \frac{1}{N_i(A, \sigma, \tau)} = 1$, where the sum is over
+permutations $\sigma$ giving a perfect matching of the $0/1$ matrix $A$. -/
+theorem tree_identity (n : ℕ) (A : Matrix (Fin n) (Fin n) ℝ)
+    (hA : ∀ i j, A i j = 0 ∨ A i j = 1)
+    (τ : Equiv.Perm (Fin n))
+    (hP : 0 < (Finset.univ.filter (fun σ : Equiv.Perm (Fin n) => ∀ i, A i (σ i) = 1)).card) :
+    ∑ σ ∈ Finset.univ.filter (fun σ : Equiv.Perm (Fin n) => ∀ i, A i (σ i) = 1),
+      ∏ i : Fin n, (1 : ℝ) / (N_i A σ τ i : ℝ) = 1 := by sorry
+
+end TreeIdentity
+
+end BregmanMinc
+end

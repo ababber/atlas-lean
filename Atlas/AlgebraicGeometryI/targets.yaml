@@ -1,0 +1,1054 @@
+- description: If K/k is a field extension, and K is a finitely generated k-algebra,
+    then K/k is algebraic. In particular, if k = \overline{k}, then K = k.
+  kind: theorem
+  location: Lecture 1
+  name: Theorem 1.1 (Essential Nullstellensatz)
+- description: A Zariski closed subset in k^n is a set given by the zero set of polynomial
+    equations.
+  kind: definition
+  location: Lecture 1
+  name: Definition 1
+- description: Zariski closed subsets in k^n are in bijection with radical ideals
+    in R = k[x_1, \ldots, x_n]. (Recall that I is a radical ideal if R/I has no nilpotents.)
+  kind: theorem
+  location: Lecture 1
+  name: Theorem 1.2
+- description: There is a Zariski topology on \mathbb{A}^n, where the closed sets
+    are the Zariski closed sets.
+  kind: corollary
+  location: Lecture 1
+  name: Corollary 1
+- description: An affine variety is a space with functions Y such that * is bijective
+    for every X and k[Y] a finitely generated k-algebra.
+  kind: definition
+  location: Lecture 1
+  name: Definition 2
+- description: Let k[U] denote functions associated with the set U, as specified in
+    last lecture. Then k[Spec A] \cong A.
+  kind: theorem
+  location: Lecture 2
+  name: Theorem 2.1
+- description: Given A a finitely-generated k-algebra, there exists some algebraically
+    independent elements X_1, \ldots, X_d over k such that A is a finitely generated
+    k[X_1, \ldots, X_d]-module.
+  kind: lemma
+  location: Lecture 2
+  name: Lemma 1 (Noether Normalization)
+- description: Spec A is quasi-compact for any commutative ring A.
+  kind: proposition
+  location: Lecture 2
+  name: Proposition 1
+- description: Given a space of functions X, X is an affine variety if and only if
+    X = Spec A for a finitely generated commutative ring A with no nilpotents.
+  kind: theorem
+  location: Lecture 2
+  name: Theorem 2.2
+- description: An algebraic variety over k is a space with functions which is a finite
+    union of open subspaces, each one is an affine variety.
+  kind: definition
+  location: Lecture 2
+  name: Definition 3
+- description: A closed subspace in an affine variety is also affine, and global regular
+    functions restrict surjectively.
+  kind: lemma
+  location: Lecture 2
+  name: Lemma 2
+- description: A closed subspace of a variety is a variety.
+  kind: corollary
+  location: Lecture 2
+  name: Corollary 2
+- description: k[x_1, \ldots, x_n], and hence any finitely generated k-algebra is
+    Noetherian.
+  kind: theorem
+  location: Lecture 2
+  name: Theorem 2.3 (Hilbert Basis Theorem)
+- description: An algebraic variety is a Noetherian topological space (that is, every
+    descending chains of closed subsets terminate; equivalently, every open subset
+    is quasicompact).
+  kind: corollary
+  location: Lecture 2
+  name: Corollary 3
+- description: An open subspace of an algebraic variety is an algebraic variety. (Contrast
+    with affine variety.)
+  kind: corollary
+  location: Lecture 2
+  name: Corollary 4
+- description: Topologically, the projective space \mathbb{P}^n is given by the quotient
+    topology \mathbb{A}^{n+1} - \{0\}/(x_0, \dots, x_n) \sim (\lambda x_0, \dots,
+    \lambda x_n) \forall \lambda \neq 0. A function on U \subseteq \mathbb{P}^n is
+    regular if its pullback by \mathbb{A}^{n+1} - \{0\} \xrightarrow{\pi} \mathbb{P}^n
+    is regular on \pi^{-1}(U).
+  kind: definition
+  location: Lecture 2
+  name: Definition 4 (Projective Space)
+- description: Let X be a space with functions. Then, X is affine if and only if X
+    = Spec A for some finitely generated k-algebra A with no nilpotents.
+  kind: theorem
+  location: Lecture 3
+  name: Theorem 3.1
+- description: An algebraic variety is projective if it is isomorphic to a closed
+    subvariety of a projective space.
+  kind: definition
+  location: Lecture 3
+  name: Definition 5
+- description: An algebraic variety is quasiprojective if it is a locally closed subvariety
+    in a projective space.
+  kind: definition
+  location: Lecture 3
+  name: Definition 6
+- description: Let A be a finitely generated k-algebra, where k is any field (not
+    necessarily algebraically closed). Then, we can find B \subset A such that B \cong
+    k[x_1, \ldots, x_n] for some n and A is finitely generated as a B-module.
+  kind: theorem
+  location: Lecture 3
+  name: Theorem 3.2 (Noether normalization lemma)
+- description: Take P \in k[x_1, ..., x_n] be a nonconstant polynomial and let d =
+    \deg P. There is a linear change of variables such that P has the form x_n^d +
+    (terms of \deg_{x_n} < d).
+  kind: lemma
+  location: Lecture 3
+  name: Lemma 3
+- description: k[x_1, ..., x_n] is Noetherian.
+  kind: proposition
+  location: Lecture 3
+  name: Proposition 2 (Hilbert basis theorem)
+- description: Let M be a finitely generated module over a commutative ring A. If
+    I is an ideal of A such that IM = M, then there exists a \in A such that aM =
+    0 and a \equiv 1 \pmod{I}.
+  kind: lemma
+  location: Lecture 3
+  name: Lemma 4 (Nakayama lemma)
+- description: Let A be a finitely generated k-algebra. If A is a field, then A/k
+    is algebraic.
+  kind: theorem
+  location: Lecture 3
+  name: Theorem 3.3 (essential Nullstellensatz)
+- description: A topological space is irreducible if any two nonempty open subsets
+    intersect. Equivalently, it is not a union of two proper closed subsets. Another
+    equivalent definition is a space where a nonempty open subset is dense.
+  kind: definition
+  location: Lecture 3
+  name: Definition 7
+- description: Spec A is irreducible if and only if A has no zerodivisors.
+  kind: proposition
+  location: Lecture 3
+  name: Proposition 3
+- description: A component of a topological space is a maximal irreducible closed
+    subset.
+  kind: definition
+  location: Lecture 3
+  name: Definition 8
+- description: A Noetherian topological space is the union of its components (finite
+    in number).
+  kind: proposition
+  location: Lecture 3
+  name: Proposition 4
+- description: 'We have the following correspondences: Irreducible closed subsets
+    in Spec A \leftrightarrow Prime ideals in A; Components \leftrightarrow minimal
+    prime ideals (i.e. prime ideals not containing any other prime ideals).'
+  kind: corollary
+  location: Lecture 3
+  name: Corollary 5
+- description: 0 = \bigcap (minimal prime ideals).
+  kind: corollary
+  location: Lecture 3
+  name: Corollary 6
+- description: A Noetherian topological space X is a finite union of its components
+    (i.e. maximal irreducible subsets).
+  kind: proposition
+  location: Lecture 4
+  name: Proposition 5
+- description: A Noetherian topological space X is a finite union of closed irreducible
+    subsets.
+  kind: lemma
+  location: Lecture 4
+  name: Lemma 5
+- description: A radical ideal in a finitely generated ring without nilpotents A is
+    a finite intersection of prime ideals.
+  kind: corollary
+  location: Lecture 4
+  name: Corollary 7
+- description: A closed subset Z \subset Spec A is irreducible if and only if I_Z
+    is prime.
+  kind: corollary
+  location: Lecture 4
+  name: Corollary 8
+- description: The Grassmannian Gr(k,n) defines a projective algebraic variety. The
+    embedding of Gr(k,n) into projective space is defined by W \mapsto the line \bigwedge^k
+    W \subset \bigwedge^k V. This map realizes Gr(k,n) as a closed subvariety in \mathbb{P}(\bigwedge^k
+    V) = \mathbb{P}^{\binom{n}{k}-1}.
+  kind: theorem
+  location: Lecture 4
+  name: Theorem 4.1
+- description: Take \omega \in \bigwedge^2 V. If \omega = v_1 \wedge v_2, then \omega
+    \wedge \omega \in \bigwedge^4 V = 0. If dim V = 4, then the converse holds.
+  kind: lemma
+  location: Lecture 4
+  name: Lemma 6
+- description: 'A morphism of algebraic varieties f: X \longrightarrow Y is called
+    affine if Y has an open cover Y = \bigcup U_i where the U_i are affine open pieces
+    such that the f^{-1}(U_i) \subset X are affine.'
+  kind: definition
+  location: Lecture 4
+  name: Definition 9
+- description: The morphism f is finite if there is an affine open cover Y = \bigcup
+    U_i such that f^{-1}(U_i) = Spec A and U_i = Spec B with A a finitely generated
+    B-module.
+  kind: definition
+  location: Lecture 4
+  name: Definition 10
+- description: 'A finite map satisfies the following properties: 1. It is closed:
+    f(Z) \subset Y is closed for every closed Z \subset X. 2. It has finite fibers.'
+  kind: lemma
+  location: Lecture 4
+  name: Lemma 7
+- description: If B \subset A and A is finitely generated over B as a B-module ('A
+    is finite over B'), then Spec A \longrightarrow Spec B has finite nonempty fibers.
+  kind: corollary
+  location: Lecture 4
+  name: Corollary 9
+- description: 'Let Z_1 \subsetneq Z_2 be irreducible closed subsets of an algebraic
+    variety X. If f: X \longrightarrow Y is a finite morphism, then f(Z_1) \subsetneq
+    f(Z_2).'
+  kind: lemma
+  location: Lecture 4
+  name: Lemma 8
+- description: The dimension of a Noetherian topological space is the maximal number
+    such that there exists a chain X \supset Z_n \supsetneq Z_{n-1} \supsetneq Z_{n-2}
+    \supsetneq \cdots \supsetneq Z_0 of irreducible subsets in X.
+  kind: definition
+  location: Lecture 4
+  name: Definition 11
+- description: 'Let f: X \to Y be a finite map of varieties and Z_1 \subsetneq Z_2
+    irreducible subvarieties of X. Then f(Z_1) \subsetneq f(Z_2).'
+  kind: lemma
+  location: Lecture 5
+  name: Lemma 9
+- description: 'If f: X \to Y is a finite surjection of varieties, then dim(X) = dim(Y).'
+  kind: lemma
+  location: Lecture 5
+  name: Lemma 10
+- description: dim(\mathbb{A}^n) = n.
+  kind: theorem
+  location: Lecture 5
+  name: Theorem 5.1
+- description: If X is a hypersurface in \mathbb{A}^n defined by a non-constant polynomial
+    then dim(X) = n - 1.
+  kind: corollary
+  location: Lecture 5
+  name: Corollary 10
+- description: Every variety has finite dimension.
+  kind: corollary
+  location: Lecture 5
+  name: Corollary 11
+- description: All irreducible curves over a given field (or even various fields of
+    equal cardinality!) are homeomorphic.
+  kind: proposition
+  location: Lecture 5
+  name: Proposition 6
+- description: Let X \subset \mathbb{A}^n be a hypersurface defined by a polynomial
+    g. Write g as a sum of homogeneous components g = g_m + g_{m+1} + ... with g_m
+    \neq 0. If 0 \in X, the multiplicity of X at 0 is defined to be the natural number
+    m. The multiplicity at p \in X is the multiplicity at 0 after applying a linear
+    change of coordinates mapping p to 0.
+  kind: definition
+  location: Lecture 5
+  name: Definition 12
+- description: Let X, Y be two curves in \mathbb{A}^2 with no common component and
+    (a,b) be an intersection point. If I_X and I_Y are the ideals in k[x,y] defining
+    X and Y, respectively. Then V = k[x,y]/(I_X + I_Y) is a finite dimensional vector
+    space and multiplication by x,y induce two commuting operators on V. The multiplicity
+    of intersection of X and Y at (a,b) is defined as the dimension of the common
+    generalized eigenspace of the two operators, with eigenvalues a,b respectively.
+  kind: definition
+  location: Lecture 5
+  name: Definition 13
+- description: Let X, Y \subset \mathbb{P}^2 be curves without a common component,
+    of degree d and e, respectively. Then X \cap Y contains de points, counted with
+    multiplicities.
+  kind: theorem
+  location: Lecture 5
+  name: Theorem 5.2 (Bezout)
+- description: Let Q be a conic in \mathbb{P}^2 and X a hexagon inscribed in Q. Then
+    the three pairs of opposite sides of X intersect at three points which lie on
+    a straight line.
+  kind: theorem
+  location: Lecture 5
+  name: Theorem 5.3 (Pascal)
+- description: Let X be an irreducible variety of dimension n and let g be a non-constant
+    function on X. Then any irreducible component of Z(g) has dimension n-1.
+  kind: theorem
+  location: Lecture 5
+  name: Theorem 5.4
+- description: dim(Z(g)) \geq n - 1.
+  kind: lemma
+  location: Lecture 5
+  name: Lemma 11
+- description: Let X be an irreducible variety and U \subset X a non-empty open subset.
+    Then dim(U) = dim(X).
+  kind: lemma
+  location: Lecture 5
+  name: Lemma 12
+- description: Let X be an irreducible variety. The function field of X, denoted k(X)
+    is defined as the limit K(X) = \varinjlim_{U \subset X} k[U] taken over all open
+    subsets of X with the obvious restriction morphisms.
+  kind: definition
+  location: Lecture 6
+  name: Definition 14
+- description: 'For any dominant map of irreducible varieties f: X \to Y we obtain
+    a field extension k(X)/f^*k(Y). The degree of f is the degree of this field extension.'
+  kind: definition
+  location: Lecture 6
+  name: Definition 15
+- description: 'Let X and Y be irreducible varieties with Y normal and f: X \to Y
+    a finite dominant map. Then for any y \in Y, \#f^{-1}(y) \leq deg(f).'
+  kind: lemma
+  location: Lecture 6
+  name: Lemma 13
+- description: 'Let X, Y be irreducible varieties, and let f: X \to Y be a dominant
+    map of degree n. f is unramified over y \in Y if \#f^{-1}(y) = n. Otherwise, we
+    say that f is ramified at y or that y is a ramification point of f.'
+  kind: definition
+  location: Lecture 6
+  name: Definition 16
+- description: 'Let f: X → Y be a finite dominant map of irreducible varieties and
+    let R ⊆ Y be the set of ramification points. R is a closed subset of Y and if
+    the field extension k(X)/f*k(Y) is separable, then R ≠ Y.'
+  kind: proposition
+  location: Lecture 6
+  name: Proposition 7
+- description: 'Let C be a category. For every x ∈ C define a covariant functor h^x:
+    C → Set, c ↦ Hom(x, c). Then the assignment x ↦ h^x defines a functor h: C → Functors(C,
+    Set). h is fully faithful and therefore injective on objects (up to isomorphism).'
+  kind: lemma
+  location: Lecture 6
+  name: Lemma 14 (Yoneda)
+- description: dim(X × Y) = dim(X) + dim(Y)
+  kind: theorem
+  location: 'Lecture 7: Product of Varieties, Separateness'
+  name: Theorem 7.1
+- description: Suppose that for i ∈ {1, 2}, X_i is a closed subvariety of Y_i. Then
+    X_1 × X_2 is a closed subvariety of Y_1 × Y_2.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 16
+- description: The product of projective varieties is projective.
+  kind: proposition
+  location: Lecture 7
+  name: Proposition 8
+- description: An algebraic variety is separated if its diagonal Δ_X is a closed subvariety
+    in X × X.
+  kind: definition
+  location: Lecture 7
+  name: Definition 17
+- description: A locally closed subvariety in a separated variety is separated.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 17
+- description: P^n is separated.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 18
+- description: A quasiprojective variety is separated.
+  kind: corollary
+  location: Lecture 7
+  name: Corollary 12
+- description: 'Let f: X → Y be a morphism. Then Γ_f, called the graph of f, is the
+    image of id × f in X × Y.'
+  kind: definition
+  location: Lecture 7
+  name: Definition 18
+- description: 'If X is irreducible and Y is separated and f, g: X → Y agree on a
+    nonempty open set, then f = g.'
+  kind: corollary
+  location: Lecture 7
+  name: Corollary 13
+- description: 'Suppose X is irreducible, Y is separated, U is a nonempty open subset
+    of X, and f: U → Y is a morphism. Then there is a maximal open subset V of X to
+    which f extends.'
+  kind: corollary
+  location: Lecture 7
+  name: Corollary 14
+- description: If k = C, then X is separated if and only if X_{cl} (which is X with
+    the classical topology coming from C) is Hausdorff.
+  kind: corollary
+  location: 'Lecture 8: Product Topology, Complete Varieties'
+  name: Corollary 15
+- description: X is separated if and only if for any affine open U, V ⊆ X, U ∩ V is
+    affine and k[U ∩ V] is generated by k[U] and k[V].
+  kind: proposition
+  location: Lecture 8
+  name: Proposition 9
+- description: (Catenary property). Let X be an algebraic variety, with X = Z_n ⊋
+    Z_{n-1} ⊋ ··· ⊋ Z_0 where each Z_i is closed irreducible. If this chain cannot
+    be refined, then dim Z_i = i.
+  kind: proposition
+  location: Lecture 8
+  name: Proposition 10
+- description: If A = k[X] where X is affine of dimension d, then D_V(n) = Θ(n^d);
+    that is, there exist constants c', c such that for all n, c'n^d ≤ D_V(n) ≤ cn^d.
+  kind: proposition
+  location: Lecture 8
+  name: Proposition 11
+- description: Suppose X, Y are irreducible subvarieties in A^n. Then each component
+    of X ∩ Y has codimension at most codim X + codim Y.
+  kind: theorem
+  location: Lecture 8
+  name: Theorem 8.1
+- description: The previous theorem holds for X, Y ⊆ P^n; moreover, the intersection
+    X ∩ Y is nonempty if dim X + dim Y > n.
+  kind: theorem
+  location: Lecture 8
+  name: Theorem 8.2
+- description: A variety X is complete if it is separated and universally closed,
+    which means that for all Y, the projection map Y × X → Y sends closed sets to
+    closed sets.
+  kind: definition
+  location: Lecture 8
+  name: Definition 19
+- description: '(i) Suppose Z is closed in X. Then X is complete implies Z is complete.
+    (ii) If f: X → Z is a morphism with Z separated and X complete, then f(X) ⊆ Z
+    is a closed complete subvariety. (iii) If X, Y are complete, then so is X × Y.'
+  kind: lemma
+  location: Lecture 8
+  name: Lemma 19
+- description: P^n is complete.
+  kind: proposition
+  location: Lecture 8
+  name: Proposition 12
+- description: If X is a complete, irreducible variety, then there exists a projective
+    variety X̃ that is birational to X.
+  kind: lemma
+  location: 'Lecture 9: Chow''s Lemma, Blowups'
+  name: Lemma 20 (Chow's Lemma)
+- description: Let X an affine variety, x ∈ X, we write Bl_x(X) = X̃_x to denote X̃
+    for an embedding X ⊆ A^n where x ↦ 0.
+  kind: definition
+  location: Lecture 9
+  name: Definition 20
+- description: Suppose X embeds via two embeddings i_1, i_2 to A^n and A^m respectively,
+    such that there exists some x such that i_1(x) = i_2(x) = 0, then X̃_1 = X̃_2
+    for two blowups at x.
+  kind: proposition
+  location: Lecture 9
+  name: Proposition 13
+- description: 'A presheaf of sets F on the topological space X is an assignment for
+    an open subset U ⊂ X of a set F(U) and for a pair of open subsets V ⊂ U ⊂ X of
+    a so called restriction map φ_V^U : F(U) → F(V) such that the following axioms
+    hold: 1. for each triple of open subsets W ⊂ V ⊂ U ⊂ X the composition of the
+    restriction maps φ_W^V ∘ φ_V^U is equal to the restriction φ_W^U; 2. for each
+    open subset U ⊂ X, the restriction φ_U^U is equal to the identity map. Elements
+    of the sets F(U) are called sections of the presheaf F over the open subset U.'
+  kind: definition
+  location: 'Lecture 10: Sheaves, Invertible Sheaves on P^1'
+  name: Definition 21
+- description: 'A presheaf F on the topological space X is called a sheaf if the following
+    is true for any (possibly infinite) open covering of an open subset U = ∪U_α:
+    1. for a collection of sections (s_α) ∈ ∏_α F(U_α), if they coincide on intersections,
+    that is s_α|_β = s_β|_α, then there exists a section s on U such that s|_α = s_α;
+    2. the map ∏_α φ_{U_α}^U is injective.'
+  kind: definition
+  location: Lecture 10
+  name: Definition 22
+- description: Let F be a presheaf on X. Then its pushforward along f is a presheaf
+    f_*F on Y, and is defined on an open subset V ⊂ Y as f_*F(V) := F(f^{-1}V).
+  kind: definition
+  location: Lecture 10
+  name: Definition 23
+- description: Let G be a presheaf on Y. Then its pullback along f is a presheaf f*G
+    on X, and is defined on an open subset U ⊂ X as f*G(U) := lim_{V ⊃ f(U)} G(V).
+  kind: definition
+  location: Lecture 10
+  name: Definition 24
+- description: Let M be a sheaf on X. We say that M is a sheaf of O_X-modules if for
+    any open subset U ⊂ X the set M(U) is an O_X(U)-module, and all restriction maps
+    commute with the ring action.
+  kind: definition
+  location: Lecture 10
+  name: Definition 25
+- description: A locally free sheaf M of rank n on an algebraic variety X is a sheaf
+    of O_X-modules such that for some open cover of the variety X = ∪U_i, the restrictions
+    M|_{U_i} are free sheaves on U_i of rank n, that is M|_{U_i} ≅ (O_X|_{U_i})^n.
+  kind: definition
+  location: Lecture 10
+  name: Definition 26
+- description: Presheaf of abelian groups on k-vector space is an abelian category.
+  kind: proposition
+  location: 'Lecture 11: Sheaf Functors and Quasi-coherent Sheaves'
+  name: Proposition 14
+- description: 'Some properties: 1. F → F^# is exact; in particular it doesn''t change
+    the stalks. 2. F → F^# is left adjoint to the embedding Presh → Sh, and is an
+    isomorphism if F itself is a sheaf. 3. F ↦ F_x is an exact functor; in other words,
+    a sequence of sheaves 0 → F → F'' → F'''' → 0 is exact iff 0 → F_x → F''_x → F''''_x
+    → 0 is exact for all x.'
+  kind: proposition
+  location: Lecture 11
+  name: Proposition 15
+- description: 'j_*j*F = lim(f^{-n}F), where j: U ↪ X, j_*F means the sheaf whose
+    section on V is F(U ∩ V), and the right side is the formal notation denoting copies
+    of F, where {f^{-n}F, n = 0, 1, ...} are combined in a direct system.'
+  kind: proposition
+  location: 'Lecture 12: Quasi-coherent and Coherent Sheaves'
+  name: Proposition 16
+- description: If X = Spec(A), then QCoh(X) ≅ Mod(A), given by F → Γ(F) = F(X).
+  kind: theorem
+  location: Lecture 11
+  name: Theorem 11.1
+- description: M̃ is a quasicoherent O_X module.
+  kind: corollary
+  location: Lecture 11
+  name: Corollary 16
+- description: 'Let X = Spec(A) be an affine variety. Then there is an equivalence
+    of categories f : QCoh(X) ≅ Mod(A).'
+  kind: theorem
+  location: Lecture 12
+  name: Theorem 12.1
+- description: Let i ∈ I be a directed system indexing sheaves F_i. If X is a Noetherian
+    topological space, then lim_{PreSh} F_i is a sheaf. Hence lim_{PreSh} F_i = lim_{Sh}
+    F_i.
+  kind: lemma
+  location: Lecture 12
+  name: Lemma 22
+- description: If X = Spec A, then F = M̃ is coherent iff M is finitely generated.
+  kind: lemma
+  location: Lecture 12
+  name: Lemma 23
+- description: f_* sends QCoh(X) to QCoh(Y). Note that it does not send coherent module
+    to coherent module.
+  kind: lemma
+  location: Lecture 12
+  name: Lemma 24
+- description: f_* is exact for a map of affine varieties. It is left exact in general.
+  kind: corollary
+  location: Lecture 12
+  name: Corollary 17
+- description: 'If F is coherent, then: 1. Fiber is always finite dimensional; 2.
+    Fiber of F at x is zero iff ∃U ⊇ x, F|_U = 0; 3. The function d: x ↦ dim(fiber(x))
+    is (upper) semicontinuous. 4. The function d is locally constant if and only if
+    F is locally free.'
+  kind: lemma
+  location: Lecture 12
+  name: Lemma 25
+- description: 'A functor F: C_1 → C_2 is called conservative if for every g ∈ Hom(C_1),
+    F(g) is an isomorphism implies that g is an isomorphism.'
+  kind: definition
+  location: 'Lecture 13: Invertible Sheaves'
+  name: Definition 27
+- description: Let L, R be adjoint functors, L fully faithful (i.e. R ∘ L ≅ Id), R
+    is conservative, then the two functors are inverse pairs in a categorical equivalence.
+  kind: lemma
+  location: Lecture 13
+  name: Lemma 26
+- description: 'f: X → Y is an affine morphism if and only if for every open U ⊆ Y,
+    f^{-1}(U) is affine. f: X → Y is a finite morphism if and only if it is affine
+    and, for every open U ⊆ Y such that U = Spec A, if f^{-1}(U) = Spec B then B is
+    a finite A-algebra.'
+  kind: lemma
+  location: Lecture 13
+  name: Lemma 27
+- description: X → Y is a vector bundle if locally ≅ A^n × Y, i.e. there exists a
+    covering f^{-1}(U_i) ≅ A^n × U_i and agree on the intersection, i.e. the two copies
+    of A^n × (U_i ∩ U_j) are glued together using GL_n(k[U_i ∩ U_j]).
+  kind: definition
+  location: Lecture 13
+  name: Definition 28
+- description: For any fixed Y, the category of X that has an affine morphism to Y
+    corresponds to the opposite category of quasicoherent sheaves of O_Y-algebra (which
+    is finitely generated and reduced).
+  kind: proposition
+  location: Lecture 13
+  name: Proposition 17
+- description: Suppose X → Y is affine. Let A = f_*O_X, then Qcoh(X) = {Qcoh(Y) with
+    an A action}, where the map is F ↦ f_*F.
+  kind: proposition
+  location: Lecture 13
+  name: Proposition 18
+- description: 'i_*: Qcoh(Z) → Qcoh(X) (or coherent to coherent) is a full embedding
+    and the image are the Fs such that I_Z F = 0.'
+  kind: proposition
+  location: Lecture 13
+  name: Proposition 19
+- description: If A, B are nilpotent-free k-algebras, so is A ⊗_k B.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 15
+- description: If X is Noetherian, then Γ(lim F)(U) = lim F(U), where the right side
+    is the filtered direct limit.
+  kind: lemma
+  location: Lecture 11
+  name: Lemma 21
+- description: 'The following are true: 1. M ↦ M̃_{P^n} is an exact functor. 2. Every
+    F that is a quasicoherent sheaf on P^n is of the form M̃ for some M, every coherent
+    such F comes from some finitely generated M. Moreover, given a quasicoherent sheaf
+    F on P^n, F ≅ M̃ where M = ⊕_{n ≥ 0} Γ(F(n)).'
+  kind: proposition
+  location: 'Lecture 14: (Quasi)coherent sheaves on Projective Spaces'
+  name: Proposition 20
+- description: If $\mathcal{F}$ is coherent, then there exists $d, k$, such that $\mathcal{O}(-d)^{\oplus
+    k} \to \mathcal{F}$ is a surjection (equivalently, a surjection $\mathcal{O}^{\oplus
+    k} \to \mathcal{F}(d)$). In other words, every coherent sheaf is a quotient of
+    a vector bundle.
+  kind: corollary
+  location: Lecture 14
+  name: Corollary 18
+- description: $\mathbf{QCoh}(\mathbb{P}^n)$ is equivalent to $\mathbf{Mod}_{gr}(A)$
+    mod out the locally nilpotent elements, and $\mathbf{Coh}(\mathbb{P}^n)$ is equivalent
+    to $\mathbf{Mod}_{gr,f.g.}(A)$ mod out the finite dimensional elements.
+  kind: proposition
+  location: Lecture 14
+  name: Proposition 21
+- description: Isomorphism classes of invertible sheaves on $X$ is an abelian group
+    under tensor product.
+  kind: corollary
+  location: Lecture 14
+  name: Corollary 19
+- description: The Weil divisor group $DW(X)$ is a free abelian group spanned by irreducible
+    codimension 1 subvarieties.
+  kind: definition
+  location: Lecture 14
+  name: Definition 29
+- description: The Cartier divisor group $DC(X) = \Gamma(\mathcal{K}^*/\mathcal{O}^*)$,
+    where $*$ means nonzero, and $\mathcal{K}$ is the sheaf of rational functions.
+    Another way to describe it is the set of invertible fractional ideals. It can
+    be seen as a subsheaf realized in $\mathcal{K}^*$.
+  kind: definition
+  location: Lecture 14
+  name: Definition 30
+- description: When $X$ is factorial (for instance, when $X$ is smooth), $DW(X) =
+    DC(X)$. Generally, $\operatorname{Pic}(X) = DC(X)/K^*$, i.e. the quotient of Cartier
+    divisors by the principal divisors.
+  kind: theorem
+  location: Lecture 14
+  name: Theorem 14.1
+- description: 'An element of $\operatorname{Div}_C(X)$ is given by
+
+    1. a covering $U_i$; and
+
+    2. Rational functions $f_i$ on $U_i$, $f_i \neq 0$,
+
+    such that on $U_i \cap U_j$, $f_j = \varphi_{ij} f_i$, where $\varphi_{ij} \in
+    O^*(U_i \cap U_j)$.'
+  kind: definition
+  location: Lecture 15
+  name: Definition 31
+- description: $\operatorname{Pic}(X) = \operatorname{Div}_C(X)/\operatorname{Im}(\mathcal{K}^*)
+    = \Gamma(\mathcal{K}^*/\mathcal{O}^*)/\operatorname{im}\Gamma(\mathcal{K}^*).$
+  kind: proposition
+  location: Lecture 15
+  name: Proposition 22
+- description: If $X$ is locally factorial (i.e. $\mathcal{O}_{X,x}$ is always a UFD),
+    then $\operatorname{Div}_W(X) = \operatorname{Div}_C(X)$.
+  kind: theorem
+  location: Lecture 15
+  name: Theorem 15.1
+- description: 'The following are true:
+
+    1. $k[[x_1, \ldots, x_n]]$ is a UFD.
+
+    2. If $A$ is a Noetherian local ring such that its completion is a UFD, then $A$
+    itself is a UFD.'
+  kind: proposition
+  location: Lecture 15
+  name: Proposition 23
+- description: The degree of a principal divisor is zero.
+  kind: proposition
+  location: Lecture 15
+  name: Proposition 24
+- description: Two (Cartier) divisors are linearly equivalent if $D_1 - D_2$ are principal.
+  kind: definition
+  location: Lecture 16
+  name: Definition 32
+- description: $X$ irreducible curve, $\deg(D) = 0$ if $D$ is a principal divisor.
+  kind: proposition
+  location: Lecture 16
+  name: Proposition 25
+- description: $\sum_{x \in X \cap Y} \operatorname{mult}_x(X,Y) = \deg(X) \deg(Y).$
+  kind: theorem
+  location: Lecture 16
+  name: Theorem 16.1 (Bezout's Theorem)
+- description: $x$ is a smooth point on $X$ if $\dim_x(X) = \dim(\mathfrak{m}_x/\mathfrak{m}_x^2)$,
+    where $\mathfrak{m}_x$ is the maximal ideal in $\mathcal{O}_{X,x}$.
+  kind: definition
+  location: Lecture 16
+  name: Definition 33
+- description: For $X, Y$ curves in $\mathbb{P}^2$, the intersection multiplicity
+    is greater than 1 if either $X$ or $Y$ is not smooth at $x$.
+  kind: corollary
+  location: Lecture 16
+  name: Corollary 20
+- description: $X$ can be reconstructed from the lattice $H_1(X,\mathbb{Z}) \subseteq
+    \Gamma(\Omega^1)^*$.
+  kind: theorem
+  location: Lecture 17
+  name: Theorem 17.1
+- description: $\operatorname{Pic}^{\circ}(X)$ is itself a complex variety as well
+    as a compact abelian Lie group. In fact, one can define an algebraic group $\operatorname{Jac}(X)$
+    on it, such that for a curve $X$, the A-J map is algebraic.
+  kind: proposition
+  location: Lecture 17
+  name: Proposition 26
+- description: Let $g$ be the (geometric) genus of $X$ and assume it equals 1. Then
+    $\mathbb{C}^g/\mathbb{Z}^{2g} = \mathbb{C}/\mathbb{Z}^2$ has dimension 1 and is
+    therefore a curve. Fix $x_0 \in X$. The A-J map gives a map $X \to \operatorname{Pic}^{\circ}(X)$,
+    where we send $x$ to $x - x_0$. Then this is an isomorphism.
+  kind: theorem
+  location: Lecture 17
+  name: Theorem 17.2
+- description: Every normal curve of genus 1 has a group structure (they are called
+    the elliptic curves).
+  kind: corollary
+  location: Lecture 17
+  name: Corollary 21
+- description: A non-constant map between irreducible compact curves is finite.
+  kind: proposition
+  location: Lecture 17
+  name: Proposition 27
+- description: 'There exists a variety $Y$ along with a finite map $f: Y \to X$ such
+    that for every affine open $U \subseteq X$, $k[f^{-1}(U)] = \overline{k[U]}_E$
+    (the integral closure).'
+  kind: proposition
+  location: Lecture 17
+  name: Proposition 28
+- description: 'Given $f: X \to Y$ where $X, Y$ are irreducible, if $X$ is normal,
+    $f$ is finite, onto, then $X$ can be reconstructed from $Y$ and $f^{-1}(U)$ for
+    some open $U \neq \emptyset \subseteq Y$.'
+  kind: corollary
+  location: Lecture 17
+  name: Corollary 22
+- description: 'If $f: X \to Y$ is a map of irreducible curves, suppose $f$ is onto,
+    birational, $Y$ is normal, then $f$ is an isomorphism.'
+  kind: lemma
+  location: Lecture 17
+  name: Lemma 28
+- description: Suppose $X \to Y$ is birational map, $X$ is complete, $Y$ is normal,
+    then $X \cong Y$ iso.
+  kind: lemma
+  location: Lecture 17
+  name: Lemma 29
+- description: 'Let $A$ be a commutative $k$-algebra. $\Omega_A$ is defined to be
+    the $A$-module generated by expressions $da$, $a \in A$, modulo the following
+    equations:
+
+    - $d(a+b) = da + db$;
+
+    - $d(\lambda a) = \lambda da$;
+
+    - $d(ab) = (da)b + a(db)$,
+
+    where $a, b \in A$, $\lambda \in k$. Then $\Omega_A$ is characterized by a universal
+    property: $\operatorname{Hom}(\Omega_A, M) = \operatorname{Der}(A, M)$ for any
+    $A$-module $M$, where $\operatorname{Der}(A, M)$ is the $k$-module of $k$-linear
+    derivations from $A$ to $M$.'
+  kind: definition
+  location: Lecture 18
+  name: Definition 34
+- description: 'Let $X$ be a variety. The Zariski cotangent space of $X$ at $x \in
+    X$ is defined to be the vector space $\{\xi : \mathcal{O}_{X,x} \to k \mid \xi
+    \text{ is linear and } \xi(fg) = f(x)\xi(g) + g(x)\xi(f)\}$, i.e. it is the set
+    of derivations at $x$, and it is denoted as $T_x^*X$.'
+  kind: definition
+  location: Lecture 18
+  name: Definition 35
+- description: $\dim(T_x^*X) \geq \dim_x(X)$.
+  kind: lemma
+  location: Lecture 18
+  name: Lemma 30
+- description: Let $x \in X$. $X$ is said to be smooth at $x$ if $\dim(T_x^*X) = \dim_x(X)$.
+  kind: definition
+  location: Lecture 18
+  name: Definition 36
+- description: $X$ is smooth at $x \in X$ if and only if $\Omega_X$ is locally free
+    on a neighborhood of $x$.
+  kind: proposition
+  location: Lecture 18
+  name: Proposition 29
+- description: For a variety $X$, the set of smooth points in $X$ is open and dense
+    in $X$.
+  kind: proposition
+  location: Lecture 18
+  name: Proposition 30
+- description: 'We have the following:
+
+    1. If $X \subseteq \mathbb{A}^n$ is a hypersurface given by the equation $I_X
+    = (P)$, then $x \in X$ is smooth if and only if $dP|_x \in T_x^* \mathbb{A}^n
+    \neq 0$, i.e. $\frac{\partial P}{\partial x_i}\Big|_x \neq 0$ for some $i$.
+
+    2. Suppose $X \subseteq \mathbb{A}^n$ has dimension $n-m$ where $I_X = (f_1, \ldots,
+    f_m)$, then $X$ is smooth at a point $x$ if and only if $df_i|_x \in T_x^* \mathbb{A}^n
+    = k^n$ are linearly independent, i.e. the $m$-by-$m$ matrix $\left( \left. \frac{\partial
+    f_i}{\partial x_j} \right|_x \right)$ has rank $m$.'
+  kind: corollary
+  location: Lecture 19
+  name: Corollary 23
+- description: Suppose $X \subseteq \mathbb{A}^n$, $x \in X$ is a smooth point if
+    and only if $\exists f_1, \ldots f_m \in I_X \subseteq k[x_1, \ldots, x_n]$ which
+    locally generate $I_X$ and $df_i|_x$ are linearly independent.
+  kind: proposition
+  location: Lecture 19
+  name: Proposition 31
+- description: $\widehat{\mathcal{O}_{Z,x}} = \varprojlim_n k[Z]/\mathfrak{m}_x^n
+    \cong k[[t_1,\ldots,t_{n-m}]]$ (i.e. is a free ring).
+  kind: lemma
+  location: Lecture 19
+  name: Lemma 31
+- description: Let $A$ be a ring, $\mathfrak{m}$ a maximal ideal, $a \in A$. Suppose
+    $a \in \mathfrak{m}^p$, write $\overline{a} \in \overline{A}_p = \mathfrak{m}^p/\mathfrak{m}^{p+1}$
+    and $\overline{A} = \bigoplus_n \mathfrak{m}^n/\mathfrak{m}^{n+1}$. Then $\overline{A/(a)}
+    = \bigoplus_n (A/a)^n/(A/a)^{n+1} = \overline{A}/(\overline{a})$ if $\overline{a}$
+    is not a zero divisor.
+  kind: lemma
+  location: Lecture 19
+  name: Lemma 32
+- description: $X$ is smooth at $x$ iff $\widehat{\mathcal{O}_{X,x}} \cong k[[t_1,\ldots,t_d]]$
+    where $d = \dim_x X$.
+  kind: proposition
+  location: Lecture 19
+  name: Proposition 32
+- description: 'Suppose $Z \subseteq X$ is a closed subvariety.
+
+    1. We have an exact sequence $\mathscr{I}_Z/\mathscr{I}_Z^2 = \mathscr{I}_Z|_Z
+    \to \Omega_X|_Z \to \Omega_Z \to 0$.
+
+    2. If for all $x \in Z$, $\mathscr{I}_Z$ is locally (around $x$) generated by
+    $f_1, \ldots, f_m$ such that $df_i|_x$ are linearly independent at $x$, then the
+    sequence is short exact, and $\mathscr{I}_Z/\mathscr{I}_Z^2$ is a locally free
+    sheaf of rank $m$ where $m$ is the codimension.'
+  kind: proposition
+  location: Lecture 19
+  name: Proposition 33
+- description: If $X$ is a smooth irreducible variety of dimension $d$, then $\Omega(X)$
+    is a locally free sheaf of rank $d$. Then the top exterior power $\omega(X) =
+    \bigwedge^d \Omega(X)$ is a locally free sheaf of rank 1. We call it the canonical
+    line bundle or the canonical sheaf.
+  kind: definition
+  location: Lecture 19
+  name: Definition 37
+- description: $\omega_D = \omega_X(-D)|_D$.
+  kind: corollary
+  location: Lecture 19
+  name: Corollary 24 (Adjunction Formula)
+- description: $\operatorname{Spec}(\operatorname{gr}(\mathcal{O}_{X,x}))$ is called
+    the tangent cone to $X$ at $x$.
+  kind: definition
+  location: Lecture 19
+  name: Definition 38
+- description: The tangent cone is the cone over the exceptional locus in the blowup
+    at $x$.
+  kind: proposition
+  location: Lecture 19
+  name: Proposition 34
+- description: 'The following hold:
+
+    1. If $Z \subseteq X$ is a closed subvariety, then we have $\mathscr{I}_Z/\mathscr{I}_Z^2
+    \to \Omega_X|_Z \to \Omega_Z \to 0$.
+
+    2. If $\mathscr{I}_Z$ is locally generated by functions with linearly independent
+    differential (that is, for all $x$ in $Z$, there exists $U \ni x, f_1, \ldots,
+    f_m$ on $U$ such that $\mathscr{I}_{Z \cap U} = (f_1, \ldots, f_m)$, $df_i|_y$
+    is linearly independent for any $y \in U$), then the sequence is exact at left.
+
+    3. If $X$ is smooth, the last condition can be checked at $x$.'
+  kind: proposition
+  location: Lecture 20
+  name: Proposition 35
+- description: $X$ smooth, $Z \subseteq X$ closed, then $Z$ is smooth if and only
+    if locally $Z$ is given by equation with linearly independent differentials.
+  kind: corollary
+  location: Lecture 20
+  name: Corollary 25
+- description: If $X, Z$ smooth, $Z$ closed in $X$, then we get a s.e.s. of locally
+    free sheaves $0 \to \mathscr{I}_Z/\mathscr{I}_Z^2 = T_Z^*X \to \Omega_X|_Z \to
+    \Omega_Z \to 0$, and thus $K|_Z = K_Z\omega(\mathscr{I}_Z/\mathscr{I}_Z^2)$. If
+    $Z$ is a divisor, then $\omega(\mathscr{I}_Z/\mathscr{I}_Z^2) = \mathscr{I}_Z/\mathscr{I}_Z^2
+    = \mathscr{O}(-D)|_Z$, thus $K_X(D)|_D = K_D$, which is the adjunction formula.
+  kind: corollary
+  location: Lecture 20
+  name: Corollary 26
+- description: We have a s.e.s. $0 \to \Omega_{\mathbb{P}^n} \to \mathcal{O}(-1)^{\oplus
+    (n+1)} = \mathcal{O}(-1) \otimes V^* \to \mathcal{O} \to 0$ where $\mathbb{P}V
+    = \mathbb{P}^n$. As a corollary, $K_{\mathbb{P}^n} = \mathcal{O}(-(n+1))$.
+  kind: proposition
+  location: Lecture 20
+  name: Proposition 36
+- description: $T_{\operatorname{Gr}(k,n)} = \operatorname{Hom}(\mathcal{V}, W \otimes
+    \mathcal{O}/\mathcal{V})$ and $\Omega_{\operatorname{Gr}(k,n)} = \operatorname{Hom}(W
+    \otimes \mathcal{O}/\mathcal{V}, \mathcal{V})$.
+  kind: proposition
+  location: Lecture 20
+  name: Proposition 37
+- description: Let $E$ be the exceptional locus over $x$ when blowing up $X \ni x$.
+    Then the cone of $E$ is the same as $\operatorname{Spec}((\bigoplus_{n\geq 0}
+    \mathfrak{m}_x^n/\mathfrak{m}_x^{n+1})_{\operatorname{red}})$, which we call the
+    tangent cone. If we know that $x$ is a smooth point, then $\bigoplus_{n\geq 0}
+    \mathfrak{m}_x^n/\mathfrak{m}_x^{n+1}$ is given by $\operatorname{Sym}(T_x^*X)$.
+  kind: proposition
+  location: Lecture 20
+  name: Proposition 38
+- description: 'Let $f: X \to Y$ be a morphism of smooth irreducible curves. Then
+    $k(X)/k(Y)$ is a separable extension. Let $d_x$ be the ramification index at $x$.
+    Assume that $d_x$ is prime to $\operatorname{char}(k)$. Then $f^*K_Y \to K_X$
+    extends to an isomorphism $f^*K_Y(R) \simeq K_X$ where $R = \sum_{x \in X} (d_x
+    - 1)x$.'
+  kind: theorem
+  location: Lecture 21
+  name: Theorem 21.1 (Riemann-Hurwitz formula)
+- description: If $X, Y$ are complete then $\deg K_X = n \cdot \deg K_Y + \sum_{x
+    \in X} (d_x - 1)$.
+  kind: corollary
+  location: Lecture 21
+  name: Corollary 27
+- description: Let $X$ be a normal irreducible affine variety and $Z \subset X$ be
+    a closed subvariety. If $\dim Z \leq \dim X - 2$ then $k[X] = k[X \setminus Z]$.
+    Therefore, for normal varieties, the regular functions extend from the complement
+    of a codimension $\geq 2$ closed subvariety to the whole space.
+  kind: proposition
+  location: Lecture 21
+  name: Proposition 39
+- description: 'Let $f: X \to Y$ be a morphism of varieties. Then:
+
+    - $\operatorname{im}(f)$ is constructible.
+
+    - Furthermore, if we assume that $X, Y$ are irreducible and that $\operatorname{im}(f)$
+    is dense in $Y$, then the function on $\operatorname{im}(f)$ given by $f(x) \mapsto
+    \dim f^{-1}(f(x))$ (the dimension of the fiber) is upper semi-continuous. In other
+    words, for any $d$, $\{f(x)|\dim f^{-1}(f(x))\geq d\}$ is closed in $\operatorname{im}(f)$.
+
+    - Finally, under the previous assumptions, there exist a non-empty open subset
+    $U$ in $Y$ such that $\dim f^{-1}(y) = \dim X - \dim Y$ for all $y \in U$.'
+  kind: theorem
+  location: Lecture 21
+  name: Theorem 21.2 (Chevalley's theorem)
+- description: 'Let $f: X \to Y$ be a morphism of irreducible affine varieties with
+    $\operatorname{im}(f)$ dense in $Y$. Then there is a nonempty open subset $U \in
+    Y$ such that $f^{-1}(U) \to U$ factors as $f: f^{-1}(U) \xrightarrow{\text{finite,
+    onto}} U \times \mathbb{A}^n \xrightarrow{\pi_1} U$.'
+  kind: lemma
+  location: Lecture 21
+  name: Lemma 33
+- description: Let $X \subseteq \mathbb{P}V$ be a smooth subvariety. Then for a generic
+    hyperplane $H$, $Y = X \cap H$ is again smooth.
+  kind: theorem
+  location: Lecture 22
+  name: Theorem 22.1 (Bertini's Theorem)
+- description: A generic hypersurface of degree $d$ is smooth. Moreover, if $X \subset
+    \mathbb{P}^n$ is smooth, for a generic hypersurface $S$ of degree $d$, $S \cap
+    X$ is smooth.
+  kind: corollary
+  location: Lecture 22
+  name: Corollary 28
+- description: The torsion subsheaf 𝒯 ⊆ ℱ is a subsheaf of ℱ generated by torsion
+    sections.
+  kind: definition
+  location: Lecture 22, Coherent Sheaves on Curves
+  name: Definition 39
+- description: We call ℰ'' the saturation of ℰ' in ℰ.
+  kind: definition
+  location: Lecture 22, Coherent Sheaves on Curves
+  name: Definition 40
+- description: 'Let ℱ be a coherent sheaf. The rank of ℱ is defined as the rank of
+    the locally free sheaf (ℱ/torsion) when we work over smooth varieties. More generically
+    (for any irreducible variety), one defines rank as follows. For a field K = lim_{→U}
+    k[U], we have the following K-vector space: V_ℱ = lim_{→U} ℱ[U]. The rank is the
+    dimension rk(ℱ) = dim_K(V_ℱ).'
+  kind: definition
+  location: 'Lecture 22, Basic invariants of a coherent sheaf: rank and degree'
+  name: Definition 41
+- description: K⁰(A), the Grothendieck group of an abelian category A, is the free
+    abelian group generated by isomorphism classes in A modulo the relation that,
+    given 0 → A → B → C → 0, we have [B] = [A] + [C].
+  kind: definition
+  location: 'Lecture 22, Basic invariants of a coherent sheaf: rank and degree'
+  name: Definition 42
+- description: 'δ is a well-defined homomorphism, where δ: K⁰(Coh(X)) → ℤ is defined
+    by δ([ℰ]) = deg(det(ℰ)) for ℰ locally free, and δ(𝒯) = length of 𝒯 for torsion
+    sheaves.'
+  kind: proposition
+  location: 'Lecture 22, Basic invariants of a coherent sheaf: rank and degree'
+  name: Proposition 40
+- description: If we have a short exact sequence 0 → ℰ → ℰ' → 𝒯 → 0, where 𝒯 is torsion
+    and the other two sheaves are torsion free, then deg(ℰ') = deg(ℰ) + ℓ(𝒯).
+  kind: lemma
+  location: 'Lecture 22, Basic invariants of a coherent sheaf: rank and degree'
+  name: Lemma 34
+- description: 'Let F: A → B be a left exact functor between abelian categories. A
+    δ-functor is a collection of functors Fⁱ: A → B such that for every short exact
+    sequence 0 → A → B → C → 0 we have a long exact sequence 0 → F(A) → F(B) → F(C)
+    → F¹(A) → F¹(B) → F¹(C) → F²(A) → … that is functorial in short exact sequences.'
+  kind: definition
+  location: Lecture 22, Cohomology of quasicoherent sheaves
+  name: Definition 43
+- description: A δ-functor is universal if it has a canonical morphism from any δ-functor.
+    In other words, it is the terminal object in the category of δ-functors.
+  kind: definition
+  location: Lecture 22, Cohomology of quasicoherent sheaves
+  name: Definition 44
+- description: The universal δ-functor is called the derived functor, and is of course
+    unique if exists. We denote it by ℛⁱF.
+  kind: definition
+  location: Lecture 22, Cohomology of quasicoherent sheaves
+  name: Definition 45
+- description: 'A δ-functor (ℱⁱ) for given ℱ is universal provided that ℱⁱ for i >
+    0 is effaceable: for any M ∈ A and any m ∈ FⁱM, there exists some monomorphism
+    φ: M → N, such that ℱⁱ(φ)(m) = 0.'
+  kind: proposition
+  location: Lecture 23
+  name: Proposition 41 (Grothendieck)
+- description: A short exact sequence of complexes yields a long exact sequence of
+    cohomology.
+  kind: proposition
+  location: Lecture 23
+  name: Proposition 42 (Snake Lemma)
+- description: There is always a canonical map Hⁱ(ℱ(C)) → ℛⁱℱ(M); moreover, it is
+    an isomorphism if Mⁱ are adjusted to ℱ. (An object M is called adjusted to ℱ if
+    ℛⁱℱ(M) = 0. Of course, for left exact functors we use left resolutions.)
+  kind: proposition
+  location: Lecture 23
+  name: Proposition 43
+- description: If f is affine, ℱ is quasicoherent, then Hⁱf_*ℱ = Hⁱ(ℱ).
+  kind: proposition
+  location: Lecture 23
+  name: Proposition 44
+- description: A locally free coherent sheaf of rank n on ℙ¹ is isomorphic to ⊕ᵢ₌₁ⁿ
+    𝒪_{ℙ¹}(dᵢ) for a unique collection dᵢ.
+  kind: theorem
+  location: Lecture 24
+  name: Theorem 24.1 (Grothendieck-Birkhoff)
+- description: Let X be irreducible complete (or smooth, for convenience's sake) curve.
+    Then χ(ℱ) = deg(ℱ) − rank(ℱ)(gₐ − 1) where gₐ = dim H¹(𝒪).
+  kind: theorem
+  location: Lecture 24
+  name: Theorem 24.2 (Riemann-Roch for Curves)
+- description: 𝒪(X) along with 𝒪ₓ generate the group K⁰(Coh(X)).
+  kind: lemma
+  location: Lecture 24
+  name: Lemma 35
+- description: If ℰ is a locally free sheaf on a complete smooth irreducible curve,
+    then we have a canonical isomorphism Γ(ℰ)* ≅ H¹(ℰ∨ ⊗ K_X).
+  kind: theorem
+  location: Lecture 24
+  name: Theorem 24.3 (Serre Duality)
+- description: A Tate vector space is a vector space with a topology, such that there
+    exists a basis of neighborhoods of 0 consisting of vector subspaces which are
+    commensurable.
+  kind: definition
+  location: Lecture 25
+  name: Definition 46
+- description: Suppose X is a complete smooth curve, ω ∈ Γ(U, Ω), U is a nontrivial
+    open subset, then ∑_{x ∈ X \ U} Resₓ ω = 0.
+  kind: lemma
+  location: Lecture 25
+  name: Lemma 36
+- description: Define the arithmetic genus gₐ = dim(H¹(𝒪)), and the geometric genus
+    gₘ = dim(Γ(K_X)). Then apply Serre duality to ℰ = 𝒪 to get gₐ = gₘ.
+  kind: corollary
+  location: Lecture 25
+  name: Corollary 29
+- description: Riemann-Roch implies dim(Γ(ℰ)) − dim(Γ(K ⊗ ℰ*)) = deg(ℰ) + rank(ℰ)(1
+    − g). This is Riemann's form of the theorem.
+  kind: corollary
+  location: Lecture 25
+  name: Corollary 30
+- description: deg(K) = 2g − 2.
+  kind: corollary
+  location: Lecture 25
+  name: Corollary 31

@@ -1,0 +1,61 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Mathlib
+
+namespace BourgainMultiscale
+
+open Set MeasureTheory
+
+/-- `IsAlmostLinear f a b t_I ε` says that on the interval $[a,b]$, $f$ is within $\varepsilon$
+of the linear function $x \mapsto f(a) + t_I (x - a)$ of slope $t_I$. -/
+def IsAlmostLinear (f : ℝ → ℝ) (a b : ℝ) (t_I : ℝ) (ε : ℝ) : Prop :=
+  ∀ x ∈ Icc a b, |f x - (f a + t_I * (x - a))| ≤ ε
+
+/-- `IsSemiWellSpaced f a b s` says that on the left half of $[a,b]$, $f$ grows at slope at
+least $2-s$, and on the right half, $f$ grows at slope at least $s$ — encoding the
+"semi-well-spaced" alternative of the multiscale decomposition. -/
+def IsSemiWellSpaced (f : ℝ → ℝ) (a b : ℝ) (s : ℝ) : Prop :=
+  let mid := (a + b) / 2
+  (∀ x ∈ Icc a mid, f x ≥ f a + (2 - s) * (x - a)) ∧
+  (∀ x ∈ Icc mid b, f x ≥ f mid + s * (x - mid))
+
+/-- `AdmissibleBranching f t` packages the hypotheses on the branching profile $f : [0,1] \to
+\mathbb{R}$: $f$ is monotone, $2$-Lipschitz, satisfies $f(0)=0$, $f(1)=t$, and the lower bound
+$f(x) \geq t\cdot x$. -/
+structure AdmissibleBranching (f : ℝ → ℝ) (t : ℝ) : Prop where
+  monotone : MonotoneOn f (Icc 0 1)
+  lipschitz : LipschitzOnWith 2 f (Icc 0 1)
+  f_zero : f 0 = 0
+  f_one : f 1 = t
+  lower_bound : ∀ x ∈ Icc (0 : ℝ) 1, f x ≥ t * x
+
+
+/-- **Bourgain multiscale decomposition lemma**: if $f : [0,1] \to \mathbb{R}$ is $2$-Lipschitz,
+monotone, with $f(0) = 0$, $f(1) = t$, $f(x) \geq tx$, and $s < t < 2 - s$, then for any
+$\varepsilon, \eta > 0$ the interval $[0,1]$ admits a finite, pairwise-disjoint cover (up to a
+leftover of measure at most $\eta$) by intervals on each of which either
+(1) $f$ is $\varepsilon$-almost linear with slope $t_I \in (s, 2-s)$, or
+(2) $f$ is semi-well-spaced. -/
+theorem bourgain_multiscale_decomposition
+    (f : ℝ → ℝ) (s t : ℝ)
+    (hf : AdmissibleBranching f t)
+    (hst : s < t)
+    (hts : t < 2 - s) :
+    ∀ ε > 0, ∀ η > 0, ∃ (n : ℕ) (intervals : Fin n → ℝ × ℝ),
+      (∀ i, (intervals i).1 < (intervals i).2) ∧
+      (∀ i, (intervals i).1 ≥ 0 ∧ (intervals i).2 ≤ 1) ∧
+      (∀ i j, i ≠ j →
+        (intervals i).2 ≤ (intervals j).1 ∨ (intervals j).2 ≤ (intervals i).1) ∧
+      (∀ i, (∃ t_I : ℝ, s < t_I ∧ t_I < 2 - s ∧
+          IsAlmostLinear f (intervals i).1 (intervals i).2 t_I ε) ∨
+        IsSemiWellSpaced f (intervals i).1 (intervals i).2 s) ∧
+      volume (Icc (0 : ℝ) 1 \ ⋃ i, Icc (intervals i).1 (intervals i).2) ≤
+        ENNReal.ofReal η := by sorry
+
+end BourgainMultiscale

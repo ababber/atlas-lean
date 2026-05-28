@@ -1,0 +1,990 @@
+- description: 'Given groups $G$ and $G''$, a homomorphism between them is a map $f:
+    G \to G''$ such that: (1) For all $a, b \in G,$ $f(ab) = f(a)f(b)$. (2) The identity
+    element is mapped to the identity: $f(e_G) = e_{G''}.$ (3) Inverses are preserved
+    under the mapping: $f(a)^{-1}=f(a^{-1})$ for all $a \in G.$'
+  kind: definition
+  location: Section 3, Subsection 3.2 (Homomorphisms)
+  name: Definition
+- description: 'A group is a set $G$ with a composition (or product) law $G \times
+    G \to G$, $(a, b) \mapsto a\cdot b$ fulfilling the following conditions: (1) Identity:
+    There exists some element $e \in G$ such that $a \cdot e = e \cdot a = a$. (2)
+    Inverse: For all $a \in G,$ there exists $b \in G$, denoted $a^{-1}$, such that
+    $a \cdot b = b \cdot a = e$. (3) Associative: For $a, b, c \in G,$ $(ab)c = a(bc).$'
+  kind: definition
+  location: Section 1, Subsection 1.2 (Laws of Composition)
+  name: Definition (Group)
+- description: 'Let $S = \{n \in \ZZ: g^n = e\}.$ Then $S$ is a subgroup of $\ZZ,$
+    so $S = d\ZZ$ or $S = \{0\}$, leading to two cases: (1) If $S = \{0\},$ then $\langle
+    g \rangle$ is infinite and all the $g^k$ are distinct. (2) If $S = d\ZZ,$ then
+    $\langle g \rangle = \{e, g, g^2, \cdots, g^{d-1}\} \subset G,$ which is finite.'
+  kind: theorem
+  location: Section 2, Subsection 2.4 (Cyclic Groups)
+  name: Theorem
+- description: 'Given $a, b \in \ZZ,$ consider $S = \{ai + bj: i, j \in \ZZ\}.$ The
+    subset $S$ satisfies all the subgroup conditions, so by the theorem on subgroups
+    of $\ZZ$, there is some $d$ such that $S = d\ZZ.$ In fact, $d = \gcd(a, b).$'
+  kind: corollary
+  location: Section 2, Subsection 2.3 (Subgroups of the Integers)
+  name: Corollary
+- description: If $f(ab) = f(a)f(b)$, then $f(e_G) = e_{G'}$ and $f(a)^{-1} = f(a^{-1})$.
+  kind: proposition
+  location: Section 3, Subsection 3.2 (Homomorphisms)
+  name: Proposition
+- description: Cosets of $H$ form a **partition** of the group $G$.
+  kind: proposition
+  location: Isomorphisms and Cosets, Cosets
+  name: Proposition
+- description: We have $|G| = [G:H]|H|.$
+  kind: theorem
+  location: Isomorphisms and Cosets, Lagrange's Theorem
+  name: Theorem
+- description: If $xH = Hx$ for each $x \in G,$ $H \subseteq G$ is called a **normal
+    subgroup**. Equivalently, the subgroup $H$ is normal if and only if it is invariant
+    under conjugation by $x$; that is, $xHx^{-1} = H$. A subgroup $H$ is normal if
+    and only if $\varphi_x(H) = H$ for all $x \in G.$
+  kind: definition
+  location: The Correspondence Theorem, Normal Subgroups
+  name: Definition
+- description: Given a coset $C \subset G$ of $H,$ take $b \in C.$ Then, $C = bH.$
+  kind: lemma
+  location: Isomorphisms and Cosets, Cosets
+  name: Lemma
+- description: For $H$ a subgroup of $G,$ $|H|$ is a divisor of $|G|.$
+  kind: corollary
+  location: Isomorphisms and Cosets, Lagrange's Theorem
+  name: Corollary (Lagrange's Theorem)
+- description: The size of the group is $|G| = |\ker(f)|\cdot|\im(f)|.$
+  kind: corollary
+  location: The Correspondence Theorem, Results of the Counting Formula
+  name: Corollary
+- description: Let $[G:H]$ be the number of left cosets of $H$, which is called the
+    **index** of $H$ in $G.$ Then $|G| = |H|[G:H]$.
+  kind: corollary
+  location: The Correspondence Theorem, Review
+  name: Corollary (Counting Formula)
+- description: For $H$ a subgroup of $G,$ $|H|$ is a divisor of $|G|.$
+  kind: theorem
+  location: The Correspondence Theorem, Lagrange's Theorem
+  name: Theorem (Lagrange's Theorem)
+- description: A set of vectors $S = \{\vec{v}_1, \cdots, \vec{v}_n\}$ is a **basis**
+    if $S$ spans $V$ and is linearly independent. Equivalently, each $\vec{v} \in
+    V$ can be written uniquely as $\vec{v} = a_1\vec{v}_1 + \cdots + a_n \vec{v}_n$,
+    where the $a_i$ are called the **coordinates** of $\vec{v}$ in the basis $S.$
+  kind: definition
+  location: 'Section: Fields and Vector Spaces, Bases and Dimension subsection'
+  name: Definition
+- description: 'Where $f: G \rightarrow G''$ is a surjective homomorphism, and $K
+    = \ker(f),$ there is a correspondence $\{\text{subgroups } H: K \subseteq H \subseteq
+    G\} \leftrightsquigarrow \{\text{subgroups } H'' : \{e_{G''}\} \subseteq H'' \subseteq
+    G''\},$ which states that subgroups of $G$ containing the kernel are in bijection
+    with subgroups of $H''$ in the image of $f.$ The correspondence comes from taking
+    $H \mapsto f(H) \subseteq G''$ and $f^{-1}(H'') \mapsfrom H''.$'
+  kind: theorem
+  location: 'Section: Normal Subgroups and Quotient Groups, Review subsection'
+  name: Theorem (Correspondence Theorem)
+- description: 'The following two statements are true about the quotient group: (1)
+    The composition law, as defined in the definition of the quotient group, does
+    define a group structure on $G/N$ (all the group axioms hold). (2) There exists
+    a surjective homomorphism $\pi: G \rightarrow G/N$ defined by $x \mapsto [xN]$
+    such that $\ker(\pi) = N.$'
+  kind: theorem
+  location: 'Section: Normal Subgroups and Quotient Groups, Quotient Groups subsection'
+  name: Theorem
+- description: Given a matrix $A,$ if there exists some invertible $P$ such that $P^{-1}AP
+    = D$ for some diagonal matrix $D$, then $A$ is called **diagonalizable**.
+  kind: definition
+  location: Dimension Formula, Section on Eigenvectors, Eigenvalues, and Diagonalizable
+    Matrices
+  name: Definition
+- description: If $S = \{\vec{v}_1, \cdots, \vec{v}_r\}$ spans $V,$ and $L = \{\vec{w}_1,
+    \cdots, \vec{w}_s\}$ is linearly independent, then (1) Removing elements of $S$
+    gets a basis of $V.$ (2) Adding elements of $S$ to $L$ gets another basis of $V.$
+    (3) $|S| \geq |L|$.
+  kind: lemma
+  location: Section on spanning, linear independence, and bases
+  name: Lemma
+- description: Given a matrix $M \in \text{Mat}_{m \times n}(F),$ we have $\text{rank}(M)
+    = \text{rank}(M^T).$
+  kind: corollary
+  location: Dimension Formula, Review section
+  name: Corollary
+- description: 'Given $T : V \rightarrow W$, $\dim(\text{Ker}\ T) + \dim(\text{im}\
+    T) = \dim(V).$'
+  kind: theorem
+  location: Dimension Formula, Section on Dimension Formula
+  name: Theorem (Dimension formula)
+- description: Given $\lambda \in F,$ $\lambda$ is an eigenvalue for $A$ if and only
+    if $p_A(\lambda) = 0$; that is, if and only if $\lambda$ is a root of $p_A(t).$
+  kind: proposition
+  location: Dimension Formula, Section on Finding Eigenvalues and Eigenvectors
+  name: Proposition
+- description: A linear transformation $T$ is **nilpotent** if there exists some $m
+    \geq 0$ such that $T^m = 0$.
+  kind: definition
+  location: Section on The Jordan Decomposition, subsection on Proof of Jordan Decomposition
+    Theorem
+  name: Definition
+- description: Given an $n \times n$ matrix $A$, eigenvectors $\vec{v}_1, \cdots,
+    \vec{v}_k,$ and distinct eigenvalues $\lambda_1, \cdots, \lambda_k,$ the vectors
+    $\vec{v}_i$ are all linearly independent.
+  kind: proposition
+  location: Section on Eigenbases and the Jordan Form, subsection on The Characteristic
+    Polynomial
+  name: Proposition
+- description: Consider a matrix $A$. If the characteristic polynomial is $p_A(t)
+    = (t - \lambda_1) \cdots (t - \lambda_n)$ where each $\lambda_i$ is distinct,
+    $A$ will have an eigenbasis and will thus be diagonalizable.
+  kind: corollary
+  location: Section on Eigenbases and the Jordan Form, subsection on The Characteristic
+    Polynomial
+  name: Corollary
+- description: 'Given a linear operator $T: V \to V,$ where $\dim V = n,$ there exists
+    a basis $\vec{v}_1, \cdots, \vec{v}_n,$ there exist pairs $(a_1, \lambda_1), \cdots,
+    (a_r, \lambda_r)$ such that the matrix of $T$ in this basis is a block diagonal
+    matrix $\begin{pmatrix} J_{a_1}(\lambda_1) & & & \\ & J_{a_2}(\lambda_2) & & \\
+    & & \ddots & \\ & & & J_{a_r}(\lambda_r) \end{pmatrix},$ where all other entries
+    are 0.'
+  kind: theorem
+  location: Section on Eigenbases and the Jordan Form, subsection on Jordan Form
+  name: Theorem (Jordan Decomposition Theorem)
+- description: If $\dim W + \dim W' = \dim V,$ and $W \cap W' = \{\vec{0}\},$ then
+    it must be the case that $V = W \oplus W'.$
+  kind: theorem
+  location: Section on The Jordan Decomposition, subsection on Proof of Jordan Decomposition
+    Theorem
+  name: Theorem
+- description: An isometry $x \mapsto Ax + b$ is orientation-preserving if $\det(A)
+    = 1$, and orientation-reversing if $\det(A) = -1.$
+  kind: definition
+  location: 'Section: Isometries, Subsection: Isometries in 2-space'
+  name: Definition
+- description: Every isometry on $\RR^2$ is (1) Translation, (2) Rotation around a
+    point $p$, (3) Reflection across a line $L$, or (4) Glide reflection --- first,
+    reflect across a line $L,$ then translate by some vector $b$ parallel to $L$.
+  kind: theorem
+  location: 'Section: Isometries, Subsection: Isometries in 2-space'
+  name: Theorem
+- description: The orthogonal matrices form a subgroup $O_n$ of $GL_n$.
+  kind: proposition
+  location: 'Section: Orthogonal Matrices, Subsection: Dot Products and Orthogonal
+    Matrices'
+  name: Proposition
+- description: The orthogonal matrices with determinant 1 form a subgroup $SO_n \subset
+    O_n \subset GL_n$ called the special orthogonal group.
+  kind: definition
+  location: 'Section: Orthogonal Matrices, Subsection: The Special Orthogonal Group'
+  name: Definition (Special Orthogonal Group)
+- description: 'If $f: \RR^n \rightarrow \RR^n$ is an isometry such that $f(0) = 0,$
+    it must be a linear transformation.'
+  kind: lemma
+  location: 'Section: Isometries, Subsection: Isometries'
+  name: Lemma
+- description: A group $G \subseteq M_2$ is discrete if there exists some $\varepsilon
+    > 0$ such that any translation in $G$ has distance $\geq \varepsilon$ and any
+    rotation in $G$ has angle $\geq \varepsilon.$
+  kind: definition
+  location: 'Section: Finite and Discrete Subgroups, Continued, Subsection: Discrete
+    Subgroups of M2'
+  name: Definition
+- description: If $G \subseteq \RR^2$ is discrete, then (1) $G = \{0\}$; or (2) there
+    exists some $\vec{\alpha} \in \RR^2$ such that $G = \ZZ \vec{\alpha}$; or (3)
+    there exist linearly independent vectors $\vec{a}, \vec{b} \in \RR^2$ such that
+    $G = \ZZ \vec{a} + \ZZ \vec{b}.$ This is called a *lattice* inside $\RR^2.$
+  kind: theorem
+  location: 'Section: Finite and Discrete Subgroups, Continued, Subsection: Discrete
+    Subgroups of R2'
+  name: Theorem
+- description: Every $A \in \overline{G}$ maps $L$ to $L.$
+  kind: proposition
+  location: 'Section: Finite and Discrete Subgroups, Continued, Subsection: Back to
+    Discrete Subgroups of M2'
+  name: Proposition
+- description: Let $L \neq \{0\}.$ Then $\overline{G} = C_n$ or $D_n$, where $n =
+    1, 2, 3, 4,$ or $6.$
+  kind: theorem
+  location: Crystallographic Restriction
+  name: Theorem (Crystallographic Restriction)
+- description: 'The stabilizer of $s$ is $G_s = \text{Stab}_G(s) \coloneqq \{g \in
+    G: gs = s\},$ and it is a subgroup of $G.$'
+  kind: definition
+  location: Group Actions, The Counting Formula
+  name: Definition
+- description: Fix some $s \in S$ and let $H \coloneqq \text{Stab}(s).$ Then there
+    exists a bijection $\varepsilon$ from the quotient group $G/H$ to the orbit of
+    $s,$ $O_s.$ It takes $G/H \xrightarrow{\varepsilon} O_s$, $gH \mapsto gs.$
+  kind: proposition
+  location: Group Actions, The Counting Formula
+  name: Proposition
+- description: If $S$ is a finite set, and $O_1, \cdots, O_k$ are the orbits, then
+    $|S| = \sum_{i = 1}^k |O_i|,$ since each of the orbits cover $S$ exactly.
+  kind: corollary
+  location: Group Actions, The Counting Formula
+  name: Corollary
+- description: 'The number of cosets of $H$, which is the order $|G/H|$, is equal
+    to the size of the orbit of $s,$ since there is a bijective correspondence between
+    them. So $|O_s| = [G : \text{Stab}(s)].$'
+  kind: corollary
+  location: Group Actions, The Counting Formula
+  name: Corollary (Counting Formula for Orbits)
+- description: Every $p$-group has non-trivial center.
+  kind: theorem
+  location: 'Section: Group Actions on $G$, Subsection: $p$-groups'
+  name: Theorem
+- description: If $p \in \mathcal{P}$ and some $g \in G,$ then $gp \in \mathcal{P}$
+    also. As a result, we learn that $G$ acts on $\mathcal{P}$.
+  kind: lemma
+  location: 'Section on Stabilizer, Subsection: Statement'
+  name: Lemma
+- description: $G$ is a $p$-group for a prime $p$ if $|G| = p^e$ for some $e \geq
+    0.$
+  kind: definition
+  location: 'Section: Group Actions on $G$, Subsection: $p$-groups'
+  name: Definition
+- description: If $|G| = p^2,$ then $G$ must be abelian.
+  kind: corollary
+  location: 'Section: Group Actions on $G$, Subsection: $p$-groups'
+  name: Corollary
+- description: Given σ ∈ S_n, the cycle type of σ is the number of 1-cycles, 2-cycles,
+    and so on, that show up in the cycle notation.
+  kind: definition
+  location: 'Conjugacy Classes for Symmetric and Alternating Groups, Section: Cycle
+    Type'
+  name: Definition
+- description: If G is finite, and H is a subgroup of G, then |H| divides |G|.
+  kind: theorem
+  location: 'The Sylow Theorems, Section: Motivation'
+  name: Theorem
+- description: Two permutations σ and τ are conjugate if and only if σ and τ have
+    the same cycle type.
+  kind: proposition
+  location: 'Conjugacy Classes for Symmetric and Alternating Groups, Section: Cycle
+    Type'
+  name: Proposition
+- description: Given $G$ such that $|G| = n = p^e \cdot m,$ where $p^e$ is the largest
+    power of $p$ (that is, $\gcd(p, m) = 1$), then there exists a subgroup $H \leq
+    G$ such that $|H| = p^e.$
+  kind: theorem
+  location: The Sylow Theorems, The First Sylow Theorem
+  name: Theorem (Sylow I)
+- description: Let $G$ be a group such that $|G| = n = p^e m$ such that $\gcd(p, m)
+    = 1.$ Then a subgroup $H \leq G$ such that $|H| = p^e$ is called a Sylow $p$-subgroup.
+  kind: definition
+  location: The Sylow Theorems, The First Sylow Theorem
+  name: Definition (Sylow $p$-subgroup)
+- description: If $p$ divides $|G|,$ there exists an element $x \in G$ with order
+    $p.$
+  kind: corollary
+  location: The Sylow Theorems, The First Sylow Theorem
+  name: Corollary
+- description: 'There are two parts: (a) Given $H \leq G,$ where $H$ is a Sylow $p$-subgroup,
+    any other Sylow $p$-subgroup $H'' \leq G$ is conjugate to $H$; i.e. there exists
+    $g$ such that $H'' = gHg^{-1}$. (b) Given any subgroup $K \leq G$ such that $|K|
+    = p^d,$ for any Sylow subgroup $H,$ there exists $g$ such that $gKg^{-1} \leq
+    H.$'
+  kind: theorem
+  location: The Sylow Theorems, The Second Sylow Theorem
+  name: Theorem (Sylow II)
+- description: The number of Sylow $p$-subgroups of $G$ divides $m = \frac{n}{p^e}$
+    and is congruent to 1 modulo $p.$
+  kind: theorem
+  location: The Sylow Theorems, The Third Sylow Theorem
+  name: Theorem (Sylow III)
+- description: 'The product group $H \times K$ is $H \times K = \{(h, k) : h \in H,
+    k \in K\}$ where $(h, k) \cdot (h'', k'') = (hh'', kk'').$'
+  kind: definition
+  location: The Sylow Theorems, Applications of the Sylow Theorems
+  name: Definition (Product group)
+- description: 'For groups of order 10, there are two isomorphism classes: $G \cong
+    C_5 \times C_2,$ and $G \cong D_5.$'
+  kind: proposition
+  location: The Sylow Theorems, Applications of the Sylow Theorems
+  name: Proposition
+- description: 'Let $G$ be a finite group where $|G| = n = p^em$ and $\gcd(p, m) =
+    1$. The three parts of the theorem follow: (1) There always exists a Sylow $p$-subgroup
+    (a subgroup $H \leq G$ such that $|H| = p^e$). (2) Given any $K \leq G$ where
+    $|K| = p^f$, there exists some $g\in G$ such that $gKg^{-1} \leq H$. (3) The number
+    of Sylow $p$-subgroups is a factor of $m$ and congruent to 1 mod $p$.'
+  kind: theorem
+  location: Proofs and Applications of the Sylow Theorems, Review
+  name: Theorem (Sylow Theorems)
+- description: Suppose we have a subset $U \in S$, which is a subset of $G$. Also,
+    let $H$ be a subgroup of $G$ that stabilizes $U$. Then, $|H|$ divides $|U|.$
+  kind: lemma
+  location: Proofs and Applications of the Sylow Theorems, Proof of Sylow Theorems
+  name: Lemma
+- description: Every abelian group $G$ is isomorphic to a product of groups of prime
+    power order.
+  kind: theorem
+  location: 'Section on Application: Decomposition of Finite Abelian Groups'
+  name: Theorem
+- description: Every bilinear form $\langle \cdot, \cdot \rangle$ on $\mathbb{R}^n$
+    arises from a matrix $A.$ That is, there exists some $A$ such that $\langle x,
+    y \rangle = x^{T} Ay.$ Moreover, the form $\langle \cdot, \cdot \rangle$ is symmetric
+    if and only if $A$ is symmetric.
+  kind: proposition
+  location: 'Section: Bilinear Forms'
+  name: Proposition
+- description: For a subspace $W \subset V,$ the orthogonal complement is $W^{\perp}
+    = \{\vec{v} \in V \text{ such that } \vec{v} \perp W\}.$
+  kind: definition
+  location: 'Section: Orthogonality'
+  name: Definition
+- description: A Hermitian matrix always has real eigenvalues.
+  kind: claim
+  location: 'Section: Orthogonality, Subsection: Hermitian Forms'
+  name: Claim
+- description: A linear operator $T:V \to V$ is **normal** if $TT^* = T^*T$, which
+    is equivalent to $\langle v, T^*Tw \rangle = \langle Tv, Tw \rangle = \langle
+    T^*v, T^*w \rangle = \langle v, TT^*w \rangle.$
+  kind: definition
+  location: 'Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators'
+  name: Definition
+- description: A form on a vector space $(V, \langle\cdot,\cdot\rangle)$ is non-degenerate
+    if and only if the matrix of the form, $A$, is invertible, which is when $\det
+    A \neq 0.$
+  kind: proposition
+  location: 'Subsection: Orthogonality'
+  name: Proposition
+- description: If $V$ is Euclidean or Hermitian, then there exists an orthonormal
+    basis $\{v_1, \cdots, v_n\}$ for $V$ such that $\langle v_i, v_j \rangle = 0$
+    and $\langle v_i, v_i \rangle = 1$. In particular, the pairing $\langle\cdot,\cdot\rangle$
+    looks like the dot product or the standard Hermitian product in this basis.
+  kind: theorem
+  location: 'Section: Euclidean and Hermitian Spaces, Subsection: Euclidean and Hermitian
+    Spaces'
+  name: Theorem
+- description: In fact, $V$ has an orthogonal basis $\{v_1, \cdots, v_k\}$ where $\langle
+    v_i, v_i\rangle = 1, -1,$ or $0.$
+  kind: corollary
+  location: 'Section: The Projection Formula, Subsection: Orthogonal Bases'
+  name: Corollary
+- description: Given $V$ and $\langle\cdot,\cdot\rangle,$ the number of 1s, the number
+    of -1s, and the number of 0s that occur in the diagonal form are determined by
+    $V$ and $\langle\cdot,\cdot\rangle,$ and not by the choice of orthogonal basis.
+    This is called Sylvester's Law, and the number of 1s, -1s, and 0s is called the
+    signature of the form.
+  kind: claim
+  location: 'Section: The Projection Formula, Subsection: Orthogonal Bases'
+  name: Claim (Sylvester's Law)
+- description: For $v, w \in V,$ $\langle Tv, w \rangle = \langle v, T^*w\rangle.$
+    This property means that $T^*$ is uniquely determined, by putting $v = u_i$ and
+    $w = u_j.$
+  kind: claim
+  location: 'Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators'
+  name: Claim
+- description: 'Given a Hermitian space $V$, for any normal linear operator $T$, there
+    exists an orthonormal eigenbasis of $V$: $\{u_1, \cdots, u_n\}.$ In matrix form,
+    for any normal matrix $M \in GL_n(\CC),$ there exists a unitary matrix $P$ such
+    that $P^{-1} M P$ is diagonal. The real version states that for a Euclidean vector
+    space $V$ and a symmetric linear operator $T$, there exists an orthonormal eigenbasis;
+    equivalently, for any symmetric matrix $M \in GL_n(\RR)$, there exists an orthogonal
+    matrix $P$ such that $P^{-1}MP$ is diagonal. All eigenvalues of real symmetric
+    matrices are real.'
+  kind: theorem
+  location: 'Section: The Spectral Theorem, Subsection: The Spectral Theorem'
+  name: Theorem (Spectral Theorem)
+- description: 'For a linear operator $T: V \to V$ where $V$ is Hermitian, and a subspace
+    $W \subset V$ such that $T(W) \subset W,$ then $T^*(W^\perp) \subset W^{\perp}.$'
+  kind: lemma
+  location: 'Section: The Spectral Theorem, Subsection: The Spectral Theorem'
+  name: Lemma 1
+- description: For each $x \in \mathbb{E},$ $\operatorname{Long}_x$ is a subgroup
+    of $SU_2$. In fact, given $\theta \in \mathbb{R}/2\pi\mathbb{Z}$, the map $\theta
+    \mapsto \cos \theta I + \sin \theta x$ is an isomorphism between $\RR/2\pi \ZZ$
+    and $\operatorname{Long}_x$.
+  kind: theorem
+  location: 'Section: The Special Unitary Group $SU_2$, Subsection: Longitudes'
+  name: Theorem
+- description: If $Tv = \lambda v,$ then $T^*v = \overline{\lambda}v.$ This just means
+    that $T$ and $T^*$ have the same eigenvectors, and eigenvalues related by complex
+    conjugation.
+  kind: lemma
+  location: 'Section: The Spectral Theorem, Subsection: The Spectral Theorem'
+  name: Lemma 2
+- description: For $G \leq GL_n(\mathbb{C}),$ a \textbf{one-parameter group in $G$}
+    is a one-parameter group $\varphi(t)$ in $GL_n(\mathbb{C})$ such that $\varphi(t)
+    \in G$ for all $t \in \mathbb{R}.$
+  kind: definition
+  location: Section on One-Parameter Subgroups
+  name: Definition
+- description: Every one-parameter group in $GL_n(\mathbb{C})$ is of the form $\varphi(t)
+    = e^{tA}$ for a unique matrix $A \in \text{Mat}_{n \times n}(\mathbb{C}).$
+  kind: proposition
+  location: Section on One-Parameter Subgroups
+  name: Proposition
+- description: For any $A \in \text{Mat}_{n \times n}(\mathbb{C}),$ $\det e^A = e^{\text{trace}(A)}.$
+  kind: lemma
+  location: Section on The Special Linear Group $SL_n(\mathbb{C})$
+  name: Lemma
+- description: 'A **Lie algebra** (over $\mathbb{R}$) is a vector space $V$ with a
+    Lie bracket $[\cdot, \cdot]: V \times V \to V$ satisfying $[A, B] = -[B, A]$ and
+    the Jacobi identity.'
+  kind: definition
+  location: 'Section: Lie Groups, Subsection: Lie Bracket'
+  name: Definition
+- description: 'For $\operatorname{Lie}(G)$:
+
+    - All three definitions are actually equivalent.
+
+    - For a group $G$, $\operatorname{Lie}(G)$ is actually a vector subspace of $\text{Mat}_{n
+    \times n}(\mathbb{R})$.'
+  kind: proposition
+  location: 'Section: Lie Groups, Subsection: Lie Groups'
+  name: Proposition
+- description: Let the Lie bracket of $A, B \in \text{Mat}_{n \times n}(\mathbb{R})$
+    be $[A, B] \coloneqq AB - BA \in \text{Mat}_{n \times n}(\mathbb{R})$.
+  kind: definition
+  location: 'Section: Lie Groups, Subsection: Lie Bracket'
+  name: Definition (Lie Bracket)
+- description: If $N \trianglelefteq SU_2$, then $N$ must be $\{I\}$, $SU_2$, or $\{\pm
+    I\}$.
+  kind: theorem
+  location: 'Section: Simple Linear Groups, Subsection: The Special Unitary Group'
+  name: Theorem
+- description: The quotient $SU_2/\{\pm I\}$ is simple.
+  kind: corollary
+  location: 'Section: Simple Linear Groups, Subsection: The Special Unitary Group'
+  name: Corollary
+- description: If $|F| > 5$, then there exists some $r \in F$ such that $r^2$ is not
+    $0$, $1$, or $-1$.
+  kind: lemma
+  location: Proof of Theorem (SL_2 simple)
+  name: Lemma
+- description: All matrices in $SL_2$ with eigenvalues $s$ and $s^{-1}$ are contained
+    in $N$.
+  kind: claim
+  location: Proof of Theorem (SL_2 simple)
+  name: Claim
+- description: The **Dehn invariant** of a polytope $P$ is $d(P) = \sum_i \ell_i \otimes
+    \theta_i \in \mathbb{R} \otimes \mathbb{R}/2\pi\mathbb{Z}$, where the sum is taken
+    over all edges of $P$.
+  kind: definition
+  location: Hilbert's Third Problem, Back to Polytopes
+  name: Definition
+- description: If $C$ is a cube and $T$ is a regular tetrahedron, then $d(C) = d(T)$.
+  kind: theorem
+  location: Hilbert's Third Problem, Back to Polytopes
+  name: Theorem
+- description: 'The definition has a few consequences: (1) $0 \otimes h = g \otimes
+    0 = 0$. (2) If $a \in \mathbb{Z}$, then $(ag) \otimes h = a(g \otimes h) = g \otimes
+    ah$ (by using linearity). (3) If we take lists of generators $G = \langle g_1,
+    \ldots, g_r\rangle$ and $H = \langle h_1, \ldots, h_s\rangle$, then $G \otimes
+    H = \langle g_i \otimes h_j \rangle$.'
+  kind: proposition
+  location: Hilbert's Third Problem, Some Algebra
+  name: Proposition
+- description: Given a finite-dimensional complex representation of a finite group,
+    each invariant subspace has a corresponding invariant complementary subspace.
+  kind: theorem
+  location: 'Lecture 2, Section: Irreducible Representations'
+  name: Theorem
+- description: For any $\alpha \not\in \mathbb{Q}\pi$, and any $\ell \in \mathbb{R}$,
+    $\ell \otimes \alpha$ is nonzero.
+  kind: claim
+  location: Section on Dehn invariants, within proof that d(C) ≠ d(T)
+  name: Claim
+- description: 'A representation $\rho: G \to \operatorname{GL}(V)$ is **irreducible**
+    if the only $G$-invariant subspaces of $V$ are $0$ and $V$.'
+  kind: definition
+  location: 'Lecture 2, Section: Irreducible Representations'
+  name: Definition
+- description: The **character** of a representation $R$ is the function $\chi_R$
+    on $G$ defined as $\chi_R(g) = \operatorname{trace}(R_g)$.
+  kind: definition
+  location: 'Lecture 1, Section: Linear Representations'
+  name: Definition (Character)
+- description: 'Let $\psi: G \to \operatorname{GL}(V)$ and $\eta: G \to \operatorname{GL}(W)$
+    be two representations of the same group. Then their **direct sum** $\rho = \psi
+    \oplus \eta$ is the representation $\rho: G \to \operatorname{GL}(U \oplus W)$
+    where for each $g \in G$, $\rho_g(u, w) = (\psi_g(u), \eta_g(w))$.'
+  kind: definition
+  location: 'Lecture 2, Section: Direct Sums'
+  name: Definition (Direct Sum)
+- description: Every finite-dimensional complex representation of a finite group can
+    be written as a direct sum of irreducible representations.
+  kind: theorem
+  location: 'Lecture 2, Section: Irreducible Representations'
+  name: Theorem (Maschke's Theorem)
+- description: 'If $\rho: G \to \operatorname{GL}(V)$ is a complex representation,
+    then (a) $\chi_\rho(g)$ is a sum of roots of unity; (b) $\chi_\rho(g^{-1}) = \overline{\chi_\rho(g)}$;
+    (c) $\overline{\chi_\rho}$ is the character of another representation of the same
+    dimension, denoted $\rho^*$ and called the dual representation.'
+  kind: proposition
+  location: 'Lecture 4, Section: More on Characters'
+  name: Proposition
+- description: 'A class function is a function $f : G \to \CC$ which is fixed on each
+    conjugacy class of $G$. That is, for a class function $f,$ if $g$ and $h$ are
+    conjugate, then $f(g) = f(h)$.'
+  kind: definition
+  location: 'Lecture 4, Section: The Main Theorem'
+  name: Definition
+- description: 'Let $G$ be a finite group. Then: (a) The characters of irreducible
+    representations form a basis in the space of class functions on $G$. (b) This
+    basis is orthonormal with respect to the Hermitian form on the space of class
+    functions given by $\langle f_1, f_2 \rangle = \frac{1}{|G|} \sum_{g \in G} f_1(g)\overline{f_2(g)}.$
+    (c) If $d_1$, \ldots, $d_m$ are the dimensions of the irreducible representations
+    of $G$, then $d_1^2 + d_2^2 + \cdots + d_n^2 = |G|,$ and each $d_i$ divides $|G|$.'
+  kind: theorem
+  location: 'Lecture 4, Section: The Main Theorem'
+  name: Theorem (Main Theorem)
+- description: 'Suppose $\rho : G \to \operatorname{GL}(V)$ and $\psi : G \to \operatorname{GL}(W)$
+    are (not necessarily irreducible) representations. Then define $\operatorname{Hom}_G(\rho,
+    \psi) = \{f : V \to W \mid f \text{ is a linear map such that } f(\rho_g(v)) =
+    \psi_g(f(v)) \text{ for all } g, v\}.$ Such linear maps $f$ are called $G$-equivariant.'
+  kind: definition
+  location: 'Section: Characters and Schur''s Lemma, Subsection: Schur''s Lemma'
+  name: Definition
+- description: 'Let $\rho: G \to \operatorname{GL}(V)$ be a representation. Let $\rho_1$,
+    \ldots, $\rho_n$ be the list of all irreducible representations of $G$ (up to
+    isomorphism). Then $\rho \cong \bigoplus_{i = 1}^n \rho_i^{d_i}$ where $d_k =
+    \dim \operatorname{Hom}_G(\rho_k, \rho)$ for all $k$.'
+  kind: corollary
+  location: 'Section: Orthonormality of Characters, Subsection: An Implication of
+    Schur''s Lemma'
+  name: Corollary
+- description: If $G$ is abelian, then every irreducible representation is one-dimensional.
+  kind: proposition
+  location: 'Section: Characters and Schur''s Lemma, Subsection: Character Tables'
+  name: Proposition
+- description: 'Suppose $\rho: G \to \operatorname{GL}(V)$ and $\psi: G \to \operatorname{GL}(W)$
+    are irreducible (and complex and finite-dimensional). Then $\dim\left(\operatorname{Hom}_G(\rho,
+    \psi)\right) = \begin{cases} 0 & \text{if } \rho \not\cong \psi \\ 1 & \text{if
+    } \rho \cong \psi.\end{cases}$'
+  kind: theorem
+  location: 'Section: Orthonormality of Characters, Subsection: Review: Schur''s Lemma'
+  name: Theorem (Schur's Lemma)
+- description: If $\rho = \bigoplus \rho_i^{n_i}$, then $\langle \chi_\rho, \chi_\rho
+    \rangle = \sum n_i^2$. In particular, $\rho$ is irreducible if and only if $\langle
+    \chi_\rho, \chi_\rho \rangle = 1$.
+  kind: corollary
+  location: 'Section: Review: Orthonormality of Characters (Lecture 7)'
+  name: Corollary
+- description: If $f$ is a class function, then $\rho(f) \in \operatorname{End}_G(\rho)$.
+  kind: lemma
+  location: 'Section: Span of Irreducible Characters'
+  name: Lemma
+- description: If $f$ is a class function and $\langle f, \chi_k \rangle = 0$ for
+    all $k$, then $f$ is the zero function.
+  kind: proposition
+  location: 'Section: Span of Irreducible Characters'
+  name: Proposition
+- description: 'For a function $f : G \to \mathbb{C}$ (not necessarily a class function)
+    and a representation $\rho : G \to \operatorname{GL}(V)$, define $\rho(f) = \sum_{g
+    \in G} f(g)\rho_g$.'
+  kind: definition
+  location: 'Section: Span of Irreducible Characters'
+  name: Definition
+- description: For any fixed $\alpha \in R$, there is a homomorphism $R[x] \to R$
+    which sends $x \mapsto \alpha$; this is called the **evaluation homomorphism**
+    at $\alpha$.
+  kind: definition
+  location: 'Lecture 9: Building New Rings, Section ''Polynomial Rings'''
+  name: Definition
+- description: A ring $Q$ is isomorphic to a product of rings $R \times S$ if and
+    only if $Q$ contains an idempotent other than $0$ and $1$.
+  kind: proposition
+  location: 'Lecture 9: Building New Rings, Section ''Product Rings'''
+  name: Proposition
+- description: The additive identity $0_R$ cannot have a multiplicative inverse unless
+    $0_R = 1_R$. (In other words, division by $0$ is only possible when $0 = 1$.)
+  kind: corollary
+  location: 'Lecture 8: Rings, Section ''Zero and Inverses'''
+  name: Corollary
+- description: An **ideal** of $R$ is a subset $I \subset R$ such that $I$ is an additive
+    subgroup of $R$, and for any $x \in I$ and $a \in R$, we have $ax \in I$.
+  kind: definition
+  location: 'Lecture 8: Rings, Section ''Ideals'''
+  name: Definition (Ideal)
+- description: For an element $a \in R$, the ideal $aR$ is called a **principal ideal**,
+    and denoted $(a)$.
+  kind: definition
+  location: 'Lecture 8: Rings, Section ''Ideals'''
+  name: Definition (Principal Ideal)
+- description: Let $R$ be a ring and $I \subset R$ an ideal. Since $I$ is a normal
+    subgroup of $R$ under addition (as both are abelian groups), we can construct
+    the quotient $R/I$ of additive groups. Then $R/I$ is in fact a ring (with multiplication
+    defined in the natural way --- the product of the cosets corresponding to $x$
+    and $y$ is the coset corresponding to $xy$), called the **quotient ring**.
+  kind: proposition
+  location: 'Lecture 8: Rings, Section ''Ideals'''
+  name: Proposition (Quotient Ring)
+- description: 'Suppose we have a ring $R$, and a ring homomorphism $\varphi : R \to
+    S$. Then given $\alpha_1$, \ldots, $\alpha_n \in S$, there exists a unique extension
+    of $\varphi$ to a homomorphism $\widetilde{\varphi} : R[x_1, \ldots, x_n] \to
+    S$ such that $\widetilde{\varphi}(r) = \varphi(r)$ for $r \in R$, and $\widetilde{\varphi}(x_i)
+    = \alpha_i$ for all $i$.'
+  kind: proposition
+  location: 'Lecture 9: Building New Rings, Section ''Polynomial Rings'''
+  name: Proposition (Mapping Property)
+- description: Two elements $a, b \in R$ are **associate** if $a = bu$ for a unit
+    $u \in R$.
+  kind: definition
+  location: 'Lecture 12, Section: Review'
+  name: Definition
+- description: For a field $F$, every polynomial $P \in F[x]$ factors as a product
+    of irreducible polynomials in an essentially unique way (up to rearrangement of
+    the factors or multiplying the factors by scalars).
+  kind: proposition
+  location: 'Lecture 11, Section: Factorization'
+  name: Proposition
+- description: An ideal $I \subset R$ is **maximal** if $I \neq R$, and the only ideals
+    of $R$ containing $I$ are $R$ and $I$ itself.
+  kind: definition
+  location: 'Lecture 10, Section: Maximal Ideals'
+  name: Definition (Maximal Ideals)
+- description: The maximal ideals in $\CC[x_1, \cdots, x_n]$ are exactly the kernels
+    of evaluation homomorphisms, and thus they are in bijection with $\CC^n$.
+  kind: theorem
+  location: 'Lecture 11, Section: Review: Hilbert''s Nullstelensatz'
+  name: Theorem (Hilbert's Nullstelensatz)
+- description: The maximal ideals in $\CC[x_1, \cdots, x_n]/(P_1, \cdots, P_m)$ are
+    in bijection with the common zeroes of $P_1$, \ldots, $P_m$.
+  kind: corollary
+  location: 'Lecture 11, Section: Review: Hilbert''s Nullstelensatz'
+  name: Corollary
+- description: If $P$ is irreducible and $P \mid QS$, then $P \mid Q$ or $P \mid S$.
+  kind: lemma
+  location: 'Lecture 11, Section: Factorization'
+  name: Lemma
+- description: A polynomial $P \in \ZZ[x]$ is **primitive** if the gcd of all its
+    coefficients is $1$.
+  kind: definition
+  location: 'Lecture 13: More Factorization, Section: Factoring Integer Polynomials'
+  name: Definition
+- description: 'The complete list of all primes in $\ZZ[i]$, up to association, consists
+    of: for each integer prime $p = 4k + 3 \in \ZZ$, the Gaussian prime $p$ itself;
+    for each integer prime $p = 4k + 1 \in \ZZ$, the two Gaussian primes $a \pm bi$
+    where $a^2 + b^2 = p$; the prime $1 + i$.'
+  kind: theorem
+  location: 'Lecture 14: Number Fields, Section: The Gaussian Integers'
+  name: Theorem
+- description: In a UFD, the gcd of any two elements always exists.
+  kind: proposition
+  location: 'Lecture 12: Factorization in Rings, Section: Greatest Common Divisors'
+  name: Proposition
+- description: If $n$ has prime factorization $n = p_1^{d_1}\cdots p_r^{d_r}$ in $\ZZ$,
+    then $n$ is a sum of squares if and only if the exponent $d_i$ is even for all
+    primes $p_i \equiv 3 \pmod{4}$.
+  kind: corollary
+  location: 'Lecture 14: Number Fields, Section: The Gaussian Integers'
+  name: Corollary
+- description: If $P$ and $Q$ are primitive, then $PQ$ is as well.
+  kind: lemma
+  location: 'Lecture 13: More Factorization, Section: Factoring Integer Polynomials'
+  name: Lemma (Gauss's Lemma)
+- description: Let $p \in \ZZ$ be a prime number. Then $p$ is not prime in $\ZZ[i]$
+    if and only if $p = 2$ or $p \equiv 1 \pmod{4}$.
+  kind: lemma
+  location: 'Lecture 13: More Factorization, Section: Gaussian Primes'
+  name: Lemma
+- description: If $R$ is a UFD, then $R[x]$ is also a UFD.
+  kind: theorem
+  location: Lecture 12, Section on Polynomial Rings
+  name: Theorem (Theorem \ref{R UFD implies R[x]})
+- description: If $R$ is a unique factorization domain, then $R[x]$ is also a unique
+    factorization domain.
+  kind: theorem
+  location: Lecture 13, Section on Factoring Integer Polynomials
+  name: Theorem (Theorem \ref{ufd polynomial})
+- description: If $P, Q \in \ZZ[x]$ are such that $P$ divides $Q$ in $\QQ[x]$ and
+    $P$ is primitive, then $P$ divides $Q$ in $\ZZ[x]$.
+  kind: corollary
+  location: Lecture 13, Section on Factoring Integer Polynomials
+  name: Corollary (Corollary \ref{primitive})
+- description: Let $R$ be the ring of algebraic integers in a number field. Then every
+    nonzero ideal $I \subset R$ factors uniquely (up to permutation of factors) as
+    a product of prime ideals.
+  kind: theorem
+  location: 'Section: Ideal Factorization, Subsection: Multiplying Ideals'
+  name: Theorem
+- description: Every nonzero ideal of $R$ is again a lattice.
+  kind: corollary
+  location: 'Section: Ideal Factorization, Subsection: Lattices'
+  name: Corollary
+- description: For an integer $n > 2$, the equation $a^n + b^n = c^n$ has no solutions
+    where $a$, $b$, and $c$ are all nonzero integers.
+  kind: theorem
+  location: 'Subsection: Fermat''s Last Theorem, as an Aside'
+  name: Theorem (Fermat)
+- description: The **norm** of an ideal $I$, denoted $\operatorname{N}(I)$, is the
+    positive integer $n$ with $I\overline{I} = (n)$.
+  kind: definition
+  location: 'Section: Uniqueness of Ideal Factorization, Subsection: Properties of
+    Ideal Multiplication'
+  name: Definition
+- description: Every non-unit ideal $I$ in $R$ is contained in a maximal ideal.
+  kind: lemma
+  location: 'Section: Uniqueness of Ideal Factorization, Subsection: Properties of
+    Ideal Multiplication'
+  name: Lemma
+- description: 'Multiplication of ideals has the following two properties: (a) Cancellation:
+    if $IJ = I''J$ and $J \neq 0$, then $I = I''$. (b) If $I \subset J$, then $I =
+    JJ''$ for some $J''$.'
+  kind: proposition
+  location: 'Section: Uniqueness of Ideal Factorization, Subsection: Properties of
+    Ideal Multiplication'
+  name: Proposition
+- description: In the case of $\mathbb{Z}[\sqrt{-5}] \subset \mathbb{Q}[\sqrt{-5}]$,
+    the class group is $\mathbb{Z}/2\mathbb{Z}$. The two similarity classes of ideals
+    are represented by $(1)$, and by $(2, 1 + \sqrt{-5})$.
+  kind: lemma
+  location: 'Lecture 17: Ideals in Quadratic Fields, Section: The Ideal Class Group'
+  name: Lemma
+- description: Two nonzero ideals $I, J \subset R$ are **similar** if there exists
+    some $\lambda \in F$ such that $\lambda I = J$.
+  kind: definition
+  location: 'Section: Similarity Classes of Ideals'
+  name: Definition
+- description: If $I \sim I'$, then $IJ \sim I'J$.
+  kind: proposition
+  location: 'Section: Similarity Classes of Ideals'
+  name: Proposition
+- description: The class group $\operatorname{Cl}(F)$ is finite.
+  kind: theorem
+  location: 'Lecture 18, Section: The Ideal Class Group, Subsection: Finiteness of
+    the Class Group'
+  name: Theorem
+- description: 'If $\ker \varphi$ is also finitely generated (for some surjective
+    homomorphism $\varphi : R^n \to M$), then we say $M$ is **finitely presented**.'
+  kind: definition
+  location: 'Lecture 20, Section: Modules and Presentation Matrices, Subsection: Presentation
+    Matrices'
+  name: Definition
+- description: Every ideal class has a representative with bounded norm --- more precisely,
+    with norm at most $\mu = \begin{cases} \sqrt{|d|/3} & \text{if } d \equiv 1 \pmod{4}
+    \\ 2\sqrt{|d|/3} & \text{if } d \equiv 2, 3 \pmod{4}.\end{cases}$
+  kind: proposition
+  location: 'Lecture 18, Section: The Ideal Class Group, Subsection: Finiteness of
+    the Class Group'
+  name: Proposition
+- description: An ideal $I$ of norm $n$ contains a nonzero element $\alpha \neq 0$
+    with $\alpha\overline{\alpha} \leq \mu n$.
+  kind: lemma
+  location: 'Lecture 18, Section: The Ideal Class Group, Subsection: Finiteness of
+    the Class Group'
+  name: Lemma
+- description: The set of elements with finite order is called the **torsion subgroup**
+    $A_f$, so we have $A_f = \mathbb{Z}/d_1\ZZ \times \cdots \times \mathbb{Z}/d_n\ZZ$.
+  kind: definition
+  location: 'Section: Decomposition of Modules, Subsubsection: Uniqueness of Subgroups'
+  name: Definition
+- description: Any finitely presented abelian group $A$ is isomorphic to $\mathbb{Z}/d_1\ZZ
+    \times \mathbb{Z}/d_2\ZZ \times \cdots \times \mathbb{Z}/d_n\ZZ \times \mathbb{Z}^a$,
+    where $d_1 \mid d_2 \mid \cdots \mid d_n$.
+  kind: theorem
+  location: 'Section: Decomposition of Modules, Subsection: Classification of Abelian
+    Groups'
+  name: Theorem
+- description: Every finitely presented abelian group is isomorphic to $\ZZ/d_1\ZZ
+    \times \ZZ/d_2\ZZ \times \cdots \times \ZZ/d_n\ZZ \times \ZZ^a$, for some positive
+    integers $d_i$ with $d_1 \mid d_2 \mid \cdots \mid d_n$.
+  kind: corollary
+  location: 'Section: Smith Normal Form, Subsection: Applications'
+  name: Corollary
+- description: The multiplicities of the powers of $p$ in the decomposition of $A_p$
+    as a product of cyclic groups are uniquely determined by $A$.
+  kind: lemma
+  location: 'Section: Decomposition of Modules, Subsubsection: The Torsion Subgroup'
+  name: Lemma
+- description: If we have a field extension $L/K$, then $\alpha \in L$ is algebraic
+    if and only if $K(\alpha)$ is finite-dimensional over $K$.
+  kind: lemma
+  location: 'Lecture 24, Subsection: Field Extensions'
+  name: Lemma
+- description: An element $\alpha \in L$ is **algebraic** over $K$ if $P(\alpha) =
+    0$ for some nonzero $P \in K[x]$.
+  kind: definition
+  location: 'Lecture 25, Subsection: Algebraic Elements'
+  name: Definition
+- description: In a Noetherian ring, every (non-unit) ideal is contained in a maximal
+    ideal.
+  kind: proposition
+  location: 'Lecture 24, Subsection: Review --- Noetherian Rings'
+  name: Proposition
+- description: Given an arbitrary extension, the set of elements in $L$ which are
+    algebraic over $K$ form a subfield of $L$, called the **algebraic closure** of
+    $K$ in $L$.
+  kind: corollary
+  location: 'Lecture 25, Subsection: Algebraic Elements'
+  name: Corollary
+- description: If $R$ is Noetherian, then $R[x]$ is Noetherian.
+  kind: theorem
+  location: 'Subsection: Noetherian Rings'
+  name: Theorem (Hilbert Basis Theorem)
+- description: A ring $R$ is Noetherian if and only if every submodule in a finitely
+    generated $R$-module is itself finitely generated.
+  kind: proposition
+  location: 'Lecture 23, Subsection: Submodules over Noetherian Rings'
+  name: Proposition (\ref{noetheriansubmodules})
+- description: If $R$ is Noetherian, then every finitely generated module is finitely
+    presented.
+  kind: corollary
+  location: 'Lecture 23, Subsection: Submodules over Noetherian Rings'
+  name: Corollary (\ref{finpresented})
+- description: 'If we have a surjective homomorphism $\varphi : M \to N$ of $R$-modules,
+    then: (1) If $M$ is finitely generated, then $N$ is also finitely generated. (2)
+    If $N$ is finitely generated, and $K = \ker(\varphi)$ is also finitely generated,
+    then $M$ is also finitely generated.'
+  kind: lemma
+  location: 'Lecture 23, Subsection: Submodules over Noetherian Rings'
+  name: Lemma (\ref{noetherianhomomorphisms})
+- description: If $R$ is Noetherian, then $R[x]$ is also Noetherian.
+  kind: theorem
+  location: 'Lecture 23, Subsubsection: Hilbert Basis Theorem'
+  name: Theorem (Hilbert Basis Theorem, \ref{hilbertbasis})
+- description: A ring is Noetherian if and only if every increasing chain of ideals
+    stabilizes. In other words, if there is a chain of ideals $I_1 \subseteq I_2 \subseteq
+    \cdots$, then from some point on, $I_n = I_{n + 1} = \cdots$.
+  kind: proposition
+  location: 'Lecture 23, Subsection: Chain Conditions'
+  name: Proposition (\ref{chaincondition})
+- description: 'Suppose that we have a tower of field extensions $K \supset E \supset
+    F$, where $K/E$ and $E/F$ are finite. Then $K/F$ is finite, and $[K : F] = [K
+    : E] \cdot [E : F]$.'
+  kind: proposition
+  location: 'Lecture 24, Subsection: Towers of Extensions'
+  name: Proposition (\ref{tower})
+- description: 'We have $[E : K] = [E : F]\cdot [F : K]$. In particular, $E/K$ is
+    finite if and only if both $E/F$ and $F/K$ are finite.'
+  kind: theorem
+  location: 'Lecture 25, Subsection: Algebraic Elements'
+  name: Theorem (\ref{tower2})
+- description: If $\alpha, \beta \in L$ are algebraic over $K$, then $\alpha + \beta$,
+    $\alpha\beta$, and $\frac{\alpha}{\beta}$ are also algebraic.
+  kind: corollary
+  location: 'Lecture 25, Subsection: Algebraic Elements'
+  name: Corollary (\ref{algebraic})
+- description: An extension $E/F$ is **separable** if the minimal polynomial (over
+    $F$) of every algebraic element $\alpha \in E$ has no multiple roots.
+  kind: definition
+  location: Finite Fields, Multiple Roots
+  name: Definition
+- description: For every prime $p$ and every $n \geq 1$, there exists a field of $q
+    = p^n$ elements. Furthermore, any two such fields are isomorphic.
+  kind: theorem
+  location: Finite Fields, Construction of Finite Fields
+  name: Theorem
+- description: We have $\mathbb{F}_q \cong \mathbb{F}_p(\alpha)$, and therefore, there
+    exists an irreducible polynomial of any degree over $\mathbb{F}_p$.
+  kind: corollary
+  location: Finite Fields, The Multiplicative Group
+  name: Corollary
+- description: If $p \neq \ell$, then $R/(p)$ is a field if and only if $\ord_{\mathbb{F}_\ell^\times}
+    p = \ell - 1$.
+  kind: proposition
+  location: Finite Fields, Application to Number Theory
+  name: Proposition
+- description: If $F$ is any field and $G$ is a finite subgroup of $F^\times$, then
+    $G$ is cyclic.
+  kind: lemma
+  location: Finite Fields, The Multiplicative Group
+  name: Lemma
+- description: 'A finite extension $E/F$ is **Galois** if $[E : F] = \lvert\operatorname{Gal}(E/F)\rvert$.'
+  kind: definition
+  location: 'Lecture 29, Subsection: The Galois Group'
+  name: Definition
+- description: Suppose that $E/F$ is a splitting field of some polynomial. Then for
+    any $\alpha \in E$, the minimal polynomial of $\alpha$ must split completely (into
+    linear factors) in $E$.
+  kind: theorem
+  location: 'Lecture 29, Subsection: The Galois Group'
+  name: Theorem
+- description: If $\gamma(t) = \gamma_1(t)\gamma_2(t)$, then $w(\gamma) = w(\gamma_1)
+    + w(\gamma_2)$.
+  kind: lemma
+  location: 'Subsection: The Main Theorem of Algebra'
+  name: Lemma
+- description: 'For any finite (separable) extension $E/F$, we have $\lvert\operatorname{Gal}(E/F)\rvert
+    \leq [E : F]$, with equality if and only if $E$ is the splitting field of some
+    polynomial.'
+  kind: proposition
+  location: 'Lecture 29, Subsection: The Galois Group'
+  name: Proposition
+- description: $S_n$ is not solvable for $n \geq 5$.
+  kind: proposition
+  location: Lecture 31, Quintic Equations
+  name: Proposition
+- description: A finite group $G$ is **solvable** if there exists a sequence of subgroups
+    $G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{1\}$, such that
+    for each $i$, $G_i$ is a normal subgroup of $G_{i-1}$, and $G_{i-1}/G_i$ is abelian.
+  kind: definition
+  location: Lecture 32, Solvable Groups
+  name: Definition
+- description: 'If $E/F$ is a Galois extension (i.e. $\lvert\operatorname{Gal}(E/F)\rvert
+    = [E : F]$), then intermediate subfields $F \subset K \subset E$ are in bijection
+    with subgroups $H \subset G$, where a subgroup $H$ is mapped to its **fixed field**
+    $E^H$, and a subfield $K$ is mapped to the set of $g \in G$ which fix all elements
+    of $K$.'
+  kind: theorem
+  location: Lecture 30
+  name: Theorem
+- description: $S_5$ is not solvable. In fact, $A_5$ is simple.
+  kind: lemma
+  location: Lecture 32, Solvable Groups
+  name: Lemma
+- description: A root of a polynomial $P$ of degree $5$ with Galois group $S_5$ cannot
+    be expressed through the rational numbers in radicals.
+  kind: corollary
+  location: Lecture 31, Quintic Equations
+  name: Corollary
+- description: The **discriminant** of a polynomial $P(z) = z^n + a_{n-1}z^{n-1} +
+    \cdots + a_0$ is $D = \Delta_n(-a_{n-1}, a_{n-2}, \ldots, (-1)^n a_0)$.
+  kind: definition
+  location: 'Lecture 33, Subsection: The Discriminant'
+  name: Definition
+- description: If $G = \operatorname{Gal}(E/\mathbb{R})$ for a finite Galois extension
+    $E/\mathbb{R}$, then $\lvert G \rvert$ is a power of $2$.
+  kind: lemma
+  location: 'Lecture 34, Subsection: Main Theorem of Algebra'
+  name: Lemma
+- description: Every $p$-group is solvable --- if $G$ is a finite group with $\lvert
+    G\rvert = p^n$ for a prime $p$, then $G$ is solvable. Moreover, there exists a
+    chain of subgroups $G = G_0 \supset G_1 \supset \cdots \supset G_n = \{1\}$, such
+    that for all $i$, $G_{i+1}$ is a normal subgroup of $G_i$ and $G_i/G_{i+1} \cong
+    \mathbb{Z}/p$.
+  kind: proposition
+  location: 'Lecture 34, Subsection: Main Theorem of Algebra'
+  name: Proposition
+- description: A symmetric polynomial in the roots of $P$ can be written as a polynomial
+    in the coefficients of $P$.
+  kind: corollary
+  location: 'Subsection: Symmetric Polynomials'
+  name: Corollary
+- description: $\mathbb{C}$ is the only finite extension of $\mathbb{R}$.
+  kind: theorem
+  location: 'Lecture 34, Subsection: Main Theorem of Algebra'
+  name: Theorem
+- description: We have $R_n = \ZZ[\sigma_1^{(n)}, \sigma_2^{(n)}, \ldots, \sigma_n^{(n)}]$,
+    where $\sigma_1^{(n)} = x_1 + \cdots + x_n$, $\sigma_2^{(n)} = x_1x_2 + \cdots
+    + x_{n-1}x_n$, \ldots, $\sigma_n^{(n)} = x_1\cdots x_n$.
+  kind: theorem
+  location: 'Lecture 33, Subsection: Symmetric Polynomials'
+  name: Theorem (Fundamental Theorem of Symmetric Polynomials)
+- description: 'If $\rho : G \to \operatorname{GL}(V)$ is an irreducible representation
+    of dimension $d$, then $d$ divides $|G|$.'
+  kind: theorem
+  location: 'Appendix: Dimensions of Irreducible Characters'
+  name: Theorem
+- description: 'Given two functions $\phi : G \to \mathbb{C}$ and $\psi : G \to \mathbb{C}$,
+    their convolution is the function $\phi * \psi$ defined as $(\phi * \psi)(g) =
+    \sum_{h \in G} \phi(h)\psi(h^{-1}g)$.'
+  kind: definition
+  location: 'Appendix: Dimensions of Irreducible Characters'
+  name: Definition
+- description: 'Let $\rho : G \to \operatorname{GL}(V)$ be any representation of $G$.
+    Then if $f : G \to \mathbb{C}$ is a function such that $f(g)$ is an algebraic
+    integer for every $g$, and $\rho(f) = r\cdot \operatorname{Id}$ for a rational
+    number $r$, then $r$ must be an integer.'
+  kind: proposition
+  location: 'Appendix: Dimensions of Irreducible Characters'
+  name: Proposition
+- description: For any two functions $\phi$ and $\psi$, we have $\rho(\phi * \psi)
+    = \rho(\phi)\rho(\psi)$.
+  kind: lemma
+  location: 'Appendix: Dimensions of Irreducible Characters'
+  name: Lemma
+- description: 'If $\rho : G \to \operatorname{GL}(V)$ is an irreducible representation
+    of dimension $d$, then $d$ divides $|G|$.'
+  kind: theorem
+  location: 'Appendix: Dimensions of Irreducible Characters'
+  name: Theorem (final part of thm)

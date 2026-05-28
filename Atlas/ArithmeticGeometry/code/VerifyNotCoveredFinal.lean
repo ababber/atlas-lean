@@ -1,0 +1,16 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Atlas.ArithmeticGeometry.code.FiniteFields
+import Atlas.ArithmeticGeometry.code.Varieties
+
+
+#check @rabin_different_type_count
+
+
+#check @varietyDim

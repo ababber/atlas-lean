@@ -1,0 +1,90 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Atlas.GeometryOfManifolds.code.AdvancedKahler
+import Atlas.GeometryOfManifolds.code.AdvancedKahlerMathlib
+import Atlas.GeometryOfManifolds.code.AlmostComplexManifolds
+import Atlas.GeometryOfManifolds.code.ArnoldConjecture
+import Atlas.GeometryOfManifolds.code.AuditBatch1
+import Atlas.GeometryOfManifolds.code.BlockMatrixLp
+import Atlas.GeometryOfManifolds.code.BlockerAnnotations
+import Atlas.GeometryOfManifolds.code.BuildVerification
+import Atlas.GeometryOfManifolds.code.BundleDFS
+import Atlas.GeometryOfManifolds.code.CauchyEstimates
+import Atlas.GeometryOfManifolds.code.ChernClassProperties
+import Atlas.GeometryOfManifolds.code.ChernFormGrading
+import Atlas.GeometryOfManifolds.code.ClassInstances
+import Atlas.GeometryOfManifolds.code.CohomologyIsomorphismConcrete
+import Atlas.GeometryOfManifolds.code.CompatibleComplexStructures
+import Atlas.GeometryOfManifolds.code.ComplexProjectiveSpace
+import Atlas.GeometryOfManifolds.code.ConnectionsCurvature
+import Atlas.GeometryOfManifolds.code.CotangentBundleBridge
+import Atlas.GeometryOfManifolds.code.Counterexamples
+import Atlas.GeometryOfManifolds.code.CoverageL17L25
+import Atlas.GeometryOfManifolds.code.CoverageL1L8
+import Atlas.GeometryOfManifolds.code.CoverageL9L16
+import Atlas.GeometryOfManifolds.code.DedupeCP2Verification
+import Atlas.GeometryOfManifolds.code.DifferentialForms
+import Atlas.GeometryOfManifolds.code.DifferentialFormsBridge
+import Atlas.GeometryOfManifolds.code.DolbeaultHodgeMathlib
+import Atlas.GeometryOfManifolds.code.DonaldsonApproxHolomorphic
+import Atlas.GeometryOfManifolds.code.DonaldsonHolomorphicApprox
+import Atlas.GeometryOfManifolds.code.DonaldsonLefschetz
+import Atlas.GeometryOfManifolds.code.EllipticParametrix
+import Atlas.GeometryOfManifolds.code.EllipticRegularityBridge
+import Atlas.GeometryOfManifolds.code.EllipticRegularityConcrete
+import Atlas.GeometryOfManifolds.code.EuclideanDFS
+import Atlas.GeometryOfManifolds.code.EuclideanSymplectic
+import Atlas.GeometryOfManifolds.code.FourManifoldsClassification
+import Atlas.GeometryOfManifolds.code.FourManifoldsSW
+import Atlas.GeometryOfManifolds.code.GaugeAction
+import Atlas.GeometryOfManifolds.code.GompfConstruction
+import Atlas.GeometryOfManifolds.code.HamiltonianVectorFields
+import Atlas.GeometryOfManifolds.code.HardLefschetz
+import Atlas.GeometryOfManifolds.code.HodgeRepresentative
+import Atlas.GeometryOfManifolds.code.HodgeStarMathlib
+import Atlas.GeometryOfManifolds.code.HodgeTheory
+import Atlas.GeometryOfManifolds.code.HodgeTheoryMathlib
+import Atlas.GeometryOfManifolds.code.Integration
+import Atlas.GeometryOfManifolds.code.KahlerManifolds
+import Atlas.GeometryOfManifolds.code.L2AdjointnessMathlib
+import Atlas.GeometryOfManifolds.code.L2InnerProductSpace
+import Atlas.GeometryOfManifolds.code.LefschetzFibrationMathlib
+import Atlas.GeometryOfManifolds.code.LefschetzPencils
+import Atlas.GeometryOfManifolds.code.LefschetzPencilsAudit
+import Atlas.GeometryOfManifolds.code.ManifoldDFS
+import Atlas.GeometryOfManifolds.code.ManifoldDFSVerify
+import Atlas.GeometryOfManifolds.code.ManifoldIntegration
+import Atlas.GeometryOfManifolds.code.MatrixGroupIntersections
+import Atlas.GeometryOfManifolds.code.MoserDarboux
+import Atlas.GeometryOfManifolds.code.NijenhuisGoals
+import Atlas.GeometryOfManifolds.code.OmitIndex
+import Atlas.GeometryOfManifolds.code.ParametrixOnManifold
+import Atlas.GeometryOfManifolds.code.PolynomialDFS
+import Atlas.GeometryOfManifolds.code.PontrjaginObstructions
+import Atlas.GeometryOfManifolds.code.SWModuliGoal62
+import Atlas.GeometryOfManifolds.code.SWModuliQuotient
+import Atlas.GeometryOfManifolds.code.SWNonVacuousVerification
+import Atlas.GeometryOfManifolds.code.SmoothingOpVerify
+import Atlas.GeometryOfManifolds.code.SpinCConnectionsAffine
+import Atlas.GeometryOfManifolds.code.Symp2TangentSpaces
+import Atlas.GeometryOfManifolds.code.SymplecticCapacity
+import Atlas.GeometryOfManifolds.code.SymplecticEvenDim
+import Atlas.GeometryOfManifolds.code.SymplecticFibrations
+import Atlas.GeometryOfManifolds.code.SymplecticLinearAlgebra
+import Atlas.GeometryOfManifolds.code.SymplecticManifoldMathlib
+import Atlas.GeometryOfManifolds.code.SymplecticManifolds
+import Atlas.GeometryOfManifolds.code.SymplecticStandardBasis
+import Atlas.GeometryOfManifolds.code.SymplecticSum
+import Atlas.GeometryOfManifolds.code.SymplecticSumAudit
+import Atlas.GeometryOfManifolds.code.SymplectomorphismFixedPoints
+import Atlas.GeometryOfManifolds.code.TangentBundleDFS
+import Atlas.GeometryOfManifolds.code.TrivialDFS
+import Atlas.GeometryOfManifolds.code.TwoDimDFS
+import Atlas.GeometryOfManifolds.code.VectorFieldFlow
+import Atlas.GeometryOfManifolds.code.WeinsteinNeighborhood

@@ -1,0 +1,1429 @@
+- description: 'A monoidal category is a quintuple (C, ⊗, a, 1, ι) where C is a category,
+    ⊗: C × C → C is a bifunctor called the tensor product bifunctor, a: (• ⊗ •) ⊗
+    • → • ⊗ (• ⊗ •) is a functorial isomorphism: a_{X,Y,Z}: (X ⊗ Y) ⊗ Z → X ⊗ (Y ⊗
+    Z), X, Y, Z ∈ C, called the associativity constraint (or associativity isomorphism),
+    1 ∈ C is an object of C, and ι: 1 ⊗ 1 → 1 is an isomorphism, subject to the following
+    two axioms. 1. The pentagon axiom: the pentagon diagram is commutative for all
+    objects W, X, Y, Z in C. 2. The unit axiom: the functors L_1 and R_1 of left and
+    right multiplication by 1 are equivalences C → C. The pair (1, ι) is called the
+    unit object of C.'
+  kind: definition
+  location: Section 1.1
+  name: Definition 1.1.1
+- description: A monoidal subcategory of a monoidal category (C, ⊗, a, 1, ι) is a
+    quintuple (D, ⊗, a, 1, ι), where D ⊂ C is a subcategory closed under the tensor
+    product of objects and morphisms and containing 1 and ι.
+  kind: definition
+  location: Section 1.1
+  name: Definition 1.1.2
+- description: The opposite monoidal category C^op to C is the category C with reversed
+    order of tensor product and inverted associativity isomorphism.
+  kind: definition
+  location: Section 1.1
+  name: Definition 1.1.3
+- description: The 'triangle' diagram (X ⊗ 1) ⊗ Y → X ⊗ (1 ⊗ Y) → X ⊗ Y (with maps
+    a_{X,1,Y} and Id_X ⊗ l_Y, and r_X ⊗ Id_Y) is commutative for all X, Y ∈ C. In
+    particular, one has r_1 = l_1 = ι.
+  kind: proposition
+  location: Section 1.2
+  name: Proposition 1.2.1
+- description: 'The following diagrams commute for all objects X, Y ∈ C: the diagrams
+    (1.2.3) and (1.2.4).'
+  kind: proposition
+  location: Section 1.2
+  name: Proposition 1.2.2
+- description: For any object X in C one has the equalities l_{1⊗X} = Id ⊗ l_X and
+    r_{X⊗1} = r_X ⊗ Id.
+  kind: proposition
+  location: Section 1.2
+  name: Proposition 1.2.3
+- description: The unit object in a monoidal category is unique up to a unique isomorphism.
+  kind: proposition
+  location: Section 1.2
+  name: Proposition 1.2.4
+- description: A monoidal category is a sextuple (C, ⊗, a, 1, l, r) satisfying the
+    pentagon axiom (1.1.2) and the triangle axiom (1.2.1).
+  kind: definition
+  location: Section 1.2
+  name: Definition 1.2.6
+- description: The monoid End(1) of endomorphisms of the unit object of a monoidal
+    category is commutative.
+  kind: proposition
+  location: Section 1.2
+  name: Proposition 1.2.7
+- description: 'Let (C, ⊗, 1, a, ι) and (C'', ⊗'', 1'', a'', ι'') be two monoidal
+    categories. A monoidal functor from C to C'' is a pair (F, J) where F: C → C''
+    is a functor, and J = {J_{X,Y}: F(X) ⊗'' F(Y) → F(X ⊗ Y) | X, Y ∈ C} is a natural
+    isomorphism, such that F(1) is isomorphic to 1'', and the monoidal structure axiom
+    diagram is commutative for all X, Y, Z ∈ C. A monoidal functor F is said to be
+    an equivalence of monoidal categories if it is an equivalence of ordinary categories.'
+  kind: definition
+  location: Section 1.4
+  name: Definition 1.4.1
+- description: 'For any monoidal functor (F, J): C → C'', the diagrams involving the
+    unit constraints l, r, l'', r'' and the isomorphism φ: 1'' → F(1) are commutative
+    for all X ∈ C.'
+  kind: proposition
+  location: Section 1.4
+  name: Proposition 1.4.3
+- description: A monoidal functor C → C' is a triple (F, J, φ) which satisfies the
+    monoidal structure axiom and Proposition 1.4.3.
+  kind: definition
+  location: Section 1.4
+  name: Definition 1.4.5
+- description: 'Let (C, ⊗, 1, a, ι) and (C'', ⊗'', 1'', a'', ι'') be two monoidal
+    categories, and (F^1, J^1), (F^2, J^2) two monoidal functors from C to C''. A
+    morphism (or a natural transformation) of monoidal functors η: (F^1, J^1) → (F^2,
+    J^2) is a natural transformation η: F^1 → F^2 such that η_1 is an isomorphism,
+    and the diagram involving J^1, J^2 and η is commutative for all X, Y ∈ C.'
+  kind: definition
+  location: Section 1.5
+  name: Definition 1.5.1
+- description: 'The functor F: A-bimod → End(C) takes values in the full monoidal
+    subcategory End_re(C) of right exact endofunctors of C, and defines an equivalence
+    between monoidal categories A-bimod and End_re(C).'
+  kind: proposition
+  location: Section 1.6
+  name: Proposition 1.6.4
+- description: '(i) The monoidal isomorphisms F_{f,μ} → F_{f,μ''} of monoidal functors
+    F_{f,μ_i}: C_{G_1}^{ω_1} → C_{G_2}^{ω_2} form a torsor over the group H^1(G_1,
+    k×) = Hom(G_1, k×) of characters of G_1; (ii) Given f, the set of μ parametrizing
+    isomorphism classes of F_{f,μ} is a torsor over H^2(G_1, k×); (iii) The structures
+    of a monoidal category on (C_G, ⊗) are parametrized by H^3(G, k×)/Out(G), where
+    Out(G) is the group of outer automorphisms of G.'
+  kind: proposition
+  location: Section 1.7
+  name: Proposition 1.7.1
+- description: A monoidal category C is strict if for all objects X, Y, Z in C one
+    has equalities (X ⊗ Y) ⊗ Z = X ⊗ (Y ⊗ Z) and X ⊗ 1 = X = 1 ⊗ X, and the associativity
+    and unit constraints are the identity maps.
+  kind: definition
+  location: Section 1.8
+  name: Definition 1.8.1
+- description: Any monoidal category is monoidally equivalent to a strict monoidal
+    category.
+  kind: theorem
+  location: Section 1.8
+  name: Theorem 1.8.5
+- description: 'Let $X_{1}, \ldots, X_{n} \in \mathcal{C}$. Let $P_{1}, P_{2}$ be
+    any two parenthesized products of $X_{1}, \ldots, X_{n}$ (in this order) with
+    arbitrary insertions of unit objects $\mathbf{1}$. Let $f, g: P_{1} \rightarrow
+    P_{2}$ be two isomorphisms, obtained by composing associativity and unit isomorphisms
+    and their inverses possibly tensored with identity morphisms. Then $f=g$.'
+  kind: theorem
+  location: Section 1.9
+  name: Theorem 1.9.1 (MacLane's Coherence Theorem)
+- description: 'A right dual of an object $X$ in $\mathcal{C}$ is an object $X^{*}$
+    in $\mathcal{C}$ equipped with morphisms $\mathrm{ev}_{X}: X^{*} \otimes X \rightarrow
+    \mathbf{1}$ and $\operatorname{coev}_{X}: \mathbf{1} \rightarrow X \otimes X^{*}$,
+    called the evaluation and coevaluation morphisms, such that the compositions $X
+    \xrightarrow{\operatorname{coev}_{X} \otimes \operatorname{Id}_{X}}(X \otimes
+    X^{*}) \otimes X \xrightarrow{a_{X, X^{*}, X}} X \otimes (X^{*} \otimes X) \xrightarrow{\operatorname{Id}_{X}
+    \otimes \operatorname{ev}_{X}} X$ and $X^{*} \xrightarrow{\operatorname{Id}_{X^{*}}
+    \otimes \operatorname{coev}_{X}} X^{*} \otimes (X \otimes X^{*}) \xrightarrow{a_{X^{*},
+    X, X^{*}}^{-1}} (X^{*} \otimes X) \otimes X^{*} \xrightarrow{\operatorname{ev}_{X}
+    \otimes \operatorname{Id}_{X^{*}}} X^{*}$ are the identity morphisms.'
+  kind: definition
+  location: Section 1.10
+  name: Definition 1.10.1
+- description: 'A left dual of an object $X$ in $\mathcal{C}$ is an object ${}^{*}X$
+    in $\mathcal{C}$ equipped with morphisms $\operatorname{ev}_{X}^{\prime}: X \otimes
+    {}^{*}X \rightarrow \mathbf{1}$ and $\operatorname{coev}_{X}^{\prime}: \mathbf{1}
+    \rightarrow {}^{*}X \otimes X$ such that the compositions $X \xrightarrow{\mathrm{Id}_{X}
+    \otimes \operatorname{coev}_{X}^{\prime}} X \otimes ({}^{*}X \otimes X) \xrightarrow{a_{X,{}^{*}X,X}^{-1}}
+    (X \otimes {}^{*}X) \otimes X \xrightarrow{\mathrm{ev}_{X}^{\prime} \otimes \mathrm{Id}_{X}}
+    X$ and ${}^{*}X \xrightarrow{\operatorname{coev}_{X}^{\prime} \otimes \mathrm{Id}_{{}^{*}X}}
+    ({}^{*}X \otimes X) \otimes {}^{*}X \xrightarrow{a_{{}^{*}X,X,{}^{*}X}} {}^{*}X
+    \otimes (X \otimes {}^{*}X) \xrightarrow{\mathrm{Id}_{{}^{*}X} \otimes \mathrm{ev}_{X}^{\prime}}
+    X^{*}$ are the identity morphisms.'
+  kind: definition
+  location: Section 1.10
+  name: Definition 1.10.2
+- description: If $X \in \mathcal{C}$ has a right (respectively, left) dual object,
+    then it is unique up to a unique isomorphism.
+  kind: proposition
+  location: Section 1.10
+  name: Proposition 1.10.4
+- description: 'Let $\mathcal{C}$ be a monoidal category. (i) Let $U, V, W$ be objects
+    in $\mathcal{C}$ admitting right (respectively, left) duals, and let $f: V \rightarrow
+    W, g: U \rightarrow V$ be morphisms in $\mathcal{C}$. Then $(f \circ g)^{*}=g^{*}
+    \circ f^{*}$ (respectively, ${}^{*}(f \circ g)={}^{*}g \circ {}^{*}f$). (ii) If
+    $U, V$ have right (respectively, left) duals then the object $V^{*} \otimes U^{*}$
+    (respectively, ${}^{*}V \otimes {}^{*}U$) has a natural structure of a right (respectively,
+    left) dual to $U \otimes V$.'
+  kind: proposition
+  location: Section 1.10
+  name: Proposition 1.10.7
+- description: (i) If an object $V$ has a right dual $V^{*}$ then there are natural
+    adjunction isomorphisms $\operatorname{Hom}(U \otimes V, W) \xrightarrow{\sim}
+    \operatorname{Hom}(U, W \otimes V^{*})$ and $\operatorname{Hom}(V^{*} \otimes
+    U, W) \xrightarrow{\sim} \operatorname{Hom}(U, V \otimes W)$. Thus, the functor
+    $\bullet \otimes V^{*}$ is right adjoint to $\bullet \otimes V$ and $V \otimes
+    \bullet$ is right adjoint to $V^{*} \otimes \bullet$. (ii) If an object $V$ has
+    a left dual ${}^{*}V$ then there are natural adjunction isomorphisms $\operatorname{Hom}(U
+    \otimes {}^{*}V, W) \xrightarrow{\sim} \operatorname{Hom}(U, W \otimes V)$ and
+    $\operatorname{Hom}(V \otimes U, W) \xrightarrow{\sim} \operatorname{Hom}(U, {}^{*}V
+    \otimes W)$. Thus, the functor $\bullet \otimes V$ is right adjoint to $\bullet
+    \otimes {}^{*}V$ and ${}^{*}V \otimes \bullet$ is right adjoint to $V \otimes
+    \bullet$.
+  kind: proposition
+  location: Section 1.10
+  name: Proposition 1.10.9
+- description: A monoidal category $\mathcal{C}$ is called rigid if every object $X
+    \in \mathcal{C}$ has a right dual object and a left dual object.
+  kind: definition
+  location: Section 1.10
+  name: Definition 1.10.11
+- description: 'An object $X$ in a rigid monoidal category $\mathcal{C}$ is invertible
+    if $\mathrm{ev}_{X}: X^{*} \otimes X \rightarrow \mathbf{1}$ and $\operatorname{coev}_{X}:
+    \mathbf{1} \rightarrow X \otimes X^{*}$ are isomorphisms.'
+  kind: definition
+  location: Section 1.11
+  name: Definition 1.11.1
+- description: Let $X$ be an invertible object in a rigid monoidal category $\mathcal{C}$.
+    Then (i) ${}^{*}X \cong X^{*}$ and $X^{*}$ is invertible; (ii) if $Y$ is another
+    invertible object then $X \otimes Y$ is invertible.
+  kind: proposition
+  location: Section 1.11
+  name: Proposition 1.11.3
+- description: 'A $k$-linear abelian category is said to be locally finite if it is
+    essentially small, and the following two conditions are satisfied: (i) for any
+    two objects $X, Y$ in $\mathcal{C}$, the space $\operatorname{Hom}(X, Y)$ is finite
+    dimensional; (ii) every object in $\mathcal{C}$ has finite length.'
+  kind: definition
+  location: Section 1.12
+  name: Definition 1.12.1
+- description: In a locally finite abelian category $\mathcal{C}$, $\operatorname{Hom}(X,
+    Y)=0$ if $X, Y$ are simple and non-isomorphic, and $\operatorname{Hom}(X, X)=k$
+    for any simple object $X$.
+  kind: proposition
+  location: Section 1.12
+  name: Proposition 1.12.2
+- description: Let $\mathcal{C}$ be a locally finite $k$-linear abelian rigid monoidal
+    category. We will call $\mathcal{C}$ a multitensor category over $k$ if the bifunctor
+    $\otimes$ is bilinear on morphisms. If in addition $\operatorname{End}(\mathbf{1})
+    \cong k$ then we will call $\mathcal{C}$ a tensor category. A multifusion category
+    is a semisimple multitensor category with finitely many isomorphism classes of
+    simple objects. A fusion category is a semisimple tensor category with finitely
+    many isomorphism classes of simple objects.
+  kind: definition
+  location: Section 1.12
+  name: Definition 1.12.3
+- description: 'Let $\mathcal{C}$ be a multitensor category. Then the bifunctor $\otimes:
+    \mathcal{C} \times \mathcal{C} \rightarrow \mathcal{C}$ is exact in both factors
+    (i.e., biexact).'
+  kind: proposition
+  location: Section 1.13
+  name: Proposition 1.13.1
+- description: A multiring category over $k$ is a locally finite $k$-linear abelian
+    monoidal category $\mathcal{C}$ with biexact tensor product. If in addition $\operatorname{End}(\mathbf{1})=k$,
+    we will call $\mathcal{C}$ a ring category.
+  kind: definition
+  location: Section 1.13
+  name: Definition 1.13.3
+- description: For any pair of morphisms $f_{1}, f_{2}$ in a multiring category $\mathcal{C}$
+    one has $\operatorname{Im}(f_{1} \otimes f_{2})=\operatorname{Im}(f_{1}) \otimes
+    \operatorname{Im}(f_{2})$.
+  kind: corollary
+  location: Section 1.13
+  name: Corollary 1.13.4
+- description: If $\mathcal{C}$ is a multiring category with right duals, then the
+    right dualization functor is exact. The same applies to left duals.
+  kind: proposition
+  location: Section 1.13
+  name: Proposition 1.13.5
+- description: Let $P$ be a projective object in a multiring category $\mathcal{C}$.
+    If $X \in \mathcal{C}$ has a right dual, then the object $P \otimes X$ is projective.
+    Similarly, if $X \in \mathcal{C}$ has a left dual, then the object $X \otimes
+    P$ is projective.
+  kind: proposition
+  location: Section 1.13
+  name: Proposition 1.13.6
+- description: If $\mathcal{C}$ is a multiring category with right duals, then $\mathbf{1}
+    \in \mathcal{C}$ is a projective object if and only if $\mathcal{C}$ is semisimple.
+  kind: corollary
+  location: Section 1.13
+  name: Corollary 1.13.7
+- description: 'Let $\mathcal{C}, \mathcal{D}$ be multiring categories over $k$, and
+    $F: \mathcal{C} \rightarrow \mathcal{D}$ be an exact and faithful functor. (i)
+    $F$ is said to be a quasi-tensor functor if it is equipped with a functorial isomorphism
+    $J: F(\bullet) \otimes F(\bullet) \rightarrow F(\bullet \otimes \bullet)$, and
+    $F(\mathbf{1})=\mathbf{1}$. (ii) A quasi-tensor functor $(F, J)$ is said to be
+    a tensor functor if $J$ is a monoidal structure (i.e., satisfies the monoidal
+    structure axiom).'
+  kind: definition
+  location: Section 1.14
+  name: Definition 1.14.1
+- description: In any multiring category, $\operatorname{End}(\mathbf{1})$ is a semisimple
+    algebra, so it is isomorphic to a direct sum of finitely many copies of $k$.
+  kind: theorem
+  location: Section 1.15
+  name: Theorem 1.15.1
+- description: 'In any multiring category $\mathcal{C}$ the unit object $\mathbf{1}$
+    is isomorphic to a direct sum of pairwise non-isomorphic indecomposable objects:
+    $\mathbf{1} \cong \oplus_{i} \mathbf{1}_{i}$.'
+  kind: corollary
+  location: Section 1.15
+  name: Corollary 1.15.2
+- description: The subcategories $\mathcal{C}_{ij} := \mathbf{1}_{i} \otimes \mathcal{C}
+    \otimes \mathbf{1}_{j}$ will be called the component subcategories of $\mathcal{C}$.
+  kind: definition
+  location: Section 1.15
+  name: Definition 1.15.4
+- description: Let $\mathcal{C}$ be a multiring category. (1) $\mathcal{C}=\oplus_{i,j
+    \in I} \mathcal{C}_{ij}$. Thus every indecomposable object of $\mathcal{C}$ belongs
+    to some $\mathcal{C}_{ij}$. (2) The tensor product maps $\mathcal{C}_{ij} \times
+    \mathcal{C}_{kl}$ to $\mathcal{C}_{il}$, and it is zero unless $j=k$. (3) The
+    categories $\mathcal{C}_{ii}$ are ring categories with unit objects $\mathbf{1}_{i}$
+    (which are tensor categories if $\mathcal{C}$ is rigid). (4) The functors of left
+    and right duals, if they are defined, map $\mathcal{C}_{ij}$ to $\mathcal{C}_{ji}$.
+  kind: proposition
+  location: Section 1.15
+  name: Proposition 1.15.5
+- description: (i) In a ring category with right duals, the unit object $\mathbf{1}$
+    is simple. (ii) In a multiring category with right duals, the unit object $\mathbf{1}$
+    is semisimple, and is a direct sum of pairwise non-isomorphic simple objects $\mathbf{1}_{i}$.
+  kind: theorem
+  location: Section 1.15
+  name: Theorem 1.15.8
+- description: In a ring category with right duals, the evaluation morphisms are surjective
+    and the coevaluation morphisms are injective.
+  kind: corollary
+  location: Section 1.15
+  name: Corollary 1.15.9
+- description: 'Let $\mathcal{C}$ and $\mathcal{D}$ be multiring categories and $F:
+    \mathcal{C} \rightarrow \mathcal{D}$ be a quasi-tensor functor. Then $F$ defines
+    a homomorphism of unital rings $[F]: \operatorname{Gr}(\mathcal{C}) \rightarrow
+    \operatorname{Gr}(\mathcal{D})$.'
+  kind: proposition
+  location: Section 1.16
+  name: Proposition 1.16.2
+- description: 'The multiplication on $\operatorname{Gr}(\mathcal{C})$ defined by
+    $X_{i} X_{j} := [X_{i} \otimes X_{j}] = \sum_{k \in I} [X_{i} \otimes X_{j}: X_{k}]
+    X_{k}$ is associative.'
+  kind: lemma
+  location: Section 1.16
+  name: Lemma 1.16.1
+- description: A k-linear abelian category C is said to be finite if it is equivalent
+    to the category A-mod of finite dimensional modules over a finite dimensional
+    k-algebra A.
+  kind: definition
+  location: Section 1.18
+  name: Definition 1.18.1
+- description: A k-linear abelian category C is finite if (i) C has finite dimensional
+    spaces of morphisms; (ii) every object of C has finite length; (iii) C has enough
+    projectives, i.e., every simple object of C has a projective cover; and (iv) there
+    are finitely many isomorphism classes of simple objects.
+  kind: definition
+  location: Section 1.18
+  name: Definition 1.18.2
+- description: 'There is a canonical algebra isomorphism α_{F₁,F₂}: End(F₁) ⊗ End(F₂)
+    ≅ End(F₁ ⊗ F₂) given by α_{F₁,F₂}(η₁ ⊗ η₂)|_{F₁(X) ⊗ F₂(Y)} := η₁|_{F₁(X)} ⊗ η₂|_{F₂(Y)}
+    where η_i ∈ End(F_i), i = 1, 2.'
+  kind: proposition
+  location: Section 1.18
+  name: Proposition 1.18.3
+- description: 'A quasi-fiber functor on C is an exact faithful functor F: C → Vec
+    from C to the category of finite dimensional k-vector spaces, such that F(1) =
+    k, equipped with an isomorphism J: F(•) ⊗ F(•) → F(• ⊗ •). If in addition J is
+    a monoidal structure (i.e. satisfies the monoidal structure axiom), one says that
+    F is a fiber functor.'
+  kind: definition
+  location: Section 1.19
+  name: Definition 1.19.1
+- description: 'A coalgebra (with counit) over a field k is a k-vector space C together
+    with a comultiplication (or coproduct) Δ: C → C ⊗ C and counit ε: C → k such that
+    (i) Δ is coassociative, i.e., (Δ ⊗ Id) ∘ Δ = (Id ⊗ Δ) ∘ Δ as maps C → C^{⊗3};
+    (ii) one has (ε ⊗ Id) ∘ Δ = (Id ⊗ ε) ∘ Δ = Id as maps C → C (the ''counit axiom'').'
+  kind: definition
+  location: Section 1.20
+  name: Definition 1.20.1
+- description: 'A left comodule over a coalgebra C is a vector space M together with
+    a linear map π: M → C ⊗ M (called the coaction map), such that for any m ∈ M,
+    one has (Δ ⊗ Id)(π(m)) = (Id ⊗ π)(π(m)), (ε ⊗ Id)(π(m)) = m. Similarly, a right
+    comodule over C is a vector space M together with a linear map π: M → M ⊗ C, such
+    that for any m ∈ M, one has (π ⊗ Id)(π(m)) = (Id ⊗ Δ)(π(m)), (Id ⊗ ε)(π(m)) =
+    m.'
+  kind: definition
+  location: Section 1.20
+  name: Definition 1.20.2
+- description: (i) The algebra H is a coalgebra with comultiplication Δ and counit
+    ε. (ii) The maps Δ and ε are unital algebra homomorphisms.
+  kind: theorem
+  location: Section 1.21
+  name: Theorem 1.21.1
+- description: An algebra H equipped with a comultiplication Δ and a counit ε satisfying
+    properties (i),(ii) of Theorem 1.21.1 is called a bialgebra.
+  kind: definition
+  location: Section 1.21
+  name: Definition 1.21.2
+- description: The assignments (C, F) ↦ H = End(F), H ↦ (Rep(H), Forget) are mutually
+    inverse bijections between 1) finite abelian k-linear monoidal categories C with
+    a fiber functor F, up to monoidal equivalence and isomorphism of monoidal functors;
+    2) finite dimensional bialgebras H over k up to isomorphism.
+  kind: theorem
+  location: Section 1.21
+  name: Theorem 1.21.3
+- description: '(the antipode axiom) Let μ: H ⊗ H → H and i: k → H be the multiplication
+    and the unit maps of H. Then μ ∘ (Id ⊗ S) ∘ Δ = i ∘ ε = μ ∘ (S ⊗ Id) ∘ Δ as maps
+    H → H.'
+  kind: proposition
+  location: Section 1.22
+  name: Proposition 1.22.1
+- description: 'An antipode on a bialgebra H is a linear map S: H → H which satisfies
+    the equalities of Proposition 1.22.1.'
+  kind: definition
+  location: Section 1.22
+  name: Definition 1.22.2
+- description: An antipode on a bialgebra H is unique if exists.
+  kind: proposition
+  location: Section 1.22
+  name: Proposition 1.22.4
+- description: If S is an antipode on a bialgebra H then S is an antihomomorphism
+    of algebras with unit and of coalgebras with counit.
+  kind: proposition
+  location: Section 1.22
+  name: Proposition 1.22.5
+- description: (i) If H is a bialgebra with an antipode S, then the abelian monoidal
+    category C = Rep(H) has right duals. Namely, for any object X, the right dual
+    X* is the usual dual space of X, with action of H given by ρ_{X*}(a) = ρ_X(S(a))*,
+    and the usual evaluation and coevaluation morphisms of the category Vec. (ii)
+    If in addition S is invertible, then C also admits left duals, i.e. is rigid (in
+    other words, C is tensor category). Namely, for any object X, the left dual *X
+    is the usual dual space of X, with action of H given by ρ_{*X}(a) = ρ_X(S^{-1}(a))*,
+    and the usual evaluation and coevaluation morphisms of the category Vec.
+  kind: corollary
+  location: Section 1.22
+  name: Corollary 1.22.6
+- description: A bialgebra equipped with an invertible antipode S is called a Hopf
+    algebra.
+  kind: definition
+  location: Section 1.22
+  name: Definition 1.22.9
+- description: The assignments (C, F) ↦ H = End(F), H ↦ (Rep(H), Forget) are mutually
+    inverse bijections between 1) finite tensor categories C with a fiber functor
+    F, up to monoidal equivalence and isomorphism of monoidal functors; 2) finite
+    dimensional Hopf algebras over k up to isomorphism.
+  kind: theorem
+  location: Section 1.22
+  name: Theorem 1.22.11
+- description: In any coalgebra C, a nonzero element g ∈ C such that Δ(g) = g ⊗ g
+    is called a grouplike element.
+  kind: definition
+  location: Section 1.22
+  name: Definition 1.22.13
+- description: If H is a finite dimensional bialgebra with an antipode S, then S is
+    invertible, so H is a Hopf algebra.
+  kind: proposition
+  location: Section 1.22
+  name: Proposition 1.22.15
+- description: 'Let C be a k-linear abelian category with an exact faithful functor
+    F: C → Vec. Then F defines an equivalence between C and the category of finite
+    dimensional right comodules over C := Coend(F) (or, equivalently, with the category
+    of continuous finite dimensional left End(F)-modules).'
+  kind: theorem
+  location: Section 1.23
+  name: Theorem 1.23.1
+- description: The assignments (C, F) ↦ H = Coend(F), H ↦ (H-Comod, Forget) are mutually
+    inverse bijections between 1) k-linear abelian monoidal categories C with a fiber
+    functor F, up to monoidal equivalence and isomorphism of monoidal functors, and
+    bialgebras over k, up to isomorphism; 2) k-linear abelian monoidal categories
+    C with right duals with a fiber functor F, up to monoidal equivalence and isomorphism
+    of monoidal functors, and bialgebras over k with an antipode, up to isomorphism;
+    3) tensor categories C over k with a fiber functor F, up to monoidal equivalence
+    and isomorphism of monoidal functors, and Hopf algebras over k, up to isomorphism.
+  kind: theorem
+  location: Section 1.23
+  name: Theorem 1.23.2
+- description: An element x of a bialgebra H is called primitive if Δ(x) = x ⊗ 1 +
+    1 ⊗ x. The space of primitive elements of H is denoted Prim(H).
+  kind: definition
+  location: Section 1.24
+  name: Definition 1.24.2
+- description: Let g, h be grouplike elements of a coalgebra H. A skew-primitive element
+    of type (h, g) is an element x ∈ H such that Δ(x) = h ⊗ x + x ⊗ g.
+  kind: definition
+  location: Section 1.24
+  name: Definition 1.24.6
+- description: Let q ∈ k, q ≠ ±1. The quantum group U_q(sl_2) is generated by elements
+    E, F and an invertible element K with defining relations KE K^{-1} = q^2 E, KF
+    K^{-1} = q^{-2} F, [E,F] = (K - K^{-1})/(q - q^{-1}).
+  kind: definition
+  location: Section 1.25
+  name: Definition 1.25.1
+- description: There exists a unique Hopf algebra structure on U_q(sl_2), given by
+    Δ(K) = K ⊗ K (thus K is a grouplike element); Δ(E) = E ⊗ K + 1 ⊗ E; Δ(F) = F ⊗
+    1 + K^{-1} ⊗ F (thus E, F are skew-primitive elements).
+  kind: theorem
+  location: Section 1.25
+  name: Theorem 1.25.2
+- description: The q-analog of n is [n]_q = (q^n - q^{-n})/(q - q^{-1}). The q-analog
+    of the factorial is [n]_q! = ∏_{l=1}^{n} [l]_q = ((q - q^{-1})···(q^n - q^{-n}))/(q
+    - q^{-1})^n.
+  kind: definition
+  location: Section 1.26
+  name: Definition 1.26.1
+- description: The quantum group U_q(g) is generated by elements E_i, F_i and invertible
+    elements K_i, with defining relations K_i K_j = K_j K_i, K_i E_j K_i^{-1} = q^{a_{ij}}
+    E_j, K_i F_j K_i^{-1} = q^{-a_{ij}} F_j, [E_i, F_j] = δ_{ij}(K_i^{d_i} - K_i^{-d_i})/(q^{d_i}
+    - q^{-d_i}), and the q-Serre relations (1.26.1) and (1.26.2).
+  kind: definition
+  location: Section 1.26
+  name: Definition 1.26.2
+- description: There exists a unique Hopf algebra structure on U_q(g), given by Δ(K_i)
+    = K_i ⊗ K_i; Δ(E_i) = E_i ⊗ K_i + 1 ⊗ E_i; Δ(F_i) = F_i ⊗ 1 + K_i^{-1} ⊗ F_i.
+  kind: theorem
+  location: Section 1.26
+  name: Theorem 1.26.3
+- description: Let g, h be grouplike elements of a coalgebra C, and Prim_{h,g}(C)
+    be the space of skew-primitive elements of type h, g. Then the space Prim_{h,g}(H)/k(h-g)
+    is naturally isomorphic to Ext^1(g, h), where g, h are regarded as 1-dimensional
+    right C-comodules.
+  kind: proposition
+  location: Section 1.27
+  name: Proposition 1.27.1
+- description: Assume that k has characteristic 0. Let C be a finite ring category
+    over k with simple object 1. Then Ext^1(1, 1) = 0.
+  kind: theorem
+  location: Section 1.27
+  name: Theorem 1.27.4
+- description: If a finite ring category C over a field of characteristic zero has
+    a unique simple object 1, then C is equivalent to the category Vec.
+  kind: corollary
+  location: Section 1.27
+  name: Corollary 1.27.5
+- description: A finite dimensional bialgebra H over a field of characteristic zero
+    cannot contain nonzero primitive elements.
+  kind: corollary
+  location: Section 1.27
+  name: Corollary 1.27.6
+- description: If H is a finite dimensional commutative Hopf algebra over an algebraically
+    closed field k of characteristic 0, then H = Fun(G, k) for a unique finite group
+    G.
+  kind: corollary
+  location: Section 1.27
+  name: Corollary 1.27.8
+- description: A coalgebra C is pointed if its category of right comodules is pointed,
+    i.e., if any simple right C-comodule is 1-dimensional.
+  kind: definition
+  location: Section 1.28
+  name: Definition 1.28.1
+- description: A tensor category C is pointed if every simple object of C is invertible.
+  kind: definition
+  location: Section 1.28
+  name: Definition 1.28.3
+- description: The filtration of C by C_i is called the coradical filtration of C.
+  kind: definition
+  location: Section 1.29
+  name: Definition 1.29.1
+- description: A coalgebra C is said to be cosemisimple if C is a direct sum of simple
+    subcoalgebras.
+  kind: definition
+  location: Section 1.29
+  name: Definition 1.29.3
+- description: (i) A category C is semisimple if and only if C_0 = C_1. (ii) A coalgebra
+    C is cosemisimple if and only if C_0 = C_1.
+  kind: proposition
+  location: Section 1.29
+  name: Proposition 1.29.4
+- description: If C is a pointed coalgebra, then C_0 is spanned by (linearly independent)
+    grouplike elements g, and C_1/C_0 = ⊕_{h,g} Prim_{h,g}(C)/k(h-g). In particular,
+    any noncosemisimple pointed coalgebra contains nontrivial skew-primitive elements.
+  kind: corollary
+  location: Section 1.29
+  name: Corollary 1.29.5 (The Taft-Wilson theorem)
+- description: 'If C, D are coalgebras, and f: C → D is a coalgebra homomorphism such
+    that f|_{C_1} is injective, then f is injective.'
+  kind: proposition
+  location: Section 1.29
+  name: Proposition 1.29.6
+- description: 'If H is a Hopf algebra over a field of characteristic zero, then the
+    natural map ξ: U(Prim(H)) → H is injective.'
+  kind: corollary
+  location: Section 1.29
+  name: Corollary 1.29.7
+- description: Let k be a field of characteristic zero. Then the tensor product of
+    two simple finite dimensional representations of any group or Lie algebra over
+    k is semisimple.
+  kind: theorem
+  location: Section 1.30
+  name: Theorem 1.30.1 (Chevalley)
+- description: If V is a completely reducible representation of G (a Zariski closed
+    subgroup of GL(V)), then G is reductive.
+  kind: lemma
+  location: Section 1.30
+  name: Lemma 1.30.2
+- description: A tensor category C is said to have Chevalley property if the category
+    C_0 of semisimple objects of C is a tensor subcategory.
+  kind: definition
+  location: Section 1.31
+  name: Definition 1.31.1
+- description: A pointed tensor category has Chevalley property.
+  kind: proposition
+  location: Section 1.31
+  name: Proposition 1.31.2
+- description: In a tensor category with Chevalley property, Lw(X ⊗ Y) ≤ Lw(X) + Lw(Y)
+    - 1. Thus C_i ⊗ C_j ⊂ C_{i+j}.
+  kind: proposition
+  location: Section 1.31
+  name: Proposition 1.31.3
+- description: In a pointed Hopf algebra H, the coradical filtration is a Hopf algebra
+    filtration, i.e. H_i H_j ⊂ H_{i+j} and S(H_i) = H_i, so gr(H) is a Hopf algebra.
+  kind: corollary
+  location: Section 1.31
+  name: Corollary 1.31.5
+- description: Any finite dimensional pointed Hopf algebra over a field of characteristic
+    zero is generated in degree 1 of its coradical filtration, i.e., by grouplike
+    and skew-primitive elements.
+  kind: conjecture
+  location: Section 1.32
+  name: Conjecture 1.32.1
+- description: We say that a tensor category C is tensor-generated by a collection
+    of objects X_α if every object of C is a subquotient of a finite direct sum of
+    tensor products of X_α.
+  kind: definition
+  location: Section 1.32
+  name: Definition 1.32.2
+- description: A pointed Hopf algebra H is generated by grouplike and skew-primitive
+    elements if and only if the tensor category H-comod is tensor-generated by objects
+    of length 2.
+  kind: proposition
+  location: Section 1.32
+  name: Proposition 1.32.3
+- description: Any finite pointed tensor category over a field of characteristic zero
+    is tensor generated by objects of length 2.
+  kind: conjecture
+  location: Section 1.32
+  name: Conjecture 1.32.4
+- description: Any cocommutative Hopf algebra H over an algebraically closed field
+    of characteristic zero is of the form k[G] ⋉ U(g), where g is a Lie algebra, and
+    G is a group acting on g.
+  kind: theorem
+  location: Section 1.33
+  name: Theorem 1.33.1 (Cartier-Kostant)
+- description: Let V be a vector space over a field k of characteristic zero. Let
+    u ∈ SV ⊗ SV be a symmetric element satisfying equation (1.33.2). Then u = Δ(w)
+    - w ⊗ 1 - 1 ⊗ w for some w ∈ SV.
+  kind: lemma
+  location: Section 1.33
+  name: Lemma 1.33.2
+- description: Let H be a commutative Hopf algebra over a field k of characteristic
+    zero. Then H has no nonzero nilpotent elements.
+  kind: corollary
+  location: Section 1.33
+  name: Corollary 1.33.4
+- description: 'Let C be an abelian monoidal category over k, and (F, J): C → Vec
+    be a quasi-fiber functor. (F, J) is said to be normalized if J_{1X} = J_{X1} =
+    Id_{F(X)} for all X ∈ C.'
+  kind: definition
+  location: Section 1.34
+  name: Definition 1.34.1
+- description: Two quasi-fiber functors (F, J_1) and (F, J_2) are said to be twist
+    equivalent (by the twist J_1^{-1} J_2).
+  kind: definition
+  location: Section 1.34
+  name: Definition 1.34.2
+- description: 'The following identities hold: (Id ⊗ Δ)(Δ(h)) = Φ(Δ ⊗ Id)(Δ(h))Φ^{-1}
+    for h ∈ H; (Id ⊗ Id ⊗ Δ)(Φ)(Δ ⊗ Id ⊗ Id)(Φ) = (1 ⊗ Φ)(Id ⊗ Δ ⊗ Id)(Φ)(Φ ⊗ 1);
+    (ε ⊗ Id)(Δ(h)) = h = (Id ⊗ ε)(Δ(h)); (Id ⊗ ε ⊗ Id)(Φ) = 1 ⊗ 1.'
+  kind: proposition
+  location: Section 1.34
+  name: Proposition 1.34.4
+- description: 'An associative unital k-algebra H equipped with unital algebra homomorphisms
+    Δ: H → H ⊗ H (the coproduct) and ε: H → k (the counit) and an invertible element
+    Φ ∈ H^{⊗3} satisfying the identities of Proposition 1.34.4 is called a quasi-bialgebra.
+    The element Φ is called the associator of H.'
+  kind: definition
+  location: Section 1.34
+  name: Definition 1.34.5
+- description: A twist for a quasi-bialgebra H is an invertible element J ∈ H ⊗ H
+    such that (ε ⊗ Id)(J) = (Id ⊗ ε)(J) = 1. Given a twist, we can define a new quasi-bialgebra
+    H^J which is H as an algebra, with the same counit, the coproduct given by Δ^J(x)
+    = J^{-1}Δ(x)J and the associator given by Φ^J = (Id ⊗ J)^{-1}(Id ⊗ Δ)(J)^{-1}
+    Φ(Δ ⊗ Id)(J)(J ⊗ Id). The algebra H^J is called twist equivalent to H, by the
+    twist J.
+  kind: definition
+  location: Section 1.34
+  name: Definition 1.34.6
+- description: If a finite k-linear abelian monoidal category C admits a quasi-fiber
+    functor, then this functor is unique up to twisting.
+  kind: proposition
+  location: Section 1.34
+  name: Proposition 1.34.7
+- description: The assignments (C, F) ↦ H = End(F), H ↦ (Rep(H), Forget) are mutually
+    inverse bijections between 1) finite k-linear abelian monoidal categories C admitting
+    a quasi-fiber functor, up to monoidal equivalence of categories, and 2) finite
+    dimensional quasi-bialgebras H over k up to twist equivalence and isomorphism.
+  kind: theorem
+  location: Section 1.34
+  name: Theorem 1.34.8
+- description: One has ∑ Φ_i^1 β S(Φ_i^2) α Φ_i^3 = 1 and ∑ S(Φ̄_i^1) α Φ̄_i^2 β S(Φ̄_i^3)
+    = 1.
+  kind: proposition
+  location: Section 1.35
+  name: Proposition 1.35.1
+- description: 'An antipode on a quasi-bialgebra H is a triple (S, α, β), where S:
+    H → H is a unital antihomomorphism and α, β ∈ H, satisfying identities (1.35.1)
+    and (1.35.2). A quasi-Hopf algebra is a quasi-bialgebra (H, Δ, ε, Φ) for which
+    there exists an antipode (S, α, β) such that S is bijective.'
+  kind: definition
+  location: Section 1.35
+  name: Definition 1.35.2
+- description: The assignments (C, F) ↦ H = End(F), H ↦ (Rep(H), Forget) are mutually
+    inverse bijections between (i) finite abelian k-linear monoidal categories C with
+    right duals admitting a quasi-fiber functor, up to monoidal equivalence of categories,
+    and finite dimensional quasi-bialgebras H over k with an antipode, up to twist
+    equivalence and isomorphism; (ii) finite tensor categories C admitting a quasi-fiber
+    functor, up to monoidal equivalence of categories, and finite dimensional quasi-Hopf
+    algebras H over k, up to twist equivalence and isomorphism.
+  kind: theorem
+  location: Section 1.35
+  name: Theorem 1.35.6
+- description: J is called a bialgebra twist if H^J is a bialgebra, i.e. Φ^J = 1.
+    Thus, a bialgebra twist for H is an invertible element J ∈ H ⊗ H such that (ε
+    ⊗ Id)(J) = (Id ⊗ ε)(J) = 1, and J satisfies the twist equation (Id ⊗ Δ)(J)(Id
+    ⊗ J) = (Δ ⊗ Id)(J)(J ⊗ Id).
+  kind: definition
+  location: Section 1.36
+  name: Definition 1.36.1
+- description: 'Let H be a finite dimensional bialgebra. Then J ↦ (Id, J) is a bijection
+    between: 1) gauge equivalence classes of bialgebra twists for H, and 2) fiber
+    functors on C = Rep(H), up to isomorphism.'
+  kind: proposition
+  location: Section 1.36
+  name: Proposition 1.36.4
+- description: Let G be a group. Then fiber functors on Vec_G up to an isomorphism
+    bijectively correspond to H^2(G, k×).
+  kind: proposition
+  location: Section 1.36
+  name: Proposition 1.36.5
+- description: If a ∈ Hom(V, V^{**}), b ∈ Hom(W, W^{**}) then (1) Tr_V^L(a) = Tr_{V^*}^R(a^*);
+    (2) Tr_{V⊕W}^L(a ⊕ b) = Tr_V^L(a) + Tr_W^L(b) (in additive categories); (3) Tr_{V⊗W}^L(a
+    ⊗ b) = Tr_V^L(a) Tr_W^L(b); (4) If c ∈ Hom(V, V) then Tr_V^L(ac) = Tr_V^L(c^{**}a),
+    Tr_V^R(ac) = Tr_V^R(^{**}c · a). Similar equalities to (2),(3) also hold for right
+    quantum traces.
+  kind: proposition
+  location: Section 1.37
+  name: Proposition 1.37.1
+- description: If a ∈ Hom(V, V^{**}) and W ⊂ V such that a(W) ⊂ W^{**} then Tr_V^L(a)
+    = Tr_W^L(a) + Tr_{V/W}^L(a). That is, Tr is additive on exact sequences. The same
+    statement holds for right quantum traces.
+  kind: proposition
+  location: Section 1.37
+  name: Proposition 1.37.3
+- description: 'Let C be a rigid monoidal category. A pivotal structure on C is an
+    isomorphism of monoidal functors a: Id → ?^{**}.'
+  kind: definition
+  location: Section 1.38
+  name: Definition 1.38.1
+- description: A rigid monoidal category $\mathcal{C}$ equipped with a pivotal structure
+    is said to be pivotal.
+  kind: definition
+  location: Section 1.38
+  name: Definition 1.38.2
+- description: The dimension of an object $X$ with respect to a pivotal structure
+    $a$ is $\operatorname{dim}_{a}(X):=\operatorname{Tr}(a_{X}) \in \operatorname{End}(\mathbf{1})$.
+  kind: definition
+  location: Section 1.38
+  name: Definition 1.38.4
+- description: If $\mathcal{C}$ is a tensor category, then the function $X \mapsto
+    \operatorname{dim}_{a}(X)$ is a character of the Grothendieck ring $\operatorname{Gr}(\mathcal{C})$.
+  kind: proposition
+  location: Section 1.38
+  name: Proposition 1.38.5
+- description: Dimensions of objects in a pivotal finite tensor category are algebraic
+    integers in $k$.
+  kind: corollary
+  location: Section 1.38
+  name: Corollary 1.38.6
+- description: A pivotal structure $a$ on a tensor category $\mathcal{C}$ is spherical
+    if $\operatorname{dim}_{a}(V)=\operatorname{dim}_{a}(V^{*})$ for any object $V$
+    in $\mathcal{C}$. A tensor category is spherical if it is equipped with a spherical
+    structure.
+  kind: definition
+  location: Section 1.39
+  name: Definition 1.39.1
+- description: Let $\mathcal{C}$ be a spherical category and $V$ be an object of $\mathcal{C}$.
+    Then for any $x \in \operatorname{Hom}(V, V)$ one has $\operatorname{Tr}_{V}^{L}(a_{V}
+    x)=\operatorname{Tr}_{V}^{R}(x a_{V}^{-1})$.
+  kind: theorem
+  location: Section 1.39
+  name: Theorem 1.39.2
+- description: Let $\mathcal{C}$ be a semisimple multitensor category and let $V$
+    be an object in $\mathcal{C}$. Then ${}^{*}V \cong V^{*}$. Hence, $V \cong V^{**}$.
+  kind: proposition
+  location: Section 1.41
+  name: Proposition 1.41.1
+- description: 'If $\mathcal{C}$ is a semisimple tensor category and $a: V \xrightarrow{\sim}
+    V^{**}$ for a simple object $V$ then $\operatorname{Tr}(a) \neq 0$.'
+  kind: proposition
+  location: Section 1.41
+  name: Proposition 1.41.5
+- description: (i) A $\mathbb{Z}_{+}$-basis of an algebra free as a module over $\mathbb{Z}$
+    is a basis $B=\{b_{i}\}$ such that $b_{i} b_{j}=\sum_{k} c_{ij}^{k} b_{k}$, $c_{ij}^{k}
+    \in \mathbb{Z}_{+}$. (ii) A $\mathbb{Z}_{+}$-ring is an algebra over $\mathbb{Z}$
+    with unit equipped with a fixed $\mathbb{Z}_{+}$-basis.
+  kind: definition
+  location: Section 1.42
+  name: Definition 1.42.1
+- description: '(1) A $\mathbb{Z}_{+}$-ring $A$ with basis $\{b_{i}\}_{i \in I}$ is
+    called a based ring if the following conditions hold: [a] There exists a subset
+    $I_{0} \subset I$ such that $1=\sum_{i \in I_{0}} b_{i}$. [b] Let $\tau: A \rightarrow
+    \mathbb{Z}$ be the group homomorphism defined by $\tau(b_{i})=1$ if $i \in I_{0}$
+    and $\tau(b_{i})=0$ if $i \notin I_{0}$. There exists an involution $i \mapsto
+    i^{*}$ of $I$ such that the induced map $a=\sum_{i \in I} a_{i} b_{i} \mapsto
+    a^{*}=\sum_{i \in I} a_{i} b_{i^{*}}$ is an anti-involution of ring $A$ and such
+    that $\tau(b_{i} b_{j})=1$ if $i=j^{*}$ and $\tau(b_{i} b_{j})=0$ if $i \neq j^{*}$.
+    (2) A unital $\mathbb{Z}_{+}$-ring is a $\mathbb{Z}_{+}$-ring $A$ such that 1
+    belongs to the basis. (3) A multifusion ring is a based ring of finite rank. A
+    fusion ring is a unital based ring of finite rank.'
+  kind: definition
+  location: Section 1.42
+  name: Definition 1.42.2
+- description: If $\mathcal{C}$ is a semisimple multitensor category then $\operatorname{Gr}(\mathcal{C})$
+    is a based ring. If $\mathcal{C}$ is semisimple tensor category then $\operatorname{Gr}(\mathcal{C})$
+    is a unital based ring. If $\mathcal{C}$ is a (multi)fusion category, then $\operatorname{Gr}(\mathcal{C})$
+    is a (multi)fusion ring.
+  kind: proposition
+  location: Section 1.42
+  name: Proposition 1.42.4
+- description: The categorifications of $\mathbb{Z}[G]$ are $\operatorname{Vec}_{G}^{\omega}$,
+    and they are parametrized by $H^{3}(G, k^{\times})/\operatorname{Out}(G)$.
+  kind: proposition
+  location: Section 1.42
+  name: Proposition 1.42.9
+- description: 'A $*$-algebra is an associative algebra $B$ over $\mathbb{C}$ with
+    an antilinear anti-involution $*: B \rightarrow B$ and a linear functional $\tau:
+    B \rightarrow \mathbb{C}$ such that $\tau(ab)=\tau(ba)$, and the Hermitian form
+    $\tau(ab^{*})$ is positive definite.'
+  kind: definition
+  location: Section 1.43
+  name: Definition 1.43.1
+- description: Any finite dimensional $*$-algebra $B$ is semisimple.
+  kind: proposition
+  location: Section 1.43
+  name: Proposition 1.43.2
+- description: If $e$ is a nonzero idempotent in a finite dimensional $*$-algebra
+    $B$ then $\tau(e)>0$.
+  kind: corollary
+  location: Section 1.43
+  name: Corollary 1.43.3
+- description: Let $A$ be a based ring. Then the algebra $A \otimes_{\mathbb{Z}} \mathbb{C}$
+    is canonically a $*$-algebra.
+  kind: proposition
+  location: Section 1.43
+  name: Proposition 1.43.4
+- description: Let $A$ be a multifusion ring. Then the algebra $A \otimes_{\mathbb{Z}}
+    \mathbb{C}$ is semisimple.
+  kind: corollary
+  location: Section 1.43
+  name: Corollary 1.43.5
+- description: Let $X$ be a basis element of a fusion ring $A$. Then there exists
+    $n>0$ such that $\tau(X^{n})>0$.
+  kind: corollary
+  location: Section 1.43
+  name: Corollary 1.43.6
+- description: 'Let $B$ be a square matrix with nonnegative entries. (1) $B$ has a
+    nonnegative real eigenvalue. The largest nonnegative real eigenvalue $\lambda(B)$
+    of $B$ dominates the absolute values of all other eigenvalues $\mu$ of $B$: $|\mu|
+    \leq \lambda(B)$ (in other words, the spectral radius of $B$ is an eigenvalue).
+    Moreover, there is an eigenvector of $B$ with nonnegative entries and eigenvalue
+    $\lambda(B)$. (2) If $B$ has strictly positive entries then $\lambda(B)$ is a
+    simple positive eigenvalue, and the corresponding eigenvector can be normalized
+    to have strictly positive entries. Moreover, $|\mu|<\lambda(B)$ for any other
+    eigenvalue $\mu$ of $B$. (3) If $B$ has an eigenvector $\mathbf{v}$ with strictly
+    positive entries, then the corresponding eigenvalue is $\lambda(B)$.'
+  kind: theorem
+  location: Section 1.44
+  name: Theorem 1.44.1
+- description: We will say that a $\mathbb{Z}_{+}$-ring $A$ with $\mathbb{Z}_{+}$-basis
+    $I$ is transitive if for any $X, Z \in I$ there exist $Y_{1}, Y_{2} \in I$ such
+    that $XY_{1}$ and $Y_{2}X$ involve $Z$ with a nonzero coefficient.
+  kind: definition
+  location: Section 1.45
+  name: Definition 1.45.1
+- description: If $\mathcal{C}$ is a ring category with right duals then $\operatorname{Gr}(\mathcal{C})$
+    is a transitive unital $\mathbb{Z}_{+}$-ring.
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.2
+- description: The function FPdim is called the Frobenius-Perron dimension.
+  kind: definition
+  location: Section 1.45
+  name: Definition 1.45.3
+- description: Let $X \in I$. (1) The number $\alpha = \mathrm{FPdim}(X)$ is an algebraic
+    integer, and for any algebraic conjugate $\alpha'$ of $\alpha$ we have $\alpha
+    \geq |\alpha'|$. (2) $\mathrm{FPdim}(X) \geq 1$.
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.4
+- description: '(1) The function $\mathrm{FPdim}: A \rightarrow \mathbb{C}$ is a ring
+    homomorphism. (2) There exists a unique, up to scaling, element $R \in A_{\mathbb{C}}:=A
+    \otimes_{\mathbb{Z}} \mathbb{C}$ such that $XR=\mathrm{FPdim}(X) R$ for all $X
+    \in A$. After an appropriate normalization this element has positive coefficients,
+    and satisfies $\mathrm{FPdim}(R)>0$ and $RY=\mathrm{FPdim}(Y)R$, $Y \in A$. (3)
+    FPdim is a unique nonzero character of $A$ which takes nonnegative values on $I$.
+    (4) If $X \in A$ has nonnegative coefficients with respect to the basis of $A$,
+    then $\mathrm{FPdim}(X)$ is the largest nonnegative eigenvalue $\lambda(N_{X})$
+    of the matrix $N_{X}$ of multiplication by $X$.'
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.5
+- description: The element $R$ will be called a regular element of $A$.
+  kind: definition
+  location: Section 1.45
+  name: Definition 1.45.7
+- description: 'Let $A$ be as above and $*: I \rightarrow I$ be a bijection which
+    extends to an anti-automorphism of $A$. Then FPdim is invariant under $*$.'
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.8
+- description: Let $\mathcal{C}$ be a ring category with right duals and finitely
+    many simple objects, and let $X$ be an object in $\mathcal{C}$. If $\mathrm{FPdim}(X)=1$
+    then $X$ is invertible.
+  kind: corollary
+  location: Section 1.45
+  name: Corollary 1.45.9
+- description: 'Let $f: A_{1} \rightarrow A_{2}$ be a unital homomorphism of transitive
+    unital $\mathbb{Z}_{+}$-rings of finite rank, whose matrix in their $\mathbb{Z}_{+}$-bases
+    has non-negative entries. Then (1) $f$ preserves Frobenius-Perron dimensions.
+    (2) Let $I_{1}, I_{2}$ be the $\mathbb{Z}_{+}$-bases of $A_{1}, A_{2}$, and suppose
+    that for any $Y$ in $I_{2}$ there exists $X \in I_{1}$ such that the coefficient
+    of $Y$ in $f(X)$ is non-zero. If $R$ is a regular element of $A_{1}$ then $f(R)$
+    is a regular element of $A_{2}$.'
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.10
+- description: 'Let $\mathcal{C}$ and $\mathcal{D}$ be tensor categories with finitely
+    many classes of simple objects. If $F: \mathcal{C} \rightarrow \mathcal{D}$ is
+    a quasi-tensor functor, then $\operatorname{FPdim}_{\mathcal{D}}(F(X))=\operatorname{FPdim}_{\mathcal{C}}(X)$
+    for any $X$ in $\mathcal{C}$.'
+  kind: corollary
+  location: Section 1.45
+  name: Corollary 1.45.11
+- description: (Kronecker) Let $B$ be a matrix with nonnegative integer entries, such
+    that $\lambda(BB^{T})=\lambda(B)^{2}$. If $\lambda(B)<2$ then $\lambda(B)= 2\cos(\pi/n)$
+    for some integer $n \geq 2$.
+  kind: proposition
+  location: Section 1.45
+  name: Proposition 1.45.15
+- description: Let $A$ be a fusion ring, and $X \in A$ a basis element. Then if $\mathrm{FPdim}(X)<2$
+    then $\mathrm{FPdim}(X)=2\cos(\pi/n)$, for some integer $n \geq 3$.
+  kind: corollary
+  location: Section 1.45
+  name: Corollary 1.45.16
+- description: 'Deligne''s tensor product $\mathcal{C} \boxtimes \mathcal{D}$ is an
+    abelian category which is universal for the functor assigning to every $k$-linear
+    abelian category $\mathcal{A}$ the category of right exact in both variables bilinear
+    bifunctors $\mathcal{C} \times \mathcal{D} \rightarrow \mathcal{A}$. That is,
+    there is a bifunctor $\boxtimes: \mathcal{C} \times \mathcal{D} \rightarrow \mathcal{C}
+    \boxtimes \mathcal{D}: (X, Y) \mapsto X \boxtimes Y$ which is right exact in both
+    variables and is such that for any right exact in both variables bifunctor $F:
+    \mathcal{C} \times \mathcal{D} \rightarrow \mathcal{A}$ there exists a unique
+    right exact functor $\bar{F}: \mathcal{C} \boxtimes \mathcal{D} \rightarrow \mathcal{A}$
+    satisfying $\bar{F} \circ \boxtimes = F$.'
+  kind: definition
+  location: Section 1.46
+  name: Definition 1.46.1
+- description: '(i) The tensor product $\mathcal{C} \boxtimes \mathcal{D}$ exists
+    and is a finite abelian category. (ii) It is unique up to a unique equivalence.
+    (iii) Let $C, D$ be finite dimensional algebras and let $\mathcal{C}=C\text{-mod}$
+    and $\mathcal{D}=D\text{-mod}$. Then $\mathcal{C} \boxtimes \mathcal{D}=C \otimes
+    D\text{-mod}$. (iv) The bifunctor $\boxtimes$ is exact in both variables and satisfies
+    $\operatorname{Hom}_{\mathcal{C}}(X_{1}, Y_{1}) \otimes \operatorname{Hom}_{\mathcal{D}}(X_{2},
+    Y_{2}) \cong \operatorname{Hom}_{\mathcal{C} \boxtimes \mathcal{D}}(X_{1} \boxtimes
+    X_{2}, Y_{1} \boxtimes Y_{2})$. (v) Any bilinear bifunctor $F: \mathcal{C} \times
+    \mathcal{D} \rightarrow \mathcal{A}$ exact in each variable defines an exact functor
+    $\bar{F}: \mathcal{C} \boxtimes \mathcal{D} \rightarrow \mathcal{A}$.'
+  kind: proposition
+  location: Section 1.46
+  name: Proposition 1.46.2
+- description: If $\mathcal{C}, \mathcal{D}$ are multitensor categories then the category
+    $\mathcal{C} \boxtimes \mathcal{D}$ has a natural structure of a multitensor category.
+  kind: proposition
+  location: Section 1.46
+  name: Proposition 1.46.3
+- description: Let $\mathcal{C}$ be a finite multitensor category. Then $K_{0}(\mathcal{C})$
+    is a $\operatorname{Gr}(\mathcal{C})$-bimodule.
+  kind: proposition
+  location: Section 1.47
+  name: Proposition 1.47.1
+- description: 'For any object $Z$ of $\mathcal{C}$, $P_{i} \otimes Z \cong \oplus_{j,k}
+    N_{kj^{*}}^{i}[Z: X_{j}] P_{k}$ and $Z \otimes P_{i} \cong \oplus_{j,k} N_{{}^{*}jk}^{i}[Z:
+    X_{j}] P_{k}$.'
+  kind: proposition
+  location: Section 1.47
+  name: Proposition 1.47.2
+- description: Let $P$ be a projective object in a multitensor category $\mathcal{C}$.
+    Then $P^{*}$ is also projective. Hence, any projective object in a multitensor
+    category is also injective.
+  kind: proposition
+  location: Section 1.47
+  name: Proposition 1.47.3
+- description: The virtual projective object $R_{\mathcal{C}} = \sum_{i \in I} \mathrm{FPdim}(X_{i})
+    P_{i}$ is called the regular object of $\mathcal{C}$.
+  kind: definition
+  location: Section 1.47
+  name: Definition 1.47.4
+- description: Let $\mathcal{C}$ be a finite tensor category. Then the Frobenius-Perron
+    dimension of $\mathcal{C}$ is defined by $\mathrm{FPdim}(\mathcal{C}):=\mathrm{FPdim}(R_{\mathcal{C}})=\sum_{i
+    \in I} \mathrm{FPdim}(X_{i}) \mathrm{FPdim}(P_{i})$.
+  kind: definition
+  location: Section 1.47
+  name: Definition 1.47.5
+- description: (1) $Z \otimes R_{\mathcal{C}}=R_{\mathcal{C}} \otimes Z=\mathrm{FPdim}(Z)
+    R_{\mathcal{C}}$ for all $Z \in \operatorname{Gr}(\mathcal{C})$. (2) The image
+    of $R_{\mathcal{C}}$ in $\operatorname{Gr}(\mathcal{C}) \otimes_{\mathbb{Z}} \mathbb{C}$
+    is a regular element.
+  kind: proposition
+  location: Section 1.47
+  name: Proposition 1.47.7
+- description: 'A transitive unital $\mathbb{Z}_{+}$-ring $A$ of finite rank is said
+    to be integral if FPdim: $A \rightarrow \mathbb{Z}$ (i.e. the Frobenius-Perron
+    dimensions of elements of $\mathcal{C}$ are integers). A tensor category $\mathcal{C}$
+    is integral if $\operatorname{Gr}(\mathcal{C})$ is integral.'
+  kind: definition
+  location: Section 1.48
+  name: Definition 1.48.1
+- description: A finite tensor category $\mathcal{C}$ is integral if and only if $\mathcal{C}$
+    is equivalent to the representation category of a finite dimensional quasi-Hopf
+    algebra.
+  kind: proposition
+  location: Section 1.48
+  name: Proposition 1.48.2
+- description: The assignment $H \mapsto \operatorname{Rep}(H)$ defines a bijection
+    between integral finite tensor categories $\mathcal{C}$ over $k$ up to monoidal
+    equivalence, and finite dimensional quasi-Hopf algebras $H$ over $k$, up to twist
+    equivalence and isomorphism.
+  kind: corollary
+  location: Section 1.48
+  name: Corollary 1.48.3
+- description: 'We will say that an additive functor $F: \mathcal{C} \rightarrow \mathcal{D}$
+    is surjective if any object of $\mathcal{D}$ is a subquotient in $F(X)$ for some
+    $X \in \mathcal{C}$.'
+  kind: definition
+  location: Section 1.49
+  name: Definition 1.49.1
+- description: 'Let $F: \mathcal{C} \rightarrow \mathcal{D}$ be a surjective quasi-tensor
+    functor between finite tensor categories. Then $F$ maps projective objects to
+    projective ones.'
+  kind: theorem
+  location: Section 1.49
+  name: Theorem 1.49.3
+- description: One has F(R_C) = (FPdim(C)/FPdim(D)) R_D.
+  kind: theorem
+  location: Section 1.50
+  name: Theorem 1.50.1
+- description: In the above situation, one has FPdim(C) ≥ FPdim(D), and FPdim(D) divides
+    FPdim(C) in the ring of algebraic integers. In fact, FPdim(C)/FPdim(D) = Σ FPdim(X_i)
+    dim Hom(F(P_i), 1_D), where X_i runs over simple objects of C.
+  kind: corollary
+  location: Section 1.50
+  name: Corollary 1.50.2
+- description: 'If C is integral, and F: C → D is a surjective quasi-tensor functor
+    then D is also integral, and the object F(R_C) is free of rank FPdim(C)/FPdim(D)
+    (which is an integer).'
+  kind: corollary
+  location: Section 1.50
+  name: Corollary 1.50.3
+- description: A finite dimensional quasi-Hopf algebra is a free module over its quasi-Hopf
+    subalgebra.
+  kind: corollary
+  location: Section 1.50
+  name: Corollary 1.50.4
+- description: L_ρ is an invertible object.
+  kind: lemma
+  location: Section 1.51
+  name: Lemma 1.51.1
+- description: 'One has: P_{D(i)} = P_{*i} ⊗ L_ρ; L_{D(i)} = L_{*i} ⊗ L_ρ.'
+  kind: lemma
+  location: Section 1.51
+  name: Lemma 1.51.2
+- description: 'One has: P_{i**} = L_ρ* ⊗ P_{**i} ⊗ L_ρ; L_{i**} = L_ρ* ⊗ L_{**i}
+    ⊗ L_ρ.'
+  kind: corollary
+  location: Section 1.51
+  name: Corollary 1.51.3
+- description: L_ρ is called the distinguished invertible object of C.
+  kind: definition
+  location: Section 1.51
+  name: Definition 1.51.4
+- description: Any finite dimensional quasi-Hopf algebra H is a Frobenius algebra,
+    i.e. H is isomorphic to H* as a left H-module.
+  kind: corollary
+  location: Section 1.51
+  name: Corollary 1.51.5
+- description: 'A left integral in an algebra H with a counit ε: H → k is an element
+    I ∈ H such that xI = ε(x)I for all x ∈ H. Similarly, a right integral in H is
+    an element I ∈ H such that Ix = ε(x)I for all x ∈ H.'
+  kind: definition
+  location: Section 1.52
+  name: Definition 1.52.1
+- description: Any finite dimensional quasi-Hopf algebra admits a unique nonzero left
+    integral up to scaling and a unique nonzero right integral up to scaling.
+  kind: proposition
+  location: Section 1.52
+  name: Proposition 1.52.3
+- description: Let H be a finite dimensional quasi-Hopf algebra, and C = Rep(H). Then
+    L_ρ coincides with the distinguished character χ.
+  kind: proposition
+  location: Section 1.52
+  name: Proposition 1.52.4
+- description: 'The following conditions on a finite dimensional quasi-Hopf algebra
+    H are equivalent: (i) H is semisimple; (ii) ε(I) ≠ 0 (where I is a left integral
+    in H); (iii) I² ≠ 0; (iv) I can be normalized to be an idempotent.'
+  kind: proposition
+  location: Section 1.52
+  name: Proposition 1.52.5
+- description: A finite tensor category C is unimodular if L_ρ = 1. A finite dimensional
+    quasi-Hopf algebra H is unimodular if Rep(H) is a unimodular category, i.e. if
+    left and right integrals in H coincide.
+  kind: definition
+  location: Section 1.52
+  name: Definition 1.52.6
+- description: 'Suppose that C is not semisimple, and admits an isomorphism of additive
+    functors u: Id → **. Then the Cartan matrix C is degenerate over the ground field
+    k.'
+  kind: theorem
+  location: Section 1.53
+  name: Theorem 1.53.1
+- description: 'A left module category over C is a category M equipped with an action
+    (or tensor product) bifunctor ⊗^M: C × M → M and a functorial associativity isomorphism
+    (or constraint) a^M: (• ⊗ •) ⊗^M • → • ⊗ (• ⊗^M •), such that the functor 1 ⊗^M:
+    M → M is an autoequivalence, and a^M satisfies the pentagon relation.'
+  kind: definition
+  location: Section 2.1
+  name: Definition 2.1.1
+- description: 'A left module category over C is a category M equipped with a bifunctor
+    ⊗^M: C × M → M, a functorial isomorphism a^M: (• ⊗ •) ⊗^M • → • ⊗ (• ⊗^M •), and
+    a functorial isomorphism l^M: 1 ⊗^M → Id such that a^M satisfies the pentagon
+    relation (2.1.1), and l^M satisfies the triangle relation (2.1.2).'
+  kind: definition
+  location: Section 2.1
+  name: Definition 2.1.2
+- description: 'Structures of a C-module category on M are in a natural 1-1 correspondence
+    with monoidal functors F: C → End(M).'
+  kind: proposition
+  location: Section 2.1
+  name: Proposition 2.1.3
+- description: A module subcategory of a C-module category M is a full subcategory
+    M' ⊂ M which is closed under the action of C.
+  kind: definition
+  location: Section 2.1
+  name: Definition 2.1.6
+- description: 'Let M_1 and M_2 be two module categories over C. A module functor
+    from M_1 to M_2 is a pair (F, s) where F: M_1 → M_2 is a functor, and s is a natural
+    isomorphism s_{X,M}: F(X ⊗ M) → X ⊗ F(M) such that the appropriate diagrams commute.
+    A module equivalence F: M_1 → M_2 of C-module categories is a module functor (F,
+    s) from M_1 to M_2 such that F is an equivalence of categories.'
+  kind: definition
+  location: Section 2.2
+  name: Definition 2.2.1
+- description: A (left or right) abelian module category over a multitensor category
+    C is a locally finite abelian category M over k which is equipped with a structure
+    of a (left or right) C-module category, such that the functor ⊗^M is bilinear
+    on morphisms and exact in the first variable.
+  kind: definition
+  location: Section 2.3
+  name: Definition 2.3.1
+- description: 'Structures of a C-module category on M are in a natural 1-1 correspondence
+    with exact monoidal functors F: C → End(M).'
+  kind: proposition
+  location: Section 2.3
+  name: Proposition 2.3.3
+- description: Let M_1, M_2 be two module categories over C. Then the category M =
+    M_1 ⊕ M_2 with ⊗^M = ⊗^{M_1} ⊕ ⊗^{M_2}, a^M = a^{M_1} ⊕ a^{M_2}, l^M = l^{M_1}
+    ⊕ l^{M_2} is a module category over C.
+  kind: proposition
+  location: Section 2.4
+  name: Proposition 2.4.1
+- description: The module category M is called the direct sum of module categories
+    M_1 and M_2.
+  kind: definition
+  location: Section 2.4
+  name: Definition 2.4.2
+- description: We will say that a module category M over C is indecomposable if it
+    is not equivalent to a nontrivial direct sum of module categories (that is, with
+    M_1, M_2 nonzero).
+  kind: definition
+  location: Section 2.4
+  name: Definition 2.4.3
+- description: Let C, D be multitensor categories. A (C, D)-bimodule category is a
+    module category over C ⊠ D^{op}.
+  kind: definition
+  location: Section 2.5
+  name: Definition 2.5.4
+- description: Let C be a multitensor category with enough projective objects. A module
+    category M over C is called exact if for any projective object P ∈ C and any object
+    M ∈ M the object P ⊗ M is projective in M.
+  kind: definition
+  location: Section 2.6
+  name: Definition 2.6.1
+- description: Let M be an exact module category over finite multitensor category
+    C. Then the category M has enough projective objects.
+  kind: lemma
+  location: Section 2.7
+  name: Lemma 2.7.1
+- description: Assume that an exact module category M over C has finitely many isomorphism
+    classes of simple objects. Then M is finite.
+  kind: corollary
+  location: Section 2.7
+  name: Corollary 2.7.2
+- description: Let M be an exact module category over C. Let P ∈ C be projective and
+    X ∈ M. Then P ⊗ X is injective.
+  kind: lemma
+  location: Section 2.7
+  name: Lemma 2.7.3
+- description: In the category M any projective object is injective and vice versa.
+  kind: corollary
+  location: Section 2.7
+  name: Corollary 2.7.4
+- description: 'The relation on Irr(M) defined by: two objects X, Y ∈ Irr(M) are related
+    if Y appears as a subquotient of L ⊗ X for some L ∈ C, is reflexive, symmetric
+    and transitive.'
+  kind: lemma
+  location: Section 2.7
+  name: Lemma 2.7.6
+- description: The module categories M_i are exact. The category M is the direct sum
+    of its module subcategories M_i.
+  kind: proposition
+  location: Section 2.7
+  name: Proposition 2.7.7
+- description: 'Let M_1 and M_2 be two module categories over C. Assume that M_1 is
+    exact. Then any additive module functor F: M_1 → M_2 is exact.'
+  kind: proposition
+  location: Section 2.7
+  name: Proposition 2.7.8
+- description: Let K be a Z_+-ring with basis {b_i}. A Z_+-module over K is a K-module
+    M with fixed Z-basis {m_l} such that all the structure constants a_{il}^k (defined
+    by the equality b_i m_l = Σ_k a_{il}^k m_k) are nonnegative integers.
+  kind: definition
+  location: Section 2.8
+  name: Definition 2.8.1
+- description: A Z_+-module M over a Z_+-ring K is called irreducible if it has no
+    proper Z_+-submodules (in other words, the Z-span of any proper subset of the
+    basis of M is not a K-submodule).
+  kind: definition
+  location: Section 2.8
+  name: Definition 2.8.3
+- description: Let M be an indecomposable exact module category over C. Then Gr(M)
+    is an irreducible Z_+-module over Gr(C).
+  kind: lemma
+  location: Section 2.8
+  name: Lemma 2.8.5
+- description: Let K be a based ring of finite rank over Z. Then there exists only
+    finitely many irreducible Z_+-modules over K.
+  kind: proposition
+  location: Section 2.8
+  name: Proposition 2.8.7
+- description: 'An algebra in a multitensor category C is a triple (A, m, u) where
+    A is an object of C, and m, u are morphisms (called multiplication and unit morphisms)
+    m: A ⊗ A → A, u: 1 → A such that the following axioms are satisfied: 1. Associativity:
+    the appropriate diagram commutes. 2. Unit: The morphisms A → 1 ⊗ A → A ⊗ A → A
+    and A → A ⊗ 1 → A ⊗ A → A are both equal to Id_A.'
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.1
+- description: 'A (right) module over an algebra (A, m, u) (or just an A-module) is
+    a pair (M, p), where M ∈ C and p is a morphism M ⊗ A → M such that the following
+    axioms are satisfied: 1. The appropriate diagram commutes. 2. The composition
+    M → M ⊗ 1 → M ⊗ A → M is the identity.'
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.5
+- description: The homomorphism between two A-modules (M_1, p_1) and (M_2, p_2) is
+    a morphism l ∈ Hom_C(M_1, M_2) such that the appropriate diagram commutes.
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.6
+- description: The category Mod_C(A) together with functor ⊗̃ and associativity and
+    unit constraints ã, l̃ is a left module category over C.
+  kind: proposition
+  location: Section 2.9
+  name: Proposition 2.9.10
+- description: For any X ∈ C we have a canonical isomorphism Hom_A(X ⊗ A, M) = Hom(X,
+    M).
+  kind: lemma
+  location: Section 2.9
+  name: Lemma 2.9.12
+- description: We say that two algebras A and B in C are Morita equivalent if the
+    module categories Mod_C(A) and Mod_C(B) are module equivalent.
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.18
+- description: An algebra A in the category C is called exact if the module category
+    Mod_C(A) is exact.
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.21
+- description: 'Let A be an algebra in C and let (M, p_M) be a right A-module, and
+    (N, p_N) be a left A-module. A tensor product over A, M ⊗_A N ∈ C, is the quotient
+    of M ⊗ N by the image of morphism p_M ⊗ id - id ⊗ p_N: M ⊗ A ⊗ N → M ⊗ N.'
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.22
+- description: 'Let A, B be two algebras in C. An A-B-bimodule is a triple (M, p,
+    q) where M ∈ C, p ∈ Hom(A ⊗ M, M), q ∈ Hom(M ⊗ B, M) such that: 1. The pair (M,
+    p) is a left A-module. 2. The pair (M, q) is a right B-module. 3. The morphisms
+    q ∘ (p ⊗ id) and p ∘ (id ⊗ q) from Hom(A ⊗ M ⊗ B, M) coincide.'
+  kind: definition
+  location: Section 2.9
+  name: Definition 2.9.24
+- description: The internal Hom Hom̲(M_1, M_2) is an object of C representing the
+    functor Hom(• ⊗ M_1, M_2).
+  kind: definition
+  location: Section 2.10
+  name: Definition 2.10.2
+- description: 'There are canonical isomorphisms: (1) Hom(X ⊗ M_1, M_2) ≅ Hom(X, Hom̲(M_1,
+    M_2)), (2) Hom(M_1, X ⊗ M_2) ≅ Hom(1, X ⊗ Hom̲(M_1, M_2)), (3) Hom̲(X ⊗ M_1, M_2)
+    ≅ Hom̲(M_1, M_2) ⊗ X*, (4) Hom̲(M_1, X ⊗ M_2) ≅ X ⊗ Hom̲(M_1, M_2).'
+  kind: lemma
+  location: Section 2.10
+  name: Lemma 2.10.4
+- description: (1) For a fixed $M_{1}$, the assignment $M_{2} \mapsto \underline{\operatorname{Hom}}(M_{1},
+    M_{2})$ is a module functor $\mathcal{M} \rightarrow \mathcal{C}$; (2) For a fixed
+    $M_{2}$, the assignment $M_{1} \mapsto \underline{\operatorname{Hom}}(M_{1}, M_{2})$
+    is a module functor $\mathcal{M} \rightarrow \mathcal{C}^{\mathrm{op}}$.
+  kind: corollary
+  location: Section 2.10
+  name: Corollary 2.10.5
+- description: Assume that $\mathcal{M}$ is an exact module category. Then the functor
+    $\underline{\operatorname{Hom}}(\bullet, \bullet)$ is exact in each variable.
+  kind: corollary
+  location: Section 2.10
+  name: Corollary 2.10.6
+- description: '(1) Suppose that for a module category $\mathcal{M}$ over $\mathcal{C}$,
+    the bifunctor $\underline{Hom}$ is exact in the second variable, i.e., for any
+    object $N \in \mathcal{M}$ the functor $\underline{\operatorname{Hom}}(N, \bullet):
+    \mathcal{M} \rightarrow \mathcal{C}$ is exact. Then $\mathcal{M}$ is exact. (2)
+    Let $\mathcal{M}_{1}, \mathcal{M}_{2}$ be two nonzero module categories over $\mathcal{C}$.
+    Assume that any module functor from $\mathcal{M}_{1}$ to $\mathcal{M}_{2}$ is
+    exact. Then the module category $\mathcal{M}_{1}$ is exact.'
+  kind: proposition
+  location: Section 2.10
+  name: Proposition 2.10.7
+- description: 'Let $\mathcal{M}$ be a module category over $\mathcal{C}$, and assume
+    that $M \in \mathcal{M}$ satisfies two conditions: 1. The functor $\underline{\operatorname{Hom}}(M,
+    \bullet)$ is right exact (note that it is automatically left exact). 2. For any
+    $N \in \mathcal{M}$ there exists $X \in \mathcal{C}$ and a surjection $X \otimes
+    M \rightarrow N$. Let $A = \underline{\operatorname{Hom}}(M, M)$. Then the functor
+    $F := \underline{\operatorname{Hom}}(M, \bullet): \mathcal{M} \rightarrow \operatorname{Mod}_{\mathcal{C}}(A)$
+    is an equivalence of module categories.'
+  kind: theorem
+  location: Section 2.11
+  name: Theorem 2.11.2
+- description: (i) Let $\mathcal{M}$ be a finite module category over $\mathcal{C}$.
+    Then there exists an algebra $A \in \mathcal{C}$ and a module equivalence $\mathcal{M}
+    \simeq \operatorname{Mod}_{\mathcal{C}}(A)$. (ii) Let $\mathcal{M}$ be an exact
+    module category over $\mathcal{C}$ and let $M \in \mathcal{M}$ be an object such
+    that $[M]$ generates $\operatorname{Gr}(\mathcal{M})$ as $\mathbb{Z}_{+}$-module
+    over $\operatorname{Gr}(\mathcal{C})$. Then there is a module equivalence $\mathcal{M}
+    \simeq \operatorname{Mod}_{\mathcal{C}}(A)$ where $A = \underline{\operatorname{Hom}}(M,
+    M)$.
+  kind: theorem
+  location: Section 2.11
+  name: Theorem 2.11.6
+- description: 'A module functor morphism from $(F, s)$ to $(G, t)$ is a natural transformation
+    $a$ from $F$ to $G$ such that the following diagram commutes for any $X \in \mathcal{C},
+    M \in \mathcal{M}$: the diagram involving $s_{X,M}$, $t_{X,M}$, $a_{X \otimes
+    M}$, and $\mathrm{id}_X \otimes a_M$.'
+  kind: definition
+  location: Section 2.12
+  name: Definition 2.12.1
+- description: Assume that $\mathcal{M}_{1} \simeq \operatorname{Mod}_{\mathcal{C}}(A)$
+    and $\mathcal{M}_{2} \simeq \operatorname{Mod}_{\mathcal{C}}(B)$ for some algebras
+    $A, B \in \mathcal{C}$. The category $Fun_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})$
+    is equivalent to the category of $A$-$B$-bimodules via the functor which sends
+    a bimodule $M$ to the functor $\bullet \otimes_{A} M$.
+  kind: proposition
+  location: Section 2.12
+  name: Proposition 2.12.2
+- description: The category $Fun_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})$
+    of right exact module functors from $\mathcal{M}_{1}$ to $\mathcal{M}_{2}$ is
+    abelian.
+  kind: corollary
+  location: Section 2.12
+  name: Corollary 2.12.3
+- description: Let $\mathcal{M}_{1}, \mathcal{M}_{2}, \mathcal{M}_{3}$ be exact module
+    categories over $\mathcal{C}$. The bifunctor of composition $Fun_{\mathcal{C}}(\mathcal{M}_{2},
+    \mathcal{M}_{3}) \times \operatorname{Fun}_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})
+    \rightarrow Fun_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{3})$ is biexact.
+  kind: lemma
+  location: Section 2.13
+  name: Lemma 2.13.2
+- description: Let $\mathcal{M}_{1}, \mathcal{M}_{2}$ be exact module categories over
+    $\mathcal{C}$. Any functor $F \in \operatorname{Fun}_{\mathcal{C}}(\mathcal{M}_{1},
+    \mathcal{M}_{2})$ has both right and left adjoint.
+  kind: lemma
+  location: Section 2.13
+  name: Lemma 2.13.3
+- description: Let $\mathcal{M}_{1}, \mathcal{M}_{2}$ be exact module categories over
+    $\mathcal{C}$. Any functor $F \in Fun_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})$
+    maps projective objects to projectives.
+  kind: corollary
+  location: Section 2.13
+  name: Corollary 2.13.4
+- description: The category $\operatorname{Fun}_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})$
+    is finite.
+  kind: proposition
+  location: Section 2.13
+  name: Proposition 2.13.5
+- description: We denote the category $Fun_{\mathcal{C}}(\mathcal{M}, \mathcal{M})$
+    as $\mathcal{C}_{\mathcal{M}}^{*}$ and call it the dual category to $\mathcal{C}$
+    with respect to $\mathcal{M}$.
+  kind: definition
+  location: Section 2.14
+  name: Definition 2.14.1
+- description: The unit object $\mathbf{1} \in \mathcal{C}_{\mathcal{M}}^{*}$ is a
+    direct sum of projectors to subcategories $\mathcal{M}_{i}$. Each such projector
+    is a simple object.
+  kind: lemma
+  location: Section 2.14
+  name: Lemma 2.14.3
+- description: The module category $\mathcal{M}$ over $\mathcal{C}_{\mathcal{M}}^{*}$
+    is exact.
+  kind: lemma
+  location: Section 2.14
+  name: Lemma 2.14.4
+- description: 'The functor $\mathrm{can} : \mathcal{C} \rightarrow (\mathcal{C}_{\mathcal{M}}^{*})_{\mathcal{M}}^{*}$
+    is an equivalence of categories.'
+  kind: theorem
+  location: Section 2.14
+  name: Theorem 2.14.6
+- description: Any left $B$-module is of the form ${}^{*}A \otimes X$ for some $X
+    \in \mathcal{C}$ with the obvious structure of an $A$-module. Similarly, any right
+    $B$-module is of the form $X \otimes A$.
+  kind: lemma
+  location: Section 2.14
+  name: Lemma 2.14.7
+- description: Assume that $\mathcal{C}$ is a finite tensor (not only multitensor)
+    category. Then an exact module category $\mathcal{M}$ over $\mathcal{C}$ is indecomposable
+    over $\mathcal{C}_{\mathcal{M}}^{*}$.
+  kind: corollary
+  location: Section 2.14
+  name: Corollary 2.14.9
+- description: The module category $\operatorname{Fun}_{\mathcal{C}}(\mathcal{M}_{1},
+    \mathcal{M})$ over $\mathcal{C}_{\mathcal{M}}^{*}$ is exact.
+  kind: lemma
+  location: Section 2.14
+  name: Lemma 2.14.10
+- description: Let $\mathcal{M}$ be an exact module category over $\mathcal{C}$. The
+    maps $\mathcal{M}_{1} \mapsto \operatorname{Fun}_{\mathcal{C}}(\mathcal{M}_{1},
+    \mathcal{M})$ and $\mathcal{M}_{2} \mapsto \operatorname{Fun}_{\mathcal{C}_{\mathcal{M}}^{*}}(\mathcal{M}_{2},
+    \mathcal{M})$ are mutually inverse bijections of the sets of equivalence classes
+    of exact module categories over $\mathcal{C}$ and over $\mathcal{C}_{\mathcal{M}}^{*}$.
+  kind: theorem
+  location: Section 2.14
+  name: Theorem 2.14.11
+- description: The corresponding dual category $\mathcal{Z}(\mathcal{C}) := \mathcal{C}_{\mathcal{C}
+    \boxtimes \mathcal{C}^{\mathrm{op}}}^{*}$ is called the Drinfeld center of $\mathcal{C}$.
+  kind: definition
+  location: Section 2.14
+  name: Definition 2.14.13
+- description: ("Basic identity") Let $X, Y, Z \in \mathcal{M}$. There is a canonical
+    isomorphism $\underline{\operatorname{Hom}}_{\mathcal{C}}(X, Y) \otimes Z \simeq
+    {}^{*}\underline{\operatorname{Hom}}_{\mathcal{C}^{*}_{\mathcal{M}}}(Z, X) \otimes
+    Y$.
+  kind: proposition
+  location: Section 2.14
+  name: Proposition 2.14.14

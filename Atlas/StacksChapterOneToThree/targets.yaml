@@ -1,0 +1,1991 @@
+- description: Every set is an element of $V_\alpha$ for some ordinal $\alpha$.
+  kind: lemma
+  location: Section 5, The hierarchy of sets
+  name: Lemma 3.5.1
+- description: 'Suppose that $T = \colim_{\alpha < \beta} T_\alpha$ is a colimit of
+    sets indexed by ordinals less than a given ordinal $\beta$. Suppose that $\varphi
+    : S \to T$ is a map of sets. Then $\varphi$ lifts to a map into $T_\alpha$ for
+    some $\alpha < \beta$ provided that $\beta$ is not a limit of ordinals indexed
+    by $S$, in other words, if $\beta$ is an ordinal with $\text{cf}(\beta) > |S|$.'
+  kind: lemma
+  location: Section 7, Cofinality
+  name: Lemma 3.7.1
+- description: Let $\kappa$ be a cardinal. Then there exists an ordinal whose cofinality
+    is bigger than $\kappa$.
+  kind: proposition
+  location: Section 7, Cofinality
+  name: Proposition 3.7.2
+- description: Suppose given $\phi_1(x_1, \ldots, x_n), \ldots, \phi_m(x_1, \ldots,
+    x_n)$ a finite collection of formulas of set theory. Let $M_0$ be a set. There
+    exists a set $M$ such that $M_0 \subset M$ and $\forall x_1, \ldots, x_n \in M$,
+    we have $\forall i = 1, \ldots, m, \ \phi_i^{M}(x_1, \ldots, x_n) \Leftrightarrow
+    \forall i = 1, \ldots, m, \ \phi_i(x_1, \ldots, x_n).$ In fact we may take $M
+    = V_\alpha$ for some limit ordinal $\alpha$.
+  kind: theorem
+  location: Section 8, Reflection principle
+  name: Theorem 3.8.1
+- description: For every cardinal $\kappa$, there exists a set $A$ such that every
+    element of $A$ is a scheme and such that for every scheme $S$ with $\text{size}(S)
+    \leq \kappa$, there is an element $X \in A$ such that $X \cong S$ (isomorphism
+    of schemes).
+  kind: lemma
+  location: Section 9, Constructing categories of schemes
+  name: Lemma 3.9.1
+- description: 'With notations $\text{size}$, $Bound$ and $\Sch_\alpha$ as above.
+    Let $S_0$ be a set of schemes. There exists a limit ordinal $\alpha$ with the
+    following properties: (1) We have $S_0 \subset V_\alpha$. (2) For any $S \in \Ob(\Sch_\alpha)$
+    and any scheme $T$ with $\text{size}(T) \leq Bound(\text{size}(S))$, there exists
+    a scheme $S'' \in \Ob(\Sch_\alpha)$ such that $T \cong S''$. (3) For any countable
+    diagram category $\mathcal{I}$ and any functor $F : \mathcal{I} \to \Sch_\alpha$,
+    the limit exists in $\Sch_\alpha$ if and only if it exists in $\Sch$. (4) Similarly
+    for colimits.'
+  kind: lemma
+  location: Section 9, Constructing categories of schemes
+  name: Lemma 3.9.2
+- description: 'Let $\alpha$ be an ordinal as in Lemma lemma-sets-with-group-action
+    above. The category $G\textit{-Sets}_\alpha$ satisfies the following properties:
+    (1) The $G$-set ${}_GG$ is an object of $G\textit{-Sets}_\alpha$. (2) (Co)Products,
+    fibre products, and pushouts exist in $G\textit{-Sets}_\alpha$ and are the same
+    as their counterparts in $G\textit{-Sets}$. (3) Given an object $U$ of $G\textit{-Sets}_\alpha$,
+    any $G$-stable subset $O \subset U$ is isomorphic to an object of $G\textit{-Sets}_\alpha$.'
+  kind: lemma
+  location: Section on Sets with group action
+  name: Lemma (lemma-what-is-in-it-G-sets)
+- description: Let $S$ be an affine scheme. Let $R = \Gamma(S, \mathcal{O}_S)$. Then
+    the size of $S$ is equal to $\max\{ \aleph_0, |R|\}$.
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-affine)
+- description: Let $S$ be a scheme. Let $S = \bigcup_{i \in I} S_i$ be an open covering.
+    Then $\text{size}(S) \leq \max\{|I|, \sup_i\{\text{size}(S_i)\}\}$.
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-size)
+- description: 'Let $f : X \to S$, $g : Y \to S$ be morphisms of schemes. Then we
+    have $\text{size}(X \times_S Y) \leq \max\{\text{size}(X), \text{size}(Y)\}$.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-size-fibre-product)
+- description: 'Let $S$ be a scheme. Let $f : X \to S$ be locally of finite type with
+    $X$ quasi-compact. Then $\text{size}(X) \leq \text{size}(S)$.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-finite-type)
+- description: 'Let $f : X \to Y$ be a monomorphism of schemes. If at least one of
+    the following properties holds, then $\text{size}(X) \leq \text{size}(Y)$: (1)
+    $f$ is quasi-compact, (2) $f$ is locally of finite presentation, (3) add more
+    here as needed. But the bound does not hold for monomorphisms which are locally
+    of finite type.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-monomorphism)
+- description: 'Let $\alpha$ be an ordinal as in Lemma lemma-construct-category above.
+    The category $\Sch_\alpha$ satisfies the following properties: (1) If $X, Y, S
+    \in \Ob(\Sch_\alpha)$, then for any morphisms $f : X \to S$, $g : Y \to S$ the
+    fibre product $X \times_S Y$ in $\Sch_\alpha$ exists and is a fibre product in
+    the category of schemes. (2) Given any at most countable collection $S_1, S_2,
+    \ldots$ of elements of $\Ob(\Sch_\alpha)$, the coproduct $\coprod_i S_i$ exists
+    in $\Ob(\Sch_\alpha)$ and is a coproduct in the category of schemes. (3)-(9) Various
+    closure properties of $\Sch_\alpha$ including closure under open immersions, closed
+    immersions, finite type morphisms, monomorphisms, and operations on affine schemes.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-what-is-in-it)
+- description: 'Let $f : X \to Y$ be a morphism of schemes. Assume there exists an
+    fpqc covering $\{g_j : Y_j \to Y\}_{j \in J}$ such that $g_j$ factors through
+    $f$. Then $\text{size}(Y) \leq \text{size}(X)$.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-by-covering)
+- description: 'Let $\{f_i : X_i \to X\}_{i \in I}$ be an fppf covering of a scheme.
+    There exists an fppf covering $\{W_j \to X\}_{j \in J}$ which is a refinement
+    of $\{X_i \to X\}_{i \in I}$ such that $\text{size}(\coprod W_j) \leq \text{size}(X)$.'
+  kind: lemma
+  location: Before Section on Sets with group action
+  name: Lemma (lemma-bound-fppf-covering)
+- description: 'With notations $G$, $G\textit{-Sets}_\alpha$, $\text{size}$, and $Bound$
+    as above. Let $S_0$ be a set of $G$-sets. There exists a limit ordinal $\alpha$
+    with the following properties: (1) We have $S_0 \cup \{{}_GG\} \subset \Ob(G\textit{-Sets}_\alpha)$.
+    (2) For any $S \in \Ob(G\textit{-Sets}_\alpha)$ and any $G$-set $T$ with $\text{size}(T)
+    \leq Bound(\text{size}(S))$, there exists an $S'' \in \Ob(G\textit{-Sets}_\alpha)$
+    that is isomorphic to $T$. (3) For any countable index category $\mathcal{I}$
+    and any functor $F : \mathcal{I} \to G\textit{-Sets}_\alpha$, the limit $\lim_\mathcal{I}
+    F$ and colimit $\colim_\mathcal{I} F$ exist in $G\textit{-Sets}_\alpha$ and are
+    the same as in $G\textit{-Sets}$.'
+  kind: lemma
+  location: Section on Sets with group action
+  name: Lemma (lemma-sets-with-group-action)
+- description: 'Suppose given a big category A. Assume A is abelian and has enough
+    injectives. Then for any given set of objects {A_s}_{s∈S} of A, there is an abelian
+    subcategory A'' ⊂ A with the following properties: (1) the inclusion functor A''
+    → A is exact, (2) Ob(A'') is a set, (3) Ob(A'') contains A_s for each s ∈ S, (4)
+    A'' has enough injectives, and (5) an object of A'' is injective if and only if
+    it is an injective object of A.'
+  kind: lemma
+  location: Section 'Abelian categories and injectives'
+  name: Lemma
+- description: A subcategory of a category B is a category A whose objects and arrows
+    form subsets of the objects and arrows of B and such that source, target and composition
+    in A agree with those of B and such that the identity morphism of an object of
+    A matches the one in B. We say A is a full subcategory of B if Mor_A(x, y) = Mor_B(x,
+    y) for all x, y ∈ Ob(A). We say A is a strictly full subcategory of B if it is
+    a full subcategory and given x ∈ Ob(A) any object of B which is isomorphic to
+    x is also in A.
+  kind: definition
+  location: Chapter 'Categories', Section 'Definitions'
+  name: Definition
+- description: 'Let $U, V \in \Ob(\mathcal{C})$. Given any morphism of functors $s
+    : h_U \to h_V$ there is a unique morphism $\phi : U \to V$ such that $h(\phi)
+    = s$. In other words the functor $h$ is fully faithful. More generally, given
+    any contravariant functor $F$ and any object $U$ of $\mathcal{C}$ we have a natural
+    bijection $\Mor_{\textit{PSh}(\mathcal{C})}(h_U, F) \longrightarrow F(U), \quad
+    s \longmapsto s_U(\text{id}_U).$'
+  kind: lemma
+  location: 'Section: Opposite Categories and the Yoneda Lemma (lemma-yoneda)'
+  name: Lemma (Yoneda lemma)
+- description: 'Let $F : \mathcal{A} \to \mathcal{B}$ be a functor. (1) We say $F$
+    is faithful if for any objects $x, y \in \Ob(\mathcal{A})$ the map $F : \Mor_\mathcal{A}(x,
+    y) \to \Mor_\mathcal{B}(F(x), F(y))$ is injective. (2) If these maps are all bijective
+    then $F$ is called fully faithful. (3) The functor $F$ is called essentially surjective
+    if for any object $y \in \Ob(\mathcal{B})$ there exists an object $x \in \Ob(\mathcal{A})$
+    such that $F(x)$ is isomorphic to $y$ in $\mathcal{B}$.'
+  kind: definition
+  location: Section on functors, label definition-faithful
+  name: Definition (faithful, fully faithful, essentially surjective)
+- description: 'Let $F, G : \mathcal{A} \to \mathcal{B}$ be functors. A natural transformation,
+    or a morphism of functors $t : F \to G$, is a collection $\{t_x\}_{x\in \Ob(\mathcal{A})}$
+    such that (1) $t_x : F(x) \to G(x)$ is a morphism in the category $\mathcal{B}$,
+    and (2) for every morphism $\phi : x \to y$ of $\mathcal{A}$ the diagram with
+    $F(x) \to G(x)$, $F(\phi)$, $G(\phi)$, and $F(y) \to G(y)$ is commutative.'
+  kind: definition
+  location: Section on functors, label definition-transformation-functors
+  name: Definition (natural transformation)
+- description: 'An equivalence of categories $F : \mathcal{A} \to \mathcal{B}$ is
+    a functor such that there exists a functor $G : \mathcal{B} \to \mathcal{A}$ such
+    that the compositions $F \circ G$ and $G \circ F$ are isomorphic to the identity
+    functors $\text{id}_\mathcal{B}$, respectively $\text{id}_\mathcal{A}$. In this
+    case we say that $G$ is a quasi-inverse to $F$.'
+  kind: definition
+  location: Section on functors, label definition-equivalence-categories
+  name: Definition (equivalence of categories)
+- description: Let $\mathcal{A}$, $\mathcal{B}$ be categories. We define the product
+    category $\mathcal{A} \times \mathcal{B}$ to be the category with objects $\Ob(\mathcal{A}
+    \times \mathcal{B}) = \Ob(\mathcal{A}) \times \Ob(\mathcal{B})$ and $\Mor_{\mathcal{A}
+    \times \mathcal{B}}((x, y), (x', y')) := \Mor_\mathcal{A}(x, x')\times \Mor_\mathcal{B}(y,
+    y')$. Composition is defined componentwise.
+  kind: definition
+  location: Section on functors, label definition-product-category
+  name: Definition (product category)
+- description: Given a category $\mathcal{C}$ the opposite category $\mathcal{C}^{opp}$
+    is the category with the same objects as $\mathcal{C}$ but all morphisms reversed.
+  kind: definition
+  location: Section Opposite Categories and the Yoneda Lemma, label definition-opposite
+  name: Definition (opposite category)
+- description: Let $\mathcal{C}$, $\mathcal{S}$ be categories. A contravariant functor
+    $F$ from $\mathcal{C}$ to $\mathcal{S}$ is a functor $\mathcal{C}^{opp}\to \mathcal{S}$.
+  kind: definition
+  location: Section Opposite Categories and the Yoneda Lemma, label definition-contravariant
+  name: Definition (contravariant functor)
+- description: Let $\mathcal{C}$ be a category. (1) A presheaf of sets on $\mathcal{C}$
+    or simply a presheaf is a contravariant functor $F$ from $\mathcal{C}$ to $\textit{Sets}$.
+    (2) The category of presheaves is denoted $\textit{PSh}(\mathcal{C})$.
+  kind: definition
+  location: Section Opposite Categories and the Yoneda Lemma, label definition-presheaf
+  name: Definition (presheaf)
+- description: 'A contravariant functor $F : \mathcal{C}\to \textit{Sets}$ is said
+    to be representable if it is isomorphic to the functor of points $h_U$ for some
+    object $U$ of $\mathcal{C}$.'
+  kind: definition
+  location: Section Opposite Categories and the Yoneda Lemma, label definition-representable-functor
+  name: Definition (representable functor)
+- description: 'Let $x, y\in \Ob(\mathcal{C})$. A product of $x$ and $y$ is an object
+    $x \times y \in \Ob(\mathcal{C})$ together with morphisms $p\in \Mor_{\mathcal
+    C}(x \times y, x)$ and $q\in\Mor_{\mathcal C}(x \times y, y)$ such that the following
+    universal property holds: for any $w\in \Ob(\mathcal{C})$ and morphisms $\alpha
+    \in \Mor_{\mathcal C}(w, x)$ and $\beta \in \Mor_\mathcal{C}(w, y)$ there is a
+    unique $\gamma\in \Mor_{\mathcal C}(w, x \times y)$ making the diagram commute.'
+  kind: definition
+  location: Section Products of pairs, label definition-products
+  name: Definition (product)
+- description: We say the category $\mathcal{C}$ has products of pairs of objects
+    if a product $x \times y$ exists for any $x, y \in \Ob(\mathcal{C})$.
+  kind: definition
+  location: Section Products of pairs, label definition-has-products-of-pairs
+  name: Definition (has products of pairs of objects)
+- description: 'Let $x, y \in \Ob(\mathcal{C})$. A coproduct, or amalgamated sum of
+    $x$ and $y$ is an object $x \amalg y \in \Ob(\mathcal{C})$ together with morphisms
+    $i \in \Mor_{\mathcal C}(x, x \amalg y)$ and $j \in \Mor_{\mathcal C}(y, x \amalg
+    y)$ such that the following universal property holds: for any $w \in \Ob(\mathcal{C})$
+    and morphisms $\alpha \in \Mor_{\mathcal C}(x, w)$ and $\beta \in \Mor_\mathcal{C}(y,
+    w)$ there is a unique $\gamma \in \Mor_{\mathcal C}(x \amalg y, w)$ making the
+    diagram commute.'
+  kind: definition
+  location: Section Coproducts of pairs, label definition-coproducts
+  name: Definition (coproduct)
+- description: 'Let $F : \mathcal{A} \to \mathcal{B}$ be a fully faithful functor.
+    Suppose for every $X \in \Ob(\mathcal{B})$ we are given an object $j(X)$ of $\mathcal{A}$
+    and an isomorphism $i_X : X \to F(j(X))$. Then there is a unique functor $j :
+    \mathcal{B} \to \mathcal{A}$ such that $j$ extends the rule on objects, and the
+    isomorphisms $i_X$ define an isomorphism of functors $\text{id}_\mathcal{B} \to
+    F \circ j$. Moreover, $j$ and $F$ are quasi-inverse equivalences of categories.'
+  kind: lemma
+  location: Section on functors, label lemma-construct-quasi-inverse
+  name: Lemma (construct quasi-inverse)
+- description: A functor is an equivalence of categories if and only if it is both
+    fully faithful and essentially surjective.
+  kind: lemma
+  location: Section on functors, label lemma-equivalence-categories
+  name: Lemma (equivalence of categories)
+- description: We say a commutative diagram $$\xymatrix{ y \ar[r] \ar[d] & z \ar[d]
+    \\ x \ar[r] & w }$$ in a category is cocartesian if $w$ and the morphisms $x \to
+    w$ and $z \to w$ form a pushout of the morphisms $y \to x$ and $y \to z$.
+  kind: definition
+  location: Section Pushouts
+  name: Definition
+- description: 'Let $\mathcal{C}$ be a category. Let $F : \mathcal{C}^{opp} \to \textit{Sets}$
+    be a functor. Assume $\mathcal{C}$ has products of pairs of objects and fibre
+    products. The following are equivalent: (1) the diagonal $\Delta : F \to F \times
+    F$ is representable, (2) for every $U$ in $\mathcal{C}$, and any $\xi \in F(U)$
+    the map $\xi : h_U \to F$ is representable, (3) for every pair $U, V$ in $\mathcal{C}$
+    and any $\xi \in F(U)$, $\xi'' \in F(V)$ the fibre product $h_U \times_{\xi, F,
+    \xi''} h_V$ is representable.'
+  kind: lemma
+  location: Section Fibre products and representability
+  name: Lemma
+- description: We say the category $\mathcal{C}$ has coproducts of pairs of objects
+    if a coproduct $x \amalg y$ exists for any $x, y \in \Ob(\mathcal{C})$.
+  kind: definition
+  location: Section Coproducts of pairs
+  name: Definition definition-has-coproducts-of-pairs
+- description: 'Let $x, y, z\in \Ob(\mathcal{C})$, $f\in \Mor_\mathcal{C}(x, y)$ and
+    $g\in \Mor_{\mathcal C}(z, y)$. A fibre product of $f$ and $g$ is an object $x
+    \times_y z\in \Ob(\mathcal{C})$ together with morphisms $p \in \Mor_{\mathcal
+    C}(x \times_y z, x)$ and $q \in \Mor_{\mathcal C}(x \times_y z, z)$ making the
+    diagram commute, and such that the following universal property holds: for any
+    $w\in \Ob(\mathcal{C})$ and morphisms $\alpha \in \Mor_{\mathcal C}(w, x)$ and
+    $\beta \in \Mor_\mathcal{C}(w, z)$ with $f \circ \alpha = g \circ \beta$ there
+    is a unique $\gamma \in \Mor_{\mathcal C}(w, x \times_y z)$ making the diagram
+    commute.'
+  kind: definition
+  location: Section Fibre products
+  name: Definition definition-fibre-products
+- description: We say a commutative diagram $$\xymatrix{ w \ar[r] \ar[d] & z \ar[d]
+    \\ x \ar[r] & y }$$ in a category is cartesian if $w$ and the morphisms $w \to
+    x$ and $w \to z$ form a fibre product of the morphisms $x \to y$ and $z \to y$.
+  kind: definition
+  location: Section Fibre products
+  name: Definition definition-cartesian
+- description: We say the category $\mathcal{C}$ has fibre products if the fibre product
+    exists for any $f\in \Mor_{\mathcal C}(x, y)$ and $g\in \Mor_{\mathcal C}(z, y)$.
+  kind: definition
+  location: Section Fibre products
+  name: Definition definition-has-fibre-products
+- description: 'A morphism $f : x \to y$ of a category $\mathcal{C}$ is said to be
+    representable if for every morphism $z \to y$ in $\mathcal{C}$ the fibre product
+    $x \times_y z$ exists.'
+  kind: definition
+  location: Section Fibre products
+  name: Definition definition-representable-morphism
+- description: 'Let $\mathcal{C}$ be a category. Let $f : x \to y$, and $g : y \to
+    z$ be representable. Then $g \circ f : x \to z$ is representable.'
+  kind: lemma
+  location: Section Fibre products
+  name: Lemma lemma-composition-representable
+- description: 'Let $\mathcal{C}$ be a category. Let $f : x \to y$ be representable.
+    Let $y'' \to y$ be a morphism of $\mathcal{C}$. Then the morphism $x'' := x \times_y
+    y'' \to y''$ is representable also.'
+  kind: lemma
+  location: Section Fibre products
+  name: Lemma lemma-base-change-representable
+- description: 'Let $\mathcal{C}$ be a category. Let $F, G, H : \mathcal{C}^{opp}
+    \to \textit{Sets}$ be functors. Let $a : F \to G$ and $b : H \to G$ be transformations
+    of functors. Then the fibre product $F \times_{a, G, b} H$ in the category $\textit{PSh}(\mathcal{C})$
+    exists and is given by the formula $(F \times_{a, G, b} H)(X) = F(X) \times_{a_X,
+    G(X), b_X} H(X)$ for any object $X$ of $\mathcal{C}$.'
+  kind: lemma
+  location: Section Fibre products and representability
+  name: Lemma lemma-fibre-product-presheaves
+- description: 'Let $\mathcal{C}$ be a category. Let $F, G : \mathcal{C}^{opp} \to
+    \textit{Sets}$ be functors. We say a morphism $a : F \to G$ is representable,
+    or that $F$ is relatively representable over $G$, if for every $U \in \Ob(\mathcal{C})$
+    and any $\xi \in G(U)$ the functor $h_U \times_G F$ is representable.'
+  kind: definition
+  location: Section Fibre products and representability
+  name: Definition definition-representable-map-presheaves
+- description: 'Let $\mathcal{C}$ be a category. Let $a : F \to G$ be a morphism of
+    contravariant functors from $\mathcal{C}$ to $\textit{Sets}$. If $a$ is representable,
+    and $G$ is a representable functor, then $F$ is representable.'
+  kind: lemma
+  location: Section Fibre products and representability
+  name: Lemma lemma-representable-over-representable
+- description: 'Let $\mathcal{C}$ be a category. Let $F : \mathcal{C}^{opp} \to \textit{Sets}$
+    be a functor. Assume $\mathcal{C}$ has products of pairs of objects and fibre
+    products. The following are equivalent: (1) the diagonal $\Delta : F \to F \times
+    F$ is representable, (2) for every $U$ in $\mathcal{C}$, and any $\xi \in F(U)$
+    the map $\xi : h_U \to F$ is representable, (3) for every pair $U, V$ in $\mathcal{C}$
+    and any $\xi \in F(U)$, $\xi'' \in F(V)$ the fibre product $h_U \times_{\xi, F,
+    \xi''} h_V$ is representable.'
+  kind: lemma
+  location: Section Fibre products and representability
+  name: Lemma lemma-representable-diagonal
+- description: 'Let $x, y, z\in \Ob(\mathcal{C})$, $f\in \Mor_\mathcal{C}(y, x)$ and
+    $g\in \Mor_{\mathcal C}(y, z)$. A pushout of $f$ and $g$ is an object $x\amalg_y
+    z\in \Ob(\mathcal{C})$ together with morphisms $p\in \Mor_{\mathcal C}(x, x\amalg_y
+    z)$ and $q\in\Mor_{\mathcal C}(z, x\amalg_y z)$ making the diagram commute, and
+    such that the following universal property holds: For any $w\in \Ob(\mathcal{C})$
+    and morphisms $\alpha \in \Mor_{\mathcal C}(x, w)$ and $\beta \in \Mor_\mathcal{C}(z,
+    w)$ with $\alpha \circ f = \beta \circ g$ there is a unique $\gamma\in \Mor_{\mathcal
+    C}(x\amalg_y z, w)$ making the diagram commute.'
+  kind: definition
+  location: Section Pushouts
+  name: Definition definition-pushouts
+- description: We say a commutative diagram $$\xymatrix{ y \ar[r] \ar[d] & z \ar[d]
+    \\ x \ar[r] & w }$$ in a category is cocartesian if $w$ and the morphisms $x \to
+    w$ and $z \to w$ form a pushout of the morphisms $y \to x$ and $y \to z$.
+  kind: definition
+  location: Section Pushouts
+  name: Definition definition-cocartesian
+- description: 'Suppose that $X$, $Y$ are objects of a category $\mathcal{C}$ and
+    that $a, b : X \to Y$ are morphisms. We say a morphism $e : Z \to X$ is an equalizer
+    for the pair $(a, b)$ if $a \circ e = b \circ e$ and if $(Z, e)$ satisfies the
+    following universal property: For every morphism $t : W \to X$ in $\mathcal{C}$
+    such that $a \circ t = b \circ t$ there exists a unique morphism $s : W \to Z$
+    such that $t = e \circ s$.'
+  kind: definition
+  location: Section Equalizers
+  name: Definition (Equalizer)
+- description: 'Suppose that $X$, $Y$ are objects of a category $\mathcal{C}$ and
+    that $a, b : X \to Y$ are morphisms. We say a morphism $c : Y \to Z$ is a coequalizer
+    for the pair $(a, b)$ if $c \circ a = c \circ b$ and if $(Z, c)$ satisfies the
+    following universal property: For every morphism $t : Y \to W$ in $\mathcal{C}$
+    such that $t \circ a = t \circ b$ there exists a unique morphism $s : Z \to W$
+    such that $t = s \circ c$.'
+  kind: definition
+  location: Section Coequalizers
+  name: Definition (Coequalizer)
+- description: Let $\mathcal{C}$ be a category. (1) An object $x$ of the category
+    $\mathcal{C}$ is called an initial object if for every object $y$ of $\mathcal{C}$
+    there is exactly one morphism $x \to y$. (2) An object $x$ of the category $\mathcal{C}$
+    is called a final object if for every object $y$ of $\mathcal{C}$ there is exactly
+    one morphism $y \to x$.
+  kind: definition
+  location: Section Initial and final objects
+  name: Definition (Initial and Final Objects)
+- description: 'Let $\mathcal{C}$ be a category and let $f : X \to Y$ be a morphism
+    of $\mathcal{C}$. (1) We say that $f$ is a monomorphism if for every object $W$
+    and every pair of morphisms $a, b : W \to X$ such that $f \circ a = f \circ b$
+    we have $a = b$. (2) We say that $f$ is an epimorphism if for every object $W$
+    and every pair of morphisms $a, b : Y \to W$ such that $a \circ f = b \circ f$
+    we have $a = b$.'
+  kind: definition
+  location: Section Monomorphisms and Epimorphisms
+  name: Definition (Monomorphism and Epimorphism)
+- description: 'Let $\mathcal{C}$ be a category, and let $f : X \to Y$ be a morphism
+    of $\mathcal{C}$. Then (1) $f$ is a monomorphism if and only if $X$ is the fibre
+    product $X \times_Y X$, and (2) $f$ is an epimorphism if and only if $Y$ is the
+    pushout $Y \amalg_X Y$.'
+  kind: lemma
+  location: Section Monomorphisms and Epimorphisms
+  name: Lemma (Characterize Mono Epi)
+- description: 'A limit of the $\mathcal{I}$-diagram $M$ in the category $\mathcal{C}$
+    is given by an object $\lim_\mathcal{I} M$ in $\mathcal{C}$ together with morphisms
+    $p_i : \lim_\mathcal{I} M \to M_i$ such that (1) for $\phi : i \to i''$ a morphism
+    in $\mathcal{I}$ we have $p_{i''} = M(\phi) \circ p_i$, and (2) for any object
+    $W$ in $\mathcal{C}$ and any family of morphisms $q_i : W \to M_i$ such that for
+    all $\phi : i \to i''$ in $\mathcal{I}$ we have $q_{i''} = M(\phi) \circ q_i$
+    there exists a unique morphism $q : W \to \lim_\mathcal{I} M$ such that $q_i =
+    p_i \circ q$ for every object $i$ of $\mathcal{I}$.'
+  kind: definition
+  location: Section Limits and colimits
+  name: Definition (Limit)
+- description: 'A colimit of the $\mathcal{I}$-diagram $M$ in the category $\mathcal{C}$
+    is given by an object $\colim_\mathcal{I} M$ in $\mathcal{C}$ together with morphisms
+    $s_i : M_i \to \colim_\mathcal{I} M$ such that (1) for $\phi : i \to i''$ a morphism
+    in $\mathcal{I}$ we have $s_i = s_{i''} \circ M(\phi)$, and (2) for any object
+    $W$ in $\mathcal{C}$ and any family of morphisms $t_i : M_i \to W$ such that for
+    all $\phi : i \to i''$ in $\mathcal{I}$ we have $t_i = t_{i''} \circ M(\phi)$
+    there exists a unique morphism $t : \colim_\mathcal{I} M \to W$ such that $t_i
+    = t \circ s_i$ for every object $i$ of $\mathcal{I}$.'
+  kind: definition
+  location: Section Limits and colimits
+  name: Definition (Colimit)
+- description: Suppose that $I$ is a set, and suppose given for every $i \in I$ an
+    object $M_i$ of the category $\mathcal{C}$. A product $\prod_{i\in I} M_i$ is
+    by definition $\lim_\mathcal{I} M$ (if it exists) where $\mathcal{I}$ is the category
+    having only identities as morphisms and having the elements of $I$ as objects.
+  kind: definition
+  location: Section Limits and colimits
+  name: Definition (Product)
+- description: Suppose that $I$ is a set, and suppose given for every $i \in I$ an
+    object $M_i$ of the category $\mathcal{C}$. A coproduct $\coprod_{i\in I} M_i$
+    is by definition $\colim_\mathcal{I} M$ (if it exists) where $\mathcal{I}$ is
+    the category having only identities as morphisms and having the elements of $I$
+    as objects.
+  kind: definition
+  location: Section Limits and colimits
+  name: Definition (Coproduct)
+- description: 'Suppose that $M : \mathcal{I} \to \mathcal{C}$, and $N : \mathcal{J}
+    \to \mathcal{C}$ are diagrams whose colimits exist. Suppose $H : \mathcal{I} \to
+    \mathcal{J}$ is a functor, and suppose $t : M \to N \circ H$ is a transformation
+    of functors. Then there is a unique morphism $\theta : \colim_\mathcal{I} M \longrightarrow
+    \colim_\mathcal{J} N$ such that all the diagrams commute.'
+  kind: lemma
+  location: Section Limits and colimits
+  name: Lemma (Functorial Colimit)
+- description: 'Suppose that $M : \mathcal{I} \to \mathcal{C}$, and $N : \mathcal{J}
+    \to \mathcal{C}$ are diagrams whose limits exist. Suppose $H : \mathcal{I} \to
+    \mathcal{J}$ is a functor, and suppose $t : N \circ H \to M$ is a transformation
+    of functors. Then there is a unique morphism $\theta : \lim_\mathcal{J} N \longrightarrow
+    \lim_\mathcal{I} M$ such that all the diagrams commute.'
+  kind: lemma
+  location: Section Limits and colimits
+  name: Lemma (Functorial Limit)
+- description: 'Let $\mathcal{I}$, $\mathcal{J}$ be index categories. Let $M : \mathcal{I}
+    \times \mathcal{J} \to \mathcal{C}$ be a functor. Assume that $M_{i, \infty} =
+    \colim_j M_{i,j}$ exists for all $i$. Then the resulting functor $M_{-, \infty}
+    : \mathcal{I} \to \mathcal{C}$ has a colimit if and only if $M$ does, and then
+    the colimits coincide. In particular, $\colim_i \colim_j M_{i, j} = \colim_{i,
+    j} M_{i, j} = \colim_j \colim_i M_{i, j}$ provided all the indicated colimits
+    exist. Similar for limits.'
+  kind: lemma
+  location: Section Limits and colimits
+  name: Lemma (Colimits Commute)
+- description: 'Let $M : \mathcal{I} \to \mathcal{C}$ be a diagram. Write $I = \Ob(\mathcal{I})$
+    and $A = \text{Arrows}(\mathcal{I})$. Denote $s, t : A \to I$ the source and target
+    maps. Suppose that $\prod_{i \in I} M_i$ and $\prod_{a \in A} M_{t(a)}$ exist.
+    Suppose that the equalizer of $\phi, \psi : \prod_{i \in I} M_i \to \prod_{a \in
+    A} M_{t(a)}$ exists, where the morphisms are determined by their components as
+    follows: $p_a \circ \psi = M(a) \circ p_{s(a)}$ and $p_a \circ \phi = p_{t(a)}$.
+    Then this equalizer is the limit of the diagram.'
+  kind: lemma
+  location: Section Limits and colimits
+  name: Lemma (Limits from Products and Equalizers)
+- description: 'Let $M : \mathcal{I} \to \mathcal{C}$ be a diagram. Write $I = \Ob(\mathcal{I})$
+    and $A = \text{Arrows}(\mathcal{I})$. Denote $s, t : A \to I$ the source and target
+    maps. Suppose that $\coprod_{i \in I} M_i$ and $\coprod_{a \in A} M_{s(a)}$ exist.
+    Suppose that the coequalizer of $\phi, \psi : \coprod_{a \in A} M_{s(a)} \to \coprod_{i
+    \in I} M_i$ exists, where the morphisms are determined by their components as
+    follows: The component $M_{s(a)}$ maps via $\psi$ to the component $M_{t(a)}$
+    via the morphism $M(a)$. The component $M_{s(a)}$ maps via $\phi$ to the component
+    $M_{s(a)}$ by the identity morphism. Then this coequalizer is the colimit of the
+    diagram.'
+  kind: lemma
+  location: Section Limits and colimits
+  name: Lemma (Colimits from Coproducts and Coequalizers)
+- description: 'Let $\mathcal{C}$ be a category. The following are equivalent: (1)
+    Nonempty finite limits exist in $\mathcal{C}$. (2) Products of pairs and equalizers
+    exist in $\mathcal{C}$. (3) Products of pairs and fibre products exist in $\mathcal{C}$.'
+  kind: lemma
+  location: 'Section: Finite limits and colimits'
+  name: Lemma
+- description: 'Let $H : \mathcal{I} \to \mathcal{J}$ be a functor between categories.
+    We say $\mathcal{I}$ is initial in $\mathcal{J}$ or that $H$ is initial if (1)
+    for all $y \in \Ob(\mathcal{J})$ there exist an $x \in \Ob(\mathcal{I})$ and a
+    morphism $H(x) \to y$, (2) for any $y \in \Ob(\mathcal{J})$, $x, x'' \in \Ob(\mathcal{I})$
+    and morphisms $H(x) \to y$, $H(x'') \to y$ in $\mathcal{J}$ there exist a sequence
+    of morphisms $x = x_0 \leftarrow x_1 \rightarrow x_2 \leftarrow x_3 \rightarrow
+    \ldots \rightarrow x_{2n} = x''$ in $\mathcal{I}$ and morphisms $H(x_i) \to y$
+    in $\mathcal{J}$ such that the appropriate diagrams commute.'
+  kind: definition
+  location: 'Section: Cofinal and initial categories'
+  name: Definition
+- description: 'Let $\mathcal{I}$ be an index category, i.e., a category. Assume (1)
+    for every pair of morphisms $a : w \to x$ and $b : w \to y$ in $\mathcal{I}$ there
+    exist an object $z$ and morphisms $c : x \to z$ and $d : y \to z$ such that $c
+    \circ a = d \circ b$, and (2) for every pair of morphisms $a, b : x \to y$ there
+    exists a morphism $c : y \to z$ such that $c \circ a = c \circ b$. Then $\mathcal{I}$
+    is a (possibly empty) union of disjoint filtered index categories $\mathcal{I}_j$.'
+  kind: lemma
+  location: 'Section: Filtered colimits'
+  name: Lemma
+- description: 'We say that a diagram $M : \mathcal{I} \to \mathcal{C}$ is directed,
+    or filtered if the following conditions hold: (1) the category $\mathcal{I}$ has
+    at least one object, (2) for every pair of objects $x, y$ of $\mathcal{I}$ there
+    exist an object $z$ and morphisms $x \to z$, $y \to z$, and (3) for every pair
+    of objects $x, y$ of $\mathcal{I}$ and every pair of morphisms $a, b : x \to y$
+    of $\mathcal{I}$ there exists a morphism $c : y \to z$ of $\mathcal{I}$ such that
+    $M(c \circ a) = M(c \circ b)$ as morphisms in $\mathcal{C}$. We say that an index
+    category $\mathcal{I}$ is directed, or filtered if $\text{id} : \mathcal{I} \to
+    \mathcal{I}$ is filtered (in other words you erase the $M$ in part (3) above).'
+  kind: definition
+  location: 'Section: Filtered colimits'
+  name: Definition
+- description: Let $\mathcal{I}$ be an index category satisfying the hypotheses of
+    Lemma (lemma-split-into-directed). Then colimits over $\mathcal{I}$ commute with
+    fibre products and equalizers in sets (and more generally with finite connected
+    limits).
+  kind: lemma
+  location: Section on filtered colimits (before Section on Cofiltered limits)
+  name: Lemma (lemma-almost-directed-commutes-equalizers)
+- description: 'We say that a diagram $M : \mathcal{I} \to \mathcal{C}$ is codirected
+    or cofiltered if the following conditions hold: (1) the category $\mathcal{I}$
+    has at least one object, (2) for every pair of objects $x, y$ of $\mathcal{I}$
+    there exist an object $z$ and morphisms $z \to x$, $z \to y$, and (3) for every
+    pair of objects $x, y$ of $\mathcal{I}$ and every pair of morphisms $a, b : x
+    \to y$ of $\mathcal{I}$ there exists a morphism $c : w \to x$ of $\mathcal{I}$
+    such that $M(a \circ c) = M(b \circ c)$ as morphisms in $\mathcal{C}$. We say
+    that an index category $\mathcal{I}$ is codirected, or cofiltered if $\text{id}
+    : \mathcal{I} \to \mathcal{I}$ is cofiltered (in other words you erase the $M$
+    in part (3) above).'
+  kind: definition
+  location: Section Cofiltered limits
+  name: Definition (definition-codirected)
+- description: Let $I$ be a set and let $\leq$ be a binary relation on $I$. (1) We
+    say $\leq$ is a preorder if it is transitive (if $i \leq j$ and $j \leq k$ then
+    $i \leq k$) and reflexive ($i \leq i$ for all $i \in I$). (2) A preordered set
+    is a set endowed with a preorder. (3) A directed set is a preordered set $(I,
+    \leq)$ such that $I$ is not empty and such that $\forall i, j \in I$, there exists
+    $k \in I$ with $i \leq k, j \leq k$. (4) We say $\leq$ is a partial order if it
+    is a preorder which is antisymmetric (if $i \leq j$ and $j \leq i$, then $i =
+    j$). (5) A partially ordered set is a set endowed with a partial order. (6) A
+    directed partially ordered set is a directed set whose ordering is a partial order.
+  kind: definition
+  location: Section Limits and colimits over preordered sets
+  name: Definition (definition-directed-set)
+- description: 'Let $(I, \leq)$ be a preordered set. Let $\mathcal{C}$ be a category.
+    (1) A system over $I$ in $\mathcal{C}$, sometimes called an inductive system over
+    $I$ in $\mathcal{C}$, is given by objects $M_i$ of $\mathcal{C}$ and for every
+    $i \leq i''$ a morphism $f_{ii''} : M_i \to M_{i''}$ such that $f_{ii} = \text{id}$
+    and such that $f_{ii''''} = f_{i''i''''} \circ f_{ii''}$ whenever $i \leq i''
+    \leq i''''$. (2) An inverse system over $I$ in $\mathcal{C}$, sometimes called
+    a projective system over $I$ in $\mathcal{C}$, is given by objects $M_i$ of $\mathcal{C}$
+    and for every $i'' \leq i$ a morphism $f_{ii''} : M_i \to M_{i''}$ such that $f_{ii}
+    = \text{id}$ and such that $f_{ii''''} = f_{i''i''''} \circ f_{ii''}$ whenever
+    $i'''' \leq i'' \leq i$. (Note reversal of inequalities.) We will say $(M_i, f_{ii''})$
+    is a (inverse) system over $I$ to denote this. The maps $f_{ii''}$ are sometimes
+    called the transition maps.'
+  kind: definition
+  location: Section Limits and colimits over preordered sets
+  name: Definition (definition-system-over-poset)
+- description: 'Let $I$ be a preordered set. We say a system (resp. inverse system)
+    $(M_i, f_{ii''})$ is a directed system (resp. directed inverse system) if $I$
+    is a directed set: $I$ is nonempty and for all $i_1, i_2 \in I$ there exists $i
+    \in I$ such that $i_1 \leq i$ and $i_2 \leq i$.'
+  kind: definition
+  location: Section Limits and colimits over preordered sets
+  name: Definition (definition-directed-system)
+- description: 'Let $\mathcal{I}$ be a filtered index category. There exist a directed
+    set $I$ and a system $(x_i, \varphi_{ii''})$ over $I$ in $\mathcal{I}$ with the
+    following properties: (1) For every category $\mathcal{C}$ and every diagram $M
+    : \mathcal{I} \to \mathcal{C}$ with values in $\mathcal{C}$, denote $(M(x_i),
+    M(\varphi_{ii''}))$ the corresponding system over $I$. If $\colim_{i \in I} M(x_i)$
+    exists then so does $\colim_\mathcal{I} M$ and the transformation $\theta : \colim_{i
+    \in I} M(x_i) \longrightarrow \colim_\mathcal{I} M$ is an isomorphism. (2) For
+    every category $\mathcal{C}$ and every diagram $M : \mathcal{I}^{opp} \to \mathcal{C}$
+    in $\mathcal{C}$, denote $(M(x_i), M(\varphi_{ii''}))$ the corresponding inverse
+    system over $I$. If $\lim_{i \in I} M(x_i)$ exists then so does $\lim_{\mathcal{I}^{opp}}
+    M$ and the transformation $\theta : \lim_{\mathcal{I}^{opp}} M \longrightarrow
+    \lim_{i \in I} M(x_i)$ is an isomorphism.'
+  kind: lemma
+  location: Section Limits and colimits over preordered sets
+  name: Lemma (lemma-directed-category-system)
+- description: 'If $S : \mathcal{I} \to \textit{Sets}$ is a cofiltered diagram of
+    sets and all the $S_i$ are finite nonempty, then $\lim_i S_i$ is nonempty. In
+    other words, the limit of a directed inverse system of finite nonempty sets is
+    nonempty.'
+  kind: lemma
+  location: Section Cofiltered limits (or after Section on Limits and colimits over
+    preordered sets)
+  name: Lemma (lemma-nonempty-limit)
+- description: Let $\mathcal{C}$ be a category. A directed system $(M_i, f_{ii'})$
+    is an essentially constant system if $M$ viewed as a functor $I \to \mathcal{C}$
+    defines an essentially constant diagram. A directed inverse system $(M_i, f_{ii'})$
+    is an essentially constant inverse system if $M$ viewed as a functor $I^{opp}
+    \to \mathcal{C}$ defines an essentially constant inverse diagram.
+  kind: definition
+  location: 'Section: Essentially constant systems'
+  name: Definition (essentially constant system)
+- description: 'Let $M : \mathcal{I} \to \mathcal{C}$ be a diagram. If $\mathcal{I}$
+    is filtered and $M$ is essentially constant as an ind-object, then $X = \colim
+    M_i$ exists and $M$ is essentially constant with value $X$. If $\mathcal{I}$ is
+    cofiltered and $M$ is essentially constant as a pro-object, then $X = \lim M_i$
+    exists and $M$ is essentially constant with value $X$.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (essentially constant is limit/colimit)
+- description: 'Let $\mathcal{C}$ be a category. Let $M : \mathcal{I} \to \mathcal{C}$
+    be a diagram with filtered (resp. cofiltered) index category $\mathcal{I}$. Let
+    $F : \mathcal{C} \to \mathcal{D}$ be a functor. If $M$ is essentially constant
+    as an ind-object (resp. pro-object), then so is $F \circ M : \mathcal{I} \to \mathcal{D}$.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (image essentially constant)
+- description: 'Let $\mathcal{C}$ be a category. Let $M : \mathcal{I} \to \mathcal{C}$
+    be a diagram with filtered index category $\mathcal{I}$. The following are equivalent:
+    (1) $M$ is an essentially constant ind-object, (2) there exists a cocone $(X,
+    \{M_i \to X\}_i)$ such that for any $W$ in $\mathcal{C}$ the map $\colim_i \Mor_{\mathcal{C}}(W,
+    M_i) \to \Mor_{\mathcal{C}}(W, X)$ is bijective, (3) $X = \colim_i M_i$ exists
+    and for any $W$ in $\mathcal{C}$ the map $\colim_i \Mor_{\mathcal{C}}(W, M_i)
+    \to \Mor_{\mathcal{C}}(W, X)$ is bijective, and (4) there exists an $i$ in $\mathcal{I}$
+    and a morphism $X \to M_i$ such that for any $W$ in $\mathcal{C}$ the map $\Mor_{\mathcal{C}}(W,
+    X) \to \colim_{j \in \mathcal{I}} \Mor_{\mathcal{C}}(W, M_j)$ is bijective. In
+    cases (2), (3), and (4) the value of the essentially constant system is $X$.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (characterize essentially constant ind)
+- description: 'Let $\mathcal{C}$ be a category. Let $M : \mathcal{I} \to \mathcal{C}$
+    be a diagram with cofiltered index category $\mathcal{I}$. The following are equivalent:
+    (1) $M$ is an essentially constant pro-object, (2) there exists a cone $(X, \{X
+    \to M_i\})$ such that for any $W$ in $\mathcal{C}$ the map $\colim_{i \in \mathcal{I}^{opp}}
+    \Mor_{\mathcal{C}}(M_i, W) \to \Mor_{\mathcal{C}}(X, W)$ is bijective, (3) $X
+    = \lim_i M_i$ exists and for any $W$ in $\mathcal{C}$ the map $\colim_{i \in \mathcal{I}^{opp}}
+    \Mor_{\mathcal{C}}(M_i, W) \to \Mor_{\mathcal{C}}(X, W)$ is bijective, and (4)
+    there exists an $i$ in $\mathcal{I}$ and a morphism $M_i \to X$ such that for
+    any $W$ in $\mathcal{C}$ the map $\Mor_{\mathcal{C}}(X, W) \to \colim_{j \in \mathcal{I}^{opp}}
+    \Mor_{\mathcal{C}}(M_j, W)$ is bijective. In cases (2), (3), and (4) the value
+    of the essentially constant system is $X$.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (characterize essentially constant pro)
+- description: 'Let $\mathcal{C}$ be a category. Let $H : \mathcal{I} \to \mathcal{J}$
+    be a functor of filtered index categories. If $H$ is cofinal, then any diagram
+    $M : \mathcal{J} \to \mathcal{C}$ is essentially constant if and only if $M \circ
+    H$ is essentially constant.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (cofinal essentially constant)
+- description: 'Let $\mathcal{I}$ and $\mathcal{J}$ be filtered categories and denote
+    $p : \mathcal{I} \times \mathcal{J} \to \mathcal{J}$ the projection. Then $\mathcal{I}
+    \times \mathcal{J}$ is filtered and a diagram $M : \mathcal{J} \to \mathcal{C}$
+    is essentially constant if and only if $M \circ p : \mathcal{I} \times \mathcal{J}
+    \to \mathcal{C}$ is essentially constant.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (essentially constant over product)
+- description: 'Let $\mathcal{C}$ be a category. Let $H : \mathcal{I} \to \mathcal{J}$
+    be a functor of cofiltered index categories. If $H$ is initial, then any diagram
+    $M : \mathcal{J} \to \mathcal{C}$ is essentially constant if and only if $M \circ
+    H$ is essentially constant.'
+  kind: lemma
+  location: 'Section: Essentially constant systems'
+  name: Lemma (initial essentially constant)
+- description: 'Let $F : \mathcal{A} \to \mathcal{B}$ be a functor. (1) Suppose all
+    finite limits exist in $\mathcal{A}$. We say $F$ is left exact if it commutes
+    with all finite limits. (2) Suppose all finite colimits exist in $\mathcal{A}$.
+    We say $F$ is right exact if it commutes with all finite colimits. (3) We say
+    $F$ is exact if it is both left and right exact.'
+  kind: definition
+  location: 'Section: Exact functors'
+  name: Definition (exact)
+- description: 'Let $F : \mathcal{A} \to \mathcal{B}$ be a functor. Suppose all finite
+    limits exist in $\mathcal{A}$. The following are equivalent: (1) $F$ is left exact,
+    (2) $F$ commutes with finite products and equalizers, and (3) $F$ transforms a
+    final object of $\mathcal{A}$ into a final object of $\mathcal{B}$, and commutes
+    with fibre products.'
+  kind: lemma
+  location: 'Section: Exact functors'
+  name: Lemma (characterize left exact)
+- description: 'Let $F : \mathcal{A} \to \mathcal{B}$ be a functor. Suppose all finite
+    colimits exist in $\mathcal{A}$. The following are equivalent: (1) $F$ is right
+    exact, (2) $F$ commutes with finite coproducts and coequalizers, and (3) $F$ transforms
+    an initial object of $\mathcal{A}$ into an initial object of $\mathcal{B}$, and
+    commutes with pushouts.'
+  kind: lemma
+  location: 'Section: Exact functors'
+  name: Lemma (characterize right exact)
+- description: 'Let $\mathcal{C}$, $\mathcal{D}$ be categories. Let $u : \mathcal{C}
+    \to \mathcal{D}$ and $v : \mathcal{D} \to \mathcal{C}$ be functors. We say that
+    $u$ is a left adjoint of $v$, or that $v$ is a right adjoint to $u$ if there are
+    bijections $\Mor_{\mathcal{D}}(u(X), Y) \longrightarrow \Mor_{\mathcal{C}}(X,
+    v(Y))$ functorial in $X \in \Ob(\mathcal{C})$, and $Y \in \Ob(\mathcal{D})$.'
+  kind: definition
+  location: 'Section: Adjoint functors'
+  name: Definition (adjoint)
+- description: 'Let $M : \mathcal{I} \to \mathcal{C}$ be a diagram in a category $\mathcal{C}$.
+    (1) Assume the index category $\mathcal{I}$ is filtered and let $(X, \{M_i \to
+    X\}_i)$ be a cocone for $M$. We say $M$ is essentially constant with value $X$
+    if there exist an $i \in \mathcal{I}$ and a morphism $X \to M_i$ such that (a)
+    $X \to M_i \to X$ is $\text{id}_X$, and (b) for all $j$ there exist $k$ and morphisms
+    $i \to k$ and $j \to k$ such that the morphism $M_j \to M_k$ equals the composition
+    $M_j \to X \to M_i \to M_k$. (2) Assume the index category $\mathcal{I}$ is cofiltered
+    and let $(X, \{X \to M_i\}_i)$ be a cone for $M$. We say $M$ is essentially constant
+    with value $X$ if there exist an $i \in \mathcal{I}$ and a morphism $M_i \to X$
+    such that (a) $X \to M_i \to X$ is $\text{id}_X$, and (b) for all $j$ there exist
+    $k$ and morphisms $k \to i$ and $k \to j$ such that the morphism $M_k \to M_j$
+    equals the composition $M_k \to M_i \to X \to M_j$.'
+  kind: definition
+  location: 'Section: Essentially constant systems'
+  name: Definition 4.21
+- description: 'Let $u : \mathcal{C} \to \mathcal{D}$ be a functor between categories.
+    If for each $y \in \Ob(\mathcal{D})$ the functor $x \mapsto \Mor_\mathcal{D}(u(x),
+    y)$ is representable, then $u$ has a right adjoint.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-adjoint-exists)
+- description: Let $u$ be a left adjoint to $v$ as in Definition (definition-adjoint).
+    (1) If $v \circ u$ is fully faithful, then $u$ is fully faithful. (2) If $u \circ
+    v$ is fully faithful, then $v$ is fully faithful.
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-left-adjoint-composed-fully-faithful)
+- description: 'Let $u$ be a left adjoint to $v$ as in Definition (definition-adjoint).
+    Then (1) $u$ is fully faithful $\Leftrightarrow$ $\text{id} \cong v \circ u$ $\Leftrightarrow$
+    $\eta : \text{id} \to v \circ u$ is an isomorphism, (2) $v$ is fully faithful
+    $\Leftrightarrow$ $u \circ v \cong \text{id}$ $\Leftrightarrow$ $\epsilon : u
+    \circ v \to \text{id}$ is an isomorphism.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-adjoint-fully-faithful)
+- description: 'Let $u$ be a left adjoint to $v$ as in Definition (definition-adjoint).
+    (1) Suppose that $M : \mathcal{I} \to \mathcal{C}$ is a diagram, and suppose that
+    $\colim_\mathcal{I} M$ exists in $\mathcal{C}$. Then $u(\colim_\mathcal{I} M)
+    = \colim_\mathcal{I} u \circ M$. In other words, $u$ commutes with (representable)
+    colimits. (2) Suppose that $M : \mathcal{I} \to \mathcal{D}$ is a diagram, and
+    suppose that $\lim_\mathcal{I} M$ exists in $\mathcal{D}$. Then $v(\lim_\mathcal{I}
+    M) = \lim_\mathcal{I} v \circ M$. In other words $v$ commutes with representable
+    limits.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-adjoint-exact)
+- description: Let $u$ be a left adjoint of $v$ as in Definition (definition-adjoint).
+    (1) If $\mathcal{C}$ has finite colimits, then $u$ is right exact. (2) If $\mathcal{D}$
+    has finite limits, then $v$ is left exact.
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-exact-adjoint)
+- description: 'Let $u : \mathcal{C} \to \mathcal{D}$ be a left adjoint to the functor
+    $v : \mathcal{D} \to \mathcal{C}$. Let $\eta_X : X \to v(u(X))$ be the unit and
+    $\epsilon_Y : u(v(Y)) \to Y$ be the counit. Then $$u(X) \xrightarrow{u(\eta_X)}
+    u(v(u(X))) \xrightarrow{\epsilon_{u(X)}} u(X) \quad\text{and}\quad v(Y) \xrightarrow{\eta_{v(Y)}}
+    v(u(v(Y))) \xrightarrow{v(\epsilon_Y)} v(Y)$$ are the identity morphisms.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-unit-counit-relations)
+- description: 'Let $u_1, u_2 : \mathcal{C} \to \mathcal{D}$ be functors with right
+    adjoints $v_1, v_2 : \mathcal{D} \to \mathcal{C}$. Let $\beta : u_2 \to u_1$ be
+    a transformation of functors. Let $\beta^\vee : v_1 \to v_2$ be the corresponding
+    transformation of adjoint functors. Then $$\xymatrix{ u_2 \circ v_1 \ar[r]_\beta
+    \ar[d]_{\beta^\vee} & u_1 \circ v_1 \ar[d] \\ u_2 \circ v_2 \ar[r] & \text{id}
+    }$$ is commutative where the unlabeled arrows are the counit transformations.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-transformation-between-functors-and-adjoints)
+- description: 'Let $\mathcal{A}$, $\mathcal{B}$, and $\mathcal{C}$ be categories.
+    Let $v : \mathcal{A} \to \mathcal{B}$ and $v'' : \mathcal{B} \to \mathcal{C}$
+    be functors with left adjoints $u$ and $u''$ respectively. Then (1) The functor
+    $v'''' = v'' \circ v$ has a left adjoint equal to $u'''' = u \circ u''$. (2) Given
+    $X$ in $\mathcal{A}$ we have $\epsilon_X^v \circ u(\epsilon^{v''}_{v(X)}) = \epsilon^{v''''}_X
+    : u''''(v''''(X)) \to X$ where $\epsilon$ is the counit of the adjunctions.'
+  kind: lemma
+  location: 'Section: Adjoint functors'
+  name: Lemma (lemma-compose-counits)
+- description: 'Let $\mathcal{C}$ be a big category which has limits. Let $F : \mathcal{C}
+    \to \textit{Sets}$ be a functor. Assume that (1) $F$ commutes with limits, (2)
+    there exist a family $\{x_i\}_{i \in I}$ of objects of $\mathcal{C}$ and for each
+    $i \in I$ an element $f_i \in F(x_i)$ such that for $y \in \Ob(\mathcal{C})$ and
+    $g \in F(y)$ there exist an $i$ and a morphism $\varphi : x_i \to y$ with $F(\varphi)(f_i)
+    = g$. Then $F$ is representable, i.e., there exists an object $x$ of $\mathcal{C}$
+    such that $$F(y) = \Mor_\mathcal{C}(x, y)$$ functorially in $y$.'
+  kind: lemma
+  location: 'Section: A criterion for representability'
+  name: Lemma (lemma-a-version-of-brown)
+- description: 'Let $G : \mathcal{C} \to \mathcal{D}$ be a functor of big categories.
+    Assume $\mathcal{C}$ has limits, $G$ commutes with them, and for every object
+    $y$ of $\mathcal{D}$ there exists a set of pairs $(x_i, f_i)_{i \in I}$ with $x_i
+    \in \Ob(\mathcal{C})$, $f_i \in \Mor_\mathcal{D}(y, G(x_i))$ such that for any
+    pair $(x, f)$ with $x \in \Ob(\mathcal{C})$, $f \in \Mor_\mathcal{D}(y, G(x))$
+    there are an $i$ and a morphism $h : x_i \to x$ such that $f = G(h) \circ f_i$.
+    Then $G$ has a left adjoint $F$.'
+  kind: theorem
+  location: 'Section: A criterion for representability'
+  name: Theorem (Adjoint functor theorem)
+- description: 'Let $\mathcal{C}$ be a big category. An object $X$ of $\mathcal{C}$
+    is called a categorically compact if we have $$\Mor_\mathcal{C}(X, \colim_i M_i)
+    = \colim_i \Mor_\mathcal{C}(X, M_i)$$ for every filtered diagram $M : \mathcal{I}
+    \to \mathcal{C}$ such that $\colim_i M_i$ exists.'
+  kind: definition
+  location: 'Section: Categorically compact objects'
+  name: Definition (definition-compact-object)
+- description: 'Let $\mathcal{C}$ and $\mathcal{D}$ be big categories having filtered
+    colimits. Let $\mathcal{C}'' \subset \mathcal{C}$ be a small full subcategory
+    consisting of categorically compact objects of $\mathcal{C}$ such that every object
+    of $\mathcal{C}$ is a filtered colimit of objects of $\mathcal{C}''$. Then every
+    functor $F'' : \mathcal{C}'' \to \mathcal{D}$ has a unique extension $F : \mathcal{C}
+    \to \mathcal{D}$ commuting with filtered colimits.'
+  kind: lemma
+  location: 'Section: Categorically compact objects'
+  name: Lemma (lemma-extend-functor-by-colim)
+- description: Let $\mathcal{C}$ be a category. A set of arrows $S$ of $\mathcal{C}$
+    is called a left multiplicative system if it satisfies LMS1, LMS2, LMS3; a right
+    multiplicative system if it satisfies RMS1, RMS2, RMS3; and a multiplicative system
+    if it is both a left and right multiplicative system.
+  kind: definition
+  location: 'Section on localization in categories (label: definition-multiplicative-system)'
+  name: Definition (multiplicative system)
+- description: Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system. (1) The relation on pairs defined above is an equivalence relation. (2)
+    The composition rule given above is well defined on equivalence classes. (3) Composition
+    is associative (and the identity morphisms satisfy the identity axioms), and hence
+    $S^{-1}\mathcal{C}$ is a category.
+  kind: lemma
+  location: 'Section on localization in categories (label: lemma-left-localization)'
+  name: Lemma (left localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system of morphisms of $\mathcal{C}$. Given any morphism $f : X \to Y''$ in $\mathcal{C}$
+    and any morphism $s : Y \to Y''$ in $S$, we denote by $s^{-1} f$ the equivalence
+    class of the pair $(f : X \to Y'', s : Y \to Y'')$. This is a morphism from $X$
+    to $Y$ in $S^{-1} \mathcal{C}$.'
+  kind: definition
+  location: 'Section on localization in categories (label: definition-left-localization-as-fraction)'
+  name: Definition (left localization as fraction)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system of morphisms of $\mathcal{C}$. Given any finite collection $g_i : X_i \to
+    Y$ of morphisms of $S^{-1}\mathcal{C}$ (indexed by $i$), we can find an element
+    $s : Y \to Y''$ of $S$ and a family of morphisms $f_i : X_i \to Y''$ of $\mathcal{C}$
+    such that each $g_i$ is the equivalence class of the pair $(f_i : X_i \to Y'',
+    s : Y \to Y'')$.'
+  kind: lemma
+  location: 'Section on localization in categories (label: lemma-morphisms-left-localization)'
+  name: Lemma (morphisms left localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system of morphisms of $\mathcal{C}$. Let $A, B : X \to Y$ be morphisms of $S^{-1}\mathcal{C}$
+    which are the equivalence classes of $(f : X \to Y'', s : Y \to Y'')$ and $(g
+    : X \to Y'', s : Y \to Y'')$. The following are equivalent: (1) $A = B$, (2) there
+    exists a morphism $t : Y'' \to Y''''$ in $S$ with $t \circ f = t \circ g$, and
+    (3) there exists a morphism $a : Y'' \to Y''''$ such that $a \circ f = a \circ
+    g$ and $a \circ s \in S$.'
+  kind: lemma
+  location: lemma-equality-morphisms-left-localization
+  name: Lemma (equality-morphisms-left-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system of morphisms of $\mathcal{C}$. (1) The rules $X \mapsto X$ and $(f : X
+    \to Y) \mapsto (f : X \to Y, \text{id}_Y : Y \to Y)$ define a functor $Q : \mathcal{C}
+    \to S^{-1}\mathcal{C}$. (2) For any $s \in S$ the morphism $Q(s)$ is an isomorphism
+    in $S^{-1}\mathcal{C}$. (3) If $G : \mathcal{C} \to \mathcal{D}$ is any functor
+    such that $G(s)$ is invertible for every $s \in S$, then there exists a unique
+    functor $H : S^{-1}\mathcal{C} \to \mathcal{D}$ such that $H \circ Q = G$.'
+  kind: lemma
+  location: lemma-properties-left-localization
+  name: Lemma (properties-left-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a left multiplicative
+    system of morphisms of $\mathcal{C}$. The localization functor $Q : \mathcal{C}
+    \to S^{-1}\mathcal{C}$ commutes with finite colimits.'
+  kind: lemma
+  location: lemma-left-localization-limits
+  name: Lemma (left-localization-limits)
+- description: 'Let $\mathcal{C}$ be a category. Let $S$ be a left multiplicative
+    system. If $f : X \to Y$, $f'' : X'' \to Y''$ are two morphisms of $\mathcal{C}$
+    and if the square $Q(X) \to Q(X'')$, $Q(f)$ down, $Q(f'')$ down, $Q(Y) \to Q(Y'')$
+    is a commutative diagram in $S^{-1}\mathcal{C}$, then there exist a morphism $f''''
+    : X'''' \to Y''''$ in $\mathcal{C}$ and a commutative diagram $X \xrightarrow{g}
+    X'''' \xleftarrow{s} X''$, $f$ down, $f''''$ down, $f''$ down, $Y \xrightarrow{h}
+    Y'''' \xleftarrow{t} Y''$ in $\mathcal{C}$ with $s, t \in S$ and $a = s^{-1}g$,
+    $b = t^{-1}h$.'
+  kind: lemma
+  location: lemma-left-localization-diagram
+  name: Lemma (left-localization-diagram)
+- description: Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system. (1) The relation on pairs defined above is an equivalence relation. (2)
+    The composition rule given above is well defined on equivalence classes. (3) Composition
+    is associative (and the identity morphisms satisfy the identity axioms), and hence
+    $S^{-1}\mathcal{C}$ is a category.
+  kind: lemma
+  location: lemma-right-localization
+  name: Lemma (right-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system of morphisms of $\mathcal{C}$. Given any morphism $f : X'' \to Y$ in $\mathcal{C}$
+    and any morphism $s : X'' \to X$ in $S$, we denote by $f s^{-1}$ the equivalence
+    class of the pair $(f : X'' \to Y, s : X'' \to X)$. This is a morphism from $X$
+    to $Y$ in $S^{-1} \mathcal{C}$.'
+  kind: definition
+  location: definition-right-localization-as-fraction
+  name: Definition (right-localization-as-fraction)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system of morphisms of $\mathcal{C}$. Given any finite collection $g_i : X \to
+    Y_i$ of morphisms of $S^{-1}\mathcal{C}$ (indexed by $i$), we can find an element
+    $s : X'' \to X$ of $S$ and a family of morphisms $f_i : X'' \to Y_i$ of $\mathcal{C}$
+    such that $g_i$ is the equivalence class of the pair $(f_i : X'' \to Y_i, s :
+    X'' \to X)$.'
+  kind: lemma
+  location: lemma-morphisms-right-localization
+  name: Lemma (morphisms-right-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system of morphisms of $\mathcal{C}$. Let $A, B : X \to Y$ be morphisms of $S^{-1}\mathcal{C}$
+    which are the equivalence classes of $(f : X'' \to Y, s : X'' \to X)$ and $(g
+    : X'' \to Y, s : X'' \to X)$. The following are equivalent: (1) $A = B$, (2) there
+    exists a morphism $t : X'''' \to X''$ in $S$ with $f \circ t = g \circ t$, and
+    (3) there exists a morphism $a : X'''' \to X''$ with $f \circ a = g \circ a$ and
+    $s \circ a \in S$.'
+  kind: lemma
+  location: lemma-equality-morphisms-right-localization
+  name: Lemma (equality-morphisms-right-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system of morphisms of $\mathcal{C}$. (1) The rules $X \mapsto X$ and $(f : X
+    \to Y) \mapsto (f : X \to Y, \text{id}_X : X \to X)$ define a functor $Q : \mathcal{C}
+    \to S^{-1}\mathcal{C}$. (2) For any $s \in S$ the morphism $Q(s)$ is an isomorphism
+    in $S^{-1}\mathcal{C}$. (3) If $G : \mathcal{C} \to \mathcal{D}$ is any functor
+    such that $G(s)$ is invertible for every $s \in S$, then there exists a unique
+    functor $H : S^{-1}\mathcal{C} \to \mathcal{D}$ such that $H \circ Q = G$.'
+  kind: lemma
+  location: lemma-properties-right-localization
+  name: Lemma (properties-right-localization)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a right multiplicative
+    system of morphisms of $\mathcal{C}$. The localization functor $Q : \mathcal{C}
+    \to S^{-1}\mathcal{C}$ commutes with finite limits.'
+  kind: lemma
+  location: lemma-right-localization-limits
+  name: Lemma (right-localization-limits)
+- description: 'The horizontal and vertical compositions have the following properties:
+    (1) $\circ$ and $\star$ are associative, (2) the identity transformations $\text{id}_F$
+    are units for $\circ$, (3) the identity transformations of the identity functors
+    $\text{id}_{\text{id}_\mathcal{A}}$ are units for $\star$ and $\circ$, and (4)
+    given a diagram with functors $F, F'', F'''' : \mathcal{A} \to \mathcal{B}$, $G,
+    G'', G'''' : \mathcal{B} \to \mathcal{C}$ and transformations $t : F \to F''$,
+    $t'' : F'' \to F''''$, $s : G \to G''$, $s'' : G'' \to G''''$, we have $(s'' \circ
+    s) \star (t'' \circ t) = (s'' \star t'') \circ (s \star t)$.'
+  kind: lemma
+  location: Section on formal properties (section-formal-cat-cat)
+  name: Lemma
+- description: 'A (strict) 2-category $\mathcal{C}$ consists of the following data:
+    (1) A set of objects $\Ob(\mathcal{C})$. (2) For each pair $x, y \in \Ob(\mathcal{C})$
+    a category $\Mor_\mathcal{C}(x, y)$. The objects of $\Mor_\mathcal{C}(x, y)$ will
+    be called 1-morphisms and denoted $F : x \to y$. The morphisms between these 1-morphisms
+    will be called 2-morphisms and denoted $t : F'' \to F$. The composition of 2-morphisms
+    in $\Mor_\mathcal{C}(x, y)$ will be called vertical composition and will be denoted
+    $t \circ t''$ for $t : F'' \to F$ and $t'' : F'''' \to F''$. (3) For each triple
+    $x, y, z \in \Ob(\mathcal{C})$ a functor $(\circ, \star) : \Mor_\mathcal{C}(y,
+    z) \times \Mor_\mathcal{C}(x, y) \longrightarrow \Mor_\mathcal{C}(x, z)$. The
+    image of the pair of 1-morphisms $(F, G)$ on the left hand side will be called
+    the composition of $F$ and $G$, and denoted $F \circ G$. The image of the pair
+    of 2-morphisms $(t, s)$ will be called the horizontal composition and denoted
+    $t \star s$. These data are to satisfy the following rules: (1) The set of objects
+    together with the set of 1-morphisms endowed with composition of 1-morphisms forms
+    a category. (2) Horizontal composition of 2-morphisms is associative. (3) The
+    identity 2-morphism $\text{id}_{\text{id}_x}$ of the identity 1-morphism $\text{id}_x$
+    is a unit for horizontal composition.'
+  kind: definition
+  location: Section on 2-categories (section-2-categories)
+  name: Definition
+- description: 'Let $\mathcal{C}$ be a category. Let $S$ be a right multiplicative
+    system. If $f : X \to Y$, $f'' : X'' \to Y''$ are two morphisms of $\mathcal{C}$
+    and if the diagram with morphisms $a, Q(f), Q(f''), b$ is a commutative diagram
+    in $S^{-1}\mathcal{C}$, then there exist a morphism $f'''' : X'''' \to Y''''$
+    in $\mathcal{C}$ and a commutative diagram in $\mathcal{C}$ with $s, t \in S$
+    and $a = gs^{-1}$, $b = ht^{-1}$.'
+  kind: lemma
+  location: Section on right multiplicative systems
+  name: Lemma (lemma-right-localization-diagram)
+- description: Let $\mathcal{C}$ be a category and let $S$ be a multiplicative system.
+    The category of left fractions and the category of right fractions $S^{-1}\mathcal{C}$
+    are canonically isomorphic.
+  kind: lemma
+  location: Section on multiplicative systems and two sided calculus of fractions
+  name: Lemma (lemma-multiplicative-system)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a multiplicative system.
+    We say $S$ is saturated if, in addition to MS1, MS2, MS3, we also have MS4: Given
+    three composable morphisms $f, g, h$, if $fg, gh \in S$, then $g \in S$.'
+  kind: definition
+  location: Section on multiplicative systems and two sided calculus of fractions
+  name: Definition (definition-saturated-multiplicative-system)
+- description: 'Let $\mathcal{C}$ be a category and let $S$ be a multiplicative system.
+    Denote $Q : \mathcal{C} \to S^{-1}\mathcal{C}$ the localization functor. The set
+    $\hat S = \{f \in \text{Arrows}(\mathcal{C}) \mid Q(f) \text{ is an isomorphism}\}$
+    is equal to $S'' = \{f \in \text{Arrows}(\mathcal{C}) \mid \text{there exist }
+    g, h \text{ such that } gf, fh \in S\}$ and is the smallest saturated multiplicative
+    system containing $S$. In particular, if $S$ is saturated, then $\hat S = S$.'
+  kind: lemma
+  location: Section on multiplicative systems and two sided calculus of fractions
+  name: Lemma (lemma-what-gets-inverted)
+- description: 'Given a diagram with categories $\mathcal{A}, \mathcal{B}, \mathcal{C}$,
+    functors $F, F'' : \mathcal{A} \to \mathcal{B}$, $G, G'' : \mathcal{B} \to \mathcal{C}$,
+    and transformations $t : F \to F''$, $s : G \to G''$, we define the horizontal
+    composition $s \star t$ to be the transformation of functors ${}_{G''}t \circ
+    s_F = s_{F''} \circ {}_Gt$.'
+  kind: definition
+  location: Section on formal properties (section-formal-cat-cat)
+  name: Definition (definition-horizontal-composition)
+- description: Let C be a 2-category. A sub 2-category C' of C is given by a subset
+    Ob(C') of Ob(C) and sub categories Mor_{C'}(x, y) of the categories Mor_C(x, y)
+    for all x, y in Ob(C') such that these, together with the operations of composition
+    of 1-morphisms, vertical composition of 2-morphisms, and horizontal composition,
+    form a 2-category.
+  kind: definition
+  location: Section on 2-categories
+  name: Definition 4.30
+- description: 'Two objects x, y of a 2-category are equivalent if there exist 1-morphisms
+    F : x → y and G : y → x such that F ∘ G is 2-isomorphic to id_y and G ∘ F is 2-isomorphic
+    to id_x.'
+  kind: definition
+  location: Section on 2-categories
+  name: Definition 4.31
+- description: 'Let A be a category and let C be a 2-category. (1) A functor from
+    an ordinary category into a 2-category ignores the 2-morphisms unless mentioned
+    otherwise. (2) A weak functor (pseudo functor) φ from A into C is given by: a
+    map on objects, 1-morphisms φ(f) for each morphism f, 2-morphisms α_x and α_{g,f}
+    that are all isomorphisms, subject to compatibility conditions involving vertical
+    and horizontal composition.'
+  kind: definition
+  location: Section on 2-categories
+  name: Definition 4.32
+- description: A (strict) (2, 1)-category is a 2-category in which all 2-morphisms
+    are isomorphisms.
+  kind: definition
+  location: Section on (2,1)-categories
+  name: Definition 4.33
+- description: A final object of a (2, 1)-category C is an object x such that (1)
+    for every y in Ob(C) there is a morphism y → x, and (2) every two morphisms y
+    → x are isomorphic by a unique 2-morphism.
+  kind: definition
+  location: Section on 2-fibre products
+  name: Definition 4.34
+- description: 'Let C be a (2, 1)-category. Let x, y, z in Ob(C) and f in Mor_C(x,
+    z) and g in Mor_C(y, z). A 2-fibre product of f and g is a final object in the
+    category of 2-commutative diagrams. If it exists, it is denoted x ×_z y with morphisms
+    p and q making the diagram 2-commute, with invertible 2-morphism ψ : f ∘ p → g
+    ∘ q.'
+  kind: definition
+  location: Section on 2-fibre products
+  name: Definition 4.35
+- description: 'In the (2, 1)-category of categories, 2-fibre products exist and are
+    given by the construction where A ×_C B has objects (A, B, f) with f : F(A) →
+    G(B) an isomorphism, and morphisms (a, b) making the appropriate diagram commute.'
+  kind: lemma
+  location: Section on 2-fibre products
+  name: Lemma 4.36
+- description: Let $$\xymatrix{ \mathcal{U} \ar[d] \ar[r] & \mathcal{V} \ar[d] \\
+    \mathcal{X} \ar[r] & \mathcal{Y} }$$ be a $2$-fibre product of categories. Then
+    the diagram $$\xymatrix{ \mathcal{U} \ar[d] \ar[r] & \mathcal{U} \times_\mathcal{V}
+    \mathcal{U} \ar[d] \\ \mathcal{X} \ar[r] & \mathcal{X} \times_\mathcal{Y} \mathcal{X}
+    }$$ is $2$-cartesian.
+  kind: lemma
+  location: Section on 2-fibre products of categories
+  name: Lemma
+- description: 'Let $\mathcal{C}$ be a category. Let $p : \mathcal{S} \to \mathcal{C}$
+    be a category over $\mathcal{C}$. (1) The fibre category over an object $U\in
+    \Ob(\mathcal{C})$ is the category $\mathcal{S}_U$ with objects $\Ob(\mathcal{S}_U)
+    = \{x\in \Ob(\mathcal{S}) : p(x) = U\}$ and morphisms $\Mor_{\mathcal{S}_U}(x,
+    y) = \{ \phi \in \Mor_\mathcal{S}(x, y) : p(\phi) = \text{id}_U\}$. (2) A lift
+    of an object $U \in \Ob(\mathcal{C})$ is an object $x\in \Ob(\mathcal{S})$ such
+    that $p(x) = U$, i.e., $x\in \Ob(\mathcal{S}_U)$. We will also sometime say that
+    $x$ lies over $U$. (3) Similarly, a lift of a morphism $f : V \to U$ in $\mathcal{C}$
+    is a morphism $\phi : y \to x$ in $\mathcal{S}$ such that $p(\phi) = f$. We sometimes
+    say that $\phi$ lies over $f$.'
+  kind: definition
+  location: 'Section: Categories over categories'
+  name: Definition
+- description: 'Let $\mathcal{C}$ be a category. The $2$-category of fibred categories
+    over $\mathcal{C}$ is the sub $2$-category of the $2$-category of categories over
+    $\mathcal{C}$ defined as follows:'
+  kind: definition
+  location: Section on Fibred categories
+  name: Definition
+- description: Let $\mathcal{C}$ be a category. Let $\mathcal{S}_1$, $\mathcal{S}_2$
+    be categories over $\mathcal{C}$. Suppose that $\mathcal{S}_1$ and $\mathcal{S}_2$
+    are equivalent as categories over $\mathcal{C}$. Then $\mathcal{S}_1$ is fibred
+    over $\mathcal{C}$ if and only if $\mathcal{S}_2$ is fibred over $\mathcal{C}$.
+  kind: lemma
+  location: Section on Fibred categories
+  name: Lemma
+- description: 'Let C be a category. Let p : S → C be a category over C. A strongly
+    cartesian morphism, or more precisely a strongly C-cartesian morphism is a morphism
+    φ : y → x of S such that for every z ∈ Ob(S) the map Mor_S(z, y) → Mor_S(z, x)
+    ×_{Mor_C(p(z), p(x))} Mor_C(p(z), p(y)), given by ψ ↦ (φ ∘ ψ, p(ψ)) is bijective.'
+  kind: definition
+  location: Section on fibred categories, Definition definition-cartesian-over-C
+  name: Definition (strongly cartesian morphism)
+- description: 'Let C be a category. Let p : S → C be a category over C. We say S
+    is a fibred category over C if given any x ∈ Ob(S) lying over U ∈ Ob(C) and any
+    morphism f : V → U of C, there exists a strongly cartesian morphism f*x → x lying
+    over f.'
+  kind: definition
+  location: Section on fibred categories, Definition definition-fibred-category
+  name: Definition (fibred category)
+- description: 'Assume p : S → C is a fibred category. (1) A choice of pullbacks for
+    p : S → C is given by a choice of a strongly cartesian morphism f*x → x lying
+    over f for any morphism f : V → U of C and any x ∈ Ob(S_U). (2) Given a choice
+    of pullbacks, for any morphism f : V → U of C the functor f* : S_U → S_V described
+    above is called a pullback functor (associated to the choices f*x → x made above).'
+  kind: definition
+  location: Section on fibred categories, Definition definition-pullback-functor-fibred-category
+  name: Definition (choice of pullbacks, pullback functor)
+- description: 'Let $F : \mathcal{S} \to \mathcal{S}''$ be a $1$-morphism of categories
+    fibred over a category $\mathcal{C}$. Then the diagram with $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}$
+    mapping to $\mathcal{S}''$ via $F \circ (\text{structure map})$ and to $\mathcal{I}_\mathcal{S}$
+    via the comparison map, and $\mathcal{S}''$ mapping to $\mathcal{I}_{\mathcal{S}''}$
+    via the neutral section $e$, and $\mathcal{I}_\mathcal{S}$ mapping to $\mathcal{I}_{\mathcal{S}''}$
+    via the functoriality map, is a $2$-fibre product.'
+  kind: lemma
+  location: Section Inertia
+  name: Lemma
+- description: 'Let $\mathcal{C}$ be a category. Let $U \in \Ob(\mathcal{C})$. If
+    $p : \mathcal{S} \to \mathcal{C}$ is a fibred category and $p$ factors through
+    $p'' : \mathcal{S} \to \mathcal{C}/U$ then $p'' : \mathcal{S} \to \mathcal{C}/U$
+    is a fibred category.'
+  kind: lemma
+  location: 'Section on fibred categories (label: lemma-cute)'
+  name: Lemma (lemma-cute)
+- description: Let $\mathcal{A} \to \mathcal{B} \to \mathcal{C}$ be functors between
+    categories. If $\mathcal{A}$ is fibred over $\mathcal{B}$ and $\mathcal{B}$ is
+    fibred over $\mathcal{C}$, then $\mathcal{A}$ is fibred over $\mathcal{C}$.
+  kind: lemma
+  location: 'Section on fibred categories (label: lemma-fibred-over-fibred)'
+  name: Lemma (lemma-fibred-over-fibred)
+- description: 'Let $p : \mathcal{S} \to \mathcal{C}$ be a fibred category. Let $x
+    \to y$ and $z \to y$ be morphisms of $\mathcal{S}$ with $x \to y$ strongly cartesian.
+    If $p(x) \times_{p(y)} p(z)$ exists, then $x \times_y z$ exists, $p(x \times_y
+    z) = p(x) \times_{p(y)} p(z)$, and $x \times_y z \to z$ is strongly cartesian.'
+  kind: lemma
+  location: 'Section on fibred categories (label: lemma-fibred-category-representable-goes-up)'
+  name: Lemma (lemma-fibred-category-representable-goes-up)
+- description: 'Let $\mathcal{C}$ be a category. Let $F : \mathcal{X} \to \mathcal{Y}$
+    be a $1$-morphism of fibred categories over $\mathcal{C}$. There exist $1$-morphisms
+    of fibred categories over $\mathcal{C}$ $u : \mathcal{X} \to \mathcal{X}''$, $v
+    : \mathcal{X}'' \to \mathcal{Y}$, $w : \mathcal{X}'' \to \mathcal{X}$ such that
+    $F = v \circ u$ and such that (1) $u : \mathcal{X} \to \mathcal{X}''$ is fully
+    faithful, (2) $w$ is left adjoint to $u$, and (3) $v : \mathcal{X}'' \to \mathcal{Y}$
+    is a fibred category.'
+  kind: lemma
+  location: 'Section on fibred categories (label: lemma-ameliorate-morphism-fibred-categories)'
+  name: Lemma (lemma-ameliorate-morphism-fibred-categories)
+- description: 'Let $\mathcal{C}$ be a category. Let $p : \mathcal{S} \to \mathcal{C}$
+    and $p'' : \mathcal{S}'' \to \mathcal{C}$ be fibred categories. Let $F : \mathcal{S}
+    \to \mathcal{S}''$ be a $1$-morphism of fibred categories over $\mathcal{C}$.
+    Consider the category $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}$ over $\mathcal{C}$
+    whose (1) objects are pairs $(x, \alpha)$ where $x \in \Ob(\mathcal{S})$ and $\alpha
+    : x \to x$ is an automorphism with $F(\alpha) = \text{id}$, (2) morphisms $(x,
+    \alpha) \to (y, \beta)$ are given by morphisms $\phi : x \to y$ such that $\phi
+    \circ \alpha = \beta \circ \phi$, and (3) the functor $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}
+    \to \mathcal{C}$ is given by $(x, \alpha) \mapsto p(x)$. Then (1) there is an
+    equivalence $\mathcal{I}_{\mathcal{S}/\mathcal{S}''} \longrightarrow \mathcal{S}
+    \times_{\Delta, (\mathcal{S} \times_{\mathcal{S}''} \mathcal{S}), \Delta} \mathcal{S}$
+    in the $(2, 1)$-category of categories over $\mathcal{C}$, and (2) $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}$
+    is a fibred category over $\mathcal{C}$.'
+  kind: lemma
+  location: 'Section Inertia (label: lemma-inertia-fibred-category)'
+  name: Lemma (lemma-inertia-fibred-category)
+- description: 'Let $\mathcal{C}$ be a category. (1) Let $F : \mathcal{S} \to \mathcal{S}''$
+    be a $1$-morphism of fibred categories over $\mathcal{C}$. The relative inertia
+    of $\mathcal{S}$ over $\mathcal{S}''$ is the fibred category $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}
+    \to \mathcal{C}$ of Lemma (lemma-inertia-fibred-category). (2) By the inertia
+    fibred category $\mathcal{I}_\mathcal{S}$ of $\mathcal{S}$ we mean $\mathcal{I}_\mathcal{S}
+    = \mathcal{I}_{\mathcal{S}/\mathcal{C}}$.'
+  kind: definition
+  location: 'Section Inertia (label: definition-inertia-fibred-category)'
+  name: Definition (definition-inertia-fibred-category)
+- description: 'Let $F : \mathcal{S} \to \mathcal{S}''$ be a $1$-morphism of categories
+    fibred over a category $\mathcal{C}$. Then the diagram with $\mathcal{I}_{\mathcal{S}/\mathcal{S}''}$
+    mapping to $\mathcal{S}''$ via $F$ composed with the structure map and to $\mathcal{I}_\mathcal{S}$
+    via the comparison map, and $\mathcal{S}''$ mapping to $\mathcal{I}_{\mathcal{S}''}$
+    via the neutral section $e$, and $\mathcal{I}_\mathcal{S}$ mapping to $\mathcal{I}_{\mathcal{S}''}$
+    via the functoriality map, is a $2$-fibre product.'
+  kind: lemma
+  location: 'Section Inertia (label: lemma-relative-inertia-as-fibre-product)'
+  name: Lemma (lemma-relative-inertia-as-fibre-product)
+- description: 'Let $p : \mathcal{S} \to \mathcal{C}$ be a functor. (Definition of
+    categories fibred in groupoids; the text is cut off in the chunk but the labeled
+    definition environment begins here.)'
+  kind: definition
+  location: 'Section Categories fibred in groupoids (label: definition-fibred-groupoids)'
+  name: Definition (definition-fibred-groupoids)
+- description: 'Let $\mathcal{C}$ be a category. If $p : \mathcal{S} \to \mathcal{C}$
+    is fibred in groupoids, then so is the inertia fibred category $\mathcal{I}_\mathcal{S}
+    \to \mathcal{C}$.'
+  kind: lemma
+  location: 'Section: Categories fibred in groupoids'
+  name: Lemma
+- description: 'Let $\mathcal{C}$ be a category. The $2$-category of categories fibred
+    in groupoids over $\mathcal{C}$ is the sub $2$-category of the $2$-category of
+    fibred categories over $\mathcal{C}$ defined as follows:
+
+    (1) Its objects will be categories $p : \mathcal{S} \to \mathcal{C}$ fibred in
+    groupoids.
+
+    (2) Its $1$-morphisms $(\mathcal{S}, p) \to (\mathcal{S}'', p'')$ will be functors
+    $G : \mathcal{S} \to \mathcal{S}''$ such that $p'' \circ G = p$ (since every morphism
+    is strongly cartesian $G$ automatically preserves them).
+
+    (3) Its $2$-morphisms $t : G \to H$ for $G, H : (\mathcal{S}, p) \to (\mathcal{S}'',
+    p'')$ will be morphisms of functors such that $p''(t_x) = \text{id}_{p(x)}$ for
+    all $x \in \Ob(\mathcal{S})$.'
+  kind: definition
+  location: 'Section: Categories fibred in groupoids'
+  name: Definition
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{S}_i$, $i = 1, 2, 3,
+    4$ be categories fibred in groupoids over $\mathcal{C}$. Suppose that $\varphi
+    : \mathcal{S}_1 \to \mathcal{S}_2$ and $\psi : \mathcal{S}_3 \to \mathcal{S}_4$
+    are equivalences over $\mathcal{C}$. Then $\Mor_{\textit{Cat}/\mathcal{C}}(\mathcal{S}_2,
+    \mathcal{S}_3) \longrightarrow \Mor_{\textit{Cat}/\mathcal{C}}(\mathcal{S}_1,
+    \mathcal{S}_4), \quad \alpha \longmapsto \psi \circ \alpha \circ \varphi$ is an
+    equivalence of categories.'
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-morphisms-equivalent-fibred-groupoids
+- description: 'Let $\mathcal{C}$ be a category. Let $U \in \Ob(\mathcal{C})$. If
+    $p : \mathcal{S} \to \mathcal{C}$ is a category fibred in groupoids and $p$ factors
+    through $p'' : \mathcal{S} \to \mathcal{C}/U$ then $p'' : \mathcal{S} \to \mathcal{C}/U$
+    is fibred in groupoids.'
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-cute-groupoids
+- description: Let $\mathcal{A} \to \mathcal{B} \to \mathcal{C}$ be functors between
+    categories. If $\mathcal{A}$ is fibred in groupoids over $\mathcal{B}$ and $\mathcal{B}$
+    is fibred in groupoids over $\mathcal{C}$, then $\mathcal{A}$ is fibred in groupoids
+    over $\mathcal{C}$.
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-fibred-in-groupoids-over-fibred-in-groupoids
+- description: 'Let $p : \mathcal{S} \to \mathcal{C}$ be a category fibred in groupoids.
+    Let $x \to y$ and $z \to y$ be morphisms of $\mathcal{S}$. If $p(x) \times_{p(y)}
+    p(z)$ exists, then $x \times_y z$ exists and $p(x \times_y z) = p(x) \times_{p(y)}
+    p(z)$.'
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-fibred-groupoids-fibre-product-goes-up
+- description: 'Let $\mathcal{C}$ be a category. Let $F : \mathcal{X} \to \mathcal{Y}$
+    be a $1$-morphism of categories fibred in groupoids over $\mathcal{C}$. There
+    exists a factorization $\mathcal{X} \to \mathcal{X}'' \to \mathcal{Y}$ by $1$-morphisms
+    of categories fibred in groupoids over $\mathcal{C}$ such that $\mathcal{X} \to
+    \mathcal{X}''$ is an equivalence over $\mathcal{C}$ and such that $\mathcal{X}''$
+    is a category fibred in groupoids over $\mathcal{Y}$.'
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-ameliorate-morphism-categories-fibred-groupoids
+- description: 'Let $\mathcal{C}$ be a category. Let $F : \mathcal{X} \to \mathcal{Y}$
+    be a $1$-morphism of categories fibred in groupoids over $\mathcal{C}$. Assume
+    we have a $2$-commutative diagram with $\mathcal{X}'' \leftarrow \mathcal{X} \rightarrow
+    \mathcal{X}''''$ over $\mathcal{Y}$ where $a$ and $b$ are equivalences of categories
+    over $\mathcal{C}$ and $f$ and $g$ are categories fibred in groupoids. Then there
+    exists an equivalence $h : \mathcal{X}'''' \to \mathcal{X}''$ of categories over
+    $\mathcal{Y}$ such that $h \circ b$ is $2$-isomorphic to $a$ as $1$-morphisms
+    of categories over $\mathcal{C}$. If the diagram above actually commutes, then
+    we can arrange it so that $h \circ b$ is $2$-isomorphic to $a$ as $1$-morphisms
+    of categories over $\mathcal{Y}$.'
+  kind: lemma
+  location: Section on fibred groupoids
+  name: Lemma lemma-amelioration-unique
+- description: 'Let $\mathcal{C}$ be a category. Suppose that $F : \mathcal{C}^{opp}
+    \to \textit{Cat}$ is a functor to the $2$-category of categories. We will write
+    $p_F : \mathcal{S}_F \to \mathcal{C}$ for the fibred category constructed in Example
+    example-functor-categories. A split fibred category is a fibred category isomorphic
+    (!) over $\mathcal{C}$ to one of these categories $\mathcal{S}_F$.'
+  kind: definition
+  location: Section Presheaves of categories
+  name: Definition definition-split-fibred-category
+- description: Let $\mathcal{C}$ be a category. Let $\mathcal{S}$ be a fibred category
+    over $\mathcal{C}$. Then $\mathcal{S}$ is split if and only if for some choice
+    of pullbacks the pullback functors $(f \circ g)^*$ and $g^* \circ f^*$ are equal.
+  kind: lemma
+  location: Section Presheaves of categories
+  name: Lemma lemma-when-split
+- description: 'Let $p : \mathcal{S} \to \mathcal{C}$ be a fibred category. There
+    exists a contravariant functor $F : \mathcal{C} \to \textit{Cat}$ such that $\mathcal{S}$
+    is equivalent to $\mathcal{S}_F$ in the $2$-category of fibred categories over
+    $\mathcal{C}$. In other words, every fibred category is equivalent to a split
+    one.'
+  kind: lemma
+  location: Section Presheaves of categories
+  name: Lemma lemma-fibred-strict
+- description: 'Let $\mathcal{C}$ be a category. Suppose that $F : \mathcal{C}^{opp}
+    \to \textit{Groupoids}$ is a functor to the $2$-category of groupoids. We will
+    write $p_F : \mathcal{S}_F \to \mathcal{C}$ for the category fibred in groupoids
+    constructed in Example (functor groupoids). A *split category fibred in groupoids*
+    is a category fibred in groupoids isomorphic (!) over $\mathcal{C}$ to one of
+    these categories $\mathcal{S}_F$.'
+  kind: definition
+  location: Section on Categories fibred in groupoids
+  name: Definition (split category fibred in groupoids)
+- description: 'Let $\mathcal{C}$ be a category. The construction of Lemma (setoid-fibres)
+    part (2) gives a functor $F$ from the 2-category of categories fibred in setoids
+    over $\mathcal{C}$ to the category of categories fibred in sets over $\mathcal{C}$.
+    This functor is an equivalence in the following sense: (1) for any two 1-morphisms
+    $f, g : \mathcal{S}_1 \to \mathcal{S}_2$ with $F(f) = F(g)$ there exists a unique
+    2-isomorphism $f \to g$, (2) for any morphism $h : F(\mathcal{S}_1) \to F(\mathcal{S}_2)$
+    there exists a 1-morphism $f : \mathcal{S}_1 \to \mathcal{S}_2$ with $F(f) = h$,
+    and (3) any category fibred in sets $\mathcal{S}$ is equal to $F(\mathcal{S})$.
+    In particular, defining $F_i \in \textit{PSh}(\mathcal{C})$ by the rule $F_i(U)
+    = \Ob(\mathcal{S}_{i, U})/\cong$, we have $\Mor_{\textit{Cat}/\mathcal{C}}(\mathcal{S}_1,
+    \mathcal{S}_2) / 2\text{-isomorphism} = \Mor_{\textit{PSh}(\mathcal{C})}(F_1,
+    F_2)$. More precisely, given any map $\phi : F_1 \to F_2$ there exists a $1$-morphism
+    $f : \mathcal{S}_1 \to \mathcal{S}_2$ which induces $\phi$ on isomorphism classes
+    of objects and which is unique up to unique $2$-isomorphism.'
+  kind: lemma
+  location: 'Section: Categories fibred in setoids'
+  name: Lemma (2-category-fibred-setoids)
+- description: 'Let $p : \mathcal{S} \to \mathcal{C}$ be a category fibred in groupoids.
+    There exists a contravariant functor $F : \mathcal{C} \to \textit{Groupoids}$
+    such that $\mathcal{S}$ is equivalent to $\mathcal{S}_F$ over $\mathcal{C}$. In
+    other words, every category fibred in groupoids is equivalent to a split one.'
+  kind: lemma
+  location: Section on categories fibred in groupoids
+  name: Lemma (fibred-groupoids-strict)
+- description: A category is called discrete if the only morphisms are the identity
+    morphisms.
+  kind: definition
+  location: 'Section: Categories fibred in sets'
+  name: Definition (discrete)
+- description: Let $\mathcal{C}$ be a category. A category fibred in sets, or a category
+    fibred in discrete categories is a category fibred in groupoids all of whose fibre
+    categories are discrete.
+  kind: definition
+  location: 'Section: Categories fibred in sets'
+  name: Definition (category-fibred-sets)
+- description: 'Let $\mathcal{C}$ be a category. The $2$-category of categories fibred
+    in sets over $\mathcal{C}$ is the sub $2$-category of the category of categories
+    fibred in groupoids over $\mathcal{C}$ defined as follows: (1) Its objects will
+    be categories $p : \mathcal{S} \to \mathcal{C}$ fibred in sets. (2) Its $1$-morphisms
+    $(\mathcal{S}, p) \to (\mathcal{S}'', p'')$ will be functors $G : \mathcal{S}
+    \to \mathcal{S}''$ such that $p'' \circ G = p$. (3) Its $2$-morphisms $t : G \to
+    H$ will be morphisms of functors such that $p''(t_x) = \text{id}_{p(x)}$ for all
+    $x \in \Ob(\mathcal{S})$.'
+  kind: definition
+  location: 'Section: Categories fibred in sets'
+  name: Definition (categories-fibred-in-sets-over-C)
+- description: 'Let us call a category a setoid if it is a groupoid where every object
+    has exactly one automorphism: the identity.'
+  kind: definition
+  location: 'Section: Categories fibred in setoids'
+  name: Definition (setoid)
+- description: Let $\mathcal{C}$ be a category. A category fibred in setoids is a
+    category fibred in groupoids all of whose fibre categories are setoids.
+  kind: definition
+  location: 'Section: Categories fibred in setoids'
+  name: Definition (category-fibred-setoids)
+- description: 'Let $\mathcal{C}$ be a category. The $2$-category of categories fibred
+    in setoids over $\mathcal{C}$ is the sub $2$-category of the category of categories
+    fibred in groupoids over $\mathcal{C}$ defined as follows: (1) Its objects will
+    be categories $p : \mathcal{S} \to \mathcal{C}$ fibred in setoids. (2) Its $1$-morphisms
+    $(\mathcal{S}, p) \to (\mathcal{S}'', p'')$ will be functors $G : \mathcal{S}
+    \to \mathcal{S}''$ such that $p'' \circ G = p$. (3) Its $2$-morphisms $t : G \to
+    H$ will be morphisms of functors such that $p''(t_x) = \text{id}_{p(x)}$ for all
+    $x \in \Ob(\mathcal{S})$.'
+  kind: definition
+  location: 'Section: Categories fibred in setoids'
+  name: Definition (categories-fibred-in-setoids-over-C)
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{S}$ be a category over
+    $\mathcal{C}$. (1) If $\mathcal{S} \to \mathcal{S}''$ is an equivalence over $\mathcal{C}$
+    with $\mathcal{S}''$ fibred in sets over $\mathcal{C}$, then (a) $\mathcal{S}$
+    is fibred in setoids over $\mathcal{C}$, and (b) for each $U \in \Ob(\mathcal{C})$
+    the map $\Ob(\mathcal{S}_U) \to \Ob(\mathcal{S}''_U)$ identifies the target as
+    the set of isomorphism classes of the source. (2) If $p : \mathcal{S} \to \mathcal{C}$
+    is a category fibred in setoids, then there exists a category fibred in sets $p''
+    : \mathcal{S}'' \to \mathcal{C}$ and an equivalence $\text{can} : \mathcal{S}
+    \to \mathcal{S}''$ over $\mathcal{C}$.'
+  kind: lemma
+  location: 'Section: Categories fibred in setoids'
+  name: Lemma (setoid-fibres)
+- description: Let $\mathcal{S}\to \mathcal{C}$ be fibred in groupoids. Let $U \in
+    \Ob(\mathcal{C})$. The functor $$\Mor_{\textit{Cat}/\mathcal{C}}(\mathcal{C}/U,
+    \mathcal{S}) \longrightarrow \mathcal{S}_U$$ given by $G \mapsto G(\text{id}_U)$
+    is an equivalence.
+  kind: lemma
+  location: 'Section: The 2-Yoneda lemma'
+  name: Lemma (2-Yoneda lemma)
+- description: 'Let $\mathcal{C}$ be a category. Let $p : \mathcal{S} \to \mathcal{C}$
+    be a category fibred in groupoids. The following are equivalent: (1) $p : \mathcal{S}
+    \to \mathcal{C}$ is a category fibred in setoids, and (2) the canonical $1$-morphism
+    $\mathcal{I}_\mathcal{S} \to \mathcal{S}$ is an equivalence (of categories over
+    $\mathcal{C}$).'
+  kind: lemma
+  location: Section on categories fibred in setoids
+  name: Lemma (characterize-fibred-setoids-inertia)
+- description: Let $\mathcal{C}$ be a category. The construction which associates
+    to a category fibred in setoids a presheaf is compatible with products, in the
+    sense that the presheaf associated to a $2$-fibre product $\mathcal{X} \times_\mathcal{Y}
+    \mathcal{Z}$ is the fibre product of the presheaves associated to $\mathcal{X},
+    \mathcal{Y}, \mathcal{Z}$.
+  kind: lemma
+  location: Section on categories fibred in setoids
+  name: Lemma (category-fibred-setoids-presheaves-products)
+- description: 'Let $\mathcal{C}$ be a category. A category fibred in groupoids $p
+    : \mathcal{S} \to \mathcal{C}$ is called representable if there exist an object
+    $X$ of $\mathcal{C}$ and an equivalence $j : \mathcal{S} \to \mathcal{C}/X$ (in
+    the $2$-category of groupoids over $\mathcal{C}$).'
+  kind: definition
+  location: 'Section: Representable categories fibred in groupoids'
+  name: Definition (definition-representable-fibred-category)
+- description: 'Let $\mathcal{C}$ be a category. Let $p : \mathcal{S} \to \mathcal{C}$
+    be a category fibred in groupoids. (1) $\mathcal{S}$ is representable if and only
+    if the following conditions are satisfied: (a) $\mathcal{S}$ is fibred in setoids,
+    and (b) the presheaf $U \mapsto \Ob(\mathcal{S}_U)/\cong$ is representable. (2)
+    If $\mathcal{S}$ is representable the pair $(X, j)$, where $j$ is the equivalence
+    $j : \mathcal{S} \to \mathcal{C}/X$, is uniquely determined up to isomorphism.'
+  kind: lemma
+  location: 'Section: Representable categories fibred in groupoids'
+  name: Lemma (characterize-representable-fibred-category)
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{X}$, $\mathcal{Y}$
+    be categories fibred in groupoids over $\mathcal{C}$. Assume that $\mathcal{X}$,
+    $\mathcal{Y}$ are representable by objects $X$, $Y$ of $\mathcal{C}$. Then $\Mor_{\textit{Cat}/\mathcal{C}}(\mathcal{X},
+    \mathcal{Y}) / 2\text{-isomorphism} = \Mor_\mathcal{C}(X, Y)$. More precisely,
+    given $\phi : X \to Y$ there exists a $1$-morphism $f : \mathcal{X} \to \mathcal{Y}$
+    which induces $\phi$ on isomorphism classes of objects and which is unique up
+    to unique $2$-isomorphism.'
+  kind: lemma
+  location: 'Section: Representable categories fibred in groupoids'
+  name: Lemma (morphisms-representable-fibred-categories)
+- description: 'In the situation above the fibre category of $(\mathcal{C}/U) \times_\mathcal{Y}
+    \mathcal{X}$ over an object $f : V \to U$ of $\mathcal{C}/U$ is the category described
+    as follows: (1) objects are pairs $(x, \phi)$, where $x \in \Ob(\mathcal{X}_V)$,
+    and $\phi : f^*y \to F(x)$ is a morphism in $\mathcal{Y}_V$, (2) the set of morphisms
+    between $(x, \phi)$ and $(x'', \phi'')$ is the set of morphisms $\psi : x \to
+    x''$ in $\mathcal{X}_V$ such that $F(\psi) = \phi'' \circ \phi^{-1}$.'
+  kind: lemma
+  location: 'Section: Representable 1-morphisms'
+  name: Lemma (identify-fibre-product)
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{X}$, $\mathcal{Y}$
+    be categories fibred in groupoids over $\mathcal{C}$. Let $F : \mathcal{X} \to
+    \mathcal{Y}$ be a $1$-morphism. Let $G : \mathcal{C}/U \to \mathcal{Y}$ be a $1$-morphism.
+    Then $(\mathcal{C}/U) \times_\mathcal{Y} \mathcal{X} \longrightarrow \mathcal{C}/U$
+    is a category fibred in groupoids.'
+  kind: lemma
+  location: 'Section: Representable 1-morphisms'
+  name: Lemma (prepare-representable-map-stack-in-groupoids)
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{X}$, $\mathcal{Y}$
+    be categories fibred in groupoids over $\mathcal{C}$. Let $F : \mathcal{X} \to
+    \mathcal{Y}$ be a $1$-morphism. We say $F$ is representable, or that $\mathcal{X}$
+    is relatively representable over $\mathcal{Y}$, if for every $U \in \Ob(\mathcal{C})$
+    and any $G : \mathcal{C}/U \to \mathcal{Y}$ the category fibred in groupoids $(\mathcal{C}/U)
+    \times_\mathcal{Y} \mathcal{X} \longrightarrow \mathcal{C}/U$ is representable.'
+  kind: definition
+  location: 'Section: Representable 1-morphisms'
+  name: Definition (definition-representable-map-categories-fibred-in-groupoids)
+- description: 'Let $\mathcal{C}$ be a category. Let $\mathcal{X}$, $\mathcal{Y}$
+    be categories fibred in groupoids over $\mathcal{C}$. Let $F : \mathcal{X} \to
+    \mathcal{Y}$ be a $1$-morphism. If $F$ is representable then every one of the
+    functors $F_U : \mathcal{X}_U \longrightarrow \mathcal{Y}_U$ between fibre categories
+    is faithful.'
+  kind: lemma
+  location: 'Section: Representable 1-morphisms'
+  name: Lemma (spell-out-representable-map-stack-in-groupoids)
+- description: 'Given a monoidal category $(\mathcal{C}, \otimes, \phi)$ and an object
+    $X$ a left dual is an object $Y$ together with morphisms $\eta : \mathbf{1} \to
+    X \otimes Y$ and $\epsilon : Y \otimes X \to \mathbf{1}$ such that the diagrams
+    $X \xrightarrow{\eta \otimes 1} X \otimes Y \otimes X \xrightarrow{1 \otimes \epsilon}
+    X$ and $Y \xrightarrow{1 \otimes \eta} Y \otimes X \otimes Y \xrightarrow{\epsilon
+    \otimes 1} Y$ commute (both composing to the identity). In this situation we say
+    that $X$ is a right dual of $Y$.'
+  kind: definition
+  location: 'Section: Monoidal categories'
+  name: Definition
+- description: Let $\mathcal{C}$ be a monoidal category. If $Y_i$, $i = 1, 2$ are
+    left duals of $X_i$, $i = 1, 2$, then $Y_2 \otimes Y_1$ is a left dual of $X_1
+    \otimes X_2$.
+  kind: lemma
+  location: 'Section: Monoidal categories'
+  name: Lemma
+- description: 'Let $X$ be a topological space. The following are equivalent: (1)
+    $X$ is Hausdorff, (2) the diagonal $\Delta(X) \subset X \times X$ is closed.'
+  kind: lemma
+  location: Section on Hausdorff spaces
+  name: Lemma
+- description: 'Let $\mathcal{C}$ be a $(2,1)$-category. Consider a $2$-commutative
+    solid diagram $$\xymatrix{ S \ar[r]_-x \ar[d]_j & X \ar[d]^f \\ T \ar[r]^-y \ar@{..>}[ru]
+    & Y }$$ in $\mathcal{C}$. Fix a $2$-isomorphism $\gamma : y \circ j \rightarrow
+    f \circ x$ witnessing the $2$-commutativity of the diagram. A \emph{dotted arrow}
+    is a triple $(a, \alpha, \beta)$ consisting of a morphism $a \colon T \to X$ and
+    $2$-isomorphisms $\alpha : a \circ j \to x$, $\beta : y \to f \circ a$ such that
+    $\gamma = (\text{id}_f \star \alpha) \circ (\beta \star \text{id}_j)$. A \emph{morphism
+    of dotted arrows} $(a, \alpha, \beta) \to (a'', \alpha'', \beta'')$ is a $2$-arrow
+    $\theta : a \to a''$ such that $\alpha = \alpha'' \circ (\theta \star \text{id}_j)$
+    and $\beta'' = (\text{id}_f \star \theta) \circ \beta$.'
+  kind: definition
+  location: Section on Categories of dotted arrows
+  name: Definition
+- description: 'Let $f : X \to Y$ be surjective, closed, continuous map of topological
+    spaces. Let $T \subset Y$ be a subset. Then (1) $\overline{T} = f(\overline{f^{-1}(T)})$,
+    (2) $T \subset Y$ is closed if and only if $f^{-1}(T)$ is closed, (3) $T \subset
+    Y$ is open if and only if $f^{-1}(T)$ is open, and (4) $T \subset Y$ is locally
+    closed if and only if $f^{-1}(T)$ is locally closed. In particular $f$ is submersive.'
+  kind: lemma
+  location: Section Submersive maps
+  name: Lemma
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. (1) We
+    say $f$ is a strict map of topological spaces if the induced topology and the
+    quotient topology on $f(X)$ agree. (2) We say $f$ is submersive if $f$ is surjective
+    and strict.'
+  kind: definition
+  location: Section Submersive maps
+  name: Definition
+- description: Let $X$ be a topological space and let $(X_i)_{i\in I}$ be a covering
+    of $X$. (1) Suppose $X_i$ is locally closed in $X$ for every $i\in I$. Then, $X$
+    is Kolmogorov if and only if $X_i$ is Kolmogorov for every $i\in I$. (2) Suppose
+    $X_i$ is open in $X$ for every $i\in I$. Then, $X$ is quasi-sober if and only
+    if $X_i$ is quasi-sober for every $i\in I$. (3) Suppose $X_i$ is open in $X$ for
+    every $i\in I$. Then, $X$ is sober if and only if $X_i$ is sober for every $i\in
+    I$.
+  kind: lemma
+  location: Section on Irreducible components
+  name: Lemma
+- description: Let $X$ be a topological space. (1) Let $Z \subset X$ be an irreducible
+    closed subset. A generic point of $Z$ is a point $\xi \in Z$ such that $Z = \overline{\{\xi\}}$.
+    (2) The space $X$ is called Kolmogorov, if for every $x, x' \in X$, $x \not =
+    x'$ there exists a closed subset of $X$ which contains exactly one of the two
+    points. (3) The space $X$ is called quasi-sober if every irreducible closed subset
+    has a generic point. (4) The space $X$ is called sober if every irreducible closed
+    subset has a unique generic point.
+  kind: definition
+  location: Section on Irreducible components
+  name: Definition
+- description: Let $X$ be a topological space. Then $\dim(X) = \sup \dim_x(X)$ where
+    the supremum runs over the points $x$ of $X$.
+  kind: lemma
+  location: Section Krull dimension, labeled lemma-dimension-supremum-local-dimensions
+  name: Lemma
+- description: Let $X$ be a topological space. Let $Y \subset X$ be an irreducible
+    closed subset. The codimension of $Y$ in $X$ is the supremum of the lengths $e$
+    of chains $Y = Y_0 \subset Y_1 \subset \ldots \subset Y_e \subset X$ of irreducible
+    closed subsets in $X$ starting with $Y$. We will denote this $\text{codim}(Y,
+    X)$.
+  kind: definition
+  location: Section Codimension and catenary spaces
+  name: Definition
+- description: 'Quasi-compactness. (1) We say that a topological space $X$ is *quasi-compact*
+    if every open covering of $X$ has a finite subcover. (2) We say that a continuous
+    map $f : X \to Y$ is *quasi-compact* if the inverse image $f^{-1}(V)$ of every
+    quasi-compact open $V \subset Y$ is quasi-compact. (3) We say a subset $Z \subset
+    X$ is *retrocompact* if the inclusion map $Z \to X$ is quasi-compact.'
+  kind: definition
+  location: 'Section: Quasi-compact spaces and maps'
+  name: Definition
+- description: Let $X$ be a Noetherian topological space. (1) The space $X$ is quasi-compact.
+    (2) Any subset of $X$ is retrocompact.
+  kind: lemma
+  location: 'Section: Quasi-compact spaces and maps'
+  name: Lemma
+- description: 'Let I be a cofiltered category. Let i ↦ X_i be a diagram of topological
+    spaces over I. Let X = lim X_i be the limit with projection maps f_i : X → X_i.
+    (1) Any open of X is of the form ⋃_{j ∈ J} f_j^{-1}(U_j) for some subset J ⊂ I
+    and opens U_j ⊂ X_j. (2) Any quasi-compact open of X is of the form f_i^{-1}(U_i)
+    for some i and some U_i ⊂ X_i open.'
+  kind: lemma
+  location: 'Section: Limits of spaces'
+  name: Lemma
+- description: Let X be a topological space. Let B be a subbase for X. If every covering
+    of X by elements of B has a finite refinement, then X is quasi-compact.
+  kind: lemma
+  location: Section on Noetherian spaces (before Section on locally quasi-compact
+    spaces)
+  name: Lemma (Alexander subbase theorem)
+- description: A topological space X is called locally quasi-compact if every point
+    has a fundamental system of quasi-compact neighbourhoods.
+  kind: definition
+  location: 'Section: Locally quasi-compact spaces'
+  name: Definition
+- description: Let X be a locally quasi-compact Hausdorff space. Let U_n ⊂ X, n ≥
+    1 be dense open subsets. Then ⋂_{n ≥ 1} U_n is dense in X.
+  kind: lemma
+  location: 'Section: Locally quasi-compact spaces'
+  name: Lemma (Baire category theorem)
+- description: The category of topological spaces has limits and the forgetful functor
+    to sets commutes with them.
+  kind: lemma
+  location: Section on limits of topological spaces (before Section on constructible
+    sets)
+  name: Lemma lemma-limits
+- description: Let $\mathcal{I}$ be a cofiltered category. Let $i \mapsto X_i$ be
+    a diagram of topological spaces over $\mathcal{I}$. Let $X$ be a topological space
+    such that (1) $X = \lim X_i$ as a set (denote $f_i$ the projection maps), (2)
+    the sets $f_i^{-1}(U_i)$ for $i \in \Ob(\mathcal{I})$ and $U_i \subset X_i$ open
+    form a basis for the topology of $X$. Then $X$ is the limit of the $X_i$ as a
+    topological space.
+  kind: lemma
+  location: Section on limits of topological spaces
+  name: Lemma lemma-characterize-limit
+- description: A product of quasi-compact spaces is quasi-compact.
+  kind: theorem
+  location: Section on limits of topological spaces
+  name: Theorem theorem-tychonov (Tychonov)
+- description: Let $\mathcal{I}$ be a category and let $i \mapsto X_i$ be a diagram
+    over $\mathcal{I}$ in the category of topological spaces. If each $X_i$ is quasi-compact
+    and Hausdorff, then $\lim X_i$ is quasi-compact.
+  kind: lemma
+  location: Section on limits of topological spaces
+  name: Lemma lemma-inverse-limit-quasi-compact
+- description: Let $\mathcal{I}$ be a cofiltered category and let $i \mapsto X_i$
+    be a diagram over $\mathcal{I}$ in the category of topological spaces. If each
+    $X_i$ is quasi-compact, Hausdorff, and nonempty, then $\lim X_i$ is nonempty.
+  kind: lemma
+  location: Section on limits of topological spaces
+  name: Lemma lemma-nonempty-limit
+- description: Let $X$ be a topological space. Let $E \subset X$ be a subset of $X$.
+    (1) We say $E$ is constructible in $X$ if $E$ is a finite union of subsets of
+    the form $U \cap V^c$ where $U, V \subset X$ are open and retrocompact in $X$.
+    (2) We say $E$ is locally constructible in $X$ if there exists an open covering
+    $X = \bigcup V_i$ such that each $E \cap V_i$ is constructible in $V_i$.
+  kind: definition
+  location: Section Constructible sets
+  name: Definition definition-constructible
+- description: The collection of constructible sets is closed under finite intersections,
+    finite unions and complements.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-constructible
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. If the
+    inverse image of every retrocompact open subset of $Y$ is retrocompact in $X$,
+    then inverse images of constructible sets are constructible.'
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-inverse-images-constructibles
+- description: Let $U \subset X$ be open. For a constructible set $E \subset X$ the
+    intersection $E \cap U$ is constructible in $U$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-open-immersion-constructible-inverse-image
+- description: Let $U \subset X$ be a retrocompact open. Let $E \subset U$. If $E$
+    is constructible in $U$, then $E$ is constructible in $X$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-quasi-compact-open-immersion-constructible-image
+- description: Let $X$ be a topological space. Let $E \subset X$ be a subset. Let
+    $X = V_1 \cup \ldots \cup V_m$ be a finite covering by retrocompact opens. Then
+    $E$ is constructible in $X$ if and only if $E \cap V_j$ is constructible in $V_j$
+    for each $j = 1, \ldots, m$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-collate-constructible
+- description: Let $X$ be a topological space. Let $Z \subset X$ be a closed subset
+    such that $X \setminus Z$ is quasi-compact. Then for a constructible set $E \subset
+    X$ the intersection $E \cap Z$ is constructible in $Z$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-intersect-constructible-with-closed
+- description: Let $X$ be a topological space. Let $T \subset X$ be a subset. Suppose
+    (1) $T$ is retrocompact in $X$, (2) quasi-compact opens form a basis for the topology
+    on $X$. Then for a constructible set $E \subset X$ the intersection $E \cap T$
+    is constructible in $T$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-intersect-constructible-with-retrocompact
+- description: Let $Z \subset X$ be a closed subset whose complement is retrocompact
+    open. Let $E \subset Z$. If $E$ is constructible in $Z$, then $E$ is constructible
+    in $X$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-closed-constructible-image
+- description: Let $X$ be a topological space. Every constructible subset of $X$ is
+    retrocompact.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-constructible-is-retrocompact
+- description: Let $X$ be a topological space. Assume $X$ has a basis consisting of
+    quasi-compact opens. For $E, E'$ constructible in $X$, the intersection $E \cap
+    E'$ is constructible in $E$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-intersect-constructible-with-constructible
+- description: Let $X$ be a topological space. Assume $X$ has a basis consisting of
+    quasi-compact opens. Let $E$ be constructible in $X$ and $F \subset E$ constructible
+    in $E$. Then $F$ is constructible in $X$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-constructible-in-constructible
+- description: Let $X$ be a quasi-compact topological space having a basis consisting
+    of quasi-compact opens such that the intersection of any two quasi-compact opens
+    is quasi-compact. Let $T \subset X$ be a locally closed subset such that $T$ is
+    quasi-compact and $T^c$ is retrocompact in $X$. Then $T$ is constructible in $X$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-locally-closed-constructible-image
+- description: Let $X$ be a topological space which has a basis for the topology consisting
+    of quasi-compact opens. Let $E \subset X$ be a subset. Let $X = E_1 \cup \ldots
+    \cup E_m$ be a finite covering by constructible subsets. Then $E$ is constructible
+    in $X$ if and only if $E \cap E_j$ is constructible in $E_j$ for each $j = 1,
+    \ldots, m$.
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-collate-constructible-from-constructible
+- description: 'Let $X$ be a topological space. Suppose that $Z \subset X$ is irreducible.
+    Let $E \subset X$ be a finite union of locally closed subsets (e.g. $E$ is constructible).
+    The following are equivalent: (1) The intersection $E \cap Z$ contains an open
+    dense subset of $Z$. (2) The intersection $E \cap Z$ is dense in $Z$. If $Z$ has
+    a generic point $\xi$, then this is also equivalent to (3) We have $\xi \in E$.'
+  kind: lemma
+  location: Section Constructible sets
+  name: Lemma lemma-generic-point-in-constructible
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. If $f$
+    is bijective, $X$ is quasi-compact, and $Y$ is Hausdorff, then $f$ is a homeomorphism.'
+  kind: lemma
+  location: 'Section: Characterizing proper maps'
+  name: Lemma
+- description: Let $X$ and $Y$ be topological spaces. Let $A \subset X$ and $B \subset
+    Y$ be quasi-compact subsets. Let $A \times B \subset W \subset X \times Y$ with
+    $W$ open in $X \times Y$. Then there exists opens $A \subset U \subset X$ and
+    $B \subset V \subset Y$ such that $U \times V \subset W$.
+  kind: lemma
+  location: 'Section: Characterizing proper maps'
+  name: Lemma (Tube lemma)
+- description: 'Let $f : X\to Y$ be a continuous map between topological spaces. (1)
+    We say that the map $f$ is closed if the image of every closed subset is closed.
+    (2) We say that the map $f$ is Bourbaki-proper if the map $Z \times X\to Z \times
+    Y$ is closed for any topological space $Z$. (3) We say that the map $f$ is quasi-proper
+    if the inverse image $f^{-1}(V)$ of every quasi-compact subset $V \subset Y$ is
+    quasi-compact. (4) We say that $f$ is universally closed if the map $f'': Z \times_Y
+    X \to Z$ is closed for any continuous map $g: Z \to Y$. (5) We say that $f$ is
+    proper if $f$ is separated and universally closed.'
+  kind: definition
+  location: 'Section: Characterizing proper maps'
+  name: Definition
+- description: 'Let $f: X\to Y$ be a continuous map between topological spaces. The
+    following conditions are equivalent: (1) The map $f$ is quasi-proper and closed.
+    (2) The map $f$ is Bourbaki-proper. (3) The map $f$ is universally closed. (4)
+    The map $f$ is closed and $f^{-1}(y)$ is quasi-compact for any $y\in Y$.'
+  kind: theorem
+  location: 'Section: Characterizing proper maps'
+  name: Theorem
+- description: 'Suppose that $s, t : R \to U$ and $\pi : U \to X$ are continuous maps
+    of topological spaces such that (1) $\pi$ is open, (2) $U$ is sober, (3) $s, t$
+    have finite fibres, (4) generalizations lift along $s, t$, (5) $(t, s)(R) \subset
+    U \times U$ is an equivalence relation on $U$ and $X$ is the quotient of $U$ by
+    this equivalence relation (as a set). Then $X$ is Kolmogorov.'
+  kind: lemma
+  location: Section Specialization
+  name: Lemma
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. (1) We
+    say that specializations lift along $f$ or that $f$ is specializing if given $y''
+    \leadsto y$ in $Y$ and any $x''\in X$ with $f(x'') = y''$ there exists a specialization
+    $x'' \leadsto x$ of $x''$ in $X$ such that $f(x) = y$. (2) We say that generalizations
+    lift along $f$ or that $f$ is generalizing if given $y'' \leadsto y$ in $Y$ and
+    any $x\in X$ with $f(x) = y$ there exists a generalization $x'' \leadsto x$ of
+    $x$ in $X$ such that $f(x'') = y''$.'
+  kind: definition
+  location: Section Specialization
+  name: Definition
+- description: Let $X$ be a profinite space. Every open covering of $X$ has a refinement
+    by a finite covering $X = \coprod U_i$ with $U_i$ open and closed.
+  kind: lemma
+  location: 'Section: Profinite spaces (lemma-profinite-refine-open-covering)'
+  name: Lemma
+- description: A topological space is profinite if it is homeomorphic to a limit of
+    a diagram of finite discrete spaces.
+  kind: definition
+  location: 'Section: Profinite spaces'
+  name: Definition
+- description: Let $W$ be the topological space with two points, one closed, the other
+    not. A topological space is spectral if and only if it is homeomorphic to a subspace
+    of a product of copies of $W$ which is closed in the constructible topology.
+  kind: lemma
+  location: 'Section: Spectral spaces'
+  name: Lemma
+- description: 'A topological space $X$ is called spectral if it is sober, quasi-compact,
+    the intersection of two quasi-compact opens is quasi-compact, and the collection
+    of quasi-compact opens forms a basis for the topology. A continuous map $f : X
+    \to Y$ of spectral spaces is called spectral if the inverse image of a quasi-compact
+    open is quasi-compact.'
+  kind: definition
+  location: 'Section: Spectral spaces'
+  name: Definition
+- description: The inverse limit of a directed inverse system of finite sober topological
+    spaces is a spectral topological space.
+  kind: lemma
+  location: Section before 'Limits of spectral spaces'
+  name: Lemma (lemma-directed-inverse-limit-finite-sober-spectral-spaces)
+- description: A topological space is spectral if and only if it is a directed inverse
+    limit of finite sober topological spaces.
+  kind: lemma
+  location: Section before 'Limits of spectral spaces'
+  name: Lemma (lemma-spectral-inverse-limit-finite-sober-spaces)
+- description: 'Let $X$ be a topological space and let $c : X \to X''$ be the universal
+    map from $X$ to a sober topological space. (1) If $X$ is quasi-compact, so is
+    $X''$. (2) If $X$ is quasi-compact, has a basis of quasi-compact opens, and the
+    intersection of two quasi-compact opens is quasi-compact, then $X''$ is spectral.
+    (3) If $X$ is Noetherian, then $X''$ is a Noetherian spectral space.'
+  kind: lemma
+  location: Section before 'Limits of spectral spaces'
+  name: Lemma (lemma-Noetherian-goes-to-spectral)
+- description: 'Let $\mathcal{I}$ be a category. Let $i \mapsto X_i$ be a diagram
+    of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the corresponding
+    map $f_a : X_j \to X_i$ is spectral. (1) Given subsets $Z_i \subset X_i$ closed
+    in the constructible topology with $f_a(Z_j) \subset Z_i$ for all $a : j \to i$
+    in $\mathcal{I}$, then $\lim Z_i$ is quasi-compact. (2) The space $X = \lim X_i$
+    is quasi-compact.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-inverse-limit-spectral-spaces-quasi-compact)
+- description: 'Let $\mathcal{I}$ be a cofiltered category. Let $i \mapsto X_i$ be
+    a diagram of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the
+    corresponding map $f_a : X_j \to X_i$ is spectral. (1) Given nonempty subsets
+    $Z_i \subset X_i$ closed in the constructible topology with $f_a(Z_j) \subset
+    Z_i$ for all $a : j \to i$ in $\mathcal{I}$, then $\lim Z_i$ is nonempty. (2)
+    If each $X_i$ is nonempty, then $X = \lim X_i$ is nonempty.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-inverse-limit-spectral-spaces-nonempty)
+- description: 'Let $\mathcal{I}$ be a cofiltered category. Let $i \mapsto X_i$ be
+    a diagram of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the
+    corresponding map $f_a : X_j \to X_i$ is spectral. Let $X = \lim X_i$ with projections
+    $p_i : X \to X_i$. Let $i \in \Ob(\mathcal{I})$ and let $E, F \subset X_i$ be
+    subsets with $E$ closed in the constructible topology and $F$ open in the constructible
+    topology. Then $p_i^{-1}(E) \subset p_i^{-1}(F)$ if and only if there is a morphism
+    $a : j \to i$ in $\mathcal{I}$ such that $f_a^{-1}(E) \subset f_a^{-1}(F)$.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-inverse-limit-spectral-spaces-equal)
+- description: 'Let $\mathcal{I}$ be a cofiltered category. Let $i \mapsto X_i$ be
+    a diagram of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the
+    corresponding map $f_a : X_j \to X_i$ is spectral. Let $X = \lim X_i$ with projections
+    $p_i : X \to X_i$. Let $E \subset X$ be a constructible subset. Then there exists
+    an $i \in \Ob(\mathcal{I})$ and a constructible subset $E_i \subset X_i$ such
+    that $p_i^{-1}(E_i) = E$. If $E$ is open, resp. closed, we may choose $E_i$ open,
+    resp. closed.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-inverse-limit-spectral-spaces-constructible)
+- description: 'Let $\mathcal{I}$ be a cofiltered index category. Let $i \mapsto X_i$
+    be a diagram of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the
+    corresponding map $f_a : X_j \to X_i$ is spectral. Then the inverse limit $X =
+    \lim X_i$ is a spectral topological space and the projection maps $p_i : X \to
+    X_i$ are spectral.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-directed-inverse-limit-spectral-spaces)
+- description: 'Let $\mathcal{I}$ be a cofiltered index category. Let $i \mapsto X_i$
+    be a diagram of spectral spaces such that for $a : j \to i$ in $\mathcal{I}$ the
+    corresponding map $f_a : X_j \to X_i$ is spectral. Set $X = \lim X_i$ and denote
+    $p_i : X \to X_i$ the projection. (1) Given any quasi-compact open $U \subset
+    X$ there exists an $i \in \Ob(\mathcal{I})$ and a quasi-compact open $U_i \subset
+    X_i$ such that $p_i^{-1}(U_i) = U$. (2) Given $U_i \subset X_i$ and $U_j \subset
+    X_j$ quasi-compact opens such that $p_i^{-1}(U_i) \subset p_j^{-1}(U_j)$ there
+    exist $k \in \Ob(\mathcal{I})$ and morphisms $a : k \to i$ and $b : k \to j$ such
+    that $f_a^{-1}(U_i) \subset f_b^{-1}(U_j)$. (3) If $U_i, U_{1,i}, \ldots, U_{n,i}
+    \subset X_i$ are quasi-compact opens and $p_i^{-1}(U_i) = p_i^{-1}(U_{1,i}) \cup
+    \ldots \cup p_i^{-1}(U_{n,i})$ then $f_a^{-1}(U_i) = f_a^{-1}(U_{1,i}) \cup \ldots
+    \cup f_a^{-1}(U_{n,i})$ for some morphism $a : j \to i$ in $\mathcal{I}$. (4)
+    Same statement as in (3) but for intersections.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-descend-opens)
+- description: 'Let $W$ be a subset of a spectral space $X$. The following are equivalent:
+    (1) $W$ is an intersection of constructible sets and closed under generalizations,
+    (2) $W$ is quasi-compact and closed under generalizations, (3) there exists a
+    quasi-compact subset $E \subset X$ such that $W$ is the set of points specializing
+    to $E$, (4) $W$ is an intersection of quasi-compact open subsets, (5) there exists
+    a nonempty set $I$ and quasi-compact opens $U_i \subset X$, $i \in I$ such that
+    $W = \bigcap U_i$ and for all $i, j \in I$ there exists a $k \in I$ with $U_k
+    \subset U_i \cap U_j$. In this case we have (a) $W$ is a spectral space, (b) $W
+    = \lim U_i$ as topological spaces, and (c) for any open $U$ containing $W$ there
+    exists an $i$ with $U_i \subset U$.'
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-make-spectral-space)
+- description: Let $X$ be a spectral space. Let $E \subset X$ be a constructible subset.
+    Let $W \subset X$ be the set of points of $X$ which specialize to a point of $E$.
+    Then $W \setminus E$ is a spectral space. If $W = \bigcap U_i$ with $U_i$ as in
+    Lemma (lemma-make-spectral-space) (5) then $W \setminus E = \lim (U_i \setminus
+    E)$.
+  kind: lemma
+  location: Section 'Limits of spectral spaces'
+  name: Lemma (lemma-make-spectral-space-minus)
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. Assume
+    that $f(X)$ is dense in $Y$ and that $Y$ is Hausdorff. Then the cardinality of
+    $Y$ is at most the cardinality of $P(P(X))$ where $P$ is the power set operation.'
+  kind: lemma
+  location: Section 'Stone-Čech compactification'
+  name: Lemma (lemma-dense-image)
+- description: Let $X$ be a Hausdorff, locally quasi-compact space. There exists a
+    map $X \to X^*$ which identifies $X$ as an open subspace of a quasi-compact Hausdorff
+    space $X^*$ such that $X^* \setminus X$ is a singleton (one point compactification).
+    In particular, the map $X \to \beta(X)$ identifies $X$ with an open subspace of
+    $\beta(X)$.
+  kind: lemma
+  location: 'Section: Stone-Čech compactification'
+  name: Lemma (lemma-one-point-compactification)
+- description: A topological space $X$ is called extremally disconnected if the closure
+    of every open subset of $X$ is open.
+  kind: definition
+  location: 'Section: Extremally disconnected spaces'
+  name: Definition (definition-extremally-disconnected)
+- description: 'Let $f : X \to Y$ be a continuous map of topological spaces. Assume
+    $f$ is surjective and $f(E) \not = Y$ for all proper closed subsets $E \subset
+    X$. Then for $U \subset X$ open the subset $f(U)$ is contained in the closure
+    of $Y \setminus f(X \setminus U)$.'
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-image-open-technical)
+- description: Let $X$ be an extremally disconnected space. If $U, V \subset X$ are
+    disjoint open subsets, then $\overline{U}$ and $\overline{V}$ are disjoint too.
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-intersection-empty)
+- description: 'Let $f : X \to Y$ be a continuous map of Hausdorff quasi-compact topological
+    spaces. If $Y$ is extremally disconnected, $f$ is surjective, and $f(Z) \not =
+    Y$ for every proper closed subset $Z$ of $X$, then $f$ is a homeomorphism.'
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-isomorphism)
+- description: 'Let $f : X \to Y$ be a continuous surjective map of Hausdorff quasi-compact
+    topological spaces. There exists a quasi-compact subset $E \subset X$ such that
+    $f(E) = Y$ but $f(E'') \not = Y$ for all proper closed subsets $E'' \subset E$.'
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-find-compact-subset)
+- description: 'Let $X$ be a Hausdorff, quasi-compact topological space. The following
+    are equivalent: (1) $X$ is extremally disconnected, (2) for any surjective continuous
+    map $f : Y \to X$ with $Y$ Hausdorff quasi-compact there exists a continuous section,
+    and (3) for any solid commutative diagram of continuous maps of quasi-compact
+    Hausdorff spaces with $Y \to Z$ surjective, there is a dotted arrow in the category
+    of topological spaces making the diagram commute.'
+  kind: proposition
+  location: 'Section: Extremally disconnected spaces'
+  name: Proposition (proposition-projective-in-category-hausdorff-qc)
+- description: 'Let $f : X \to X$ be a surjective continuous selfmap of a Hausdorff
+    topological space. If $f$ is not $\text{id}_X$, then there exists a proper closed
+    subset $E \subset X$ such that $X = E \cup f(E)$.'
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-rainwater)
+- description: Let $X$ be a quasi-compact Hausdorff space. There exists a continuous
+    surjection $X' \to X$ with $X'$ quasi-compact, Hausdorff, and extremally disconnected.
+    If we require that every proper closed subset of $X'$ does not map onto $X$, then
+    $X'$ is unique up to isomorphism.
+  kind: lemma
+  location: 'Section: Extremally disconnected spaces'
+  name: Lemma (lemma-existence-projective-cover)
+- description: 'Let $X$ be a topological space which (1) has a basis of the topology
+    consisting of quasi-compact opens, and (2) has the property that the intersection
+    of any two quasi-compact opens is quasi-compact. Then (1) $X$ is locally quasi-compact,
+    (2) a quasi-compact open $U \subset X$ is retrocompact, (3) any quasi-compact
+    open $U \subset X$ has a cofinal system of open coverings $\mathcal{U} : U = \bigcup_{j\in
+    J} U_j$ with $J$ finite and all $U_j$ and $U_j \cap U_{j''}$ quasi-compact.'
+  kind: lemma
+  location: 'Section: Miscellany'
+  name: Lemma (lemma-topology-quasi-separated-scheme)
+- description: Let $X$ be a topological space. We say $x \in X$ is an isolated point
+    of $X$ if $\{x\}$ is open in $X$.
+  kind: definition
+  location: 'Section: Miscellany'
+  name: Definition (definition-isolated-point)
+- description: Let $X$ be a topological space. A partition of $X$ is a decomposition
+    $X = \coprod X_i$ into locally closed subsets $X_i$. The $X_i$ are called the
+    parts of the partition. Given two partitions of $X$ we say one refines the other
+    if the parts of one are unions of parts of the other.
+  kind: definition
+  location: 'Section: Partitions and stratifications'
+  name: Definition (definition-paritition)
+- description: Let $X$ be a topological space. A good stratification of $X$ is a partition
+    $X = \coprod X_i$ such that for all $i, j \in I$ we have $X_i \cap \overline{X_j}
+    \not = \emptyset \Rightarrow X_i \subset \overline{X_j}$.
+  kind: definition
+  location: 'Section: Partitions and stratifications'
+  name: Definition (definition-good-stratification)
+- description: Let $X$ be a topological space. A stratification of $X$ is given by
+    a partition $X = \coprod_{i \in I} X_i$ and a partial ordering on $I$ such that
+    for each $j \in I$ we have $\overline{X_j} \subset \bigcup_{i \leq j} X_i$. The
+    parts $X_i$ are called the strata of the stratification.
+  kind: definition
+  location: 'Section: Partitions and stratifications'
+  name: Definition (definition-stratification)
+- description: Let $X$ be a topological space. Let $I$ be a set and for $i \in I$
+    let $E_i \subset X$ be a subset. We say the collection $\{E_i\}_{i \in I}$ is
+    locally finite if for all $x \in X$ there exists an open neighbourhood of $x$
+    meeting only finitely many $E_i$.
+  kind: definition
+  location: 'Section: Partitions and stratifications'
+  name: Definition (definition-locally-finite)
+- description: Let $R$ be a topological ring. A *topological module* is an $R$-module
+    $M$ endowed with a topology such that addition $M \times M \to M$ and scalar multiplication
+    $R \times M \to M$ are continuous. A *homomorphism of topological modules* is
+    a homomorphism of modules which is continuous.
+  kind: definition
+  location: 'Section: Topological groups, rings, modules (definition-topological-module)'
+  name: Definition
+- description: Let $R$ be a topological ring. The category of topological modules
+    over $R$ has colimits and colimits commute with the forgetful functor to the category
+    of modules over $R$.
+  kind: lemma
+  location: 'Section: Topological groups, rings, modules (lemma-topological-module-colimits)'
+  name: Lemma
+- description: Let $R$ be a topological ring. The category of topological modules
+    over $R$ has limits and limits commute with the forgetful functors to (a) the
+    category of topological spaces and (b) the category of $R$-modules.
+  kind: lemma
+  location: Lines 16651-16674
+  name: Lemma lemma-topological-module-limits

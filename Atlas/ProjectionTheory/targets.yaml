@@ -1,0 +1,636 @@
+- description: (Szemeredi-Trotter 1982) If $X$ is a finite subset of $\RR^2$, and
+    $S < \frac{1}{2} |X|$, then $$|E_S(X)| \le C S^2 |X|^{-1} + 1.$$
+  kind: theorem
+  location: Section 1, Subsection 1.1
+  name: Theorem 1.1
+- description: (Marstrand, 1954) If $X \subset \RR^2$ is a compact set, then for almost
+    every line $L$, $$ HD( \pi_L(X) ) = \min( HD(X), 1). $$
+  kind: theorem
+  location: Section 1, Subsection 1.1
+  name: Theorem 1.2
+- description: (Orponen-Shmerkin-Ren-Wang) If $X \subset \RR^2$, and $s < \HD(X)$,
+    then $$ \HD(E_s(X)) \le \max( 2s - \HD(X), 0). $$
+  kind: theorem
+  location: Section 1, Subsection 1.1
+  name: Theorem 1.3
+- description: Suppose $X \subset \FF_p^2$, $D \subset \FF_p$, and $S = \max_{\theta
+    \in D} |\pi_\theta(X)|$. If $S \le p/2$, then $$ |D| \lesssim \frac{S^2}{|X|}$$
+  kind: conjecture
+  location: Section 2
+  name: Conjecture 2.1
+- description: (Double counting) Suppose $X \subset \FF_q^2$, $D \subset \FF_q$, and
+    $S = \max_{\theta \in D} |\pi_\theta(X)|$. If $S \le |X|/2$, then $$ |D| \lesssim
+    S$$
+  kind: theorem
+  location: Section 2
+  name: Theorem 2.2
+- description: (Orthogonality/ Fourier) Suppose $X \subset \FF_q^2$, $D \subset \FF_q$,
+    and $S = \max_{\theta \in D} |\pi_\theta(X)|$. If $S \le q/2$, then $$ |D| \lesssim
+    \frac{S q}{|X|}. $$
+  kind: theorem
+  location: Section 2
+  name: Theorem 2.3
+- description: If $L_1, L_2$ are two different lines in $\FF_q^2$, then $$ \sum_{x
+    \in \FF_q^2} L_{1,h}(x) L_{2,h}(x) \le 0.$$
+  kind: lemma
+  location: Section 2, Subsection 2.2
+  name: Lemma 2.4
+- description: 'If $f: \FF_q^d \rightarrow \CC$, then $$ f(x) = \frac{1}{q^d} \sum_{\xi
+    \in \FF_q^d} \hat f(\xi) e(x \cdot \xi) = \underbrace{\frac{1}{q^d} \hat f(0)}_{f_0(x)}
+    + \underbrace{\frac{1}{q^d} \sum_{\xi \not= 0} \hat f(\xi) e(x \cdot \xi)}_{f_h(x)}$$'
+  kind: theorem
+  location: Section 2, Subsection 2.2
+  name: Theorem 2.5
+- description: 'If $f, g: \FF_q^d \rightarrow \CC$, then $$ \sum_{x \in \FF_q^d} f(x)
+    \overline{g(x)} = \frac{1}{q^d} \sum_{\xi \in \FF_q^d} \hat f(\xi) \overline{
+    \hat g(\xi)}$$'
+  kind: theorem
+  location: Section 2, Subsection 2.2
+  name: Theorem 2.6
+- description: If $P(x)$ is the characteristic function of an affine $k$-plane in
+    $\FF_q^d$, then $$ | \hat P(\xi)| = \begin{cases} q^k & \xi \in P^\perp \\ 0 &
+    \xi \notin P^\perp\\ \end{cases}$$
+  kind: lemma
+  location: Section 2, Subsection 2.2
+  name: Lemma 2.7
+- description: If $\text{supp}\, \hat{g} \subset B_{1/r}$, then $|g(x)|^2 \lesssim
+    |g|^2 * \psi_r$.
+  kind: lemma
+  location: 'Section: The Fourier method in Euclidean space'
+  name: Lemma
+- description: If SETUP, then $$|D|\lesssim \frac{S}{|X|}\sum_{1\leq r \leq R}N_X(r)N_D(1/r).$$
+  kind: theorem
+  location: 'Section: Projection theory for balls in Euclidean space'
+  name: Theorem (Double Counting Real Version)
+- description: We say that $X$ has Hausdorff spacing if it has $\alpha$ dimension
+    spacing for some $\alpha$. Another way to say this is that $N_{R^\beta}(X)\lesssim
+    |X|^\beta$ for any $0\leq \beta \leq 1$.
+  kind: definition
+  location: 'Section: Projection theory for balls in Euclidean space'
+  name: Definition
+- description: If SETUP, $X$, $D$ has Hausdorff spacing then $$|D|\lesssim \log R
+    (|S|+\frac{|S|}{|X|}|D|) \Rightarrow (S \sim X \text{ or }|D| \lesssim S).$$
+  kind: corollary
+  location: 'Section: Projection theory for balls in Euclidean space'
+  name: Corollary (Double Counting Real Version)
+- description: If $\R$-SETUP and $X,D$ has Hausdorff spacing. Then, $|D|\lesssim \frac{SR}{|X|}$
+  kind: corollary
+  location: 'Section: Projection theory for balls in Euclidean space'
+  name: Corollary
+- description: If SETUP, $X$ and $D$ has Hausdorff spacing and $$S \leq R^{-\epsilon}\min(R,|x|),$$
+    then $$|D|\lessapprox \frac{|S|^2}{|R|}.$$
+  kind: conjecture
+  location: 'Section: Projection theory for balls in Euclidean space'
+  name: Conjecture (Furstenberg)
+- description: If $\LL$ is a set of lines in $\F_q^2$. Write $f=\sum_{L \in \LL}1_L(x)$.
+    Then, $f=f_0+f_h$ so $\text{supp}\, \hat{f}_0=\{0\}$, $\text{supp}\, \hat{f}_h=\{0\}^c$.
+    Then, $f_0$ is a constant function. Then, $\|f_0\|_2^2=|\LL|^2$, $\|f_h\|_2^2=|\LL|q$.
+  kind: lemma
+  location: 'Section: Fourier Method'
+  name: Lemma (Main lemma in finite field)
+- description: 'Let $\T$ be a set of $1 \times R$ rectangles in $\R^2$. Let $f=\sum_{T
+    \in \T} \phi_T(x)$. Then, $$f=\sum_{\substack{1\leq r \leq R\\ \text{dyadic}}}f_r(x)$$
+    such that $\text{supp}\, \hat{f}_r \subseteq B(1/r)$ and $\|f_r\|_2^2\lesssim
+    N_{\T}(r)|\T|r^{-1}R$ where $N_\T(r):=\max_{\tilde{T}: 2r \times 2R \text{ rect}}
+    \#\{T \in \T: T \subset \tilde{T}\}.$'
+  kind: lemma
+  location: 'Section: Fourier Method'
+  name: Lemma (Main lemma in real)
+- description: If $T_1,T_2$ are $1 \times R$ tubes then $|\langle \phi_{T_1,r}, \phi_{T_2,r}\rangle|\lesssim
+    R^{-1000}$ unless there exists $\tilde{T}$, a $R^\epsilon r \times R^{1+\epsilon}$
+    rectangle such that $T_1, T_2 \in \tilde{T}$.
+  kind: lemma
+  location: 'Section: Fourier Method'
+  name: Lemma (Orthogonality)
+- description: If $\LL$ is a collection of lines in $\FF_q^2$, and $L(x)$ is the characteristic
+    function for $L \in \LL$, then we can decompose $f(x) = \sum_{L \in \LL} L(x)$
+    as $f = f_0 + f_h$, where $f_0 = \frac{|\LL|}{q}$, $f_0$ is orthogonal to $f_h$,
+    and $||f_0||^2_{L^2} \lesssim |\LL|^2$, $||f_h||^2_{L^2} \lesssim |\LL| q$.
+  kind: lemma
+  location: 'Section: The Fourier method in Euclidean space'
+  name: Lemma [Main Lemma 2F]
+- description: We have $||f||^2_{L^2} \lesssim |\LL| q + |\LL|^2$.
+  kind: lemma
+  location: 'Section: The Fourier method in Euclidean space'
+  name: Lemma [Elementary $L^2$ bounds on $f$]
+- description: If the setup holds then we can decompose $f$ as $f = \sum_{\substack{1
+    \leq r \leq R\\ r \text{ dyadic}}} f_r$ with $f_r$ (nearly) orthogonal to each
+    other, and for each $r$, $\hat{f_r} \subset B(1/r)$ and $||f_r||^2_{L^2} \lesssim
+    |\TT| N_\TT (r) \frac{R}{r}$.
+  kind: lemma
+  location: 'Section: The Fourier method in Euclidean space'
+  name: Lemma [Main Lemma 2R]
+- description: If $\frac{\alpha_1}{p_1}, \frac{\alpha_2}{p_2} \in Q_M$ are not equal,
+    then $|\frac{\alpha_1}{p_1} - \frac{\alpha_2}{p_2}| \geq \frac{1}{M^2}$.
+  kind: lemma
+  location: 'Section: The large sieve, Subsection: Proof of Linnik''s Large Sieve
+    inequality'
+  name: Lemma
+- description: If our setup holds then $|D| \lessapprox \frac{S R}{|X|} \max_{r} \frac{N_X
+    (r) N_D (r/R)}{r^2}.$
+  kind: theorem
+  location: Section on Euclidean version of theorem 2F
+  name: Theorem
+- description: If $A \subseteq [N]$ then $\mathrm{Avg}_{p \in P_{N^{1/2}}} \mathrm{Avg}_{a
+    \in \ZZ_p} \bigg| \pi_p \mathbf{1}_A(a) - \dfrac{|A|}{p} \bigg| \lessapprox N^{1/4}$
+  kind: corollary
+  location: 'Section: The large sieve, Subsection: The Large Sieve'
+  name: Corollary
+- description: 'If $f : [N] \to \mathbb{C}$ and $M \leq N^{1/2}$ then $\sum_{p \in
+    P_M} || (\pi_p f)_H ||_{L^2} ^{2} \lesssim \dfrac{N}{M} \sum_{n} |f_H(n)|^2$'
+  kind: theorem
+  location: 'Section: The large sieve, Subsection: Proof of Linnik''s Large Sieve
+    inequality (rigorous proof)'
+  name: Theorem (Linnik)
+- description: $\text{Avg}_{p \in P_M} || (\pi_p f)_H ||_{L^2} ^2 \lessapprox\dfrac{N}{M^2}
+    \sum_n |f_H(n)|^2$
+  kind: corollary
+  location: 'Section: The large sieve, Subsection: The Large Sieve'
+  name: Corollary 4
+- description: If $A \subset [N]$, $| \pi_p A | \leq (.99)p$ for any $p \in P_{N^{1/2}}$
+    then $|A| \lessapprox N^{1/2}$.
+  kind: corollary
+  location: 'Section: The large sieve, Subsection: The Large Sieve'
+  name: Corollary 5
+- description: $\widehat{\pi_p f} (\alpha) = \widehat{f} (\frac{\alpha}{p})$
+  kind: lemma
+  location: 'Section: The large sieve, Subsection: Proof of Linnik''s Large Sieve
+    inequality'
+  name: Lemma (Dictionary)
+- description: If $X \\subset [N]$, $D$ a set of primes less than $N$ and for all
+    $p \\in D$ we have that $|\\pi_p(X)| \\leq S$, then either $|X| \\leq 2 S$ or
+    $|D| \\lessapprox S$.
+  kind: theorem
+  location: Section on Sieve Theory
+  name: Theorem 1S
+- description: $||(\pi_p f)_H ||_{L^2}^2 = \\sum_{\\substack{\\alpha \\in \\mathbb{Z}_p
+    \\\\ \\alpha \\neq 0}} \\Big| \\widehat{\\pi_p f}(\\alpha) \\Big|^2$
+  kind: lemma
+  location: 'Subsection: Proof of Linnik''s Large Sieve inequality'
+  name: Lemma (previous)
+- description: For any subspace $V\subset \RR^d$ and any $\xi\in V$, $\widehat{\pi_Vf}(\xi)=\hat{f}(\xi)$.
+  kind: lemma
+  location: 'Section 6: Projections and smoothing'
+  name: Lemma (Dictionary)
+- description: If $f\in L^2(\RR^d)$, $\operatorname{supp}(f)\subset B_1$, then provided
+    that $\frac{d-1}{2}>\frac12+{k}$, it holds $$\int_{\mathbb{S}^{d-1}}\|\pi_\theta
+    f\|_{{C}^k}^2\operatorname{d}\!\theta\lesssim \|f\|_{L^2}^2.$$
+  kind: theorem
+  location: 'Section 6: Projections and smoothing'
+  name: Theorem 6.1
+- description: For all $q$, $$\lim_{N \to \infty} \frac{\Delta_q(N)}{N/q} = 0.$$
+  kind: theorem
+  location: 'Section 7, Subsection 7.1: Distribution of primes mod $q$'
+  name: Theorem (Dirichlet)
+- description: For any $A$, there is some $c_A$ such that $$\Delta_q(N) \leq c_A N
+    (\log N)^{-A}.$$
+  kind: theorem
+  location: 'Section 7, Subsection 7.1: Distribution of primes mod $q$'
+  name: Theorem (Siegel-Walfisz)
+- description: For all $\epsilon > 0$ and all $A$, $$\sum_{q \leq N^{1/2 - \epsilon}}
+    \Delta_q(N) \leq C(\epsilon, A) N (\log N)^{-A}.$$
+  kind: theorem
+  location: 'Section 7, Subsection 7.1: Distribution of primes mod $q$'
+  name: Theorem (Renyi, Bombieri--Vinogradov)
+- description: 'If $f, g : \mathbb{N} \to \mathbb{C}$, then their multiplicative convolution
+    is the function $$f *_M g(n) = \sum_{n_1, n_2, n_1n_2 = n} f(n_1) g(n_2).$$'
+  kind: definition
+  location: 'Section 7, Subsection 7.2: Multiplicative Convolution and Primes'
+  name: Definition (Multiplicative Convolution)
+- description: For all $s\in Q_M$, $|\pi_s(X)| \lesssim MN$.
+  kind: lemma
+  location: Section 8, Subsection 8.1, Example 3 for ST Theorem
+  name: Lemma
+- description: 'If $f, g : \mathbb{N} \to \mathbb{C}$, then $\pi_q(f *_M g) = \pi_q
+    f *_M \pi_q g$.'
+  kind: lemma
+  location: 'Section 7, Subsection 7.3: Multiplicative Convolution and Projections'
+  name: Lemma 1
+- description: 'If $f, g : \mathbb{N} \to \mathbb{C}$, then $$\lVert f *_M g \rVert_{L^\infty(\mathbb{Z}_q^*)}
+    \le \lVert f \rVert_{L^2} \lVert g \rVert_{L^2}.$$'
+  kind: lemma
+  location: 'Section 7, Subsection 7.3: Multiplicative Convolution and Projections'
+  name: Lemma 2
+- description: $$\lVert f_h^* \rVert_{L^2(\mathbb{Z}_q^*)} \leq \lVert f_h \rVert_{L^2(\mathbb{Z}_q)}.$$
+  kind: lemma
+  location: 'Section 7, Subsection 7.3: Multiplicative Convolution and Projections'
+  name: Lemma 3
+- description: 'If $f^*, g^* : \mathbb{Z}_q^* \to \mathbb{C}$, then $$(f^* *_M g^*)_h
+    = f^*_h *_M g_h^*.$$'
+  kind: lemma
+  location: 'Section 7, Subsection 7.3: Multiplicative Convolution and Projections'
+  name: Lemma 4
+- description: $$\lVert (\pi_q(f*_M g))^*_h \rVert_{L^\infty} \leq \lVert (\pi_q f)_h
+    \rVert_{L^2} \lVert (\pi_q g)_h \rVert_{L^2}.$$
+  kind: proposition
+  location: 'Section 7, Subsection 7.3: Multiplicative Convolution and Projections'
+  name: Proposition
+- description: 'If $f : [N_1] \to \mathbb{C}$ and $g : [N_2] \to \mathbb{C}$, then
+    $f *_M g : [N] \to \mathbb{C}$, where $N = N_1 N_2$, and $$\sum_{p \in P_M} \lVert
+    (\pi_q(f *_M g))_h^* \rVert_{L^\infty}^2 \lesssim \left( \left( \frac{N_1}{M}
+    + M \right) \left( \frac{N_2}{M} + M \right) \right)^{1/2} \lVert f \rVert_{L^2}
+    \lVert g \rVert_{L^2}.$$'
+  kind: theorem
+  location: Section 'Large Sieve and Multiplicative Convolution'
+  name: Theorem
+- description: Let $X$ be a set of points in $\mathbb{R}^2$ and $D$ a set of directions
+    in $S^1$. Define $S(X,D) = \max_{\theta \in D} |\pi_\theta(X)|$. Then $$|D| \leq
+    \frac{S^2}{|X|} + 1.$$
+  kind: theorem
+  location: Section 'The Szemeredi-Trotter projection theorem'
+  name: Theorem (Szemeredi-Trotter projection theorem)
+- description: Let $X$ be a set of points in $\mathbb{R}^2$ and $L$ a set of lines
+    in $\mathbb{R}^2$. Define $I(X,L) := \#\{ x\in X, \ell \in L, x \in \ell \}$.
+    Then $$I(X,L) \leq |X| + |L| + |X|^{2/3} |L|^{2/3}.$$
+  kind: theorem
+  location: Section 'The Szemeredi-Trotter theorem'
+  name: Theorem (Szemeredi-Trotter)
+- description: If $A\subset\F_p,|A|=p^s$ for $0\leq s<1$, then $|A^3-A^3|\geq p^{s+\eps(s)}$
+    for some $\eps(s)>0$.
+  kind: lemma
+  location: 'Section: Plunnecke inequality'
+  name: Lemma
+- description: Let $X$ be a set of points in $\mathbb{R}^2$ and pick an integer $s\geq
+    1$. Then the plane can be disjointly partitioned into a set of open sets $O_i$
+    and a closed set $W$ such that $\mathbb{R}^2 = W \cup \bigcup_i O_i$ and additionally,
+    $|\ell \cap W| \leq s$ and for every $i$, $|X| \cap O_i| \lesssim \frac{|X|}{s^2}$.
+  kind: lemma
+  location: Proof of the Szemeredi-Trotter theorem
+  name: Lemma (Cell decomposition lemma)
+- description: 'Let $f: S^n \to \mathbb{R}^n$ be a continuous function that is antipodal,
+    ie for every $\theta \in S^n$, $f(\theta) = -f(-\theta)$. Then 0 is in the image
+    of $f$.'
+  kind: theorem
+  location: Proof of the Szemeredi-Trotter theorem
+  name: Theorem (Borsuk Ulam Theorem)
+- description: Let $O_1, O_2, ..., O_n \subset \mathbb{R}^n$ be bounded open subsets.
+    Then there exists a hyperplane $H$ that bisects every $O_i$.
+  kind: corollary
+  location: Proof of the Szemeredi-Trotter theorem
+  name: Corollary (Ham Sandwich Theorem)
+- description: We use the same setup as the ham sandwich theorem, except that there
+    can be up to $N$ sets $O_i$. Then there exists a polynomial zero set that bisects
+    every $O_i$.
+  kind: theorem
+  location: Proof of the Szemeredi-Trotter theorem
+  name: Theorem (Polynomial Ham Sandwich Theorem)
+- description: 'Let $s_1,s_2,... ,s_N$ be a set of finite sets in $\mathbb{R}^n$.
+    Then there exists a polynomial level set such that for every $s_i$, $|s_i \cap
+    \{x: p(x) > 0\}| \leq \frac{|s_i|}{2}$ and $|s_i \cap \{x: p(x) < 0\}| \leq \frac{|s_i|}{2}$.'
+  kind: lemma
+  location: Proof of the Szemeredi-Trotter theorem
+  name: Lemma (Ham Sandwich theorem for finite sets)
+- description: If $A\subset\F_p$ with $|A|=p^s$, then $\max(|A\cdot A|,|A+A|)\geq
+    p^{s+\eps(s)}$.
+  kind: theorem
+  location: 'Section: Plunnecke inequality'
+  name: Theorem (Bourgain-Katz-Tao)
+- description: If $A\subset\Z$ and $|A+A|\leq K|A|$, then $A$ is contained in a GAP
+    of dimension $r(K)$ and $\vol\leq V(K)\cdot|A|$.
+  kind: theorem
+  location: 'Section: Freiman-Ruzsa theorem'
+  name: Theorem (Freiman-Ruzsa)
+- description: There is a meaningful bound if $K=|A|^\delta$ for some $\delta>0$.
+  kind: conjecture
+  location: 'Section: Freiman-Ruzsa theorem'
+  name: Conjecture
+- description: Let $Z$ be an abelian group and $A,B,C\subset Z$. Then $|A||B-C|\leq|A-B||A-C|$.
+  kind: theorem
+  location: 'Section: Ruzsa triangle inequality'
+  name: Theorem (Ruzsa)
+- description: If $0<s<t<1$, then there exists a $K=K(s,t)$ such that for all $A\subset\F_p$
+    with $|A|=p^s$, we have $|\poly_K(A)|\geq p^t$.
+  kind: corollary
+  location: 'Section: Plunnecke inequality'
+  name: Corollary
+- description: Let $Z$ be an abelian group and $A,B\subset Z$ with $|A+B|\leq K|A|$.
+    Then $|B^{\oplus m}-B^{\oplus n}|\leq K^{m+n}|A|$.
+  kind: theorem
+  location: 'Section: Plunnecke inequality'
+  name: Theorem (Plunnecke)
+- description: $|A+A\cdot A|\geq p^{s_A+\epsilon}$.
+  kind: corollary
+  location: 'Section: Contagious Structure Lemma'
+  name: Corollary
+- description: If $X \subset A \times B$, $|X| \geq K^{-1} |A||B|$, and $\epsilon
+    > 0$, then there exists $A_2 \subset A$ such that $|A_2| \geq \frac{1}{4} K^{-1}
+    |A|$ and for every $a \in A_2$, there are at most $10\epsilon |A_2|$ choices for
+    $a_2$ such that $(a, a_2)$ is $\epsilon$-bad.
+  kind: lemma
+  location: 'Section: Simple Bounds About $P_K(a, b)$'
+  name: Lemma (2)
+- description: Let $0<t<2,0<s\leq 1$ and $p$ be a prime. Then there exists some $\eps=\eps(s,t)>0$
+    such that for all $X\subset\mathbb{F}_p^2$ with $|X|=p^t$ and all $D\subset\mathbb{F}_p$
+    with $|D|=p^s$, we have $\max_{\theta\in D}|\pi_\theta X|\geq p^{t/2+\eps}$ and
+    $\max_{\theta\in D}\min_{Y\subset X,|Y|\geq p^{-\eps}|X|}|\pi_\theta Y|\geq p^{t/2+\eps}$.
+  kind: theorem
+  location: 'Section: Bourgain''s projection theorem over R, part 1 (Finite field
+    case)'
+  name: Theorem (Bourgain-Katz-Tao)
+- description: We define $\text{poly}_K(A)=(A^K)^{\oplus K}-(A^K)^{\oplus K}$.
+  kind: definition
+  location: 'Section: Plunnecke inequality'
+  name: Notation
+- description: Suppose $X \subseteq \mathbb{F}_p^2$, and $D \subseteq \mathbb{F}_p$,
+    then $\max_{t \in D}|\pi_t(X)| \gtrsim \min(|X|,|D|)$.
+  kind: lemma
+  location: 'Section: Contagious Structure Lemma'
+  name: Lemma (Double Counting)
+- description: Let $X \subset \mathbb{F}_p^2$ be a subset with size $|X| = p^{s_X}$,
+    $0 < s_X < 2$ and $D \subset \mathbb{F}_p$ be a set of direction with $|D| = p^{s_D}$,
+    $s_D > 0$. Then $\max_{t \in D} |\pi_t(X)| \gtrsim p^{\epsilon} |X|^{1/2}$ for
+    $\epsilon = \epsilon(s_X, s_D) > 0$.
+  kind: theorem
+  location: 'Section: Proof of BKT'
+  name: Theorem (BKT)
+- description: With the same setting of BKT, there exists $t \in D$ such that for
+    any subset $Y \subset X$ with $|Y| \ge p^{-\epsilon} |X|$, we have $|\pi_t(Y)|
+    \ge p^\epsilon |X|^{1/2}$.
+  kind: theorem
+  location: 'Section: Additive energy and robust estimates'
+  name: Theorem (BKT 2)
+- description: 'Let $X,A,B$ be subsets of an abelian group $(G,+)$. For $t \in G$,
+    let $\pi_t: G \times G \to G$ denote the projection operator $(g_1, g_2) \mapsto
+    g_1 + t g_2$. Assume that $|A|, |B| \le N$, $X \subset A \times B$ and $|X| \ge
+    K^{-1} N^2$, $|\pi_t X| \le KN$ for some $t \in G$. Then there exists $A'' \subset
+    A$, $B'' \subset B$ such that $|X''| \gtrsim K^{-O(1)}N^2$, $\pi_t(A'' \times
+    B'') \le K^{O(1)}N$ where $X'' = X \cap (A'' \times B'')$.'
+  kind: theorem
+  location: 'Section: Proof of BKT'
+  name: Theorem (BSG)
+- description: We have $|A|^2 |B|^2 \le |A+B| E(A,B)$.
+  kind: proposition
+  location: 'Section: Additive energy and robust estimates'
+  name: Proposition
+- description: Let $A,B$ be subsets of $(G,+)$ with $|A|, |B| = N$ and $E(A,B) \ge
+    K^{-1} N^3$. There exists $A' \subset A$, $B' \subset B$ with $|A'|, |B'|\ge K^{-O(1)}
+    N$ such that $|A'+B'| \le K^{O(1)}N$.
+  kind: theorem
+  location: 'Section: Additive energy and robust estimates'
+  name: Theorem (BSG var)
+- description: Let $A$ and $B$ be subsets of an abelian group and suppose $X \subset
+    A \times B$. If $|A|, |B| \leq N$, $|X| \geq K^{-1} N^2$, and $|\pi_1(X)| \leq
+    KN$, then there are $A' \subset A$ and $B' \subset B$ such that $|A' + B'| \leq
+    K^{O(1)} N$ and $|X'| \geq K^{-O(1)} N^2$, where $X' = X \cap (A' \times B')$.
+  kind: theorem
+  location: 'Section: Proof of the Balog-Szemeredi-Gowers Theorem'
+  name: Theorem (Balog--Szemer\'edi--Gowers)
+- description: If $X \subseteq A \times B$ and $|X| \geq K^{-1} |A| |B|$, then there
+    are $A' \subset A$ and $B' \subset B$ such that $|X'| \geq K^{-O(1)} |A||B|$ where
+    $X' = X \cap (A' \times B')$ and for any $a \in A'$, $b \in B'$, $P_3(a, b) \geq
+    K^{-O(1)} |A||B|$.
+  kind: lemma
+  location: 'Section: Proof of the Balog-Szemeredi-Gowers Theorem'
+  name: Lemma (Key Lemma)
+- description: 'A pair $(a_1, a_2)$ is $\epsilon$-bad if $P_2(a_1, a_2) < \epsilon
+    K^{-2} |B|$. Let $BP_\epsilon(b) = \# \{ (a_1, a_2) \in N(b)^2 : (a_1, a_2) \text{
+    is } \epsilon\text{-bad} \}$.'
+  kind: definition
+  location: 'Section: Simple Bounds About $P_K(a, b)$'
+  name: Definition
+- description: If $A\subset \F_p$, $|A|=p^{s_A}$, $D\subset \F_p$, $|D|=p^{s_D}$,
+    $0 <s_A,s_D<1$. Then, there exists $\epsilon(s_A,s_D)>0$ such that $\max_{t\in
+    D}(|A+tA|)\geq p^{s_A+\epsilon(s_A,s_D)}$.
+  kind: theorem
+  location: Section on Contagious Structure in projection theory (labeled as \label{mainthm})
+  name: Theorem 12.1
+- description: If $Z$ is an abelian group and $A \subset Z$, and $|A-t_1A|\leq K|A|$
+    and $|A-t_2A|\leq K|A|$, then $|A-(t_1\cdot t_2)A|\leq K^2|A|$.
+  kind: lemma
+  location: Section on Contagious Structure in projection theory, first lemma in the
+    Contagious Structure Lemma subsection
+  name: Lemma (Contagious Structure)
+- description: Let $0<t<2,0<s\leq 1$. Then there exist $\eps,\eta>0$, both functions
+    of $s,t$, such that for all $X$ with $|X|=R^t$, $D$ with $|D|=R^s$, if for all
+    $x\in B_R,r\leq R,\theta\in[0,1],\rho\in[0,1]$ we have $$|X\cap B(x,r)|\leq R^\eta\left(\frac{r}{R}\right)^t|X|,\quad|D\cap
+    B(\theta,\rho)|\leq R^\eta\rho^s|D|,$$ then there exists some $\theta\in D$ such
+    that $$\inf_{Y\subset X,|Y|\geq R^{-\eta}|X|}|\pi_\theta Y|\geq R^{t/2+\eps}.$$
+  kind: theorem
+  location: 'Section: Bourgain''s projection theorem over R, part 1, Subsection: Real
+    case'
+  name: Theorem (Bourgain)
+- description: Given $\Delta \in 1/\mathbb{N}$ and $m \in \mathbb{N}$, a set $X \subset
+    [0,1]^d$ is $(\Delta, m)$-uniform if for any $j \in \{0,\dots,m-1\}$ and for any
+    cube $Q \in \mathcal{D}_\delta (X)$ we have $$|Q \cap X|^*_{\Delta^{j+1}} = R_j$$
+    where $R_j$ is independent of $Q$. The numbers $R_j$ are called 'branching factors'
+    of $X$.
+  kind: definition
+  location: 'Section: Bourgain''s Projection Theorem II'
+  name: Definition
+- description: $||T_\mu f||_{L^2} \leq ||f||_{L^2}$.
+  kind: lemma
+  location: 'Section: Random walks on finite groups I'
+  name: Lemma
+- description: Let $\delta = \Delta^m$, $X \subset [0,1]^d$, and let $\mu$ be an arbitrary
+    sub-additive set function (eg. $\mu(B) = |B|_\delta$). Then there exists a subset
+    $Y \subset X$ such that $Y$ is $(\Delta,m)$-uniform and $$\mu(Y) \geq \left[2
+    d \ln\left(\frac{1}{\Delta}\right)\right]^{-m} \mu(X) = \delta^{- \sigma} \mu(X)$$
+    where $\sigma = \frac{\ln(2 \ln \frac{1}{\Delta})}{\ln \frac{1}{\Delta}}$.
+  kind: lemma
+  location: 'Section: Bourgain''s Projection Theorem II'
+  name: Lemma (Uniformization)
+- description: $||T_\mu^K \delta_{g_0} - \frac{1}{|G|} ||_{L^2} \leq |\sigma_1(T_\mu)|^K$
+  kind: proposition
+  location: 'Section: Random walks on finite groups I'
+  name: Proposition
+- description: Given $0 < t < 2$, $0 < s \leq 1$, there exist $\varepsilon, \eta >
+    0$ such that if $X \subset B^2(0,1)$ is a $(\delta, t, \delta^{-\eta})_2$-set
+    with $|X|_\delta = \delta^{-t}$ and $D \subset [0,1]$ is a $(\delta, s, \delta^{-\eta})_1$-set,
+    then there exists some $\theta \in D$ such that $$\min_{\substack{X' \subset X\\
+    |X'|_\delta \geq \delta^\eta |X|_\delta}} |\pi_\theta X'| \geq \delta^{-\frac{t}{2}
+    - \varepsilon}.$$
+  kind: theorem
+  location: Section on Bourgain's Projection Theorem II
+  name: Theorem (Bourgain's projection theorem, restated)
+- description: For $T$ large, we have $|B_T(\ZZ)|\approx T^2$.
+  kind: lemma
+  location: 'Section: Random walks on finite groups II'
+  name: Lemma
+- description: Let $\mu$ be a measure on $SL_2(\mathbb{F}_p)$. Then $\sigma_1(T_\mu)^2
+    \frac{p+1}{2} \leq |SL_2(\mathbb{F}_p)| \ || \mu||_{L^2}^2$. In particular, since
+    $|SL_2(\mathbb{F}_p)| \sim p^3$, this implies $\sigma_1(T_\mu) \lesssim p || \mu||_{L^2}$.
+  kind: proposition
+  location: Section on Random walks on finite groups (first lecture)
+  name: Proposition
+- description: If $H$ is a proper subgroup of $SL_2(\mathbb{F}_p)$ then $|H| \lesssim
+    p^2$.
+  kind: corollary
+  location: Section on Random walks on finite groups (first lecture)
+  name: Corollary
+- description: There exists a universal constant $c > 0$ so that for every prime $p$,
+    then $\sigma_1(T_A) \leq 1 - c$, where $A = \left\{ \begin{pmatrix} 1 & \pm 1\\
+    0 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 0\\ \pm 1 & 1 \end{pmatrix}\right\}$.
+  kind: theorem
+  location: Section on Random walks on finite groups (first lecture)
+  name: Theorem (Selberg)
+- description: There exists a universal constant $c>0$ such that, for every $p$, $\sigma_1(T_{A_{\operatorname{sel}}})\le
+    1-c$.
+  kind: theorem
+  location: 'Section: Random walks on finite groups II'
+  name: Theorem (thm-selb)
+- description: For any $S\subset G$, it holds that $|E(S,S^c)|\ge (1-\sigma_1(T_A))\frac{|A||S||S^c|}{|G|}$.
+  kind: lemma
+  location: 'Section: Random walks on finite groups II'
+  name: Lemma (lem-expansion)
+- description: There exists a universal constant $C>0$ such that $\sigma_1(T_\mu)^2\le
+    Cp^2\|\mu\|^2_{\ell^2(G)}$.
+  kind: theorem
+  location: 'Section: Random walks on finite groups II'
+  name: Theorem (thm-ell^2)
+- description: Let $\rho:G\to \operatorname{U}(d)$ be a non-trivial representation
+    of $G=\operatorname{SL}_2(\mathbb{F}_p)$, then $d\ge \tfrac{p-1}{2}$.
+  kind: lemma
+  location: 'Section: Random walks on finite groups II'
+  name: Lemma (lem-rep)
+- description: If $\mu$ is symmetric, then $\|\mu^{\ast K}\|_{\ell^2(G)}^2=\mu^{\ast
+    2K}(I)$, where $I \in G$ is the identity element.
+  kind: lemma
+  location: 'Section: Random walks on finite groups II'
+  name: Lemma (lem-B_T)
+- description: For $T>p^2$, it holds that $|\Gamma_p\cap B_T(\ZZ)|\lessapprox p^{-3}T^2$.
+  kind: lemma
+  location: 'Section: Random walks on finite groups II'
+  name: Lemma (lem-Gamma_pcap B_T)
+- description: Under the same hypotheses as Theorem \ref{thmFur}, for every $0 < s
+    < t$ there is $\epsilon > 0$ so that $|\mathbb{T}| \gtrsim \delta^{-2s - \epsilon}$.
+  kind: theorem
+  location: 'Section: Sharp Projection Theorems I: Introduction and Beck''s Theorem,
+    History of the Furstenberg conjecture'
+  name: Theorem (Orponen-Shmerkin (2021))
+- description: If $n\geq 3$, the signature of $Q$ is mixed, and the coefficients of
+    $Q$ are not contained in $\Z\alpha$ for any $\alpha$, then $Q(\Z^n)$ is dense
+    in $\R$.
+  kind: conjecture
+  location: 'Section: Homogeneous Dynamics I'
+  name: Conjecture (Oppenheim)
+- description: If $X \in B_1^2$, then $Avg_{\theta \in S^1}|\pi_\theta X|_\delta\gtrsim
+    |X|_\delta^{1/2}$.
+  kind: proposition
+  location: 'Section: Homogeneous Dynamics II'
+  name: Proposition
+- description: $|X_{j+1}|_\delta \gtrsim \delta^{-1}|X_j|^{1/2}$.
+  kind: corollary
+  location: 'Section: Homogeneous Dynamics II'
+  name: Corollary
+- description: If $X \subseteq B^3$ is a $(\delta, 2, C)$ set and $\gamma$ is non-degenerate.
+    Then, $Avg_{\theta \in \gamma}|\pi_\theta(X)|_\delta \geq C_\epsilon \delta^{-2+\epsilon}$
+    for any $\epsilon >0$.
+  kind: theorem
+  location: 'Section: Homogeneous Dynamics II'
+  name: Theorem (Gan-Guo-Guth-Harris-Maldague-Wang)
+- description: There is a constant $c > 0$ so that the following holds. If $G=SL(3,\R)$,
+    $\Gamma=SL(3,\Z)$, $U$ as above and $U \cdot x$ is not close to a proper homogeneous
+    subspace, then $U_{[0,T]} x$ is $T^{-c}$-dense in $(G / \Gamma)$.
+  kind: theorem
+  location: 'Section: Homogeneous Dynamics II'
+  name: Theorem (Lindenstrauss, Mohammadi, Wang, Yang, vague statement)
+- description: Let $E$ be a set of points in $\R^2$. Pick some integer $S > 1$. For
+    every $x$ in $E$, let $L_x$ be a set of $S$ lines passing through $x$. Define
+    $L = \bigcup_{x\in E} L_x$. Then $|L| \gtrsim \min(|E|\cdot S, |E|^{1/2} S^{3/2})$.
+  kind: theorem
+  location: 'Section: Sharp Projection Theorems I: Introduction and Beck''s Theorem'
+  name: Theorem [1982]
+- description: A set $E \subset \R^d$ contained in the unit ball centered at the origin
+    is $(\delta, s, C)$ if $|E \cap B_x(r)|_{\delta} \leq C r^s |E|_\delta$ for all
+    balls of radius $r$ with $r \geq \delta$ centered at arbitrary points $x$, where
+    $|\cdot |_\delta$ is the $\delta$-ball covering number.
+  kind: definition
+  location: 'Section: Sharp Projection Theorems I: Introduction and Beck''s Theorem'
+  name: Definition
+- description: Choose $\eta > 0$ and let $E$ be a $(\delta, u, C)$ set in the plane
+    such that for all $\rho \times 1$ rectangle $R$, $|E\cap R |_\delta \leq C \rho^\eta
+    |E|_\delta$. Then for most $x\in E$, $|L_{x,E}|_\delta \gtrsim \delta^\epsilon
+    \min(\delta^{-u}, \delta^{-1})$.
+  kind: theorem
+  location: Section on History of the Furstenberg conjecture
+  name: Theorem (Continuum Beck's Theorem, OSW (2023))
+- description: 'Let $E$ be a set of points in $\R^2$ and for any line $\ell$, assume
+    that $|\ell \cap E| \leq \frac{1}{2} |E|$. For every $x\in E$, let $L_{x,E}$ be
+    the set of lines passing through $x$ that also pass through an additional point
+    in $E$, i.e. $L_{x,E} = \{\ell: \text{$\ell$ is a line passing through $x$ such
+    that } |\ell \cap E | \geq 2\}$. Then for every $x$, $|L_{x,E}| \gtrsim |E|$.'
+  kind: theorem
+  location: Section on History of the Furstenberg conjecture
+  name: Theorem (Beck)
+- description: If $0<s< \min(u,1)$, and if a typical set $L_{x,E}$ is uniform and
+    $(\delta, s, C)$, then a typical $L_{x,E}$ is $(\delta, s+\epsilon, C')$ where
+    $\epsilon = \epsilon(s,u) > 0$.
+  kind: lemma
+  location: Section on History of the Furstenberg conjecture
+  name: Lemma
+- description: If $E \subset \R^2$ is a $(\delta, t, C)$-set and for all $x \in E$,
+    $\mathbb{T}_x$ is a set of $\delta$-tubes going through $x$, $\mathrm{Dir}(\mathbb{T}_x)$
+    is a $(\delta, s, C)$-set, with $\mathbb{T}_x$ uniform, $|\mathbb{T}_x| \sim \delta^{-s}$,
+    and $s > 0$, then $|\mathbb{T}| \geq c_\epsilon \delta^\epsilon C^{-O(1)} \min
+    \left( \delta^{-s - t}, \delta^{-\frac{t}{2} - \frac{3s}{2}}, \delta^{-1 - s}
+    \right)$.
+  kind: theorem
+  location: 'Sharp Projection Theorems II: AD Regular Case'
+  name: Theorem (OSRW)
+- description: We say $(E, \mathbb{T})$ is projective if $\mathrm{Dir}(\mathbb{T}_{x_1})
+    = \mathrm{Dir}(\mathbb{T}_{x_2})$ for any $x_1, x_2 \in E$.
+  kind: definition
+  location: 'Sharp Projection Theorems II: AD Regular Case, Section on General AD
+    vs Projective AD'
+  name: Definition
+- description: $R_{AD}(s, t, \delta) \lessapprox \max \left( 1, \delta^{-\frac{t}{2}}
+    \delta^{\frac{s}{2}}, \delta^{1 - t} \right)$.
+  kind: theorem
+  location: 'Sharp Projection Theorems II: AD Regular Case'
+  name: Theorem (OS)
+- description: If $\delta = \delta_1 \delta_2$, $\delta_1, \delta_2 < 1$, then $R_{AD}(\delta)
+    \lessapprox R_{AD}(\delta_1) R_{AD}(\delta_2)$.
+  kind: lemma
+  location: 'Sharp Projection Theorems II: AD Regular Case'
+  name: Lemma (Submultiplicative Lemma)
+- description: If $\delta = \delta_1 \delta_2$, $\delta_1, \delta_2 < 1$, then $R_{AD,
+    proj}(\delta) \lessapprox R_{AD, proj}(\delta_1) R_{AD, proj}(\delta_2)$.
+  kind: lemma
+  location: 'Sharp Projection Theorems II: AD Regular Case, Section on General AD
+    vs Projective AD'
+  name: Lemma (Submultiplicative Lemma, projective version)
+- description: Fix $s, t$. For every $\alpha > 0$ there is some $\epsilon > 0$ so
+    that either $R_{AD, proj}(\delta^{1/2}) \lesssim \delta^{-\alpha} RHS$, or $R_{AD,
+    proj}(\delta) \lesssim \delta^\epsilon R_{AD, proj}(\delta^{1/2})^2$.
+  kind: lemma
+  location: 'Sharp Projection Theorems II: AD Regular Case, Section on Sketch of the
+    proof for the AD regular case'
+  name: Lemma ($\epsilon$-improvement to submultiplicative lemma)
+- description: Under the hypotheses that $A$ is a $(\rho, a)$-set with $|A| \sim \rho^{-a}$,
+    $B$ is a $(\rho, b)$-set with $|B| \sim \rho^{-b}$, $C$ is a $(\rho, c)$-set with
+    $|C| \sim \rho^{-c}$, and for any $c \in C$, $|A + cB|_\rho \lessapprox |A|_\rho$,
+    then $a \ge b + c$.
+  kind: theorem
+  location: 'Sharp Projection Theorems II: AD Regular Case, Section on Sketch of the
+    proof for the AD regular case'
+  name: Theorem (ABC sum product theorem, Orponen-Shmerkin)
+- description: Let $E \subset \RR^2$ be a set of $N$ $\delta$-balls with $E \subset
+    B_1$ which is well-spaced, in the sense that $|E \cap B_{N^{-1/2}}|_\delta \lesssim
+    1$. Let $\TT_{R}(E)$ be a set of $\delta$-tubes which are essentially distinct
+    with $|T \cap E|_\delta \geq R$. Assume also that $R > \delta^{-\varepsilon} \delta
+    \cdot |E|_\delta$. Then $|\TT_{R}(E)| \lessapprox \frac{N^2}{R^3}$.
+  kind: theorem
+  location: 'Sharp Projection Theorems III: Combining different scales, Section on
+    Well spaced case'
+  name: Theorem (GSW)
+- description: If $E \subset \RR^2$ is a set of $N$ points and $L_{R}(E)$ the set
+    of $R$-rich lines, then $|L_{R}(E)| \lesssim \frac{N^2}{R^3} + \frac{N}{R}$.
+  kind: theorem
+  location: Section on Sharp Projection Theorems III, Subsection on Well spaced case
+  name: Theorem (Szemeredi-Trotter)
+- description: 'If $f : [0,1] \to \mathbb{R}$ is 2-Lip, increasing with $f(1) = t$,
+    $f(x) \geq t \cdot x$ and $s < t < 2 - s$. Then there is a decomposition $[0,1]
+    = \bigsqcup I$ (plus some tiny leftovers) where on each interval $I$ either (1)
+    $f$ is almost linear with slope $t_I$, $s < t_I < 2 - s$, or (2) $f$ is semi-well-spaced.'
+  kind: lemma
+  location: 'Section: Sharp Projection Theorems III, Subsection: Combining scales'
+  name: Lemma
+- description: Suppose that $E$ is a well spaced set in $B^1 \subset \RR^2$ in the
+    sense that $|E| \sim N$ and $|E \cap B(x, N^{-1/2})| \lesssim 1$. Suppose that
+    $\delta \le \rho \le N^{-1/2}$. Suppose $T_\rho$ is a $\rho$-tube with $|T_\rho
+    \cap E|_\rho \sim \tilde R$, and suppose that each $\delta$-tube $T \in \TT_{R}(E,
+    T_\rho)$ obeys the two ends condition. Then $|\TT_R(E, T_\rho)| \lesssim \frac{\tilde
+    R^2}{R^2}$.
+  kind: lemma
+  location: 'Section: Sharp Projection Theorems III, Subsection: Well spaced case'
+  name: Lemma (two ends)

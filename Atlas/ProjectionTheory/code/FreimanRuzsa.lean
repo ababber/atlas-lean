@@ -1,0 +1,60 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Mathlib
+open Finset Pointwise
+
+namespace FreimanRuzsa
+
+/-- A generalized arithmetic progression (GAP) in an abelian group $\alpha$: a base point,
+a `dim`-dimensional family of step directions $v_1,\dots,v_{\dim}$, and integer lengths
+$N_1,\dots,N_{\dim}$, representing the set
+$\{\text{base} + n_1 v_1 + \dots + n_{\dim} v_{\dim} : 0 \le n_i < N_i\}$. -/
+structure GAP (α : Type*) [AddCommGroup α] where
+  dim : ℕ
+  base : α
+  dirs : Fin dim → α
+  lengths : Fin dim → ℕ
+
+/-- The finset of points represented by a GAP $P$: all sums
+$P.\text{base} + \sum_i n_i \cdot P.\text{dirs}\,i$ for $0 \le n_i < P.\text{lengths}\,i$. -/
+noncomputable def GAP.toFinset [DecidableEq α] [AddCommGroup α] (P : GAP α) : Finset α :=
+  (Fintype.piFinset (fun i => Finset.range (P.lengths i))).image
+    (fun n => P.base + ∑ i : Fin P.dim, (n i) • (P.dirs i))
+
+/-- The volume of a GAP, i.e. the product $\prod_i P.\text{lengths}\,i$ of all the side
+lengths. This bounds the cardinality of `P.toFinset`. -/
+def GAP.volume [AddCommGroup α] (P : GAP α) : ℕ :=
+  ∏ i : Fin P.dim, P.lengths i
+
+/-- **Freiman–Ruzsa theorem.** If $A \subset \mathbb{Z}$ satisfies $|A+A| \le K|A|$, then
+$A$ is contained in a generalized arithmetic progression of dimension at most $r(K)$ and
+volume at most $V(K) \cdot |A|$, where $r(K), V(K)$ depend only on $K$. -/
+theorem freiman_ruzsa_theorem
+  (K : ℝ) (hK : 1 ≤ K) :
+  ∃ (rK : ℕ) (VK : ℝ), 0 < VK ∧
+    ∀ (A : Finset ℤ), A.Nonempty →
+      ((A + A).card : ℝ) ≤ K * A.card →
+      ∃ P : GAP ℤ, P.dim ≤ rK ∧
+        (↑A : Set ℤ) ⊆ ↑P.toFinset ∧
+        (P.volume : ℝ) ≤ VK * A.card := by sorry
+
+/-- **Polynomial Freiman–Ruzsa conjecture (meaningful bound form).** Even when the
+doubling constant is allowed to grow polynomially as $K = |A|^\delta$ for some $\delta > 0$,
+one should still get a GAP of dimension $r_0$ and volume $V_0 \cdot |A|$ containing $A$,
+with $r_0, V_0$ depending only on $\delta$. -/
+theorem freiman_ruzsa_conjecture_meaningful :
+    ∀ (δ : ℝ), δ > 0 →
+      ∃ (r₀ : ℕ) (V₀ : ℝ), V₀ > 0 ∧
+        ∀ (A : Finset ℤ), A.Nonempty →
+          ((A + A).card : ℝ) ≤ (A.card : ℝ) ^ (1 + δ) →
+          ∃ P : GAP ℤ, P.dim ≤ r₀ ∧
+            (↑A : Set ℤ) ⊆ ↑P.toFinset ∧
+            (P.volume : ℝ) ≤ V₀ * A.card := by sorry
+
+end FreimanRuzsa

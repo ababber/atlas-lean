@@ -1,0 +1,446 @@
+- description: Let $V$ be a normed vector space (over $\KK$). Then $V' = \mc{B}(V,
+    \KK)$ is called the dual space of $V$, and because $\KK = \RR, \CC$ are both complete,
+    $V'$ is then a Banach space. An element of the dual space $\mc{B}(V, \KK)$ is
+    called a functional.
+  kind: definition
+  location: February 18, 2021
+  name: Definition
+- description: If $\sum_n v_n$ is absolutely summable, then the sequence of partial
+    sums $\left\{\sum_{n=1}^m v_n\right\}_{m=1}^{\infty}$ is Cauchy.
+  kind: proposition
+  location: February 18, 2021
+  name: Proposition
+- description: If $V$ is a normed vector space and $W$ is a Banach space, then $\mc{B}(V,
+    W)$ is a Banach space.
+  kind: theorem
+  location: February 18, 2021
+  name: Theorem
+- description: Let $V$ be a vector space. A Hamel basis $H \subset V$ is a linearly
+    independent set such that every element of $V$ is a finite linear combination
+    of elements of $H$.
+  kind: definition
+  location: February 25, 2021 lecture
+  name: Definition
+- description: If $B_1, B_2$ are Banach spaces, then $B_1 \times B_2$ (with operations
+    done entry by entry) with norm $||(b_1, b_2)|| = ||b_1|| + ||b_2||$ is a Banach
+    space.
+  kind: proposition
+  location: February 25, 2021 lecture
+  name: Proposition
+- description: Let $V$ be a normed space. Then for all $v \in V \setminus \{0\}$,
+    there exists an $f \in V'$ (a bounded linear functional) with $||f|| = 1$ and
+    $f(v) = ||v||$.
+  kind: theorem
+  location: March 4, 2021 lecture
+  name: Theorem
+- description: 'Let $M$ be a complete metric space, and let $\{C_n\}_n$ be a collection
+    of closed subsets of $M$ such that $M = \bigcup_{n\in\NN} C_n$. Then at least
+    one of the $C_n$ contain an open ball $B(x, r) = \{y \in M: d(x, y) < r\}$. (In
+    other words, at least one $C_n$ has an interior point.)'
+  kind: theorem
+  location: February 23, 2021 lecture
+  name: Theorem (Baire Category Theorem)
+- description: Let $B$ be a Banach space, and let $\{T_n\}$ be a sequence in $\mc{B}(B,
+    V)$ (of linear operators from $B$ into some normed space $V$). Then if for all
+    $b \in B$ we have $\sup_n||T_n b|| < \infty$ (that is, this sequence is pointwise
+    bounded), then $\sup_n||T_n|| < \infty$ (the operator norms are bounded).
+  kind: theorem
+  location: February 23, 2021 lecture
+  name: Theorem (Uniform Boundedness Theorem)
+- description: Let $B_1, B_2$ be two Banach spaces, and let $T \in \mc{B}(B_1, B_2)$
+    be a surjective linear operator. Then $T$ is an open map, meaning that for all
+    open subsets $U \subset B_1$, $T(U)$ is open in $B_2$.
+  kind: theorem
+  location: February 25, 2021 lecture
+  name: Theorem (Open Mapping Theorem)
+- description: If $B_1, B_2$ are two Banach spaces, and $T \in \mc{B}(B_1, B_2)$ is
+    a bijective map, then $T^{-1}$ is in $\mc{B}(B_2, B_1)$.
+  kind: corollary
+  location: February 25, 2021 lecture
+  name: Corollary
+- description: 'Let $B_1, B_2$ be two Banach spaces, and let $T: B_1 \to B_2$ be a
+    (not necessarily bounded) linear operator. Then $T \in \mc{B}(B_1, B_2)$ if and
+    only if the graph of $T$, defined as $\Gamma(T) = \{(u, Tu): u \in B_1\}$, is
+    closed in $B_1 \times B_2$.'
+  kind: theorem
+  location: February 25, 2021 lecture
+  name: Theorem (Closed Graph Theorem)
+- description: If every chain in a nonempty partially ordered set $E$ has an upper
+    bound, then $E$ contains a maximal element.
+  kind: proposition
+  location: February 25, 2021 lecture
+  name: Proposition (Zorn's lemma)
+- description: 'Let $V$ be a normed vector space, and let $M \subset V$ be a subspace.
+    If $u: M \to \CC$ is a linear map such that $|u(t)| \le C||t||$ for all $t \in
+    M$ (in other words, we have a bounded linear functional), then there exists a
+    continuous extension $U: V \to \CC$ (which is an element of $\mc{B}(V, \CC) =
+    V''$) such that $U|_M = u$ and $||U(t)|| \le C||t||$ for all $t \in V$ (with the
+    same $C$ as above).'
+  kind: theorem
+  location: March 2, 2021 lecture
+  name: Theorem (Hahn-Banach)
+- description: 'Let $V$ be a normed space, and let $M \subset V$ be a subspace. Let
+    $u: M \to \CC$ be linear with $|u(t)| \le C||t||$ for all $t \in M$. If $x \not\in
+    M$, then there exists a function $u'': M'' \to \CC$ which is linear on the space
+    $M'' = M + \CC x = \{t + ax: t \in M, a \in \CC\}$, with $u''|_M = u$ and $|u''(t'')|
+    \le C|t''|$ for all $t'' \in M''$.'
+  kind: lemma
+  location: March 2, 2021 lecture
+  name: Lemma
+- description: The collection $\mc{M}$ of measurable sets is a $\sigma$-algebra.
+  kind: theorem
+  location: March 16, 2021
+  name: Theorem
+- description: A nonempty collection of sets $\mc{A} \subset \mc{P}(\RR)$ is an algebra
+    (not the same as the "algebra" in algebra) if for all $E \in \mc{A}$, we have
+    $E^c \in \mc{A}$, and for all $E_1, \cdots, E_n \in \mc{A}$, we have $\bigcup_{k=1}^n
+    E_k \in \mc{A}$. Furthermore, an algebra $\mc{A}$ is a $\sigma$-algebra if we
+    have the additional condition that for any countable collection $\{E_n\}_{n=1}^\infty$
+    of sets in $\mc{A}$, the union $\bigcup_n E_n$ is also in the algebra.
+  kind: definition
+  location: March 11, 2021
+  name: Definition
+- description: Let $\mc{A}$ be an algebra, and let $\{E_n\}$ be a countable collection
+    of elements of $\mc{A}$. Then there exists a disjoint countable collection $\{F_n\}$
+    of elements of $\mc{A}$, such that $\bigcup_n E_n = \bigcup_n F_n$.
+  kind: lemma
+  location: March 16, 2021
+  name: Lemma
+- description: For all $a \in \RR$, the interval $(a, \infty)$ is measurable.
+  kind: proposition
+  location: March 16, 2021
+  name: Proposition
+- description: If sets $E_1, \cdots, E_n$ are measurable, then $\bigcup_{k=1}^n E_k$
+    is measurable.
+  kind: corollary
+  location: March 11, 2021
+  name: Corollary
+- description: Scalar multiples, linear combinations, and products of simple functions
+    are again simple functions.
+  kind: proposition
+  location: March 23, 2021
+  name: Proposition
+- description: 'If $f: E \to [0, \infty]$ is a nonnegative measurable function, then
+    there exists a sequence of simple functions $\{\phi_n\}$ such that the following
+    properties hold: (a) We have a pointwise increasing sequence of functions dominated
+    by $f$: $0 \le \phi_0(x) \le \phi_1(x) \le \cdots \le f(x)$ for all $x \in E$.
+    (b) Pointwise convergence holds: $\lim_{n \to \infty} \phi_n(x) = f(x)$ for all
+    $x \in E$. (c) For all $B \ge 0$, $\phi_n \to f$ converges uniformly on the set
+    $\{x \in E: f(x) \le B\}$ where $f$ is bounded.'
+  kind: theorem
+  location: March 23, 2021
+  name: Theorem
+- description: 'Let $f: E \to [-\infty, \infty]$ be a measurable function. Then we
+    define the positive part and negative part of $f$.'
+  kind: definition
+  location: March 23, 2021
+  name: Definition
+- description: Suppose $\{E_k\}$ is a countable collection of measurable sets such
+    that $E_1 \subset E_2 \subset \cdots$. Then $m\left(\bigcup_{k=1}^{\infty} E_k\right)
+    = \lim_{n \to \infty} m\left(\bigcup_{k=1}^{n} E_k\right) = \lim_{n \to \infty}
+    m(E_n)$.
+  kind: theorem
+  location: Section on Lebesgue measure
+  name: Theorem (Continuity of measure)
+- description: 'Let $E \subset \RR$ be measurable, and let $f_n: E \to [-\infty, \infty]$
+    be measurable for all $n$. If $\lim_{n \to \infty} f_n(x) = f(x)$, then $f$ is
+    measurable.'
+  kind: corollary
+  location: March 18, 2021
+  name: Corollary
+- description: 'The Lebesgue integral of an integrable function $f: E \to \RR$ is
+    $\int_E f = \int_E f^+ - \int_E f^-$.'
+  kind: definition
+  location: April 1, 2021
+  name: Definition
+- description: 'Let $f \in L^+(E)$, and suppose that $\int_E f < \infty$. Then the
+    set $\{x \in E: f(x) = \infty\}$ is a set of measure zero.'
+  kind: theorem
+  location: March 30, 2021
+  name: Theorem
+- description: 'Suppose $f, g: E \to \RR$ are measurable functions. Then we have the
+    following: (1) If $f$ is integrable, then $\left|\int_E f \right| \le \int_E |f|$.
+    (2) If $g$ is integrable, and $f = g$ almost everywhere, then $f$ is integrable
+    and $\int_E f = \int_E g$. (3) If $f, g$ are integrable and $f \le g$ almost everywhere,
+    then $\int_E f \le \int_E g$.'
+  kind: proposition
+  location: April 1, 2021
+  name: Proposition
+- description: If $\{f_n\}$ is a sequence of nonnegative measurable functions (in
+    $L^+(E)$) such that $f_1 \le f_2 \le \cdots$ pointwise on $E$, and $f_n \to f$
+    pointwise on $E$ for some $f$ (which will be in $L^+(E)$ because the pointwise
+    limit of measurable functions is measurable), then $\lim_{n \to \infty} \int_E
+    f_n = \int_E f$.
+  kind: theorem
+  location: March 30, 2021
+  name: Theorem (Monotone Convergence Theorem)
+- description: If $f, g \in L^+(E)$, then $\int_E (f+g) = \int_E f + \int_E g$.
+  kind: corollary
+  location: March 30, 2021
+  name: Corollary
+- description: Let $\{f_n\}_n$ be a sequence in $L^+(E)$. Then $\int_E \liminf_{n
+    \to \infty} f_n(x) \le \liminf_{n \to \infty} \int_E f_n(x)$.
+  kind: theorem
+  location: March 30, 2021
+  name: Theorem (Fatou's lemma)
+- description: 'Let $g: E \to [0, \infty)$ be a nonnegative integrable function, and
+    let $\{f_n\}_n$ be a sequence of real-valued measurable functions such that (1)
+    $|f_n| \le g$ almost everywhere for all $n$ and (2) there exists a function $f:
+    E \to \RR$ so that $f_n(x) \to f(x)$ pointwise almost everywhere on $E$. Then
+    $\lim_{n \to \infty} \int_E f_n = \int_E f$.'
+  kind: theorem
+  location: April 1, 2021
+  name: Theorem (Dominated Convergence Theorem)
+- description: 'If $1 \le p \le \infty$ and $\frac{1}{p} + \frac{1}{q} = 1$, and $f,
+    g: E \to \CC$ are measurable functions, then $\int_E |fg| \le ||f||_{L^p(E)} ||g||_{L^q(E)}.$'
+  kind: theorem
+  location: April 6, 2021
+  name: Theorem (Holder's inequality for $L^p$ spaces)
+- description: 'If $1 \le p \le \infty$ and $f, g: E \to \CC$ are two measurable functions,
+    then $||f+g||_{L^p(E)} \le ||f||_{L^p(E)} + ||g||_{L^p(E)}$.'
+  kind: theorem
+  location: April 6, 2021
+  name: Theorem (Minkowski's inequality for $L^p$ spaces)
+- description: For all $1 \le p \le \infty$, $L^p(E)$ is a Banach space.
+  kind: theorem
+  location: April 6, 2021
+  name: Theorem (Riesz-Fischer)
+- description: If $u_n \to u$ and $v_n \to v$ in a pre-Hilbert space equipped with
+    the norm $||\cdot||$, then $\langle u_n, v_n \rangle \to \langle u, v \rangle$.
+  kind: theorem
+  location: April 8, 2021
+  name: Theorem (Continuity of the inner product)
+- description: Let $H$ be a pre-Hilbert space. Then for any $u, v \in H$, we have
+    $||u+v||^2 + ||u-v||^2 = 2\left(||u||^2 + ||v||^2\right).$ In addition, if $H$
+    is a normed vector space satisfying this equality, then $H$ is a pre-Hilbert space.
+  kind: proposition
+  location: April 8, 2021
+  name: Proposition (Parallelogram law)
+- description: If $H$ is a pre-Hilbert space, then $||\cdot||$ is a norm on $H$.
+  kind: theorem
+  location: April 8, 2021 section
+  name: Theorem
+- description: Let $a < b$ and $1 \le p < \infty$ so that $f \in L^p([a, b])$, and
+    take some $\eps > 0$. Then there exists some $g \in C([a, b])$ such that $g(a)
+    = g(b) = 0$, so that $||f-g||_p < \eps$.
+  kind: proposition
+  location: April 6, 2021 section
+  name: Proposition
+- description: A Hilbert space is a pre-Hilbert space that is complete with respect
+    to the norm $||\cdot|| = \langle \cdot, \cdot \rangle^{1/2}$.
+  kind: definition
+  location: April 8, 2021 section
+  name: Definition
+- description: 'If $f: \RR \to \CC$ is a measurable function, and there exists some
+    $C \ge 0$ and $q > 1$ so that for almost every $x \in \RR$, we have $|f(x)| \ge
+    C(1 + |x|)^{-q}$, then $f \in L^p(\RR)$ for all $p \ge 1$.'
+  kind: corollary
+  location: April 6, 2021 section
+  name: Corollary
+- description: 'Let $f \in C([a, b])$ for some real numbers $a < b$. Then $\int_{[a,
+    b]} f = \int_a^b f(x) dx$: in other words, $f$ is integrable and the Riemann and
+    Lebesgue integrals agree.'
+  kind: theorem
+  location: Integration section
+  name: Theorem (Riemann and Lebesgue integrals agree for continuous functions)
+- description: 'If $f: E \to \CC$ is integrable, then $\left|\int_E f\right| \le \int_E
+    |f|$.'
+  kind: proposition
+  location: Integration section
+  name: Proposition (Triangle inequality for complex integrable functions)
+- description: 'Let $f: E \to \CC$ be a measurable function. For any $1 \le p < \infty$,
+    we define the $L^p$ norm $||f||_{L^p(E)} = \left(\int_E |f|^p\right)^{1/p}$. Furthermore,
+    we define the $L^\infty$ norm or essential supremum of $f$ as $||f||_{L^\infty(E)}
+    = \inf\{M > 0: m(\{x \in E: |f(x)| > M \}) = 0\}$.'
+  kind: definition
+  location: April 6, 2021 section
+  name: Definition ($L^p$ norm and $L^\infty$ norm)
+- description: 'If $f: E \to \CC$ is measurable, then $|f(x)| \le ||f||_{L^{\infty}(E)}$
+    almost everywhere on $E$. Also, if $E = [a, b]$ is a closed interval and $f \in
+    C([a, b])$, then $||f||_{L^\infty([a, b])} = ||f||_{\infty}$ is the usual sup
+    norm on bounded continuous functions.'
+  kind: proposition
+  location: April 6, 2021 section
+  name: Proposition (Essential supremum properties)
+- description: 'For any $1 \le p \le \infty$, we define the $L^p$ space $L^p(E) =
+    \left\{f: E \to \CC: f \text{ measurable and }||f||_p < \infty\right\}$, where
+    we consider two elements $f, g$ of $L^p(E)$ to be equivalent (in other words,
+    the same) if $f = g$ almost everywhere.'
+  kind: definition
+  location: April 6, 2021 section
+  name: Definition ($L^p$ space)
+- description: The space $L^p(E)$ with pointwise addition and natural scalar multiplication
+    operations is a vector space, and it is a normed vector space under $||\cdot||_p$.
+  kind: theorem
+  location: April 6, 2021 section
+  name: Theorem ($L^p(E)$ is a normed vector space)
+- description: Let $E \subset \RR$ be measurable. Then $f \in L^p(E)$ if and only
+    if (letting $n$ range over positive integers) $\lim_{n \to \infty} \int_{[-n,
+    n] \cap E} |f|^p < \infty$.
+  kind: proposition
+  location: April 6, 2021 section
+  name: Proposition (Characterization of $L^p$ membership)
+- description: 'A pre-Hilbert space $H$ is a vector space over $\CC$ with a Hermitian
+    inner product, which is a map $\langle \cdot, \cdot \rangle: H \times H \to \CC$
+    satisfying the following properties: (1) For all $\lambda_1, \lambda_2 \in \CC$
+    and $v_1, v_2, w \in H$, we have $\langle \lambda_1 v_1 + \lambda_2 v_2, w \rangle
+    = \lambda_1 \langle v_1, w \rangle + \lambda_2 \langle v_2, w \rangle$, (2) For
+    all $v, w \in H$, we have $\langle v, w\rangle = \overline{\langle w, v \rangle}$,
+    (3) For all $v \in H$, we have $\langle v, v \rangle \ge 0$, with equality if
+    and only if $v = 0$.'
+  kind: definition
+  location: April 6, 2021 section
+  name: Definition (Pre-Hilbert space)
+- description: Let $H$ be a pre-Hilbert space. Then for any $v \in H$, we define $||v||
+    = \langle v, v \rangle^{1/2}$.
+  kind: definition
+  location: April 6, 2021 section
+  name: Definition (Norm from inner product)
+- description: Let $H$ be a pre-Hilbert space. For all $u, v \in H$, we have $\left|\langle
+    u, v \rangle\right| \le ||u|| \,\, ||v||$.
+  kind: theorem
+  location: April 6, 2021 section
+  name: Theorem (Cauchy-Schwarz inequality)
+- description: Let $f \in L^2([-\pi, \pi])$. The $N$th Cesaro-Fourier mean of $f$
+    is $\sigma_Nf(x) = \frac{1}{N+1} \sum_{k=0}^N S_kf(x)$.
+  kind: definition
+  location: April 13, 2021
+  name: Definition
+- description: Let $\{e_n\}$ be a countable (finite or countably infinite) orthonormal
+    subset of a pre-Hilbert space $H$. Then for all $u \in H$, we have $\sum_n |\langle
+    u, e_n \rangle|^2 \le ||u||^2$.
+  kind: theorem
+  location: Section preceding April 13, 2021
+  name: Theorem (Bessel)
+- description: 'If $H$ is an infinite-dimensional separable Hilbert space, then $H$
+    is isometrically isomorphic to $\ell^2$. In other words, there exists a bijective
+    (bounded) linear operator $T: H \to \ell^2$ so that for all $u, v \in H$, $||Tu||_{\ell^2}
+    = ||u||_H$ and $\langle Tu, Tv \rangle_{\ell^2} = \langle u, v \rangle_H$.'
+  kind: theorem
+  location: April 13, 2021
+  name: Theorem
+- description: If a Hilbert space $H$ has an orthonormal basis, then $H$ is separable.
+  kind: corollary
+  location: April 13, 2021
+  name: Corollary
+- description: Let $H$ be a Hilbert space, and let $\{e_n\}$ be a countable orthonormal
+    basis of $H$. Then for all $u \in H$, $\sum_{n} |\langle u, e_n \rangle|^2 = ||u||^2$.
+  kind: theorem
+  location: April 13, 2021
+  name: Theorem (Parseval's identity)
+- description: 'For all $f \in L^2([-\pi, \pi])$, we have $\sigma_N f(x) = \int_{-\pi}^\pi
+    K_N(x-t) f(t) dt$, where $K_N(x) = \begin{cases} \frac{N+1}{2\pi} & x = 0 \\ \frac{1}{2\pi(N+1)}
+    \left(\frac{\sin\left(\frac{N+1}{2} x\right)}{\sin \frac{x}{2}}\right)^2 & \text{otherwise}
+    \end{cases}$. The function $K_N(x)$ is called the Fejér kernel, and it has the
+    following properties: (1) $K_N(x) \ge 0$ and $K_N(x) = K_N(-x)$ for all $x$, (2)
+    $K_N$ is periodic with period $2\pi$, (3) $\int_{-\infty}^{\infty} K_N(t) dt =
+    1$, and (4) for any $\delta \in (0, \pi)$ and for all $\delta \le |x| \le \pi$,
+    we have $|K_N(x)| \le \frac{1}{2\pi(N+1) \sin^2\frac{\delta}{2}}$.'
+  kind: proposition
+  location: April 15, 2021
+  name: Proposition
+- description: Let $f \in C([-\pi, \pi])$ be $2\pi$-periodic (so $f(-\pi) = f(\pi)$).
+    Then $\sigma_N f \to f$ uniformly on $[-\pi, \pi]$.
+  kind: theorem
+  location: April 22, 2021 section (preceding)
+  name: Theorem (Fejér)
+- description: 'Let $H$ be a Hilbert space, and let $W \subset H$ be a closed subspace.
+    Then the map $\Pi_W: H \to H$ sending $v = w + w^\perp$ (for $w \in W, w^\perp
+    \in W^\perp$) to $w$ is a projection operator.'
+  kind: proposition
+  location: April 22, 2021
+  name: Proposition
+- description: 'Let $H$ be a Hilbert space, and let $A: H \to H$ be a bounded linear
+    operator. Then $(\text{Ran}(A))^\perp = \text{Null}(A^\ast)$, where $\text{Ran}(A)$
+    is the range of $A$ (the set of all vectors of the form $Au$), and $\text{Null}(A^\ast)$
+    is the nullspace of $A^\ast$ (the set of all vectors for which $A^\ast u = 0$).'
+  kind: theorem
+  location: April 27, 2021
+  name: Theorem
+- description: Let $X$ be a metric space. A subset $K \subset X$ is compact if every
+    sequence of elements in $K$ has a subsequence converging to an element of $K$.
+  kind: definition
+  location: April 27, 2021
+  name: Definition
+- description: Let $H$ be a Hilbert space. Then for all $f \in H'$, there exists a
+    unique $v \in H$ so that $f(u) = \langle u, v \rangle$ for all $u \in H$.
+  kind: theorem
+  location: April 22, 2021
+  name: Theorem (Riesz Representation Theorem)
+- description: A subset $K \subset \mathbb{R}$ (also $\mathbb{R}^n$ and $\mathbb{C}^n$)
+    is compact if and only if $K$ is closed and bounded.
+  kind: theorem
+  location: April 27, 2021
+  name: Theorem (Heine-Borel)
+- description: If we have a self-adjoint operator $A \in \mc{B}(H)$, meaning that
+    $A = A^\ast$, then $\langle Au, u \rangle$ is real for all $u$, and $||A|| = \sup_{||u||
+    = 1} |\langle Au, u \rangle|$.
+  kind: theorem
+  location: May 4, 2021
+  name: Theorem
+- description: If $A \in \mc{B}(H)$ and $A - \lambda$ is not injective, then there
+    exists some $u \in H \setminus \{0\}$ with $Au = \lambda u$, and we call $\lambda$
+    an eigenvalue of $A$ and $u$ the associated eigenvector.
+  kind: definition
+  location: May 4, 2021
+  name: Definition
+- description: 'The space of invertible linear operators $GL(H) = \{T \in \mc{B}(H):
+    T \text{ invertible}\}$ is an open subset of $\mc{B}(H)$.'
+  kind: proposition
+  location: May 4, 2021
+  name: Proposition
+- description: We have $\text{Null}(A) = \{0\}$, and the orthonormal eigenvectors
+    for $A$ are given by $u_k(x) = \sqrt{2} \sin(k \pi x)$, $k \in \NN$, with associated
+    eigenvalues $\lambda_k = \frac{1}{k^2\pi^2}$.
+  kind: theorem
+  location: May 13, 2021
+  name: Theorem
+- description: Let $A^\ast = A \in \mc{B}(H)$ be a self-adjoint linear operator. Then
+    $\langle Au, u \rangle \ge 0$ for all $u$ if and only if $\text{Spec}(A) \subset
+    [0, \infty)$.
+  kind: corollary
+  location: May 6, 2021
+  name: Corollary
+- description: Let $f \in L^2([0, 1])$, and suppose that $f(x) = \sum_{k=1}^{\infty}
+    c_k \sqrt{2} \sin(k \pi x)$, where $c_k = \int_0^1 f(x) \sqrt{2} \sin (k \pi x)
+    dx$. Then we define the linear operator $A^{1/2}$ via $A^{1/2}f(x) = \sum_{k=1}^{\infty}
+    \frac{1}{k\pi} c_k \sqrt{2} \sin (k\pi x)$.
+  kind: definition
+  location: May 13, 2021
+  name: Definition
+- description: Let $A = A^\ast \in \mc{B}(H)$ be a self-adjoint compact operator,
+    and let $\lambda \in \RR \setminus \{0\}$. Then $\text{Range}(A - \lambda)$ is
+    closed, meaning that $\text{Range}(A - \lambda) = (\text{Range}(A-\lambda)^\perp)^\perp
+    = \text{Null}(A - \lambda)^\perp$. Thus, either $A - \lambda$ is bijective, or
+    the nullspace of $A - \lambda$ (the eigenspace corresponding to $\lambda$) is
+    nontrivial and finite-dimensional.
+  kind: theorem
+  location: May 11, 2021
+  name: Theorem (Fredholm alternative)
+- description: Let $A = A^\ast$ be a self-adjoint compact operator. Then the nonzero
+    eigenvalues of $A$ can be ordered as $|\lambda_1| \ge |\lambda_2| \ge \cdots$
+    (including multiplicity), such that we have pairwise orthonormal eigenfunctions
+    $\{u_k\}$ for $\lambda_k$, satisfying $|\lambda_j| = \sup_{\substack{||u|| = 1
+    \\ u \in \text{Span}(u_1, \cdots, u_{j-1})^\perp}} |\langle Au, u \rangle| = |\langle
+    Au_j, u_j \rangle|$. Furthermore, we have $|\lambda_j| \to 0$ as $j \to \infty$
+    if the sequence of nonzero eigenvalues does not terminate.
+  kind: theorem
+  location: May 11, 2021
+  name: Theorem (Maximum principle)
+- description: Let $A = A^\ast$ be a self-adjoint compact operator on a separable
+    Hilbert space $H$. If $|\lambda_1| \ge |\lambda_2| \ge \cdots$ are the nonzero
+    eigenvalues of $A$, counted with multiplicity and with corresponding orthonormal
+    eigenvectors $\{u_k\}_k$, then $\{u_k\}_k$ is an orthonormal basis for $\text{Range}(A)$
+    and also of $\overline{\text{Range}(A)}$, and there is an orthonormal basis $\{f_j\}_j$
+    of $\text{Null}(A)$ so that $\{u_k\}_k \cup \{f_j\}_j$ form an orthonormal basis
+    of $H$.
+  kind: theorem
+  location: May 11, 2021
+  name: Theorem (Spectral theorem)
+- description: Let $V \in C([0, 1])$ be a nonnegative real-valued continuous function,
+    and let $f \in C([0, 1])$. Then there exists a (unique) twice-differentiable solution
+    $u \in C^2([0, 1])$ such that $-u'' + Vu = f$ for all $x \in [0, 1]$, with $u(0)
+    = u(1) = 0$.
+  kind: theorem
+  location: Section on solving the Dirichlet problem
+  name: Theorem

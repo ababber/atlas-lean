@@ -1,0 +1,706 @@
+- description: 'A map $f: X \rightarrow Y$ between metric spaces is continuous if
+    and only if one of the three following equivalent conditions holds: (1) $f^{-1}(O)
+    \subset X$ is open $\forall O \subset Y$ open. (2) $f^{-1}(C) \subset X$ is closed
+    $\forall C \subset Y$ closed. (3) $\lim_{n \rightarrow \infty} f(x_n) = f(x)$
+    in $Y$ if $x_n \rightarrow x$ in $X$.'
+  kind: proposition
+  location: Section 1, Continuous functions
+  name: Proposition 1.1
+- description: Any two norms on a finite dimensional vector space are equivalent.
+  kind: proposition
+  location: Section 1, Continuous functions
+  name: Proposition 1.2
+- description: 'The following are equivalent conditions on a linear functional $u:
+    V \longrightarrow \mathbb{R}$ on a normed space $V$. (1) $u$ is continuous. (2)
+    $u$ is continuous at 0. (3) $\{u(f) \in \mathbb{R} ; f \in V, \|f\| \leq 1\}$
+    is bounded. (4) $\exists C$ s.t. $|u(f)| \leq C\|f\| \forall f \in V$.'
+  kind: proposition
+  location: Section 1, Continuous functions
+  name: Proposition 1.3
+- description: Each $f \in \mathcal{C}_0(X)$ can be decomposed uniquely as the difference
+    of its positive and negative parts $f = f_+ - f_-$, $f_{\pm} \in \mathcal{C}_0(X)$,
+    $f_{\pm}(x) \leq |f(x)| \forall x \in X$.
+  kind: lemma
+  location: Section 1, Continuous functions
+  name: Lemma 1.4
+- description: Any element $u \in (\mathcal{C}_0(X))'$ can be decomposed, $u = u_+
+    - u_-$, into the difference of positive elements with $\|u_+\|, \|u_-\| \leq \|u\|$.
+  kind: lemma
+  location: Section 1, Continuous functions
+  name: Lemma 1.5
+- description: A positive extended function, $\mu^*$, defined on the power set of
+    $X$ is called an outer measure if $\mu^*(\emptyset) = 0$, $\mu^*(A) \leq \mu^*(B)$
+    whenever $A \subset B$ and $\mu^*(\bigcup_j A_j) \leq \sum_j \mu(A_j)$ for all
+    $\{A_j\}_{j=1}^{\infty} \subset \mathcal{P}(X)$.
+  kind: definition
+  location: Section 1, Continuous functions
+  name: Definition 1.6
+- description: If $u$ is a positive continuous linear functional on $\mathcal{C}_0(X)$
+    then $\mu^*$, defined by (1.11), (1.12) is an outer measure.
+  kind: lemma
+  location: Section 1, Continuous functions
+  name: Lemma 1.7
+- description: Suppose $U_i$, $i = 1, \ldots, N$ is a finite collection of open sets
+    in a locally compact metric space and $K \Subset \bigcup_{i=1}^{N} U_i$ is a compact
+    subset, then there exist continuous functions $f_i \in C(X)$ with $0 \leq f_i
+    \leq 1$, $\operatorname{supp}(f_i) \Subset U_i$ and $\sum_i f_i = 1$ in a neighborhood
+    of $K$.
+  kind: lemma
+  location: Section 1, Continuous functions
+  name: Lemma 1.8
+- description: A collection of subsets $\mathcal{M}$ of a set $X$ is a $\sigma$-algebra
+    if (1) $\phi, X \in \mathcal{M}$, (2) $E \in \mathcal{M} \Longrightarrow E^C =
+    X \backslash E \in \mathcal{M}$, (3) $\{E_i\}_{i=1}^{\infty} \subset \mathcal{M}
+    \Longrightarrow \bigcup_{i=1}^{\infty} E_i \in \mathcal{M}$.
+  kind: definition
+  location: Section 2, Measures and σ-algebras
+  name: Definition 2.1
+- description: A set $E \subset X$ is $\mu^*$-measurable (for an outer measure $\mu^*$
+    on $X$) if $\mu^*(A) = \mu^*(A \cap E) + \mu^*(A \cap E^{\complement})$ for all
+    $A \subset X$.
+  kind: definition
+  location: Section 2, Measures and σ-algebras
+  name: Definition 2.2
+- description: The collection of $\mu^*$-measurable sets for any outer measure is
+    a $\sigma$-algebra.
+  kind: proposition
+  location: Section 2, Measures and σ-algebras
+  name: Proposition 2.3
+- description: If $\mu^*$ is an outer measure on $X$ then the collection of $\mu^*$-measurable
+    subsets of $X$ is a $\sigma$-algebra and $\mu^*$ restricted to $\mathcal{M}$ is
+    a complete measure.
+  kind: theorem
+  location: Section 2, Measures and σ-algebras
+  name: Theorem 2.4
+- description: If $0 \leq u \in (\mathcal{C}_0(X))'$, for $X$ a locally compact metric
+    space, then each open subset of $X$ is $\mu^*$-measurable for the outer measure
+    defined by (1.11) and (1.12) and $\mu$ in (1.11) is its measure.
+  kind: proposition
+  location: Section 2, Measures and σ-algebras
+  name: Proposition 2.5
+- description: The measure defined by (1.11), (1.12) from $0 \leq u \in (\mathcal{C}_{0}(X))^{\prime}$
+    by Caratheodory's theorem is a Borel measure.
+  kind: proposition
+  location: Section 2
+  name: Proposition 2.6
+- description: A Radon measure (on a metric space) is a Borel measure which is outer
+    regular on all Borel sets, inner regular on open sets and finite on compact sets.
+  kind: definition
+  location: Section 2
+  name: Definition 2.7
+- description: The measure defined by (1.11), (1.12) from $0 \leq u \in (\mathcal{C}_{0}(X))^{\prime}$
+    using Caratheodory's theorem is a Radon measure.
+  kind: proposition
+  location: Section 2
+  name: Proposition 2.8
+- description: If $Q$ is rectangular then $v^{*}(Q) = v(Q)$.
+  kind: lemma
+  location: Section 2
+  name: Lemma 2.9
+- description: Lebesgue measure is a Borel measure.
+  kind: proposition
+  location: Section 2
+  name: Proposition 2.10
+- description: 'If $G \subset \mathcal{N}$ generates $\mathcal{N}$, in the sense that
+    $\mathcal{N} = \bigcap\{\mathcal{N}^{\prime} ; \mathcal{N}^{\prime} \supset G,
+    \mathcal{N}^{\prime} \text{ a } \sigma\text{-algebra}\}$, then $f: X \longrightarrow
+    Y$ is measurable iff $f^{-1}(A) \in \mathcal{M}$ for all $A \in G$.'
+  kind: lemma
+  location: Section 3
+  name: Lemma 3.1
+- description: 'Any continuous map $f: X \rightarrow Y$ between metric spaces is measurable
+    with respect to the Borel $\sigma$-algebras on $X$ and $Y$.'
+  kind: proposition
+  location: Section 3
+  name: Proposition 3.2
+- description: 'For any non-negative $\mu$-measurable extended function $f: X \longrightarrow
+    [0, \infty]$ there is an increasing sequence $f_n$ of simple measurable functions
+    such that $\lim_{n \rightarrow \infty} f_n(x) = f(x)$ for each $x \in X$ and this
+    limit is uniform on any measurable set on which $f$ is finite.'
+  kind: proposition
+  location: Section 3
+  name: Proposition 3.3
+- description: 'For a non-negative $\mu$-measurable extended function $f: X \longrightarrow
+    [0, \infty]$ the integral (with respect to $\mu$) over any measurable set $E \subset
+    X$ is $$\int_{E} f\, d\mu = \sup\left\{\int_{E} h\, d\mu ; 0 \leq h \leq f, h
+    \text{ simple and measurable}\right\}.$$'
+  kind: definition
+  location: Section 4
+  name: Definition 4.1
+- description: 'If $f: X \longrightarrow [0, \infty]$ is measurable then $\int_{E}
+    f\, d\mu = 0$ for a measurable set $E$ if and only if $\{x \in E ; f(x) > 0\}$
+    has measure zero.'
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.2
+- description: Let $f_n$ be an increasing sequence of non-negative measurable (extended)
+    functions, then $f(x) = \lim_{n \rightarrow \infty} f_n(x)$ is measurable and
+    $$\int_{E} f\, d\mu = \lim_{n \rightarrow \infty} \int_{E} f_n\, d\mu$$ for any
+    measurable set $E \subset X$.
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.3 (Monotone Convergence)
+- description: 'A measurable extended function $f: X \longrightarrow [-\infty, \infty]$
+    is said to be integrable on $E$ if its positive and negative parts both have finite
+    integrals over $E$, and then $$\int_{E} f\, d\mu = \int_{E} f_{+}\, d\mu - \int_{E}
+    f_{-}\, d\mu.$$'
+  kind: definition
+  location: Section 4
+  name: Definition 4.4
+- description: If $f_k$ is a sequence of non-negative integrable functions then $$\int
+    \liminf_{n \rightarrow \infty} f_n\, d\mu \leq \liminf_{n \rightarrow \infty}
+    \int f_n\, d\mu.$$
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.5 (Fatou)
+- description: If $f_n$ is a sequence of integrable functions, $f_k \rightarrow f$
+    a.e. and $|f_n| \leq g$ for some integrable $g$ then $f$ is integrable and $$\int
+    f\, d\mu = \lim_{n \rightarrow \infty} \int f_n\, d\mu.$$
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.6
+- description: If $a \geq 0$, $b \geq 0$ and $0 < \gamma < 1$ then $$a^{\gamma} b^{1-\gamma}
+    \leq \gamma a + (1-\gamma) b$$ with equality only when $a = b$.
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.7
+- description: If $f$ and $g$ are measurable then $\left|\int f g \, d\mu\right| \leq
+    \|f\|_{p}\|g\|_{q}$ for any $1<p<\infty$, with $\frac{1}{p}+\frac{1}{q}=1$.
+  kind: lemma
+  location: Section 4
+  name: Lemma 4.8
+- description: If $1<p<\infty$ and $f, g \in L^{p}(X, \mu)$ then $\|f+g\|_{p} \leq
+    \|f\|_{p}+\|g\|_{p}$.
+  kind: proposition
+  location: Section 4
+  name: Proposition 4.9
+- description: A normed space in which the underlying metric space is complete is
+    called a Banach space.
+  kind: definition
+  location: Section 4
+  name: Definition 4.10
+- description: For any measure space $(X, M, \mu)$ the spaces $L^{p}(X, \mu)$, $1
+    \leq p<\infty$, are Banach spaces.
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.11
+- description: If $X$ is a locally compact metric space then every continuous linear
+    functional on $\mathcal{C}_{0}(X)$ is given by a unique finite Radon measure on
+    $X$ through the map $\mathcal{C}_{0}(X) \ni f \longmapsto \int_{X} f \, d\mu$.
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.12 (Riesz representation.)
+- description: A Hilbert space is a vector space $V$ with an inner product satisfying
+    (5.1) – (5.4) (sesquilinearity, conjugacy symmetry, and positivity) which is complete
+    as a normed space (i.e., is a Banach space).
+  kind: definition
+  location: Section 5
+  name: Definition 5.1
+- description: Let $C \subset H$, in a Hilbert space, be closed and convex (i.e.,
+    $su+(1-s)v \in C$ if $u, v \in C$ and $0<s<1$). Then $C$ contains a unique element
+    of smallest norm.
+  kind: lemma
+  location: Section 5
+  name: Lemma 5.2
+- description: 'If $L: H \rightarrow \mathbb{C}$ is a continuous linear functional
+    on a Hilbert space then there is a unique element $v \in H$ such that $Lu=(u,v)$
+    for all $u \in H$.'
+  kind: proposition
+  location: Section 5
+  name: Proposition 5.3
+- description: 'For any positive measure $\mu$, any continuous linear functional $L:
+    L^{2}(X, \mu) \rightarrow \mathbb{C}$ is of the form $Lf=\int_{X} f\bar{g}\, d\mu$,
+    for some $g \in L^{2}(X, \mu)$.'
+  kind: corollary
+  location: Section 5
+  name: Corollary 5.4
+- description: If $V \hookrightarrow U$ is a subspace with a stronger norm, $\|\varphi\|_{U}
+    \leq C\|\varphi\|_{V}$ for all $\varphi \in V$, then restriction gives a continuous
+    linear map $U' \rightarrow V'$, $U' \ni L \longmapsto \tilde{L}=L|_{V} \in V'$,
+    with $\|\tilde{L}\|_{V'} \leq C\|L\|_{U'}$. If $V$ is dense in $U$ then the map
+    is injective.
+  kind: lemma
+  location: Section 6
+  name: Lemma 6.1
+- description: Let $\mathcal{C}_{0}^{1}(\mathbb{R}^{n})$ be the subspace of $\mathcal{C}_{0}(\mathbb{R}^{n})
+    = \mathcal{C}_{0}^{0}(\mathbb{R}^{n})$ such that each element $u \in \mathcal{C}_{0}^{1}(\mathbb{R}^{n})$
+    is continuously differentiable and $\frac{\partial u}{\partial x_{j}} \in \mathcal{C}_{0}(\mathbb{R}^{n})$,
+    $j = 1, \ldots, n$.
+  kind: definition
+  location: Section 6
+  name: Definition 6.2
+- description: The function $\|u\|_{\mathcal{C}^{1}} = \|u\|_{\infty} + \sum_{i=1}^{n}
+    \left\|\frac{\partial u}{\partial x_{1}}\right\|_{\infty}$ is a norm on $\mathcal{C}_{0}^{1}(\mathbb{R}^{n})$
+    with respect to which it is a Banach space.
+  kind: proposition
+  location: Section 6
+  name: Proposition 6.3
+- description: The space $\mathcal{C}_{0}^{k}(\mathbb{R}^{n}) \subset \mathcal{C}_{0}^{1}(\mathbb{R}^{n})$,
+    $k \geq 1$, is defined inductively by requiring that $\frac{\partial u}{\partial
+    x_{j}} \in \mathcal{C}_{0}^{k-1}(\mathbb{R}^{n})$, $j = 1, \ldots, n$. The norm
+    on $\mathcal{C}_{0}^{k}(\mathbb{R}^{n})$ is taken to be $\|u\|_{\mathcal{C}^{k}}
+    = \|u\|_{\mathcal{C}^{k-1}} + \sum_{j=1}^{n} \left\|\frac{\partial u}{\partial
+    x_{j}}\right\|_{\mathcal{C}^{k-1}}$.
+  kind: definition
+  location: Section 6
+  name: Definition 6.4
+- description: For any $k, l \in \mathbb{N} = \{1, 2, \cdots\}$ set $\langle x\rangle^{-l}
+    \mathcal{C}_{0}^{k}(\mathbb{R}^{n}) = \{u \in \mathcal{C}_{0}^{k}(\mathbb{R}^{n})
+    ; u = \langle x\rangle^{-l} v, v \in \mathcal{C}_{0}^{k}(\mathbb{R}^{n})\}$ with
+    norm $\|u\|_{k,l} = \|v\|_{\mathcal{C}^{k}}$, $v = \langle x\rangle^{l} u$.
+  kind: definition
+  location: Section 6
+  name: Definition 6.5
+- description: 'Schwartz'' space of test functions on $\mathbb{R}^{n}$ is $\mathcal{S}(\mathbb{R}^{n})
+    = \{u : \mathbb{R}^{n} \rightarrow \mathbb{C} ; u \in \langle x\rangle^{-l} \mathcal{C}_{0}^{k}(\mathbb{R}^{n})
+    \text{ for all } k \text{ and } l \in \mathbb{N}\}$.'
+  kind: definition
+  location: Section 6
+  name: Definition 6.6
+- description: For $u \in \mathcal{S}(\mathbb{R}^{n})$, set $\|u\|_{(k)} = \|\langle
+    x\rangle^{k} u\|_{\mathcal{C}^{k}}$ and define $d(u, v) = \sum_{k=0}^{\infty}
+    2^{-k} \frac{\|u-v\|_{(k)}}{1+\|u-v\|_{(k)}}$. Then $d$ is a distance function
+    in $\mathcal{S}(\mathbb{R}^{n})$ with respect to which it is a complete metric
+    space.
+  kind: proposition
+  location: Section 6
+  name: Proposition 6.7
+- description: The condition $\varphi \in \mathcal{S}(\mathbb{R}^{n})$ can be written
+    $\langle x\rangle^{k} D^{\alpha} \varphi \in \mathcal{C}_{0}^{0}(\mathbb{R}^{n})$
+    for all $|\alpha| \leq k$, for all $k$.
+  kind: lemma
+  location: Section 7
+  name: Lemma 7.1
+- description: For any $k \in \mathbb{N}$ the norms $\|\langle x\rangle^{k} \varphi\|_{\mathcal{C}^{k}}$
+    and $\sum_{|\alpha| \leq k, |\beta| \leq k} \|x^{\alpha} D_{x}^{\beta} \varphi\|_{\infty}$
+    are equivalent.
+  kind: corollary
+  location: Section 7
+  name: Corollary 7.2
+- description: 'A linear functional $u : \mathcal{S}(\mathbb{R}^{n}) \rightarrow \mathbb{C}$
+    is continuous if and only if there exist $C, k$ such that $|u(\varphi)| \leq C
+    \sum_{|\alpha| \leq k, |\beta| \leq k} \sup_{\mathbb{R}^{n}} |x^{\alpha} D_{x}^{\beta}
+    \varphi|$.'
+  kind: proposition
+  location: Section 7
+  name: Proposition 7.3
+- description: 'A linear map $T : \mathcal{S}(\mathbb{R}^{n}) \rightarrow \mathcal{S}(\mathbb{R}^{n})$
+    is continuous if and only if for each $k$ there exist $C$ and $j$ such that if
+    $|\alpha| \leq k$ and $|\beta| \leq k$ then $\sup |x^{\alpha} D^{\beta} T\varphi|
+    \leq C \sum_{|\alpha''| \leq j, |\beta''| \leq j} \sup_{\mathbb{R}^{n}} |x^{\alpha''}
+    D^{\beta''} \varphi|$ for all $\varphi \in \mathcal{S}(\mathbb{R}^{n})$.'
+  kind: lemma
+  location: Section 7
+  name: Lemma 7.4
+- description: The set supp(u) defined by (7.19) is a closed subset of ℝⁿ and reduces
+    to (7.18) if u ∈ S(ℝⁿ).
+  kind: lemma
+  location: Section 7
+  name: Lemma 7.5
+- description: If v ∈ C₀⁰(ℝⁿ) and ψ ∈ S(ℝⁿ) then v * ψ ∈ C₀^∞(ℝⁿ) = ⋂_{k≥0} C₀ᵏ(ℝⁿ).
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.1
+- description: If v ∈ C₀⁰(ℝⁿ) then as t → 0, vₜ = v * φₜ → v in C₀⁰(ℝⁿ).
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.2
+- description: C₀ᵏ(ℝⁿ) is dense in C₀ᵖ(ℝⁿ) for any k ≥ p.
+  kind: corollary
+  location: Section 8
+  name: Corollary 8.3
+- description: S(ℝⁿ) is dense in C₀ᵏ(ℝⁿ) for any k ≥ 0.
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.4
+- description: The map from finite Radon measures M_fin(ℝⁿ) ∋ μ ↦ u_μ ∈ S'(ℝⁿ) is
+    injective.
+  kind: corollary
+  location: Section 8
+  name: Corollary 8.5
+- description: Elements of L²(ℝⁿ) are 'continuous in the mean', i.e., lim_{|t|→0}
+    ∫_{ℝⁿ} |u(x+t) - u(x)|² dx = 0.
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.6
+- description: If Uₐ ⊂ ℝⁿ are open for a ∈ A and K ⋐ ⋃_{a∈A} Uₐ then there exist finitely
+    many φᵢ ∈ C_c^∞(ℝⁿ), with 0 ≤ φᵢ ≤ 1, supp(φᵢ) ⊂ U_{aᵢ} such that ∑ᵢ φᵢ = 1 in
+    a neighbourhood of K.
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.7
+- description: The space C_c^∞(ℝⁿ) of C^∞ functions of compact support is dense in
+    S(ℝⁿ).
+  kind: lemma
+  location: Section 8
+  name: Lemma 8.8
+- description: If u ∈ S'(ℝⁿ) and supp(u) = ∅ then u = 0.
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.9
+- description: If u ∈ S'(ℝⁿ) satisfies xⱼu = 0, j = 1, …, n then u = cδ.
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.10
+- description: 'Fourier transformation, (8.28), defines a continuous linear map $\mathcal{F}:
+    \mathcal{S}(\mathbb{R}^n) \rightarrow \mathcal{S}(\mathbb{R}^n)$, $\mathcal{F}\varphi
+    = \hat{\varphi}$.'
+  kind: proposition
+  location: Section 8
+  name: Proposition 8.11
+- description: The Fourier transform of the Gaussian $\exp(-|x|^2/2)$ is the Gaussian
+    $(2\pi)^{n/2} \exp(-|\xi|^2/2)$.
+  kind: lemma
+  location: Section 8
+  name: Lemma 8.12
+- description: 'Fourier transform $\mathcal{F}: \mathcal{S}(\mathbb{R}^n) \rightarrow
+    \mathcal{S}(\mathbb{R}^n)$ is an isomorphism with inverse $\mathcal{G}: \mathcal{S}(\mathbb{R}^n)
+    \rightarrow \mathcal{S}(\mathbb{R}^n)$, $\mathcal{G}\psi(y) = (2\pi)^{-n} \int
+    e^{iy \cdot \xi} \psi(\xi) d\xi$.'
+  kind: theorem
+  location: Section 9
+  name: Theorem 9.1
+- description: 'For all $\varphi, \psi \in \mathcal{S}(\mathbb{R}^n)$, Parseval''s
+    identity holds: $\int_{\mathbb{R}^n} \varphi \bar{\psi}\, dx = (2\pi)^{-n} \int_{\mathbb{R}^n}
+    \hat{\varphi} \overline{\hat{\psi}}\, d\xi$.'
+  kind: lemma
+  location: Section 9
+  name: Lemma 9.2
+- description: 'Fourier transform extends to an isomorphism $\mathcal{F}: L^2(\mathbb{R}^n)
+    \rightarrow L^2(\mathbb{R}^n)$.'
+  kind: proposition
+  location: Section 9
+  name: Proposition 9.3
+- description: If $m \in \mathbb{N}$ is an integer, then $u \in H^m(\mathbb{R}^n)
+    \Leftrightarrow D^\alpha u \in L^2(\mathbb{R}^n)$ for all $|\alpha| \leq m$.
+  kind: lemma
+  location: Section 9
+  name: Lemma 9.4
+- description: If $u \in \mathcal{S}'(\mathbb{R}^n)$ we define its Fourier transform
+    by $\hat{u}(\varphi) = u(\hat{\varphi})$ for all $\varphi \in \mathcal{S}(\mathbb{R}^n)$.
+  kind: definition
+  location: Section 9
+  name: Definition 9.5
+- description: 'The definition (9.7) gives an isomorphism $\mathcal{F}: \mathcal{S}''(\mathbb{R}^n)
+    \rightarrow \mathcal{S}''(\mathbb{R}^n)$, $\mathcal{F}u = \hat{u}$, satisfying
+    the identities $\widehat{D^\alpha u} = \xi^\alpha u$ and $\widehat{x^\alpha u}
+    = (-1)^{|\alpha|} D^\alpha \hat{u}$.'
+  kind: proposition
+  location: Section 9
+  name: Proposition 9.6
+- description: If $m \leq 0$ is an integer then $u \in H^m(\mathbb{R}^n)$ if and only
+    if it can be written in the form $u = \sum_{|\alpha| \leq -m} D^\alpha v_\alpha$,
+    $v_\alpha \in L^2(\mathbb{R}^n)$.
+  kind: proposition
+  location: Section 9
+  name: Proposition 9.7
+- description: Each of the Sobolev spaces $H^m(\mathbb{R}^n)$ is a Hilbert space with
+    the norm and inner product $\|u\|_{H^m} = \left(\int_{\mathbb{R}^n} |\hat{u}(\xi)|^2
+    \langle\xi\rangle^{2m} d\xi\right)^{1/2}$ and $\langle u, v\rangle = \int_{\mathbb{R}^n}
+    \hat{u}(\xi) \overline{\hat{v}(\xi)} \langle\xi\rangle^{2m} d\xi$. The Schwartz
+    space $\mathcal{S}(\mathbb{R}^n) \hookrightarrow H^m(\mathbb{R}^n)$ is dense for
+    each $m$ and the pairing $H^m(\mathbb{R}^n) \times H^{-m}(\mathbb{R}^n) \ni (u,
+    u') \longmapsto ((u, u')) = \int_{\mathbb{R}^n} \hat{u}'(\xi) \hat{u}'(\cdot\xi)
+    d\xi \in \mathbb{C}$ gives an identification $(H^m(\mathbb{R}^n))' = H^{-m}(\mathbb{R}^n)$.
+  kind: proposition
+  location: Section 9
+  name: Proposition 9.8
+- description: If $u \in H^m(\mathbb{R}^n)$ where $m > n/2$ then $u \in \mathcal{C}_0^0(\mathbb{R}^n)$,
+    i.e., $H^m(\mathbb{R}^n) \subset \mathcal{C}_0^0(\mathbb{R}^n)$, $m > n/2$.
+  kind: theorem
+  location: Section 10
+  name: Theorem 10.1 (Sobolev embedding)
+- description: 'If $u \in H^m(\mathbb{R}^n)$, $m \in \mathbb{R}$, then $D^\alpha u
+    \in H^{m-|\alpha|}(\mathbb{R}^n)$ and $D^\alpha: H^m(\mathbb{R}^n) \rightarrow
+    H^{m-|\alpha|}(\mathbb{R}^n)$ is continuous.'
+  kind: proposition
+  location: Section 10
+  name: Proposition 10.2
+- description: If $k \in \mathbb{N}_0$ and $m > \frac{n}{2} + k$ then $H^m(\mathbb{R}^n)
+    \subset \mathcal{C}_0^k(\mathbb{R}^n)$.
+  kind: corollary
+  location: Section 10
+  name: Corollary 10.3
+- description: 'Schwartz space can be written in terms of weighted Sobolev spaces:
+    $\mathcal{S}(\mathbb{R}^{n}) = \bigcap_{k} \langle x \rangle^{-k} H^{k}(\mathbb{R}^{n})$.'
+  kind: proposition
+  location: Section 10
+  name: Proposition 10.4
+- description: Any tempered distribution can be written in the form of a finite sum
+    $u = \sum_{|\alpha| \leq m, |\beta| \leq m} x^{\alpha} D_{x}^{\beta} u_{\alpha
+    \beta}$, $u_{\alpha \beta} \in \mathcal{C}_{0}^{0}(\mathbb{R}^{n})$, or in the
+    form $u = \sum_{|\alpha| \leq m, |\beta| \leq m} D_{x}^{\beta}(x^{\alpha} v_{\alpha
+    \beta})$, $v_{\alpha \beta} \in \mathcal{C}_{0}^{0}(\mathbb{R}^{n})$. Thus every
+    tempered distribution is a finite sum of derivatives of continuous functions of
+    polynomial growth.
+  kind: theorem
+  location: Section 10
+  name: Theorem 10.5 (Schwartz representation)
+- description: For any $\gamma \in \mathbb{N}_{0}^{n}$ there are polynomials $p_{\alpha,\gamma}(x)$
+    of degrees at most $|\gamma - \alpha|$ such that $\langle x \rangle^{k} D^{\gamma}
+    v = \sum_{\alpha \leq \gamma} D^{\gamma - \alpha}(p_{\alpha,\gamma} \langle x
+    \rangle^{k - 2|\gamma - \alpha|} v)$.
+  kind: lemma
+  location: Section 10
+  name: Lemma 10.6
+- description: The subspace $\mathcal{S}(\mathbb{R}^{n}) \subset \mathcal{S}'(\mathbb{R}^{n})$
+    is weakly dense, i.e., each $u \in \mathcal{S}'(\mathbb{R}^{n})$ is the weak limit
+    of a sequence $u_{j} \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: proposition
+  location: Section 11
+  name: Proposition 11.1
+- description: If $u_{j} \rightarrow u$ and $u_{j}' \rightarrow u'$ weakly in $\mathcal{S}'(\mathbb{R}^{n})$
+    then $c u_{j} \rightarrow c u$, $u_{j} + u_{j}' \rightarrow u + u'$, $D^{\alpha}
+    u_{j} \rightarrow D^{\alpha} u$ and $\langle x \rangle^{m} u_{j} \rightarrow \langle
+    x \rangle^{m} u$ weakly in $\mathcal{S}'(\mathbb{R}^{n})$.
+  kind: proposition
+  location: Section 11
+  name: Proposition 11.2
+- description: An element $E \in \mathcal{S}'(\mathbb{R}^{n})$ satisfying $P(D) E
+    = \delta$ is said to be a (tempered) fundamental solution of $P(D)$.
+  kind: definition
+  location: Section 11
+  name: Definition 11.3
+- description: Every non-zero constant coefficient differential operator has a tempered
+    fundamental solution.
+  kind: theorem
+  location: Section 11
+  name: Theorem 11.4
+- description: $E(x, y) = \frac{1}{2\pi}(x + iy)^{-1}$ for $(x,y) \neq 0$ is locally
+    integrable and so defines $E \in \mathcal{S}'(\mathbb{R}^{2})$ by $E(\varphi)
+    = \frac{1}{2\pi} \int_{\mathbb{R}^{2}} (x + iy)^{-1} \varphi(x,y)\, dx\, dy$,
+    and $E$ so defined is a tempered fundamental solution of $\bar{\partial}$.
+  kind: lemma
+  location: Section 11
+  name: Lemma 11.5
+- description: If $u \in \mathcal{S}'(\mathbb{R}^{n})$ and $\varphi \in \mathcal{S}(\mathbb{R}^{n})$
+    then $u * \varphi \in \mathcal{S}'(\mathbb{R}^{n}) \cap \mathcal{C}^{\infty}(\mathbb{R}^{n})$
+    and if $\operatorname{supp}(\varphi) \Subset \mathbb{R}^{n}$ then $\operatorname{supp}(u
+    * \varphi) \subset \operatorname{supp}(u) + \operatorname{supp}(\varphi)$. For
+    any multi-index $\alpha$, $D^{\alpha}(u * \varphi) = D^{\alpha} u * \varphi =
+    u * D^{\alpha} \varphi$.
+  kind: theorem
+  location: Section 11
+  name: Theorem 11.6 (Hörmander, Theorem 4.1.1)
+- description: If $v \in \mathcal{S}'(\mathbb{R}^{n})$ has compact support and $\varphi
+    \in \mathcal{S}(\mathbb{R}^{n})$ then $v * \varphi \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: lemma
+  location: Section 11
+  name: Lemma 11.7
+- description: A parametrix for a constant coefficient differential operator $P(D)$
+    is a distribution $F \in \mathcal{S}'(\mathbb{R}^{n})$ such that $P(D) F = \delta
+    + \psi$, $\psi \in \mathcal{C}^{\infty}(\mathbb{R}^{n})$. An operator $P(D)$ is
+    said to be hypoelliptic if it has a parametrix satisfying $\operatorname{sing}\operatorname{supp}(F)
+    \subset \{0\}$, where for any $u \in \mathcal{S}'(\mathbb{R}^{n})$, $(\operatorname{sing}\operatorname{supp}(u))^{\complement}
+    = \{\bar{x} \in \mathbb{R}^{n}; \exists \varphi \in \mathcal{C}_{c}^{\infty}(\mathbb{R}^{n}),
+    \varphi(\bar{x}) \neq 0, \varphi u \in \mathcal{C}_{c}^{\infty}(\mathbb{R}^{n})\}$.
+  kind: definition
+  location: Section 11
+  name: Definition 11.8
+- description: If $P(D)$ is hypoelliptic then $\operatorname{sing} \operatorname{supp}(u)
+    = \operatorname{sing} \operatorname{supp}(P(D) u)$ for all $u \in \mathcal{S}'(\mathbb{R}^n)$.
+  kind: theorem
+  location: Chapter 11
+  name: Theorem 11.9
+- description: If $u \in \mathcal{S}'(\mathbb{R}^n)$ then for any polynomial $\operatorname{sing}
+    \operatorname{supp}(P(D) u) \subset \operatorname{sing} \operatorname{supp}(u)$
+    for all $u \in \mathcal{S}'(\mathbb{R}^n)$.
+  kind: lemma
+  location: Chapter 11
+  name: Lemma 11.10
+- description: A polynomial $P(\xi)$, or $P(D)$, is said to be elliptic of order $m$
+    provided $P_m(\xi) \neq 0$ for all $0 \neq \xi \in \mathbb{R}^n$.
+  kind: definition
+  location: Chapter 11
+  name: Definition 11.11
+- description: Every elliptic differential operator $P(D)$ is hypoelliptic.
+  kind: theorem
+  location: Chapter 11
+  name: Theorem 11.12
+- description: If $P_m(\xi)$ is homogeneous of degree $m$ and elliptic then $Q(\xi)
+    = \frac{(1-\varphi(\xi))}{P_m(\xi)} \in \mathcal{S}'(\mathbb{R}^n)$ is the Fourier
+    transform of a parametrix for $P_m(D)$, satisfying (11.27).
+  kind: lemma
+  location: Chapter 11
+  name: Lemma 11.13
+- description: Let $P(\xi)$ be a polynomial of degree $m$ satisfying $|P(\xi)| \geq
+    C|\xi|^m$ in $|\xi| > 1/C$ for some $C > 0$, then for some constants $C_\alpha$,
+    $\left|D^\alpha \frac{1}{P(\xi)}\right| \leq C_\alpha |\xi|^{-m-|\alpha|}$ in
+    $|\xi| > 1/C$.
+  kind: lemma
+  location: Chapter 11
+  name: Lemma 11.14
+- description: If $f \in \mathcal{S}'(\mathbb{R}^n)$ and $u \in \mathcal{S}'(\mathbb{R}^n)$
+    has compact support then $\operatorname{sing} \operatorname{supp}(u * f) \subset
+    \operatorname{sing} \operatorname{supp}(u) + \operatorname{sing} \operatorname{supp}(f)$.
+  kind: proposition
+  location: Chapter 11
+  name: Proposition 11.15
+- description: If $f \in \mathcal{S}'(\mathbb{R}^n)$ has compact support then there
+    exists a unique $u \in \mathcal{S}'(\mathbb{R}^n)$ with $\operatorname{supp}(u)
+    \subset \{t \geq -T\}$ for some $T$ and $(\partial_t + \Delta) u = f$ in $\mathbb{R}^{n+1}$.
+  kind: proposition
+  location: Chapter 11
+  name: Proposition 11.16
+- description: If $f \in \mathcal{S}(\mathbb{R}^n)$ there exists a unique $u \in \mathcal{C}_0^{\infty}(\mathbb{R}^n)$
+    such that $\Delta u = f$.
+  kind: theorem
+  location: Chapter 11
+  name: Theorem 11.17
+- description: If $\psi \in \mathcal{C}^{\infty}(\mathbb{R}^{n} \backslash\{0\})$
+    is homogeneous of degree 0 then $|D^{\alpha} \psi| \leq C_{\alpha}|x|^{-|\alpha|}$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.1
+- description: 'The cone-support and cone-singular-support of a tempered distribution
+    are the subsets $\operatorname{Csp}(u) \subset \mathbb{R}^{n} \cup \mathbb{S}^{n-1}$
+    and $\operatorname{Css}(u) \subset \mathbb{R}^{n} \cup \mathbb{S}^{n-1}$ defined
+    by the conditions: $\operatorname{Csp}(u) \cap \mathbb{R}^{n}=\operatorname{supp}(u)$;
+    $(\operatorname{Csp}(u))^{\complement} \cap \mathbb{S}^{n-1}=\{\omega \in \mathbb{S}^{n-1};
+    \exists R>0, \psi \in \mathcal{C}^{\infty}(\mathbb{S}^{n-1}), \psi(\omega) \neq
+    0, \psi_{R} u=0\}$; $\operatorname{Css}(u) \cap \mathbb{R}^{n}=\operatorname{singsupp}(u)$;
+    $(\operatorname{Css}(u))^{\complement} \cap \mathbb{S}^{n-1}=\{\omega \in \mathbb{S}^{n-1};
+    \exists R>0, \psi \in \mathcal{C}^{\infty}(\mathbb{S}^{n-1}), \psi(\omega) \neq
+    0, \psi_{R} u \in \mathcal{S}(\mathbb{R}^{n})\}$.'
+  kind: definition
+  location: Section 12
+  name: Definition 12.2
+- description: For any $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$, $\operatorname{Csp}(u)$
+    and $\operatorname{Css}(u)$ are closed subsets of $\mathbb{B}^{n}$ and if $\tilde{\psi}
+    \in \mathcal{C}^{\infty}(\mathbb{S}^{n})$ has $\operatorname{supp}(\tilde{\psi})
+    \cap \operatorname{Css}(u)=\emptyset$ then for $R$ sufficiently large $\tilde{\psi}_{R}
+    u \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.3
+- description: If $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ then $\operatorname{Css}(u)=\emptyset$
+    if and only if $u \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: corollary
+  location: Section 12
+  name: Corollary 12.4
+- description: If $K_{i} \subset \mathbb{B}^{n}$, $i=1,2$, are two disjoint closed
+    (hence compact) subsets then we can define an unambiguous pairing $\{u \in \mathcal{S}^{\prime}(\mathbb{R}^{n});
+    \operatorname{Css}(u) \subset K_{1}\} \times \{u \in \mathcal{S}^{\prime}(\mathbb{R}^{n});
+    \operatorname{Css}(u) \subset K_{2}\} \ni (u_{1}, u_{2}) \longrightarrow u_{1}(u_{2})
+    \in \mathbb{C}$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.5
+- description: If $\operatorname{Css}(u) \cap \mathbb{S}^{n-1}=\emptyset$ then $u
+    * v$ is defined unambiguously by $u * v=u_{1} * v+u_{2} * v$, $u_{1}=(1-\chi(x/r))u$,
+    $u_{2}=u-u_{1}$ where $\chi \in \mathcal{C}_{c}^{\infty}(\mathbb{R}^{n})$ has
+    $\chi(x)=1$ in $|x| \leq 1$ and $R$ is sufficiently large; there is a similar
+    definition if $\operatorname{Css}(v) \cap \mathbb{S}^{n-1}=\emptyset$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.6
+- description: If $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ and $\operatorname{Css}(u)
+    \cap \Gamma=\emptyset$ where $\Gamma \subset \mathbb{S}^{n-1}$ is a closed set,
+    then $u=u_{1}+u_{2}$ where $\operatorname{Csp}(u_{1}) \cap \Gamma=\emptyset$ and
+    $u_{2} \in \mathcal{S}(\mathbb{R}^{n})$; in fact $u=u_{1}^{\prime}+u_{1}^{\prime\prime}+u_{2}$
+    where $u_{1}^{\prime} \in \mathcal{C}_{c}^{-\infty}(\mathbb{R}^{n})$ and $0 \notin
+    \operatorname{supp}(u_{1}^{\prime\prime})$, $x \in \mathbb{R}^{n} \backslash\{0\}$,
+    $x/|x| \in \Gamma \Longrightarrow x \notin \operatorname{supp}(u_{1}^{\prime\prime})$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.7
+- description: For any $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ and $\phi \in
+    \mathcal{S}(\mathbb{R}^{n})$, $\operatorname{Css}(\phi * u) \subset \operatorname{Css}(u)
+    \cap \mathbb{S}^{n-1}$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.8
+- description: Under the conditions of Lemma 12.6, $\operatorname{Css}(u * v) \subset
+    (\operatorname{singsupp}(u)+\operatorname{singsupp}(v)) \cup (\operatorname{Css}(v)
+    \cap \mathbb{S}^{n-1})$.
+  kind: corollary
+  location: Section 12
+  name: Corollary 12.9
+- description: If $u, v \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ and $\omega \in
+    \operatorname{Css}(u) \cap \mathbb{S}^{n-1} \Longrightarrow -\omega \notin \operatorname{Css}(v)$
+    then their convolution is defined unambiguously, using the pairing in Lemma 12.5,
+    by $u * v(\phi)=u(\check{v} * \phi)$ for all $\phi \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.10
+- description: For a conic cutoff, $\psi_{R}$, where $\psi \in \mathcal{C}^{\infty}(\mathbb{S}^{n-1})$,
+    $\operatorname{Css}(\widehat{\psi_{R}}) \subset \{0\}$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.11
+- description: If $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ we define the wavefront
+    set of $u$ to be $\mathrm{WF}(u)=\{(x, \omega) \in \mathbb{R}^{n} \times \mathbb{S}^{n-1};
+    \exists \phi \in \mathcal{C}_{c}^{\infty}(\mathbb{R}^{n}), \phi(x) \neq 0, \omega
+    \notin \operatorname{Css}(\widehat{\phi u})\}^{\complement}$ and more generally
+    the scattering wavefront set by $\mathrm{WF}_{\mathrm{sc}}(u)=\mathrm{WF}(u) \cup
+    \{(\omega, p) \in \mathbb{S}^{n-1} \times \mathbb{B}^{n}; \exists \psi \in \mathcal{C}^{\infty}(\mathbb{S}^{n}),
+    \psi(\omega) \neq 0, R>0 \text{ such that } p \notin \operatorname{Css}(\widehat{\psi_{R}
+    u})\}^{\complement}$.
+  kind: definition
+  location: Section 12
+  name: Definition 12.12
+- description: If $(p, q) \notin \mathrm{WF}_{\mathrm{sc}}(u)$ then if $p \in \mathbb{R}^{n}$
+    there exists a neighbourhood $U \subset \mathbb{R}^{n}$ of $p$ and a neighbourhood
+    $U' \subset \mathbb{B}^{n}$ of $q$ such that for all $\phi \in \mathcal{C}_{c}^{\infty}(\mathbb{R}^{n})$
+    with support in $U$, $U' \cap \operatorname{Css}(\widehat{\phi u})=\emptyset$;
+    similarly if $p \in \mathbb{S}^{n-1}$ then there exists a neighbourhood $\tilde{U}
+    \subset \mathbb{B}^{n}$ of $p$ such that $U' \cap \operatorname{Css}(\widehat{\psi_{R}
+    u})=\emptyset$ if $\operatorname{Csp}(\omega_{R}) \subset \tilde{U}$.
+  kind: lemma
+  location: Section 12
+  name: Lemma 12.13
+- description: For any $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$, $\mathrm{WF}_{\mathrm{sc}}(u)
+    \subset \partial(\mathbb{B}^{n} \times \mathbb{B}^{n})=(\mathbb{B}^{n} \times
+    \mathbb{S}^{n-1}) \cup (\mathbb{S}^{n-1} \times \mathbb{B}^{n}) = (\mathbb{R}^{n}
+    \times \mathbb{S}^{n-1}) \cup (\mathbb{S}^{n-1} \times \mathbb{S}^{n-1}) \cup
+    (\mathbb{S}^{n-1} \times \mathbb{R}^{n})$ and $\mathrm{WF}(u) \subset \mathbb{R}^{n}$
+    are closed sets and under projection onto the first variable $\pi_{1}(\mathrm{WF}(u))=\operatorname{singsupp}(u)
+    \subset \mathbb{R}^{n}$, $\pi_{1}(\mathrm{WF}_{\mathrm{sc}}(u))=\operatorname{Css}(u)
+    \subset \mathbb{B}^{n}$.
+  kind: proposition
+  location: Section 12
+  name: Proposition 12.14
+- description: For $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$, $\mathrm{WF}_{\mathrm{sc}}(u)=\emptyset
+    \Longleftrightarrow u \in \mathcal{S}(\mathbb{R}^{n})$.
+  kind: corollary
+  location: Section 12
+  name: Corollary 12.15
+- description: For any $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$ and $(p, q) \in
+    \partial(\mathbb{B}^{n} \times \mathbb{B}^{n})$, $(p, q) \notin \mathrm{WF}_{\mathrm{sc}}(u)
+    \Longleftrightarrow u=u_{1}+u_{2}$, $u_{1}, u_{2} \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$,
+    $p \notin \operatorname{Css}(u_{1})$, $q \notin \operatorname{Css}(\widehat{u_{2}})$.
+  kind: proposition
+  location: Section 12
+  name: Proposition 12.16
+- description: For any $u \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$, $(p, q) \in \mathrm{WF}_{\mathrm{sc}}(u)
+    \Longleftrightarrow (q, -p) \in \mathrm{WF}_{\mathrm{sc}}(\hat{u})$.
+  kind: corollary
+  location: Section 12
+  name: Corollary 12.17
+- description: For $u, v \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$, $uv \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$
+    is unambiguously defined provided $(p, \omega) \in \mathrm{WF}_{\mathrm{sc}}(u)
+    \cap (\mathbb{B}^{n} \times \mathbb{S}^{n-1}) \Longrightarrow (p, -\omega) \notin
+    \mathrm{WF}_{\mathrm{sc}}(v)$; and $u * v \in \mathcal{S}^{\prime}(\mathbb{R}^{n})$
+    is unambiguously defined provided $(\theta, q) \in \mathrm{WF}_{\mathrm{sc}}(u)
+    \cap (\mathbb{S}^{n-1} \times \mathbb{B}^{n}) \Longrightarrow (-\theta, q) \notin
+    \mathrm{WF}_{\mathrm{sc}}(v)$.
+  kind: theorem
+  location: Section 12
+  name: Theorem 12.18
+- description: For any bounded linear operator on a Hilbert space $\operatorname{spec}(T)
+    \subset \mathbb{C}$ is a compact subset of $\{|z| \leq \|T\|\}$.
+  kind: proposition
+  location: Section 16
+  name: Proposition 16.1
+- description: If $A$ is a bounded self-adjoint operator then, with $m = \inf_{\|\phi\|=1}\langle
+    A\phi, \phi\rangle$ and $M = \sup_{\|\phi\|=1}\langle A\phi, \phi\rangle$, $\{m\}
+    \cup \{M\} \subset \operatorname{spec}(A) \subset [m, M]$.
+  kind: proposition
+  location: Section 16
+  name: Proposition 16.2
+- description: If $A$ is a bounded self-adjoint operator and $p$ is a real polynomial
+    in one variable, $p(t) = \sum_{i=0}^{N} c_i t^i$, $c_N \neq 0$, then $p(A) = \sum_{i=0}^{N}
+    c_i A^i$ satisfies $\|p(A)\| \leq \sup_{t \in [m,M]} |p(t)|$.
+  kind: proposition
+  location: Section 16
+  name: Proposition 16.3

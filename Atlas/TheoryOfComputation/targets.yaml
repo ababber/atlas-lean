@@ -1,0 +1,589 @@
+- description: If A_1, A_2 are regular languages, so is A_1 ∪ A_2 (the class of regular
+    languages is closed under union).
+  kind: theorem
+  location: Lecture 1, Closure Properties for Regular Languages
+  name: Theorem (Closure under union)
+- description: If A_1, A_2 are regular languages, so is A_1 A_2 (the class of regular
+    languages is closed under concatenation).
+  kind: theorem
+  location: Lecture 2, Closure under ∘ (concatenation)
+  name: Theorem (Closure under concatenation)
+- description: If A is a regular language, so is A* (the class of regular languages
+    is closed under star).
+  kind: theorem
+  location: Lecture 2, Closure under * (star)
+  name: Theorem (Closure under star)
+- description: If an NFA recognizes A then A is regular.
+  kind: theorem
+  location: Lecture 2, Converting NFAs to DFAs
+  name: Theorem (NFA to DFA conversion)
+- description: If R is a regular expression and A = L(R) then A is regular.
+  kind: theorem
+  location: Lecture 2, Regular Expressions → NFA
+  name: Theorem (Regular expressions to NFA)
+- description: 'A finite automaton M is a 5-tuple (Q, Σ, δ, q_0, F) where Q is a finite
+    set of states, Σ is a finite set of alphabet symbols, δ is a transition function
+    δ: Q × Σ → Q, q_0 is the start state, and F is the set of accept states.'
+  kind: definition
+  location: Lecture 1, Finite Automata — Formal Definition
+  name: Definition (Finite Automaton)
+- description: 'M accepts string w = w_1 w_2 … w_n, each w_i ∈ Σ, if there is a sequence
+    of states r_0, r_1, r_2, …, r_n ∈ Q where: r_0 = q_0, r_i = δ(r_{i-1}, w_i) for
+    1 ≤ i ≤ n, and r_n ∈ F.'
+  kind: definition
+  location: Lecture 1, Finite Automata — Computation
+  name: Definition (M accepts string w)
+- description: A language is regular if some finite automaton recognizes it.
+  kind: definition
+  location: Lecture 1, Finite Automata — Computation
+  name: Definition (Regular language)
+- description: 'A nondeterministic finite automaton (NFA) N is a 5-tuple (Q, Σ, δ,
+    q_0, F) where all components are the same as for a DFA except δ: Q × Σ_ε → P(Q),
+    where Σ_ε = Σ ∪ {ε} and P(Q) = {R | R ⊆ Q} is the power set of Q.'
+  kind: definition
+  location: Lecture 2, NFA — Formal Definition
+  name: Definition (Nondeterministic Finite Automaton)
+- description: For every regular language A, there is a number p (the "pumping length")
+    such that if s ∈ A and |s| ≥ p then s = xyz where 1) xy^i z ∈ A for all i ≥ 0,
+    2) y ≠ ε, 3) |xy| ≤ p.
+  kind: lemma
+  location: Lecture 3
+  name: Pumping Lemma
+- description: Every GNFA G has an equivalent regular expression R.
+  kind: lemma
+  location: Lecture 3, section on GNFA → Regular Expressions
+  name: Lemma (GNFA → Regular Expressions)
+- description: 'A Generalized Nondeterministic Finite Automaton (GNFA) is similar
+    to an NFA, but allows regular expressions as transition labels. For convenience
+    we assume: one accept state, separate from the start state; one arrow from each
+    state to each state, except (a) only exiting the start state and (b) only entering
+    the accept state.'
+  kind: definition
+  location: Lecture 3, section on Generalized NFA
+  name: Definition (Generalized Nondeterministic Finite Automaton)
+- description: 'A Context Free Grammar (CFG) G is a 4-tuple (V, Σ, R, S) where V is
+    a finite set of variables, Σ is a finite set of terminal symbols, R is a finite
+    set of rules (rule form: V → (V ∪ Σ)*), and S is the start variable. For u, v
+    ∈ (V ∪ Σ)*, write u ⇒ v if can go from u to v with one substitution step, and
+    u ⇒* v if can go from u to v with some number of substitutions. L(G) = { w | w
+    ∈ Σ* and S ⇒* w }.'
+  kind: definition
+  location: Lecture 4, section on CFG — Formal Definition
+  name: Definition (Context Free Grammar)
+- description: A is a Context Free Language (CFL) if A = L(G) for some CFG G.
+  kind: definition
+  location: Lecture 4, section on CFG — Formal Definition
+  name: Definition (Context Free Language)
+- description: 'A Pushdown Automaton (PDA) is a 6-tuple (Q, Σ, Γ, δ, q₀, F) where
+    Σ is the input alphabet, Γ is the stack alphabet, and δ: Q × Σ_ε × Γ_ε → P(Q ×
+    Γ_ε). Accept if some thread is in the accept state at the end of the input string.'
+  kind: definition
+  location: Lecture 4, section on PDA — Formal Definition
+  name: Definition (Pushdown Automaton)
+- description: If A is a CFL then some PDA recognizes A.
+  kind: theorem
+  location: Lecture 4, section on Converting CFGs to PDAs
+  name: Theorem (Converting CFGs to PDAs)
+- description: A is a CFL if and only if some PDA recognizes A.
+  kind: theorem
+  location: Lecture 4, section on Equivalence of CFGs and PDAs
+  name: Theorem (Equivalence of CFGs and PDAs)
+- description: A is T-recognizable iff A = L(E) for some T-enumerator E.
+  kind: theorem
+  location: Lecture 6, Turing Enumerators
+  name: Theorem
+- description: Every regular language is a CFL.
+  kind: corollary
+  location: Lecture 5, Equivalence of CFGs and PDAs, Corollaries
+  name: Corollary 1
+- description: If A is a CFL and B is regular then A ∩ B is a CFL.
+  kind: corollary
+  location: Lecture 5, Equivalence of CFGs and PDAs, Corollaries
+  name: Corollary 2
+- description: For every CFL A, there is a p such that if s ∈ A and |s| ≥ p then s
+    = uvxyz where 1) uv^i xy^i z ∈ A for all i ≥ 0, 2) vy ≠ ε, 3) |vxy| ≤ p.
+  kind: lemma
+  location: Lecture 5, Proving languages not Context Free
+  name: Pumping Lemma for CFLs
+- description: 'A Turing Machine (TM) is a 7-tuple (Q, Σ, Γ, δ, q₀, q_acc, q_rej)
+    where Σ is the input alphabet, Γ is the tape alphabet (Σ ⊆ Γ), and δ: Q × Γ →
+    Q × Γ × {L, R} is the transition function (L = Left, R = Right). On input w a
+    TM M may halt (enter q_acc or q_rej) or M may run forever (''loop''). So M has
+    3 possible outcomes for each input w: 1. Accept w (enter q_acc), 2. Reject w by
+    halting (enter q_rej), 3. Reject w by looping (running forever).'
+  kind: definition
+  location: Lecture 5, TM — Formal Definition
+  name: 'Definition: Turing Machine'
+- description: A is Turing-recognizable if A = L(M) for some TM M.
+  kind: definition
+  location: Lecture 5, TM Recognizers and Deciders
+  name: 'Definition: Turing-recognizable'
+- description: TM M is a decider if M halts on all inputs. Say that M decides A if
+    A = L(M) and M is a decider.
+  kind: definition
+  location: Lecture 5, TM Recognizers and Deciders
+  name: 'Definition: Decider'
+- description: A is Turing-decidable if A = L(M) for some TM decider M.
+  kind: definition
+  location: Lecture 5, TM Recognizers and Deciders
+  name: 'Definition: Turing-decidable'
+- description: A Turing Enumerator is a deterministic TM with a printer. It starts
+    on a blank tape and it can print strings w₁, w₂, w₃, ... possibly going forever.
+    Its language is the set of all strings it prints. It is a generator, not a recognizer.
+    For enumerator E we say L(E) = {w | E prints w}.
+  kind: definition
+  location: Lecture 6, Turing Enumerators
+  name: 'Definition: Turing Enumerator'
+- description: If $A$ and $\overline{A}$ are T-recognizable then $A$ is decidable.
+  kind: theorem
+  location: Lecture 8
+  name: Theorem
+- description: Can convert every CFG into CNF.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 1
+- description: If H is in CNF and $w \in L(H)$ then every derivation of w has $2|w|-1$
+    steps.
+  kind: lemma
+  location: Lecture 7
+  name: Lemma 2
+- description: A set is countable if it is finite or it has the same size as $\mathbb{N}$.
+  kind: definition
+  location: Lecture 8
+  name: Definition
+- description: $\mathcal{L}$ (the set of all languages) is uncountable.
+  kind: corollary
+  location: Lecture 8
+  name: Corollary 1
+- description: Some language is not decidable.
+  kind: corollary
+  location: Lecture 8
+  name: Corollary 2
+- description: $\overline{A_{TM}}$ is T-unrecognizable.
+  kind: corollary
+  location: Lecture 8
+  name: Corollary
+- description: $E_{LBA}$ is undecidable.
+  kind: theorem
+  location: Lecture 10, $E_{\mathrm{LBA}}$ is undecidable
+  name: Theorem
+- description: If $A \leq_{\mathbf{m}} B$ and A is T-unrecognizable then so is B.
+  kind: corollary
+  location: Lecture 9, Mapping Reductions - properties
+  name: Corollary
+- description: A linearly bounded automaton (LBA) is a 1-tape TM that cannot move
+    its head off the input portion of the tape.
+  kind: definition
+  location: Lecture 10, Linearly Bounded Automata
+  name: Defn
+- description: $HALT_{TM}$ is undecidable.
+  kind: theorem
+  location: Lecture 9, The Reducibility Method section
+  name: Recall Theorem
+- description: 'For any computable function f: Σ* → Σ*, there is a TM R such that
+    L(R) = L(S) where f(⟨R⟩) = ⟨S⟩.'
+  kind: theorem
+  location: 'Ex 2: Fixed-point Theorem'
+  name: Theorem (Fixed-point Theorem)
+- description: A 1-tape TM M can decide A = {a^k b^k | k ≥ 0} by using O(n log n)
+    steps.
+  kind: theorem
+  location: Lecture 12, Deciding A = {a^k b^k | k ≥ 0} faster
+  name: Theorem (Deciding A = {a^k b^k | k ≥ 0} in O(n log n))
+- description: A_LBA is decidable, where A_LBA = {⟨B, w⟩ | LBA B accepts w}.
+  kind: theorem
+  location: Lecture 10, Linearly Bounded Automata section
+  name: Theorem (A_LBA is decidable)
+- description: PCP is undecidable, where PCP = {⟨P⟩ | P has a match}.
+  kind: theorem
+  location: Lecture 10, PCP is undecidable section
+  name: Theorem (PCP is undecidable)
+- description: ALL_CFG is undecidable, where ALL_CFG = {⟨G⟩ | G is a CFG and L(G)
+    = Σ*}.
+  kind: theorem
+  location: Lecture 10, ALL_CFG is undecidable section
+  name: Theorem (ALL_CFG is undecidable)
+- description: There is a TM SELF which (on any input) halts with ⟨SELF⟩ on the tape.
+  kind: theorem
+  location: Lecture 11, A Self-Reproducing TM section
+  name: Theorem (Self-Reproducing TM)
+- description: 'There is a computable function q: Σ* → Σ* such that q(w) = ⟨P_w⟩ for
+    every w, where P_w is the TM P_w = "Print w on the tape and halt".'
+  kind: lemma
+  location: Lecture 11, A Self-Reproducing TM section
+  name: Lemma (Computable function q)
+- description: For any TM T there is a TM R where for all w, R on input w operates
+    in the same way as T on input ⟨w, R⟩.
+  kind: theorem
+  location: Lecture 11, The Recursion Theorem section
+  name: Theorem (Recursion Theorem)
+- description: A_TM is not decidable.
+  kind: theorem
+  location: 'Lecture 11, Ex 1: A_TM is undecidable - new proof section'
+  name: Theorem (A_TM is undecidable - new proof)
+- description: M is a minimal TM if |⟨M'⟩| < |⟨M⟩| → L(M') ≠ L(M). Thus, a minimal
+    TM has the shortest description among all equivalent TMs. MIN_TM = {⟨M⟩ | M is
+    a minimal TM}.
+  kind: definition
+  location: 'Lecture 11, Ex 3: MIN_TM is T-unrecognizable section'
+  name: Definition (Minimal TM)
+- description: MIN_TM is T-unrecognizable.
+  kind: theorem
+  location: 'Lecture 11, Ex 3: MIN_TM is T-unrecognizable section'
+  name: Theorem (MIN_TM is T-unrecognizable)
+- description: In any reasonable formal system, some true statements are not provable.
+  kind: theorem
+  location: Lecture 11, Intro to Mathematical Logic section
+  name: Theorem (Gödel's First Incompleteness Theorem)
+- description: (1) φ_U has no proof. (2) φ_U is true. Where φ_U is the statement ⟨R,
+    0⟩ ∈ \overline{A_{TM}} and R is a TM that on any input obtains ⟨R⟩, uses it to
+    obtain φ_U, and for each possible proof π tests if π is a proof that φ_U is true,
+    accepting if yes.
+  kind: theorem
+  location: Lecture 11, A True but Unprovable Statement section
+  name: Theorem (A True but Unprovable Statement)
+- description: 'For any computable function f: Σ* → Σ*, there is a TM R such that
+    L(R) = L(S) where f(⟨R⟩) = ⟨S⟩.'
+  kind: theorem
+  location: 'Lecture 11, Ex 2: Fixed-point Theorem section'
+  name: Theorem (Fixed-point Theorem)
+- description: If A ≤_P B and B ∈ P then A ∈ P.
+  kind: theorem
+  location: Lecture 14, section on Polynomial Time Reducibility
+  name: Theorem
+- description: A is polynomial time reducible to B (A ≤_P B) if A ≤_m B by a reduction
+    function that is computable in polynomial time.
+  kind: definition
+  location: Lecture 14, section on Polynomial Time Reducibility
+  name: Definition
+- description: $SAT = \{\langle \phi \rangle \mid \phi \text{ is a satisfiable Boolean
+    formula}\}$
+  kind: definition
+  location: Lecture 14
+  name: Definition (SAT)
+- description: $3SAT$ is NP-complete.
+  kind: theorem
+  location: Lecture 16, 3SAT is NP-complete
+  name: Theorem (3SAT is NP-complete)
+- description: $SAT \in P \rightarrow P = NP$.
+  kind: theorem
+  location: Lecture 15, Quick Review
+  name: Cook-Levin Theorem
+- description: A Boolean formula $\phi$ is in Conjunctive Normal Form (CNF) if it
+    has the form $\phi = (x \lor \overline{y} \lor z) \land (\overline{x} \lor \overline{s}
+    \lor z \lor u) \land \cdots \land (\overline{z} \lor \overline{u})$, where a literal
+    is a variable or a negated variable, a clause is an OR ($\lor$) of literals, and
+    a CNF is an AND ($\land$) of clauses. A 3CNF is a CNF with exactly 3 literals
+    in each clause.
+  kind: definition
+  location: 'Lecture 15, $\leq_P$ Example: 3SAT and CLIQUE'
+  name: Definition (Conjunctive Normal Form)
+- description: $3SAT = \{\langle \phi \rangle \mid \phi \text{ is a satisfiable 3CNF
+    formula}\}$
+  kind: definition
+  location: 'Lecture 15, $\leq_P$ Example: 3SAT and CLIQUE'
+  name: Definition (3SAT)
+- description: A $k$-clique in a graph is a subset of $k$ nodes all directly connected
+    by edges. $CLIQUE = \{\langle G, k \rangle \mid \text{graph } G \text{ contains
+    a } k\text{-clique}\}$.
+  kind: definition
+  location: 'Lecture 15, $\leq_P$ Example: 3SAT and CLIQUE'
+  name: Definition (k-clique and CLIQUE)
+- description: $CLIQUE \in P \rightarrow 3SAT \in P$.
+  kind: corollary
+  location: Lecture 15, $3SAT \leq_P CLIQUE$ conclusion
+  name: Corollary ($CLIQUE \in P \rightarrow 3SAT \in P$)
+- description: $B$ is NP-complete if 1) $B \in NP$, and 2) for all $A \in NP$, $A
+    \leq_P B$.
+  kind: definition
+  location: Lecture 15, NP-completeness
+  name: Definition (NP-complete)
+- description: $HAMPATH$ is NP-complete.
+  kind: theorem
+  location: Lecture 15, HAMPATH is NP-complete
+  name: Theorem (HAMPATH is NP-complete)
+- description: $B$ is NP-complete if 1) $B \in NP$, and 2) for all $A \in NP$, $A
+    \leq_P B$.
+  kind: definition
+  location: Lecture 16, Quick Review
+  name: Definition (NP-complete, restated)
+- description: Let $f\colon \mathbb{N} \to \mathbb{N}$ where $f(n) \ge n$. Say TM
+    $M$ runs in space $f(n)$ if $M$ always halts and uses at most $f(n)$ tape cells
+    on all inputs of length $n$.
+  kind: definition
+  location: Lecture 17, SPACE Complexity
+  name: Definition (SPACE complexity)
+- description: 'For $t(n) \ge n$: 1) $\mathsf{TIME}(t(n)) \subseteq \mathsf{SPACE}(t(n))$;
+    2) $\mathsf{SPACE}(t(n)) \subseteq \mathsf{TIME}(2^{O(t(n))}) = \bigcup_c \mathsf{TIME}(c^{t(n)})$.'
+  kind: theorem
+  location: Lecture 17, Relationships between Time and SPACE Complexity
+  name: Theorem (Relationships between Time and Space Complexity)
+- description: $P \subseteq PSPACE$.
+  kind: corollary
+  location: Lecture 17, Relationships between Time and SPACE Complexity
+  name: Corollary ($P \subseteq PSPACE$)
+- description: $NP \subseteq PSPACE$.
+  kind: theorem
+  location: Lecture 17, $NP \subseteq PSPACE$
+  name: Theorem ($NP \subseteq PSPACE$)
+- description: $coNP = \{\overline{A} \mid A \in NP\}$.
+  kind: definition
+  location: Lecture 17, $NP \subseteq PSPACE$
+  name: Definition (coNP)
+- description: A quantified Boolean formula (QBF) is a Boolean formula with leading
+    $\exists x$ and $\forall x$ quantifiers, where all variables must lie within the
+    scope of a quantifier. A QBF is True or False. $TQBF = \{\langle \phi \rangle
+    \mid \phi \text{ is a QBF that is TRUE}\}$.
+  kind: definition
+  location: 'Lecture 17, Example: TQBF'
+  name: Definition (Quantified Boolean Formula and TQBF)
+- description: $TQBF \in PSPACE$.
+  kind: theorem
+  location: Lecture 17, $TQBF \in PSPACE$
+  name: Theorem ($TQBF \in PSPACE$)
+- description: $SAT$ is NP-complete.
+  kind: theorem
+  location: Lecture 15, Quick Review section
+  name: Cook-Levin Theorem (NP-completeness of SAT)
+- description: An (accepting) tableau for NTM $M$ on $w$ is an $n^k \times n^k$ table
+    representing a computation history for $M$ on $w$ on an accepting branch of the
+    nondeterministic computation.
+  kind: definition
+  location: Lecture 16, Tableau for M on w section
+  name: Definition (Tableau)
+- description: A ladder is a sequence of strings of a common length where consecutive
+    strings differ in a single symbol. A ladder in a language $A$ is a ladder of strings
+    in $A$. $LADDER_{DFA} = \{\langle B, u, v \rangle | B \text{ is a DFA and } L(B)
+    \text{ contains a ladder } y_1, y_2, \dots, y_k \text{ where } y_1 = u \text{
+    and } y_k = v \}$.
+  kind: definition
+  location: 'Lecture 17, Example: Ladder Problem section'
+  name: Definition ($LADDER_{DFA}$)
+- description: '$SAT$ is NP-complete. Proof: 1) $SAT \in NP$. 2) For each $A \in NP$,
+    $A \leq_P SAT$: Let $A \in NP$ be decided by NTM $M$ in time $n^k$. Give a polynomial-time
+    reduction $f$ mapping $A$ to SAT: $f(w) = \langle \phi_{M,w} \rangle$ where $w
+    \in A$ iff $\phi_{M,w}$ is satisfiable. The formula $\phi_{M,w} = \phi_{\text{cell}}
+    \wedge \phi_{\text{start}} \wedge \phi_{\text{move}} \wedge \phi_{\text{accept}}$
+    simulates $M$ on $w$. The size of $\phi_{M,w}$ is $O(n^{2k})$, so $f$ is computable
+    in polynomial time.'
+  kind: theorem
+  location: Lecture 16, Cook-Levin Theorem (idea) and Conclusion sections
+  name: Theorem (SAT is NP-complete)
+- description: LADDER_DFA ∈ NPSPACE.
+  kind: theorem
+  location: Lecture 17
+  name: Theorem (LADDER_DFA ∈ NPSPACE)
+- description: LADDER_DFA ∈ PSPACE.
+  kind: theorem
+  location: Lecture 17
+  name: Theorem (LADDER_DFA ∈ PSPACE)
+- description: LADDER_DFA ∈ SPACE(n²). Write u →^b v if there's a ladder from u to
+    v of length ≤ b. A recursive procedure solves the bounded DFA ladder problem BOUNDED-LADDER_DFA
+    = {⟨B, u, v, b⟩ | B a DFA and u →^b v by a ladder in L(B)}. Each recursive level
+    uses space O(n) (to record w). Recursion depth is log t = O(m) = O(n). Total space
+    used is O(n²).
+  kind: theorem
+  location: Lecture 17
+  name: Theorem (LADDER_DFA ∈ SPACE(n²))
+- description: B is PSPACE-complete if (1) B ∈ PSPACE, and (2) for all A ∈ PSPACE,
+    A ≤_P B.
+  kind: definition
+  location: Lecture 18
+  name: Definition (PSPACE-complete)
+- description: TQBF is PSPACE-complete.
+  kind: theorem
+  location: Lecture 18
+  name: Theorem (TQBF is PSPACE-complete)
+- description: GG = {⟨G, a⟩ | Player I has a forced win in Generalized Geography on
+    graph G starting at node a}.
+  kind: definition
+  location: Lecture 19
+  name: Definition (GG)
+- description: GG is PSPACE-complete.
+  kind: theorem
+  location: Lecture 19
+  name: Theorem (GG is PSPACE-complete)
+- description: Player ∃ has a forced win in the formula game on φ iff φ is TRUE. Therefore
+    {⟨φ⟩ | Player ∃ has a forced win on φ} = TQBF.
+  kind: claim
+  location: Lecture 19
+  name: Claim (Formula Game and TQBF)
+- description: L = SPACE(log n). NL = NSPACE(log n).
+  kind: definition
+  location: Lecture 19
+  name: Definition (L and NL)
+- description: L ⊆ P.
+  kind: theorem
+  location: Lecture 19
+  name: Theorem (L ⊆ P)
+- description: NL ⊆ SPACE(log² n).
+  kind: theorem
+  location: Lecture 19
+  name: Theorem (NL ⊆ SPACE(log² n))
+- description: 'Let f: ℕ → ℕ where f(n) ≥ n. Say TM M runs in space f(n) if M always
+    halts and uses at most f(n) tape cells on all inputs of length n. An NTM M runs
+    in space f(n) if all branches halt and each branch uses at most f(n) tape cells
+    on all inputs of length n. SPACE(f(n)) = {B | some 1-tape TM decides B in space
+    O(f(n))}. NSPACE(f(n)) = {B | some 1-tape NTM decides B in space O(f(n))}.'
+  kind: definition
+  location: 'Lecture 18, Review: SPACE Complexity'
+  name: Definition (SPACE and NSPACE)
+- description: PSPACE = ∪_k SPACE(n^k) (polynomial space). NPSPACE = ∪_k NSPACE(n^k)
+    (nondeterministic polynomial space).
+  kind: definition
+  location: 'Lecture 18, Review: SPACE Complexity'
+  name: Definition (PSPACE and NPSPACE)
+- description: For f(n) ≥ n, NSPACE(f(n)) ⊆ SPACE(f²(n)).
+  kind: theorem
+  location: Lecture 18, PSPACE = NPSPACE
+  name: Savitch's Theorem
+- description: A configuration for M on w is (q, p_1, p_2, t) where q is a state,
+    p_1 and p_2 are the tape head positions, and t is the tape contents. The number
+    of such configurations is |Q| × n × O(log n) × d^{O(log n)} = O(n^k) for some
+    k.
+  kind: definition
+  location: Lecture 19, Log space properties
+  name: Definition (Configuration for log-space TM)
+- description: LADDER_{DFA} ∈ NPSPACE, specifically LADDER_{DFA} ∈ NSPACE(n).
+  kind: theorem
+  location: Lecture 17, LADDER_DFA ∈ NPSPACE
+  name: Theorem (LADDER_DFA ∈ NSPACE(n))
+- description: NL ⊆ P
+  kind: theorem
+  location: 'Lecture 20, Review: NL ⊆ P'
+  name: Theorem
+- description: 'NTM M computes function f: Σ* → Σ* if for all w: 1) All branches of
+    M on w halt with f(w) on the tape or reject. 2) Some branch of M on w does not
+    reject.'
+  kind: definition
+  location: Lecture 20, NL = coNL (part 1/4)
+  name: Definition
+- description: NL = coNL
+  kind: theorem
+  location: Lecture 20, NL = coNL
+  name: Theorem (Immerman-Szelepcsényi)
+- description: Some NL-machine computes c_{d+1} from c_d.
+  kind: corollary
+  location: Lecture 20, NL = coNL (part 4/4)
+  name: Corollary
+- description: M accepts w iff the configuration graph G_{M,w} has a path from c_start
+    to c_accept.
+  kind: claim
+  location: Lecture 19/20, within the proof of NL ⊆ P
+  name: Claim
+- description: There is an oracle A where P^A = NP^A.
+  kind: theorem
+  location: Oracles and P versus NP
+  name: Theorem
+- description: NL ⊊ PSPACE.
+  kind: corollary
+  location: 'Review: Hierarchy Theorems'
+  name: Corollary
+- description: BPP = {A | some poly-time PTM decides A with error ε = 1/3}.
+  kind: definition
+  location: The Class BPP
+  name: Definition
+- description: 'For any f: N → N (where f satisfies a technical condition) there is
+    a language A where A requires O(f(n)) space, i.e, 1) A is decidable in O(f(n))
+    space, and 2) A is not decidable in o(f(n)) space. In other words, SPACE(o(f(n)))
+    ⊊ SPACE(f(n)).'
+  kind: theorem
+  location: Space Hierarchy Theorem (1/2)
+  name: Theorem (Space Hierarchy Theorem)
+- description: 'For any f: N → N where f is time constructible there is a language
+    A where A requires O(f(n)) time, i.e, 1) A is decidable in O(f(n)) time, and 2)
+    A is not decidable in o(f(n)/log(f(n))) time. In other words, TIME(o(f(n)/log(f(n))))
+    ⊊ TIME(f(n)).'
+  kind: theorem
+  location: Time Hierarchy Theorem (1/2)
+  name: Theorem (Time Hierarchy Theorem)
+- description: 'For any f: N → N (where f satisfies a technical condition) there is
+    a language A where A requires O(f(n)) space, i.e, 1) A is decidable in O(f(n))
+    space, and 2) A is not decidable in o(f(n)) space. In other words, SPACE(o(f(n)))
+    ⊊ SPACE(f(n)).'
+  kind: theorem
+  location: Space Hierarchy Theorem (1/2)
+  name: Space Hierarchy Theorem
+- description: 'For any f: N → N where f is time constructible there is a language
+    A where A requires O(f(n)) time, i.e, 1) A is decidable in O(f(n)) time, and 2)
+    A is not decidable in o(f(n)/log(f(n))) time. In other words, TIME(o(f(n)/log(f(n))))
+    ⊊ TIME(f(n)).'
+  kind: theorem
+  location: Time Hierarchy Theorem (1/2)
+  name: Time Hierarchy Theorem
+- description: $EQ_{ROBP} \in BPP$
+  kind: theorem
+  location: Lecture 23, Read-once Branching Programs
+  name: Theorem
+- description: $ISO = \{\langle G, H \rangle \mid G \text{ and } H \text{ are isomorphic
+    graphs}\}$
+  kind: definition
+  location: Lecture 25, Interactive Proofs – Introduction
+  name: Defn
+- description: If $M_1$ is a poly-time PTM with error $\epsilon_1 < 1/2$ then, for
+    any $0 < \epsilon_2 < 1/2$, there is an equivalent poly-time PTM $M_2$ with error
+    $\epsilon_2$. Can strengthen to make $\epsilon_2 < 2^{-\mathrm{poly}(n)}$.
+  kind: lemma
+  location: Lecture 23, The Class BPP
+  name: Amplification lemma
+- description: If $p(x) \neq 0$ is a polynomial of degree $\leq d$ then $p$ has $\leq
+    d$ roots.
+  kind: lemma
+  location: Lecture 24, Roots of Polynomials
+  name: Polynomial Lemma
+- description: If $p_1(x)$ and $p_2(x)$ are both degree $\leq d$ and $p_1 \neq p_2$
+    then $p_1(a) = p_2(a)$ for $\leq d$ values $a$.
+  kind: corollary
+  location: Lecture 24, Roots of Polynomials
+  name: Corollary 1
+- description: If $p(x) \neq 0$ has degree $\leq d$ and we pick a random $r \in \mathbb{F}_q$,
+    then $\Pr[p(r) = 0] \leq \frac{d}{q}$.
+  kind: corollary
+  location: Lecture 24, Roots of Polynomials
+  name: Corollary 2
+- description: If $p(x_1, \ldots, x_m) \neq 0$ has degree $\leq d$ in each $x_i$ and
+    we pick random $r_1, \ldots, r_m \in \mathbb{F}_q$ then $\Pr[p(r_1, \ldots, r_m)
+    = 0] \leq \frac{dm}{q}$.
+  kind: theorem
+  location: Lecture 24, Roots of Polynomials
+  name: Theorem (Schwartz-Zippel)
+- description: (1) $B_1 \equiv B_2 \to \Pr[p_1(r) = p_2(r)] = 1$. (2) $B_1 \not\equiv
+    B_2 \to \Pr[p_1(r) = p_2(r)] \leq 1/3$.
+  kind: claim
+  location: Lecture 24, section on $EQ_{ROBP} \in BPP$
+  name: Claim
+- description: 'IP = {A | for some V and P (this P is an ''honest'' prover): w ∈ A
+    → Pr[(V ↔ P) accepts w] ≥ 2/3; w ∉ A → for any prover P̃, Pr[(V ↔ P̃) accepts
+    w] ≤ 1/3}.'
+  kind: definition
+  location: Lecture 25
+  name: Definition (IP)
+- description: '#SAT = {⟨φ, k⟩ | Boolean formula φ has exactly k satisfying assignments}.'
+  kind: definition
+  location: Lecture 25
+  name: Definition (#SAT)
+- description: Language B is NP-hard if A ≤_P B for every A ∈ NP.
+  kind: definition
+  location: Lecture 25
+  name: Definition (NP-hard)
+- description: '#SAT is coNP-hard.'
+  kind: theorem
+  location: Lecture 25
+  name: Theorem (#SAT is coNP-hard)
+- description: Pr[(V ↔ P) accepts w] = probability that V accepts when V interacts
+    with P, given input w.
+  kind: definition
+  location: Lecture 25, Interactive Proofs formal model section
+  name: Definition (Interactive Proof acceptance probability)
+- description: \overline{ISO} ∈ IP.
+  kind: theorem
+  location: Lecture 25, ISO-bar ∈ IP section
+  name: Theorem (ISO-bar in IP)
+- description: '#SAT ∈ IP.'
+  kind: theorem
+  location: 'Lecture 25/26, #SAT ∈ IP section'
+  name: Theorem (#SAT ∈ IP)
+- description: IP = PSPACE.
+  kind: theorem
+  location: Lecture 26, coNP ⊆ IP section (labeled 'Surprising Theorem')
+  name: Theorem (IP = PSPACE)

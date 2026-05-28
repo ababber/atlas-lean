@@ -1,0 +1,1190 @@
+- description: Every graph with m edges has a bipartite subgraph with at least m/2
+    edges.
+  kind: theorem
+  location: Chapter 1, Introduction
+  name: Theorem 1.0.1 (Large bipartite subgraph)
+- description: If $\binom{n}{k} 2^{1 - \binom{k}{2}} < 1$, then $R(k, k) > n$. In
+    other words, there exists a red-blue edge-coloring of $K_n$ with no monochromatic
+    $K_k$.
+  kind: theorem
+  location: Chapter 1, Section 1.1
+  name: Theorem 1.1.2 (Lower bound to Ramsey numbers; Erdős 1947)
+- description: For any $k, n$, we have $R(k, k) > n - \binom{n}{k} 2^{1 - \binom{k}{2}}$.
+  kind: theorem
+  location: Chapter 1, Section 1.1
+  name: Theorem 1.1.6 (Ramsey lower bound via alteration)
+- description: 'Let $x_1, \ldots, x_N$ be independent random variables. Let $B_1,
+    \ldots, B_m \subseteq [N]$. For each $i$, let $E_i$ be an event that depends only
+    on the variables indexed by $B_i$ (i.e., $E_i$ is allowed to depend only on $\{x_j
+    : j \in B_i\}$). Suppose, for every $i \in [m]$, $B_i$ has non-empty intersections
+    with at most $d$ other $B_j$''s, and $\mathbb{P}[E_i] \le \frac{1}{(d+1)e}$. Then
+    with positive probability, none of the events $E_i$ occur.'
+  kind: theorem
+  location: Chapter 1, Section 1.1
+  name: Theorem 1.1.8 (Lovász local lemma – random variable model)
+- description: If $\left(\binom{k}{2}\binom{n}{k-2} + 1\right) 2^{1-\binom{k}{2}}
+    < 1/e$, then $R(k, k) > n$.
+  kind: theorem
+  location: Chapter 1, Section 1.1
+  name: Theorem 1.1.9 (Ramsey lower bound via local lemma; Spencer 1977)
+- description: If $\mathcal{F}$ is an antichain of subsets of $\{1, 2, \ldots, n\}$,
+    then $|\mathcal{F}| \le \binom{n}{\lfloor n/2 \rfloor}$.
+  kind: theorem
+  location: Chapter 1, Section 1.2
+  name: Theorem 1.2.2 (Sperner's theorem, 1928)
+- description: If $\mathcal{F}$ is an antichain of subsets of $[n]$, then $\sum_{A
+    \in \mathcal{F}} \binom{n}{|A|}^{-1} \le 1$.
+  kind: theorem
+  location: Chapter 1, Section 1.2
+  name: Theorem 1.2.3 (LYM inequality; Bollobás 1965, Lubell 1966, Meshalkin 1963,
+    and Yamamoto 1954)
+- description: Let $A_1, \ldots, A_m$ be $r$-element sets and $B_1, \ldots, B_m$ be
+    $s$-element sets such that $A_i \cap B_i = \emptyset$ for all $i$ and $A_i \cap
+    B_j \neq \emptyset$ for all $i \neq j$. Then $m \le \binom{r+s}{r}$.
+  kind: theorem
+  location: Chapter 1, Section 1.2
+  name: Theorem 1.2.4 (Bollobás' two families theorem 1965)
+- description: Let $A_1, \ldots, A_m$ and $B_1, \ldots, B_m$ be finite sets such that
+    $A_i \cap B_i = \emptyset$ for all $i$ and $A_i \cap B_j \neq \emptyset$ for all
+    $i \neq j$. Then $\sum_{i=1}^{m} \binom{|A_i| + |B_i|}{|A_i|}^{-1} \le 1$.
+  kind: theorem
+  location: Chapter 1, Section 1.2
+  name: Theorem 1.2.6 (Bollobás' two families theorem 1965)
+- description: If $n \ge 2k$, then every intersecting family of $k$-element subsets
+    of $[n]$ has size at most $\binom{n-1}{k-1}$.
+  kind: theorem
+  location: Chapter 1, Section 1.2
+  name: Theorem 1.2.9 (Erdős-Ko-Rado 1961; proved in 1938)
+- description: $m(k) \ge 2^{k-1}$ for every $k \ge 2$. (In other words, every $k$-uniform
+    hypergraph with fewer than $2^{k-1}$ edges is 2-colorable.)
+  kind: theorem
+  location: Chapter 1, Section 1.3
+  name: Theorem 1.3.1 (Erdős 1964)
+- description: $m(k) = O(k^2 2^k)$. (In other words, there exists a $k$-uniform hypergraph
+    with $O(k^2 2^k)$ edges that is not 2-colorable.)
+  kind: theorem
+  location: Chapter 1, Section 1.3
+  name: Theorem 1.3.3 (Erdős 1964)
+- description: If $n < 2^{k-1}$, then $K_{n,n}$ is k-choosable. In other words, $\operatorname{ch}(K_{n,n})
+    \leq |\log_2(2n)| + 1$.
+  kind: theorem
+  location: Chapter 1, Section 1.4
+  name: Theorem 1.4.2
+- description: If there exists a non-2-colorable k-uniform hypergraph with n edges,
+    then $K_{n,n}$ is not k-choosable.
+  kind: theorem
+  location: Chapter 1, Section 1.4
+  name: Theorem 1.4.3
+- description: $\operatorname{ch}(K_{n,n}) = (1 + o(1)) \log_2 n$.
+  kind: corollary
+  location: Chapter 1, Section 1.4
+  name: Corollary 1.4.4 (List chromatic number of a complete bipartite graph)
+- description: If a graph G has average degree d, then, as $d \to \infty$, $\operatorname{ch}(G)
+    > (1 + o(1)) \log_2 d$.
+  kind: theorem
+  location: Chapter 1, Section 1.4
+  name: Theorem 1.4.5 (Saxton and Thomason 2015)
+- description: There is a tournament on $n$ vertices with at least $n!2^{-(n-1)}$
+    Hamilton paths.
+  kind: theorem
+  location: Chapter 2, Section 2.1
+  name: Theorem 2.1.2 (Tournaments with many Hamilton paths; Szele 1943)
+- description: Every set of $n$ nonzero integers contains a sum-free subset of size
+    $\geq n/3$.
+  kind: theorem
+  location: Chapter 2, Section 2.2
+  name: Theorem 2.2.1 (Large sum-free subsets; Erdős 1965)
+- description: Every graph G contains an independent set of size at least $\sum_{v
+    \in V(G)} \frac{1}{d_v + 1}$, where $d_v$ is the degree of vertex v.
+  kind: theorem
+  location: Chapter 2, Section 2.3
+  name: Theorem 2.3.2 (Caro 1979, Wei 1981)
+- description: Every $n$-vertex graph G contains a clique of size at least $\sum_{v
+    \in V(G)} \frac{1}{n - d_v}$.
+  kind: corollary
+  location: Chapter 2, Section 2.3
+  name: Corollary 2.3.5
+- description: The number of edges in an $n$-vertex $K_{r+1}$-free graph is at most
+    $\left(1-\frac{1}{r}\right)\frac{n^2}{2}$.
+  kind: theorem
+  location: Chapter 2, Section 2.3
+  name: Theorem 2.3.6 (Turán's theorem 1941)
+- description: Every tetrahedron-free 3-graph on $n \ge 4$ vertices has at most $\frac{3}{4}\binom{n}{3}$
+    edges.
+  kind: proposition
+  location: Chapter 2, Section 2.4
+  name: Proposition 2.4.2 (A cheap sampling bound)
+- description: A 5-vertex tetrahedron-free 3-graph has at most 7 edges.
+  kind: lemma
+  location: Chapter 2, Section 2.4
+  name: Lemma 2.4.3
+- description: Every tetrahedron-free 3-graph on $n \ge 4$ vertices has at most $\frac{7}{10}
+    \binom{n}{3}$ edges.
+  kind: proposition
+  location: Chapter 2, Section 2.4
+  name: Proposition 2.4.4
+- description: Let $a_{ij} \in \{-1, 1\}$ for all $i, j \in [n]$. There exists $x_i,
+    y_j \in \{-1, 1\}$ for all $i, j \in [n]$ such that $\sum_{i,j=1}^{n} a_{ij} x_i
+    y_j \ge \left( \sqrt{\frac{2}{\pi}} + o(1) \right) n^{3/2}$.
+  kind: theorem
+  location: Chapter 2, Section 2.5
+  name: Theorem 2.5.1
+- description: Let $k \ge 2$. Let $V = V_1 \cup \cdots \cup V_k$, where $V_1, \ldots,
+    V_k$ are disjoint sets of size n. The edges of the complete k-uniform hypergraph
+    on V are colored with red/blue. Suppose that every edge formed by taking one vertex
+    from each $V_1, \ldots, V_k$ is colored blue. Then there exists $S \subseteq V$
+    such that the number of red edges and blue edges in S differ by more than $c_k
+    n^k$, where $c_k > 0$ is a constant.
+  kind: theorem
+  location: Chapter 2, Section 2.5
+  name: Theorem 2.5.2
+- description: Let $P_k$ denote the set of polynomials $g(p_1, \ldots, p_k)$ of degree
+    k, whose coefficients have absolute value $\leq 1$, and the coefficient of $p_1p_2\cdots
+    p_k$ is 1. Then there is a constant $c_k > 0$ such that for all $g \in P_k$, there
+    is some $p_1, \ldots, p_k \in [0, 1]$ with $|g(p_1, \ldots, p_k)| \geq c_k$.
+  kind: lemma
+  location: Chapter 2, Section 2.5
+  name: Lemma 2.5.3
+- description: In a graph G = (V, E), if $|E| \ge 4|V|$, then $\operatorname{cr}(G)
+    \gtrsim \frac{|E|^3}{|V|^2}$.
+  kind: theorem
+  location: Chapter 2, Section 2.6
+  name: Theorem 2.6.2 (Crossing number inequality)
+- description: In a graph G = (V, E), if $|E| \ge |V|^2$, then $\operatorname{cr}(G)
+    \ge |V|^4$.
+  kind: corollary
+  location: Chapter 2, Section 2.6
+  name: Corollary 2.6.4
+- description: Every graph on n vertices with minimum degree δ > 1 has a dominating
+    set of size ≤ ((log(δ+1)+1)/(δ+1))n.
+  kind: theorem
+  location: Chapter 3, Section 3.1
+  name: Theorem 3.1.1
+- description: How can one place n points in the unit square so that no three points
+    forms a triangle with small area?
+  kind: definition
+  location: Chapter 3, Section 3.2
+  name: Question 3.2.1
+- description: For every positive integer n, there exists a set of n points in [0,1]^2
+    such that every triple spans a triangle of area ≥ cn^{-2}, for some absolute constant
+    c > 0.
+  kind: theorem
+  location: Chapter 3, Section 3.2
+  name: Theorem 3.2.3 (Many points without small area triangles)
+- description: Let X ≥ 0 be random variable. Then for every a > 0, P(X ≥ a) ≤ E[X]/a.
+  kind: theorem
+  location: Chapter 3, Section 3.3
+  name: Theorem 3.3.1 (Markov's inequality)
+- description: For all k, ℓ, there exists a graph with girth > ℓ and chromatic number
+    > k.
+  kind: theorem
+  location: Chapter 3, Section 3.4
+  name: Theorem 3.4.1 (Erdős 1959)
+- description: There is some constant c>0 so that every k-uniform hypergraph with
+    at most c√(k/log k)·2^k edges is 2-colorable.
+  kind: theorem
+  location: Chapter 3, Section 3.5
+  name: Theorem 3.5.1 (Radhakrishnan and Srinivasan (2000))
+- description: For which p = p_n does G(n, p) contain a triangle with probability
+    1 - o(1)?
+  kind: definition
+  location: Chapter 4, Section 4.1
+  name: Question 4.1.1
+- description: If np → 0, then G(n, p) is triangle-free with probability 1 - o(1).
+  kind: proposition
+  location: Chapter 4, Section 4.1
+  name: Proposition 4.1.2
+- description: The variance of a random variable X is Var[X] := E[(X - EX)^2] = E[X^2]
+    - E[X]^2. The covariance of two random variables X and Y (jointly distributed)
+    is Cov[X, Y] := E[(X - EX)(Y - EY)] = E[XY] - E[X]E[Y].
+  kind: definition
+  location: Chapter 4, Section 4.1
+  name: Definition 4.1.3 (Variance)
+- description: Let X be a random variable with mean μ and variance σ^2. For any λ
+    > 0, P(|X - μ| ≥ λσ) ≤ λ^{-2}.
+  kind: theorem
+  location: Chapter 4, Section 4.1
+  name: Theorem 4.1.5 (Chebyshev's inequality)
+- description: For any random variable X, P(X=0) ≤ Var X / (EX)^2.
+  kind: corollary
+  location: Chapter 4, Section 4.1
+  name: Corollary 4.1.7 (Chebyshev bound on the probability of non-existence)
+- description: If EX > 0 and Var X = o(EX)^2, then X > 0 and X ~ EX with probability
+    1 - o(1).
+  kind: corollary
+  location: Chapter 4, Section 4.1
+  name: Corollary 4.1.8
+- description: If np → ∞, then G(n, p) contains a triangle with probability 1 - o(1).
+  kind: theorem
+  location: Chapter 4, Section 4.1
+  name: Theorem 4.1.11
+- description: What is the threshold for containing a fixed H as a subgraph?
+  kind: definition
+  location: Chapter 4, Section 4.2
+  name: Question 4.2.1
+- description: 'Define the edge-vertex ratio of a graph H by ρ(H) := e_H/v_H. (This
+    is the same as half the average degree.) Define the maximum edge-vertex ratio
+    of a subgraph of H: m(H) := max_{H'' ⊆ H} ρ(H'').'
+  kind: definition
+  location: Section 4.2
+  name: Definition 4.2.7
+- description: In the above setup (Setup 4.2.2), if E[X] → ∞ and Δ* = o(E[X]), then
+    X > 0 and X ~ E[X] whp.
+  kind: lemma
+  location: Section 4.2
+  name: Lemma 4.2.4
+- description: The threshold for containing K_4 is n^{-2/3}.
+  kind: theorem
+  location: Section 4.2
+  name: Theorem 4.2.5
+- description: Fix a graph H. Then p = n^{-1/m(H)} is a threshold for containing H
+    as a subgraph.
+  kind: theorem
+  location: Section 4.2
+  name: 'Theorem 4.2.10 (Threshold for containing a fixed graph: Bollobás 1981)'
+- description: Let Ω = Ω^{(n)} be a finite set and F = F^{(n)} a monotone property
+    of subsets of Ω. We say that q_n is a threshold for F if, P(Ω_{p_n} ∈ F) → 0 if
+    p_n/q_n → 0, and P(Ω_{p_n} ∈ F) → 1 if p_n/q_n → ∞.
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.3.1 (Threshold)
+- description: Let Ω be a finite set and F a non-trivial monotone property of subsets
+    of Ω. Then p ↦ P(Ω_p ∈ F) is a strictly increasing function of p ∈ [0, 1].
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.3.5 (Monotonicity of satisfying probability)
+- description: Every sequence of nontrivial monotone properties has a threshold.
+  kind: theorem
+  location: Section 4.3
+  name: 'Theorem 4.3.6 (Existence of thresholds: Bollobás and Thomason 1987)'
+- description: Let Ω be a finite set and F some non-trivial monotone property. If
+    p ∈ [0, 1] and m is a nonnegative integer, then P(Ω_p ∉ F) ≤ P(Ω_{p/m} ∉ F)^m.
+  kind: lemma
+  location: Section 4.3
+  name: Lemma 4.3.7 (Multiple round exposure)
+- description: We say that r_n is a sharp threshold for some property F on subsets
+    of Ω if, for every δ > 0, P(Ω_{p_n} ∈ F) → 0 if p_n/r_n ≤ 1 - δ, and P(Ω_{p_n}
+    ∈ F) → 1 if p_n/r_n ≥ 1 + δ. On the other hand, if there is some fixed ε > 0 and
+    0 < c < C so that P(Ω_{p_n} ∈ F) ∈ [ε, 1 - ε] whenever c ≤ p_n/r_n ≤ C, then we
+    say that r_n is a coarse threshold.
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.3.14 (Sharp thresholds)
+- description: Suppose r(n) is a coarse threshold of some graph property. Then there
+    is a partition of N = N_1 ∪ ⋯ ∪ N_k and rationals α_1, …, α_k > 0 such that r(n)
+    ≍ n^{-α_j} for every n ∈ N_j.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.3.15 (of Friedgut's sharp threshold theorem)
+- description: For every k ≥ 3 there is some real constant d_k > 0 such that for any
+    constant d > 0, P(G(n, d/n) is k-colorable) → 1 if d < d_k, and P(G(n, d/n) is
+    k-colorable) → 0 if d > d_k.
+  kind: conjecture
+  location: Section 4.3
+  name: Conjecture 4.3.16 (k-colorability threshold)
+- description: For every k ≥ 3, there exists a function d_k(n) such that for every
+    ε > 0, and sequence d(n) > 0, P(G(n, d(n)/n) is k-colorable) → 1 if d(n) < d_k(n)
+    - ε, and P(G(n, d(n)/n) is k-colorable) → 0 if d(n) > d_k(n) + ε.
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.3.17 (Achlioptas and Friedgut 2000)
+- description: Let k = k(n) be some sequence of positive integers. (a) If f(n, k)
+    → 0, then ω(G(n, 1/2)) < k whp. (b) If f(n, k) → ∞, then ω(G(n, 1/2)) ≥ k whp.
+  kind: theorem
+  location: Section 4.4
+  name: Theorem 4.4.2 (Second moment bound for clique number)
+- description: There exists a k = k(n) ~ 2 log_2 n such that ω(G(n, 1/2)) ∈ {k, k+1}
+    whp.
+  kind: theorem
+  location: Section 4.4
+  name: Theorem 4.4.3 (Two-point concentration for clique number)
+- description: For every ε > 0, there exists C such that for all sufficiently large
+    n, all but ε-fraction of x ∈ [n] satisfy |ν(x) - log log n| ≤ C√(log log n).
+  kind: theorem
+  location: Section 4.5
+  name: Theorem 4.5.1 (Hardy and Ramanujan 1917)
+- description: If X_n is a sum of independent Bernoulli random variables, and Var
+    X_n → ∞ as n → ∞, then (X_n - 𝔼X_n)/√(Var X) converges to the normal distribution.
+  kind: theorem
+  location: Section 4.5
+  name: Theorem 4.5.2 (Central limit theorem for sums of independent Bernoullis)
+- description: With x ∈ [n] uniformly chosen at random, ν(x) is asymptotically normal,
+    i.e., for every λ ∈ ℝ, lim_{n→∞} ℙ_{x∈[n]}((ν(x) - log log n)/√(log log n) ≥ λ)
+    = (1/√(2π)) ∫_λ^∞ e^{-t²/2} dt.
+  kind: theorem
+  location: Section 4.5
+  name: 'Theorem 4.5.3 (Asymptotic normality: Erdős and Kac 1940)'
+- description: Let X_n be a sequence of real valued random variables such that for
+    every positive integer k, lim_{n→∞} 𝔼[X_n^k] equals to the k-th moment of the
+    standard normal distribution. Then X_n converges in distribution to the standard
+    normal, i.e., lim_{n→∞} ℙ(X_n ≤ a) = ℙ(Z ≤ a) for every a ∈ ℝ, where Z is a standard
+    normal.
+  kind: theorem
+  location: Section 4.5
+  name: Theorem 4.5.4 (Method of moments)
+- description: n ≳ 2^k.
+  kind: conjecture
+  location: Section 4.6
+  name: Conjecture 4.6.2 (Erdős)
+- description: If there is a k-element subset of [n] with distinct subset sums, then
+    n ≥ 2^k / √k.
+  kind: theorem
+  location: Section 4.6
+  name: Theorem 4.6.3
+- description: Every A ⊆ {0,1}^k with |A| = 2^{k-1} has |∂A| ≥ C(k, ⌊k/2⌋).
+  kind: theorem
+  location: Section 4.6
+  name: 'Theorem 4.6.4 (Vertex-isoperimetric inequality on the hypercube: Harper 1966)'
+- description: If there is a k-element subset of [n] with distinct subset sums, then
+    n ≥ C(k, ⌊k/2⌋) = (√(2/π) + o(1)) 2^k/√k.
+  kind: theorem
+  location: Section 4.6
+  name: Theorem 4.6.6 (Dubroff–Fox–Xu 2021)
+- description: 'Let f: [0,1] → ℝ be a continuous function. Let ε > 0. Then there is
+    a polynomial p(x) such that |p(x) - f(x)| ≤ ε for all x ∈ [0,1].'
+  kind: theorem
+  location: Section 4.7
+  name: Theorem 4.7.1 (Weierstrass approximation theorem 1885)
+- description: Let S_n = X_1 + ⋯ + X_n where X_i ∈ {-1, 1} uniformly iid. Let λ >
+    0. Then ℙ(S_n ≥ λ√n) ≤ e^{-λ²/2}.
+  kind: theorem
+  location: Chapter 5
+  name: Theorem 5.0.1 (Chernoff bound)
+- description: With S_n as before, for any λ ≥ 0, ℙ(|S_n| ≥ λ√n) ≤ 2e^{-λ²/2}.
+  kind: corollary
+  location: Chapter 5
+  name: Corollary 5.0.3
+- description: Let each X_i be an independent random variable taking values in [-1,
+    1] and 𝔼X_i = 0. Then S_n = X_1 + ⋯ + X_n satisfies ℙ(S_n ≥ λ√n) ≤ e^{-λ²/2}.
+  kind: theorem
+  location: Chapter 5
+  name: Theorem 5.0.5 (Chernoff bound with bounded variables)
+- description: Let X be a sum of n independent Bernoulli's (with not necessarily identical
+    probability). Let μ = 𝔼X and λ > 0. Then ℙ(X ≥ μ + λ√n) ≤ e^{-λ²/2} and ℙ(X ≤
+    μ - λ√n) ≤ e^{-λ²/2}.
+  kind: corollary
+  location: Chapter 5
+  name: Corollary 5.0.6
+- description: Let X be the sum of independent Bernoulli random variables (not necessarily
+    the same probability). Let μ = 𝔼X. For all ε > 0, ℙ(X ≥ (1+ε)μ) ≤ e^{-((1+ε)log(1+ε)-ε)μ}
+    ≤ e^{-ε²μ/(1+ε)} and ℙ(X ≤ (1-ε)μ) ≤ e^{-ε²μ/2}.
+  kind: theorem
+  location: Chapter 5
+  name: Theorem 5.0.7
+- description: Let 𝓕 be a collection of m subsets of [n]. Then there exists some assignment
+    [n] → {-1, 1} so that the sum on every set in 𝓕 is O(√(n log m)) in absolute value.
+  kind: theorem
+  location: Section 5.1
+  name: Theorem 5.1.1
+- description: Let 𝓕 be a collection of n subsets of [n]. Then there exists some assignment
+    [n] → {-1, 1} so that the sum on every set in 𝓕 is at most 6√n in absolute value.
+    More generally, if 𝓕 is a collection of m ≥ n subsets of [n], then we can replace
+    6√n by O(√(n log(2m/n))).
+  kind: theorem
+  location: Section 5.1
+  name: 'Theorem 5.1.3 (Six standard deviations suffice: Spencer 1985)'
+- description: There exists some absolute constant K so that for any v_1, …, v_m ∈
+    ℝ^n all lying in the unit ball, there exist ε_1, …, ε_m ∈ {-1, 1} such that ε_1
+    v_1 + ⋯ + ε_m v_m ∈ [-K, K]^n.
+  kind: conjecture
+  location: Section 5.2
+  name: Conjecture 5.1.5 (Komlós)
+- description: 'Let $v_1, \ldots, v_m \in \mathbb{R}^n$. Then there exists $a_1, \ldots,
+    a_m \in [-1, 1]^m$ with $|\{i : a_i \notin \{-1, 1\}\}| \le n$ such that $a_1v_1
+    + \dots + a_mv_m = 0$.'
+  kind: lemma
+  location: Chapter 5, Section 5.1
+  name: Lemma 5.1.6
+- description: For every $\alpha \in (0, 1)$ and $\varepsilon > 0$, there exists $c
+    > 0$ so that for every n, one can find at least $2^{cn}$ unit vectors in $\mathbb{R}^n$
+    whose pairwise inner products all lie in $[\alpha - \varepsilon, \alpha + \varepsilon]$.
+  kind: theorem
+  location: Chapter 5, Section 5.2
+  name: Theorem 5.2.1 (Exponentially many approximately equiangular vectors)
+- description: For every $t \ge 1$, every graph without a $K_{t+1}$ minor is t-colorable.
+  kind: conjecture
+  location: Chapter 5, Section 5.3
+  name: Conjecture 5.3.1 (Hadwiger 1936)
+- description: With probability $1 - o(1)$, $G(n, 1/2)$ has no $K_t$-subdivision with
+    $t = \lceil 10\sqrt{n} \rceil$.
+  kind: theorem
+  location: Chapter 5, Section 5.3
+  name: Theorem 5.3.2
+- description: 'Here we say that an event $A_0$ is independent from events $A_1, \ldots,
+    A_m$ if $A_0$ is independent of every event of the form $B_1 \wedge \cdots \wedge
+    B_m$ where each $B_i$ is either $A_i$ or $\overline{A_i}$, i.e., $\mathbb{P}(A_0
+    B_1 \cdots B_m) = \mathbb{P}(A_0)\mathbb{P}(B_1 \cdots B_m)$, or, equivalently,
+    using Bayes''s rule: $\mathbb{P}(A_0 | B_1 \cdots B_m) = \mathbb{P}(A_0)$.'
+  kind: definition
+  location: Chapter 6, Section 6.1
+  name: Definition 6.1.1 (Independence from a set of events)
+- description: 'Let $A_1, \ldots, A_n$ be events (the "bad events" we wish to avoid).
+    Let G be a (directed) graph with vertex set [n]. We say that G is a dependency
+    (di)graph for the events $A_1, \ldots, A_n$ if, for every $i$, $A_i$ is independent
+    from all $\{A_j : j \notin N(i) \cup \{i\}\}$ ($N(i)$ is the set of (out)neighbors
+    of $i$ in $G$).'
+  kind: definition
+  location: Chapter 6, Section 6.1
+  name: Definition 6.1.2 (Dependency (di)graph)
+- description: Let $A_1, \ldots, A_n$ be events, with $\mathbb{P}[A_i] \leq p$ for
+    all $i$. Suppose that each $A_i$ is independent from a set of all other $A_j$
+    except for at most $d$ of them. If $ep(d+1) \leq 1$, then with some positive probability,
+    none of the events $A_i$ occur.
+  kind: theorem
+  location: Chapter 6, Section 6.1
+  name: Theorem 6.1.7 (Lovász local lemma; symmetric form)
+- description: 'Let $A_1, \ldots, A_n$ be events. For each $i \in [n]$, let $N(i)$
+    be such that $A_i$ is independent from $\{A_j : j \notin \{i\} \cup N(i)\}$. If
+    $x_1, \ldots, x_n \in [0, 1)$ satisfy $\mathbb{P}(A_i) \le x_i \prod_{j \in N(i)}
+    (1 - x_j)$ for all $i \in [n]$, then $\mathbb{P}(\text{none of the events } A_i
+    \text{ occur}) \ge \prod_{i=1}^n (1 - x_i)$.'
+  kind: theorem
+  location: Chapter 6, Section 6.1
+  name: Theorem 6.1.9 (Lovász local lemma; general form)
+- description: In the setup of Theorem 6.1.9, if $\mathbb{P}(A_i) < 1/2$ and $\sum_{j
+    \in N(i)} \mathbb{P}(A_j) \le 1/4$ for all $i$, then with positive probability
+    none of the events $A_i$ occur.
+  kind: corollary
+  location: Chapter 6, Section 6.1
+  name: Corollary 6.1.10
+- description: A k-uniform hypergraph is 2-colorable if every edge intersects at most
+    $e^{-1}2^{k-1} - 1$ other edges.
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.1
+- description: For $k \ge 9$, every k-uniform k-regular hypergraph is 2-colorable.
+    (Here k-regular means that every vertex lies in exactly k edges.)
+  kind: corollary
+  location: Chapter 6, Section 6.2
+  name: Corollary 6.2.2
+- description: 'Let $H$ be a (non-uniform) hypergraph where every edge has size $\geq
+    3$. Suppose $\sum_{f \in E(H) \setminus \{e\}: e \cap f \neq \emptyset} 2^{-|f|}
+    \leq \frac{1}{8}$ for each edge $e$, then $H$ is 2-colorable.'
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.4
+- description: Let $H$ be a (non-uniform) hypergraph on a possibly infinite vertex
+    set, such that each edge is finite, has at least $k$ vertices, and intersect at
+    most $d$ other edges. If $e2^{-k+1}(d+1) \le 1$, then $H$ has a proper 2-coloring.
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.6
+- description: Consider a variation of the random variable model (Setup 6.1.5) where
+    each variable has only finitely many choices but there can be possibly infinitely
+    many events (each event depends on a finite subset of variables). If it is possible
+    to avoid any finite subset of events, then it is possible to avoid all the events.
+  kind: lemma
+  location: Chapter 6, Section 6.2
+  name: Lemma 6.2.7 (Compactness argument)
+- description: The answer to Question 6.2.9 is yes if $e(m(m-1)+1)k\left(1-\frac{1}{k}\right)^m
+    \leq 1$.
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.10
+- description: For every $\varepsilon > 0$, there exists $k_0$ and a 2-coloring of
+    $\mathbb{Z}$ with no monochromatic k-term arithmetic progressions with $k \ge
+    k_0$ and common difference less than $2^{(1-\varepsilon)k}$.
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.11 (Beck 1980)
+- description: Every k-fold nondecomposable covering of R^3 by open unit balls must
+    cover some point ≥ 2^{k/3} times.
+  kind: theorem
+  location: Chapter 6, Section 6.2
+  name: Theorem 6.2.12 (Mani-Levitska and Pach 1986)
+- description: A set of n ≥ 2 spheres in R^3 cut R^3 into at most n^3 connected components.
+  kind: lemma
+  location: Chapter 6, Section 6.2
+  name: Lemma 6.2.14
+- description: Let G = (V, E) be a graph with maximum degree Δ and let V = V_1 ∪ ⋯
+    ∪ V_r be a partition, where each |V_i| ≥ 2eΔ. Then there is an independent set
+    in G containing one vertex from each V_i.
+  kind: theorem
+  location: Chapter 6, Section 6.3
+  name: Theorem 6.3.1
+- description: For every k there exists d so that every d-regular directed graph has
+    a directed cycle of length divisible by k.
+  kind: theorem
+  location: Chapter 6, Section 6.4
+  name: Theorem 6.4.1 (Alon and Linial 1989)
+- description: For every k there exists d so that every 2d-regular graph has a cycle
+    of length divisible by k.
+  kind: corollary
+  location: Chapter 6, Section 6.4
+  name: Corollary 6.4.2
+- description: Every directed graph with min out-degree δ and max in-degree Δ contains
+    a cycle of length divisible by k ∈ ℕ as long as k ≤ δ/(1 + log(1 + δΔ)).
+  kind: theorem
+  location: Chapter 6, Section 6.4
+  name: Theorem 6.4.3 (Alon and Linial 1989)
+- description: Let A_1, …, A_n be events. For each i, let N(i) ⊆ [n] be such that
+    P(A_i | ⋀_{j∈S} Ā_j) ≤ P(A_i) for all i ∈ [n] and S ⊆ [n] \ (N(i) ∪ {i}). Suppose
+    there exist x_1, …, x_n ∈ [0,1) such that P(A_i) ≤ x_i ∏_{j∈N(i)} (1 − x_j) for
+    all i ∈ [n]. Then P(none of the events A_i occur) ≥ ∏_{i=1}^n (1 − x_i).
+  kind: theorem
+  location: Chapter 6, Section 6.5
+  name: Theorem 6.5.1 (Lopsided local lemma)
+- description: In the previous theorem, if |N(i)| ≤ d and P(A_i) ≤ p for every i ∈
+    [n], and ep(d+1) ≤ 1, then with positive probability none of the events A_i occur.
+  kind: corollary
+  location: Chapter 6, Section 6.5
+  name: Corollary 6.5.2 (Lopsided local lemma; symmetric version)
+- description: 'Let X and Y be finite sets with |X| ≤ |Y|. Let f: X → Y be an injection
+    chosen uniformly at random. We can also represent f by a complete matching M from
+    X to Y in K_{X,Y}. For a given matching F (not necessarily complete) in K_{X,Y},
+    let A_F denote the event that F ⊂ M. Let F_1, …, F_n be matchings in K_{X,Y}.
+    The canonical negative dependency graph for the events A_{F_1}, …, A_{F_n} has
+    one vertex for each event, and an edge between the events A_{F_i} and A_{F_j}
+    (i ≠ j) if F_i and F_j are not vertex disjoint.'
+  kind: definition
+  location: Chapter 6, Section 6.5
+  name: Setup 6.5.4 (Random injection model)
+- description: In Setup 6.5.4, let F_0 be a matching in K_{X,Y} such that F_0 is vertex
+    disjoint from F_1 ∪ ⋯ ∪ F_k. Then P(A_{F_0} | Ā_{F_1} ⋯ Ā_{F_k}) ≤ P(A_{F_0}).
+  kind: theorem
+  location: Chapter 6, Section 6.5
+  name: Theorem 6.5.5 (Nonnegative dependence for random injections)
+- description: The probability that a uniform random permutation of [n] has no fixed
+    points is at least (1 − 1/n)^n.
+  kind: corollary
+  location: Chapter 6, Section 6.5
+  name: Corollary 6.5.6 (Derangement lower bound)
+- description: Every odd order Latin square has a transversal.
+  kind: conjecture
+  location: Chapter 6, Section 6.5
+  name: Conjecture 6.5.8 (Ryser 1967)
+- description: Every even order Latin square has a transversal containing all but
+    at most one symbol.
+  kind: conjecture
+  location: Chapter 6, Section 6.5
+  name: Conjecture 6.5.9 (Ryser-Brualdi-Stein conjecture)
+- description: Every n × n array where every entry appears at most n/(4e) times has
+    a Latin transversal.
+  kind: theorem
+  location: Chapter 6, Section 6.5
+  name: Theorem 6.5.11 (Erdős and Spencer 1991)
+- description: In Algorithm 6.6.2, letting A_1, …, A_n denote the bad events, suppose
+    there are x_1, …, x_n ∈ [0,1) such that P(A_i) ≤ x_i ∏_{j∈N(i)} (1 − x_j) for
+    all i ∈ [n], then for each i, E[number of times that A_i is chosen for resampling]
+    ≤ x_i/(1 − x_i).
+  kind: theorem
+  location: Chapter 6, Section 6.6
+  name: Theorem 6.6.3 (Moser and Tardos 2010)
+- description: Given a k-CNF where every clause shares variables with at most 2^{k−3}
+    other clauses, Algorithm 6.6.5 outputs a satisfying assignment with expected running
+    time at most polynomial in the number of variables and clauses.
+  kind: theorem
+  location: Chapter 6, Section 6.6
+  name: Theorem 6.6.6 (Correctness of Moser's algorithm)
+- description: Each clause of the k-CNF appears at most once as a violated clause
+    in the outer while loop (Line 2).
+  kind: lemma
+  location: Chapter 6, Section 6.6
+  name: Lemma 6.6.7 (Outer while loop)
+- description: Fix a k-CNF on n variables where every clause shares variables with
+    at most 2^{k−3} other clauses. Also fix a clause C_0 and some assignment of variables.
+    Then, in an execution of fix(C_0), for any positive integer ℓ, P(there are at
+    least ℓ recursive calls to fix in Line 7) ≤ 2^{−ℓ+n+1}. It follows that the expected
+    number of recursive calls to fix is n + O(1). Thus, in the Moser algorithm (Algorithm
+    6.6.5), the expected total number of calls to fix is mn + O(m), where n is the
+    number of variables and m is the number of clauses.
+  kind: lemma
+  location: Chapter 6, Section 6.6
+  name: Lemma 6.6.8 (The number of recursive calls to fix)
+- description: If A and B are increasing events of independent boolean random variables,
+    then P(AB) ≥ P(A)P(B). Equivalently, we can write P(A | B) ≥ P(A).
+  kind: theorem
+  location: Chapter 7, Section 7.1
+  name: Theorem 7.1.1 (Harris 1960)
+- description: If f and g are monotone increasing functions of independent random
+    variables, then E[fg] ≥ (Ef)(Eg).
+  kind: theorem
+  location: Chapter 7, Section 7.1
+  name: Theorem 7.1.5 (Harris)
+- description: Let A and B be events on independent random variables. (a) If A and
+    B are decreasing, then P(A ∧ B) ≥ P(A)P(B). (b) If A is increasing and B is decreasing,
+    then P(A ∧ B) ≤ P(A)P(B). If A_1, …, A_k are all increasing (or all decreasing)
+    events on independent random variables, then P(A_1 ⋯ A_k) ≥ P(A_1) ⋯ P(A_k).
+  kind: corollary
+  location: Chapter 7, Section 7.1
+  name: Corollary 7.1.6 (Decreasing events and multiple events)
+- description: P(G(n, p) is triangle-free) ≥ (1 - p^3)^{C(n,3)}.
+  kind: theorem
+  location: Chapter 7, Section 7.2
+  name: Theorem 7.2.2
+- description: P(maxdeg G(n, 1/2) ≤ n/2) = (0.6102⋯ + o(1))^n.
+  kind: theorem
+  location: Chapter 7, Section 7.2
+  name: Theorem 7.2.5 (Riordan and Selby 2000)
+- description: Assign an independent standard normal random variable Z_{uv} to each
+    edge of K_n. Let W_v = ∑_{u≠v} Z_{uv} be the sum of the labels of the edges incident
+    to a vertex v. Then P(W_v ≤ 0 ∀v) = (0.6102… + o(1))^n.
+  kind: proposition
+  location: Chapter 7, Section 7.2
+  name: Proposition 7.2.6 (Max degree with normal random edge labels)
+- description: Assuming Setup 8.1.1, P(X=0) ≤ e^{-μ + Δ/2}.
+  kind: theorem
+  location: Chapter 8, Section 8.1
+  name: Theorem 8.1.2 (Janson inequality I)
+- description: If p = o(n^{-1/2}), then P(G(n, p) is triangle-free) = e^{-(1+o(1))μ}
+    = e^{-(1+o(1))n^3p^3/6}.
+  kind: theorem
+  location: Chapter 8, Section 8.1
+  name: Theorem 8.1.6
+- description: For a constant c > 0, lim_{n→∞} P(G(n, c/n) is triangle-free) = e^{-c^3/6}.
+  kind: corollary
+  location: Chapter 8, Section 8.1
+  name: Corollary 8.1.7
+- description: Assuming Setup 8.1.1, if Δ ≥ μ, then P(X=0) ≤ e^{-μ^2/(2Δ)}.
+  kind: theorem
+  location: Chapter 8, Section 8.1
+  name: Theorem 8.1.8 (Janson inequality II)
+- description: Suppose $p = p_n \le 0.99$. Then $$\mathbb{P}(G(n, p) \text{ is triangle-free})
+    = \begin{cases} \exp\left(-\Theta(n^2 p)\right) & \text{if } p \gtrsim n^{-1/2}
+    \\ \exp\left(-\Theta(n^3 p^3)\right) & \text{if } p \lesssim n^{-1/2} \end{cases}$$
+  kind: theorem
+  location: Chapter 8, Section 8.1
+  name: Theorem 8.1.10
+- description: Assume Setup 8.1.1. For any $0 \le t \le \mu$, $$\mathbb{P}(X \le \mu
+    - t) \le \exp\left(\frac{-t^2}{2(\mu + \Delta)}\right).$$
+  kind: theorem
+  location: Chapter 8, Section 8.2
+  name: Theorem 8.2.2 (Janson inequality III)
+- description: Let $X$ be the number of triangles in $G(n, p)$ with $p = p_n$ satisfying
+    $n^{-1/2} \ll p \ll 1$, $$-\log \mathbb{P}(X \ge (1+\delta)\mathbb{E}X) \sim \min\left\{\frac{\delta}{3},
+    \frac{\delta^{2/3}}{2}\right\} n^2 p^2 \log(1/p),$$ and for $n^{-1} \log n \ll
+    p \ll n^{-1/2}$, $$-\log \mathbb{P}(X \geq (1+\delta)\mathbb{E}X) \sim \frac{\delta^{2/3}}{2}
+    n^2 p^2 \log(1/p).$$
+  kind: theorem
+  location: Chapter 8, Section 8.2
+  name: Theorem 8.2.5 (Harel, Mousset, Samotij 2022)
+- description: With probability $1 - o(1)$, $$\chi(G(n,1/2)) \sim \frac{n}{2\log_2
+    n}.$$
+  kind: theorem
+  location: Chapter 8, Section 8.3
+  name: Theorem 8.3.2 (Chromatic number of a random graph — Bollobás 1988)
+- description: Let $k_0 = k_0(n)$ be the largest possible integer $k$ so that $\binom{n}{k}
+    2^{-\binom{k}{2}} \ge 1$. Then $$\mathbb{P}(\alpha(G(n, 1/2)) < k_0 - 3) \le e^{-n^{2-o(1)}}.$$
+  kind: lemma
+  location: Chapter 8, Section 8.3
+  name: Lemma 8.3.3
+- description: 'Let $X_1 \in \Omega_1, \ldots, X_n \in \Omega_n$ be independent random
+    variables. Suppose $f: \Omega_1 \times \cdots \times \Omega_n \to \mathbb{R}$
+    satisfies $|f(x_1, \dots, x_n) - f(x''_1, \dots, x''_n)| \le 1$ whenever $(x_1,
+    \ldots, x_n)$ and $(x''_1, \ldots, x''_n)$ differ on exactly one coordinate. Then
+    the random variable $Z = f(X_1, \ldots, X_n)$ satisfies, for every $\lambda \ge
+    0$, $$\mathbb{P}(Z - \mathbb{E}Z \ge \lambda) \le e^{-2\lambda^2/n} \quad \text{and}
+    \quad \mathbb{P}(Z - \mathbb{E}Z \le -\lambda) \le e^{-2\lambda^2/n}.$$'
+  kind: theorem
+  location: Chapter 9, Section 9.1
+  name: Theorem 9.1.1 (Bounded differences inequality)
+- description: 'Let $X_1 \in \Omega_1, \ldots, X_n \in \Omega_n$ be independent random
+    variables. Suppose $f: \Omega_1 \times \cdots \times \Omega_n \to \mathbb{R}$
+    satisfies $|f(x_1, \dots, x_n) - f(x''_1, \dots, x''_n)| \le c_i$ whenever $(x_1,
+    \ldots, x_n)$ and $(x''_1, \ldots, x''_n)$ differ only on the $i$-th coordinate.
+    Here $c_1, \ldots, c_n$ are constants. Then the random variable $Z = f(X_1, \ldots,
+    X_n)$ satisfies, for every $\lambda \geq 0$, $$\mathbb{P}(Z - \mathbb{E}Z \ge
+    \lambda) \le \exp\left(\frac{-2\lambda^2}{c_1^2 + \dots + c_n^2}\right)$$ and
+    $$\mathbb{P}(Z - \mathbb{E}Z \le -\lambda) \le \exp\left(\frac{-2\lambda^2}{c_1^2
+    + \dots + c_n^2}\right).$$'
+  kind: theorem
+  location: Chapter 9, Section 9.1
+  name: Theorem 9.1.3 (Bounded differences inequality)
+- description: A martingale is a random real sequence $Z_0, Z_1, \ldots$ such that
+    for every $Z_n$, $\mathbb{E}|Z_n| < \infty$ and $\mathbb{E}[Z_{n+1}|Z_0,\ldots,Z_n]=Z_n$.
+  kind: definition
+  location: Chapter 9, Section 9.2
+  name: Definition 9.2.1
+- description: Let $Z_0, Z_1, \ldots, Z_n$ be a martingale satisfying $|Z_i - Z_{i-1}|
+    \le 1$ for each $i \in [n]$. Then for every $\lambda > 0$, $$\mathbb{P}(Z_n -
+    Z_0 \ge \lambda \sqrt{n}) \le e^{-\lambda^2/2}.$$
+  kind: theorem
+  location: Chapter 9, Section 9.2
+  name: Theorem 9.2.7 (Azuma's inequality)
+- description: Let $Z_0, Z_1, \ldots, Z_n$ be a martingale satisfying $|Z_i - Z_{i-1}|
+    \le c_i$ for each $i \in [n]$. For any $\lambda > 0$, $$\mathbb{P}(Z_n - Z_0 \ge
+    \lambda) \le \exp\left(\frac{-\lambda^2}{2(c_1^2 + \dots + c_n^2)}\right).$$
+  kind: theorem
+  location: Chapter 9, Section 9.2
+  name: Theorem 9.2.8 (Azuma's inequality)
+- description: Consider a Doob martingale $Z_i = \mathbb{E}[f(X_1, \dots, X_n) | X_1,
+    \dots, X_i]$ as in Example 9.2.4. Suppose, conditioned on any value of $(X_1,
+    \dots, X_{i-1})$, the possibilities for $Z_i$ lies in an interval of length $c_i$
+    (here $c_i$ is non-random, but the location of the interval may depend on $X_1,
+    \dots, X_{i-1}$). Then for any $\lambda > 0$, $\mathbb{P}(Z_n - Z_0 \ge \lambda)
+    \le \exp\left(\frac{-2\lambda^2}{c_1^2 + \dots + c_n^2}\right)$.
+  kind: theorem
+  location: Chapter 9, Section 9.2
+  name: Theorem 9.2.9 (Azuma's inequality for Doob martingales)
+- description: Let $X$ be a real random variable contained in an interval of length
+    $\ell$. Suppose $\mathbb{E}X = 0$. Then $\mathbb{E}[e^X] \le e^{\ell^2/8}$.
+  kind: lemma
+  location: Chapter 9, Section 9.2
+  name: Lemma 9.2.12 (Hoeffding's lemma)
+- description: For every $\lambda \geq 0$, the chromatic number of a random graph
+    $Z = \chi(G(n, p))$ satisfies $\mathbb{P}(|Z - \mathbb{E}Z| \ge \lambda \sqrt{n-1})
+    \le 2e^{-2\lambda^2}$.
+  kind: theorem
+  location: Chapter 9, Section 9.3
+  name: Theorem 9.3.1 (Shamir and Spencer 1987)
+- description: Let $\alpha > 5/6$ be fixed. Then for $p < n^{-\alpha}$, $\chi(G(n,
+    p))$ is concentrated on four values with probability $1 - o(1)$. That is, there
+    exists $u = u(n, p)$ such that, as $n \to \infty$, $\mathbb{P}(u \le \chi(G(n,
+    p)) \le u + 3) = 1 - o(1)$.
+  kind: theorem
+  location: Chapter 9, Section 9.3
+  name: Theorem 9.3.4 (Shamir and Spencer 1987)
+- description: Fix $\alpha > 5/6$ and $C$. Let $p \le n^{-\alpha}$. Then with probability
+    $1 - o(1)$ every subset of at most $C\sqrt{n}$ vertices of $G(n, p)$ can be properly
+    3-colored.
+  kind: lemma
+  location: Chapter 9, Section 9.3
+  name: Lemma 9.3.5
+- description: Let $A \subseteq \mathbb{R}^n$ be a measurable set, and let $B \subseteq
+    \mathbb{R}^n$ be a ball with $\operatorname{vol}(A) = \operatorname{vol}(B)$.
+    Then, for all $t \ge 0$, $\operatorname{vol} A_t \geq \operatorname{vol} B_t$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.1 (Isoperimetric inequality in Euclidean space)
+- description: Let $A \subseteq \{0,1\}^n$. Let $B \subseteq \{0,1\}^n$ be a Hamming
+    ball with $|A| \ge |B|$. Then for all $t > 0$, $|A_t| \geq |B_t|$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.3 (Isoperimetric inequality in the Hamming cube; Harper 1966)
+- description: Let $t > 0$. For every $A \subseteq \{0, 1\}^n$ with $|A| \ge 2^{n-1}$,
+    we have $|A_t| > (1 - e^{-2t^2/n})2^n$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.5 (Rapid expansion from half to $1 - \varepsilon$)
+- description: Let $\varepsilon > 0$ and $C = \sqrt{2\log(1/(\varepsilon))}$. If $A
+    \subseteq \{0, 1\}^n$ with $|A| \ge \varepsilon 2^n$, then $|A_{C\sqrt{n}}| \ge
+    (1-\varepsilon)2^n$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.6 (Rapid expansion from $\varepsilon$ to $1 - \varepsilon$)
+- description: 'Given two metric spaces $(X, d_X)$ and $(Y, d_Y)$, we say that a function
+    $f: X \to Y$ is C-Lipschitz if $d_Y(f(x), f(x'')) \le Cd_X(x, x'')$ for all $x,
+    x'' \in X$.'
+  kind: definition
+  location: Chapter 9, Section 9.4
+  name: Definition 9.4.7 (Lipschitz functions)
+- description: 'Let $t, \varepsilon \geq 0$. In a probability space $(\Omega, \mathbb{P})$
+    equipped with a metric. The following are equivalent: (a) (Expansion/approximate
+    isoperimetry) If $A \subseteq \Omega$ with $\mathbb{P}(A) \geq 1/2$, then $\mathbb{P}(A_t)
+    \geq 1 - \varepsilon$. (b) (Concentration of Lipschitz functions) If $f: \Omega
+    \to \mathbb{R}$ is 1-Lipschitz and $m \in \mathbb{R}$ satisfies $\mathbb{P}(f
+    \le m) \ge 1/2$, then $\mathbb{P}(f > m + t) \leq \varepsilon$.'
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.8 (Equivalence between notions of concentration of measure)
+- description: On a sphere in $\mathbb{R}^n$, let $A$ be a measurable subset and $B$
+    a spherical cap with $\operatorname{vol}_{n-1}(A) = \operatorname{vol}_{n-1}(B)$.
+    Then for all $t \ge 0$, $\operatorname{vol}_{n-1}(A_t) \ge \operatorname{vol}_{n-1}(B_t)$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.10 (Lévy's isoperimetric inequality on the sphere)
+- description: Let $x = (x_1, \dots, x_n) \in \mathbb{R}^n$ be a uniform random unit
+    vector in $\mathbb{R}^n$. Then for any $\varepsilon \ge 0$, $\mathbb{P}(x_1 \ge
+    \varepsilon) \le e^{-n\varepsilon^2/2}$.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.11 (Upper bound on spherical cap size)
+- description: Let $A$ be a measurable subset of the unit sphere in $\mathbb{R}^n$,
+    equipped with the metric inherited from $\mathbb{R}^n$. If $A \subseteq S^{n-1}$
+    has $\operatorname{vol}_{n-1}(A)/\operatorname{vol}_{n-1}(S^{n-1}) \ge 1/2$, then
+    $\frac{\operatorname{vol}_{n-1}(A_t)}{\operatorname{vol}_{n-1}(S^{n-1})} \ge 1
+    - e^{-nt^2/4}$.
+  kind: corollary
+  location: Chapter 9, Section 9.4
+  name: Corollary 9.4.12 (Concentration of measure on the sphere)
+- description: 'Let $S^{n-1}$ denote the unit sphere in $\mathbb{R}^n$. If $f: S^{n-1}
+    \to \mathbb{R}$ is a 1-Lipschitz measurable function, then there is some real
+    $m$ so that, for the uniform measure on the sphere, [statement appears to be cut
+    off in the text].'
+  kind: corollary
+  location: Chapter 9, Section 9.4
+  name: Corollary 9.4.14 (Concentration of measure on the sphere)
+- description: If A, H ⊆ R^n, H a half-space, and γ(A) = γ(H), then γ(A_t) ≥ γ(H_t)
+    for all t ≥ 0, where γ is the Gauss measure.
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.15 (Gaussian isoperimetric inequality)
+- description: 'If f: R^n → R is 1-Lipschitz, and Z is a vector of i.i.d. standard
+    normals, then X = f(Z) satisfies, for some m, P(|X - m| ≥ t) ≤ 2e^{-t²/2}.'
+  kind: corollary
+  location: Chapter 9, Section 9.4
+  name: Corollary 9.4.16 (Concentration of measure for Gaussian vectors)
+- description: We say that a random variable X is K-subGaussian about its mean if
+    P(|X - EX| ≥ t) ≤ 2e^{-t²/K²} for all t ≥ 0.
+  kind: definition
+  location: Chapter 9, Section 9.4
+  name: Definition 9.4.17 (Sub-Gaussian distribution)
+- description: There exists a constant C > 0 so that the following holds for any real
+    random variable X satisfying, for some constants m and K, P(|X - m| ≥ t) ≤ 2e^{-t²/K²}
+    for all t ≥ 0. (a) Every median MX of X satisfies |MX - m| ≤ CK. (b) The mean
+    of X satisfies |EX - m| ≤ CK. (c) For any p ≥ 1, writing ||X||_p := (E|X|^p)^{1/p}
+    for the L^p norm of X, |||X||_p - m| ≤ CK√p. (d) For every constant A there exists
+    a constant c > 0 so that if |m' - m| ≤ AK, then P(|X - m'| ≥ t) ≤ 2e^{-ct²/K²}
+    for all t ≥ 0.
+  kind: lemma
+  location: Chapter 9, Section 9.4
+  name: Lemma 9.4.20 (Median vs. mean for subGaussian distributions)
+- description: 'There exists a constant C > 0 so that the following holds. Let ε >
+    0. Let X be a set of N points in R^m. Then for any d > Cε^{-2} log N, there exists
+    f: X → R^d so that (1 - ε)|x - y| ≤ |f(x) - f(y)| ≤ (1 + ε)|x - y| for all x,
+    y ∈ X.'
+  kind: theorem
+  location: Chapter 9, Section 9.4
+  name: Theorem 9.4.22 (Johnson and Lindenstrauss 1982)
+- description: 'There exists a constant C > 0 so that the following holds. Let m ≥
+    d and let P: R^m → R^d denote the orthogonal projection onto the subspace spanned
+    by the first d coordinates. Let z be a uniform random point on the unit sphere
+    in R^m. Let y = Pz and Y = |y|. Then, for all t ≥ 0, P(|Y - √(d/m)| ≥ t) ≤ 2e^{-cmt²}.'
+  kind: lemma
+  location: Chapter 9, Section 9.4
+  name: Lemma 9.4.24 (Random projection)
+- description: There is a constant c > 0 so that for every positive integer d, there
+    is a set of e^{cε²d} points in R^d whose pairwise distances are in [1 - ε, 1 +
+    ε].
+  kind: corollary
+  location: Chapter 9, Section 9.4
+  name: Corollary 9.4.25
+- description: Let V be a fixed d-dimensional subspace in R^n. For uniformly random
+    x ∈ {-1, 1}^n, one has P(|dist(x, V) - √(n - d)| ≥ t) ≤ Ce^{-ct²}, where C, c
+    > 0 are some constants.
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: Theorem 9.5.2
+- description: Let A ⊆ R^n be convex. Let x ~ Unif{0,1}^n. Then for any t ≥ 0, P(x
+    ∈ A)P(dist(x, A) ≥ t) ≤ e^{-t²/4}.
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: Theorem 9.5.3 (Talagrand)
+- description: 'Let f: R^n → R be a convex and 1-Lipschitz function (with respect
+    to Euclidean distance on R^n). Let x ~ Unif{0,1}^n. Then for any r ∈ R and t ≥
+    0, P(f(x) ≤ r)P(f(x) ≥ r + t) ≤ e^{-t²/4}.'
+  kind: corollary
+  location: Chapter 9, Section 9.5
+  name: Corollary 9.5.6 (Talagrand)
+- description: 'Let f: R^n → R be a convex and 1-Lipschitz function (with respect
+    to Euclidean distance on R^n). Let x ~ Unif({0,1}^n). Then P(|f(x) - Mf(x)| ≥
+    t) ≤ 4e^{-t²/4}.'
+  kind: corollary
+  location: Chapter 9, Section 9.5
+  name: Corollary 9.5.8 (Talagrand)
+- description: Let A ⊆ Ω = Ω_1 × ··· × Ω_n, with Ω equipped with a product probability
+    measure. Let x ∈ Ω be chosen randomly with independent coordinates. Let t ≥ 0.
+    Then P(x ∈ A)P(d_T(x, A) ≥ t) ≤ e^{-t²/4}.
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: 'Theorem 9.5.11 (Talagrand''s inequality: general form)'
+- description: Let A ⊆ [0,1]^n and x ∈ [0,1]^n. Then dist(x, ConvexHull A) ≤ d_T(x,
+    A).
+  kind: lemma
+  location: Chapter 9, Section 9.5
+  name: Lemma 9.5.12 (Convex distance upper bounds Euclidean distance)
+- description: 'Let x = (x_1, ..., x_n) ∈ [0,1]^n be independent random variables
+    (not necessarily identical). Let t ≥ 0. Let A ⊆ [0,1]^n be a convex set. Then
+    P(x ∈ A)P(dist(x, A) ≥ t) ≤ e^{-t²/4} where dist is Euclidean distance. Also,
+    if f: [0,1]^n → R is a convex 1-Lipschitz function, then P(|f - Mf| ≥ t) ≤ 4e^{-t²/4}.'
+  kind: corollary
+  location: Chapter 9, Section 9.5
+  name: 'Corollary 9.5.13 (Talagrand''s inequality: convex sets and convex Lipschitz
+    functions)'
+- description: 'Let Ω = Ω_1 × ··· × Ω_n equipped with the product measure. Let f:
+    Ω → R be a function. Suppose for every x ∈ Ω, there is some α(x) = (α_1(x), ...,
+    α_n(x)) ∈ R^n_{≥0} such that f(y) ≥ f(x) - Σ_{i: x_i ≠ y_i} α_i(x) for all y ∈
+    Ω. Then, for every t ≥ 0, P(|f - Mf| ≥ t) ≤ 4e^{-t²/K²} where K = 2 sup_{x ∈ Ω}
+    |α(x)|.'
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: Theorem 9.5.14 (Talagrand's inequality — functions with weighted certificates)
+- description: Let A = (a_{ij}) be an n × n symmetric random matrix with independent
+    entries in [-1, 1]. Let λ_1(A) denote the largest eigenvalue of A. Then P(|λ_1(A)
+    - Mλ_1(A)| ≥ t) ≤ 4e^{-t²/32}.
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: Theorem 9.5.17
+- description: Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$. Let $A \subseteq
+    \Omega$. We say that $A$ is **s-certifiable** if for every $x \in A$, there exists
+    a set $I(x) \subseteq [n]$ with $|I| \le s$ such that for every $y \in \Omega$
+    with $x_i = y_i$ for all $i \in I(x)$, one has $y \in A$.
+  kind: definition
+  location: Chapter 9, Section 9.5
+  name: Definition 9.5.20
+- description: 'Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ be equipped
+    with a product measure. Let $f : \Omega \to \mathbb{R}$ be 1-Lipschitz with respect
+    to Hamming distance on $\Omega$. Suppose that $\{f \geq r\}$ is $s$-certifiable.
+    Then, for every $t \geq 0$, $\mathbb{P}(f \le r - t)\mathbb{P}(f \ge r) \le e^{-t^2/(4s)}$.'
+  kind: theorem
+  location: Chapter 9, Section 9.5
+  name: Theorem 9.5.21 (Talagrand's inequality for certifiable functions)
+- description: 'Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ be equipped
+    with a product measure. Let $f : \Omega \to \mathbb{R}$ be 1-Lipschitz with respect
+    to Hamming distance on $\Omega$. Suppose $\{f \geq r\}$ is $r$-certifiable for
+    every $r$. Then for every $t \geq 0$, $\mathbb{P}(f \le \mathbb{M}f - t) \le 2
+    \exp\left(\frac{-t^2}{4\mathbb{M}f}\right)$ and $\mathbb{P}(f \ge \mathbb{M}f
+    + t) \le 2 \exp\left(\frac{-t^2}{4(\mathbb{M}f + t)}\right)$.'
+  kind: corollary
+  location: Chapter 9, Section 9.5
+  name: Corollary 9.5.22 (Talagrand's inequality for certifiable functions)
+- description: Let $X$ be the length of the longest increasing subsequence of a random
+    permutation of $[n]$. Then for every $\varepsilon > 0$ there exists $C > 0$ so
+    that $\mathbb{P}(|X - \mathbb{M}X| \le Cn^{1/4}) \ge 1 - \varepsilon$.
+  kind: corollary
+  location: Chapter 9, Section 9.5
+  name: Corollary 9.5.23 (Longest increasing subsequence)
+- description: $L_n$ is $O(\sqrt{\log n})$-subGaussian about its mean. That is, $\mathbb{P}(|L_n
+    - \mathbb{E}L_n| \ge t) \le \exp\left(\frac{-ct^2}{\log n}\right)$ for all $t
+    > 0$, where $c > 0$ is some constant.
+  kind: theorem
+  location: Chapter 9, Section 9.6
+  name: Theorem 9.6.1 (Rhee and Talagrand 1987)
+- description: Let $S$ be a set of $k$ random points chosen independently and uniformly
+    in $[0,1]^2$. For any (non-random) point $y \in [0,1]^2$, one has $\mathbb{E}\operatorname{dist}(y,S)
+    \lesssim \frac{1}{\sqrt{k}}$.
+  kind: lemma
+  location: Chapter 9, Section 9.6
+  name: Lemma 9.6.2
+- description: $L_n$ is $O(1)$-subGaussian about its mean. That is, $\mathbb{P}(|L_n
+    - \mathbb{E}L_n| \ge t) \le e^{-ct^2}$ for all $t > 0$, where $c > 0$ is some
+    constant.
+  kind: theorem
+  location: Chapter 9, Section 9.6
+  name: Theorem 9.6.3 (Rhee and Talagrand 1989)
+- description: 'Given two metric spaces $(X, d_X)$ and $(Y, d_Y)$, we say that a map
+    $f: X \to Y$ is **Hölder** continuous with exponent $\alpha$ if there is some
+    constant $C$ (depending on $f$) so that $d_Y(f(x), f(x'')) \le C d_X(x, x'')^{\alpha}$
+    for all $x, x'' \in X$.'
+  kind: definition
+  location: Chapter 9, Section 9.6
+  name: Definition 9.6.5 (Hölder continuity)
+- description: 'The Hilbert curve $H: [0,1] \rightarrow [0,1]^2$ is Hölder continuous
+    with exponent $1/2$.'
+  kind: theorem
+  location: Chapter 9, Section 9.6
+  name: Theorem 9.6.7
+- description: Let $x_1, \ldots, x_n \in [0,1]^2$. There is a permutation $\sigma$
+    of $[n]$ with (indices taken mod $n$) $\sum_{i=1}^{n} |x_{\sigma(i)} - x_{\sigma(i+1)}|^2
+    = O(1)$.
+  kind: lemma
+  location: Chapter 9, Section 9.6
+  name: Lemma 9.6.9 (Space-filling curve heuristic)
+- description: 'Let $\Omega = ([0,1]^2)^n$ be the space of $n$-tuples of points in
+    $[0,1]^2$. There exists a map $\alpha\colon \Omega \to \mathbb{R}^n_{\geq 0}$
+    so that for all $x \in \Omega$, $\alpha(x) = (\alpha_1(x), \dots, \alpha_n(x))
+    \in \mathbb{R}^n_{\geq 0}$ satisfies $L(x) \le L(y) + \sum_{i: x_i \ne y_i} \alpha_i(x)$
+    for all $x, y \in \Omega$ and $\sup_{x \in \Omega} \sum_{i=1}^{n} \alpha_i(x)^2
+    = O(1)$.'
+  kind: lemma
+  location: Chapter 9, Section 9.6
+  name: Lemma 9.6.11
+- description: Given a discrete random variable $X$ taking values in $S$, with $p_s
+    := \mathbb{P}(X = s)$, its *entropy* (or *binary entropy* to emphasize the base-2
+    logarithm) is defined to be $H(X) := \sum_{s \in S} -p_s \log_2 p_s$ (by convention
+    if $p_s = 0$ then the corresponding summand is set to zero).
+  kind: definition
+  location: Chapter 10, Section 10.1
+  name: Definition 10.1.1
+- description: $H(X) \le \log_2 |\operatorname{support}(X)|$, with equality if and
+    only if $X$ is uniformly distributed.
+  kind: lemma
+  location: Chapter 10, Section 10.1
+  name: Lemma 10.1.4 (Uniform bound)
+- description: If $X$ and $Y$ are independent random variables, then $H(X,Y) = H(X)
+    + H(Y)$.
+  kind: lemma
+  location: Chapter 10, Section 10.1
+  name: Lemma 10.1.5 (Independence)
+- description: Given jointly distributed random variables $X$ and $Y$, define $H(X|Y)
+    := \mathbb{E}_{y}[H(X|Y = y)]$.
+  kind: definition
+  location: Chapter 10, Section 10.1
+  name: Definition 10.1.6 (Conditional entropy)
+- description: H(X,Y) = H(X) + H(Y|X).
+  kind: lemma
+  location: Chapter 10, Section 10.1
+  name: Lemma 10.1.7 (Chain rule)
+- description: H(X,Y) ≤ H(X) + H(Y), and more generally, H(X₁,…,Xₙ) ≤ H(X₁) + ⋯ +
+    H(Xₙ).
+  kind: lemma
+  location: Chapter 10, Section 10.1
+  name: Lemma 10.1.8 (Subadditivity)
+- description: H(X|Y) ≤ H(X) and more generally, H(X|Y,Z) ≤ H(X|Z).
+  kind: lemma
+  location: Chapter 10, Section 10.1
+  name: Lemma 10.1.10 (Dropping conditioning)
+- description: If 0 < k ≤ n/2, then ∑_{0 ≤ i ≤ k} C(n,i) ≤ 2^{H(k/n)n} = (n/k)^k (n/(n−k))^{n−k}.
+  kind: theorem
+  location: Chapter 10, Section 10.1
+  name: Theorem 10.1.12
+- description: Let A = (a_{ij}) ∈ {0,1}^{n×n}, whose i-th row has sum d_i. Then per
+    A ≤ ∏_{i=1}^{n} (d_i!)^{1/d_i}.
+  kind: theorem
+  location: Chapter 10, Section 10.2
+  name: Theorem 10.2.1 (Brégman–Minc inequality)
+- description: Let G be a graph. Let d_v denote the degree of v. Then the number pm(G)
+    of perfect matchings of G satisfies pm(G) ≤ ∏_{v ∈ V(G)} (d_v!)^{1/(2d_v)} = ∏_{v
+    ∈ V(G)} pm(K_{d_v,d_v})^{1/(2d_v)}.
+  kind: corollary
+  location: Chapter 10, Section 10.2
+  name: Corollary 10.2.2 (Kahn and Lovász)
+- description: Every n-vertex tournament has at most O(n^{3/2} · n!/2^n) Hamilton
+    paths.
+  kind: theorem
+  location: Chapter 10, Section 10.2
+  name: Theorem 10.2.4 (Alon 1990)
+- description: Every n-vertex tournament has at most O(√n · n!/2^n) Hamilton cycles.
+  kind: theorem
+  location: Chapter 10, Section 10.2
+  name: Theorem 10.2.6 (Alon 1990)
+- description: Given an n-vertex tournament with P Hamilton paths, one can add a new
+    vertex to obtain a (n+1)-vertex tournament with at least P/4 Hamilton cycles.
+  kind: lemma
+  location: Chapter 10, Section 10.2
+  name: Lemma 10.2.7
+- description: A Steiner triple system (STS) of order n is a 3-uniform hypergraph
+    on n vertices where every pair of vertices is contained in exactly one triple.
+  kind: definition
+  location: Chapter 10, Section 10.2
+  name: Definition 10.2.8 (Steiner triple system)
+- description: The number of Steiner triple systems on n labeled vertices is at most
+    (n/(e² + o(1)))^{n²/6} (equivalently written as ((n)/(e²+o(1)))^{n²}).
+  kind: theorem
+  location: Chapter 10, Section 10.2
+  name: Theorem 10.2.10 (Upper bound on the number of STS — Linial and Luria 2013)
+- description: For every bipartite graph F, and any graph G, t(F,G) ≥ t(K₂,G)^{e(F)}.
+  kind: conjecture
+  location: Chapter 10, Section 10.3
+  name: Conjecture 10.3.2 (Sidorenko)
+- description: Sidorenko's conjecture holds if F is a three-edge path.
+  kind: theorem
+  location: Chapter 10, Section 10.3
+  name: Theorem 10.3.3 (Blakey and Roy 1965)
+- description: Sidorenko's conjecture holds if F is a tree.
+  kind: theorem
+  location: Chapter 10, Section 10.3
+  name: Theorem 10.3.5
+- description: Sidorenko's conjecture holds for all complete bipartite graphs.
+  kind: theorem
+  location: Section 10.3
+  name: Theorem 10.3.6
+- description: Sidorenko's conjecture holds for a bipartite graph that has a vertex
+    adjacent to all vertices in the other part.
+  kind: theorem
+  location: Section 10.3
+  name: Theorem 10.3.7 (Conlon, Fox, Sudakov 2010)
+- description: 2H(X,Y,Z) ≤ H(X,Y) + H(X,Z) + H(Y,Z)
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.1 (Shearer's lemma, special case)
+- description: Let S ⊆ ℝ³ be a finite set, and π_{xy}(S) be its projection on the
+    xy-plane, etc. Then |S|² ≤ |π_{xy}(S)| |π_{xz}(S)| |π_{yz}(S)|
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.3
+- description: Let S be a body in ℝ³. Then vol(S)² ≤ area(π_{xy}(S)) area(π_{xz}(S))
+    area(π_{yz}(S)).
+  kind: corollary
+  location: Section 10.4
+  name: Corollary 10.4.4
+- description: Let A_1, …, A_s ⊆ [n] where each i ∈ [n] appears in at least k sets
+    A_j's. Writing X_A := (X_i)_{i ∈ A}, then kH(X_1,…,X_n) ≤ ∑_{j∈[s]} H(X_{A_j}).
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.5 (Shearer's lemma)
+- description: Writing π_i for the projection from ℝ^n onto the hyperplane x_i = 0,
+    we have for every S ⊆ ℝ^n, |S|^{n-1} ≤ ∏_{i=1}^n |π_i(S)|
+  kind: corollary
+  location: Section 10.4
+  name: Corollary 10.4.6 (Loomis-Whitney inequality)
+- description: 'Let A_1, …, A_s ⊆ Ω where each i ∈ Ω appears in at least k sets A_j.
+    Then for every family F of subsets of Ω, |F|^k ≤ ∏_{j∈[s]} |F|_{A_j}| where F|_A
+    := {F ∩ A : F ∈ F}.'
+  kind: corollary
+  location: Section 10.4
+  name: Corollary 10.4.7
+- description: Every triangle-intersecting family of graphs on n labeled vertices
+    has size < 2^{\binom{n}{2}-2}.
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.9 (Chung, Graham, Frankl, and Shearer 1986)
+- description: Let G be an n-vertex d-regular graph. Then i(G) ≤ i(K_{d,d})^{n/(2d)}
+    = (2^{d+1} - 1)^{n/(2d)} where i(G) is the number of independent sets of G.
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.12 (Kahn, Zhao)
+- description: Let G be any graph (not necessarily regular). Then i(G)² ≤ i(G × K_2).
+  kind: lemma
+  location: Section 10.4
+  name: Lemma 10.4.13
+- description: Let G be an n-vertex d-regular bipartite graph. Let H be any graph
+    allowing loops. Then hom(G, H) ≤ hom(K_{d,d}, H)^{n/(2d)}.
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.14 (Galvin and Tetali 2004)
+- description: Let G be an n-vertex d-regular graph. Then c_q(G) ≤ c_q(K_{d,d})^{n/(2d)}
+    where c_q(G) is the number of q-colorings of G.
+  kind: theorem
+  location: Section 10.4
+  name: Theorem 10.4.15 (Sah, Sawhney, Stoner, and Zhao 2020)
+- description: The number of triangle-free graphs on n vertices is 2^{n²/4+o(n²)}.
+  kind: theorem
+  location: Chapter 11
+  name: Theorem 11.0.2 (Erdős, Kleitman, and Rothschild 1973)
+- description: For every $\varepsilon > 0$, there exists $C > 0$ such that the following
+    holds. For every $n$, there is a collection $\mathcal{C}$ of graphs on $n$ vertices,
+    with $|\mathcal{C}| \le n^{Cn^{3/2}}$ such that (a) every $G \in \mathcal{C}$
+    has at most $(\frac{1}{4} + \varepsilon)n^2$ edges, and (b) every triangle-free
+    graph is contained in some $G \in \mathcal{C}$.
+  kind: theorem
+  location: Chapter 11, Section 11.1
+  name: Theorem 11.1.1 (Containers for triangle-free graphs)
+- description: Fix a non-bipartite graph $H$. Then $\operatorname{ex}(n,H) = \left(1
+    - \frac{1}{\chi(H) - 1} + o(1)\right) \binom{n}{2}$.
+  kind: theorem
+  location: Chapter 11, Section 11.1
+  name: Theorem 11.1.2 (Erdős-Stone-Simonovits)
+- description: Fix a non-bipartite graph $H$. Then the number of $H$-free graphs on
+    $n$ vertices is $2^{(1+o(1))\operatorname{ex}(n,H)}$.
+  kind: theorem
+  location: Chapter 11, Section 11.1
+  name: Theorem 11.1.3
+- description: Fix a bipartite graph $H$ with a cycle. The number of $H$-free graphs
+    on $n$ vertices is $2^{O(\operatorname{ex}(n,H))}$.
+  kind: conjecture
+  location: Chapter 11, Section 11.1
+  name: Conjecture 11.1.4
+- description: If $p \gg 1/\sqrt{n}$, then with probability $1 - o(1)$, every triangle-free
+    subgraph of $G(n, p)$ has at most $(\frac{1}{4} + o(1))pn^2$ edges.
+  kind: theorem
+  location: Chapter 11, Section 11.1
+  name: Theorem 11.1.5
+- description: For every $c > 0$, there exists $\delta > 0$ such that the following
+    holds. Let $G = (V, E)$ be a graph with average degree $d$ and maximum degree
+    at most $cd$. There exists a collection $\mathcal{C}$ of subsets of $V$, with
+    $|\mathcal{C}| \le \binom{|V|}{\le 2\delta |V|/d}$ such that (1) Every independent
+    set $I$ of $G$ is contained in some $C \in \mathcal{C}$. (2) $|C| \le (1 - \delta)|V|$
+    for every $C \in \mathcal{C}$.
+  kind: theorem
+  location: Chapter 11, Section 11.2
+  name: Theorem 11.2.1 (Container theorem for independent sets in graphs)
+- description: 'For every $c > 0$, there exists $\delta > 0$ such that the following
+    holds. Let $G = (V, E)$ be a graph with average degree $d$ and maximum degree
+    at most $cd$. Writing $\mathcal{I}$ for the collection of independent sets of
+    $G$, there exist functions $S: \mathcal{I} \to 2^V$ and $A: 2^V \to 2^V$ (one
+    only needs to define $A(\cdot)$ on sets in the image of $S$) such that, for every
+    $I \in \mathcal{I}$, (1) $S(I) \subseteq I \subseteq S(I) \cup A(S(I))$, (2) $|S(I)|
+    \le 2\delta |V|/d$, (3) $|S(I) \cup A(S(I))| \le (1 - \delta)|V|$.'
+  kind: theorem
+  location: Chapter 11, Section 11.2
+  name: Theorem 11.2.3 (Graph container theorem, with fingerprints)
+- description: For every $c > 0$ there exists $\delta > 0$ such that the following
+    holds. Let $H$ be a 3-uniform hypergraph with average degree $d \ge \delta^{-1}$
+    and $\Delta_1(H) \le cd$ and $\Delta_2(H) \le c\sqrt{d}$. Then there exists a
+    collection $\mathcal{C}$ of subsets of $V(H)$ with $|\mathcal{C}| \le \binom{v(H)}{\le
+    v(H)/\sqrt{d}}$ such that (1) Every independent set of $H$ is contained in some
+    $C \in \mathcal{C}$, and (2) $|C| \le (1 - \delta)v(H)$ for every $C \in \mathcal{C}$.
+  kind: theorem
+  location: Chapter 11, Section 11.3
+  name: Theorem 11.3.1 (Container theorem for 3-uniform hypergraph)

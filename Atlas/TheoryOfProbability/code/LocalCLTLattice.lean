@@ -1,0 +1,63 @@
+/-
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-/
+
+import Atlas.TheoryOfProbability.code.LatticeRV
+import Mathlib.Probability.Independence.Basic
+import Mathlib.Probability.IdentDistrib
+
+open MeasureTheory ProbabilityTheory Filter
+open scoped Topology ENNReal NNReal
+
+noncomputable section
+
+namespace ProbabilityTheory
+
+/-- `IsSpan μ h` asserts that `h > 0` and the support of `μ` (its atoms) is contained in some
+arithmetic progression `a + h · ℤ`. Equivalently, `h` is a *span* of `μ`. -/
+def IsSpan (μ : Measure ℝ) (h : ℝ) : Prop :=
+  0 < h ∧ ∃ a : ℝ, ∀ x : ℝ, μ {x} ≠ 0 → ∃ j : ℤ, x = a + j * h
+
+/-- `IsMaximalSpan μ h` says that `h` is the largest span of `μ`: every other span `h'` of `μ`
+satisfies `h' ≤ h`. -/
+def IsMaximalSpan (μ : Measure ℝ) (h : ℝ) : Prop :=
+  IsSpan μ h ∧ ∀ h' : ℝ, IsSpan μ h' → h' ≤ h
+
+/-- The density `n(x) = (2π σ²)^{-1/2} · exp(-x²/(2σ²))` of the centered Gaussian with
+variance `σ²` evaluated at `x`. -/
+def gaussianDensity (σ : ℝ) (x : ℝ) : ℝ :=
+  (Real.sqrt (2 * Real.pi * σ ^ 2))⁻¹ * Real.exp (-(x ^ 2 / (2 * σ ^ 2)))
+
+/-- **Local central limit theorem for lattice random walks.**
+
+Let `X₀, X₁, …` be i.i.d. lattice random variables with `𝔼 Xᵢ = 0`, `𝔼 Xᵢ² = σ² ∈ (0, ∞)`,
+supported on `b + h ℤ` (where `h` is the maximal span). Write `Sₙ = ∑_{i<n} Xᵢ` and let
+`pₙ(x) = P(Sₙ/√n = x)` for `x ∈ (nb + hℤ)/√n`. Then for every `ε > 0`, eventually in `n`,
+`sup_k |(√n / h) · P(Sₙ = nb + kh) - n(x)| < ε`, where `n(x) = (2π σ²)^{-1/2} exp(-x²/(2σ²))`. -/
+theorem local_clt_lattice
+    {Ω : Type*} [MeasurableSpace Ω] {P : Measure Ω}
+    [MeasureTheory.IsProbabilityMeasure P]
+    (X : ℕ → Ω → ℝ)
+    (σ : ℝ) (b : ℝ) (h : ℝ)
+    (hσ : 0 < σ) (hh : 0 < h)
+    (hmeas : ∀ i, Measurable (X i))
+    (hmean : ∀ i, ∫ x, X i x ∂P = 0)
+    (hvar : ∀ i, ∫ x, (X i x) ^ 2 ∂P = σ ^ 2)
+    (hindep : iIndepFun (m := fun _ => inferInstance) X P)
+    (hident : ∀ i, IdentDistrib (X i) (X 0) P P)
+    (hlattice : IsLatticeRV (P.map (X 0)))
+    (hspan : IsMaximalSpan (P.map (X 0)) h)
+    (hbase : ∀ x : ℝ, (P.map (X 0)) {x} ≠ 0 → ∃ j : ℤ, x = b + j * h) :
+    ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ (n : ℕ) in atTop, ∀ k : ℤ,
+        let x := ((n : ℝ) * b + (k : ℝ) * h) / Real.sqrt (n : ℝ)
+        |Real.sqrt (n : ℝ) / h *
+          ((P.map (fun ω => ∑ i ∈ Finset.range n, X i ω))
+            {((n : ℝ) * b + (k : ℝ) * h)}).toReal -
+          gaussianDensity σ x| < ε := by sorry
+
+end ProbabilityTheory

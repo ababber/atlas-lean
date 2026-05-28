@@ -1,0 +1,1019 @@
+- description: 'We want to relate different sets, and thus we get the following notation/definitions:
+    (1) A set A is a subset of B, A⊂B, if every element of A is in B. Given A⊂B, if
+    a∈A⟹a∈B. (2) Two sets A and B are equal, A=B, if A⊂B and B⊂A. (3) A set A is a
+    proper subset of B, A⊊B if A⊂B and A≠B.'
+  kind: definition
+  location: Basic Set Theory
+  name: Definition (Set Relations)
+- description: If A, B, C are sets then (1) (B∪C)^c = B^c ∩ C^c, (2) (B∩C)^c = B^c
+    ∪ C^c, (3) A∖(B∪C) = (A∖B) ∩ (A∖C), and (4) A∖(B∩C) = (A∖B) ∪ (A∖C).
+  kind: theorem
+  location: Basic Set Theory
+  name: Theorem (De Morgan's Laws)
+- description: The well-ordering property of ℕ states that if S⊂ℕ then there exists
+    an x∈S such that x≤y for all y∈S. In other words, there is always a smallest element.
+  kind: axiom
+  location: Basic Set Theory, Mathematical Induction
+  name: Axiom (Well-ordering property)
+- description: This concept was invented by Pascal in 1665. Let P(n) be a statement
+    depending on n∈ℕ. Assume that (1) (Base case) P(1) is true and (2) (Inductive
+    step) if P(m) is true then P(m+1) is true. Then, P(n) is true for all n∈ℕ.
+  kind: theorem
+  location: Basic Set Theory, Mathematical Induction
+  name: Theorem (Induction)
+- description: There exists a 'unique' ordered field, labeled ℝ, such that ℚ⊂ℝ and
+    ℝ has the least upper bound property.
+  kind: theorem
+  location: Real Numbers
+  name: Theorem
+- description: We state that two sets A and B have the same cardinality if there exists
+    a bijection f:A→B.
+  kind: definition
+  location: Basic Set Theory, Cardinality
+  name: Definition (Cardinality)
+- description: If |A| ≤ |B| and |B| ≤ |A| then |A| = |B|.
+  kind: theorem
+  location: Basic Set Theory, Cardinality
+  name: Theorem (Cantor-Schröder-Bernstein)
+- description: If A is a set, then |A| < |𝒫(A)|.
+  kind: theorem
+  location: Basic Set Theory, Cardinality
+  name: Theorem (Cantor)
+- description: For all n∈ℕ∪{0}, n < 2ⁿ.
+  kind: corollary
+  location: Basic Set Theory, Cardinality
+  name: Corollary
+- description: There exists a unique ordered field containing ℚ with the least upper
+    bound property. We denote this field by ℝ.
+  kind: theorem
+  location: Real Numbers
+  name: Theorem (Real Numbers (ℝ))
+- description: An ordered set is a set S with a relation < called an 'ordering' such
+    that (1) ∀x,y∈S either x<y, y<x, or x=y. (2) If x<y and y<z then x<z.
+  kind: definition
+  location: Real Numbers, Ordered Sets & Fields
+  name: Definition (Ordered set)
+- description: Let S be an ordered set and let E⊂S. Then, (1) If there exists a b∈S
+    such that x≤b for all x∈E, then E is bounded above and b is an upper bound of
+    E. (2) If ∃c∈S such that x≥c for all x∈E, then E is bounded below and c is a lower
+    bound of E.
+  kind: definition
+  location: Real Numbers, Ordered Sets & Fields
+  name: Definition (Bounded Above/Below)
+- description: An ordered set S has the least upper bound property if every E⊂S which
+    is nonempty and bounded above has a supremum in S.
+  kind: definition
+  location: Real Numbers, Ordered Sets & Fields
+  name: Definition (Least Upper Bound Property)
+- description: 'A set F is a field if it has two operations: addition (+) and multiplication
+    (·) with the following properties. A1) If x,y∈F then x+y∈F. A2) (Commutativity)
+    ∀x,y∈F, x+y=y+x. A3) (Associativity) ∀x,y,z∈F, (x+y)+z=x+(y+z). A4) ∃ an element
+    0∈F such that 0+x=x=x+0. A5) ∀x∈F, ∃y∈F such that x+y=0. We denote y=−x. M1) If
+    x,y∈F, then x·y∈F. M2) (Commutativity) ∀x,y∈F, x·y=y·x. M3) (Associativity) ∀x,y,z∈F,
+    (x·y)·z=x·(y·z). M4) ∃1∈F such that 1·x=x=x·1 for all x∈F. M5) ∀x∈F∖{0}, ∃x⁻¹
+    such that x·x⁻¹=1. D) (Distributivity) ∀x,y,z∈F, (x+y)z=xz+yz.'
+  kind: definition
+  location: Real Numbers, Ordered Sets & Fields
+  name: Definition (Field)
+- description: A field F is an ordered field if F is also an ordered set with ordering
+    < and (i) ∀x,y,z∈F, x<y⟹x+z<y+z. (ii) If x>0 and y>0 then xy>0. If x>0 we say
+    x is positive, and if x≥0 we say x is non-negative.
+  kind: definition
+  location: Real Numbers, Ordered Sets & Fields
+  name: Definition (Ordered field)
+- description: Let $\{x_n\}$ be a monotone decreasing function. Then, $\{x_n\}$ is
+    convergent if and only if $\{x_n\}$ is bounded. Moreover, $\lim_{n\to \infty}
+    x_n = \inf\{x_n \mid n\in \NN\}$.
+  kind: theorem
+  location: Convergent Sequences of the Real Numbers section
+  name: Theorem
+- description: A sequence $\{x_n\}$ is bounded if $\exists B\geq 0$ such that $\forall
+    n$, $|x_n| \leq B$.
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition
+- description: $\forall x,y\in \RR$, $|x+y| \leq |x|+|y|$.
+  kind: theorem
+  location: The Uncountability of the Real Numbers section
+  name: Theorem (Triangle Inequality)
+- description: $(0,1]$ is uncountable.
+  kind: theorem
+  location: The Uncountability of the Real Numbers section
+  name: Theorem (Cantor)
+- description: The set of real numbers, $\RR$, is uncountable.
+  kind: corollary
+  location: The Uncountability of the Real Numbers section
+  name: Corollary
+- description: 'A sequence of real numbers is a function $x: \NN \to \RR$. We denote
+    $x(n) = x_n$ and we denote the sequence by $\{x_n\}_{n=1}^\infty$, $\{x_n\}$,
+    or $x_1,x_2,\dots$.'
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition (Sequence of Reals)
+- description: A sequence $\{x_n\}$ converges to $x\in \RR$ if $\forall \epsilon >0$,
+    $\exists M\in \NN$ such that $\forall n\geq M$, $|x_n - x| <\epsilon$.
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition (Sequence Convergence of Reals)
+- description: A sequence $\{x_n\}$ is monotone increasing if $\forall n\in \NN$,
+    $x_{n}\leq x_{n+1}$. A sequence $\{x_n\}$ is monotone decreasing if $\forall n\in
+    \NN$, $x_n \geq x_{n+1}$. If $\{x_n\}$ is either monotone increasing or monotone
+    decreasing, we say $\{x_n\}$ is monotone or monotonic.
+  kind: definition
+  location: Convergent Sequences of the Real Numbers section
+  name: Definition (Monotone)
+- description: Let $\{x_n\}$ be a sequence and let $\{n_k\}$ be a strictly increasing
+    sequence of natural numbers. Then the sequence $\{x_{n_k}\}_{k=1}^\infty$ is called
+    a subsequence of $\{x_n\}$.
+  kind: definition
+  location: Convergent Sequences of the Real Numbers section
+  name: Definition (Subsequence)
+- description: Let $\{x_n\}$ be a bounded sequence. Then, $\{x_n\}$ converges if and
+    only if $\liminf x_n = \limsup x_n.$
+  kind: theorem
+  location: Limsup/Liminf section
+  name: Theorem
+- description: Let $\{a_n\}$, $\{b_n\}$, and $\{x_n\}$ be sequences such that $\forall
+    n\in \mathbb{N}$, $a_n \leq x_n \leq b_k$. Suppose that $\{a_n\}$ and $\{b_n\}$
+    converge and $\lim_{n\to \infty}a_n = x = \lim_{n\to \infty}b_n.$ Therefore, $\{x_n\}$
+    converges and $\lim_{n\to \infty}x_n = x$.
+  kind: theorem
+  location: Lecture 8, Facts About Limits
+  name: Theorem (Squeeze Theorem)
+- description: What follows are some special sequences to have in our toolbox. (1)
+    If $p>0$, then $\lim_{n\to \infty} n^{-p} = 0$. (2) If $p>0$ then $\lim_{n\to\infty}
+    p^{1/n} = 1$. (3) $\lim_{n\to \infty} n^{1/n} = 1$.
+  kind: theorem
+  location: Lecture on special sequences
+  name: Theorem (Some Special Sequences)
+- description: Let $\{x_n\}$ be a bounded sequence. We define, if the limits exist,
+    $\limsup_{n\to \infty} x_n := \lim_{n\to \infty}(\sup\{x_k \mid k \geq n\})$ and
+    $\liminf_{n\to \infty} x_n := \lim_{n\to \infty}(\inf\{x_k \mid k \geq n\}).$
+    These are called the limit superior and limit inferior respectively.
+  kind: definition
+  location: Limsup/Liminf section
+  name: Definition (Limsup/Liminf)
+- description: Every bounded sequence has a convergent subsequence.
+  kind: theorem
+  location: Limsup/Liminf section
+  name: Theorem (Bolzano-Weierstrass)
+- description: A sequence $\{x_n\}$ is Cauchy if $\forall \epsilon>0$ $\exists M \in
+    \mathbb{N}$ such that for all $n,k \geq M$, $|x_n - x_k| <\epsilon.$
+  kind: definition
+  location: Cauchy Sequences section
+  name: Definition (Cauchy)
+- description: 'Suppose $\sum x_n$ converges absolutely and $\sum x_n = x$. Let $\sigma:
+    \mathbb{N} \to \mathbb{N}$ be a bijective function. Then, $\sum x_{\sigma(n)}$
+    is absolutely convergent and $\sum x_{\sigma(n)} = x$. In other words, absolute
+    convergence implies if we rearrange the sequence the new series will still converge
+    to the same value of the original series.'
+  kind: theorem
+  location: Convergence tests
+  name: Theorem
+- description: $\sum x_n$ converges absolutely if $\sum |x_n|$ converges.
+  kind: definition
+  location: Series
+  name: Definition
+- description: We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely
+    converge. However, $\sum \frac{(-1)^n}{n}$ converges.
+  kind: corollary
+  location: Convergence tests
+  name: Corollary
+- description: Suppose for all $n\in \mathbb{N}$ $0\leq x_n \leq y_n$. Then, (1) if
+    $\sum y_n$ converges, then $\sum x_n$ converges; (2) if $\sum x_n$ diverges, then
+    $\sum y_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Comparison Test)
+- description: Suppose $x_n \neq 0$ for all $n$ and $L = \lim_{n\to \infty} \frac{|x_{n+1}|}{|x_n|}$
+    exists. Then, (1) if $L<1$ then $\sum x_n$ converges absolutely; (2) if $L>1$
+    then $\sum x_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Ratio test)
+- description: Let $\sum x_n$ be a series and suppose that $L = \lim_{n\to \infty}
+    |x_n|^{1/n}$ exists. Then, (1) if $L<1$ then $\sum x_n$ converges absolutely;
+    (2) if $L>1$ then $\sum x_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Root test)
+- description: Let $\{x_n\}$ be a monotone decreasing sequence such that $x_n \to
+    0.$ Then, $\sum (-1)^n x_n$ converges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Alternating Series test)
+- description: We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely
+    converge. However, $\sum \frac{(-1)^n}{n}$ converges.
+  kind: corollary
+  location: Continuous Functions section (preceding), Series content
+  name: Corollary
+- description: If $f:[a,b]\to \mathbb{R}$ is continuous then $f$ is bounded.
+  kind: theorem
+  location: Continuous Functions
+  name: Theorem
+- description: Let $S\subset \mathbb{R}$. $x\in \mathbb{R}$ is a cluster point of
+    $S$ if $\forall \delta >0$, $(x-\delta, x+\delta) \cap S\setminus \{x\} \neq \emptyset$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Cluster Point)
+- description: Let $S\subset \mathbb{R}$, let $c$ be a cluster point of $S$, and $f:S\to
+    \mathbb{R}$. We say that $f(x)$ converges to $L\in \mathbb{R}$ at $c$ if $\forall
+    \epsilon>0$ $\exists \delta >0$ such that if $x\in S$ and $0<|x-c|<\delta$, then
+    $|f(x)-L| < \epsilon$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Function Convergence)
+- description: Let $S\subset \mathbb{R}$ and suppose $c$ is a cluster point of $S\cap
+    (c,\infty)$. Then, we say $f(x)$ converges to $L$ as $x\to c^{+}$ if $\forall
+    \epsilon>0$ $\exists \delta >0$ such that if $x\in S$ and $c < x< c+\delta$ then
+    $|f(x) -L|<\epsilon$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition
+- description: Let $S\subset \mathbb{R}$ and let $c\in S$. We say $f$ is continuous
+    at $c$ if $\forall \epsilon>0$ $\exists\delta>0$ such that if $x\in S$ and $|x-c|<\delta$
+    then $|f(x) - f(c)|< \epsilon$. We say $f$ is continuous on $U$ for $U\subset
+    S$ if $f$ is continuous at every point in $U$.
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Continuous Functions)
+- description: A function $f:S\to \mathbb{R}$ is bounded if $\exists B\geq 0$ such
+    that for all $x\in S$, $|f(x)| \leq B$.
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Bounded Functions)
+- description: 'Let $f: S\to \mathbb{R}$. Then, $f$ achieves an absolute minimum at
+    $c$ if $\forall x\in S$, $f(x) \geq f(c)$. Similarly, $f$ achieves an absolute
+    maximum at $d$ if $\forall x\in S$, $f(x) \leq f(d)$.'
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Absolute Minimum/Maximum)
+- description: Let $f:[a,b]\to \mathbb{R}$. If $f$ is continuous, then $f$ achieves
+    an absolute maximum and absolute minimum.
+  kind: theorem
+  location: Continuous Functions
+  name: Theorem (Min-Max Theorem)
+- description: If $f:[a,b]\to \mathbb{R}$ has a relative max or min at $c\in (a,b)$
+    and $f$ is differentiable at $c$, then $f'(c) = 0.$
+  kind: theorem
+  location: Section on Mean Value Theorem
+  name: Theorem
+- description: Let $f:[a,b] \to \mathbb{R}$ be continuous. If $f(a) < f(b)$, and $y\in
+    (f(a),f(b))$, $\exists c\in (a,b)$ such that $f(c) = y.$ If $f(b) < f(a)$ and
+    $y\in (f(b),f(a))$, $\exists c\in (a,b)$ such that $f(c) = y.$
+  kind: theorem
+  location: Section on Intermediate Value Theorem
+  name: Theorem (Bolzano IVT)
+- description: Let $f:S\to \mathbb{R}$. Then, $f$ is uniformly continuous on $S$ if
+    $\forall \epsilon >0$, $\exists \delta = \delta(\epsilon) >0$ such that $\forall
+    x,c\in S$, $|x-c|< \delta \implies |f(x) - f(c)|<\epsilon.$
+  kind: definition
+  location: Section on Uniform Continuity
+  name: Definition (Uniformly Continuous)
+- description: Let $I$ be an interval, let $f:I \to \mathbb{R}$, and let $c\in I$.
+    We say that $f$ is differentiable at $c$ if the limit $\lim_{x\to c} \frac{f(x)-f(c)}{x-c}$
+    exists.
+  kind: definition
+  location: Section on Derivative
+  name: Definition
+- description: 'We will show the following: (1) $\forall x,y\in \mathbb{R}$, $|\cos
+    x - \cos y| \leq |x-y|$. (2) Let $c\in \mathbb{R}$. Then, for all $K\in \mathbb{N}$,
+    $\exists y\in (c+\pi /K, c+3\pi/K)$ such that $|\cos(Kc) - \cos(Ky)| \geq 1$.'
+  kind: theorem
+  location: Section on Derivative (Weierstrass nowhere differentiable function)
+  name: Theorem (Theorem I)
+- description: For all $a,b,c\in \mathbb{R}$, $|a+b+c|\geq |a|-|b|-|c|.$
+  kind: theorem
+  location: Section on Derivative (Weierstrass nowhere differentiable function)
+  name: Theorem (Theorem II)
+- description: 'We will show the following: (1) $\forall x\in \mathbb{R}$, $\sum_{k=0}^\infty
+    \frac{\cos(160^k x)}{4^k}$ is absolutely convergent. (2) The function $f:\mathbb{R}
+    \to \mathbb{R}$, $f(x) = \sum_{k=0}^\infty \frac{\cos(160^k x)}{4^k}$ is bounded
+    and continuous.'
+  kind: theorem
+  location: Section on Derivative (Weierstrass nowhere differentiable function)
+  name: Theorem (Theorem III)
+- description: The function $f(x) = \sum_{k=0}^\infty \frac{\cos(160^k x)}{4^k}$ is
+    nowhere differentiable.
+  kind: theorem
+  location: Section on Derivative (Weierstrass nowhere differentiable function)
+  name: Theorem (Weierstrass)
+- description: Let $I_1, I_2$ be two intervals, $g:I_1\to I_2$ be differentiable at
+    $c\in I_1$, and $f:I_2 \to \mathbb{R}$ differentiable at $g(c).$ Then, $f\circ
+    g:I_1 \to \mathbb{R}$ is differentiable at $c$ and $(f\circ g)'(c) = f'(g(c))
+    g'(c).$
+  kind: theorem
+  location: Section on Derivative
+  name: Theorem (Chain Rule)
+- description: Let $S \subset \mathbb{R}$ and $f:S\to \mathbb{R}$. Then, $f$ has a
+    relative maximum at $c\in S$ if $\exists \delta>0$ such that for all $x\in S$,
+    $|x-c|<\delta \implies f(x) \leq f(c).$ The definition for relative minimum is
+    analogous.
+  kind: definition
+  location: Section on Mean Value Theorem
+  name: Definition (Relative Maximum/Minimum)
+- description: Let $f:[a,b]\to \mathbb{R}$ be continuous and differentiable on $(a,b)$.
+    If $f(a) = f(b)$, then $\exists c\in (a,b)$ such that $f'(c) = 0$.
+  kind: theorem
+  location: Section on Mean Value Theorem
+  name: Theorem (Rolle)
+- description: Let $f:[a,b] \to \mathbb{R}$ be continuous, and let $f$ be differentiable
+    on $(a,b)$. Then, $\exists c\in (a,b)$ such that $f(b)-f(a) = f'(c)(b-a).$
+  kind: theorem
+  location: Mean Value Theorem section
+  name: Theorem (Mean Value Theorem)
+- description: If $f:I\to \mathbb{R}$ is differentiable and $f'(x) = 0$ for all $x\in
+    I$, then $f$ is constant.
+  kind: theorem
+  location: Mean Value Theorem section, applications of MVT
+  name: Theorem (Zero Derivative Implies Constant)
+- description: 'We say $f: I\to \mathbb{R}$ is $n$-times differentiable on $J\subset
+    I$ if $f'', f'''', \dots, f^{(n)}$ exist at every point in $J.$'
+  kind: definition
+  location: Taylor's Theorem section
+  name: Definition ($n$-times Differentiable)
+- description: Suppose $f:[a,b]\to \mathbb{R}$ is continuous and has $n$ continuous
+    derivatives on $[a,b]$ such that $f^{(n+1)}$ exists on $(a,b).$ Given $x_0,x\in
+    [a,b]$, there exists a $c\in (x_0,x)$ such that $f(x) = \sum_{k=0}^n \frac{1}{k!}f^{(k)}(x_0)(x-x_0)^k
+    + \frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}.$ Denote the large sum as $P_n(x)$
+    and the last term with $R_n(x)$.
+  kind: theorem
+  location: Taylor's Theorem section
+  name: Theorem (Taylor)
+- description: $P_n(x)$ is the $n$-th order Taylor polynomial for $f$ at $x_0$. $R_n(x)$
+    is the $n$-th order remainder term.
+  kind: definition
+  location: Taylor's Theorem section
+  name: Definition (Taylor Polynomial and Remainder)
+- description: Suppose $f:(a,b) \to \mathbb{R}$ has two continuous derivatives. If
+    $x_0\in (a,b)$ such that $f'(x_0) = 0$ and $f''(x_0) >0$, then $f$ has a strict
+    relative minimum at $x_0.$
+  kind: theorem
+  location: Taylor's Theorem section
+  name: Theorem (Second Derivative Test)
+- description: We define the set $C([a,b]) := \{f:[a,b]\to \mathbb{R} \mid f \text{
+    is continuous}\}.$
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (C([a,b]))
+- description: A partition $\underline{x}$ of $[a,b]$ is a finite set $\underline{x}
+    = \{a= x_0 < x_1<\dots <x_n = b\}.$ The norm of $\underline{x}$, denoted $\lVert
+    \underline{x}\rVert$, is the number $\lVert \underline{x}\rVert := \max\{x_1-x_0,
+    x_2-x_1,\dots, x_n-x_{n-1}\}.$
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (Partition)
+- description: If $\underline{x}$ is a partition, a tag of $\underline{x}$ is a finite
+    set $\underline{\xi} = \{\xi_1,\dots, \xi_n\}$ such that $a = x_0 \leq \xi_1\leq
+    x_1\leq \xi_2\leq x_2\leq \dots \leq x_{n-1}\leq \xi_n \leq x_n = b.$ The pair
+    $(\underline{x},\underline{\xi})$ is referred to as a tagged partition.
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (Tag)
+- description: The Riemann sum of $f$ corresponding to $(\underline{x},\underline{\xi})$
+    is the number $S_f(\underline{x}, \underline{\xi}):= \sum_{k=1}^n f(\xi_k) (x_k-x_{k-1}).$
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (Riemann sum)
+- description: 'Let $f\in C([a,b])$. Then, there exists a unique number denoted $\int_a^b
+    f(x)\,\mathrm dx\in \mathbb{R}$ with the following property: for all sequences
+    of tagged partitions $\{(\underline{x}^r, \underline{\xi}^r)\}$ such that $\lVert
+    \underline{x}^r\rVert \to 0$, we have $\lim_{r \to \infty} S_f(\underline{x}^r,
+    \underline{\xi}^r) = \int_a^b f(x) \,\mathrm dx.$'
+  kind: theorem
+  location: The Riemann Integral section
+  name: Theorem (Riemann Integral)
+- description: For $f\in C([a,b])$, $\eta >0$, we define the modulus of continuity
+    $w_f(\eta) = \sup \{|f(x) - f(y)| \mid |x-y| \leq \eta\}.$
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (Modulus of Continuity)
+- description: For all $f\in C([a,b])$, $\lim_{\eta\to 0} w_f(\eta) = 0$. In other
+    words, for all $\epsilon>0$, there exists a $\delta>0$ such that $\forall \eta
+    < \delta$, $w_f(\eta) < \epsilon$.
+  kind: theorem
+  location: The Riemann Integral section
+  name: Theorem I
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are tagged partitions of $[a,b]$ such that $\underline{x}\subset \underline{x}'$,
+    then if $f\in C([a,b])$ then $|S_f(\underline{x},\underline{\xi}) - S_f(\underline{x}',\underline{\xi}')|
+    \leq w_f(\lVert \underline{x}\rVert) (b-a).$
+  kind: theorem
+  location: The Riemann Integral section
+  name: Theorem II
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are tagged partitions of $[a,b]$ such that $\underline{x}\subset \underline{x}'$,
+    we say $\underline{x}'$ is a refinement of $\underline{x}$.
+  kind: definition
+  location: The Riemann Integral section
+  name: Definition (Refinement)
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are any two tagged partitions of $[a,b]$ and $f\in C([a,b])$, then $|S_f(\underline{x},
+    \underline{\xi}) - S_f(\underline{x}', \underline{\xi}')| \leq (w_f(\lVert \underline{x}\rVert)
+    + w_f(\lVert \underline{x}'\rVert))(b-a).$
+  kind: theorem
+  location: The Riemann Integral section
+  name: Theorem III
+- description: If $f,g\in C([a,b])$ and $\alpha \in \mathbb{R}$, then $\int_a^b (\alpha
+    f + g) = \alpha \int_a^b f + \int_a^b g.$
+  kind: theorem
+  location: Properties of the Riemann Integral section
+  name: Theorem (Linearity)
+- description: If $f\in C([a,b])$ and $a<c<b$, then $\int_a^b f = \int_a^c f + \int_c^b
+    f.$
+  kind: theorem
+  location: Properties of the Riemann Integral section
+  name: Theorem (Additivity)
+- description: Let $f\in C([a,b])$, and $m_f = \inf\{f(x) \mid x\in [a,b]\} \in \mathbb{R}$,
+    $M_f = \sup \{f(x) \mid x\in [a,b]\}\in \mathbb{R}$. Then, $m_f(b-a) \leq \int_a^b
+    f \leq M_f(b-a).$
+  kind: theorem
+  location: Properties of the Riemann Integral section
+  name: Theorem (Integral Bounds)
+- description: 'Suppose $f\in C([a,b])$ and $g\in C([a,b])$. (1) If $\forall x\in
+    [a,b]$ $f(x) \leq g(x)$, then $\int_a^b f \leq \int_a^b g.$ (2) (Triangle Inequality
+    for integrals): $|\int_a^b f| \leq \int_a^b |f|$.'
+  kind: theorem
+  location: Properties of the Riemann Integral section
+  name: Theorem (Comparison and Triangle Inequality for Integrals)
+- description: Suppose $f\in C([a,b])$. (1) If $F:[a,b] \to \mathbb{R}$ is differentiable
+    and $F' = f$, then $\int_a^b f = F(b) - F(a).$ (2) The function $G(x):= \int_a^x
+    f$ is differentiable on $[a,b]$ and $G' = f$, $G(a) = 0$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Fundamental Theorem of Calculus)
+- description: Let $f:I\to \mathbb{R}$ be differentiable. Then, (1) $f$ is increasing
+    if and only if $f'(x) \geq 0$ for all $x\in I$ and (2) $f$ is decreasing if and
+    only if $f'(x) \leq 0$ for all $x\in I.$
+  kind: theorem
+  location: Mean Value Theorem section, applications of MVT
+  name: Theorem (Monotonicity and Derivatives)
+- description: Suppose $f,g\in C([a,b])$ and $f',g'\in C([a,b])$. Then, $\int_a^b
+    f'g = (f(b)g(b)-f(a)g(a)) - \int_a^b fg'$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Integration by Parts)
+- description: Suppose $f\in C([-\pi, \pi])$ and $f'\in C([-\pi,\pi])$ with $f$ $2\pi$-periodic
+    with $f(-\pi) = f(\pi)$. For $n\in \mathbb{N}\cup \{0\}$, let $a_n = \frac{1}{\pi}\int_{-\pi}^\pi
+    f(x) \sin(nx)\,dx$ and $b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x) \cos(nx) \,dx$.
+    Then, $\lim_{n\to \infty} a_n = \lim_{n\to \infty} b_n = 0$.
+  kind: lemma
+  location: Fundamental Theorem of Calculus section
+  name: Lemma (Riemann-Lebesgue)
+- description: The $a_n,b_n$ defined in the Riemann-Lebesgue lemma are referred to
+    as the Fourier coefficients of $f$.
+  kind: definition
+  location: Fundamental Theorem of Calculus section
+  name: Definition (Fourier Coefficients)
+- description: Let $\varphi:[a,b]\to [c,d]$ be continuously differentiable with $\varphi'>0$
+    on $[a,b]$, $\varphi(a) = c$, and $\varphi(b) = d$. Then, $\int_c^d f(u)\,du =
+    \int_a^b f(\varphi(x))\varphi'(x)\,dx$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Change of Variables)
+- description: A power series about $x_0$ is a series of the form $\sum_{m=0}^\infty
+    a_m (x-x_0)^m$.
+  kind: definition
+  location: Sequences of Function, Power Series
+  name: Definition (Power series)
+- description: If $f_n:[a,b]\to \mathbb{R}$ is continuously differentiable, $f:[a,b]\to
+    \mathbb{R}$, $g:[a,b]\to \mathbb{R}$, and $f_n \to f$ pointwise, $f_n' \to g$
+    uniformly, then $f$ is continuously differentiable and $g = f'$.
+  kind: theorem
+  location: Sequences of Function, Interchange of Limits
+  name: Theorem
+- description: In the above theorem, we define $p$ to be the radius of convergence.
+  kind: definition
+  location: Sequences of Function, Power Series
+  name: Definition (Radius of Convergence)
+- description: 'For $n\in \mathbb{N}$, let $f_n: S\to \mathbb{R}$. Let $f:S\to \mathbb{R}$.
+    We say that $\{f_n\}$ converges pointwise to $f$ if for all $x\in S$, $\lim_{n\to
+    \infty} f_n(x) = f(x)$.'
+  kind: definition
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Definition (Pointwise Convergence)
+- description: For $n\in \mathbb{N}$, let $f_n:S\to \mathbb{R}$, and let $f:S\to \mathbb{R}$.
+    Then, we say $f_n$ converges to $f$ uniformly if $\forall \epsilon>0$ $\exists
+    M\in \mathbb{N}$ such that for all $n\geq M$ $\forall x\in S$, $|f_n(x) - f(x)|<\epsilon$.
+  kind: definition
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Definition (Uniform Convergence)
+- description: Let $f_j:S\to \mathbb{R}$ and suppose $\exists M_j>0$ such that a)
+    $\forall x\in S$, $|f_j(x)|\leq M_j$, and b) $\sum_{j=1}^\infty M_j$ converges.
+    Then, 1. $\forall x\in S$, $\sum_{j=1}^\infty f_j(x)$ converges absolutely. 2.
+    Let $f(x) = \sum_{j=1}^\infty f_j(x)$ for $x\in S.$ Then, $\sum_{j=1}^n f_j\to
+    f$ uniformly on $S$.
+  kind: theorem
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Theorem (Weierstrass M-test)
+- description: A sequence of real numbers $\{x_n\}$ is Cauchy if and only if $\{x_n\}$
+    is convergent.
+  kind: theorem
+  location: Cauchy Sequences section
+  name: Theorem
+- description: If $f\in C([a,b])$, there exists a sequence of polynomials $\{P_n\}$
+    such that $P_n\to f$ uniformly on $[a,b]$.
+  kind: theorem
+  location: Weierstrass Approximation Theorem section
+  name: Theorem (Weierstrass Approximation Theorem)
+- description: (1) A set $A$ is a subset of $B$, $A\subset B$, if every element of
+    $A$ is in $B$. Given $A\subset B$, if $a\in A\implies a\in B$. (2) Two sets $A$
+    and $B$ are equal, $A=B$, if $A\subset B$ and $B\subset A$. (3) A set $A$ is a
+    proper subset of $B$, $A\subsetneq B$ if $A\subset B$ and $A\neq B$.
+  kind: definition
+  location: Basic Set Theory
+  name: Definition (Set Relations)
+- description: If $A,B,C$ are sets then (1) $(B\cup C)^c = B^c \cap C^c$, (2) $(B\cap
+    C)^c = B^c \cup C^c$, (3) $A\setminus (B\cup C) = (A\setminus B) \cap (A\setminus
+    C)$, and (4) $A\setminus(B\cap C) = (A\setminus B) \cup (A\setminus C)$.
+  kind: theorem
+  location: Basic Set Theory
+  name: Theorem (De Morgan's Laws)
+- description: The well-ordering property of $\NN$ states that if $S\subset \NN$ then
+    there exists an $x\in S$ such that $x\leq y$ for all $y\in S$. In other words,
+    there is always a smallest element.
+  kind: axiom
+  location: Mathematical Induction section
+  name: Axiom (Well-ordering property)
+- description: Let $P(n)$ be a statement depending on $n\in \NN$. Assume that (1)
+    (Base case) $P(1)$ is true and (2) (Inductive step) if $P(m)$ is true then $P(m+1)$
+    is true. Then, $P(n)$ is true for all $n\in \NN.$
+  kind: theorem
+  location: Mathematical Induction section
+  name: Theorem (Induction)
+- description: A sequence $\{x_n\}$ is Cauchy if $\forall \epsilon>0$ $\exists M \in
+    \NN$ such that for all $n,k \geq M$, $|x_n - x_k| <\epsilon.$
+  kind: definition
+  location: Cauchy Sequences section
+  name: Definition (Cauchy)
+- description: Given $\{x_n\}$, the symbol $\sum_{n=1}^\infty x_n$ or $\sum x_n$ is
+    the series associated to $\{x_n\}$. We say $\sum x_n$ converges if the sequence
+    $\left\{s_m = \sum_{n=1}^m x_n\right\}_{m=1}^\infty$ converges. We call the terms
+    of $\{s_m\}$ the partial sums. If $\lim_{m\to \infty} s_m = s$, we write $s =
+    \sum x_n$ and treat $\sum x_n$ as a number.
+  kind: definition
+  location: Series section
+  name: Definition
+- description: 'Let $c$ be a cluster point of $S\subset \mathbb{R}$, and let $f: S\to
+    \mathbb{R}$. If $f(x) \to L_1$ and $f(x)\to L_2$ as $x\to c$, then $L_1 = L_2$.'
+  kind: theorem
+  location: Continuous Functions, Limits of Functions
+  name: Theorem
+- description: $\sum x_n$ converges absolutely if $\sum |x_n|$ converges.
+  kind: definition
+  location: Series
+  name: Definition
+- description: We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely
+    converge. However, $\sum \frac{(-1)^n}{n}$ converges.
+  kind: corollary
+  location: Convergence tests
+  name: Corollary
+- description: Suppose for all $n\in \mathbb{N}$ $0\leq x_n \leq y_n$. Then, (1) if
+    $\sum y_n$ converges, then $\sum x_n$ converges; (2) if $\sum x_n$ diverges, then
+    $\sum y_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Comparison Test)
+- description: Suppose $x_n \neq 0$ for all $n$ and $L = \lim_{n\to \infty} \frac{|x_{n+1}|}{|x_n|}$
+    exists. Then, (1) if $L<1$ then $\sum x_n$ converges absolutely; (2) if $L>1$
+    then $\sum x_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Ratio test)
+- description: Let $\sum x_n$ be a series and suppose that $L = \lim_{n\to \infty}
+    |x_n|^{1/n}$ exists. Then, (1) if $L<1$ then $\sum x_n$ converges absolutely;
+    (2) if $L>1$ then $\sum x_n$ diverges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Root test)
+- description: Let $\{x_n\}$ be a monotone decreasing sequence such that $x_n \to
+    0.$ Then, $\sum (-1)^n x_n$ converges.
+  kind: theorem
+  location: Convergence tests
+  name: Theorem (Alternating Series test)
+- description: Let $S\subset \mathbb{R}$. $x\in \mathbb{R}$ is a cluster point of
+    $S$ if $\forall \delta >0$, $(x-\delta, x+\delta) \cap S\setminus \{x\} \neq \emptyset$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Cluster Point)
+- description: Let $S\subset \mathbb{R}$, let $c$ be a cluster point of $S$, and $f:S\to
+    \mathbb{R}$. We say that $f(x)$ converges to $L\in \mathbb{R}$ at $c$ if $\forall
+    \epsilon>0$ $\exists \delta >0$ such that if $x\in S$ and $0<|x-c|<\delta$, then
+    $|f(x)-L| < \epsilon$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Function Convergence)
+- description: Let $S\subset \RR$. $x\in \RR$ is a cluster point of $S$ if $\forall
+    \delta >0$, $(x-\delta, x+\delta) \cap S\setminus \{x\} \neq \emptyset$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Cluster Point)
+- description: The polynomial $f(x) = x^{2021} + x^{2020} + 9.03x + 1$ has at least
+    one real root.
+  kind: theorem
+  location: Continuous Functions
+  name: Theorem
+- description: Let $S\subset \RR$, let $c$ be a cluster point of $S$, and $f:S\to
+    \RR$. We say that $f(x)$ converges to $L\in \RR$ at $c$ if $\forall \epsilon>0$
+    $\exists \delta >0$ such that if $x\in S$ and $0<|x-c|<\delta$, then $|f(x)-L|
+    < \epsilon$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition (Function Convergence)
+- description: Let $S\subset \RR$ and suppose $c$ is a cluster point of $S\cap (c,\infty)$.
+    Then, we say $f(x)$ converges to $L$ as $x\to c^{+}$ if $\forall \epsilon>0$ $\exists
+    \delta >0$ such that if $x\in S$ and $c < x< c+\delta$ then $|f(x) -L|<\epsilon$.
+  kind: definition
+  location: Continuous Functions, Limits of Functions
+  name: Definition
+- description: Let $S\subset \RR$ and let $c\in S$. We say $f$ is continuous at $c$
+    if $\forall \epsilon>0$ $\exists\delta>0$ such that if $x\in S$ and $|x-c|<\delta$
+    then $|f(x) - f(c)|< \epsilon$. We say $f$ is continuous on $U$ for $U\subset
+    S$ if $f$ is continuous at every point in $U$.
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Continuous Functions)
+- description: A function $f:S\to \RR$ is bounded if $\exists B\geq 0$ such that for
+    all $x\in S$, $|f(x)| \leq B$.
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Bounded Functions)
+- description: 'Let $f: S\to \RR$. Then, $f$ achieves an absolute minimum at $c$ if
+    $\forall x\in S$, $f(x) \geq f(c)$. Similarly, $f$ achieves an absolute maximum
+    at $d$ if $\forall x\in S$, $f(x) \leq f(d)$.'
+  kind: definition
+  location: Continuous Functions
+  name: Definition (Absolute Minimum/Maximum)
+- description: Let $f:[a,b]\to \RR$. If $f$ is continuous, then $f$ achieves an absolute
+    maximum and absolute minimum.
+  kind: theorem
+  location: Continuous Functions
+  name: Theorem (Min-Max Theorem)
+- description: Let $f:[a,b] \to \RR$ be continuous. If $f(a) < f(b)$, and $y\in (f(a),f(b))$,
+    $\exists c\in (a,b)$ such that $f(c) = y.$ If $f(b) < f(a)$ and $y\in (f(b),f(a))$,
+    $\exists c\in (a,b)$ such that $f(c) = y.$
+  kind: theorem
+  location: Continuous Functions
+  name: Theorem (Bolzano IVT)
+- description: Let $f:I\to \RR$ be differentiable. Then, (1) $f$ is increasing if
+    and only if $f'(x) \geq 0$ for all $x\in I$ and (2) $f$ is decreasing if and only
+    if $f'(x) \leq 0$ for all $x\in I.$
+  kind: theorem
+  location: Mean Value Theorem section
+  name: Theorem
+- description: Let $f:S\to \RR$. Then, $f$ is uniformly continuous on $S$ if $\forall
+    \epsilon >0$, $\exists \delta = \delta(\epsilon) >0$ such that $\forall x,c\in
+    S$, $|x-c|< \delta \implies |f(x) - f(c)|<\epsilon.$
+  kind: definition
+  location: Uniform Continuity section
+  name: Definition (Uniformly Continuous)
+- description: Let $I$ be an interval, let $f:I \to \RR$, and let $c\in I$. We say
+    that $f$ is differentiable at $c$ if the limit $\lim_{x\to c} \frac{f(x)-f(c)}{x-c}$
+    exists.
+  kind: definition
+  location: Derivative section
+  name: Definition
+- description: The function $f(x) = \sum_{k=0}^\infty \frac{\cos(160^k x)}{4^k}$ is
+    nowhere differentiable.
+  kind: theorem
+  location: Derivative section
+  name: Theorem (Weierstrass)
+- description: Let $I_1, I_2$ be two intervals, $g:I_1\to I_2$ be differentiable at
+    $c\in I_1$, and $f:I_2 \to \RR$ differentiable at $g(c).$ Then, $f\circ g:I_1
+    \to \RR$ is differentiable at $c$ and $(f\circ g)'(c) = f'(g(c)) g'(c).$
+  kind: theorem
+  location: Derivative section
+  name: Theorem (Chain Rule)
+- description: Let $S \subset \RR$ and $f:S\to \RR$. Then, $f$ has a relative maximum
+    at $c\in S$ if $\exists \delta>0$ such that for all $x\in S$, $|x-c|<\delta \implies
+    f(x) \leq f(c).$ The definition for relative minimum is analogous.
+  kind: definition
+  location: Mean Value Theorem section
+  name: Definition (Relative Maximum/Minimum)
+- description: Let $f:[a,b]\to \RR$ be continuous and differentiable on $(a,b)$. If
+    $f(a) = f(b)$, then $\exists c\in (a,b)$ such that $f'(c) = 0$.
+  kind: theorem
+  location: Mean Value Theorem section
+  name: Theorem (Rolle)
+- description: Let $f:[a,b] \to \RR$ be continuous, and let $f$ be differentiable
+    on $(a,b)$. Then, $\exists c\in (a,b)$ such that $f(b)-f(a) = f'(c)(b-a).$
+  kind: theorem
+  location: Mean Value Theorem section
+  name: Theorem (Mean Value Theorem)
+- description: 'Suppose $f\in C([a,b])$ and $g\in C([a,b])$. (1) If $\forall x\in
+    [a,b]$ $f(x) \leq g(x)$, then $\int_a^b f \leq \int_a^b g.$ (2) (Triangle Inequality
+    for integrals): $|\int_a^b f| \leq \int_a^b |f|$.'
+  kind: theorem
+  location: Properties of the Riemann Integral
+  name: Theorem
+- description: We state that two sets $A$ and $B$ have the same cardinality if there
+    exists a bijection $f:A\to B$.
+  kind: definition
+  location: Section on Cardinality
+  name: Definition (Cardinality)
+- description: If $|A| \leq |B|$ and $|B| \leq |A|$ then $|A| = |B|$.
+  kind: theorem
+  location: Section on Cardinality
+  name: Theorem (Cantor-Schröder-Bernstein)
+- description: 'We say $f: I\to \RR$ is $n$-times differentiable on $J\subset I$ if
+    $f'', f'''', \dots, f^{(n)}$ exist at every point in $J.$'
+  kind: definition
+  location: Section on Taylor's Theorem
+  name: Definition ($n$-times Differentiable)
+- description: Suppose $f:[a,b]\to \RR$ is continuous and has $n$ continuous derivatives
+    on $[a,b]$ such that $f^{(n+1)}$ exists on $(a,b).$ Given $x_0,x\in [a,b]$, there
+    exists a $c\in (x_0,x)$ such that $f(x) = \sum_{k=0}^n \frac{1}{k!}f^{(k)}(x_0)(x-x_0)^k
+    + \frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}.$ Denote the large sum as $P_n(x)$
+    and the last term with $R_n(x)$.
+  kind: theorem
+  location: Section on Taylor's Theorem
+  name: Theorem (Taylor)
+- description: We define the set $C([a,b]) := \{f:[a,b]\to \RR \mid f \text{ is continuous}\}.$
+  kind: definition
+  location: The Riemann Integral
+  name: Definition
+- description: Suppose $f:(a,b) \to \RR$ has two continuous derivatives. If $x_0\in
+    (a,b)$ such that $f'(x_0) = 0$ and $f''(x_0) >0$, then $f$ has a strict relative
+    minimum at $x_0.$
+  kind: theorem
+  location: Section on Taylor's Theorem
+  name: Theorem (Second Derivative Test)
+- description: A partition $\underline{x}$ of $[a,b]$ is a finite set $\underline{x}
+    = \{a= x_0 < x_1<\dots <x_n = b\}.$ The norm of $\underline{x}$, denoted $\lVert
+    \underline{x}\rVert$, is the number $\lVert \underline{x}\rVert := \max\{x_1-x_0,
+    x_2-x_1,\dots, x_n-x_{n-1}\}.$
+  kind: definition
+  location: The Riemann Integral
+  name: Definition (Partition)
+- description: If $\underline{x}$ is a partition, a tag of $\underline{x}$ is a finite
+    set $\underline{\xi} = \{\xi_1,\dots, \xi_n\}$ such that $a = x_0 \leq \xi_1\leq
+    x_1\leq \xi_2\leq x_2\leq \dots \leq x_{n-1}\leq \xi_n \leq x_n = b.$ The pair
+    $(\underline{x},\underline{\xi})$ is referred to as a tagged partition.
+  kind: definition
+  location: The Riemann Integral
+  name: Definition (Tag)
+- description: The Riemann sum of $f$ corresponding to $(\underline{x},\underline{\xi})$
+    is the number $S_f(\underline{x}, \underline{\xi}):= \sum_{k=1}^n f(\xi_k) (x_k-x_{k-1}).$
+  kind: definition
+  location: The Riemann Integral
+  name: Definition (Riemann sum)
+- description: 'Let $f\in C([a,b])$. Then, there exists a unique number denoted $\int_a^b
+    f(x)\,\mathrm dx\in \RR$ with the following property: for all sequences of tagged
+    partitions $\{(\underline{x}^r, \underline{\xi}^r)\}$ such that $\lVert \underline{x}^r\rVert
+    \to 0$, we have $\lim_{r \to \infty} S_f(\underline{x}^r, \underline{\xi}^r) =
+    \int_a^b f(x) \,\mathrm dx.$'
+  kind: theorem
+  location: The Riemann Integral
+  name: Theorem (Riemann Integral)
+- description: For $f\in C([a,b])$, $\eta >0$, we define the modulus of continuity
+    $w_f(\eta) = \sup \{|f(x) - f(y)| \mid |x-y| \leq \eta\}.$
+  kind: definition
+  location: The Riemann Integral
+  name: Definition (Modulus of Continuity)
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are tagged partitions of $[a,b]$ such that $\underline{x}\subset \underline{x}'$,
+    we say $\underline{x}'$ is a refinement of $\underline{x}$.
+  kind: definition
+  location: The Riemann Integral
+  name: Definition (Refinement)
+- description: If $f,g\in C([a,b])$ and $\alpha \in \RR$, then $\int_a^b (\alpha f
+    + g) = \alpha \int_a^b f + \int_a^b g.$
+  kind: theorem
+  location: Properties of the Riemann Integral
+  name: Theorem (Linearity)
+- description: If $f\in C([a,b])$ and $a<c<b$, then $\int_a^b f = \int_a^c f + \int_c^b
+    f.$
+  kind: theorem
+  location: Properties of the Riemann Integral
+  name: Theorem (Additivity)
+- description: Suppose $f\in C([a,b])$. (1) If $F:[a,b] \to \RR$ is differentiable
+    and $F' = f$, then $\int_a^b f = F(b) - F(a).$ (2) The function $G(x):= \int_a^x
+    f$ is differentiable on $[a,b]$ and $G' = f$, $G(a) = 0$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus
+  name: Theorem (Fundamental Theorem of Calculus)
+- description: For all $f\in C([a,b])$, $\lim_{\eta\to 0} w_f(\eta) = 0$. In other
+    words, for all $\epsilon>0$, there exists a $\delta>0$ such that $\forall \eta
+    < \delta$, $w_f(\eta) < \epsilon$.
+  kind: theorem
+  location: Section on Taylor's Theorem / Riemann Integral
+  name: Theorem I
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are tagged partitions of $[a,b]$ such that $\underline{x}\subset \underline{x}'$,
+    then if $f\in C([a,b])$ then $|S_f(\underline{x},\underline{\xi}) - S_f(\underline{x}',\underline{\xi}')|
+    \leq w_f(\lVert \underline{x}\rVert) (b-a).$
+  kind: theorem
+  location: Section on the Riemann Integral
+  name: Theorem II
+- description: If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$
+    are any two tagged partitions of $[a,b]$ and $f\in C([a,b])$, then $|S_f(\underline{x},
+    \underline{\xi}) - S_f(\underline{x}', \underline{\xi}')| \leq (w_f(\lVert \underline{x}\rVert)
+    + w_f(\lVert \underline{x}'\rVert))(b-a).$
+  kind: theorem
+  location: Section on the Riemann Integral
+  name: Theorem III
+- description: 'Suppose $f\in C([a,b])$.
+
+    1. If $F:[a,b] \to \mathbb{R}$ is differentiable and $F'' = f$, then $\int_a^b
+    f = F(b) - F(a)$.
+
+    2. The function $G(x):= \int_a^x f$ is differentiable on $[a,b]$ and $G'' = f$,
+    $G(a) = 0$.'
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Fundamental Theorem of Calculus)
+- description: Suppose $f,g\in C([a,b])$ and $f',g'\in C([a,b])$. Then, $\int_a^b
+    f'g = (f(b)g(b)-f(a)g(a)) - \int_a^b fg'$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Integration by Parts)
+- description: Suppose $f\in C([-\pi, \pi])$ and $f'\in C([-\pi,\pi])$ with $f$ $2\pi$-periodic
+    with $f(-\pi) = f(\pi)$. For $n\in \mathbb{N}\cup \{0\}$, let $a_n = \frac{1}{\pi}\int_{-\pi}^\pi
+    f(x) \sin(nx)\,dx$ and $b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x) \cos(nx) \,dx$.
+    Then, $\lim_{n\to \infty} a_n = \lim_{n\to \infty} b_n = 0$.
+  kind: lemma
+  location: Fundamental Theorem of Calculus section
+  name: Lemma (Riemann-Lebesgue)
+- description: The $a_n,b_n$ defined in the Riemann-Lebesgue lemma are referred to
+    as the Fourier coefficients of $f$.
+  kind: definition
+  location: Fundamental Theorem of Calculus section
+  name: Definition (Fourier Coefficients)
+- description: Let $\varphi:[a,b]\to [c,d]$ be continuously differentiable with $\varphi'>0$
+    on $[a,b]$, $\varphi(a) = c$, and $\varphi(b) = d$. Then, $\int_c^d f(u)\,du =
+    \int_a^b f(\varphi(x))\varphi'(x)\,dx$.
+  kind: theorem
+  location: Fundamental Theorem of Calculus section
+  name: Theorem (Change of Variables)
+- description: A power series about $x_0$ is a series of the form $\sum_{m=0}^\infty
+    a_m (x-x_0)^m$.
+  kind: definition
+  location: Sequences of Function, Power Series
+  name: Definition (Power series)
+- description: Let $\sum_{j=0}^\infty a_j(x-x_0)^j$ be a power series of radius of
+    convergence $p\in (0,\infty]$. Then, $\forall r\in (0,p)$, $\sum_{j=0}^\infty
+    a_j(x-x_0)^j$ converges uniformly on $[x_0-r,x_0+r]$.
+  kind: theorem
+  location: Interchange of Limits
+  name: Theorem
+- description: In the above theorem, we define $p$ to be the radius of convergence.
+  kind: definition
+  location: Sequences of Function, Power Series
+  name: Definition (Radius of Convergence)
+- description: 'For $n\in \mathbb{N}$, let $f_n: S\to \mathbb{R}$. Let $f:S\to \mathbb{R}$.
+    We say that $\{f_n\}$ converges pointwise to $f$ if for all $x\in S$, $\lim_{n\to
+    \infty} f_n(x) = f(x)$.'
+  kind: definition
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Definition (Pointwise Convergence)
+- description: For $n\in \mathbb{N}$, let $f_n:S\to \mathbb{R}$, and let $f:S\to \mathbb{R}$.
+    Then, we say $f_n$ converges to $f$ uniformly if $\forall \epsilon>0$ $\exists
+    M\in \mathbb{N}$ such that for all $n\geq M$ $\forall x\in S$, $|f_n(x) - f(x)|<\epsilon$.
+  kind: definition
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Definition (Uniform Convergence)
+- description: Let $f_j:S\to \mathbb{R}$ and suppose $\exists M_j>0$ such that a)
+    $\forall x\in S$, $|f_j(x)|\leq M_j$, and b) $\sum_{j=1}^\infty M_j$ converges.
+    Then, 1. $\forall x\in S$, $\sum_{j=1}^\infty f_j(x)$ converges absolutely. 2.
+    Let $f(x) = \sum_{j=1}^\infty f_j(x)$ for $x\in S$. Then, $\sum_{j=1}^n f_j\to
+    f$ uniformly on $S$.
+  kind: theorem
+  location: Sequences of Function, Pointwise and Uniform Convergence
+  name: Theorem (Weierstrass M-test)
+- description: $\exists! r\in \mathbb{R}$ such that $r>0$ and $r^2 =2$. In other words,
+    $\sqrt 2 \in \mathbb{R}$ but $\sqrt 2 \notin \mathbb{Q}$.
+  kind: theorem
+  location: Real Numbers section, Lecture 4
+  name: Theorem
+- description: If $f\in C([a,b])$, there exists a sequence of polynomials $\{P_n\}$
+    such that $P_n\to f$ uniformly on $[a,b]$.
+  kind: theorem
+  location: Weierstrass Approximation Theorem section
+  name: Theorem (Weierstrass Approximation Theorem)
+- description: If $A$ is a set, then $|A| < |\mathcal P(A)|$.
+  kind: theorem
+  location: Lecture 3
+  name: Theorem (Cantor)
+- description: For all $n\in \mathbb{N}\cup \{0\}$, $n<2^n$.
+  kind: corollary
+  location: Lecture 3
+  name: Corollary
+- description: There exists a unique ordered field containing $\mathbb{Q}$ with the
+    least upper bound property. We denote this field by $\mathbb{R}$.
+  kind: theorem
+  location: Real Numbers section, Lecture 3
+  name: Theorem (Real Numbers ($\mathbb{R}$))
+- description: An ordered set is a set $S$ with a relation $<$ called an "ordering"
+    such that (1) $\forall x,y\in S$ either $x<y$, $y<x$, or $x=y$. (2) If $x<y$ and
+    $y<z$ then $x<z$.
+  kind: definition
+  location: Ordered Sets & Fields section
+  name: Definition (Ordered set)
+- description: Let $S$ be an ordered set and let $E\subset S$. Then, (1) If there
+    exists a $b\in S$ such that $x\leq b$ for all $x\in E$, then $E$ is bounded above
+    and $b$ is an upper bound of $E$. (2) If $\exists c\in S$ such that $x\geq c$
+    for all $x\in E$, then $E$ is bounded below and $c$ is a lower bound of $E$.
+  kind: definition
+  location: Ordered Sets & Fields section
+  name: Definition (Bounded Above/Below)
+- description: An ordered set $S$ has the least upper bound property if every $E\subset
+    S$ which is nonempty and bounded above has a supremum in $S$.
+  kind: definition
+  location: Ordered Sets & Fields section
+  name: Definition (Least Upper Bound Property)
+- description: 'A set $F$ is a field if it has two operations: addition $(+)$ and
+    multiplication ($\cdot$) with the following properties. A1) If $x,y\in F$ then
+    $x+y \in F$. A2) (Commutativity) $\forall x,y\in F$, $x+y= y+x$. A3) (Associativity)
+    $\forall x,y,z\in F$, $(x+y)+z = x+(y+z)$. A4) $\exists$ an element $0\in F$ such
+    that $0+x = x = x+0$. A5) $\forall x\in F$, $\exists y\in F$ such that $x+y=0$.
+    We denote $y=-x$. M1) If $x,y\in F$, then $x\cdot y\in F$. M2) (Commutativity)
+    $\forall x,y\in F$, $x\cdot y= y\cdot x$. M3) (Associativity) $\forall x,y,z\in
+    F$, $(x\cdot y)\cdot z= x\cdot (y\cdot z)$. M4) $\exists 1\in F$ such that $1\cdot
+    x = x = x\cdot 1$ for all $x\in F$. M5) $\forall x\in F\setminus\{0\}$, $\exists
+    x^{-1}$ such that $x\cdot x^{-1} = 1.$ D) (Distributivity) $\forall x,y,z\in F$,
+    $(x+y)z = xz+yz.$'
+  kind: definition
+  location: Lecture 4
+  name: Definition (Field)
+- description: A field $F$ is an ordered field if $F$ is also an ordered set with
+    ordering $<$ and (i) $\forall x,y,z\in F$, $x<y\implies x+z<y+z$. (ii) If $x>0$
+    and $y>0$ then $xy>0$. If $x>0$ we say $x$ is positive, and if $x\geq 0$ we say
+    $x$ is non-negative.
+  kind: definition
+  location: Lecture 4
+  name: Definition (Ordered field)
+- description: If $\{x_n\}$ converges to $x$, then any subsequence of $x_n$ will converge
+    to $x$.
+  kind: theorem
+  location: Convergent Sequences of the Real Numbers section
+  name: Theorem
+- description: A sequence $\{x_n\}$ is bounded if $\exists B\geq 0$ such that $\forall
+    n$, $|x_n| \leq B$.
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition
+- description: $\forall x,y\in \mathbb{R}$, $|x+y| \leq |x|+|y|$.
+  kind: theorem
+  location: The Uncountability of the Real Numbers section
+  name: Theorem (Triangle Inequality)
+- description: $(0,1]$ is uncountable.
+  kind: theorem
+  location: The Uncountability of the Real Numbers section
+  name: Theorem (Cantor)
+- description: The set of real numbers, $\mathbb{R}$, is uncountable.
+  kind: corollary
+  location: The Uncountability of the Real Numbers section
+  name: Corollary
+- description: 'A sequence of real numbers is a function $x: \mathbb{N} \to \mathbb{R}$.
+    We denote $x(n) = x_n$ and we denote the sequence by $\{x_n\}_{n=1}^\infty$, $\{x_n\}$,
+    or $x_1,x_2,\dots$.'
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition (Sequence of Reals)
+- description: A sequence $\{x_n\}$ converges to $x\in \mathbb{R}$ if $\forall \epsilon
+    >0$, $\exists M\in \mathbb{N}$ such that $\forall n\geq M$, $|x_n - x| <\epsilon$.
+  kind: definition
+  location: Sequences and Series, Sequences and Limits
+  name: Definition (Sequence Convergence of Reals)
+- description: A sequence $\{x_n\}$ is monotone increasing if $\forall n\in \mathbb{N}$,
+    $x_{n}\leq x_{n+1}$. A sequence $\{x_n\}$ is monotone decreasing if $\forall n\in
+    \mathbb{N}$, $x_n \geq x_{n+1}$. If $\{x_n\}$ is either monotone increasing or
+    monotone decreasing, we say $\{x_n\}$ is monotone or monotonic.
+  kind: definition
+  location: Convergent Sequences of the Real Numbers section
+  name: Definition (Monotone)
+- description: Let $\{x_n\}$ be a sequence and let $\{n_k\}$ be a strictly increasing
+    sequence of natural numbers. Then the sequence $\{x_{n_k}\}_{k=1}^\infty$ is called
+    a subsequence of $\{x_n\}$.
+  kind: definition
+  location: Convergent Sequences of the Real Numbers section
+  name: Definition (Subsequence)
+- description: Let $\{x_n\}$ be a bounded sequence. Then, $\{x_n\}$ converges if and
+    only if $\liminf x_n = \limsup x_n$.
+  kind: theorem
+  location: Lecture 9
+  name: Theorem
+- description: Let $\{a_n\}$, $\{b_n\}$, and $\{x_n\}$ be sequences such that $\forall
+    n\in \mathbb{N}$, $a_n \leq x_n \leq b_n$. Suppose that $\{a_n\}$ and $\{b_n\}$
+    converge and $\lim_{n\to \infty}a_n = x = \lim_{n\to \infty}b_n$. Therefore, $\{x_n\}$
+    converges and $\lim_{n\to \infty}x_n = x$.
+  kind: theorem
+  location: Lecture 8
+  name: Theorem (Squeeze Theorem)
+- description: 'The following hold: (1) If $p>0$, then $\lim_{n\to \infty} n^{-p}
+    = 0$. (2) If $p>0$ then $\lim_{n\to\infty} p^{1/n} = 1$. (3) $\lim_{n\to \infty}
+    n^{1/n} = 1$.'
+  kind: theorem
+  location: Lecture 9
+  name: Theorem (Some Special Sequences)
+- description: Let $\{x_n\}$ be a bounded sequence. We define, if the limits exist,
+    $\limsup_{n\to \infty} x_n := \lim_{n\to \infty}(\sup\{x_k \mid k \geq n\})$ and
+    $\liminf_{n\to \infty} x_n := \lim_{n\to \infty}(\inf\{x_k \mid k \geq n\})$.
+    These are called the limit superior and limit inferior respectively.
+  kind: definition
+  location: Lecture 9
+  name: Definition (Limsup/Liminf)
+- description: Every bounded sequence has a convergent subsequence.
+  kind: theorem
+  location: Lecture 9
+  name: Theorem (Bolzano-Weierstrass)

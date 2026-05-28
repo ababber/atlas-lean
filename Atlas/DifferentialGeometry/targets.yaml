@@ -1,0 +1,955 @@
+- description: 'Let $I \subset \mathbb{R}$ be an interval, and $f: I \rightarrow \mathbb{R}^{2}$
+    a smooth map such that $\|f(t)\|=1$ for all $t$. Then $f^{\prime}(t)=\operatorname{det}\left(f(t),
+    f^{\prime}(t)\right) J f(t)$.'
+  kind: lemma
+  location: Chapter 1, Lecture 1
+  name: Lemma 1.1
+- description: 'A regular curve is a smooth map $c: I \rightarrow \mathbb{R}^{2}$,
+    where $I \subset \mathbb{R}$ is an interval, satisfying $c^{\prime}(t) \neq 0$
+    for all $t$. The curvature of $c$ at $t$ is $\kappa(t)=\frac{\operatorname{det}\left(c^{\prime}(t),
+    c^{\prime\prime}(t)\right)}{\left\|c^{\prime}(t)\right\|^{3}}$.'
+  kind: definition
+  location: Chapter 1, Lecture 1
+  name: Definition 1.2
+- description: For a regular curve $c$, $\frac{d}{d t}\left(\frac{c^{\prime}(t)}{\left\|c^{\prime}(t)\right\|}\right)=\left\|c^{\prime}(t)\right\|
+    \kappa(t) J \frac{c^{\prime}(t)}{\left\|c^{\prime}(t)\right\|}=\kappa(t) J c^{\prime}(t)$.
+  kind: proposition
+  location: Chapter 1, Lecture 1
+  name: Proposition 1.3 (Frenet equation of motion)
+- description: If $\kappa(t)=0$ for all $t$, then $c(I) \subset \mathbb{R}^{2}$ is
+    part of a straight line.
+  kind: corollary
+  location: Chapter 1, Lecture 1
+  name: Corollary 1.4
+- description: Suppose that $\kappa(t)=1/R$ is a nonzero constant. Then $c+R J \frac{c^{\prime}}{\left\|c^{\prime}\right\|}$
+    is constant, and therefore $c$ is part of a circle of radius $|R|$.
+  kind: corollary
+  location: Chapter 1, Lecture 1
+  name: Corollary 1.5
+- description: The curvature of a graph $c(t)=(t, f(t))$ is $\kappa(t)=\frac{f^{\prime\prime}(t)}{\left(1+f^{\prime}(t)^{2}\right)^{3/2}}$.
+  kind: lemma
+  location: Chapter 1, Lecture 2
+  name: Lemma 2.1
+- description: The curvature of a unit speed curve is $\kappa(t)=\operatorname{det}\left(c^{\prime}(t),
+    c^{\prime\prime}(t)\right)$. Moreover, we have $c^{\prime\prime}(t)=\kappa(t)
+    J c^{\prime}(t)$ and in particular $|\kappa(t)|=\left\|c^{\prime\prime}(t)\right\|$.
+  kind: lemma
+  location: Chapter 1, Lecture 2
+  name: Lemma 2.2
+- description: 'For every $\kappa: I \rightarrow \mathbb{R}$ there is a unit speed
+    curve $c: I \rightarrow \mathbb{R}$ whose curvature is $\kappa$. Moreover, $c$
+    is unique up to translations and rotations.'
+  kind: proposition
+  location: Chapter 1, Lecture 2
+  name: Proposition 2.3
+- description: If $\tilde{c}(t)=c(\psi(t))$ is a partial reparametrization, their
+    curvatures are related by $\kappa_{\tilde{c}}(t)=\kappa_{c}(\psi(t))$.
+  kind: proposition
+  location: Chapter 1, Lecture 2
+  name: Proposition 2.4
+- description: 'Let $\tilde{I} \subset \mathbb{R}$ be an interval, and $\psi: \tilde{I}
+    \rightarrow \mathbb{R}$ a smooth function such that $\psi^{\prime}(t)>0$ for all
+    $t$. Then $\psi(\tilde{I})=I$ is an interval, and $\psi$ is a one-to-one map from
+    $I$ to $\tilde{I}$. Moreover, its inverse map $\phi=\psi^{-1}$ is again smooth,
+    and by the chain rule $\phi^{\prime}(t)=1/\psi^{\prime}(\phi(t))$.'
+  kind: lemma
+  location: Chapter 1, Lecture 2
+  name: Lemma 2.5 (from calculus)
+- description: Let $d=\left(d_{1}, d_{2}\right)$ be a curve such that $d_{1}^{\prime}(t)>0$
+    for all $t$. One can then reparametrize it to a graph.
+  kind: lemma
+  location: Chapter 1, Lecture 2
+  name: Lemma 2.6
+- description: Every curve $d$ admits a reparametrization which is a unit speed curve.
+  kind: lemma
+  location: Chapter 1, Lecture 2
+  name: Lemma 2.7
+- description: Let $c$ be a unit speed curve, and $t_{0}$ a point where $\kappa(t_{0})
+    \neq 0$. Then there is a unique circle which osculates $c$ at $t_{0}$ (the osculating
+    circle).
+  kind: proposition
+  location: Chapter 1, Lecture 3
+  name: Proposition 3.1
+- description: 'Let $f: U \rightarrow \mathbb{R}$ be a smooth function, defined on
+    an open subset $U \subset \mathbb{R}^{2}$. Let $c: I \rightarrow U$ be a regular
+    curve, which is contained in its level set $\{f(x)=a\}$. Then, at every point
+    $t$ such that $x=c(t)$ satisfies $\nabla f(x) \neq 0$, we have $\pm \kappa(t)=\frac{\left\langle
+    J \nabla f(x), D^{2} f(x) J \nabla f(x)\right\rangle}{\|\nabla f(x)\|^{3}}$. Here,
+    $D^{2} f(x)$ is the Hessian (the matrix of second derivatives). The sign is determined
+    as follows. If $\operatorname{det}\left(\nabla f(x), c^{\prime}(t)\right)>0$,
+    then $\kappa(t)$ is the right hand side of the equation above. Otherwise, $-\kappa(t)$
+    is the right hand side.'
+  kind: proposition
+  location: Chapter 1, Lecture 3
+  name: Proposition 3.2
+- description: Let $(v_{1}, \ldots, v_{k})$ be linearly independent vectors. There
+    are unique orthonormal vectors $(e_{1}, \ldots, e_{k})$ of the form $e_{i}=\sum_{j
+    \leq i} f_{ij} v_{j}$ where $f_{ii}>0$. Note that in particular, each $(e_{1},
+    \ldots, e_{i})$ spans the same subspace as $(v_{1}, \ldots, v_{i})$. An explicit
+    inductive formula is $e_{i}=\frac{v_{i}-\langle v_{i}, e_{1}\rangle e_{1}-\cdots-\langle
+    v_{i}, e_{i-1}\rangle e_{i-1}}{\|v_{i}-\langle v_{i}, e_{1}\rangle e_{1}-\cdots-\langle
+    v_{i}, e_{i-1}\rangle e_{i-1}\|}$.
+  kind: lemma
+  location: Chapter 1, Lecture 5
+  name: Lemma 5.1 (Gram-Schmidt orthogonalization)
+- description: Let $E(t)$ be a family of orthogonal matrices, depending differentiably
+    on $t$. Write $\frac{d}{dt} E(t)=E(t) A(t)$. Then the matrices $A(t)$ are skewsymmetric,
+    $A(t)^{tr}=-A(t)$.
+  kind: lemma
+  location: Chapter 1, Lecture 5
+  name: Lemma 5.2
+- description: '$c: I \rightarrow \mathbb{R}^{n}$ is a Frenet curve if for all $t$,
+    the vectors $(c^{\prime}(t), c^{\prime\prime}(t), \ldots, c^{(n-1)}(t))$ are linearly
+    independent.'
+  kind: definition
+  location: Chapter 1, Lecture 5
+  name: Definition 5.3
+- description: Frenet frames are reparametrization invariant. Explicitly, if $c$ is
+    a Frenet curve and $d(t)=c(\phi(t))$ a reparametrization, then $d$ is again Frenet,
+    and its Frenet frame is related to that of $c$ by $f_{i}(t)=e_{i}(\phi(t))$.
+  kind: lemma
+  location: Chapter 1, Lecture 5
+  name: Lemma 5.4
+- description: For a Frenet curve $c$ in $\mathbb{R}^{n}$, let $E(t)$ be the matrix
+    with columns $e_{1}(t), \ldots, e_{n}(t)$. We have $\frac{d}{dt} E(t)=\left\|c^{\prime}(t)\right\|
+    E(t)\left(\begin{array}{cccc} 0 & -\kappa_{1}(t) & 0 & \cdots \\ \kappa_{1}(t)
+    & 0 & -\kappa_{2}(t) & \cdots \\ 0 & \kappa_{2}(t) & 0 & -\kappa_{3}(t) \cdots
+    \\ \cdots & & & \end{array}\right)$. Here $\kappa_{1}(t), \ldots, \kappa_{n-2}(t)>0$,
+    and $\kappa_{n-1}(t) \in \mathbb{R}$. Concretely, $\kappa_{i}(t)=\frac{\langle
+    e_{i+1}(t), e_{i}^{\prime}(t)\rangle}{\left\|c^{\prime}(t)\right\|}$. The functions
+    $\kappa_{i}(t)$ are called the Frenet curvatures of $c$. They are reparametrization
+    invariant.
+  kind: theorem
+  location: Chapter 1, Lecture 6
+  name: Theorem 6.1
+- description: Let $c$ be a Frenet curve in $\mathbb{R}^{n}$. Then $\frac{\operatorname{det}\left(c^{\prime},
+    c^{\prime\prime}, \ldots, c^{(n)}\right)}{\left\|c^{\prime}\right\|^{n(n+1)/2}}=\prod_{i=1}^{n-1}
+    \kappa_{i}^{n-i}$.
+  kind: proposition
+  location: Chapter 1, Lecture 6
+  name: Proposition 6.2
+- description: 'One can write $f(t)=(\cos \theta(t), \sin \theta(t))$, where $\theta:
+    \mathbb{R} \rightarrow \mathbb{R}$ is a smooth function, unique up to adding constant
+    integer multiples of $2\pi$. Specifically, all such functions are of the form
+    $\theta(t)=\theta_{0}+\int_{t_{0}}^{t} \operatorname{det}\left(f(\tau), f^{\prime}(\tau)\right)
+    d\tau$ where $(\cos \theta_{0}, \sin \theta_{0})=f(t_{0})$.'
+  kind: lemma
+  location: Chapter 1, Lecture 7
+  name: Lemma 7.1
+- description: The degree of $f$ is $\operatorname{deg}(f)=\frac{1}{2\pi}(\theta(T)-\theta(0))=\frac{1}{2\pi}
+    \int_{0}^{T} \operatorname{det}\left(f(\tau), f^{\prime}(\tau)\right) d\tau \in
+    \mathbb{Z}$. Instead of $[0, T]$, one can take any other interval $[t_{0}, t_{0}+T]$.
+  kind: definition
+  location: Chapter 1, Lecture 7
+  name: Definition 7.2
+- description: If $\operatorname{deg}(f) \neq 0$, $f$ is a surjective (onto) map to
+    the unit circle.
+  kind: lemma
+  location: Chapter 1, Lecture 7
+  name: Lemma 7.3
+- description: 'Let $\|p\|=1$ be a point on the circle with the following properties:
+    (i) There are only finitely many $0 \leq t_{1}<t_{2}<\cdots<t_{m}<T$ for which
+    $f(t_{k})=p$; (ii) each such $t_{k}$ satisfies $f^{\prime}(t_{k}) \neq 0$. In
+    that case, $\operatorname{deg}(f)=\sum_{k=1}^{m} \operatorname{sign} \operatorname{det}\left(p,
+    f^{\prime}(t_{k})\right)$.'
+  kind: proposition
+  location: Chapter 1, Lecture 7
+  name: Proposition 7.4
+- description: 'A closed curve of period $T$ is a regular curve $c: \mathbb{R} \rightarrow
+    \mathbb{R}^{2}$ such that $c(t+T)=c(t)$ for all $t$. We say that $c$ is simple
+    if it has no self-intersections. This means that for all $0 \leq s<t<T$, we have
+    $c(s) \neq c(t)$.'
+  kind: definition
+  location: Chapter 1, Lecture 8
+  name: Definition 8.1
+- description: Let $c$ be a simple closed curve. Then, the complement of the image
+    of $c$ is the disjoint union of two connected open subsets, one bounded (the inside)
+    and one unbounded (the outside).
+  kind: theorem
+  location: Chapter 1, Lecture 8
+  name: Theorem 8.2 (Jordan curve theorem)
+- description: The total curvature of a closed curve is defined to be $\kappa^{tot}(c)=\int_{0}^{T}
+    \kappa(t)\left\|c^{\prime}(t)\right\| dt$.
+  kind: definition
+  location: Chapter 1, Lecture 8
+  name: Definition 8.3
+- description: Let $c$ be a closed curve of period $T$, and set $L=\int_{0}^{T}\left\|c^{\prime}(t)\right\|
+    dt$. Let $d$ be the unit speed reparametrization of $c$. Then $d$ is again a closed
+    curve, of period $L$. Moreover, the total curvature of $d$ is the same as that
+    of $c$.
+  kind: lemma
+  location: Chapter 1, Lecture 8
+  name: Lemma 8.4
+- description: $\kappa^{tot}(c)/2\pi$ is the degree of $f(t)=c^{\prime}(t)/\left\|c^{\prime}(t)\right\|$.
+    In particular, it is always an integer. We call it the rotation number of the
+    curve.
+  kind: proposition
+  location: Chapter 1, Lecture 8
+  name: Proposition 8.5
+- description: Let $c$ be a closed curve of period $T$. Suppose that there are only
+    finitely many points $0 \leq t_{1}<t_{2}<\cdots<t_{m}<T$ where $c_{2}^{\prime}(t_{k})=0$,
+    $c_{1}^{\prime}(t_{k})>0$, and that any such point satisfies $\kappa(t_{k}) \neq
+    0$. Then, the rotation number is $\kappa^{tot}(c)/2\pi=\sum_{k=1}^{m} \operatorname{sign}\left(\kappa(t_{k})\right)$.
+  kind: corollary
+  location: Chapter 1, Lecture 8
+  name: Corollary 8.6
+- description: Let $c$ be a simple closed curve. Then $\kappa^{tot}(c)=\pm 2\pi$.
+  kind: theorem
+  location: Chapter 1, Lecture 9
+  name: Theorem 9.1 (Hopf Umlaufsatz)
+- description: Let $c$ be a simple closed curve. We say that $c$ is convex if the
+    following holds. Whenever $c$ is tangent to some line $\{a_{1} x_{1}+a_{2} x_{2}=b\}$
+    in the plane, it is entirely contained in one of the two half-planes $\{a_{1}
+    x_{1}+a_{2} x_{2} \leq b\}$, $\{a_{1} x_{1}+a_{2} x_{2} \geq b\}$.
+  kind: definition
+  location: Chapter 1, Lecture 9
+  name: Definition 9.2
+- description: A simple closed curve is convex if and only if its curvature never
+    changes sign.
+  kind: proposition
+  location: Chapter 1, Lecture 9
+  name: Proposition 9.3
+- description: Let $c$ be a closed curve of period $T$. Then $\int_{0}^{T}|\kappa(t)|\left\|c^{\prime}(t)\right\|
+    dt \geq 2\pi$.
+  kind: corollary
+  location: Chapter 1, Lecture 9
+  name: Corollary 9.4
+- description: Let $c$ be a closed curve with normal self-intersections. Assume that
+    it is parametrized in such a way that $c_{2}(t)$ reaches a global minimum at $t=0$.
+    Then $\kappa^{tot}(c)/2\pi=\operatorname{sign} c_{1}^{\prime}(0)-\sum_{(s,t)}
+    \operatorname{sign} \operatorname{det}\left(c^{\prime}(s), c^{\prime}(t)\right)$
+    where the sum is over all $0 \leq s<t<T$ with $c(s)=c(t)$.
+  kind: theorem
+  location: Chapter 1, Lecture 9
+  name: Theorem 9.5 (Whitney)
+- description: 'Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be a continuous $2\pi$-periodic
+    function such that $\int_{0}^{2\pi} f(t) dt=0$, $\int_{0}^{2\pi} f(t) \cos(t)
+    dt=0$, $\int_{0}^{2\pi} f(t) \sin(t) dt=0$. Then $f$ has at least four zeros in
+    the region $[0, 2\pi)$.'
+  kind: lemma
+  location: Chapter 1, Lecture 10
+  name: Lemma 10.1 (Sturm-Hurwitz)
+- description: Let $h$ be a smooth $2\pi$-periodic function. Then $h(t)+h^{\prime\prime}(t)$
+    has at least four critical points (points where its derivative vanishes) in the
+    region $[0, 2\pi)$.
+  kind: lemma
+  location: Chapter 1, Lecture 10
+  name: Lemma 10.2
+- description: Take a simple closed curve whose curvature is everywhere positive.
+    By reparametrizing in a suitable way, one can achieve that the curve has period
+    $2\pi$ and satisfies $\frac{c^{\prime}(t)}{\left\|c^{\prime}(t)\right\|}=(\cos(t),
+    \sin(t))$. In that case, $\kappa(t)=\frac{1}{\left\|c^{\prime}(t)\right\|}$.
+  kind: lemma
+  location: Chapter 1, Lecture 10
+  name: Lemma 10.3
+- description: Take a simple closed curve whose curvature is everywhere positive.
+    Then there are at least four points where $\kappa^{\prime}(t)=0$.
+  kind: theorem
+  location: Chapter 1, Lecture 10
+  name: Theorem 10.4 (Four Vertex theorem, strictly convex version)
+- description: 'A hypersurface patch is a smooth map $f: U \rightarrow \mathbb{R}^{n+1}$,
+    where $U \subset \mathbb{R}^{n}$ is an open subset, such that the derivatives
+    $\partial_{x_{1}} f, \ldots, \partial_{x_{n}} f \in \mathbb{R}^{n+1}$ are linearly
+    independent at each point $x$. Equivalently, the Jacobian $Df_{x}: \mathbb{R}^{n}
+    \rightarrow \mathbb{R}^{n+1}$ is injective (one-to-one).'
+  kind: definition
+  location: Chapter 2, Lecture 12
+  name: Definition 12.1
+- description: 'Let $f$ be a hypersurface patch. There is a unique $\nu: U \rightarrow
+    \mathbb{R}^{n+1}$ such that $\nu(x)$ is of length one, is orthogonal to $\partial_{x_{1}}
+    f, \ldots, \partial_{x_{n}} f$, and satisfies $\operatorname{det}\left(\partial_{x_{1}}
+    f, \ldots, \partial_{x_{n}} f, \nu(x)\right)>0$. It is automatically smooth. We
+    call $\nu(x)$ the Gauss normal vector of $f$ at the point $x$.'
+  kind: definition
+  location: Chapter 2, Lecture 12
+  name: Definition 12.2
+- description: Define $G_{ij}(x)=\langle\partial_{x_{i}} f, \partial_{x_{j}} f\rangle$.
+    Equivalently, the matrix with entries $G_{ij}(x)$ is $G_{x}=Df_{x}^{tr} \cdot
+    Df_{x}$. The associated inner product, $I_{x}(X, Y)=\langle X, G_{x} Y\rangle=\langle
+    Df_{x}(X), Df_{x}(Y)\rangle$, is called the first fundamental form.
+  kind: definition
+  location: Chapter 2, Lecture 12
+  name: Definition 12.3
+- description: Define $H_{ij}(x)=-\langle\partial_{x_{i}} \nu, \partial_{x_{j}} f\rangle=\langle\partial_{x_{i}}
+    \partial_{x_{j}} f, \nu(x)\rangle$. Equivalently, the matrix with entries $H_{ij}(x)$
+    is $H_{x}=-D\nu_{x}^{tr} \cdot Df_{x}$. The associated symmetric bilinear form,
+    $II_{x}(X, Y)=\langle X, H_{x} Y\rangle=-\langle D\nu_{x}(X), Df_{x}(Y)\rangle=\langle\nu(x),
+    D^{2}f_{x}(X, Y)\rangle$, is called the second fundamental form.
+  kind: definition
+  location: Chapter 2, Lecture 12
+  name: Definition 12.4
+- description: Define a matrix $L_{x}$ by $L_{x}=G_{x}^{-1} H_{x}=(H_{x} G_{x}^{-1})^{tr}$.
+    We call this the shape operator. Equivalently, this is characterized by the property
+    that $II_{x}(X, Y)=I_{x}(L_{x} X, Y)$.
+  kind: definition
+  location: Chapter 2, Lecture 12
+  name: Definition 12.5
+- description: '$D\nu=-Df \cdot L$ (matrix multiplication). More explicitly, each
+    partial derivative $\partial_{x_{i}} \nu$ lies in the linear span of $\{\partial_{x_{1}}
+    f, \ldots, \partial_{x_{n}} f\}$, and the shape operator allows us to express
+    it as a linear combination of these vectors: $\partial_{x_{i}} \nu=-\sum_{j} L_{ji}(x)
+    \partial_{x_{j}} f$.'
+  kind: lemma
+  location: Chapter 2, Lecture 12
+  name: Lemma 12.6
+- description: The coordinate changes for the main associated data are $\tilde{\nu}(x)=\nu(\phi(x))$,
+    $\tilde{G}(x)=D\phi(x)^{tr} \cdot G(\phi(x)) \cdot D\phi(x)$, $\tilde{H}(x)=D\phi(x)^{tr}
+    \cdot H(\phi(x)) \cdot D\phi(x)$, $\tilde{L}(x)=D\phi(x)^{-1} \cdot L(\phi(x))
+    \cdot D\phi(x)$.
+  kind: proposition
+  location: Chapter 2, Lecture 13
+  name: Proposition 13.1
+- description: 'Let $f, \tilde{f}: U \rightarrow \mathbb{R}^{n+1}$ be two hypersurface
+    patches, defined on the same connected set $U \subset \mathbb{R}^{n}$. Suppose
+    that their first and second fundamental forms coincide. Then $\tilde{f}(x)=Af(x)+c$,
+    where $A$ is an orthogonal matrix with determinant $+1$, and $c$ some constant.'
+  kind: proposition
+  location: Chapter 2, Lecture 13
+  name: Proposition 13.3
+- description: The eigenvalues $(\lambda_{1}, \ldots, \lambda_{n})$ of $L_{x}$ are
+    called the principal curvatures of the hypersurface patch $f$ at $x$. The corresponding
+    eigenvectors $(X_{1}, \ldots, X_{n})$ are called the principal curvature directions.
+  kind: definition
+  location: Chapter 2, Lecture 14
+  name: Definition 14.1
+- description: Let $\lambda_{1}, \ldots, \lambda_{n}$ be the principal curvatures
+    of $f$ at $x$. The mean curvature is $\kappa_{mean}=\lambda_{1}+\cdots+\lambda_{n}=\operatorname{trace}(L)$.
+    The Gauss curvature is $\kappa_{gauss}=\lambda_{1} \cdots \lambda_{n}=\operatorname{det}(L)=\operatorname{det}(H)/\operatorname{det}(G)$.
+    The scalar curvature is $\kappa_{scalar}=\sum_{i<j} \lambda_{i} \lambda_{j}=\frac{1}{2}\left(\operatorname{trace}(L)^{2}-\operatorname{trace}(L^{2})\right)$.
+  kind: definition
+  location: Chapter 2, Lecture 14
+  name: Definition 14.4
+- description: The Gauss curvature is $\kappa_{gauss}=(-1)^{n} \frac{\operatorname{det}\left(\partial_{x_{1}}
+    \nu, \ldots, \partial_{x_{n}} \nu, \nu\right)}{\sqrt{\operatorname{det} G}}$.
+  kind: lemma
+  location: Chapter 2, Lecture 14
+  name: Lemma 14.5
+- description: Write $\frac{\partial^{2} f}{\partial x_{i} \partial x_{j}}=\sum_{k}
+    \Gamma_{ij}^{k} \frac{\partial f}{\partial x_{k}}+H_{ij} \nu$. The functions $\Gamma_{ij}^{k}(x)$
+    are called Christoffel symbols.
+  kind: definition
+  location: Lecture 16
+  name: Definition 16.1
+- description: Let $g^{ij}$ be the coefficients of the inverse matrix $G^{-1}$. Then
+    $\Gamma_{ij}^{l}=\frac{1}{2} \sum_{k} g^{kl}(\partial_{x_{j}} G_{ik}-\partial_{x_{k}}
+    G_{ij}+\partial_{x_{i}} G_{jk})$.
+  kind: theorem
+  location: Lecture 16
+  name: Theorem 16.2
+- description: 'The Gauss equation holds: $H_{ij} L_{sk}-H_{ik} L_{sj}=\partial_{k}
+    \Gamma_{ij}^{s}-\partial_{j} \Gamma_{ik}^{s}+\sum_{t} \Gamma_{ij}^{t} \Gamma_{kt}^{s}-\Gamma_{ik}^{t}
+    \Gamma_{jt}^{s}$.'
+  kind: theorem
+  location: Lecture 16
+  name: Theorem 16.3
+- description: The Gauss curvature of a surface patch is given in terms of the first
+    fundamental form by $\kappa_{\text{gauss}}=\frac{\sum_{u} G_{2u} R_{121}^{u}}{\operatorname{det}(G)}$.
+  kind: corollary
+  location: Lecture 17
+  name: Corollary 17.1 (Theorema egregium for surfaces)
+- description: 'Let $f: U \rightarrow \mathbb{R}^{n+1}$ be a hypersurface patch. A
+    moving basis for $f$ is a collection $(X_{1}, \ldots, X_{n})$ of vector-valued
+    functions $X_{i}: U \rightarrow \mathbb{R}^{n}$ which are linearly independent
+    at each point. If the $X_{i}$ are orthonormal with respect to the first fundamental
+    form, we call $(X_{1}, \ldots, X_{n})$ a moving frame. Let $X$ be the matrix whose
+    columns are $(X_{1}, \ldots, X_{n})$, and define the connection matrices and their
+    curvature matrices to be, respectively, $A_{j}=X^{-1}(\partial_{x_{j}} X)+X^{-1}
+    \Gamma_{j} X$ and $F_{kj}=\partial_{k} A_{j}-\partial_{j} A_{k}+A_{k} A_{j}-A_{j}
+    A_{k}$.'
+  kind: definition
+  location: Lecture 18
+  name: Definition 18.1
+- description: For any moving basis, $F_{kj}=X^{-1} R_{kj} X$.
+  kind: lemma
+  location: Lecture 18
+  name: Lemma 18.2
+- description: If the moving basis is a frame, the $A_{j}$ and $F_{kj}$ are skewsymmetric
+    matrices.
+  kind: lemma
+  location: Lecture 18
+  name: Lemma 18.3
+- description: If $\alpha_{i}=(A_{i})_{12}$, then $\kappa_{gauss} \sqrt{\operatorname{det}(G)}=(F_{21})_{12}=\partial_{2}
+    \alpha_{1}-\partial_{1} \alpha_{2}$.
+  kind: proposition
+  location: Lecture 18
+  name: Proposition 18.4
+- description: 'Let $f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{3}$ be a doubly-periodic
+    surface patch, which means that $f(x_{1}+T_{1}, x_{2})=f(x_{1}, x_{2})=f(x_{1},
+    x_{2}+T_{2})$ for some $T_{1}, T_{2}>0$. Then $\kappa_{\text{gauss}}^{tot} \stackrel{\text{def}}{=}
+    \int_{[0, T_{1}] \times [0, T_{2}]} \kappa_{\text{gauss}} \sqrt{\operatorname{det}(G)}
+    \, dx_{1} \, dx_{2}=0$.'
+  kind: corollary
+  location: Lecture 18
+  name: Corollary 18.5 (Gauss-Bonnet for tori)
+- description: If $f$ is a doubly-periodic surface patch, then the Gauss curvature
+    must be $>0$ at some point, and $<0$ at some other point.
+  kind: corollary
+  location: Lecture 18
+  name: Corollary 18.6
+- description: If $(v_{i})_{1 \leq i \leq n}$ is any basis of $\mathbb{R}^{n}$, then
+    $(v_{i} \wedge v_{j})_{1 \leq i<j \leq n}$ is a basis of the space of antisymmetric
+    matrices.
+  kind: lemma
+  location: Lecture 19
+  name: Lemma 19.1
+- description: We have $\operatorname{trace}(\Lambda^{2} L)=\frac{1}{2}(\operatorname{trace}(L)^{2}-\operatorname{trace}(L^{2}))$
+    and $\operatorname{det}(\Lambda^{2} L)=\operatorname{det}(L)^{n-1}$.
+  kind: lemma
+  location: Lecture 19
+  name: Lemma 19.3
+- description: 'Suppose that $L, \tilde{L}: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$
+    are two linear maps, with $\operatorname{rank}(L) \geq 3$. Then, if $\Lambda^{2}
+    L=\Lambda^{2} \tilde{L}$, it also follows that $L= \pm \tilde{L}$.'
+  kind: lemma
+  location: Lecture 19
+  name: Lemma 19.4
+- description: $\mathcal{R}$ is intrinsic.
+  kind: theorem
+  location: Lecture 20
+  name: Theorem 20.1 (Generalized theorema egregium)
+- description: The unordered collection of $n(n-1)/2$ numbers $\lambda_{i} \lambda_{j}$
+    is intrinsic.
+  kind: corollary
+  location: Lecture 20
+  name: Corollary 20.2
+- description: $\kappa_{\text{scalar}}$ and $\kappa_{\text{gauss}}^{n-1}$ are intrinsic.
+    In particular, $\kappa_{\text{gauss}}$ is intrinsic for $n$ even, and $|\kappa_{\text{gauss}}|$
+    is intrinsic for $n \geq 3$ odd.
+  kind: corollary
+  location: Lecture 20
+  name: Corollary 20.3
+- description: 'Let $f: U \rightarrow \mathbb{R}^{n+1}$ be a hypersurface patch, defined
+    on a connected set. Suppose that for each point in $U$, the matrix $H_{x}$ has
+    rank $\geq 3$. In that case, the intrinsic geometry of $f$ determines the extrinsic
+    one. This means that if $\tilde{f}: U \rightarrow \mathbb{R}^{n+1}$ is another
+    hypersurface patch with the same first fundamental form as $f$, then necessarily
+    $\tilde{f}(x)=Af(x)+c$ with $A$ an orthogonal matrix, and $c$ a constant.'
+  kind: corollary
+  location: Lecture 20
+  name: Corollary 20.4
+- description: For any point $p$, there is always a local reparametrization such that
+    in the new coordinates, $\tilde{G}_{p}=\mathbf{1}$ is the identity matrix.
+  kind: lemma
+  location: Lecture 21
+  name: Lemma 21.1
+- description: Suppose that we have numbers $S_{ijk}$ (the indices $i, j, k$ run from
+    1 to $n$) such that $S_{ijk}=S_{jik}$. Then there are numbers $T_{ijk}$ with $T_{ijk}=T_{kji}$
+    such that $S_{ijk}=T_{ijk}+T_{jik}$.
+  kind: lemma
+  location: Lecture 21
+  name: Lemma 21.2
+- description: For any point $p$, there is always a local reparametrization such that
+    in the new coordinates, $\tilde{G}_{p}=\mathbf{1}$ and $\partial_{x_{k}} \tilde{G}_{p}=0$
+    for all $k$.
+  kind: corollary
+  location: Lecture 21
+  name: Corollary 21.3
+- description: 'A spacelike hypersurface in Minkowski space is a smooth map $f: U
+    \rightarrow \mathbb{R}^{n+1}$, where $U \subset \mathbb{R}^{n}$ is an open subset,
+    such that at every point $x \in U$, the derivatives $(\partial_{x_{1}} f, \ldots,
+    \partial_{x_{n}} f)$ are linearly independent and span a subspace of $\mathbb{R}^{n+1}$
+    on which $\langle\cdot,\cdot\rangle_{\text{Min}}$ is positive definite.'
+  kind: definition
+  location: Lecture 22
+  name: Definition 22.1
+- description: The Gauss normal vector of a spacelike hypersurface is the unique $\nu=\nu(x)$
+    such that $\langle\nu, \nu\rangle_{\text{Min}}=-1$, $\langle\nu, \partial_{x_{i}}
+    f\rangle_{\text{Min}}=0$, and $\operatorname{det}(\partial_{x_{1}} f, \ldots,
+    \partial_{x_{n}} f, \nu)>0$.
+  kind: definition
+  location: Lecture 22
+  name: Definition 22.2
+- description: If $X \in \mathbb{R}^{n+1}$ has $\langle X, X\rangle_{\text{Min}}<0$,
+    then its Minkowski orthogonal complement $X^{\perp}=\{Y \in \mathbb{R}^{n+1}:\langle
+    X, Y\rangle_{\text{Min}}=0\}$ has the property that $\langle\cdot,\cdot\rangle_{\text{Min}}$
+    restricted to $X^{\perp}$ is positive definite.
+  kind: lemma
+  location: Lecture 22
+  name: Lemma 22.3
+- description: 'A set of Gauss normal vectors for $f$ consists of maps $\nu^{1}, \ldots,
+    \nu^{m}: U \rightarrow \mathbb{R}^{n+m}$ satisfying $\langle\nu^{w}, \nu^{w}\rangle=1$,
+    $\langle\nu^{v}, \nu^{w}\rangle=0$ for $u \neq w$, $\langle\nu^{w}, \partial_{x_{i}}
+    f\rangle=0$, and $\operatorname{det}(\partial_{x_{1}} f, \ldots, \partial_{x_{n}}
+    f, \nu^{1}, \ldots, \nu^{m})>0$.'
+  kind: definition
+  location: Lecture 23
+  name: Definition 23.1
+- description: Given a set of Gauss normal vectors, we define the second fundamental
+    forms $H^{w}$, $w=1, \ldots, m$, by $H_{ij}^{w}=-\langle\partial_{i} \nu^{w},
+    \partial_{j} f\rangle=\langle\nu^{w}, \partial^{2} f / \partial x_{i} \partial
+    x_{j}\rangle$. The corresponding shape operators are $L^{w}=G^{-1} H^{w}$.
+  kind: definition
+  location: Lecture 23
+  name: Definition 23.2
+- description: Take any Riemannian metric on $\mathbb{R}^{2}$ which is doubly-periodic,
+    $G_{(x_{1}+T_{1}, x_{2})}=G_{(x_{1}, x_{2})}=G_{(x_{1}, x_{2}+T_{2})}$. Then $\kappa_{\text{gauss}}^{tot}=\int_{[0,
+    T_{1}] \times [0, T_{2}]} \kappa_{\text{gauss}} \sqrt{\operatorname{det}(G)} \,
+    dx_{1} \, dx_{2}=0$.
+  kind: corollary
+  location: Lecture 23
+  name: Corollary 23.3
+- description: 'A hypersurface is a subset $M \subset \mathbb{R}^{n+1}$ with the following
+    property. For every $y \in M$ there is an open subset $V \subset \mathbb{R}^{n+1}$
+    containing $y$, and a function $\psi: V \rightarrow \mathbb{R}$ whose zero set
+    $\psi^{-1}(0)$ is precisely $M \cap V$, and whose derivative is nonzero at any
+    point of $M \cap V$.'
+  kind: definition
+  location: Lecture 24
+  name: Definition 24.1
+- description: 'Let $\psi: V \rightarrow \mathbb{R}$ be a local defining function
+    for $M$, and $\phi: V \rightarrow \mathbb{R}$ another smooth function which vanishes
+    along $V \cap M$. Then there is a unique smooth function $q: V \rightarrow \mathbb{R}$
+    such that $\phi=q\psi$.'
+  kind: proposition
+  location: Lecture 24
+  name: Proposition 24.3 (L'Hopital's rule; proof postponed)
+- description: 'Let $\psi, \tilde{\psi}: V \rightarrow \mathbb{R}$ be two local defining
+    functions for $M$. Then there is a unique smooth nowhere vanishing function $q:
+    V \rightarrow \mathbb{R}$ such that $\tilde{\psi}=q\psi$.'
+  kind: corollary
+  location: Lecture 24
+  name: Corollary 24.4
+- description: For $X, Y \in TM_{y}$, $\langle X, L_{y} \cdot Y\rangle=-\frac{1}{\|\nabla_{y}
+    \psi\|}\langle X, D^{2} \psi_{y} \cdot Y\rangle$.
+  kind: lemma
+  location: Lecture 25
+  name: Lemma 25.2
+- description: Let $M \subset \mathbb{R}^{n+1}$ be a hypersurface. Take a point $y
+    \in M$, a local defining function $\psi$ for $M$ near $y$, and an orthonormal
+    basis $Y_{1}, \ldots, Y_{n}$ of the tangent space $TM_{y}$. Then $\kappa_{\text{mean}}
+    = \pm \frac{1}{\|\nabla \psi_{y}\|} \sum_{i=1}^{n}\langle Y_{i}, D^{2} \psi_{y}
+    \cdot Y_{i}\rangle$ and $\kappa_{\text{gauss}} = \pm \frac{\operatorname{det}(D^{2}
+    \psi_{y} \cdot Y_{1}, \ldots, D^{2} \psi_{y} \cdot Y_{n}, \nabla \psi_{y})}{\|\nabla
+    \psi_{y}\|^{n+1}}$.
+  kind: proposition
+  location: Lecture 25
+  name: Proposition 25.4
+- description: 'A function $f: M \rightarrow \mathbb{R}$ is smooth if for every point
+    $y \in M$ there is an open subset $V \subset \mathbb{R}^{n+1}$ containing $y$,
+    and a smooth function $\tilde{f}: V \rightarrow \mathbb{R}$, such that $f|M \cap
+    V=\tilde{f}|M \cap V$. We call $\tilde{f}$ a local extension of $f$.'
+  kind: definition
+  location: Lecture 26
+  name: Definition 26.1
+- description: 'A Gauss map for $M$ is a smooth map $\nu: M \rightarrow \mathbb{R}^{n+1}$
+    such that for all $y$, $\nu(y)$ is of unit length and orthogonal to $TM_{y}$.'
+  kind: definition
+  location: Lecture 26
+  name: Definition 26.2
+- description: 'Let $U, V$ be open subsets of $\mathbb{R}^{n+1}$. A smooth map $\phi:
+    V \rightarrow U$ is a diffeomorphism if it is one-to-one and the inverse $\phi^{-1}$
+    is also smooth (it is in fact enough to check that $\phi$ is one-to-one and that
+    $D\phi_{y}$ is invertible for all $y$, since that ensures smoothness of the inverse).'
+  kind: definition
+  location: Lecture 27
+  name: Definition 27.1
+- description: 'Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $y \in
+    \tilde{V}$ a point, and $\phi: \tilde{V} \rightarrow \mathbb{R}^{n+1}$ a smooth
+    map such that $D\phi_{y}$ is invertible. Then there is an open subset $V \subset
+    \tilde{V}$, still containing $y$, such that: $U=\phi(V)$ is open, and $\phi|V:
+    V \rightarrow U$ is a diffeomorphism.'
+  kind: theorem
+  location: Lecture 27
+  name: Theorem 27.2 (Inverse function theorem)
+- description: 'Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $\psi:
+    \tilde{V} \rightarrow \mathbb{R}$ a smooth function, and $y \in V$ a point such
+    that $\psi(y)=0$, $D\psi(y) \neq 0$. Then there are: an open subset $V \subset
+    \tilde{V}$, still containing $y$; an open subset $U \subset \mathbb{R}^{n+1}$
+    containing 0; and a diffeomorphism $\phi: U \rightarrow V$ such that $\phi(0)=y$,
+    and $\psi(\phi(x))=x_{n+1}$ for all $x$.'
+  kind: corollary
+  location: Lecture 27
+  name: Corollary 27.3 (Implicit function theorem, special case)
+- description: 'Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $y \in
+    \tilde{V}$ a point, and $\phi: \tilde{V} \rightarrow \mathbb{R}^{n+1}$ a smooth
+    map such that $D\phi_{y}$ is invertible. Then there is an open subset $V \subset
+    \tilde{V}$, still containing $y$, such that: $U=\phi(V)$ is open, and $\phi|V:
+    V \rightarrow U$ is a diffeomorphism.'
+  kind: theorem
+  location: Lecture 28
+  name: Theorem 28.2 (Inverse function theorem)
+- description: 'Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $\psi:
+    \tilde{V} \rightarrow \mathbb{R}$ a smooth function, and $y \in \tilde{V}$ a point
+    such that $\psi(y)=0$, $D\psi(y) \neq 0$. Then there are: an open subset $V \subset
+    \tilde{V}$, still containing $y$; an open subset $U \subset \mathbb{R}^{n+1}$
+    containing 0; and a diffeomorphism $\phi: U \rightarrow V$ such that $\phi(0)=y$,
+    and $\psi(\phi(x))=x_{n+1}$ for all $x$.'
+  kind: corollary
+  location: Lecture 29
+  name: Corollary 29.1 (Implicit function theorem, special case)
+- description: 'Let $U \subset \mathbb{R}^{n+1}$ be an open subset containing the
+    origin, and $\psi: U \rightarrow \mathbb{R}$ a smooth function which vanishes
+    at all points $x \in U$ whose last coordinate $x_{n+1}$ is zero. Then there is
+    a unique smooth function $q$ such that $\psi=qx_{n+1}$.'
+  kind: lemma
+  location: Lecture 29
+  name: Lemma 29.2
+- description: 'Let $M$ be a hypersurface. A partial parametrization of $M$ consists
+    of an open subset $V \subset \mathbb{R}^{n+1}$, an open subset $U \subset \mathbb{R}^{n}$,
+    and a hypersurface patch $f: U \rightarrow \mathbb{R}^{n+1}$ which is one-to-one
+    (injective), and whose image is precisely $M \cap V$.'
+  kind: definition
+  location: Lecture 29
+  name: Definition 29.3
+- description: For every point $y \in M$, there is a partial parametrization such
+    that $y \in f(U)=M \cap V$.
+  kind: corollary
+  location: Lecture 29
+  name: Corollary 29.4
+- description: 'Let $f$ be a partial parametrization. Denote by $I^{f}$ its first
+    fundamental form, and by $S^{f}$ its shape operator. Under the identification
+    $Df: \mathbb{R}^{n} \rightarrow TM_{f(x)}$, $I^{f}$ turns into the ordinary scalar
+    product, and $S^{f}$ into the shape operator $S$ of $M$. Explicitly, the second
+    part of this says that $S: TM_{f(x)} \rightarrow TM_{f(x)}$ and $S^{f}: \mathbb{R}^{n}
+    \rightarrow \mathbb{R}^{n}$ are related by $S^{f}=Df^{-1} \cdot S \circ Df$.'
+  kind: proposition
+  location: Lecture 29
+  name: Proposition 29.5
+- description: A hypersurface $M \subset \mathbb{R}^{n+1}$ is compact if it is bounded
+    and closed (closedness means that if a sequence $y_{n} \in M$ converges to some
+    point $y_{\infty} \in \mathbb{R}^{n+1}$, then that point must also lie in $M$).
+  kind: definition
+  location: Lecture 30
+  name: Definition 30.2
+- description: 'A hypersurface $M \subset \mathbb{R}^{n+1}$ is connected if every
+    smooth function $\phi: M \rightarrow \mathbb{R}$ whose derivative is identically
+    zero is actually constant.'
+  kind: definition
+  location: Lecture 30
+  name: Definition 30.3
+- description: A connected compact hypersurface is always orientable (in fact, there
+    are precisely two choices of Gauss vectors, differing by a sign).
+  kind: theorem
+  location: Lecture 30
+  name: Theorem 30.4 (from topology; no proof)
+- description: 'Let $M \subset \mathbb{R}^{n+1}$ be a connected compact hypersurface,
+    with $n \geq 2$, and $\phi: M \rightarrow S^{n}$ a smooth map such that $D\phi_{y}:
+    TM_{y} \rightarrow TS_{\phi(y)}^{n}$ is an isomorphism for all $y$. Then $\phi$
+    is bijective (one-to-one and onto).'
+  kind: theorem
+  location: Lecture 30
+  name: Theorem 30.5 (from topology; no proof)
+- description: A hypersurface $M$ is convex if for all $y \in M$, the whole of $M$
+    lies on one side of the hyperplane $y+TM_{y}$.
+  kind: definition
+  location: Lecture 30
+  name: Definition 30.6
+- description: Let $M \subset \mathbb{R}^{n+1}, n \geq 2$, be a compact connected
+    hypersurface, whose Gauss curvature is everywhere nonzero. Then $M$ is convex.
+  kind: theorem
+  location: Lecture 30
+  name: Theorem 30.7 (Hadamard)
+- description: Let $f$ be a partial parametrization, and $\nu^{f}$ the associated
+    Gauss normal. Then $\det(G^{f})=\det(\partial_{x_{1}} f, \ldots, \partial_{x_{n}}
+    f, \nu^{f})^{2}$. In particular, in the case of a surface, $\sqrt{\det(G^{f})}=\|\partial_{x_{1}}
+    f \times \partial_{x_{2}} f\|$.
+  kind: lemma
+  location: Lecture 31
+  name: Lemma 31.1
+- description: In the situation above, let $(X_{1}, \ldots, X_{n})$ be a basis of
+    $TM_{y}$ such that $\det(X_{1}, \ldots, X_{n}, \nu(y))>0$, and $(Y_{1}, \ldots,
+    Y_{n})$ a basis of $T\tilde{M}_{\phi(y)}$ such that $\det(Y_{1}, \ldots, Y_{n},
+    \tilde{\nu}(\phi(y)))>0$. Take the matrix $A$ such that $D\phi_{y}(X_{i})= \sum_{j}
+    A_{ji} Y_{j}$, and define $\det(D\phi_{y})=\det(A)$. This is independent of the
+    choices of bases.
+  kind: definition
+  location: Lecture 31
+  name: Definition 31.3
+- description: 'Let $M, \tilde{M}$ be hypersurfaces, with Gauss maps $\nu, \tilde{\nu}$,
+    and $\phi: M \rightarrow \tilde{M}$ be a smooth map. Suppose that we have a parametrization
+    $f: U \rightarrow M$ compatible with the orientation. Set $\phi^{f}=\phi \circ
+    f: U \rightarrow \tilde{M} \subset \mathbb{R}^{n+1}$, and let $G^{f}$ be the first
+    fundamental form. Then for $y=f(x)$, $\det(D\phi)_{y}=\frac{\det(\partial_{x_{1}}
+    \phi^{f}, \ldots, \partial_{x_{n}} \phi^{f}, \tilde{\nu}(\phi^{f}(x)))}{\sqrt{\det(G^{f}(x))}}$.'
+  kind: lemma
+  location: Lecture 32
+  name: Lemma 32.1
+- description: 'Let $M, \tilde{M}$ be compact hypersurfaces equipped with Gauss maps.
+    Assume that $\tilde{M}$ is connected. Let $\phi: M \rightarrow \tilde{M}$ be a
+    smooth map. The degree of $\phi$ is defined as $\deg(\phi)=\frac{1}{\operatorname{vol}(\tilde{M})}
+    \int_{M} \det(D\phi_{y}) d\operatorname{vol}_{y}$.'
+  kind: definition
+  location: Lecture 32
+  name: Definition 32.2
+- description: 'Suppose that $\tilde{M}$ is decomposed into $f_{i}(P_{i})$ as in the
+    previous lecture, where $f_{i}: U_{i} \rightarrow M$ are partial parametrizations,
+    and $P_{i} \subset U_{i}$ polytopes. Then $\deg(\phi)=\frac{1}{\operatorname{vol}(\tilde{M})}\left(\sum_{i}
+    \int_{P_{i}} \det(\partial_{x_{1}} \phi^{f_{i}}, \ldots, \partial_{x_{n}} \phi^{f_{i}},
+    \tilde{\nu}(\phi(f_{i}(x)))) dx\right)$ where $\phi^{f_{i}}=\phi \circ f_{i}$.'
+  kind: proposition
+  location: Lecture 32
+  name: Proposition 32.3
+- description: Suppose that $\phi$ is bijective (one-to-one and onto), and that $\det(D\phi)$
+    is everywhere positive (or everywhere negative). Then $\deg(\phi)=1$ (or $-1$).
+  kind: lemma
+  location: Lecture 32
+  name: Lemma 32.4
+- description: The degree is always an integer.
+  kind: theorem
+  location: Lecture 32
+  name: Theorem 32.5 (No proof)
+- description: 'Let $M \subset \mathbb{R}^{n+1}$ be a compact hypersurface with a
+    Gauss map, and $\phi: M \rightarrow S^{n}$ a smooth map. If $\deg(\phi) \neq 0$,
+    then $\phi$ is necessarily onto.'
+  kind: lemma
+  location: Lecture 33
+  name: Lemma 33.2
+- description: 'Let $M, \tilde{M} \subset \mathbb{R}^{n+1}$ be compact connected hypersurfaces
+    with orientations, and $\phi: M \rightarrow \tilde{M}$ a smooth map. Suppose that
+    $p \in \tilde{M}$ is a point with the following properties: (i) there are only
+    finitely many $y_{1}, \ldots, y_{k} \in M$ such that $\phi(y_{i})=p$; (ii) at
+    each $y_{i}$, we have $\det(D\phi_{y_{i}}) \neq 0$. Then $\deg(\phi)=\sum_{i=1}^{k}
+    \operatorname{sign}(\det(D\phi_{y_{i}}))$.'
+  kind: theorem
+  location: Lecture 33
+  name: Theorem 33.3 (no proof)
+- description: Let $M$ be a compact hypersurface with an orientation. The total Gauss
+    curvature is $\kappa_{\text{gauss}}^{tot}=\int_{M} \kappa_{\text{gauss}} d\mathrm{vol}$.
+  kind: definition
+  location: Lecture 33
+  name: Definition 33.4
+- description: Let $M$ be a compact hypersurface with an orientation. Then $\kappa_{\text{gauss}}^{\text{tot}}=(-1)^{n}
+    \operatorname{vol}(S^{n}) \deg(\nu)$. In particular, the total Gauss curvature
+    is always an integer multiple of $\operatorname{vol}(S^{n})$.
+  kind: corollary
+  location: Lecture 33
+  name: Corollary 33.5
+- description: 'Let $f: U \rightarrow \mathbb{R}^{3}$ be a surface patch, whose domain
+    contains the origin. Let $(X_{1}, X_{2})$ be a moving frame defined on $U \backslash\{0\}$.
+    We say that the frame has a singularity of multiplicity $m \in \mathbb{Z}$ at
+    0 if it can be written as $X_{1}=\cos(m\theta) \tilde{X}_{1}-\sin(m\theta) \tilde{X}_{2}$
+    and $X_{2}=\sin(m\theta) \tilde{X}_{1}+\cos(m\theta) \tilde{X}_{2}$ where $\theta$
+    is the angular coordinate, and $(\tilde{X}_{1}, \tilde{X}_{2})$ is a moving frame
+    which extends smoothly over $x=0$. Passing to the matrices whose column vectors
+    are the $X_{k}$ and $\tilde{X}_{k}$, one can write the relation as $X=\tilde{X}
+    \exp(m\theta J)$ where $J=\left(\begin{smallmatrix}0 & -1 \\ 1 & 0\end{smallmatrix}\right)$
+    as usual.'
+  kind: definition
+  location: Lecture 34
+  name: Definition 34.1
+- description: $\lim_{\rho \rightarrow 0} \oint_{|x|=\rho} \alpha=-2\pi m$.
+  kind: lemma
+  location: Lecture 34
+  name: Lemma 34.2
+- description: 'Let $M \subset \mathbb{R}^{3}$ be a compact surface. A moving frame
+    with singularities is given by a finite set of points $\{p_{1}, \ldots, p_{k}\}$
+    on $M$, together with maps $Y_{1}, Y_{2}: M \backslash\{p_{1}, \ldots, p_{k}\}
+    \rightarrow \mathbb{R}^{3}$ which at each point $y$ form a positively oriented
+    orthonormal basis of $TM$, and such that around each $p_{k}$ there is a partial
+    parametrization in which $Y_{j}=Df(X_{j})$ for some frame with singularity of
+    order $m(p_{i})$ at $p$.'
+  kind: definition
+  location: Lecture 34
+  name: Definition 34.3
+- description: Moving frames with singularities always exist. Moreover, for any choice
+    of such frame, the sum $\sum_{i} m(p_{i})$ is the same. It agrees with a topological
+    invariant of $M$, called the Euler characteristic $\chi(M)$.
+  kind: theorem
+  location: Lecture 34
+  name: Theorem 34.4 (no proof)
+- description: For any compact surface $M \subset \mathbb{R}^{3}$, $\kappa_{\text{gauss}}^{tot}=2\pi
+    \cdot \chi(M)$.
+  kind: corollary
+  location: Lecture 34
+  name: Corollary 34.5 (Gauss-Bonnet theorem; sketch proof)
+- description: The Gauss map $\nu$ of a compact surface $M \subset \mathbb{R}^{3}$
+    satisfies $\chi(M)=2 \deg(\nu)$. In particular, $\chi(M)$ is always even.
+  kind: corollary
+  location: Lecture 34
+  name: Corollary 34.6
+- description: For any compact surface $M \subset \mathbb{R}^{3}$, $\int_{M}\|\kappa\|
+    dvol_{M} \geq 4\pi$.
+  kind: corollary
+  location: Lecture 34
+  name: Corollary 34.7 (sketch proof)
+- description: 'Let $M \subset \mathbb{R}^{n+1}$ be a closed hypersurface of even
+    dimension $n$, and $\nu: M \rightarrow S^{n}$ a Gauss map. Then $\deg(\nu)=\chi(M)/2$.'
+  kind: theorem
+  location: Lecture 35
+  name: Theorem 35.1 (Hopf; no proof)
+- description: In the same situation as above, $\kappa_{\text{gauss}}^{tot}=\chi(M)
+    \operatorname{vol}(S^{n})/2$.
+  kind: corollary
+  location: Lecture 35
+  name: Corollary 35.2 (Generalized Gauss-Bonnet)
+- description: 'A compact combinatorial surface consists of a finite collection $\{P_{i}\}$
+    of flat convex polygons in $\mathbb{R}^{3}$, with the following properties: any
+    two $P_{i}$ are either disjoint or share a common edge; (ii) any edge of any given
+    $P_{i}$ belongs to precisely one other $P_{j}, j \neq i$.'
+  kind: definition
+  location: Lecture 35
+  name: Definition 35.3
+- description: $\sum_{k} \kappa_{\text{gauss}}^{\text{comb}}(V_{k})= 2\pi \chi(M)$.
+  kind: theorem
+  location: Lecture 35
+  name: Theorem 35.4 (combinatorial Gauss-Bonnet; sketch proof)
+- description: Let $\gamma:[a,b] \rightarrow \mathbb{R}^{n}$ be a smooth path, with
+    $\gamma(a)=p$ and $\gamma(b)=q$. Its length $L(\gamma)=\int_{a}^{b}\|\gamma^{\prime}(t)\|
+    dt$ is $\geq \|q-p\|$, and equality holds iff $\gamma^{\prime}(t)$ is always a
+    nonnegative multiple of $q-p$.
+  kind: lemma
+  location: Lecture 36
+  name: Lemma 36.1
+- description: 'Let $M \subset \mathbb{R}^{n+1}$ be a hypersurface. A smooth map $\gamma:
+    I \rightarrow M$, where $I \subset \mathbb{R}$ is an interval, is called a geodesic
+    if $\gamma^{\prime\prime}(t)$ is perpendicular to $TM_{\gamma(t)}$ for all $t$.'
+  kind: definition
+  location: Lecture 36
+  name: Definition 36.2
+- description: If $\gamma$ is a geodesic, the speed $\|\gamma^{\prime}(t)\|$ is constant.
+  kind: lemma
+  location: Lecture 36
+  name: Lemma 36.3
+- description: 'Let $f: U \rightarrow \mathbb{R}^{n+1}$ be a partial parametrization
+    of $M$, and $c: I \rightarrow U$ a smooth curve on its domain. Then $\gamma=f(c)$
+    is a geodesic iff $c$ itself satisfies the geodesic equation $\frac{d^{2} c_{k}}{dt^{2}}+\sum_{ij}
+    \Gamma_{ij}^{k} \frac{dc_{i}}{dt} \frac{dc_{j}}{dt}=0$.'
+  kind: proposition
+  location: Lecture 36
+  name: Proposition 36.4
+- description: 'Two geodesics $\gamma, \tilde{\gamma}: I \rightarrow M$ with $\gamma(0)=\tilde{\gamma}(0)$
+    and $\gamma^{\prime}(0)=\tilde{\gamma}^{\prime}(0)$ agree.'
+  kind: corollary
+  location: Lecture 36
+  name: Corollary 36.5 (proof sketched)
+- description: 'Given any point $y \in M$ and any tangent vector $Y \in TM_{y}$, there
+    is an interval $I \subset \mathbb{R}$ containing 0 and a geodesic $\gamma: I \rightarrow
+    \mathbb{R}$ such that $\gamma(0)=y, \gamma^{\prime}(0)=Y$. If $M$ is a closed
+    subset of $\mathbb{R}^{n+1}$, one can take $I=\mathbb{R}$, which means that geodesics
+    are defined for all times.'
+  kind: corollary
+  location: Lecture 36
+  name: Corollary 36.6 (proof sketched)
+- description: A curve $\gamma:[a,b] \rightarrow M$ is a geodesic if and only if the
+    following holds. For any smooth family of paths $(\gamma_{s})$, $-\epsilon<s<\epsilon$,
+    with the same endpoints $\gamma_{s}(a)=p, \gamma_{s}(b)=q$ and with $\gamma_{0}=\gamma$,
+    we have $\left.\frac{\partial}{\partial s} E(\gamma_{s})\right|_{s=0}=0$.
+  kind: theorem
+  location: Lecture 38
+  name: Theorem 38.1 (proof sketched)
+- description: A path which is an absolute minimizer of the energy (over all paths
+    $\gamma:[a,b] \rightarrow M$ with fixed endpoints $\gamma(a)=p, \gamma(b)=q$),
+    is necessarily a geodesic.
+  kind: corollary
+  location: Lecture 38
+  name: Corollary 38.2
+- description: Suppose that $M$ is closed and connected. Then, for any given $p, q$
+    and any interval $[a,b]$, there is a geodesic $\gamma:[a,b] \rightarrow M$ which
+    is an absolute minimizer of the energy.
+  kind: theorem
+  location: Lecture 38
+  name: Theorem 38.3 (no proof)
+- description: Write the geodesic equations in conjugate variables $x_{k}$ (position)
+    and $p_{k}=\sum_{l} g_{kl}(x) v_{l}$ (momentum). Then they take on the Hamiltonian
+    form $x_{k}^{\prime}=\frac{\partial H}{\partial p_{k}}$, $p_{k}^{\prime}=-\frac{\partial
+    H}{\partial x_{k}}$, where $H=\frac{1}{2} I(v,v)=\frac{1}{2}\langle p, G^{-1}(x)
+    \cdot p\rangle=\frac{1}{2} \sum_{ij} p_{i} g^{ij}(x) p_{j}$.
+  kind: proposition
+  location: Lecture 38
+  name: Proposition 38.4
+- description: 'If $M$ is a connected hypersurface, then $(M, \text{dist})$ is a metric
+    space. By this we mean that it satisfies the following axioms: $\text{dist}(p,q)
+    \geq 0$, with equality if and only if $p=q$; $\text{dist}(p,q)=\text{dist}(q,p)$;
+    $\text{dist}(p,q) \leq \text{dist}(p,r)+\text{dist}(r,q)$.'
+  kind: lemma
+  location: Lecture 39
+  name: Lemma 39.1
+- description: Let $f:[a,b] \rightarrow \mathbb{R}$ be a function. Then $\int_{a}^{b}
+    f(t) dt \leq \sqrt{b-a} \sqrt{\int_{a}^{b} f(t)^{2} dt}$ with equality if and
+    only if $f$ is constant.
+  kind: proposition
+  location: Lecture 39
+  name: Proposition 39.2 (part of the Cauchy-Schwarz inequality; no proof)
+- description: For any path $\gamma:[a,b] \rightarrow M$, we have $L(\gamma) \leq
+    2^{1/2}(b-a)^{1/2} E(\gamma)^{1/2}$, with equality if and only if $\gamma$ has
+    constant speed.
+  kind: corollary
+  location: Lecture 39
+  name: Corollary 39.3
+- description: If we fix the endpoints $\gamma(a)=p, \gamma(b)=q$, a path is an absolute
+    energy-minimizer if and only if it is an absolute length-minimizer and is parametrized
+    with constant speed.
+  kind: corollary
+  location: Lecture 39
+  name: Corollary 39.4
+- description: Let $M$ be a closed connected hypersurface. Then, for any two points
+    $p, q$ there is a path $\gamma$ connecting them, such that $L(\gamma)=\text{dist}(p,q)$.
+    In other words, the infimum in the definition of distance is always attained.
+  kind: corollary
+  location: Lecture 39
+  name: Corollary 39.5
+- description: For $z, w \in U$, the distance in the hyperbolic metric is $\text{dist}(z,w)=2
+    \operatorname{arctanh} \frac{|z-w|}{|\bar{w}z-1|}$.
+  kind: lemma
+  location: Lecture 39
+  name: Lemma 39.6 (partial proof)
+- description: 'Let $h: U \rightarrow U$ be a holomorphic (complex differentiable)
+    function. Then at every point $z \in U$, $|h^{\prime}(z)| \leq \frac{1-|h(z)|^{2}}{1-|z|^{2}}$.'
+  kind: theorem
+  location: Lecture 39
+  name: Theorem 39.7 (Schwarz-Pick)
+- description: For $h$ as before, $I_{h(z)}(Dh(z) X, Dh(z) X) \leq I_{z}(X, X)$.
+  kind: corollary
+  location: Lecture 39
+  name: Corollary 39.8
+- description: 'Any holomorphic function $h: U \rightarrow U$ is distance-nonincreasing
+    for the hyperbolic metric: $\text{dist}(h(p), h(q)) \leq \text{dist}(p,q)$.'
+  kind: corollary
+  location: Lecture 39
+  name: Corollary 39.9
+- description: A continuous path $\gamma:[a,b] \rightarrow X$ is called a metric geodesic
+    if $d(\gamma(s), \gamma(t))=|s-t|$ for all $s, t \in [a,b]$.
+  kind: definition
+  location: Lecture 40
+  name: Definition 40.1
+- description: Let $X$ be a geodesic metric space. $X$ is called nonpositively curved
+    in the sense of Busemann (or a Busemann space) if it has the following property.
+    Whenever $\gamma_{1}, \gamma_{2}:[0,l] \rightarrow X$ are metric geodesics starting
+    at the same point $\gamma_{1}(l)=\gamma_{2}(l)$, then we have $d(\gamma_{1}(t),
+    \gamma_{2}(t)) \leq (t/l) d(\gamma_{1}(l), \gamma_{2}(l))$.
+  kind: definition
+  location: Lecture 40
+  name: Definition 40.3
+- description: Any two points in a Busemann space are joined by a unique metric geodesic.
+  kind: lemma
+  location: Lecture 40
+  name: Lemma 40.7
+- description: Let $X$ be a geodesic metric space. $X$ is called nonpositively curved
+    in the sense of Cartan-Alexandrov-Topogonov (or a CAT space) if for all $\Delta,
+    \Delta^{\prime}$ and all points $x, y$ on the boundary of $\Delta$, with comparison
+    points $x^{\prime}, y^{\prime}$, we have $\text{dist}(x,y) \leq \text{dist}(x^{\prime},
+    y^{\prime})$.
+  kind: definition
+  location: Lecture 40
+  name: Definition 40.8
+- description: The geodesic curvature of a regular curve $\gamma$ on a surface $M
+    \subset \mathbb{R}^{3}$ with Gauss map $\nu$ is defined by $\kappa_{geod}(t)=\frac{\det(\gamma^{\prime}(t),
+    \gamma^{\prime\prime}(t), \nu(\gamma(t)))}{\|\gamma^{\prime}(t)\|^{3}}$.
+  kind: definition
+  location: Lecture 41
+  name: Definition 41.1
+- description: 'Take a partial parametrization $f: U \rightarrow M \subset \mathbb{R}^{3}$
+    which is compatible with our choice of orientation, and let $\gamma=f(c)$. Suppose
+    that we have a moving frame $(X_{1}(x), X_{2}(x))$ which is positively oriented,
+    and such that $X_{1}(c(t))=c^{\prime}(t)/I_{c(t)}(c^{\prime}(t), c^{\prime}(t))^{1/2}$.
+    Then, in terms of the associated connection matrices, $\kappa_{\text{geod}}(t)=\frac{(A_{1})_{12}
+    c_{1}^{\prime}(t)+(A_{2})_{12} c_{2}^{\prime}(t)}{I_{c(t)}(c^{\prime}(t), c^{\prime}(t))^{1/2}}$.'
+  kind: lemma
+  location: Lecture 41
+  name: Lemma 41.2
+- description: 'Let $M \subset \mathbb{R}^{3}$ be a surface, and $f: U \rightarrow
+    M$ a partial parametrization, and $D \subset U$ a curvilinear disc. Take the simple
+    closed curve $c$ which parametrizes the boundary of $D$, and consider the total
+    geodesic curvature of $\gamma=f(c)$. This satisfies $\kappa_{\text{geod}}^{tot}=\int
+    \kappa_{\text{geod}}(t) I_{c(t)}(c^{\prime}(t), c^{\prime}(t))^{1/2} dt=2\pi-\int_{D}
+    \kappa_{\text{gauss}} \sqrt{\det G} dx$ where $G$ is the first fundamental form.'
+  kind: theorem
+  location: Lecture 41
+  name: Theorem 41.3 (Gauss-Bonnet with boundary, for discs; proof sketched)
+- description: 'Let M ⊂ ℝ³ be a surface, f: U → M a partial parametrization, and T
+    ⊂ U a curvilinear triangle, whose sides map to geodesics in M. Let α₁, α₂, α₃
+    be the angles at the corners of the triangle, measured with respect to the first
+    fundamental form. Then α₁ + α₂ + α₃ = π + ∫_T κ_gauss √(det G) dx.'
+  kind: corollary
+  location: Lecture 41
+  name: Corollary 41.4

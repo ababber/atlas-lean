@@ -1,0 +1,1011 @@
+- description: A PDE in a single unknown $u$ is an equation involving $u$ and its
+    partial derivatives. All such equations can be written as $F\left(u, u_{x^{1}},
+    \cdots, u_{x^{n}}, u_{x^{1} x^{1}}, \cdots, u_{x^{i_{1} \cdots x^{i} N}}, x^{1},
+    x^{2}, \cdots, x^{n}\right)=0, \quad i_{1}, \cdots, i_{N} \in\{1,2, \cdots, n\}$
+    for some function $F$. Here $N$ is called the order of the PDE. $N$ is the maximum
+    number of derivatives appearing in the equation.
+  kind: definition
+  location: 'Class Meeting #1, Section 1'
+  name: Definition 1.0.1
+- description: A linear differential operator $\mathcal{L}$ is a differential operator
+    such that $\mathcal{L}(a u+b v)=a \mathcal{L} u+b \mathcal{L} v$ for all constants
+    $a, b \in \mathbb{R}$ and all functions $u, v$.
+  kind: definition
+  location: 'Class Meeting #1, Section 4'
+  name: Definition 4.0.2
+- description: A PDE is linear if it can be written as $\mathcal{L} u=f\left(x^{1},
+    \cdots, x^{n}\right)$ for some linear operator $\mathcal{L}$ and some function
+    $f$ of the coordinates.
+  kind: definition
+  location: 'Class Meeting #1, Section 4'
+  name: Definition 4.0.3
+- description: If $f=0$, then we say that the PDE is homogeneous. Otherwise, we say
+    that it is inhomogeneous.
+  kind: definition
+  location: 'Class Meeting #1, Section 4'
+  name: Definition 4.0.4
+- description: If $u_{1}, \cdots, u_{M}$ are solutions to the linear PDE $\mathcal{L}
+    u=0$ and $c_{1}, \cdots, c_{M} \in \mathbb{R}$, then $\sum_{i=1}^{M} c_{i} u_{i}$
+    is also a solution.
+  kind: proposition
+  location: 'Class Meeting #1, Section 4'
+  name: Proposition 4.0.1 (Superposition principle)
+- description: 'Let $S_{h}$ be the set of all solutions to the homogeneous linear
+    PDE $\mathcal{L} u=0$, and let $u_{I}$ be a "fixed" solution to the inhomogeneous
+    linear PDE $\mathcal{L} u=f\left(x^{1}, \cdots, x^{n}\right)$. Then the set $S_{I}$
+    of all solutions to $\mathcal{L} u=f\left(x^{1}, \cdots, x^{n}\right)$ is the
+    translation of $S_{H}$ by $u_{I}$: $S_{I}=\left\{u_{I}+u_{H} \mid u_{H} \in S_{H}\right\}$.'
+  kind: proposition
+  location: 'Class Meeting #1, Section 4'
+  name: Proposition 4.0.2 (Relationship between the inhomogeneous and homogeneous
+    linear PDE solutions)
+- description: Let $f$ be a function defined on a domain $\Omega \subset \mathbb{R}$.
+    Then for any integer $k \geq 0$, we define the $C^{k}$ norm of $f$ on $\Omega$
+    by $\|f\|_{C^{k}(\Omega)} \stackrel{\text{def}}{=} \sum_{a=0}^{k} \sup_{x \in
+    \Omega}\left|f^{(a)}(x)\right|$, where $f^{(a)}(x)$ is the $a^{\text{th}}$ order
+    derivative of $f(x)$. We often omit the symbol $\Omega$ when $\Omega=\mathbb{R}$.
+  kind: definition
+  location: 'Class Meeting #1, Section 7.1'
+  name: Definition 7.1.1 ($C^{k}$ norms)
+- description: Let $1 \leq p < \infty$ be a number, and let $f$ be a function defined
+    on a domain $\Omega \subset \mathbb{R}^{n}$. We define the $L^{p}$ norm of $f$
+    by $\|f\|_{L^{p}(\Omega)} \stackrel{\text{def}}{=}\left(\int_{\Omega}|f(x)|^{p}
+    d^{n} x\right)^{1/p}$. We often write just $L^{p}$ instead of $L^{p}\left(\mathbb{R}^{n}\right)$.
+  kind: definition
+  location: 'Class Meeting #1, Section 7.1'
+  name: Definition 7.1.2 ($L^{p}$ norms)
+- description: 'A vectorfield $\mathbf{F}$ on $\Omega \subset \mathbb{R}^{n}$ is an
+    $\mathbb{R}^{n}$-valued (i.e. vector-valued) function defined on $\Omega$. That
+    is, $\mathbf{F}: \Omega \rightarrow \mathbb{R}^{n}$, $\mathbf{F}\left(x^{1}, \cdots,
+    x^{n}\right) = \left(F^{1}\left(x^{1}, \cdots, x^{n}\right), \cdots, F^{n}\left(x^{1},
+    \cdots, x^{n}\right)\right)$, where each of the $F^{i}$ are scalar-valued functions
+    on $\mathbb{R}^{n}$.'
+  kind: definition
+  location: 'Class Meeting #1, Section 7.2'
+  name: Definition 7.2.1 (Vectorfield)
+- description: $\nabla \cdot \mathbf{F}$, the divergence of $\mathbf{F}$, is the scalar-valued
+    function on $\mathbb{R}^{n}$ defined by $\nabla \cdot \mathbf{F} \stackrel{\text{def}}{=}
+    \sum_{i=1}^{n} \partial_{i} F^{i}$.
+  kind: definition
+  location: 'Class Meeting #1, Section 7.2'
+  name: Definition 7.2.2 (Divergence)
+- description: 'Let $\Omega \subset \mathbb{R}^{3}$ be a domain with a boundary that
+    we denote by $\partial \Omega$. Then the following formula holds: $\int_{\Omega}
+    \nabla \cdot \mathbf{F}(x, y, z) \, dx \, dy \, dz=\int_{\partial \Omega} \mathbf{F}(\sigma)
+    \cdot \hat{\mathbf{N}}(\sigma) \, d \sigma$. Above, $\hat{\mathbf{N}}(\sigma)$
+    is the unit outward normal vector to $\partial \Omega$, and $d \sigma$ is the
+    surface measure induced on $\partial \Omega$.'
+  kind: theorem
+  location: 'Class Meeting #1, Section 7.2'
+  name: Theorem 7.1 (Divergence Theorem)
+- description: If $f(x)$ is a function such that $\|f\|_{L^{2}([0,1])}^{2} \stackrel{\text{def}}{=}
+    \int_{0}^{1}|f(x)|^{2} d x<\infty$, then $f(x)$ can be Fourier-expanded as $f(x)=\sum_{m=1}^{\infty}
+    A_{m} \sin (m \pi x)$, where $A_{m}=2 \int_{[0,1]} f(x) \sin (m \pi x) d x$. The
+    infinite sum converges in the sense that $\left\|f-\sum_{m=1}^{N} A_{m} \sin (m
+    \pi x)\right\|_{L^{2}([0,1])} \rightarrow 0$ as $N \rightarrow \infty$. We also
+    have the Parseval identity $\|f\|_{L^{2}([0,1])}^{2}=\sum_{m=1}^{\infty} A_{m}^{2}\|\sin
+    (m \pi x)\|_{L^{2}([0,1])}^{2}=\sum_{m=1}^{\infty} \frac{1}{2} A_{m}^{2}$. Furthermore,
+    if $f$ is continuous on $[0,1]$, then for any subinterval $[a, b] \subset(0,1)$,
+    $\left\|f-\sum_{m=1}^{N} A_{m} \sin (m \pi x)\right\|_{C^{0}([a, b])} \rightarrow
+    0$ as $N \rightarrow \infty$, i.e., the convergence is uniform on any closed subinterval
+    $[a, b]$ of the open interval $(0,1)$.
+  kind: theorem
+  location: 'Class Meeting #2, Section 4 (Separation of variables)'
+  name: Theorem 4.1 (Some basic facts from Fourier analysis)
+- description: The fundamental solution $\Gamma_{D}(t, x)$ to the inhomogeneous heat
+    equation $u_{t}-D \Delta u=f$ is defined to be $\Gamma_{D}(t, x) \stackrel{\text{def}}{=}
+    \frac{1}{(4 \pi D t)^{n/2}} e^{-\frac{|x|^{2}}{4 D t}}$, for $t>0, x \in \mathbb{R}^{n}$,
+    where $x \stackrel{\text{def}}{=}(x^{1}, \cdots, x^{n})$, $|x|^{2} \stackrel{\text{def}}{=}
+    \sum_{i=1}^{n}(x^{i})^{2}$.
+  kind: definition
+  location: 'Class Meeting #5, Section 1 (The Fundamental solution)'
+  name: Definition 1.0.1
+- description: Let $\Omega \subset \mathbb{R}^{n}$ be a domain. Recall that $Q_{T}
+    \stackrel{\text{def}}{=} (0, T) \times \Omega$ is a spacetime cylinder and that
+    $\partial_{p} Q_{T} \stackrel{\text{def}}{=}\{0\} \times \bar{\Omega} \cup(0,
+    T] \times \partial \Omega$ is its corresponding parabolic boundary. Let $w \in
+    C^{1,2}(Q_{T}) \cap C(\bar{Q}_{T})$ be a solution to the (possibly inhomogeneous)
+    heat equation $w_{t}-D \Delta w=f$ where $f \leq 0$. Then $w(t, x)$ obtains its
+    max in the region $\bar{Q}_{T}$ on $\partial_{p} Q_{T}$. Thus, if $w$ is strictly
+    negative on $\partial_{p} Q_{T}$, then $w$ is strictly negative on $\bar{Q}_{T}$.
+  kind: theorem
+  location: 'Class Meeting #4, Section 1 (The Weak Maximum Principle)'
+  name: Theorem 1.1 (Weak Maximum Principle)
+- description: 'Suppose that $v$, $w$ are solutions to the heat equations $v_{t}-D
+    v_{x x}=f$ and $w_{t}-D w_{x x}=g$. Then (1) (Comparison): If $v \geq w$ on $\partial_{p}
+    Q_{T}$ and $f \geq g$, then $v \geq w$ on all of $Q_{T}$. (2) (Stability): $\max_{\bar{Q}_{T}}|v-w|
+    \leq \max_{\partial_{p} Q_{T}}|v-w|+T \max_{\bar{Q}_{T}}|f-g|$.'
+  kind: corollary
+  location: 'Class Meeting #4, Section 1 (The Weak Maximum Principle)'
+  name: Corollary 1.0.1 (Comparison Principle and Stability)
+- description: $\Gamma_{D}(t, x)$ is a solution to the heat equation $u_{t}-D \Delta
+    u = 0$ for $x \in \mathbb{R}^{n}, t>0$.
+  kind: lemma
+  location: 'Class Meeting #5, Section 1 (The Fundamental solution)'
+  name: Lemma 1.0.1
+- description: '$\Gamma_{D}(t, x)$ has the following properties: (1) If $x \neq 0$,
+    then $\lim_{t \rightarrow 0^{+}} \Gamma_{D}(t, x)=0$. (2) $\lim_{t \rightarrow
+    0^{+}} \Gamma_{D}(t, 0)=\infty$. (3) $\int_{\mathbb{R}^{n}} \Gamma_{D}(t, x) d^{n}
+    x=1$ for all $t>0$.'
+  kind: lemma
+  location: 'Class Meeting #5, Section 1 (The Fundamental solution)'
+  name: Lemma 1.0.2
+- description: 'The delta distribution $\delta$ is an example of a mathematical object
+    called a distribution. It acts on suitable functions $\phi(x)$ as follows: $\langle\delta,
+    \phi\rangle \stackrel{\text{def}}{=} \phi(0)$.'
+  kind: definition
+  location: 'Class Meeting #5, Section 1 (The Fundamental solution)'
+  name: Definition 1.0.2
+- description: Suppose that $\phi(x)$ is a continuous function on $\mathbb{R}^{n}$
+    and that there exist constants $a, b \geq 0$ such that $|\phi(x)| \leq a e^{b|x|^{2}}$.
+    Then $\lim_{t \rightarrow 0^{+}} \int_{\mathbb{R}^{n}} \Gamma_{D}(t, x) \phi(x)
+    d^{n} x=\phi(0)$.
+  kind: lemma
+  location: 'Class Meeting #5, Section 1 (The Fundamental solution)'
+  name: Lemma 1.0.3
+- description: $\Gamma_{D}(t, x)$ is a solution to the heat equation (1.0.1) (with
+    $f=0$) verifying the initial conditions $\lim_{t \rightarrow 0^{+}} \Gamma_{D}(t,
+    x)=\delta(x)$.
+  kind: proposition
+  location: Section 1
+  name: Proposition 1.0.4 (Properties of $\Gamma_{D}(t, x)$)
+- description: 'If $f$ and $g$ are two functions on $\mathbb{R}^{n}$, then we define
+    their convolution $f * g$ to be the following function on $\mathbb{R}^{n}$: $(f
+    * g)(x) \stackrel{\text{def}}{=} \int_{\mathbb{R}^{n}} f(y) g(x-y) d^{n} y$.'
+  kind: definition
+  location: Section 1.1
+  name: Definition 1.1.1
+- description: Let $I(a, b)$ be a function on $\mathbb{R} \times \mathbb{R}$. Assume
+    that $\int_{\mathbb{R}}|I(a, b)| da<\infty$ for all $b$ belonging to a neighborhood
+    of $b_{0}$ and define $J(b) \stackrel{\text{def}}{=} \int_{\mathbb{R}} I(a, b)
+    da$. Assume that there exists a neighborhood $\mathcal{N}$ of $b_{0}$ such that
+    for almost every $a$, $\partial_{b} I(a, b)$ exists for $b \in \mathcal{N}$. In
+    addition, assume that there exists a function $U(a)$ (defined for almost all $a$)
+    such that for $b \in \mathcal{N}$, we have that $|\partial_{b} I(a, b)| \leq U(a)$
+    and such that $\int_{\mathbb{R}} U(a) da<\infty$. Then $J(b)$ is differentiable
+    near $b_{0}$, and $\partial_{b} J(b)=\int_{\mathbb{R}} \partial_{b} I(a, b) da$.
+  kind: proposition
+  location: Section 1.1
+  name: Proposition 1.1.1 (Differentiating under the integral)
+- description: Assume that $g(x)$ is a continuous function on $\mathbb{R}^{n}$ that
+    verifies the bounds $|g(x)| \leq a e^{b|x|^{2}}$, where $a, b>0$ are constants.
+    Then there exists a solution $u(t, x)$ to the homogeneous heat equation $u_{t}-D
+    \Delta u=0$, $(t>0, x \in \mathbb{R}^{n})$, $u(0, x)=g(x)$, $x \in \mathbb{R}^{n}$,
+    existing for $(t, x) \in [0, T) \times \mathbb{R}^{n}$, where $T \stackrel{\text{def}}{=}
+    \frac{1}{4 D b}$. Furthermore, $u(t, x)$ can be represented as $u(t, x)=[g(\cdot)
+    * \Gamma_{D}(t, \cdot)](x) = \int_{\mathbb{R}^{n}} g(y) \Gamma_{D}(t, x-y) d^{n}
+    y = \frac{1}{(4 \pi D t)^{n/2}} \int_{\mathbb{R}^{n}} g(y) e^{-\frac{|x-y|^{2}}{4
+    D t}} d^{n} y$. The solution $u(t, x)$ is of regularity $C^{\infty}\left((0, \frac{1}{4
+    D b}) \times \mathbb{R}^{n}\right)$ (i.e., it is infinitely differentiable). Finally,
+    for each compact subinterval $[0, T'] \subset [0, T)$, there exist constants $A,
+    B>0$ (depending on the compact subinterval) such that $|u(t, x)| \leq A e^{B|x|^{2}}$
+    for all $(t, x) \in [0, T'] \times \mathbb{R}^{n}$. The solution $u(t, x)$ is
+    the unique solution in the class of functions verifying a bound of the form $|u(t,x)|
+    \leq A e^{B|x|^2}$.
+  kind: theorem
+  location: Section 1.1
+  name: Theorem 1.1 (Solving the global Cauchy problem via the fundamental solution)
+- description: 'Let $g(x)$ and $T \stackrel{\text{def}}{=} \frac{1}{4 D b}$ be as
+    in Theorem 1.1. Also assume that $f(t, x)$, $\partial_{i} f(t, x)$, and $\partial_{i}
+    \partial_{j} f(t, x)$ are continuous, bounded functions on $[0, T) \times \overline{\mathbb{R}^{n}}$
+    for $1 \leq i, j \leq n$. Then there exists a unique solution $u(t, x)$ to the
+    inhomogeneous heat equation $u_{t}-D \Delta u = f(t, x)$, $(t, x) \in (0, \infty)
+    \times \mathbb{R}$, $u(0, x) = g(x)$, $x \in \mathbb{R}$, existing for $(t, x)
+    \in [0, T) \times \mathbb{R}$. Furthermore, $u(t, x)$ can be represented as $u(t,
+    x)=(\Gamma_{D}(t, \cdot) * g)(x)+\int_{0}^{t}(\Gamma_{D}(t-s, \cdot) * f(s, \cdot))(x)
+    ds$. The solution has the following regularity properties: $u \in C^{0}([0, T)
+    \times \mathbb{R}) \cap C^{1,2}((0, T) \times \mathbb{R})$.'
+  kind: theorem
+  location: Section 1.1
+  name: Theorem 1.2 (Duhamel's principle)
+- description: Suppose that $u(t, x)$ is a solution to the heat equation (2.0.21).
+    Let $A, t_{0} \in \mathbb{R}$ be constants, and $x_{0} \in \mathbb{R}^{n}$. Then
+    the amplified and translated function $u^{*}(t, x) \stackrel{\text{def}}{=} A
+    u(t-t_{0}, x-x_{0})$ is also a solution to (2.0.21). Similarly, if $\lambda>0$
+    is a constant, then the amplified, parabolically scaled function $u^{*}(t, x)
+    \stackrel{\text{def}}{=} A u(\lambda^{2} t, \lambda x)$ is also a solution.
+  kind: lemma
+  location: Section 2
+  name: Lemma 2.0.2 (Invariance of solutions to the heat equation under translations
+    and parabolic dilations)
+- description: We define the total thermal energy $\mathcal{T}(t)$ at time $t$ associated
+    to $u(t, x)$ by $\mathcal{T}(t) \stackrel{\text{def}}{=} \int_{\mathbb{R}^{n}}
+    u(t, x) d^{n} x$.
+  kind: definition
+  location: Section 2
+  name: Definition 2.0.2
+- description: 'Let $u(t, x) \in C^{1,2}([0, \infty) \times \mathbb{R}^{n})$ be a
+    solution to the heat equation $-\partial_{t} u(t, x)+ \Delta u(t, x)=0$. Assume
+    that at each fixed $t$, $\lim_{|x| \rightarrow \infty}|x|^{n-1}|\nabla_{x} u(t,
+    x)|=0$, uniformly in $x$. Furthermore, assume that there exists a function $f(x)
+    \geq 0$, not depending on $t$, such that $|\partial_{t} u| \leq f(x)$ and such
+    that $\int_{\mathbb{R}^{n}} f(x) d^{n} x<\infty$. Then the total thermal energy
+    of $u(t, x)$ is constant in time: $\mathcal{T}(t)=\mathcal{T}(0)$.'
+  kind: lemma
+  location: Section 2
+  name: Lemma 2.0.3
+- description: Let $\Omega \subset \mathbb{R}^{n}$ be a smooth, bounded domain. Then
+    under Dirichlet, Robin, or mixed boundary conditions, there is at most one solution
+    of regularity $u \in C^{2}(\Omega) \cap C^{1}(\bar{\Omega})$ to the Poisson equation
+    (0.0.3). In the case of Neumann conditions, any two solutions can differ by at
+    most a constant.
+  kind: theorem
+  location: 'Class Meeting #6, Section 3 (Uniqueness via the Energy Method)'
+  name: Theorem 3.1
+- description: 'Let $u(x)$ be harmonic in the domain $\Omega \subset \mathbb{R}^{n}$,
+    and let $B_{R}(x) \subset \Omega$ be a ball of radius $R$ centered at the point
+    $x$. Then the following mean value formulas hold: $u(x)=\frac{n}{\omega_{n} R^{n}}
+    \int_{B_{R}(x)} u(y) d^{n} y$ and $u(x)=\frac{1}{\omega_{n} R^{n-1}} \int_{\partial
+    B_{R}(x)} u(\sigma) d \sigma$, where $\omega_{n}$ is the area of $\partial B_{1}(0)
+    \subset \mathbb{R}^{n}$, that is, the area of the boundary of the unit ball in
+    $\mathbb{R}^{n}$.'
+  kind: theorem
+  location: 'Class Meeting #6, Section 4 (Mean value properties)'
+  name: Theorem 4.1 (Mean value properties)
+- description: Let $\Omega \subset \mathbb{R}^{n}$ be a domain, and assume that $u
+    \in C(\Omega)$ verifies the mean value property (4.0.12a). Then if $u$ achieves
+    its max or min at a point $p \in \Omega$, then $u$ is constant on $\Omega$. Therefore,
+    if $\Omega$ is bounded and $u \in C(\bar{\Omega})$ is not constant, then for every
+    $x \in \Omega$, we have $u(x)<\max_{y \in \partial \Omega} u(y)$ and $u(x)>\min_{y
+    \in \partial \Omega} u(y)$.
+  kind: theorem
+  location: 'Class Meeting #6, Section 5 (Maximum Principle)'
+  name: Theorem 5.1 (Strong Maximum Principle)
+- description: Let $\Omega \subset \mathbb{R}^{n}$ be a bounded domain and let $f
+    \in C(\Omega)$. Then the PDE $\Delta u=0$ for $x \in \Omega$, $u(x)=f(x)$ for
+    $x \in \partial \Omega$ has at most one solution $u_{f} \in C^{2}(\Omega) \cap
+    C(\bar{\Omega})$. Furthermore, if $u_{f}$ and $u_{g}$ are the solutions corresponding
+    to the data $f, g \in C(\bar{\Omega})$, then (1) (Comparison Principle) If $f
+    \geq g$ on $\partial \Omega$ and $f \neq g$, then $u_{f}>u_{g}$ in $\Omega$. (2)
+    (Stability Estimate) For any $x \in \Omega$, we have that $|u_{f}(x)-u_{g}(x)|
+    \leq \max_{y \in \partial \Omega}|f(y)-g(y)|$.
+  kind: corollary
+  location: 'Class Meeting #6, Section 5 (Maximum Principle)'
+  name: Corollary 5.0.1
+- description: The fundamental solution $\Phi$ corresponding to the operator $\Delta$
+    is $\Phi(x) \stackrel{\text{def}}{=} \frac{1}{2\pi} \ln |x|$ for $n=2$, and $\Phi(x)
+    \stackrel{\text{def}}{=} -\frac{1}{\omega_{n}|x|^{n-2}}$ for $n \geq 3$, where
+    $|x| \stackrel{\text{def}}{=} \sqrt{\sum_{i=1}^{n}(x^{i})^{2}}$ and $\omega_{n}$
+    is the surface area of a unit ball in $\mathbb{R}^{n}$ (e.g. $\omega_{3}=4\pi$).
+  kind: definition
+  location: 'Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in
+    $\mathbb{R}^{n}$)'
+  name: Definition 1.0.1
+- description: If $x \neq 0$, then $\Delta \Phi(x)=0$.
+  kind: lemma
+  location: 'Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in
+    $\mathbb{R}^{n}$)'
+  name: Lemma 1.0.1
+- description: 'Let $f(x) \in C_{0}^{\infty}(\mathbb{R}^{n})$ (i.e., $f(x)$ is a smooth,
+    compactly supported function on $\mathbb{R}^{n}$). Then for $n \geq 3$, the Laplace
+    equation $\Delta u(x)=f(x)$ has a unique smooth solution $u(x)$ that tends to
+    0 as $|x| \rightarrow \infty$. For $n=2$, the solution is unique under the assumptions
+    $\frac{u(x)}{|x|} \rightarrow 0$ as $|x| \rightarrow \infty$ and $|\nabla u(x)|
+    \rightarrow 0$ as $|x| \rightarrow \infty$. Furthermore, these unique solutions
+    can be represented as $u(x)=(\Phi * f)(x)= \frac{1}{2\pi} \int_{\mathbb{R}^{2}}
+    \ln |y| f(x-y) d^{2} y$ for $n=2$, and $u(x)=-\frac{1}{\omega_{n}} \int_{\mathbb{R}^{n}}|y|^{n-2}
+    f(x-y) d^{n} y$ for $n \geq 3$. Furthermore, there exist constants $C_{n}>0$ such
+    that the following decay estimate holds for the solution as $|x| \rightarrow \infty$:
+    $|u(x)| \leq C_{2} \ln |x|$ for $n=2$, and $|u(x)| \leq \frac{C_{n}}{|x|^{n-2}}$
+    for $n \geq 3$.'
+  kind: theorem
+  location: 'Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in
+    $\mathbb{R}^{n}$)'
+  name: Theorem 1.1 (Solution to Poisson's equation in $\mathbb{R}^{n}$)
+- description: Let $g$ be a bounded Lipschitz domain, and let $g \in C(\partial \Omega)$.
+    Then the PDE 2.0.16 has a unique solution $u \in C^{2}(\Omega) \cap C(\bar{\Omega})$.
+  kind: theorem
+  location: Section 2
+  name: Theorem 2.1 (Basic existence theorem)
+- description: 'Let $\Omega \subset \mathbb{R}^{n}$ be a domain. A Green function
+    in $\Omega$ is defined to be a function of $(x, y) \in \Omega \times \Omega$ verifying
+    the following conditions for each fixed $x \in \Omega$: $\Delta_{y} G(x, y) =
+    \delta(x)$, $y \in \Omega$, and $G(x, \sigma) = 0$, $\sigma \in \partial \Omega$.'
+  kind: definition
+  location: Section 2
+  name: Definition 2.0.2
+- description: Let $\Phi$ be the fundamental solution 1.0.3 for $\Delta$ in $\mathbb{R}^{n}$,
+    and let $\Omega \in \mathbb{R}^{n}$ be a domain. Then the Green function $G(x,
+    y)$ for $\Omega$ can be decomposed as $G(x, y)=\Phi(x-y)-\phi(x, y)$ where for
+    each $x \in \Omega$, $\phi(x, y)$ solves the Dirichlet problem $\Delta_{y} \phi(x,
+    y) = 0$, $y \in \Omega$, and $\phi(x, \sigma) = \Phi(x-\sigma)$, $\sigma \in \partial
+    \Omega$.
+  kind: proposition
+  location: Section 2
+  name: Proposition 2.0.2
+- description: 'Let $\Phi$ be the fundamental solution (1.0.3) for $\Delta$ in $\mathbb{R}^{n}$,
+    and let $\Omega \subset \mathbb{R}^{n}$ be a domain. Assume that $u \in C^{2}(\bar{\Omega})$.
+    Then for every $x \in \Omega$, we have the following representation formula for
+    $u(x)$: $u(x)=\int_{\Omega} \Phi(x-y) \Delta_{y} u(y) d^{n} y - \int_{\partial
+    \Omega} \Phi(x-\sigma) \nabla_{\hat{N}(\sigma)} u(\sigma) d \sigma + \int_{\partial
+    \Omega} u(\sigma) \nabla_{\hat{N}(\sigma)} \Phi(x-\sigma) d \sigma$.'
+  kind: proposition
+  location: Section 2
+  name: Proposition 2.0.3 (Representation formula for $u$)
+- description: The solution $u$ to (2.0.16) can be represented as $u(x)=-\int_{\Omega}
+    f(y) G(x, y) d^{n} y - \int_{\partial \Omega} g(\sigma) \nabla_{\hat{N}} G(x,
+    \sigma) d \sigma$.
+  kind: theorem
+  location: Section 2
+  name: Theorem 2.2 (Representation formula for solutions to the boundary value Poisson
+    equation)
+- description: 'Let $B_{R}(p) \subset \mathbb{R}^{3}$ be a ball of radius $R$ centered
+    at $p=(p^{1}, p^{2}, p^{3})$, and let $x=(x^{1}, x^{2}, x^{3})$ denote a point
+    in $\mathbb{R}^{3}$. Then the unique solution $u \in C^{2}(B_{R}(p)) \cap C(\bar{B}_{R}(p))$
+    of the PDE $\Delta u=0$, $x \in \Omega$, $u(x)=f(x)$, $x \in \partial \Omega$,
+    can be represented using the Poisson formula: $u(x)=\frac{R^{2}-|x-p|^{2}}{4\pi
+    R} \int_{\partial B_{R}(p)} \frac{f(\sigma)}{|x-\sigma|^{3}} d \sigma$.'
+  kind: theorem
+  location: Section 3
+  name: Theorem 3.1 (Poisson's formula)
+- description: Let $u$ be harmonic and non-negative in the ball $B_{R}(0) \subset
+    \mathbb{R}^{n}$. Then for any $x \in B_{R}(0)$, we have that $\frac{R^{n-2}(R-|x|)}{(R+|x|)^{n-1}}
+    u(0) \leq u(x) \leq \frac{R^{n-2}(R+|x|)}{(R-|x|)^{n-1}} u(0)$.
+  kind: theorem
+  location: Section 4
+  name: Theorem 4.1 (Harnack's inequality)
+- description: Suppose that $u \in C^{2}(\mathbb{R}^{n})$ is harmonic on $\mathbb{R}^{n}$.
+    Suppose there exists a constant $M$ such that $u(x) \geq M$ for all $x \in \mathbb{R}^{n}$,
+    or such that $u(x) \leq M$ for all $x \in \mathbb{R}^{n}$. Then $u$ is constant.
+  kind: corollary
+  location: Section 4
+  name: Corollary 4.0.4 (Liouville's theorem)
+- description: The Green function for a ball $B_{R}(p) \subset \mathbb{R}^{3}$ is
+    $G(x, y)=-\frac{1}{4 \pi|x-y|}+\frac{1}{4 \pi} \frac{R}{|x-p|\left|\frac{R^{2}}{|x-p|^{2}}(x-p)-(y-p)\right|}$
+    for $x \neq p$, and $G(p, y)=-\frac{1}{4 \pi|y-p|}+\frac{1}{4 \pi R}$. Furthermore,
+    if $x \in B_{R}(p)$ and $\sigma \in \partial B_{R}(p)$, then $\nabla_{\hat{N}(\sigma)}
+    G(x, \sigma)=\frac{R^{2}-|x-p|^{2}}{4 \pi R} \frac{1}{|x-\sigma|^{3}}$.
+  kind: lemma
+  location: 'Class Meeting #9, Section 2'
+  name: Lemma 2.0.1
+- description: 'Assume that $f \in C^{2}(\mathbb{R})$ and $g \in C^{1}(\mathbb{R})$.
+    Then the unique solution $u(t, x)$ to $-\partial_{t}^{2} u(t, x)+\partial_{x}^{2}
+    u(t, x)=0$ with initial data $u(0, x)=f(x)$, $\partial_{t} u(0, x)=g(x)$ satisfies
+    $u \in C^{2}([0, \infty) \times \mathbb{R})$ and can be represented by d''Alembert''s
+    formula: $u(t, x)=\frac{1}{2}(f(x+t)+f(x-t))+\frac{1}{2} \int_{z=x-t}^{z=x+t}
+    g(z) d z$.'
+  kind: theorem
+  location: 'Class Meeting #10, Section 4'
+  name: Theorem 4.1 (d'Alembert's formula)
+- description: 'Let $f \in C^{2}([0, \infty)), g \in C^{1}([0, \infty))$, and assume
+    that $f(0)=g(0)=0$. Then the unique solution to the following $1+1$ dimensional
+    initial + boundary value problem
+
+    $$-\partial_{t}^{2} u(t, x)+\partial_{x}^{2} u(t, x) =0, \quad (t, x) \in[0, \infty)
+    \times(0, \infty),$$
+
+    $$u(t, 0) =0, \quad t \in[0, \infty),$$
+
+    $$u(0, x) =f(x), \quad x \in(0, \infty),$$
+
+    $$\partial_{t} u(0, x) =g(x), \quad x \in(0, \infty)$$
+
+    satisfies $u \in C^{2}([0, \infty) \times[0, \infty))$. Furthermore, it can be
+    represented as
+
+    $$u(t, x)= \begin{cases}\frac{1}{2}(f(x+t)+f(x-t))+\frac{1}{2} \int_{z=|x-t|}^{z=x+t}
+    g(z) d z, & \text{ if } 0 \leq t \leq x, \\ \frac{1}{2}(f(x+t)-f(t-x))+\frac{1}{2}
+    \int_{z=|x-t|}^{z=x+t} g(z) d z, & \text{ if } 0 \leq x \leq t.\end{cases}$$'
+  kind: corollary
+  location: 'Class Meeting #10, Section on wave equation'
+  name: Corollary 4.0.1
+- description: 'Let $u(t, x) \in C^{2}([0, \infty) \times \mathbb{R}^{3})$ be a solution
+    to the $1+3$ dimensional global Cauchy problem
+
+    $$-\partial_{t}^{2} u(t, x)+\Delta u(t, x) =0, \quad (t, x) \in[0, \infty) \times
+    \mathbb{R}^{3},$$
+
+    $$u(0, x) =f(x), \quad x \in \mathbb{R}^{3},$$
+
+    $$\partial_{t} u(0, x) =g(x), \quad x \in \mathbb{R}^{3}.$$
+
+    For each $r>0$, define the spherically averaged quantities
+
+    $$U(t, r ; x) \stackrel{\text{def}}{=} \frac{1}{4 \pi r^{2}} \int_{\partial B_{r}(x)}
+    u(t, \sigma) d \sigma=\frac{1}{4 \pi} \int_{\omega \in \partial B_{1}(0)} u(t,
+    x+r \omega) d \omega,$$
+
+    $$F(r ; x) \stackrel{\text{def}}{=} \frac{1}{4 \pi r^{2}} \int_{\partial B_{r}(x)}
+    f(\sigma) d \sigma,$$
+
+    $$G(r ; x) \stackrel{\text{def}}{=} \frac{1}{4 \pi r^{2}} \int_{\partial B_{r}(x)}
+    g(\sigma) d \sigma,$$
+
+    and their related modifications
+
+    $$\widetilde{U}(t, r ; x) \stackrel{\text{def}}{=} r U(t, r ; x), \quad \widetilde{F}(r
+    ; x) \stackrel{\text{def}}{=} r F(r ; x), \quad \widetilde{G}(r ; x) \stackrel{\text{def}}{=}
+    r G(r ; x).$$
+
+    Then $\widetilde{U}(t, r ; x) \in C^{2}([0, \infty) \times[0, \infty))$ is a solution
+    to the following initial + boundary-value problem for the one-dimensional wave
+    equation:
+
+    $$-\partial_{t}^{2} \widetilde{U}(t, r ; x)+\partial_{r}^{2} \widetilde{U}(t,
+    r ; x) =0, \quad (t, r) \in[0, \infty) \times[0, \infty),$$
+
+    $$\widetilde{U}(t, 0 ; x) =0, \quad t \in[0, \infty),$$
+
+    $$\widetilde{U}(0, r ; x) =\widetilde{F}(r ; x), \quad r \in(0, \infty),$$
+
+    $$\partial_{t} \widetilde{U}(0, r ; x) =\widetilde{G}(r ; x), \quad r \in(0, \infty).$$
+
+    Furthermore,
+
+    $$\lim_{r \rightarrow 0} U(t, r ; x)=u(t, x).$$'
+  kind: proposition
+  location: 'Class Meeting #11, Section 1'
+  name: Proposition 1.0.1 (Spherical averages)
+- description: 'Under the assumptions of Proposition 1.0.1, for $0 \leq r \leq t$,
+    we have that
+
+    $$\widetilde{U}(t, r ; x) \stackrel{\text{def}}{=} r U(t, r ; x)=\frac{1}{2}(\widetilde{F}(r+t
+    ; x)-\widetilde{F}(r-t ; x))+\frac{1}{2} \int_{\rho=-r+t}^{\rho=r+t} \widetilde{G}(\rho
+    ; x) d \rho.$$'
+  kind: corollary
+  location: 'Class Meeting #11, Section 1'
+  name: Corollary 1.0.2 (Representation formula for $\widetilde{U}(t, r ; x)$)
+- description: 'Assume that $f \in C^{3}(\mathbb{R}^{3})$ and $g \in C^{2}(\mathbb{R}^{3})$.
+    Then the unique solution $u(t, x)$ to the global Cauchy problem
+
+    $$-\partial_{t}^{2} u(t, x)+\Delta u(t, x) =0, \quad (t, x) \in[0, \infty) \times
+    \mathbb{R}^{3},$$
+
+    $$u(0, x) =f(x), \quad x \in \mathbb{R}^{3},$$
+
+    $$\partial_{t} u(0, x) =g(x), \quad x \in \mathbb{R}^{3}$$
+
+    in $1+3$ dimensions satisfies $u \in C^{2}([0, \infty) \times \mathbb{R}^{3})$
+    and can be represented as follows:
+
+    $$u(t, x)=\frac{1}{4 \pi t^{2}} \int_{\partial B_{t}(x)} f(\sigma) d \sigma+\frac{1}{4
+    \pi t} \int_{\partial B_{t}(x)} \nabla_{\hat{N}(\sigma)} f(\sigma) d \sigma+\frac{1}{4
+    \pi t} \int_{\partial B_{t}(x)} g(\sigma) d \sigma.$$'
+  kind: theorem
+  location: 'Class Meeting #12, Section 1'
+  name: Theorem 1.1 (Kirchhoff's formula)
+- description: '(1) Timelike vectors: $m(X, X) \stackrel{\text{def}}{=} m_{\alpha
+    \beta} X^{\alpha} X^{\beta}<0$.
+
+    (2) Spacelike vectors: $m(X, X)>0$.
+
+    (3) Null vectors: $m(X, X)=0$.
+
+    (4) Causal vectors: {Timelike vectors} $\cup$ {Null vectors}.'
+  kind: definition
+  location: 'Class Meeting #12, Section 2'
+  name: Definition 2.0.1
+- description: A vector $X \in \mathbb{R}^{n}$ is said to be future-directed if $X^{0}>0$.
+  kind: definition
+  location: 'Class Meeting #12, Section 2'
+  name: Definition 2.0.2
+- description: 'A Lorentz transformation is a linear transformation $\Lambda^{\mu}{}_{\nu}$
+    (i.e., a matrix) that preserves the form of the Minkowski metric $m_{\mu \nu}
+    \stackrel{\text{def}}{=} \operatorname{diag}(-1,1,1, \cdots, 1)$:
+
+    $$\Lambda_{\mu}^{\alpha} \Lambda_{\nu}^{\beta} m_{\alpha \beta}=m_{\mu \nu}.$$
+
+    In standard matrix notation, this reads $\Lambda^{T} m \Lambda=m$, where $T$ denotes
+    the transpose.'
+  kind: definition
+  location: 'Class Meeting #12, Section 2.1'
+  name: Definition 2.1.1
+- description: If $X$ is timelike, and $\Lambda$ is a Lorentz transformation, then
+    $\Lambda X$ is also timelike. Analogous results also hold if $X$ is spacelike
+    or null.
+  kind: corollary
+  location: 'Class Meeting #12, Section 2.1'
+  name: Corollary 2.1.1
+- description: 'A null frame is a basis for $\mathbb{R}^{1+n}$ consisting of vectors
+    $\{L, \underline{L}, e_{(1)}, \cdots, e_{(n-1)}\}$. Here, $L$ and $\underline{L}$
+    are null vectors normalized by $m(L, \underline{L})=-2$, and the $e_{(i)}$ are
+    orthonormal vectors that span the $m$-orthogonal complement of $\operatorname{span}(L,
+    \underline{L})$: $m(e_{(i)}, e_{(j)})=\delta_{ij}$, $m(L, e_{(i)})=m(\underline{L},
+    e_{(i)})=0$, for $1 \leq i \leq j \leq n-1$. Note that the $e_{(i)}$ must form
+    a basis for this complement; i.e., since they are $m$-orthonormal, they must be
+    linearly independent.'
+  kind: definition
+  location: 'Class Meeting #12, Section 2.2'
+  name: Definition 2.2.1
+- description: 'If $\{L, \underline{L}, e_{(1)}, \cdots, e_{(n-1)}\}$ is a null frame,
+    then we can decompose
+
+    $$m_{\mu \nu}=-\frac{1}{2} L_{\mu} \underline{L}_{\nu}-\frac{1}{2} \underline{L}_{\mu}
+    L_{\nu}+h_{\mu \nu}$$
+
+    where $h_{\mu \nu}$ is positive-definite on the $m$-orthogonal complement of $\operatorname{span}(L,
+    \underline{L})$, and $h_{\mu \nu}$ vanishes on $\operatorname{span}(L, \underline{L})$.
+
+
+    Similarly, by raising each index on both sides with $m^{-1}$, we have that
+
+    $$(m^{-1})^{\mu \nu}=-\frac{1}{2} L^{\mu} \underline{L}^{\nu}-\frac{1}{2} \underline{L}^{\mu}
+    L^{\nu}+p^{\mu \nu}.$$'
+  kind: proposition
+  location: 'Class Meeting #12, Section 2.2'
+  name: Proposition 2.2.1 (Null frame decomposition of $m$)
+- description: The energy-momentum tensor associated to equation $\square_{m} \phi=0$
+    is $T_{\mu \nu} \stackrel{\text{def}}{=} \partial_{\mu} \phi \partial_{\nu} \phi-\frac{1}{2}
+    m_{\mu \nu}(m^{-1})^{\alpha \beta} \partial_{\alpha} \phi \partial_{\beta} \phi$.
+  kind: definition
+  location: 'Class Meeting #13, Section 1'
+  name: Definition 1.0.1
+- description: $T(X, Y) \stackrel{\text{def}}{=} T_{\alpha \beta} X^{\alpha} Y^{\beta}
+    \geq 0$ if $X, Y$ are both timelike and future-directed or timelike and past-directed.
+  kind: lemma
+  location: 'Class Meeting #13, Section 1'
+  name: Lemma 1.0.1 (Dominant Energy Condition for $T_{\mu \nu}$)
+- description: Let $T_{\mu \nu}$ be the energy-momentum tensor defined in (1.0.3).
+    Then $\partial_{\mu} T^{\mu \nu}=(\square_{m} \phi)(m^{-1})^{\nu \alpha} \partial_{\alpha}
+    \phi$. In particular, if $\phi$ is a solution to $\square_{m} \phi = 0$, then
+    $\partial_{\mu} T^{\mu \nu}=0$.
+  kind: lemma
+  location: 'Class Meeting #13, Section 1'
+  name: Lemma 1.0.2 (The divergence of $T^{\mu \nu}$)
+- description: 'Given any vectorfield $X$, we associate to it the following compatible
+    current, which is itself a vectorfield: ${}^{(X)} J^{\mu} \stackrel{\text{def}}{=}
+    T^{\mu \alpha} X_{\alpha}$.'
+  kind: definition
+  location: 'Class Meeting #13, Section 1'
+  name: Definition 1.0.2
+- description: Using (1.0.4) and (1.0.10), we have that $\partial_{\mu}({}^{(X)} J^{\mu})=T^{\alpha
+    \beta} {}^{(X)} \pi_{\alpha \beta}$, where ${}^{(X)} \pi_{\mu \nu} \stackrel{\text{def}}{=}
+    \frac{1}{2}(\partial_{\mu} X_{\nu}+\partial_{\nu} X_{\mu})$ is called the deformation
+    tensor of $X$.
+  kind: corollary
+  location: 'Class Meeting #13, Section 1'
+  name: Corollary 1.0.3
+- description: 'Let $\phi$ be a solution to the linear wave equation $\square_{m}
+    \phi=0$. Let $X$ be any vectorfield, and let ${}^{(X)} J$ be the compatible current
+    defined in Definition 1.0.2. Let $\Omega \subset \mathbb{R}^{1+n}$ be a domain
+    with boundary $\partial \Omega$. Then the following integral identity holds: $\int_{\partial
+    \Omega} \hat{N}_{\alpha} {}^{(X)} J^{\alpha}[\phi(\sigma)] d\sigma = \int_{\Omega}
+    \partial_{\mu}({}^{(X)} J^{\mu}[\phi(t,x)]) dt\, d^{n} x$.'
+  kind: theorem
+  location: 'Class Meeting #13, Section 1'
+  name: Theorem 1.1 (Divergence Theorem)
+- description: Let $\phi(t,x)$ be a $C^{2}$ solution to the $1+n$ dimensional global
+    Cauchy problem for the linear wave equation $\square_{m} \phi=0$, $\phi(0,x)=f(x)$,
+    $\partial_{t} \phi(0,x)=g(x)$, $x \in \mathbb{R}^{n}$. Let $R \in [0,\infty]$,
+    let $X$ be the past-directed timelike vector defined by $X^{\mu}=-\delta_{0}^{\mu}$,
+    and let ${}^{(X)} J^{\mu}[\phi(t,y)]$ be the compatible current (1.0.12) associated
+    to $X$. Define the square of the energy $E[\phi](t)$ by $E^{2}[\phi](t) \stackrel{\text{def}}{=}
+    \int_{B_{R-t}(p)} \hat{N}_{\mu} {}^{(X)} J^{\mu}[\phi(t,y)] d^{n} y = \frac{1}{2}
+    \int_{B_{R-t}(p)} |\nabla_{t,y} \phi(t,y)|^{2} d^{n} y$ where $\hat{N}_{\mu}=\delta_{\mu}^{0}$
+    is the past-pointing unit normal covector to $\{t\} \times B_{R-t}(p) \subset
+    \mathbb{R}^{4}$, and $B_{R}(p) \subset \mathbb{R}^{3}$ denotes the solid Euclidean
+    ball of radius $R$ centered at $p$. Then $E[\phi](t) \leq E[\phi](0)$.
+  kind: theorem
+  location: 'Class Meeting #13, Section 2'
+  name: Theorem 2.1 (Energy estimates in a cone)
+- description: Suppose that two $C^{2}$ solutions $\phi_{1}$ and $\phi_{2}$ to the
+    wave equation have the same initial data on $B_{R}(p) \subset \{(\tau,y) \mid
+    \tau=0\}$. Then the two solutions agree on the solid backwards light cone $\mathcal{C}_{p;R}
+    \stackrel{\text{def}}{=} \{(\tau,y) \mid 0 \leq \tau \leq R, 0 \leq |y-p| \leq
+    R-\tau\}$.
+  kind: corollary
+  location: 'Class Meeting #13, Section 2'
+  name: Corollary 2.0.4 (Uniqueness)
+- description: Let $S \subset \{(t,x) \mid t=0\}$ be a set. Assume that we know the
+    initial data $\phi(0,x)=f(x)$, $\partial_{t} \phi(0,x)=g(x)$ for the wave equation
+    (1.0.2), but only for $x \in S$. Then a future development $\Omega$ of $S$ is
+    defined to be a future region of spacetime $\Omega \subset \mathbb{R}^{1+n} \cap
+    \{(t,x) \mid t \geq 0\}$ on which the solution $\phi(t,x)$ to (1.0.2) is uniquely
+    determined by the initial data on $S$. A past development $\mathcal{D}^{-}(S)$
+    can be analogously defined (replace $t \geq 0$ with $t \leq 0$ in the previous
+    definition).
+  kind: definition
+  location: 'Class Meeting #13, Section 3'
+  name: Definition 3.0.3 (Development)
+- description: The maximal future development of $S$, which we denote by $\mathcal{D}^{+}(S)$,
+    is defined to be the union of all future developments of $S$. The maximal past
+    development $\mathcal{D}^{-}(S)$ can be analogously defined. The maximal development
+    of $S$ is defined to be $\mathcal{D}^{+}(S) \cup \mathcal{D}^{-}(S)$.
+  kind: definition
+  location: 'Class Meeting #13, Section 3'
+  name: Definition 3.0.4 (Maximal development)
+- description: Let $\Omega \subset \mathbb{R}^{1+n}$. Assume that $\phi$ is a solution
+    to the wave equation (1.0.2) in $\Omega$. A domain of dependence for $\Omega$
+    is a set $S$ such that $\phi$ is completely determined on $\Omega$ from only the
+    data $\left.\phi\right|_{S}$ and $\left.\nabla_{t,x} \phi\right|_{S}$.
+  kind: definition
+  location: 'Class Meeting #13, Section 3'
+  name: Definition 3.0.5 (Domain of dependence)
+- description: Assume that $\phi$ is a solution to the wave equation (1.0.2) in $\mathbb{R}^{1+n}$.
+    The range of influence $\mathcal{R}$ for a set $S \subset \mathbb{R}^{1+n}$ is
+    the set of all points $(t,x) \in \mathbb{R}^{1+n}$ such that $\phi(t,x)$ is affected
+    by the initial data $\left.\phi\right|_{S}$ and $\left.\nabla_{t,x} \phi\right|_{S}$.
+  kind: definition
+  location: 'Class Meeting #13, Section 3'
+  name: Definition 3.0.6 (Range of influence)
+- description: 'Equation $A^{\alpha \beta} \partial_{\alpha} \partial_{\beta} u +
+    B^{\alpha} \partial_{\alpha} u + Cu = 0$ is respectively said to be elliptic,
+    hyperbolic, or parabolic according to the following conditions on the $(1+n) \times
+    (1+n)$ symmetric matrix $A$: All of the eigenvalues of $A$ have the same sign
+    — elliptic; $n$ of the eigenvalues of $A$ have the same (non-zero) sign, and the
+    remaining one has the opposite (non-zero) sign — hyperbolic; $n$ of the eigenvalues
+    of $A$ have the same (non-zero) sign, and the remaining one is 0 — parabolic.'
+  kind: definition
+  location: 'Class Meeting #15, Section 3'
+  name: Definition 3.0.1 (Hadamard's classification of second order scalar PDEs)
+- description: 'Consider the following second order constant coefficient PDE $\mathcal{L}
+    u(x) \stackrel{\text{def}}{=} A^{\alpha \beta} \partial_{\alpha} \partial_{\beta}
+    u(x) + B^{\alpha} \partial_{\alpha} u(x) + Cu(x) = 0$ where $\partial_{\alpha}
+    \stackrel{\text{def}}{=} \frac{\partial}{\partial x^{\alpha}}$. Then there exists
+    a linear change of variables $y^{\mu} = M_{\alpha}{}^{\mu} x^{\alpha}$ such that:
+    If all of the eigenvalues of $A^{\mu \nu}$ have the same (non-zero) sign, then
+    (3.0.23) can be written as $\pm \mathcal{L} u = \Delta_{y} u(y) + \widetilde{B}^{\alpha}
+    \frac{\partial}{\partial y^{\alpha}} u(y) + Cu(y) = 0$, where $\Delta_{y} \stackrel{\text{def}}{=}
+    \sum_{\mu=0}^{n} \frac{\partial^{2}}{(\partial y^{\alpha})^{2}}$. If $n$ of the
+    eigenvalues of $A$ have the same (non-zero) sign, and the remaining one has the
+    opposite (non-zero) sign, then (3.0.23) can be written as $\pm \mathcal{L} u =
+    \square_{y} u(y) + \widetilde{B}^{\alpha} \frac{\partial}{\partial y^{\alpha}}
+    u(y) + Cu(y) = 0$, where $\square_{y} \stackrel{\text{def}}{=} (m^{-1})^{\alpha
+    \beta} \frac{\partial}{\partial y^{\alpha}} \frac{\partial}{\partial y^{\beta}}$
+    is the standard linear wave operator, and $(m)^{-1} = \operatorname{diag}(-1,1,1,\cdots,1)$.
+    If $n$ eigenvalues $\lambda^{(1)}, \cdots, \lambda^{(n)}$ of $A$ have the same
+    (non-zero) sign, and the remaining one is $\lambda^{(0)}=0$, then (3.0.23) can
+    be written as $\pm \mathcal{L} u = \widetilde{B}^{0} \frac{\partial}{\partial
+    y^{0}} u + \sum_{i=1}^{n} \frac{\partial^{2}}{(\partial y^{i})^{2}} u + \sum_{i=1}^{n}
+    \widetilde{B}^{i} \frac{\partial}{\partial y^{i}} u + Cy = 0$. Furthermore, let
+    $v^{(0)}, v^{(1)}, \cdots, v^{(n)}$ be a corresponding diagonalizing unit-length
+    co-vector basis. Then if the non-zero vector $B$ satisfies $B^{\alpha} v_{\alpha}^{(0)}
+    \neq 0$, we also have that $\widetilde{B}^{0} \neq 0$.'
+  kind: theorem
+  location: 'Class Meeting #15, Section 3'
+  name: Theorem 3.1 (Classification of second order constant-coefficient PDEs)
+- description: 'Let $f \in L^{1}(\mathbb{R}^{n})$, i.e., $\int_{\mathbb{R}^{n}}|f(x)|
+    d^{n} x<\infty$. The Fourier transform of $f$ is denoted by $\hat{f}$, and it
+    is a new function of the frequency variable $\xi \in \mathbb{R}^{n}$. It is defined
+    for each frequency $\xi$ as follows: $\hat{f}(\xi) \stackrel{\text{def}}{=} \int_{\mathbb{R}^{n}}
+    f(x) e^{-2 \pi i \xi \cdot x} d^{n} x$ where $\cdot$ denotes the Euclidean dot
+    product, i.e., if $x=(x^{1}, \cdots, x^{n})$ and $\xi=(\xi^{1}, \cdots, \xi^{n})$,
+    then $\xi \cdot x \stackrel{\text{def}}{=} \sum_{j=1}^{n} \xi^{j} x^{j}$. In the
+    above formula, recall that if $r$ is a real number, then $e^{ir}=\sin r+i \cos
+    r$.'
+  kind: definition
+  location: 'Class Meeting #16, Section 1'
+  name: Definition 1.0.1 (Fourier Transform)
+- description: 'Given a function $f(\xi) \in L^{1}(\mathbb{R}^{n})$, its inverse Fourier
+    transform, which is denoted by $f^{\vee}$, is a new function of $x$ defined as
+    follows: $f^{\vee}(x) \stackrel{\text{def}}{=} \hat{f}(-x) \stackrel{\text{def}}{=}
+    \int_{\mathbb{R}^{n}} f(x) e^{2 \pi i \xi \cdot x} d^{n} \xi$.'
+  kind: definition
+  location: 'Class Meeting #16, Section 1'
+  name: Definition 1.0.2 (Inverse Fourier transform)
+- description: If $\vec{\alpha} \stackrel{\text{def}}{=}(\alpha^{1}, \cdots, \alpha^{n})$
+    is an array of non-negative integers, then we define $\partial_{\vec{\alpha}}$
+    to be the differential operator $\partial_{\vec{\alpha}} \stackrel{\text{def}}{=}
+    \partial_{1}^{\alpha^{1}} \cdots \partial_{n}^{\alpha^{n}}$. Note that $\partial_{\vec{\alpha}}$
+    is an operator of order $|\vec{\alpha}| \stackrel{\text{def}}{=} \alpha^{1}+\cdots+\alpha^{n}$.
+    If $x=(x^{1}, \cdots, x^{n})$ is an element of $\mathbb{C}^{n}$, then we also
+    define $x^{\vec{\alpha}}$ to be the monomial $x^{\vec{\alpha}} \stackrel{\text{def}}{=}(x^{1})^{\alpha^{1}}
+    \cdots (x^{n})^{\alpha^{n}}$.
+  kind: definition
+  location: 'Class Meeting #16, Section 1'
+  name: Definition 1.0.3
+- description: '$C^{k} \stackrel{\text{def}}{=} \{f: \mathbb{R}^{n} \rightarrow \mathbb{C}
+    \mid \partial_{\vec{\alpha}} f \text{ is continuous for } |\vec{\alpha}| \leq
+    k\}$; $C_{0} \stackrel{\text{def}}{=} \{f: \mathbb{R}^{n} \rightarrow \mathbb{C}
+    \mid f \text{ is continuous and } \lim_{|x| \rightarrow \infty} f(x)=0\}$. We
+    also recall the following norm on the space of bounded, continuous functions $f:
+    \mathbb{R}^{n} \rightarrow \mathbb{C}$: $\|f\|_{C_{0}} \stackrel{\text{def}}{=}
+    \max_{x \in \mathbb{R}^{n}}|f(x)|$.'
+  kind: definition
+  location: 'Class Meeting #16, Section 1'
+  name: Definition 1.0.4 (Some important function spaces)
+- description: Let $f$ and $g$ be complex-valued functions defined on $\mathbb{R}^{n}$.
+    We define their complex inner product by $\langle f, g\rangle \stackrel{\text{def}}{=}
+    \int_{\mathbb{R}^{n}} f(x) \bar{g}(x) d^{n} x$, where $\bar{g}$ denotes the complex
+    conjugate of $g$. That is, if $g(x)=u(x)+i v(x)$, where $u$ and $v$ are real-valued,
+    then $\bar{g}(x) \stackrel{\text{def}}{=} u(x)-i v(x)$. We also define the norm
+    of $f$ by $\|f\| \stackrel{\text{def}}{=} \langle f, f\rangle^{1/2} \stackrel{\text{def}}{=}
+    \left(\int_{\mathbb{R}^{n}}|f(x)|^{2} d^{n} x\right)^{1/2}$.
+  kind: definition
+  location: 'Class Meeting #16, Section 1'
+  name: Definition 1.0.5 (Inner product for complex-valued functions)
+- description: Suppose that $f \in L^{1}(\mathbb{R}^{n})$. Then $\hat{f}$ is a bounded,
+    continuous function and $\|\hat{f}\|_{C_{0}} \leq \|f\|_{L^{1}}$.
+  kind: lemma
+  location: 'Class Meeting #16, Section 2'
+  name: Lemma 2.0.1 (Properties of $\hat{f}$ for $f \in L^{1}$)
+- description: 'If $f: \mathbb{R}^{n} \rightarrow \mathbb{C}$ is a function and $y
+    \in \mathbb{R}^{n}$ is any point, then we define the translated function $\tau_{y}
+    f$ by $\tau_{y} f(x) \stackrel{\text{def}}{=} f(x-y)$.'
+  kind: definition
+  location: 'Class Meeting #16, Section 2'
+  name: Definition 2.0.6 (Translation of a function)
+- description: 'Assume that $f, g \in L^{1}(\mathbb{R}^{n})$, and let $t \in \mathbb{R}$.
+    Then:
+
+    (2.0.19a) $(\tau_{y} f)^{\wedge}(\xi)=e^{-2 \pi i \xi \cdot y} \hat{f}(\xi)$
+
+    (2.0.19b) $\hat{h}(\xi)=\tau_{\eta} \hat{f}(\xi)$ if $h(x) \stackrel{\text{def}}{=}
+    e^{2 \pi i \eta \cdot x} f(x)$
+
+    (2.0.19c) $\hat{h}(\xi)=t^{n} \hat{f}(t \xi)$ if $h(x) \stackrel{\text{def}}{=}
+    f(t^{-1} x)$
+
+    (2.0.19d) $(f * g)^{\wedge}(\xi)=\hat{f}(\xi) \hat{g}(\xi)$
+
+    (2.0.19e) If $x^{\vec{\alpha}} f \in L^{1}$ for $|\vec{\alpha}| \leq k$, then
+    $\hat{f} \in C^{k}$ and $\partial_{\vec{\alpha}} \hat{f}(\xi)=[(-2 \pi i x)^{\vec{\alpha}}
+    f(x)]^{\wedge}(\xi)$
+
+    (2.0.19f) If $f \in C^{k}$, $\partial_{\vec{\alpha}} f \in L^{1}$ for $|\vec{\alpha}|
+    \leq k$, and $\partial_{\vec{\alpha}} f \in C_{0}$ for $|\vec{\alpha}| \leq k-1$,
+    then $(\partial_{\vec{\alpha}} f)^{\wedge}(\xi)=(2 \pi i \xi)^{\vec{\alpha}} \hat{f}(\xi)$
+
+    (2.0.19g) $\overline{\hat{f}}(\xi)=(\bar{f})^{\vee}(\xi)$ and $\overline{(f^{\vee})}(\xi)=(\bar{f})^{\wedge}(\xi)$.'
+  kind: theorem
+  location: 'Class Meeting #16, Section 2'
+  name: Theorem 2.1 (Important properties of the Fourier transform)
+- description: 'Let $f \in C_{c}^{\infty}(\mathbb{R}^{n})$, i.e., $f$ is a smooth,
+    compactly supported function. Then $\hat{f}$ is smooth and "rapidly decaying at
+    infinity" in the following sense: for each $N \geq 0$, there exists a constant
+    $C_{N}>0$ such that $|\hat{f}(\xi)| \leq C_{N}(1+|\xi|)^{-N}$. Furthermore, an
+    estimate similar to (2.0.27) holds (with possibly different constants) for all
+    of the derivatives $|\partial_{\vec{\beta}} \hat{f}(\xi)|$. In particular, $\hat{f}
+    \in L^{1}$: $\|\hat{f}(\xi)\|_{L^{1}} \stackrel{\text{def}}{=} \int_{\mathbb{R}^{n}}|\hat{f}(\xi)|
+    d^{n} \xi<\infty$, and similarly for $\partial_{\vec{\beta}} \hat{f}$, where $\vec{\beta}$
+    is any derivative multi-index.'
+  kind: proposition
+  location: 'Class Meeting #16, Section 2'
+  name: Proposition 2.0.2
+- description: Let $f(x)= \exp(-\pi z|x|^{2})$, where $z=a+ib$ is a complex number,
+    $a, b \in \mathbb{R}$, $a>0$, $x=(x^{1}, \cdots, x^{n}) \in \mathbb{R}^{n}$, and
+    $|x|^{2}=\sum_{j=1}^{n}(x^{j})^{2}$. Then $\hat{f}(\xi)=z^{-n/2} \exp(-\pi|\xi|^{2}/z)$.
+  kind: proposition
+  location: 'Class Meeting #16, Section 3'
+  name: Proposition 3.0.3 (The Fourier transform of a Gaussian is another Gaussian)
+- description: Assume that $f, g \in L^{1}$. Then $\int_{\mathbb{R}^{n}} \hat{f}(x)
+    g(x) d^{n} x = \int_{\mathbb{R}^{n}} f(x) \hat{g}(x) d^{n} x$. Alternatively,
+    in terms of the complex $L^{2}$ inner product, we have that $\langle\hat{f}, g\rangle
+    = \langle f, g^{\vee}\rangle$.
+  kind: lemma
+  location: Section 4 (Fourier Inversion and the Plancherel Theorem)
+  name: Lemma 4.0.4 (Interaction of the Fourier transform with the $L^{2}$ inner product)
+- description: 'Suppose that $f: \mathbb{R}^{n} \rightarrow \mathbb{C}$ is a continuous
+    function, that $f \in L^{1}$, and that $\hat{f} \in L^{1}$. Then $(\hat{f})^{\vee}
+    = (f^{\vee})^{\wedge} = f$. That is, the operators $\wedge$ and $\vee$ are inverses
+    of each other.'
+  kind: theorem
+  location: Section 4 (Fourier Inversion and the Plancherel Theorem)
+  name: Theorem 4.1 (Fourier inversion theorem)
+- description: 'Suppose that $f, g: \mathbb{R}^{n} \rightarrow \mathbb{C}$ are continuous
+    functions, that $f, g \in L^{1} \cap L^{2}$, and that $\hat{f}, \hat{g} \in L^{1}$.
+    Then $\hat{f}, \hat{g} \in L^{2}$, and $\langle f, g\rangle = \langle\hat{f},
+    \hat{g}\rangle$, i.e., the Fourier transform preserves the $L^{2}$ inner product.
+    In particular, by setting $f=g$, it follows that $\|f\|_{L^{2}} = \|\hat{f}\|_{L^{2}}$.'
+  kind: theorem
+  location: Section 4 (Fourier Inversion and the Plancherel Theorem)
+  name: Theorem 4.2 (The Plancherel theorem)
+- description: Let $\phi(x)$ be a smooth compactly supported function, and let $\psi(t,x)$
+    be the function whose spatial Fourier transform is defined as $\hat{\psi}(t,\xi)
+    = \hat{K}(t,\xi)\hat{\phi}(\xi)$ where $\hat{K}(t,\xi) = e^{-2\pi^{2}it|\xi|^{2}}$.
+    Then if $t>0$, we have that $\psi(t,x) = (K(t,\cdot)*\phi)(x) \stackrel{\text{def}}{=}
+    \int_{\mathbb{R}^{n}} K(t,y)\phi(x-y)d^{n}y = \int_{\mathbb{R}^{n}} K(t,x-y)\phi(y)d^{n}y$
+    where $K(t,x) = \frac{1}{(2\pi it)^{n/2}} e^{i\frac{|x|^{2}}{2t}}$. Above, $i^{1/2}
+    = e^{i\pi/4} = \frac{1}{\sqrt{2}}(1+i)$.
+  kind: proposition
+  location: 'Class Meeting #19, Section 2 (The Fundamental Solution)'
+  name: Proposition 2.0.1 (Calculation of the Fundamental Solution $K(t,x)$ for Schrödinger's
+    equation)
+- description: The fundamental solution associated to $i\partial_{t}\psi(t,x) + \frac{1}{2}\Delta\psi(t,x)
+    = V(t,x)\psi(t,x)$ is the function $K(t,x) = \frac{1}{(2\pi it)^{n/2}} e^{i\frac{|x|^{2}}{2t}}$.
+  kind: definition
+  location: 'Class Meeting #19, Section 2 (The Fundamental Solution)'
+  name: Definition 2.0.1 (The Fundamental Solution to Schrödinger's equation)
+- description: For $t>0$, $K(t,x)$ is a solution to the free Schrödinger equation.
+  kind: lemma
+  location: 'Class Meeting #19, Section 2 (The Fundamental Solution)'
+  name: Lemma 2.0.2 ($K(t,x)$ verifies the free Schrödinger equation)
+- description: Let $\phi \in C_{c}^{\infty}(\mathbb{R}^{n})$. Then $$\lim_{t \rightarrow
+    0^{+}} \frac{1}{(2 \pi i t)^{n / 2}} \int_{\mathbb{R}^{n}} e^{i \frac{|x-y|^{2}}{2
+    t}} \phi(y) d^{n} y=\phi(x).$$
+  kind: proposition
+  location: Class Meeting on Schrödinger's equation, Section 2
+  name: Proposition 2.0.3 (The behavior of $K(t, \cdot) * \phi(\cdot)$ as $t \downarrow
+    0$)
+- description: Let $\phi(x) \in C_{c}^{\infty}(\mathbb{R}^{n})$. Then there exists
+    a unique solution $\psi \in C^{\infty}((0, \infty) \times \mathbb{R}^{n})$ to
+    the free Schrödinger equation $$i \partial_{t} \psi(t, x)+\frac{1}{2} \Delta \psi(t,
+    x) =0, \quad t>0, x \in \mathbb{R}^{n},$$ $$\psi(0, x) =\phi(x), \quad x \in \mathbb{R}^{n}.$$
+    The solution can be expressed as $$\psi(t, x)=[K(t, \cdot) * \phi(\cdot)](x),$$
+    where $K(t, x)$ is the fundamental solution defined in (2.0.18). Furthermore,
+    for each $t>0$, the solution $\psi(t, x)$ verifies the dispersive estimate $$\|\psi(t,
+    \cdot)\|_{C_{0}} \stackrel{\text{def}}{=} \max_{x \in \mathbb{R}^{n}}|\psi(t,
+    x)| \leq \frac{C}{t^{n / 2}}\|\phi\|_{L^{1}} \stackrel{\text{def}}{=} \frac{C}{t^{n
+    / 2}} \int|\phi(x)| d^{n} x.$$ Above, $C>0$ is a constant that does not depend
+    on the initial data.
+  kind: theorem
+  location: Class Meeting on Schrödinger's equation, Section 2
+  name: Theorem 2.1 (The Solution to the Global Cauchy Problem Schrödinger's Equation
+    and the Dispersive Estimate)
+- description: Under the assumptions of Theorem 2.1, we have that $$\|\psi(t, \cdot)\|_{L^{2}}=\|\phi\|_{L^{2}},$$
+    where the $L^{2}$ norm on the left-hand side of (2.0.46) is taken over the spatial
+    variables only. In particular, if $\int_{\mathbb{R}^{n}}|\phi(x)|^{2} d^{n} x=1$,
+    then $\int_{\mathbb{R}^{n}}|\psi(t, x)|^{2} d^{n} x=1$ holds for all $t \geq 0$.
+  kind: proposition
+  location: Class Meeting on Schrödinger's equation, Section 2
+  name: Proposition 2.0.4 (Preservation of $L^{2}$ norm)
+- description: A Lagrangian $\mathcal{L}$ is a function of $\phi$ and $\nabla \phi$
+    (and sometimes the spacetime coordinates $x$ and perhaps other quantities too).
+    We indicate the dependence of $\mathcal{L}$ on e.g. $\phi$ and $\nabla \phi$ by
+    writing $\mathcal{L}(\phi, \nabla \phi)$.
+  kind: definition
+  location: 'Class Meeting #21, Section 1'
+  name: Definition 1.0.1 (Lagrangian)
+- description: Let $\mathfrak{K} \subset \mathbb{R}^{1+n}$ be a compact subset of
+    spacetime. We define the action $\mathcal{A}$ of $\phi$ over the set $\mathfrak{K}$
+    by $$\mathcal{A}[\phi; \mathfrak{K}] \stackrel{\text{def}}{=} \int_{\mathfrak{K}}
+    \mathcal{L}(\phi(x), \nabla \phi(x)) d^{1+n} x.$$ Above, $d^{1+n} x \stackrel{\text{def}}{=}
+    d t\, d x^{1}\, d^{2} \cdots d x^{n}$ denotes spacetime integration.
+  kind: definition
+  location: 'Class Meeting #21, Section 1'
+  name: Definition 1.0.2 (Action)
+- description: Given a compact set $\mathfrak{K}$, a function $\psi \in C_{c}^{\infty}(\mathfrak{K})$
+    is called a variation.
+  kind: definition
+  location: 'Class Meeting #21, Section 1'
+  name: Definition 1.0.3 (Variation)
+- description: Given a variation $\psi$ and a small number $\epsilon$, we define $\phi_{\epsilon}
+    \stackrel{\text{def}}{=} \phi + \epsilon \psi$.
+  kind: definition
+  location: 'Class Meeting #21, Section 1'
+  name: Definition 1.0.4
+- description: 'We say that $\phi$ is a stationary point of the action if the following
+    relation holds for all compact subsets $\mathfrak{K}$ and all variations $\psi
+    \in C_{c}^{\infty}(\mathfrak{K})$: $$\left.\frac{d}{d\epsilon}\right|_{\epsilon=0}
+    \mathcal{A}[\phi_{\epsilon}; \mathfrak{K}]=0.$$'
+  kind: definition
+  location: 'Class Meeting #21, Section 1'
+  name: Definition 1.0.5 (Definition of a stationary point $\phi$)
+- description: 'Let $\mathcal{L}(\phi, \nabla \phi, x)$ be a $C^{2}$ Lagrangian. Then
+    a $C^{2}$ field $\phi$ is a stationary point of the action if and only if the
+    following Euler-Lagrange PDE is verified by $\phi$: $$\nabla_{\alpha}\left(\frac{\partial
+    \mathcal{L}(\phi, \nabla \phi, x)}{\partial(\nabla_{\alpha} \phi)}\right)=\frac{\partial
+    \mathcal{L}(\phi, \nabla \phi, x)}{\partial \phi}.$$ Above, $\frac{\partial \mathcal{L}(\phi,
+    \nabla \phi, x)}{\partial(\nabla_{\alpha} \phi)}$ denotes partial differentiation
+    of $\mathcal{L}$ with respect to its argument $\nabla_{\alpha} \phi$ with its
+    other arguments (e.g., the other $\nabla_{\mu} \phi$ with $\mu \neq \alpha$, $\phi$,
+    $x$, etc.) held fixed.'
+  kind: theorem
+  location: 'Class Meeting #21, Section 1'
+  name: Theorem 1.1 (The Principle of Stationary Action)
+- description: 'Let $Y(x)=(Y^{0}(x^{0}, \cdots, x^{n}), Y^{1}(x^{0}, \cdots, x^{n}),
+    \cdots, Y^{n}(x^{0}, \cdots, x^{n}))$ be a smooth vectorfield on $\mathbb{R}^{1+n}$.
+    Assume that there exists a uniform constant $C>0$ such that $|\nabla_{\mu} Y^{\nu}(x)|
+    \leq C$, $x \in \mathbb{R}^{1+n}$, $0 \leq \mu, \nu \leq n$. Consider the initial
+    value problem for the system of ordinary differential equations: $\frac{d}{d\epsilon}
+    \widetilde{x}^{\mu}(\epsilon) = Y^{\mu}(\widetilde{x})$, $\widetilde{x}^{\mu}(0)
+    = x^{\mu}$. Then there exists a number $\epsilon_{0}>0$ such that the initial
+    value problem has a unique smooth (in $\epsilon$) solution existing on the interval
+    $\epsilon \in [-\epsilon_{0}, \epsilon_{0}]$. Let us denote the flow map from
+    the data $x$ to the solution $\widetilde{x}$ at flow parameter $\epsilon$ by $\widetilde{x}=F_{\epsilon}(x)$.
+    Then on the interval $[-\epsilon_{0}, \epsilon_{0}]$, the flow map $x \rightarrow
+    F_{\epsilon}(x) \stackrel{\text{def}}{=} \widetilde{x}$ is a smooth (in $x$),
+    bijective map from $\mathbb{R}^{1+n}$ to $\mathbb{R}^{1+n}$ with smooth inverse
+    $F_{-\epsilon}(\cdot)$, i.e., $\widetilde{x}=F_{\epsilon}(x) \Longrightarrow x=F_{-\epsilon}(\widetilde{x})$;
+    such maps are called diffeomorphisms of $\mathbb{R}^{1+n}$. Furthermore, if $|\epsilon_{1}|+|\epsilon_{2}|
+    \leq \epsilon_{0}$, then the flow map verifies the one-parameter commutative group
+    properties: $F_{\epsilon_{1}} \circ F_{\epsilon_{2}}=F_{\epsilon_{2}} \circ F_{\epsilon_{1}}=F_{\epsilon_{1}+\epsilon_{2}}$.
+    Let us also denote the derivative matrix corresponding to the flow map $F_{\epsilon}$
+    by $M$: $M_{\nu}^{\mu} \stackrel{\text{def}}{=} \frac{\partial \widetilde{x}^{\mu}}{\partial
+    x^{\nu}}$. Then if $|\epsilon|$ is sufficiently small, we have the following expansions
+    in $\epsilon$: $\widetilde{x}^{\mu} = x^{\mu}+\epsilon Y^{\mu}(x)+\epsilon^{2}
+    \mathcal{R}^{\mu}(\epsilon, x)$, $M_{\nu}^{\mu} = \delta_{\nu}^{\mu}+\epsilon
+    \nabla_{\nu} Y^{\mu}(x)+\epsilon^{2} \nabla_{\nu} \mathcal{R}^{\mu}(\epsilon,
+    x)$, $(M^{-1})_{\nu}^{\mu} = \delta_{\nu}^{\mu}-\epsilon \nabla_{\nu} Y^{\mu}(x)+\epsilon^{2}
+    \mathcal{S}_{\nu}^{\mu}(\epsilon, x)$, $\det M^{-1} = 1-\epsilon \nabla_{\alpha}
+    Y^{\alpha}+\epsilon^{2} \mathcal{S}(\epsilon, x)$. Above, $\mathcal{R}^{\mu}(\epsilon,
+    x), \nabla_{\nu} \mathcal{R}^{\mu}(\epsilon, x), \mathcal{S}_{\nu}^{\mu}(\epsilon,
+    x), \mathcal{S}(\epsilon, x)$ are smooth functions of $(\epsilon, x)$ for $\epsilon
+    \in [-\epsilon_{0}, \epsilon_{0}]$, $x \in \mathbb{R}^{1+n}$.'
+  kind: proposition
+  location: 'Class Meeting #21, Section 2'
+  name: Proposition 2.0.1 (Basic facts from ODE theory for autonomous systems)
+- description: 'Let $\phi(x)$ be a scalar-valued function, let $m(x)$ be an (invertible)
+    metric (depending on $x$) with components $m_{\mu\nu}(x)$, and let $x \rightarrow
+    \widetilde{x}$ be a spacetime diffeomorphism. Then upon changing coordinates $x
+    \rightarrow \widetilde{x}$, these quantities transform as follows: $\widetilde{\phi}(\widetilde{x})
+    \stackrel{\text{def}}{=} \phi|_{(x \circ \widetilde{x})}$, $\widetilde{\nabla}_{\mu}
+    \widetilde{\phi}(\widetilde{x}) \stackrel{\text{def}}{=} (M^{-1})_{\mu}^{\alpha}|_{(x
+    \circ \widetilde{x})} \nabla_{\alpha} \phi|_{x \circ \widetilde{x}}$, $\widetilde{m}_{\mu\nu}(\widetilde{x})
+    \stackrel{\text{def}}{=} (M^{-1})_{\mu}^{\alpha}|_{(x \circ \widetilde{x})} (M^{-1})_{\nu}^{\beta}|_{(x
+    \circ \widetilde{x})} m_{\alpha\beta}|_{(x \circ \widetilde{x})}$, $(\widetilde{m}^{-1})^{\mu\nu}(\widetilde{x})
+    \stackrel{\text{def}}{=} M_{\alpha}^{\mu}|_{(x \circ \widetilde{x})} M_{\beta}^{\nu}|_{(x
+    \circ \widetilde{x})} (m^{-1})^{\alpha\beta}|_{(x \circ \widetilde{x})}$.'
+  kind: definition
+  location: 'Class Meeting #21, Section 2'
+  name: Definition 2.0.6 (Transformation properties of fields)
+- description: Let $\mathcal{L}(\phi, \nabla \phi, m)$ be a Lagrangian that depends
+    only on $\phi, \nabla \phi$, and the Minkowski metric $m$. We say that $\mathcal{L}$
+    is coordinate invariant if for all spacetime diffeomorphisms $x \rightarrow \widetilde{x}$,
+    we have that $$\mathcal{L}(\phi(x), \nabla \phi(x), m(x))=\mathcal{L}(\widetilde{\phi}(\widetilde{x}),
+    \widetilde{\nabla} \widetilde{\phi}(\widetilde{x}), \widetilde{m}(\widetilde{x})),$$
+    where the transformed fields are defined in Definition 2.0.6.
+  kind: definition
+  location: 'Class Meeting #21, Section 2'
+  name: Definition 2.0.7 (Coordinate invariant Lagrangian)
+- description: 'Let $\widetilde{x}^{\mu}=F_{\epsilon}(x)$ be the change of spacetime
+    coordinates defined in (2.0.16), and let $\widetilde{\phi}, \widetilde{\nabla}_{\mu}
+    \widetilde{\phi}, \widetilde{m}_{\mu\nu}, (\widetilde{m}^{-1})^{\mu\nu}$ be the
+    transformed fields defined in Definition 2.0.6. Then the following identities
+    hold for all spacetime points $\widetilde{x}$: $\partial_{\epsilon}|_{\epsilon=0}
+    \widetilde{\phi}|_{\widetilde{x}} = -Y^{\alpha}|_{\widetilde{x}} \nabla_{\alpha}
+    \phi|_{\widetilde{x}}$, $\partial_{\epsilon}|_{\epsilon=0} \widetilde{\nabla}_{\mu}
+    \widetilde{\phi}|_{\widetilde{x}} = -\nabla_{\mu} Y^{\alpha}|_{\widetilde{x}}
+    \nabla_{\alpha} \phi|_{\widetilde{x}} - Y^{\alpha}|_{\widetilde{x}} \nabla_{\alpha}
+    \nabla_{\mu} \phi|_{\widetilde{x}} = -\nabla_{\mu}(Y^{\alpha} \nabla_{\alpha}
+    \phi)|_{\widetilde{x}}$, $\partial_{\epsilon}|_{\epsilon=0} \widetilde{m}_{\mu\nu}|_{\widetilde{x}}
+    = -m_{\nu\alpha}|_{\widetilde{x}} \nabla_{\mu} Y^{\alpha}|_{\widetilde{x}} - m_{\mu\alpha}|_{\widetilde{x}}
+    \nabla_{\nu} Y^{\alpha}|_{\widetilde{x}} - Y^{\alpha}|_{\widetilde{x}} \nabla_{\alpha}
+    m_{\mu\nu}|_{\widetilde{x}}$, $\partial_{\epsilon}|_{\epsilon=0} (\widetilde{m}^{-1})^{\mu\nu}|_{\widetilde{x}}
+    = (m^{-1})^{\alpha\nu}|_{\widetilde{x}} \nabla_{\alpha} Y^{\mu}|_{\widetilde{x}}
+    + (m^{-1})^{\mu\alpha}|_{\widetilde{x}} \nabla_{\alpha} Y^{\nu}|_{\widetilde{x}}
+    - Y^{\alpha}|_{\widetilde{x}} \nabla_{\alpha}(m^{-1})^{\mu\nu}|_{\widetilde{x}}$,
+    $\partial_{\epsilon}|_{\epsilon=0} \det M^{-1}|_{\widetilde{x}} = -\nabla_{\alpha}
+    Y^{\alpha}|_{\widetilde{x}}$. Above, $\partial_{\epsilon}$ denotes the derivative
+    of an $\epsilon$-dependent quantity with the new coordinates $\widetilde{x}$ held
+    fixed.'
+  kind: proposition
+  location: 'Class Meeting #21, Section 2'
+  name: Proposition 2.0.2 (Derivatives with respect to the flow parameter $\epsilon$)
+- description: 'Let $\mathcal{L}(\phi, \nabla \phi, m)$ be a $C^{2}$ Lagrangian. Then
+    under the assumptions of Proposition 2.0.2, the following identity holds at all
+    spacetime points: $$\partial_{\epsilon}|_{\epsilon=0} \mathcal{L}(\widetilde{\phi},
+    \widetilde{\nabla} \widetilde{\phi}, \widetilde{m}) = -\frac{\partial \mathcal{L}(\phi,
+    \nabla \phi, m)}{\partial \phi} Y^{\alpha} \nabla_{\alpha} \phi - \frac{\partial
+    \mathcal{L}(\phi, \nabla \phi, m)}{\partial(\nabla_{\mu} \phi)} \nabla_{\mu}(Y^{\alpha}
+    \nabla_{\alpha} \phi) - \frac{\partial \mathcal{L}(\phi, \nabla \phi, m)}{\partial
+    m_{\mu\nu}}\{m_{\alpha\nu} \nabla_{\mu} Y^{\alpha} + m_{\mu\alpha} \nabla_{\nu}
+    Y^{\alpha} + Y^{\alpha} \nabla_{\alpha} m_{\mu\nu}\}.$$'
+  kind: corollary
+  location: 'Class Meeting #21, Section 2'
+  name: Corollary 2.0.3 (The derivative of $\mathcal{L}$ with respect to the flow
+    parameter $\epsilon$)
+- description: Let $u$ be a $C^{1}$ solution to (3.0.15), and let $(t,x)$ be a spacetime
+    point. With $(t,x)$ fixed, assume that the implicit equation $x = p + f(p)t$ in
+    the unknown $p$ has a unique solution. Then $u(t,x) = f(p)$.
+  kind: theorem
+  location: 'Class Meeting #24, Section 3 ("Solving" Burger''s equation)'
+  name: Theorem 3.1
+- description: If $u$ solves the transport equation (1.0.1), then $u$ is constant
+    along the integral curves of $X$. More precisely, if $\gamma(s)$ is any solution
+    to (1.0.2), then $\frac{d}{ds} u(\gamma^{0}(s), \cdots, \gamma^{n}(s))=0$.
+  kind: proposition
+  location: 'Class Meeting #24, Section 1 (Transport Equations)'
+  name: Proposition 1.0.1 (Connection between transport equations and ODEs)
+- description: Let $T \geq 0$, and let $u(t,x)$ be a $C^{1}$ solution to (2.0.7) on
+    $S_{T} \stackrel{\text{def}}{=} [0,T] \times \mathbb{R}$. Assume that for each
+    fixed $t \in [0,T]$, we have that $\lim_{x \rightarrow \pm \infty} u(t,x)=0$.
+    Then for $(t,x) \in S_{T}$, we have that $\int_{\mathbb{R}} u^{2}(t,x)\, dx =
+    \int_{\mathbb{R}} u^{2}(0,x)\, dx$, i.e., the spatial $L^{2}$ norm of $u(t,\cdot)$
+    is preserved in time.
+  kind: proposition
+  location: 'Class Meeting #24, Section 2 (Burger''s Equation)'
+  name: Proposition 2.0.1 (Burger's equation is a conservation law)
+- description: 'Let $u$ be a solution of (2.0.7). The characteristic curves associated
+    to $u$ are the solutions to the following system of ODEs: $\frac{d}{ds} \gamma^{0}
+    = 1$ and $\frac{d}{ds} \gamma^{1} = u \circ \gamma = u(\gamma^{0}(s), \gamma^{1}(s))$.'
+  kind: definition
+  location: 'Class Meeting #24, Section 2 (Burger''s Equation)'
+  name: Definition 2.0.1
+- description: $C^{1}$ solutions to (2.0.7) are constant along the characteristic
+    curves (2.0.11a)–(2.0.11b).
+  kind: proposition
+  location: 'Class Meeting #24, Section 2 (Burger''s Equation)'
+  name: Proposition 2.0.2 (Burger solutions are constant along characteristics)
+- description: The characteristic curves (2.0.11a)–(2.0.11b) are straight lines in
+    $\mathbb{R}^{1+1}$.
+  kind: proposition
+  location: 'Class Meeting #24, Section 2 (Burger''s Equation)'
+  name: Proposition 2.0.3 (Burger characteristics are straight lines)
+- description: Let $f \in C^{1}(\mathbb{R})$ be initial data for Burger's equation
+    (3.0.15). Then the corresponding solution $u(t,x)$ remains $C^{1}$ for all $(t,x)
+    \in [0,\infty) \times \mathbb{R}$ if and only if $f'(x) \geq 0$ holds for all
+    $x \in \mathbb{R}$.
+  kind: theorem
+  location: 'Class Meeting #24, Section 4 (Formation of Singularities)'
+  name: Theorem 4.1 (Sharp Characterization of Singularity Formation in Burger's Equation)

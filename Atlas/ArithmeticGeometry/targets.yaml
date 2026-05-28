@@ -1,0 +1,2063 @@
+- description: 'The Newton polygon of a polynomial $f(x, y)=\sum a_{ij} x^{i} y^{j}$
+    is the convex hull of the set $\{(i, j): a_{ij} \neq 0\}$ in $\mathbb{R}^{2}$.'
+  kind: definition
+  location: Newton polygon
+  name: Definition
+- description: The cardinality of $E(\mathbb{F}_{p})$ satisfies $\# E(\mathbb{F}_{p})=p+1-t$,
+    with $|t| \leq 2\sqrt{p}$.
+  kind: theorem
+  location: The group $E(\mathbb{F}_{p})$
+  name: Theorem (Hasse 1933)
+- description: Over a field whose characteristic is not 2, every geometrically irreducible
+    conic is isomorphic to a diagonal curve $ax^2 + by^2 + cz^2 = 0$ with $abc \neq
+    0$.
+  kind: theorem
+  location: Section 2.1
+  name: Theorem 2.1
+- description: Let $C/k$ be a geometrically irreducible conic with a $k$-rational
+    point and assume that $\operatorname{char}(k) \neq 2$. Then $C$ is isomorphic
+    over $k$ to the projective line $\mathbb{P}^1$.
+  kind: theorem
+  location: Section 2.2
+  name: Theorem 2.3
+- description: Let $C/\mathbb{Q}$ be an irreducible curve of genus greater than 1.
+    Then the cardinality of $C(\mathbb{Q})$ is finite.
+  kind: theorem
+  location: Curves of genus greater than 1
+  name: Theorem (Faltings 1983)
+- description: Let $E/\mathbb{Q}$ be an elliptic curve with rank $r$. Then $L_E(s)
+    = (s-1)^r g(s)$ for some complex analytic function $g(s)$ with $g(1) \neq 0, \infty$.
+    In other words, $r$ is equal to the order of vanishing of $L_E(s)$ at 1.
+  kind: conjecture
+  location: The Birch and Swinnerton-Dyer conjecture
+  name: Conjecture (Birch and Swinnerton-Dyer)
+- description: Let $a, b, c$ be square-free integers that are pairwise coprime and
+    suppose that the equation $a x^{2}+b y^{2}+c z^{2}=0$ has a nonzero rational solution.
+    Then there exists a nonzero integer solution $(x_{0}, y_{0}, z_{0})$ with $|x_{0}|
+    \leq \sqrt{|b c|}$, $|y_{0}| \leq \sqrt{|a c|}$, $|z_{0}| \leq \sqrt{|a b|}$.
+  kind: theorem
+  location: Section 2.3
+  name: Theorem 2.5 (Holzer)
+- description: Let $a, b, c$ be square-free integers that are pairwise coprime and
+    whose signs are not all the same. The equation $a x^{2}+b y^{2}+c z^{2}=0$ has
+    a rational solution if and only if the congruences $X^{2} \equiv -bc \bmod a$,
+    $Y^{2} \equiv -ca \bmod b$, $Z^{2} \equiv -ab \bmod c$ can be simultaneously satisfied.
+  kind: theorem
+  location: Section 2.3
+  name: Theorem 2.6 (Legendre)
+- description: For all odd primes $p$ and $q$ we have $\left(\frac{p}{q}\right)\left(\frac{q}{p}\right)=(-1)^{\left(\frac{p-1}{2}\right)\left(\frac{q-1}{2}\right)}$.
+  kind: theorem
+  location: Section 3.1
+  name: Theorem 3.1 (Gauss)
+- description: Any finite subgroup $G$ of the multiplicative group of a field $k$
+    is cyclic.
+  kind: theorem
+  location: Section 3.2
+  name: Theorem 3.3
+- description: Let $C / \mathbb{F}_{q}$ be a conic over a finite field of odd characteristic.
+    Then $C$ has a rational point.
+  kind: theorem
+  location: Section 3.3
+  name: Theorem 3.4
+- description: 'Let $C / \mathbb{F}_{q}$ be a conic over a finite field. Then one
+    of the following holds: 1. $C$ is geometrically irreducible, isomorphic to $\mathbb{P}^{1}$,
+    and has $q+1$ rational points. 2. $C$ is reducible over $\mathbb{F}_{q}$, isomorphic
+    to the union of two rational projective lines, and has $2q+1$ rational points.
+    3. $C$ is reducible over $\mathbb{F}_{q}^{2}$, but not over $\mathbb{F}_{q}$,
+    isomorphic over $\mathbb{F}_{q}^{2}$ to the union of two projective lines with
+    a single rational point at their intersection. In every case we have $\# C(\mathbb{F}_{q})
+    \equiv 1 \bmod q$.'
+  kind: corollary
+  location: Section 3.3
+  name: Corollary 3.5
+- description: 'For every pair of distinct $\alpha, \beta \in \mathbb{F}_{q}$ we have
+    $$\#\left\{\delta \in \mathbb{F}_{q}: \alpha+\delta \text{ and } \beta+\delta
+    \text{ are of different type}\right\}=\frac{q-1}{2}.$$'
+  kind: theorem
+  location: Section 3.4.2
+  name: Theorem 3.7 (Rabin)
+- description: 'An inverse system is a sequence of objects (e.g. sets/groups/rings)
+    $(A_{n})$ together with a sequence of morphisms (e.g. functions/homomorphisms)
+    $(f_{n})$ $$\cdots \longrightarrow A_{n+1} \xrightarrow{f_{n}} A_{n} \longrightarrow
+    \cdots \longrightarrow A_{2} \xrightarrow{f_{1}} A_{1}.$$ The inverse limit $$A=\varprojlim
+    A_{n}$$ is the subset of the direct product $\prod_{n} A_{n}$ consisting of those
+    sequences $a=(a_{n})$ for which $f_{n}(a_{n+1})=a_{n}$ for all $n \geq 1$. For
+    each $n \geq 1$ the projection map $\pi_{n}: A \rightarrow A_{n}$ sends $a$ to
+    $a_{n}$.'
+  kind: definition
+  location: Section 4.1
+  name: Definition 4.1
+- description: For a prime $p$, the ring of $p$-adic integers $\mathbb{Z}_{p}$ is
+    the inverse limit $$\mathbb{Z}_{p}=\varprojlim \mathbb{Z} / p^{n} \mathbb{Z}$$
+    of the inverse system of rings $(\mathbb{Z} / p^{n} \mathbb{Z})$ with morphisms
+    $(f_{n})$ given by reduction modulo $p^{n}$ (for a residue class $\bar{x} \in
+    \mathbb{Z} / p^{n+1} \mathbb{Z}$, pick an integer $x \in \bar{x}$ and take its
+    residue class in $\mathbb{Z} / p^{n} \mathbb{Z}$).
+  kind: definition
+  location: Section 4.2
+  name: Definition 4.3
+- description: Let $a=(a_{n})$ be a $p$-adic integer with each $a_{n}$ uniquely represented
+    by an integer in $\in [0, p^{n}-1]$. The sequence $(b_{0}, b_{1}, b_{2}, \ldots)$
+    with $b_{0}=a_{1}$ and $b_{n}=(a_{n+1}-a_{n})/p^{n}$ is called the $p$-adic expansion
+    of $a$.
+  kind: definition
+  location: Section 4.2
+  name: Definition 4.5
+- description: Every element of $\mathbb{Z}_{p}$ has a unique $p$-adic expansion and
+    every sequence $(b_{0}, b_{1}, b_{2}, \ldots)$ of integers in $[0, p-1]$ is the
+    $p$-adic expansion of an element of $\mathbb{Z}_{p}$.
+  kind: theorem
+  location: Section 4.2
+  name: Theorem 4.6
+- description: For each positive integer $m$, the sequence $$0 \longrightarrow \mathbb{Z}_{p}
+    \xrightarrow{[p^{m}]} \mathbb{Z}_{p} \xrightarrow{\pi_{m}} \mathbb{Z} / p^{m}
+    \mathbb{Z} \longrightarrow 0$$ is exact. Here $[p^{m}]$ is the multiplication-by-$p^{m}$
+    map and $\pi_{m}$ is the projection to $\mathbb{Z} / p^{m} \mathbb{Z}$.
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.8
+- description: For all positive integers $m$ we have $\mathbb{Z}_{p} / p^{m} \mathbb{Z}_{p}
+    \simeq \mathbb{Z} / p^{m} \mathbb{Z}$.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.9
+- description: For each nonzero $a \in \mathbb{Z}_{p}$ the $p$-adic valuation of $a$,
+    denoted $v_{p}(a)$, is the greatest integer $m$ for which $a$ lies in the image
+    of $[p^{m}]$; equivalently, $v_{p}(a)$ is the index of the first nonzero entry
+    in the $p$-adic expansion of $a$. We also define $v_{p}(0)=\infty$, and adopt
+    the conventions that $n<\infty$ and $n+\infty=\infty$ for any integer $n$.
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.10
+- description: 'The $p$-adic valuation $v_{p}$ satisfies the following properties:
+    (1) $v_{p}(a)=\infty$ if and only if $a=0$. (2) $v_{p}(ab)=v_{p}(a)+v_{p}(b)$.
+    (3) $v_{p}(a+b) \geq \min(v_{p}(a), v_{p}(b))$.'
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.11
+- description: 'Let $R$ be a commutative ring. A discrete valuation (on $R$) is a
+    function $v: R \rightarrow \mathbb{Z} \bigcup\{\infty\}$ that satisfies the three
+    properties listed in Theorem 4.11: (1) $v(a)=\infty$ if and only if $a=0$, (2)
+    $v(ab)=v(a)+v(b)$, (3) $v(a+b) \geq \min(v(a), v(b))$.'
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.12
+- description: $\mathbb{Z}_{p}$ is an integral domain (a ring with no zero divisors).
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.13
+- description: The group of $p$-adic units $\mathbb{Z}_{p}^{\times}$ is the multiplicative
+    group of invertible elements in $\mathbb{Z}_{p}$.
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.14
+- description: 'The following hold: (1) $\mathbb{Z}_{p}^{\times}=\mathbb{Z}_{p}-p\mathbb{Z}_{p}$;
+    equivalently, $\mathbb{Z}_{p}^{\times}=\{a \in \mathbb{Z}_{p}: v_{p}(a)=0\}$.
+    (2) Every nonzero $a \in \mathbb{Z}_{p}$ can be uniquely written as $p^{n} u$
+    with $n \in \mathbb{Z}_{\geq 0}$ and $u \in \mathbb{Z}_{p}^{\times}$.'
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.15
+- description: Every nonzero ideal in $\mathbb{Z}_{p}$ is of the form $(p^{m})$ for
+    some integer $m \geq 0$.
+  kind: theorem
+  location: Section 4.3
+  name: Theorem 4.16
+- description: The ring $\mathbb{Z}_{p}$ is a principal ideal domain with a unique
+    maximal ideal.
+  kind: corollary
+  location: Section 4.3
+  name: Corollary 4.17
+- description: A discrete valuation ring is a principal ideal domain which contains
+    a unique maximal ideal and is not a field.
+  kind: definition
+  location: Section 4.3
+  name: Definition 4.18
+- description: The field of $p$-adic numbers $\mathbb{Q}_{p}$ is the fraction field
+    of $\mathbb{Z}_{p}$.
+  kind: definition
+  location: Section 5.1
+  name: Definition 5.1
+- description: 'Let $k$ be a field. An absolute value on $k$ is a function $\|\|:
+    k \rightarrow \mathbb{R}_{\geq 0}$ with the following properties: (1) $\|x\|=0$
+    if and only if $x=0$, (2) $\|xy\|=\|x\| \cdot \|y\|$, (3) $\|x+y\| \leq \|x\|+\|y\|$.'
+  kind: definition
+  location: Section 5.2
+  name: Definition 5.2
+- description: Let $k$ be a field with absolute value $\|\|$ and multiplicative identity
+    $1_{k}$. (a) $\|1_{k}\|=1$. (b) $\|-x\|=\|x\|$. (c) $\|\|$ is nonarchimedean if
+    and only if $\|n\| \leq 1$ for all positive integers $n \in k$.
+  kind: theorem
+  location: Section 5.2
+  name: Theorem 5.3
+- description: In a field $k$ of positive characteristic $p$ every absolute value
+    $\|\|$ is nonarchimedean and is moreover trivial if $k$ is finite.
+  kind: corollary
+  location: Section 5.2
+  name: Corollary 5.4
+- description: Two absolute values $\|\|$ and $\|\|^{\prime}$ on a field $k$ are said
+    to be equivalent if there is a positive real number $\alpha$ such that $\|x\|^{\prime}=\|x\|^{\alpha}$
+    for all $x \in k$.
+  kind: definition
+  location: Section 5.3
+  name: Definition 5.5
+- description: Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to some
+    $|\;|_{p}$, where $p$ is either a prime, or $p=\infty$.
+  kind: theorem
+  location: Section 5.3
+  name: Theorem 5.6 (Ostrowski)
+- description: The trace $\operatorname{Tr}_{L/K}(\alpha)$ is the trace of $T_\alpha$,
+    and the norm $N_{L/K}(\alpha)$ is the determinant of $T_\alpha$.
+  kind: definition
+  location: Section 7.1
+  name: Definition 7.1
+- description: Let $L/K$ be a separable field extension of degree $n$, let $\alpha
+    \in L$ have minimal polynomial $g_\alpha$ over $K$ and let $f_\alpha$ be the characteristic
+    polynomial of $T_\alpha$. Then $f_\alpha = g_\alpha^{n/d}$ where $d = [K(\alpha):K]$.
+  kind: theorem
+  location: Section 7.1
+  name: Theorem 7.2
+- description: Let $\mathfrak{a}$ be a nonzero $\mathcal{O}$-ideal. The (ideal) norm
+    $N\mathfrak{a}$ of $\mathfrak{a}$ is the cardinality of the (necessarily finite)
+    ring $\mathcal{O}/\mathfrak{a}$, equivalently, the index $[\mathcal{O}:\mathfrak{a}]$
+    of $\mathfrak{a}$ as a sublattice of the $\mathbb{Z}$-lattice $\mathcal{O}$. The
+    norm of $(0)$ is zero.
+  kind: definition
+  location: Section 7.2
+  name: Definition 7.3
+- description: Let $\alpha$ be an algebraic integer in a number field $L$. Then $N(\alpha)
+    = |N_{L/\mathbb{Q}}(\alpha)|$.
+  kind: theorem
+  location: Section 7.2
+  name: Theorem 7.5
+- description: Let $L$ be a number field. For every $\alpha \in L^\times$ we have
+    $\prod_{\mathfrak{p}} |\alpha|_{\mathfrak{p}} = 1$, where $\mathfrak{p}$ ranges
+    over all the primes of $L$ (both finite and infinite).
+  kind: theorem
+  location: Section 7.3
+  name: Theorem 7.6
+- description: A sequence $(x_n)$ of elements of $k$ converges (to $\ell$) if there
+    is an element $\ell \in k$ such that for every $\epsilon > 0$ there is a positive
+    integer $N$ such that $\|x_n - \ell\| < \epsilon$ for all $n \geq N$. Equivalently,
+    $(x_n)$ converges to $\ell$ if $\|x_n - \ell\| \to 0$ as $n \to \infty$.
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.7
+- description: Let $(x_n)$ and $(y_n)$ be sequences in $k$ that converge to $x$ and
+    $y$ respectively. Then the sequences $(x_n + y_n)$ and $(x_n y_n)$ converge to
+    $x+y$ and $xy$ respectively.
+  kind: lemma
+  location: Section 7.4
+  name: Lemma 7.8
+- description: A sequence $(x_n)$ in $k$ is a Cauchy sequence if for every $\epsilon
+    > 0$ there exists a positive integer $N$ such that $\|x_m - x_n\| < \epsilon$
+    for all $m, n \geq N$.
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.9
+- description: Every convergent sequence is a Cauchy sequence.
+  kind: theorem
+  location: Section 7.4
+  name: Theorem 7.10
+- description: A field $k$ is complete (with respect to $\|\|$) if every Cauchy sequence
+    in $k$ converges (to an element of $k$).
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.11
+- description: Two sequences $(a_n)$ and $(b_n)$ are equivalent if $\|a_n - b_n\|
+    \rightarrow 0$ as $n \rightarrow \infty$.
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.12
+- description: The completion of $k$ (with respect to $\|\|$) is the field $\hat{k}$
+    whose elements are equivalence classes of Cauchy sequences in $k$, where (1) $0_{\hat{k}}
+    = [(0_k, 0_k, 0_k, \ldots)]$, (2) $1_{\hat{k}} = [(1_k, 1_k, 1_k, \ldots)]$, (3)
+    $[(x_n)] + [(y_n)] = [(x_n + y_n)]$ and $[(x_n)][(y_n)] = [(x_n y_n)]$.
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.13
+- description: Let $S$ be any subset of a field $k$ with absolute value $\|\|$. The
+    set $S$ is dense in $k$ if for every $x \in k$ and every $\epsilon > 0$ there
+    exists $y \in S$ such that $\|x - y\| < \epsilon$.
+  kind: definition
+  location: Section 7.4
+  name: Definition 7.14
+- description: Let $k$ be a field with absolute value $\|\|$. Then $k$ is dense in
+    its completion $\hat{k}$.
+  kind: theorem
+  location: Section 7.4
+  name: Theorem 7.15
+- description: Every Cauchy sequence in $\hat{k}$ is equivalent to a Cauchy sequence
+    whose elements lie in $k$.
+  kind: corollary
+  location: Section 7.4
+  name: Corollary 7.16
+- description: 'The completion $\hat{k}$ of $k$ is complete. Moreover it is the smallest
+    complete field containing $k$ in the following sense: any embedding of $k$ in
+    a complete field $k''$ can be extended to an embedding of $\hat{k}$ into $k''$.'
+  kind: corollary
+  location: Section 7.4
+  name: Corollary 7.17
+- description: 'The completion $\hat{\mathbb{Q}}$ of $\mathbb{Q}$ with respect to
+    the $p$-adic absolute value $|\,|_p$ is isomorphic to $\mathbb{Q}_p$. More precisely,
+    there is an isomorphism $\pi: \mathbb{Q}_p \rightarrow \hat{\mathbb{Q}}$ that
+    satisfies $|\pi(x)|_p = |x|_p$ for all $x \in \hat{\mathbb{Q}}$.'
+  kind: theorem
+  location: Section 8.1
+  name: Theorem 8.1
+- description: 'Let $(S_n)$ be an inverse system of finite non-empty sets with a compatible
+    system of maps $f_n: S_{n+1} \rightarrow S_n$. The inverse limit $S = \varprojlim
+    S_n$ is non-empty.'
+  kind: lemma
+  location: Section 8.2
+  name: Lemma 8.3
+- description: 'For any $f \in \mathbb{Z}_p[x]$ the following are equivalent: (a)
+    $f$ has a root in $\mathbb{Z}_p$. (b) $f \bmod p^n$ has a root in $\mathbb{Z}/p^n\mathbb{Z}$
+    for all $n \geq 1$.'
+  kind: theorem
+  location: Section 8.2
+  name: Theorem 8.4
+- description: 'Let $f \in R[x]$ be a polynomial of degree at most $d$ and let $a
+    \in R$. The (degree $d$) Taylor expansion of $f$ about $a$ is $f(x) = f_d(x-a)^d
+    + f_{d-1}(x-a)^{d-1} + \cdots + f_1(x-a) + f_0$ with $f_0, f_1, \ldots, f_d \in
+    R$. The Taylor coefficients $f_0, f_1, \ldots, f_d$ are uniquely determined by
+    the expansion of $f(y+z)$ in $R[y,z]$: $f(y+z) = f_d(y)z^d + f_{d-1}(y)z^{d-1}
+    + \cdots + f_1(y)z + f_0(y)$. Replacing $y$ with $a$ and $z$ with $x-a$ yields
+    the Taylor expansion of $f$ with $f_i = f_i(a) \in R$.'
+  kind: definition
+  location: Section 8.2
+  name: Definition 8.5
+- description: Let $f(x) = \sum_{n=0}^{d} a_n x^n$ be a polynomial in $R[x]$. The
+    formal derivative $f'$ of $f$ is the polynomial $f'(x) = \sum_{n=1}^{d} n a_n
+    x^{n-1}$ in $R[x]$.
+  kind: definition
+  location: Section 8.2
+  name: Definition 8.6
+- description: Let $a \in R$ and $f \in R[x]$. Then $f(a) = f'(a) = 0$ if and only
+    if $a$ is (at least) a double root of $f$, that is, $f(x) = (x-a)^2 g(x)$ for
+    some $g \in R[x]$.
+  kind: lemma
+  location: Section 8.2
+  name: Lemma 8.7
+- description: Let $a \in \mathbb{Z}_{p}$ and $f \in \mathbb{Z}_{p}[x]$. Suppose $f(a)
+    \equiv 0 \bmod p$ and $f'(a) \not\equiv 0 \bmod p$. Then there is a unique $b
+    \in \mathbb{Z}_{p}$ such that $f(b)=0$ and $b \equiv a \bmod p$.
+  kind: theorem
+  location: Section 8.3
+  name: Theorem 8.8 (Hensel's lemma)
+- description: 'The four equivalent definitions below all define a quadratic form
+    on $k$. 1. A homogeneous quadratic polynomial $f \in k[x_{1}, \ldots, x_{n}]$.
+    2. Associated to $f$ is a symmetric matrix $A \in k^{n \times n}$ whose entries
+    $(a_{ij})$ correspond to the coefficients of $x_{i} x_{j}$ in $f$ via $f(x_{1},
+    \ldots, x_{n})=\sum_{i,j} a_{ij} x_{i} x_{j}$. Conversely, every symmetric matrix
+    defines a homogeneous quadratic polynomial. 3. Each symmetric matrix $A$ defines
+    a symmetric bilinear form $B: k^{n} \times k^{n} \rightarrow k$ via $B_{f}(x,
+    y)=x^{t} A y$. Conversely, if $B$ is a symmetric bilinear form, and $e_{1}, \ldots,
+    e_{n}$ are basis vectors, the matrix $A=(a_{ij})$ defined by $a_{ij}=B(e_{i},
+    e_{j})$ is symmetric. 4. The function $f: k^{n} \rightarrow k$ obtained by evaluating
+    a homogeneous quadratic polynomial is a homogeneous quadratic function. In terms
+    of the corresponding bilinear form $B(x, y)$, we have $f(x)=B(x, x)$. Conversely,
+    we can recover $B(x, y)$ from $f(x)$ via $B(x, y)=\frac{f(x+y)-f(x)-f(y)}{2}$.'
+  kind: definition
+  location: Section 9.1
+  name: Definition 9.1
+- description: Two quadratic forms $f$ and $g$ are equivalent if $g(v)=f(Tv)$ for
+    some $T \in \mathrm{GL}_{n}(k)$. This defines an equivalence relation on the set
+    of all quadratic forms of the same dimension over the field $k$.
+  kind: definition
+  location: Section 9.1
+  name: Definition 9.2
+- description: The rank of a quadratic form is the rank of its matrix; rank is clearly
+    preserved under equivalence. A quadratic form is non-degenerate if it has full
+    rank, equivalently, the determinant of its matrix is nonzero.
+  kind: definition
+  location: Section 9.1
+  name: Definition 9.3
+- description: The discriminant of a nondegenerate quadratic form with matrix $A$
+    is the image of $\det A$ in $k^{\times} / k^{\times 2}$; it is clearly preserved
+    by equivalence.
+  kind: definition
+  location: Section 9.1
+  name: Definition 9.4
+- description: Every quadratic form is equivalent to a diagonal quadratic form.
+  kind: theorem
+  location: Section 9.1
+  name: Theorem 9.5
+- description: 'A quadratic form $f$ on $V$ represents $a \in k$ if $a$ lies in the
+    image of $f: V \rightarrow k$. Equivalent forms necessarily represent the same
+    elements (but the converse need not hold).'
+  kind: definition
+  location: Section 9.1
+  name: Definition 9.7
+- description: If a nondegenerate quadratic form $f$ represents 0 then it represents
+    every element of $k$.
+  kind: theorem
+  location: Section 9.1
+  name: Theorem 9.9
+- description: A quadratic form over $\mathbb{Q}$ represents 0 if and only if it represents
+    0 over every completion of $\mathbb{Q}$, that is, over $\mathbb{Q}_{p}$ for all
+    primes $p \leq \infty$.
+  kind: theorem
+  location: Section 9.1
+  name: Theorem 9.10 (Hasse-Minkowski)
+- description: For $a, b \in \mathbb{Q}_{p}^{\times}$ the Hilbert symbol $(a, b)_{p}$
+    is defined by $(a, b)_{p} = \begin{cases} 1 & a x^{2}+b y^{2}=1 \text{ has a solution
+    in } \mathbb{Q}_{p} \\ -1 & \text{otherwise} \end{cases}$
+  kind: definition
+  location: Section 10.1
+  name: Definition 10.1
+- description: 'For any $a, b \in \mathbb{Q}_{p}^{\times}$, the following are equivalent:
+    (i) $(a, b)_{p}=1$. (ii) The quadratic form $z^{2}-a x^{2}-b y^{2}$ represents
+    0. (iii) The equation $a x^{2}+b y^{2}=z^{2}$ has a primitive solution. (iv) $a
+    \in \mathbb{Q}_{p}$ is the norm of an element in $\mathbb{Q}_{p}(\sqrt{b})$.'
+  kind: lemma
+  location: Section 10.1
+  name: Lemma 10.2
+- description: 'For all $a, b, c \in \mathbb{Q}_{p}^{\times}$, the following hold:
+    (i) $(1, c)_{p}=1$. (ii) $(-c, c)_{p}=1$. (iii) $(a, c)_{p}=1 \Longrightarrow
+    (a, c)_{p}(b, c)_{p}=(a b, c)_{p}$. (iv) $(c, c)_{p}=(-1, c)_{p}$.'
+  kind: corollary
+  location: Section 10.1
+  name: Corollary 10.3
+- description: $(a, b)_{\infty}=-1$ if and only if $a, b<0$.
+  kind: theorem
+  location: Section 10.1
+  name: Theorem 10.4
+- description: If $p$ is odd, then $(u, v)_{p}=1$ for all $u, v \in \mathbb{Z}_{p}^{\times}$.
+  kind: lemma
+  location: Section 10.1
+  name: Lemma 10.5
+- description: Let $p$ be an odd prime, and write $a, b \in \mathbb{Q}_{p}^{\times}$
+    as $a=p^{\alpha} u$ and $b=p^{\beta} v$, with $\alpha, \beta \in \mathbb{Z}$ and
+    $u, v \in \mathbb{Z}_{p}^{\times}$. Then $(a, b)_{p}=(-1)^{\alpha \beta \frac{p-1}{2}}\left(\frac{u}{p}\right)^{\beta}\left(\frac{v}{p}\right)^{\alpha}$
+    where $\left(\frac{x}{p}\right)$ denotes the Legendre symbol $\left(\frac{x \bmod
+    p}{p}\right)$.
+  kind: theorem
+  location: Section 10.1
+  name: Theorem 10.7
+- description: Let $u, v \in \mathbb{Z}_{2}^{\times}$. The equations $z^{2}-u x^{2}-v
+    y^{2}=0$ and $z^{2}-2 u x^{2}-v y^{2}=0$ have primitive solutions over $\mathbb{Z}_{2}$
+    if and only if they have primitive solutions modulo 8.
+  kind: lemma
+  location: Section 10.1
+  name: Lemma 10.8
+- description: Write $a, b \in \mathbb{Q}_{2}^{\times}$ as $a=2^{\alpha} u$ and $b=2^{\beta}
+    v$ with $\alpha, \beta \in \mathbb{Z}$ and $u, v \in \mathbb{Z}_{2}^{\times}$.
+    Then $(a, b)_{2}=(-1)^{\epsilon(u) \epsilon(v)+\alpha \omega(v)+\beta \omega(u)}$
+    where $\epsilon(u)$ and $\omega(u)$ denote the images in $\mathbb{Z} / 2 \mathbb{Z}$
+    of $(u-1) / 2$ and $(u^{2}-1) / 8$, respectively.
+  kind: theorem
+  location: Section 10.1
+  name: Theorem 10.9
+- description: The Hilbert symbol $(a, b)_{p}$ is a nondegenerate bilinear map. This
+    means that for all $a, b, c \in \mathbb{Q}_{p}^{\times}$ we have $(a, c)_{p}(b,
+    c)_{p}=(a b, c)_{p}$ and $(a, b)_{p}(a, c)_{p}=(a, b c)_{p}$ and that for every
+    non-square $c$ we have $(b, c)_{p}=-1$ for some $b$.
+  kind: corollary
+  location: Section 10.1
+  name: Corollary 10.10
+- description: Let $a, b \in \mathbb{Q}^{\times}$. Then $(a, b)_{p}=1$ for all but
+    finitely many primes $p$ and $\prod_{p}(a, b)_{p}=1$.
+  kind: theorem
+  location: Section 10.1
+  name: Theorem 10.11
+- description: Let $p$ be an odd prime and let $f$ be a diagonal quadratic form of
+    dimension $n>2$ with coefficients $a_{1}, \ldots, a_{n} \in \mathbb{Z}_{p}^{\times}$.
+    Then $f$ represents 0 over $\mathbb{Q}_{p}$.
+  kind: theorem
+  location: Section 11.1
+  name: Theorem 11.1
+- description: Every quadratic form of dimension $n>2$ over $\mathbb{Q}$ represents
+    0 over $\mathbb{Q}_{p}$ for all but finitely many primes $p$.
+  kind: corollary
+  location: Section 11.1
+  name: Corollary 11.2
+- description: The nondegenerate quadratic form $ax^{2}+by^{2}$ over $\mathbb{Q}_{p}$
+    represents $t \in \mathbb{Q}_{p}^{*}$ if and only if $(a, b)_{p}=(t,-a b)_{p}$.
+  kind: lemma
+  location: Section 11.1
+  name: Lemma 11.3
+- description: The nondegenerate form $ax^{2}+by^{2}+cz^{2}$ over $\mathbb{Q}_{p}$
+    represents 0 if and only if $(a, b)_{p}=(-c,-ab)_{p}$.
+  kind: corollary
+  location: Section 11.1
+  name: Corollary 11.4
+- description: A ternary quadratic form over $\mathbb{Q}$ that represents 0 over all
+    but at most one completion of $\mathbb{Q}$ represents 0 over every completion
+    of $\mathbb{Q}$.
+  kind: corollary
+  location: Section 11.1
+  name: Corollary 11.5
+- description: Let $p \leq \infty$ be any prime of $\mathbb{Q}$. Under the metric
+    $d(x, y)=|x-y|_{p}$, the set $\mathbb{Q}$ is dense in $\mathbb{Q}_{p}$ and the
+    set $\mathbb{Z}$ is dense in $\mathbb{Z}_{p}$.
+  kind: theorem
+  location: Section 11.2
+  name: Theorem 11.6
+- description: Let $S$ be a finite set of primes $p \leq \infty$, and for each $p
+    \in S$ let $x_{p} \in \mathbb{Q}_{p}$ be given. Then for every $\epsilon>0$ there
+    exists $x \in \mathbb{Q}$ such that $|x-x_{p}|_{p}<\epsilon$ for all $p \in S$.
+    Equivalently, the image of $\mathbb{Q}$ in $\prod_{p \in S} \mathbb{Q}_{p}$ is
+    dense under the product topology.
+  kind: theorem
+  location: Section 11.2
+  name: Theorem 11.7 (Weak approximation)
+- description: Let $S$ be a finite set of primes $p<\infty$, and for each $p \in S$
+    let $x_{p} \in \mathbb{Z}_{p}$ be given. Then for every $\epsilon>0$ there exists
+    $x \in \mathbb{Z}$ such that $|x-x_{p}|_{p}<\epsilon$ for all $p \in S$. Equivalently,
+    the image of $\mathbb{Z}$ in $\prod_{p \in S} \mathbb{Z}_{p}$ is dense under the
+    product topology.
+  kind: theorem
+  location: Section 11.2
+  name: Theorem 11.8 (Strong approximation)
+- description: Let $S$ be a finite set of primes $p \leq \infty$, and for each $p
+    \in S$ let $x_{p} \in \mathbb{Q}_{p}^{\times}$ be given. Then there exists an
+    $x \in \mathbb{Q}$ such that (i) $x \in x_{p} \mathbb{Q}_{p}^{\times 2}$ for each
+    $p \in S$. (ii) $|x|_{p}=1$ for all but at most one finite prime $p_{0} \notin
+    S$.
+  kind: lemma
+  location: Section 11.2
+  name: Lemma 11.11
+- description: Every transcendence basis for $L/k$ has the same cardinality.
+  kind: theorem
+  location: Section 12.1
+  name: Theorem 12.2
+- description: The transcendence degree of a field extension $L/K$ is the cardinality
+    of any (hence every) transcendence basis for $L/k$.
+  kind: definition
+  location: Section 12.1
+  name: Definition 12.3
+- description: $n$-dimensional affine space over $k$ is the set $\mathbb{A}_{k}^{n}=\{(x_{1},
+    \ldots, x_{n}) \in \bar{k}^{n}\}$, equivalently $\mathbb{A}_{k}^{n}$ is the vector
+    space $\bar{k}^{n}$ regarded as a set. When $k$ is clear from context we may just
+    write $\mathbb{A}^{n}$. If $k \subseteq L \subseteq \bar{k}$, the set of $L$-rational
+    points (or just $L$-points) in $\mathbb{A}^{n}$ is $\mathbb{A}^{n}(L)=\{(x_{1},
+    \ldots, x_{n}) \in L^{n}\}=\mathbb{A}^{n}(\bar{k})^{G_{L}}$ where $\mathbb{A}^{n}(\bar{k})^{G_{L}}$
+    denotes the set of points in $\mathbb{A}^{n}(\bar{k})$ fixed by $G_{L}=\operatorname{Gal}(L^{\text{sep}}/L)=\operatorname{Gal}(\bar{k}/L)$.
+    In particular, $\mathbb{A}^{n}(k)=\mathbb{A}^{n}(\bar{k})^{G_{k}}$.
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.7
+- description: 'If $S$ is a set of polynomials in $A=\bar{k}[x_{1}, \ldots, x_{n}]$,
+    the set of points $Z_{S}=\{P \in \mathbb{A}^{n}: f(P)=0 \text{ for all } f \in
+    S\}$ is called an (affine) algebraic set. If $k \subseteq L \subseteq \bar{k}$,
+    the set of $L$-rational points in $Z_{S}$ is $Z_{S}(L)=Z_{S} \cap \mathbb{A}^{n}(L)$.
+    When $S$ is a singleton $\{f\}$ we may write $Z_{f}$ in place of $Z_{\{f\}}$.'
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.8
+- description: A commutative ring $R$ is noetherian if every $R$-ideal is finitely
+    generated. Equivalently, every infinite ascending chain of $R$-ideals $I_{1} \subseteq
+    I_{2} \subseteq \ldots$ eventually stabilizes, that is, $I_{n+1}=I_{n}$ for all
+    sufficiently large $n$.
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.10
+- description: If $R$ is a noetherian ring, then so is $R[x]$.
+  kind: theorem
+  location: Section 12.2
+  name: Theorem 12.11 (Hilbert basis theorem)
+- description: 'For an algebraic set $Z \subseteq \mathbb{A}^{n}$, the ideal of $Z$
+    is the set $I(Z)=\{f \in A: f(P)=0 \text{ for all } P \in Z\}$ where $A$ is the
+    polynomial ring $\bar{k}[x_{1}, \ldots, x_{n}]$.'
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.12
+- description: 'Let $R$ be a commutative ring. For any $R$-ideal $I$ we define $\sqrt{I}=\{x
+    \in R: x^{r} \in I \text{ for some integer } r>0\}$ and say that $I$ is a radical
+    ideal if $I=\sqrt{I}$.'
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.13
+- description: For any ideal $I$ in a commutative ring $R$, the set $\sqrt{I}$ is
+    an ideal.
+  kind: lemma
+  location: Section 12.2
+  name: Lemma 12.14
+- description: For every ideal $I \subseteq \bar{k}[x_{1}, \ldots, x_{n}]$ we have
+    $I(Z_{I})=\sqrt{I}$.
+  kind: theorem
+  location: Section 12.2
+  name: Theorem 12.15 (Hilbert's Nullstellensatz)
+- description: For any proper ideal $I \subseteq \bar{k}[x_{1}, \ldots, x_{n}]$ the
+    variety $Z_{I}$ is nonempty.
+  kind: theorem
+  location: Section 12.2
+  name: Theorem 12.16 (weak Nullstellensatz)
+- description: The maximal ideals of the ring $\bar{k}[x_{1}, \ldots, x_{n}]$ are
+    all of the form $m_{P}=(x_{1}-P_{1}, \ldots, x_{n}-P_{n})$ for some point $P=(P_{1},
+    \ldots, P_{n})$ in $\mathbb{A}^{n}(\bar{k})$.
+  kind: corollary
+  location: Section 12.2
+  name: Corollary 12.17
+- description: There is a one-to-one inclusion-reversing correspondence between radical
+    ideals $I \subseteq \bar{k}[x_{1}, \ldots, x_{n}]$ and algebraic sets $Z \subseteq
+    \mathbb{A}^{n}(\bar{k})$ in which $I=I(Z)$ and $Z=Z_{I}$.
+  kind: corollary
+  location: Section 12.2
+  name: Corollary 12.18
+- description: An algebraic set is irreducible if it is nonempty and not the union
+    of two smaller algebraic sets.
+  kind: definition
+  location: Section 12.2
+  name: Definition 12.20
+- description: An algebraic set is irreducible if and only if its ideal is prime.
+  kind: theorem
+  location: Section 12.2
+  name: Theorem 12.21
+- description: An algebraic set $Z \in \mathbb{A}^{n}$ is said to be defined over
+    $k$ if its ideal is generated by polynomials in $k[x_{1}, \ldots, x_{n}]$, that
+    is, $I(Z)$ is equal to the ideal generated by $I(Z) \cap k[x_{1}, \ldots, x_{n}]$
+    in $\bar{k}[x_{1}, \ldots, x_{n}]$. We write $Z/k$ to indicate that $Z$ is an
+    algebraic set that is defined over $k$ and define the ideal $I(Z/k) = I(Z) \cap
+    k[x_{1}, \ldots, x_{n}]$.
+  kind: definition
+  location: Section 13.1
+  name: Definition 13.1
+- description: Let $Z$ be an algebraic set defined over $k$. The affine coordinate
+    ring of $Z/k$ is the ring $k[Z] = k[x_{1}, \ldots, x_{n}] / I(Z/k)$. We similarly
+    define $\bar{k}[Z] = \bar{k}[x_{1}, \ldots, x_{n}] / I(Z)$.
+  kind: definition
+  location: Section 13.1
+  name: Definition 13.2
+- description: An affine variety $V$ is an irreducible algebraic set in $\mathbb{A}^{n}$.
+  kind: definition
+  location: Section 13.1
+  name: Definition 13.3
+- description: Let $V/k$ be an affine variety defined over $k$. The function field
+    $k(V)$ of $V$ is the fraction field of the coordinate ring $k[V]$.
+  kind: definition
+  location: Section 13.1
+  name: Definition 13.4
+- description: The dimension of an affine variety $V$ is the transcendence degree
+    of the field extension $\bar{k}(V)/\bar{k}$.
+  kind: definition
+  location: Section 13.1.1
+  name: Definition 13.5
+- description: The dimension of $\mathbb{A}^{n}$ is $n$, and the dimension of any
+    point $P \in \mathbb{A}^{n}$ is 0.
+  kind: lemma
+  location: Section 13.1.1
+  name: Lemma 13.6
+- description: The Krull dimension of a commutative ring $R$ is the supremum of the
+    set of integers $d$ for which there exists a chain of distinct prime $R$-ideals
+    $\mathfrak{p}_{0} \subsetneq \mathfrak{p}_{1} \subsetneq \cdots \subsetneq \mathfrak{p}_{d}$.
+  kind: definition
+  location: Section 13.1.1
+  name: Definition 13.7
+- description: Let $k$ be a field and let $R$ be an integral domain finitely generated
+    as a $k$-algebra. The Krull dimension of $R$ is the transcendence degree of its
+    fraction field over $k$.
+  kind: theorem
+  location: Section 13.1.1
+  name: Theorem 13.8
+- description: The geometric dimension of a variety $V$ is the largest integer $d$
+    for which there exists a chain $V_{0} \subsetneq \cdots \subsetneq V_{d} = V$
+    of distinct varieties contained in $V$.
+  kind: definition
+  location: Section 13.1.1
+  name: Definition 13.9
+- description: Let $V \subseteq \mathbb{A}^{n}$ be a variety, and let $f_{1}, \ldots,
+    f_{m} \in \bar{k}[x_{1}, \ldots, x_{n}]$ be a set of generators for $I(V)$. A
+    point $P \in V$ is nonsingular (or smooth) if the $m \times n$ Jacobian matrix
+    $M(P)$ with entries $M_{ij}(P) = \frac{\partial f_{i}}{\partial x_{j}}(P)$ has
+    rank $n - \dim V$; otherwise $P$ is a singular point of $V$. If $V$ has no singular
+    points then we say that $V$ is smooth.
+  kind: definition
+  location: Section 13.1.2
+  name: Definition 13.10
+- description: '$n$-dimensional projective space $\mathbb{P}^{n}$ over $k$ is the
+    set of all points in $\mathbb{A}^{n+1} - \{\mathbf{0}\}$ modulo the equivalence
+    relation $(a_{0}, \ldots, a_{n}) \sim (\lambda a_{0}, \ldots, \lambda a_{n})$
+    for all $\lambda \in \bar{k}^{\times}$. We use the ratio notation $(a_{0}: \ldots:
+    a_{n})$ to denote the equivalence class of $(a_{0}, \ldots, a_{n})$, and call
+    it a projective point or a point in $\mathbb{P}^{n}$. The set of $k$-rational
+    points in $\mathbb{P}^{n}$ is $\mathbb{P}^{n}(k) = \{(a_{0}: \ldots: a_{n}) \in
+    \mathbb{P}^{n}: a_{0}, \ldots, a_{n} \in k\}$ (and similarly for any extension
+    of $k$ in $\bar{k}$).'
+  kind: definition
+  location: Section 13.2
+  name: Definition 13.11
+- description: A polynomial $f \in \bar{k}[x_{0}, \ldots, x_{n}]$ is homogeneous of
+    degree $d$ if $f(\lambda x_{0}, \ldots, \lambda x_{n}) = \lambda^{d} f(x_{0},
+    \ldots, x_{n})$ for all $\lambda \in \bar{k}$. Equivalently, every monomial in
+    $f$ has total degree $d$. We say that $f$ is homogeneous if it is homogeneous
+    of some degree.
+  kind: definition
+  location: Section 13.3
+  name: Definition 13.13
+- description: 'The complement of $H_{i}$ in $\mathbb{P}^{n}$ is the affine patch
+    (or affine chart) $U_{i} = \{(a_{0}: \ldots: a_{i-1}: 1: a_{i+1}: \ldots: a_{n})
+    \in \mathbb{P}^{n}\}$ which corresponds to a copy of $\mathbb{A}^{n}$ embedded
+    in $\mathbb{P}^{n}$ (note that fixing $a_{i} = 1$ fixes a choice of representative
+    for the projective point $(a_{0}: \ldots: a_{i-1}: 1: a_{i+1}: \ldots: a_{n})$).'
+  kind: definition
+  location: Section 13.3.1
+  name: Definition 13.14
+- description: A homogeneous ideal in $\bar{k}\left[x_{0}, \ldots, x_{n}\right]$ is
+    an ideal that is generated by a set of homogeneous polynomials.
+  kind: definition
+  location: Section 13.4
+  name: Definition 13.16
+- description: Let $Z$ be an algebraic set in $\mathbb{P}^{n}$, the (homogeneous)
+    ideal of $Z$ is the ideal $I(Z)$ generated by all the homogeneous polynomials
+    in $\bar{k}\left[x_{0}, \ldots, x_{n}\right]$ that vanish at every point in $Z$.
+    We say that $Z$ is defined over $k$ if its ideal can be generated by homogeneous
+    polynomials in $k\left[x_{0}, \ldots, x_{n}\right]$, and write $Z / k$ to indicate
+    this. If $Z$ is defined over $k$ the set of $k$-rational points on $Z$ is $Z(k)=Z
+    \cap \mathbb{P}^{n}(k)=Z^{G_{k}}$ and similarly for any extension of $k$ in $\bar{k}$.
+  kind: definition
+  location: Section 13.4
+  name: Definition 13.17
+- description: A (projective) variety is an irreducible algebraic set in $\mathbb{P}^{n}$.
+  kind: definition
+  location: Section 13.4
+  name: Definition 13.18
+- description: Let $V$ be a projective variety with homogeneous ideal $I=\left(f_{1},
+    \ldots, f_{m}\right)$. Let $I_{i}$ be the ideal generated by the dehomogenizations
+    of $f_{1}, \ldots, f_{m}$ at $x_{i}$. Then $I_{i}$ is a prime ideal (since $I$
+    is) and the $i$th affine part of $V$ is the affine variety $V_{i}=V \cap U_{i}$
+    whose ideal is $I_{i}$. We can then write $V=\bigcup_{i} V_{i}$ as the union of
+    its affine parts.
+  kind: definition
+  location: Section 13.4
+  name: Definition 13.19
+- description: The dimension of a projective variety $V$ is the maximum of the dimensions
+    of its affine parts, and $V$ is smooth if and only if all its affine parts are.
+  kind: definition
+  location: Section 13.4
+  name: Definition 13.20
+- description: If $Z \subseteq \mathbb{A}^{n}$ is any affine algebraic set, we can
+    embed it in $\mathbb{P}^{n}$ by identifying $\mathbb{A}^{n}$ with the affine patch
+    $U_{0}$ of $\mathbb{P}^{n}$; we write $Z \subseteq \mathbb{A}^{n} \subset \mathbb{P}^{n}$
+    to indicate this embedding. The projective closure of $Z$ in $\mathbb{P}^{n}$,
+    denoted $\bar{Z}$, is the projective algebraic set defined by the ideal generated
+    by all the homogenizations (with respect to $x_{0}$) of all the polynomials in
+    $I(Z)$.
+  kind: definition
+  location: Section 13.5
+  name: Definition 13.21
+- description: If $V \in \mathbb{A}^{n} \subset \mathbb{P}^{n}$ is an affine variety
+    then its projective closure $\bar{V}$ is a projective variety, and $V=\bar{V}
+    \cap \mathbb{A}^{n}$ is an affine part of $\bar{V}$.
+  kind: theorem
+  location: Section 13.5
+  name: Theorem 13.23
+- description: Let $V$ be a projective variety and let $V_{i}$ be any of its nonempty
+    affine parts. Then $V_{i}$ is an affine variety and $V$ is its projective closure.
+  kind: theorem
+  location: Section 13.5
+  name: Theorem 13.24
+- description: The dimension, coordinate ring, and function field of an affine variety
+    are equal to those of its projective closure. The dimension, coordinate ring,
+    and function field of a projective variety are equal to those of each of its nonempty
+    affine parts.
+  kind: corollary
+  location: Section 13.5
+  name: Corollary 13.26
+- description: 'Let $X \subseteq \mathbb{A}^{m}$ and $Y \subseteq \mathbb{A}^{n}$
+    be affine varieties. A morphism $f: X \rightarrow Y$ is a map $f(P):=\left(f_{1}(P),
+    \ldots, f_{n}(P)\right)$ defined by polynomials $f_{1}, \ldots, f_{n} \in \bar{k}\left[x_{1},
+    \ldots, x_{m}\right]$ such that $f(P) \in Y$ for all points $P \in X$. We may
+    regard $f_{1}, \ldots, f_{n}$ as representatives of elements of the coordinate
+    ring $\bar{k}[X]=\bar{k}\left[x_{1}, \ldots, x_{m}\right] / I(X)$; we are evaluating
+    $f_{1}, \ldots, f_{n}$ only at points in $X$, so there is no reason to distinguish
+    them modulo the ideal $I(X)$.'
+  kind: definition
+  location: Section 14.1
+  name: Definition 14.1
+- description: In the Zariski topology on $\mathbb{A}^{n}$ (resp. $\mathbb{P}^{n}$),
+    the closed sets are precisely the algebraic sets. Any algebraic set in $\mathbb{A}^{n}$
+    (resp. $\mathbb{P}^{n}$) then inherits the subspace topology.
+  kind: definition
+  location: Section 14.1
+  name: Definition 14.3
+- description: 'Every morphism $f: X \rightarrow Y$ of affine varieties is continuous.
+    That is, the inverse image $f^{-1}(Z)$ of any algebraic subset $Z \subseteq Y$
+    is an algebraic subset of $X$.'
+  kind: theorem
+  location: Section 14.1
+  name: Theorem 14.4
+- description: 'We say that two varieties $X \simeq Y$ are isomorphic if there exist
+    morphisms $f: X \rightarrow Y$ and $g: Y \rightarrow X$ such that both $f \circ
+    g$ and $g \circ f$ are the identity morphisms on $X$ and $Y$, respectively. In
+    this case we may refer to both $f$ and $g$ as isomorphisms.'
+  kind: definition
+  location: Section 14.1
+  name: Definition 14.6
+- description: 'The following hold: (i) Every morphism $\phi: X \rightarrow Y$ of
+    affine varieties induces a morphism $\phi^{*}: \bar{k}[Y] \rightarrow \bar{k}[X]$
+    of affine algebras such that $\phi^{*}(g)=g \circ \phi$. (ii) Every morphism $\theta:
+    R \rightarrow S$ of affine algebras induces a morphism $\theta^{*}: X \rightarrow
+    Y$ of affine varieties with $R \simeq \bar{k}[Y]$ and $S \simeq \bar{k}[X]$ such
+    that the image of $\theta(g)$ in $\bar{k}[X]$ is $g \circ \theta^{*}$. (iii) If
+    $\phi: X \rightarrow Y$ and $\psi: Y \rightarrow Z$ are morphisms of affine varieties,
+    then $(\psi \circ \phi)^{*}=\phi^{*} \circ \psi^{*}$.'
+  kind: theorem
+  location: Section 14.1
+  name: Theorem 14.8
+- description: The categories of affine varieties and affine algebras are contravariantly
+    equivalent.
+  kind: corollary
+  location: Lecture 14
+  name: Corollary 14.9
+- description: All the nonempty affine parts of a projective variety are isomorphic.
+  kind: corollary
+  location: Lecture 14
+  name: Corollary 14.10
+- description: If φ = (φ₁, …, φₙ) is a morphism of varieties X → Y that are defined
+    over k, we say that φ is defined over k if φ₁, …, φₙ ∈ k[Y]. Equivalently, φ is
+    defined over k if φ^σ = (φ₁^σ, …, φₙ^σ) = φ for all σ ∈ G_k. If φ is an isomorphism
+    defined over k and it has an inverse isomorphism defined over k, then we say that
+    X and Y are isomorphic over k.
+  kind: definition
+  location: Lecture 14
+  name: Definition 14.11
+- description: 'Let X and Y be affine varieties defined over k. If φ: X → Y is a morphism
+    defined over k then the affine algebra morphism φ*: k̄[Y] → k̄[X] restricts to
+    an affine algebra morphism from k[Y] to k[X].'
+  kind: corollary
+  location: Lecture 14
+  name: Corollary 14.12
+- description: A function r ∈ k̄(X) is said to be regular at a point P ∈ X if gr ∈
+    k̄[X] for some g ∈ k̄[X] ⊆ k̄(X) for which g(P) ≠ 0 (we then have r = f/g for
+    some f ∈ k̄[X]).
+  kind: definition
+  location: Section 15.1
+  name: Definition 15.2
+- description: A rational function r ∈ k̄(X) lies in k̄[X] if and only if dom(r) =
+    X.
+  kind: lemma
+  location: Section 15.1
+  name: Lemma 15.3
+- description: 'Let X ⊆ A^m and Y ⊆ A^n be affine varieties. We say that a tuple (φ₁,
+    …, φₙ) with φᵢ ∈ k̄(X) is regular at P ∈ X if the φᵢ are all regular at P. A rational
+    map φ: X → Y is a tuple (φ₁, …, φₙ) with φᵢ ∈ k̄(X) such that φ(P) := (φ₁(P),
+    …, φₙ(P)) ∈ Y for all points P ∈ X where φ is regular. If φ is regular at every
+    point P ∈ X then we say that φ is regular.'
+  kind: definition
+  location: Section 15.1
+  name: Definition 15.4
+- description: A rational map of affine varieties is a morphism if and only if it
+    is regular.
+  kind: theorem
+  location: Section 15.1
+  name: Theorem 15.5
+- description: 'A rational map φ: X → Y is dominant if the closure of φ(dom(φ)) equals
+    Y.'
+  kind: definition
+  location: Section 15.1
+  name: Definition 15.7
+- description: 'The following hold:
+
+    (i) Every dominant rational map φ: X → Y of affine varieties induces a morphism
+    φ*: k̄(Y) → k̄(X) of function fields such that φ*(r) = r ∘ φ.
+
+    (ii) Every morphism θ: K → L of function fields induces a dominant rational map
+    of affine varieties θ*: X → Y, with K ≅ k̄(Y) and L ≅ k̄(X), such that the image
+    of θ(r) in k̄(X) is r ∘ θ*.
+
+    (iii) If φ: X → Y and ψ: Y → Z are dominant rational maps of affine varieties
+    then (ψ ∘ φ)* = φ* ∘ ψ*.'
+  kind: theorem
+  location: Section 15.1
+  name: Theorem 15.8
+- description: The category of affine varieties with dominant rational maps and the
+    category of function fields are contravariantly equivalent.
+  kind: corollary
+  location: Section 15.1
+  name: Corollary 15.9
+- description: 'Two affine varieties X and Y are said to be birationally equivalent
+    if there exist dominant rational maps φ: X → Y and ψ: Y → X such that (φ ∘ ψ)(P)
+    = P for all P ∈ dom(φ ∘ ψ) and (ψ ∘ φ)(P) = P for all P ∈ dom(ψ ∘ φ).'
+  kind: definition
+  location: Section 15.1
+  name: Definition 15.10
+- description: Two affine varieties are birationally equivalent if and only if their
+    function fields are isomorphic.
+  kind: corollary
+  location: Section 15.1
+  name: Corollary 15.11
+- description: 'Let X and Y be affine varieties defined over k. If φ: X → Y is a dominant
+    rational map defined over k then φ*: k̄(Y) → k̄(X) restricts to a morphism k(Y)
+    → k(X).'
+  kind: corollary
+  location: Section 15.1
+  name: Corollary 15.12
+- description: Let X be a projective variety. We say that r ∈ k̄(X) is regular at
+    a point P ∈ X if it has a representation r̂ that is defined at P. The set of points
+    P ∈ X at which r is regular form an open subset of X that we denote dom(r). For
+    any point P ∈ dom(r) we define r(P) = r̂(P), where r̂ is chosen so that r̂ is
+    defined at P.
+  kind: definition
+  location: Section 15.2
+  name: Definition 15.13
+- description: 'Let X ⊆ P^m and Y ⊆ P^n be projective varieties. A rational map φ:
+    X → Y is an equivalence class of tuples φ = (φ₀ : … : φₙ) with φᵢ ∈ k̄(X) not
+    all zero such that at any point P ∈ X where all the φᵢ are regular and at least
+    one is nonzero, the point (φ₀(P) : … : φₙ(P)) lies in Y. The equivalence relation
+    is given by (φ₀ : … : φₙ) = (λφ₀ : … : λφₙ) for any λ ∈ k̄(X)×. We say that φ
+    is regular at P if there is a tuple (λφ₀ : … : λφₙ) in its class with each component
+    regular at P and at least one nonzero at P. The open subset of X at which φ is
+    regular is denoted dom(φ).'
+  kind: definition
+  location: Section 15.2
+  name: Definition 15.14
+- description: A morphism is a regular rational map. A rational map is dominant if
+    its image is dense in its codomain.
+  kind: definition
+  location: Section 15.2
+  name: Definition 15.17
+- description: Theorem 15.8 and Corollary 15.9 hold for projective varieties as well
+    as affine varieties.
+  kind: theorem
+  location: Section 15.2
+  name: Theorem 15.18
+- description: Let $S$ be a subset of $\mathbb{A}^{n}$, and let $\{U_{a}\}_{a \in
+    A}$ be any collection of open sets of $\mathbb{A}^{n}$ whose union contains $S$.
+    Then there exists a finite set $B \subseteq A$ for which $S \subseteq \{U_{b}\}_{b
+    \in B}$.
+  kind: theorem
+  location: Section 16
+  name: Theorem 16.1
+- description: Let $X \subseteq \mathbb{A}^{m}$ and $Y \subseteq \mathbb{A}^{n}$ be
+    algebraic sets. Let $k[\mathbb{A}^{m}]=k[x_{1}, \ldots, x_{m}]$, $k[\mathbb{A}^{n}]=k[y_{1},
+    \ldots, y_{n}]$, and $k[\mathbb{A}^{m+n}]=k[x_{1}, \ldots, x_{m}, y_{1}, \ldots,
+    y_{n}]$, so that we can identify $k[\mathbb{A}^{m}]$ and $k[\mathbb{A}^{n}]$ as
+    subrings of $k[\mathbb{A}^{m+n}]$ whose intersection is $k$. The product $X \times
+    Y$ is the zero locus of the ideal $I(X) k[\mathbb{A}^{n}]+I(Y) k[\mathbb{A}^{m}]$
+    in $k[\mathbb{A}^{m+n}]$.
+  kind: definition
+  location: Section 16.1
+  name: Definition 16.2
+- description: Let $V$ be an affine variety with coordinate ring $k[V]$. There is
+    a one-to-one correspondence between the maximal ideals of $k[V]$ and the points
+    of $V$.
+  kind: lemma
+  location: Section 16.1
+  name: Lemma 16.3
+- description: If $R$ and $S$ are both affine algebras, then so is $R \otimes S$.
+  kind: lemma
+  location: Section 16.1
+  name: Lemma 16.4
+- description: If $X$ and $Y$ are affine varieties, then so is $X \times Y$.
+  kind: corollary
+  location: Section 16.1
+  name: Corollary 16.5
+- description: Let $X \subseteq \mathbb{P}^{m}$ and $Y \subseteq \mathbb{P}^{n}$ be
+    algebraic sets with homogeneous ideals $I(X) \subseteq k[x_{0}, \ldots, x_{m}]$
+    and $I(Y) \subseteq k[y_{0}, \ldots, y_{n}]$. The product $X \times Y$ is the
+    zero locus of the $(m, n)$-homogeneous polynomials in the ideal $I(X \times Y):=I(X)
+    k[y_{0}, \ldots, y_{n}]+I(Y) k[x_{0}, \ldots, x_{m}]$ of $k[x_{0}, \ldots, x_{m},
+    y_{0}, \ldots, y_{n}]$. We say that $X \times Y$ is a variety if the ideal $I(X
+    \times Y)$ is prime.
+  kind: definition
+  location: Section 16.1
+  name: Definition 16.8
+- description: A variety $X$ is complete if for every variety $Y$ the projection $X
+    \times Y \rightarrow Y$ is a closed map; this means that the projection of a closed
+    set in $X \times Y$ is closed in $Y$.
+  kind: definition
+  location: Section 16.2
+  name: Definition 16.10
+- description: 'If $X$ is a complete variety then any morphism $\phi: X \rightarrow
+    Y$ is a closed map whose image is a complete variety.'
+  kind: lemma
+  location: Section 16.2
+  name: Lemma 16.12
+- description: If $X$ is complete then so is every subvariety of $X$.
+  kind: lemma
+  location: Section 16.2
+  name: Lemma 16.13
+- description: Every complete affine variety consists of a single point.
+  kind: theorem
+  location: Section 16.2
+  name: Theorem 16.14
+- description: A proper subring $R$ of a field $K$ is a valuation ring of $K$ if for
+    every $x \in K^{\times}$, either $x \in R$ or $x^{-1} \in R$ (possibly both).
+  kind: definition
+  location: Section 16.3
+  name: Definition 16.15
+- description: A local ring is a ring $R$ with a unique maximal ideal $\mathfrak{m}$.
+    The field $R / \mathfrak{m}$ is the residue field of $R$.
+  kind: definition
+  location: Section 16.3
+  name: Definition 16.16
+- description: A ring $R$ is a local ring if and only if the set $R - R^{\times}$
+    is an ideal.
+  kind: lemma
+  location: Section 16.3
+  name: Lemma 16.17
+- description: Every valuation ring is a local ring.
+  kind: theorem
+  location: Section 16.3
+  name: Theorem 16.18
+- description: If $\mathfrak{a}$ and $\mathfrak{b}$ are two ideals of a valuation
+    ring $R$ then either $\mathfrak{a} \subseteq \mathfrak{b}$ or $\mathfrak{b} \subseteq
+    \mathfrak{a}$.
+  kind: lemma
+  location: Section 16.3
+  name: Lemma 16.19
+- description: 'Let $R$ be a valuation ring with fraction field $K$. The value group
+    of $R$ is $\Gamma = K^{\times}/R^{\times}$. The valuation defined by $R$ is the
+    quotient map $v: K^{\times} \rightarrow \Gamma$.'
+  kind: definition
+  location: Section 16.3
+  name: Definition 16.20
+- description: Every finitely generated ideal of a valuation ring is principal.
+  kind: lemma
+  location: Section 16.3
+  name: Lemma 16.21
+- description: A local ring is a valuation ring if and only if it is an integral domain
+    that is not a field and all of its finitely generated ideals are principal.
+  kind: lemma
+  location: Section 16.3
+  name: Lemma 16.22
+- description: A valuation ring is discrete if and only if it is Noetherian.
+  kind: corollary
+  location: Section 16.3
+  name: Corollary 16.23
+- description: 'Let $R$ be an integral domain and let $\mathfrak{p}$ be a prime ideal
+    in $R$. The subring of $R$''s fraction field defined by $R_{\mathfrak{p}} := \{a/b
+    : a, b \in R, b \notin \mathfrak{p}\}$ is called the localization of $R$ at $\mathfrak{p}$.'
+  kind: definition
+  location: Section 16.4
+  name: Definition 16.24
+- description: The ring $R_{\mathfrak{p}}$ is a local ring with maximal ideal $\mathfrak{p}
+    R_{\mathfrak{p}}$.
+  kind: lemma
+  location: Section 16.4
+  name: Lemma 16.26
+- description: 'Let $X$ be a variety with coordinate ring $k[X]$ and let $P \in X$.
+    The local ring of $P$ on $X$ is the ring $\mathcal{O}_{P} := \mathcal{O}_{P,X}
+    := k[X]_{m_P} = \{g/h \in k(X) : h \notin m_P\}$.'
+  kind: definition
+  location: Section 16.5
+  name: Definition 16.27
+- description: Let $X$ be a variety such that for every subvariety $Z \subseteq X$
+    and valuation ring $R$ of $k(Z)/k$ there exists a point $P \in Z$ such that $\mathcal{O}_{P,Z}
+    \subseteq R$. Then $X$ is complete.
+  kind: theorem
+  location: Section 16.5
+  name: Theorem 16.28
+- description: 'Let $A$ be an integral domain contained in a field $K$ and let $\phi:
+    A \rightarrow k$ be a homomorphism to an algebraically closed field $k$. Then
+    there exists a valuation ring $B$ of $K$ containing $A$ and a homomorphism $\Phi:
+    B \rightarrow k$ that extends $\phi$. The kernel of $\Phi$ is then the maximal
+    ideal of $B$ and $k$ is its residue field.'
+  kind: lemma
+  location: Section 16.5
+  name: Lemma 16.29
+- description: Let $R$ be a valuation ring of an extension $F/k$ of an algebraically
+    closed field $k$. Then there is a valuation ring $R' \subseteq R$ of $F/k$ with
+    residue field isomorphic to $k$.
+  kind: lemma
+  location: Section 16.5
+  name: Lemma 16.30
+- description: If $X$ is a variety such that for every subvariety $Z \subseteq X$
+    and valuation ring $R$ of $k(Z)/k$ with residue field $k$ there is a point $P
+    \in Z$ such that $\mathcal{O}_{P,Z} \subseteq R$, then $X$ is complete.
+  kind: corollary
+  location: Section 16.5
+  name: Corollary 16.31
+- description: Let $R$ be a valuation ring of $F$. For any $x_0, \ldots, x_n \in F^{\times}$
+    there exists $\lambda \in F^{\times}$ such that $\lambda x_0, \ldots, \lambda
+    x_n \in R$ and at least one $\lambda x_i$ is a unit in $R$.
+  kind: lemma
+  location: Section 16.5
+  name: Lemma 16.32
+- description: All projective varieties are complete.
+  kind: theorem
+  location: Section 16.5
+  name: Theorem 16.33
+- description: 'Let P be a point on an affine variety V. The tangent space of V at
+    P is the variety T_P(V) defined by the ideal {f_P : f ∈ I(V)}.'
+  kind: definition
+  location: Section 17.1
+  name: Definition 17.1
+- description: Let P be a point on an affine variety V. If f_1, ..., f_m generate
+    I(V), then the corresponding affine linear forms f_{1,P}, ..., f_{m,P} generate
+    I(T_P(V)).
+  kind: lemma
+  location: Section 17.1
+  name: Lemma 17.2
+- description: Let P be a point on an affine variety V ⊆ A^n with ideal I(V) = (f_1,
+    ..., f_m). If we identify A^n with the vector space k^n with origin at P, the
+    subspace of (k^n)^∨ spanned by the linear forms f_{1,P}, ..., f_{m,P} is T_P(V)^⊥,
+    the orthogonal complement of T_P(V).
+  kind: theorem
+  location: Section 17.1
+  name: Theorem 17.3
+- description: Let P be a point on an affine variety V ⊆ A^n with I(V) = (f_1, ...,
+    f_m), and let J_P = J_P(f_1, ..., f_m). Then dim T_P(V)^⊥ = rank J_P and dim T_P(V)
+    = n - rank J_P. In particular, the rank of J_P does not depend on the choice of
+    generators for I(V) and P is a smooth point of V if and only if dim T_P = dim
+    V.
+  kind: corollary
+  location: Section 17.1
+  name: Corollary 17.4
+- description: A variety V for which I(V) is a nonzero principal ideal is a hypersurface.
+  kind: definition
+  location: Section 17.1
+  name: Definition 17.6
+- description: Every hypersurface in A^n or P^n has dimension n - 1.
+  kind: lemma
+  location: Section 17.1
+  name: Lemma 17.7
+- description: Let F/k be a function field of dimension n. Then there exist algebraically
+    independent elements α_1, ..., α_n ∈ F and an element α_{n+1} algebraic over k(α_1,
+    ..., α_n) such that F = k(α_1, ..., α_{n+1}).
+  kind: theorem
+  location: Section 17.1
+  name: Theorem 17.8
+- description: Every affine (resp. projective) variety of dimension n is birationally
+    equivalent to a hypersurface in A^{n+1} (resp. P^{n+1}).
+  kind: theorem
+  location: Section 17.1
+  name: Theorem 17.10
+- description: For any point P on an affine variety V we have dim T_P(V) ≥ dim V.
+  kind: corollary
+  location: Section 17.1
+  name: Corollary 17.11
+- description: The set of singular points of a variety is a closed subset; equivalently,
+    the set of nonsingular points is a dense open subset.
+  kind: corollary
+  location: Section 17.1
+  name: Corollary 17.12
+- description: Let P be a point on an affine variety V. Then T_P(V)^∨ ≅ m_P/m_P^2.
+  kind: theorem
+  location: Section 17.1
+  name: Theorem 17.13
+- description: The smooth points P on a variety V are precisely the points P for which
+    dim m_P/m_P^2 = dim V = dim k[V].
+  kind: corollary
+  location: Section 17.1
+  name: Corollary 17.14
+- description: A Noetherian local ring R with maximal ideal m is a regular local ring
+    if dim m/m^2 = dim R (note that Noetherian is included in the definition of regular).
+  kind: definition
+  location: Section 18.1
+  name: Definition 18.1
+- description: A ring R is a regular local ring of dimension one if and only if it
+    is a discrete valuation ring.
+  kind: theorem
+  location: Section 18.1
+  name: Theorem 18.2
+- description: Let R be a local ring with maximal ideal m and suppose that M is a
+    finitely generated R-module with the property M = mM. Then M is the zero module.
+  kind: lemma
+  location: Section 18.1
+  name: Lemma 18.3 (Nakayama)
+- description: Let R be a local Noetherian ring with maximal ideal m. Then t_1, ...,
+    t_n ∈ m generate m if and only if their images generate m/m^2 as an R/m vector
+    space.
+  kind: corollary
+  location: Section 18.1
+  name: Corollary 18.4
+- description: Let $R_{1}$ and $R_{2}$ be valuation rings with the same fraction field,
+    let $\mathfrak{m}_{1}$ and $\mathfrak{m}_{2}$ be their respective maximal ideals,
+    and suppose $R_{1} \subsetneq R_{2}$. Then $\mathfrak{m}_{2} \subsetneq \mathfrak{m}_{1}$
+    and $\operatorname{dim} R_{2}<\operatorname{dim} R_{1}$. In particular, $R_{1}$
+    cannot be a discrete valuation ring.
+  kind: theorem
+  location: Section 18.2
+  name: Theorem 18.5
+- description: 'Let $C$ be a smooth projective curve. Every rational map $\phi: C
+    \rightarrow V$ from $C$ to a projective variety $V$ is a morphism.'
+  kind: theorem
+  location: Section 18.2
+  name: Theorem 18.6
+- description: 'Every rational map $\phi: C_{1} \rightarrow C_{2}$ between smooth
+    projective curves is either constant or surjective.'
+  kind: corollary
+  location: Section 18.2
+  name: Corollary 18.7
+- description: Every birational map between smooth projective curves is an isomorphism.
+  kind: corollary
+  location: Section 18.2
+  name: Corollary 18.8
+- description: 'An abstract curve is the topological space $X=X_{F}$ with rings of
+    regular functions $\mathcal{O}_{X, U}$ determined by the function field $F/k$
+    as above. A morphism $\phi: X \rightarrow Y$ between abstract curves or projective
+    varieties is a continuous map such that for every open $U \subseteq Y$ and $f
+    \in \mathcal{O}_{Y}(U)$ we have $f \circ \phi \in \mathcal{O}_{X}(\phi^{-1}(U))$.'
+  kind: definition
+  location: Section 18.3
+  name: Definition 18.9
+- description: Let $C$ be a smooth projective curve and let $X=X_{k(C)}$ be the abstract
+    curve associated to its function field. Then $C$ and $X$ are isomorphic.
+  kind: theorem
+  location: Section 18.3
+  name: Theorem 18.10
+- description: Let $R$ be a discrete valuation ring of a function field $F/k$ of dimension
+    one. There exists a smooth affine curve $C$ with $k(C)=F$ such that $R=\mathcal{O}_{P}$
+    for some $P \in C$.
+  kind: lemma
+  location: Section 18.3
+  name: Lemma 18.11
+- description: If $A$ is an integrally closed Noetherian domain of dimension one then
+    all of its localizations at nonzero prime ideals are discrete valuation rings.
+  kind: lemma
+  location: Section 18.3
+  name: Lemma 18.12
+- description: Every abstract curve is isomorphic to a smooth projective curve.
+  kind: theorem
+  location: Section 18.3
+  name: Theorem 18.13
+- description: Every curve $C$ is birationally equivalent to a smooth projective curve
+    that is unique up to isomorphism.
+  kind: corollary
+  location: Section 18.3
+  name: Corollary 18.14
+- description: A curve $C/k$ is a smooth projective variety of dimension one defined
+    over $k$. A function field $F/k$ is a finitely generated extension of $k$ with
+    transcendence degree one, such that $k$ is algebraically closed in $F$.
+  kind: definition
+  location: Section 19.1
+  name: Definition 19.1
+- description: 'The category of curves $C/k$ with nonconstant morphisms and the category
+    of function fields $F/k$ with field homomorphisms that fix $k$ are contravariantly
+    equivalent under the functor that sends a curve $C$ to the function field $k(C)$
+    and a nonconstant morphism of curves $\phi: C_{1} \rightarrow C_{2}$ defined over
+    $k$ to the field homomorphism $\phi^{*}: k(C_{2}) \rightarrow k(C_{1})$ defined
+    by $\phi^{*} f=f \circ \phi$.'
+  kind: theorem
+  location: Section 19.1
+  name: Theorem 19.2
+- description: 'The degree of a morphism of curves $\phi: C_1 \rightarrow C_2$ is
+    the degree of the corresponding extension of function fields $\deg \phi = [k(C_1):
+    \phi^*(k(C_2))]$.'
+  kind: definition
+  location: Section 19.1
+  name: Definition 19.3
+- description: A morphism of curves is an isomorphism if and only if its degree is
+    one.
+  kind: corollary
+  location: Section 19.1
+  name: Corollary 19.5
+- description: Let $C/k$ be a curve with $k=\bar{k}$. A divisor of $C$ is a formal
+    sum $D := \sum_{P \in C} n_P P$ with $n_P \in \mathbb{Z}$ and all but finitely
+    many $n_P = 0$. The set of points $P$ for which $n_P \neq 0$ is called the support
+    of $D$. The divisors of $C$ form a free abelian group under addition, the divisor
+    group of $C$, denoted $\operatorname{Div} C$.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.6
+- description: Let $F/k$ be a function field with $k=\bar{k}$. A divisor of $F$ is
+    a formal sum $D := \sum_{P \in X_F} n_P P$ with $n_P \in \mathbb{Z}$ and all but
+    finitely many $n_P = 0$. Here $X_F$ denotes the abstract curve defined by $F/k$,
+    whose points $P$ are the maximal ideals of the discrete valuation rings of $F/k$.
+    The divisors of $F$ form a free abelian group $\operatorname{Div} F$ under addition;
+    if $C$ is the smooth projective curve with function field $F$, this group is isomorphic
+    to $\operatorname{Div} C$ and we may use them interchangeably.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.7
+- description: A divisor $D = \sum n_P P \in \operatorname{Div} C$ is defined over
+    $k$ if for all $\sigma \in G_k$ we have $D^\sigma = D$, where $D^\sigma = (\sum
+    n_P P) = \sum n_P P^\sigma$. The subset of $\operatorname{Div} C$ defined over
+    $k$ forms the subgroup of $k$-rational divisors.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.8
+- description: Let $C/k$ be a curve defined over $k$. The $G_k$-orbits of $C(\bar{k})$
+    are called closed points, which we also denote by $P$. A rational divisor of $C/k$
+    is a formal sum $D := \sum n_P P$ where $P$ ranges over the closed points of $C/k$,
+    with $n_P \in \mathbb{Z}$ and all but finitely many $n_P = 0$. The group of rational
+    divisors on $C$ is denoted $\operatorname{Div}_k C$.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.9
+- description: Let $f$ be a nonzero element of a function field $F/k$. The divisor
+    of $f$ is $\operatorname{div} f := \sum_{P \in X_F} \operatorname{ord}_P(f) P$.
+    Such divisors are said to be principal.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.11
+- description: Let $F/k$ be a function field. For any $f \in F^{\times}$ we have $\operatorname{ord}_P(f)
+    = 0$ for all but finitely many places $P$ of $F$.
+  kind: theorem
+  location: Section 19.2
+  name: Theorem 19.12
+- description: Let $C/k$ be a curve. The quotient group $\operatorname{Pic}_k C :=
+    \operatorname{Div}_k C / \operatorname{Princ}_k C$ is the Picard group of $C$
+    (also known as the divisor class group of $C$). Elements $D_1$ and $D_2$ of $\operatorname{Div}_k
+    C$ that have the same image in $\operatorname{Pic}_k C$ are said to be linearly
+    equivalent. We write $D_1 \sim D_2$ to indicate this equivalence.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.13
+- description: We have an exact sequence $1 \rightarrow k^{\times} \rightarrow k(C)^{\times}
+    \xrightarrow{\operatorname{div}} \operatorname{Div}_k C \rightarrow \operatorname{Pic}_k
+    C \rightarrow 0$.
+  kind: theorem
+  location: Section 19.2
+  name: Theorem 19.14
+- description: For a principal divisor $\operatorname{div} f = \sum n_P P$, the divisors
+    $\operatorname{div}_0 f = \sum_{n_P > 0} n_P P$ and $\operatorname{div}_{\infty}
+    f = \sum_{n_P < 0} -n_P P$ are called the divisor of zeros and the divisor of
+    poles of $f$, respectively. We have $\operatorname{div} f = \operatorname{div}_0
+    f - \operatorname{div}_{\infty} f$.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.15
+- description: 'Let $\phi: C_1 \rightarrow C_2$ be a morphism of curves defined over
+    $k$ and let $P$ be a closed point of $C_1/k$. Then $\phi(P)$ is a closed point
+    of $C_2/k$.'
+  kind: lemma
+  location: Section 19.2
+  name: Lemma 19.17
+- description: 'Let $\phi: C_1 \rightarrow C_2$ be a morphism defined over $k$, and
+    $\phi^*: k(C_2) \rightarrow k(C_1)$ the corresponding morphism of function fields.
+    The ramification index (also called the ramification degree) of $\phi$ at a closed
+    point $P$ of $C_1$ (equivalently, a place $P$ of $k(C_1)$) is $e_{\phi}(P) :=
+    \operatorname{ord}_P(\phi^* t_Q)$ where $t_Q \in k(C_2)$ is a uniformizer at $Q
+    = \phi(P)$, that is, a generator for the place $Q$ of $k(C_2)$. If $e_{\phi}(P)
+    = 1$, then $\phi$ is unramified at $P$, and if $e_{\phi}(P) = 1$ for all closed
+    points $P$ of $C_1/k$ we say that $\phi$ is unramified.'
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.18
+- description: 'Let $\phi: C_1 \rightarrow C_2$ be a morphism defined over $k$. The
+    pullback map $\phi^*$ on divisors is the homomorphism $\phi^*: \operatorname{Div}_k
+    C_2 \rightarrow \operatorname{Div}_k C_1$ defined by $\phi^*(Q) := \sum_{P \in
+    \phi^{-1}(Q)} e_{\phi}(P) P$ where $(Q)$ denotes the divisor in $\operatorname{Div}_k
+    C_2$ with support $\{Q\}$ and $n_Q = 1$. We also define the pushforward map $\phi_*$
+    on divisors as the homomorphism $\phi_*: \operatorname{Div} C_1 \rightarrow \operatorname{Div}
+    C_2$ defined by $\phi_*(P) = [k(P): \phi^*(k(P))] \phi(P) = \frac{\operatorname{deg}
+    P}{\operatorname{deg} \phi(P)} \phi(P)$.'
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.19
+- description: Let $C/k$ be a curve and let $F/k$ be the corresponding function field.
+    If $P$ is a closed point of $C/k$, or a place of $F/k$, we define the degree of
+    $P$ to be the dimension of the residue field $k(P) = \mathcal{O}_P/m_P$ over $k$
+    (where $m_P = P$ if $P$ is a place of $F/k$), that is, $\deg P := [k(P):k]$. Equivalently,
+    $\deg P$ is the cardinality of the closed point $P$ as a $G_k$-orbit of points
+    in $C(\bar{k})$. The degree of a divisor $D = \sum n_P P$ in the group of $k$-rational
+    divisors is $\deg D := \sum n_P \deg P$.
+  kind: definition
+  location: Section 19.2
+  name: Definition 19.21
+- description: 'Let $\phi: C_1 \rightarrow C_2$ be a morphism of curves defined over
+    $k$. Then for each closed point $Q$ of $C_2/k$, $\deg \phi^*(Q) = \deg \phi \deg
+    Q$.'
+  kind: theorem
+  location: Section 19.2
+  name: Theorem 19.22
+- description: Let $f \in k(C)^{\times}$ for some curve $C/k$. Then $f$ has the same
+    number of zeros and poles (counted with multiplicity), that is, $\deg \operatorname{div}_0
+    f = \deg \operatorname{div}_{\infty} f$. If $f \in k^{\times}$ then this number
+    is 0, and otherwise it is equal to $[k(C):k(f)]$. In any case, we always have
+    $\deg \operatorname{div} f = 0$.
+  kind: corollary
+  location: Section 19.2
+  name: Corollary 19.23
+- description: 'Let $v: F^{\times} \rightarrow \Gamma$ be a valuation on a field $F$.
+    For any $x, y \in F^{\times}$ such that $v(x) \neq v(y)$ we have $v(x+y)=\min(v(x),
+    v(y))$.'
+  kind: lemma
+  location: Section 20.1
+  name: Lemma 20.2 (Triangle equality)
+- description: Let $P_{1}, \ldots, P_{n}$ be distinct places of a function field $F$.
+    Then there exist $t_{1}, \ldots, t_{n}$ so that $v_{i}(t_{j})=\delta_{ij}$ (Kronecker
+    delta), where $v_{i}$ denotes the valuation for $P_{i}$.
+  kind: lemma
+  location: Section 20.1
+  name: Lemma 20.3 (Independence of valuations)
+- description: Let $\mathcal{O}_{1}, \ldots, \mathcal{O}_{n}$ be distinct discrete
+    valuation rings of a function field $F/k$. The ring $\mathcal{O}=\cap_{i} \mathcal{O}_{i}$
+    has exactly $n$ nonzero prime ideals $(t_{1}), \ldots, (t_{n})$, each principal
+    and generated by a uniformizer for $\mathcal{O}_{i}$. Every nonzero $f \in \mathcal{O}$
+    can be uniquely factored as $f=u t_{1}^{e_{1}} \cdots t_{n}^{e_{n}}$ with $u \in
+    \mathcal{O}^{\times}$ and $e_{i}=\operatorname{ord}_{P_{i}}(f) \geq 0$.
+  kind: corollary
+  location: Section 20.1
+  name: Corollary 20.4
+- description: Let $P_{1}, \ldots, P_{n}$ be distinct places of a function field $F/k$,
+    and let $f_{1}, \ldots, f_{n} \in F$ be given. For every positive integer $N$
+    there exists $f \in F$ such that $\operatorname{ord}_{P_{i}}(f-f_{i})>N$ for $0
+    \leq i < n$.
+  kind: corollary
+  location: Section 20.1
+  name: Corollary 20.5 (Weak approximation for function fields)
+- description: Assume $k=\bar{k}$. Then $C \simeq \mathbb{P}^{1}$ if and only if $\operatorname{Pic}_{k}^{0}
+    C=\{0\}$.
+  kind: theorem
+  location: Section 20.2
+  name: Theorem 20.6
+- description: Let $C/k$ be a curve with at least two distinct rational points. Then
+    $C/k$ is isomorphic to $\mathbb{P}^{1}/k$ (with the isomorphism defined over $k$)
+    if and only if $\operatorname{Pic}_{k}^{0} C=\{0\}$.
+  kind: corollary
+  location: Section 20.2
+  name: Corollary 20.7
+- description: A divisor $D \geq 0$ is said to be effective. As with principal divisors
+    $\operatorname{div} f = \operatorname{div}_{0} f - \operatorname{div}_{\infty}
+    f$, every divisor can be written uniquely as the difference of two effective divisors,
+    as $D=D_{0}-D_{\infty}$, where $D_{0}:=\sum_{\operatorname{ord}_{P}(D)>0} \operatorname{ord}_{P}(D)
+    P$ and $D_{\infty}:=\sum_{\operatorname{ord}_{P}(D)<0}-\operatorname{ord}_{P}(D)
+    P$.
+  kind: definition
+  location: Section 21.1
+  name: Definition 21.1
+- description: 'The Riemann-Roch space of a divisor $D$ is the $k$-vector space $\mathcal{L}(D):=\{f
+    \in k(C)^{\times}: \operatorname{div} f \geq -D\} \cup \{0\}$.'
+  kind: definition
+  location: Section 21.1
+  name: Definition 21.2
+- description: For any linearly equivalent divisors $A \sim B$ we have $\mathcal{L}(A)
+    \simeq \mathcal{L}(B)$.
+  kind: lemma
+  location: Section 21.1
+  name: Lemma 21.6
+- description: We have $\mathcal{L}(D) \neq \{0\}$ if and only if $D \sim D'$ for
+    some $D' \geq 0$.
+  kind: lemma
+  location: Section 21.1
+  name: Lemma 21.7
+- description: For any two divisors $A \leq B$ we have $\mathcal{L}(A) \subseteq \mathcal{L}(B)$
+    and $\operatorname{dim}(\mathcal{L}(B)/\mathcal{L}(A)) \leq \operatorname{deg}
+    B - \operatorname{deg} A$.
+  kind: lemma
+  location: Section 21.1
+  name: Lemma 21.8
+- description: For any divisor $D$ we have $\operatorname{dim} \mathcal{L}(D) \leq
+    \operatorname{deg} D_{0}+1$.
+  kind: theorem
+  location: Section 21.1
+  name: Theorem 21.9
+- description: The dimension $\ell(D)$ of a divisor is the dimension of $\mathcal{L}(D)$.
+  kind: definition
+  location: Section 21.1
+  name: Definition 21.10
+- description: 'The following hold: (a) $\ell(0)=1$. (b) If $A \sim B$ then $\ell(A)=\ell(B)$
+    and $\operatorname{deg}(A)=\operatorname{deg}(B)$. (c) For any $A \leq B$ we have
+    $\ell(B)-\ell(A) \leq \operatorname{deg} B - \operatorname{deg} A$. (d) For all
+    $D \geq 0$ we have $\ell(D) \leq \operatorname{deg} D+1$. (e) If $\operatorname{deg}
+    D<0$ then $\ell(D)=0$.'
+  kind: corollary
+  location: Section 21.1
+  name: Corollary 21.11
+- description: If $\operatorname{deg} D=0$ then $\ell(D)=1$ if $D$ is principal and
+    $\ell(D)=0$ otherwise.
+  kind: lemma
+  location: Section 21.1
+  name: Lemma 21.12
+- description: If $C$ is isomorphic to $\mathbb{P}^{1}$ then $\ell(D)=\operatorname{deg}
+    D+1$ for all $D \geq 0$.
+  kind: lemma
+  location: Section 21.1
+  name: Lemma 21.13
+- description: There is a non-negative integer $g$ such that $\operatorname{deg}(D)+1-\ell(D)
+    \leq g$ holds for all $D \in \operatorname{Div}_{k} C$.
+  kind: theorem
+  location: Lecture 21
+  name: Theorem 21.15
+- description: 'The genus of the curve $C/k$ is defined by $g:=\max\{r(D)+1: D \in
+    \operatorname{Div}_{k}(C)\}$. In other words, $g$ is the least integer for which
+    $r(D) \leq g-1$ holds for all $D \in \operatorname{Div}_k C$.'
+  kind: definition
+  location: Section 22.1
+  name: Definition 22.1
+- description: Let $C/k$ be a curve of genus $g$. Then $r(D) \leq g-1$ for all $D
+    \in \operatorname{Div}_{k} C$, and equality holds for all divisors of sufficiently
+    large degree.
+  kind: theorem
+  location: Section 22.1
+  name: Theorem 22.3 (Riemann's Theorem)
+- description: Let $C/k$ be a curve of genus $g$. For $D \in \operatorname{Div}_{k}
+    C$, the non-negative integer $i(D):=g-1-r(D)$ is the index of speciality of $D$.
+    Divisors for which $i(D)>0$ are said to be special.
+  kind: definition
+  location: Section 22.1
+  name: Definition 22.4
+- description: The adele ring of the function field $F/k$ is the subring $\mathcal{A}=\mathcal{A}_{F}$
+    of the direct product $\prod_{P} F$ consisting of those elements $\alpha=(\alpha_{P})$
+    for which $\alpha_{P} \in \mathcal{O}_{P}$ for all but finitely many $P$. The
+    elements of $\mathcal{A}$ are called adeles.
+  kind: definition
+  location: Section 22.2
+  name: Definition 22.5
+- description: 'For a divisor $D$ the adele space of $D$ is the $k$-vector space $\mathcal{A}(D):=\{\alpha
+    \in \mathcal{A}: \operatorname{ord}_{P}(\alpha) \geq -\operatorname{ord}_{P}(D)
+    \text{ for all places } P\}$. It contains the Riemann-Roch space $\mathcal{L}(D)=\mathcal{A}(D)
+    \cap F$ as a subspace, and it is in turn a subspace of the adele ring $\mathcal{A}$.'
+  kind: definition
+  location: Section 22.2
+  name: Definition 22.7
+- description: For any two divisors $A \leq B$ we have $\mathcal{A}(A) \subseteq \mathcal{A}(B)$
+    and $\operatorname{dim} \mathcal{A}(B) / \mathcal{A}(A)=\operatorname{deg} B-\operatorname{deg}(A)$,
+    as $k$-vector spaces.
+  kind: lemma
+  location: Section 22.2
+  name: Lemma 22.8
+- description: For any two divisors $A \leq B$ we have $\mathcal{A}(A)+F \subseteq
+    \mathcal{A}(B)+F$ and $\operatorname{dim} \frac{\mathcal{A}(B)+F}{\mathcal{A}(A)+F}=r(B)-r(A)$,
+    as $k$-vector spaces, where $F$ is embedded diagonally in $\mathcal{A}$.
+  kind: lemma
+  location: Section 22.2
+  name: Lemma 22.9
+- description: For any divisor $D$ for which $r(D)=g-1$ we have $\mathcal{A}=\mathcal{A}(D)+F$.
+  kind: lemma
+  location: Section 22.2
+  name: Lemma 22.10
+- description: Let $F/k$ be a function field. For any divisor $D \in \operatorname{Div}_{k}
+    F$ we have $i(D)=\operatorname{dim} \mathcal{A}/(\mathcal{A}(D)+F)$.
+  kind: theorem
+  location: Section 22.2
+  name: Theorem 22.11
+- description: 'Let $F/k$ be a function field and let $\mathcal{A}$ be its adele ring.
+    For a divisor $D \in \operatorname{Div}_{k} F$ the space of Weil differentials
+    $\Omega(D)$ is the orthogonal complement of $\mathcal{A}(D)+F$ (its annihilator
+    in the dual space $\mathcal{A}^{\vee}$). Explicitly, this is the set of all linear
+    functionals $\omega: \mathcal{A} \rightarrow k$ that vanish on $\mathcal{A}(D)+F$.
+    The $k$-vector space $\Omega=\Omega_{F}:=\bigcup_{D \in \operatorname{Div}_{k}
+    F} \Omega(D)$ is the space of Weil differentials for $F/k$.'
+  kind: definition
+  location: Section 22.3
+  name: Definition 22.12
+- description: For any divisor $D \in \operatorname{Div}_{k} F$ we have $\operatorname{dim}
+    \Omega(D)=i(D)$.
+  kind: lemma
+  location: Section 22.3
+  name: Lemma 22.13
+- description: Let $F/k$ be a function field and let $\Omega$ be its space of Weil
+    differentials. Then $\operatorname{dim}_{F} \Omega=1$.
+  kind: theorem
+  location: Section 22.3
+  name: Theorem 22.14
+- description: For any nonzero $\omega \in \Omega$ there is a unique divisor $D_{\omega}$
+    such that $D \leq D_{\omega}$ for all divisors $D$ for which $\omega \in \Omega(D)$.
+  kind: lemma
+  location: Section 22.3
+  name: Lemma 22.15
+- description: For a nonzero Weil differential $\omega \in \Omega$ we define the divisor
+    of $\omega$ to be the unique divisor $\operatorname{div} \omega := D_{\omega}$
+    given by Lemma 22.15. A divisor $D$ is said to be canonical if $D = \operatorname{div}
+    \omega$ for some $\omega \in \Omega$. We also define $\operatorname{ord}_{P}(\omega):=\operatorname{ord}_{P}(\operatorname{div}
+    \omega)$.
+  kind: definition
+  location: Section 22.3
+  name: Definition 22.16
+- description: For any nonzero $f \in F$ and nonzero $\omega \in \Omega$ we have $\operatorname{div}(f\omega)=\operatorname{div}
+    f+\operatorname{div} \omega$.
+  kind: lemma
+  location: Section 22.3
+  name: Lemma 22.17
+- description: The canonical divisors form a single linear equivalence class.
+  kind: corollary
+  location: Section 22.3
+  name: Corollary 22.18
+- description: Two nonzero Weil differentials $\omega_{1}, \omega_{2} \in \Omega$
+    have the same divisor if and only if $\omega_{2} = c\omega_{1}$ for some $c \in
+    k^{\times}$.
+  kind: corollary
+  location: Section 22
+  name: Corollary 22.19
+- description: 'For any divisor $D$ and canonical divisor $W = \operatorname{div}
+    \omega$, the linear map $\phi: \mathcal{L}(W-D) \rightarrow \Omega(D)$ defined
+    by $\phi(f) = f\omega$ is an isomorphism of $k$-vector spaces. In particular,
+    we have $i(D) = \ell(W-D)$ for all divisors $D$.'
+  kind: theorem
+  location: Section 22.4
+  name: Theorem 22.20 (Duality)
+- description: Let $W$ be a canonical divisor of the genus $g$ curve $C/k$. For every
+    divisor $D$ we have $\ell(D) = \operatorname{deg}(D) + 1 - g + \ell(W - D)$.
+  kind: theorem
+  location: Section 22.4
+  name: Theorem 22.21 (Riemann-Roch Theorem)
+- description: For any canonical divisor $W$ of a genus $g$ curve we have $\ell(W)
+    = g$, $\operatorname{deg} W = 2g - 2$, $i(W) = 1$.
+  kind: corollary
+  location: Section 22.4
+  name: Corollary 22.22
+- description: For all divisors $D$ of a genus $g$ curve $C/k$ with $\operatorname{deg}
+    D > 2g - 2$ we have $\ell(D) = \operatorname{deg} D + 1 - g$, equivalently, $i(D)
+    = 0$.
+  kind: corollary
+  location: Section 22.4
+  name: Corollary 22.23
+- description: 'For a divisor $D$ of a genus $g$ curve, the following are equivalent:
+    (a) $D$ is a canonical divisor. (b) $\ell(D) = g$ and $\operatorname{deg} D =
+    2g - 2$. (c) $i(D) = 1$ and $\operatorname{deg} D$ is maximal among divisors with
+    $i(D) = 1$.'
+  kind: corollary
+  location: Section 22.4
+  name: Corollary 22.24
+- description: The genus of a curve $C/k$ over a perfect field $k$ is preserved under
+    base extension.
+  kind: theorem
+  location: Section 22.4
+  name: Theorem 22.25
+- description: Let $C/k$ be a curve with a rational point. Then $C$ has genus zero
+    if and only if it is isomorphic to $\mathbb{P}^{1}$ (over $k$).
+  kind: theorem
+  location: Section 23.1
+  name: Theorem 23.1
+- description: Let $C/k$ be a curve with a rational point. Then $C$ has genus one
+    if and only if it is isomorphic to a plane curve of the form $y^{2} + a_{1}xy
+    + a_{3}y = x^{3} + a_{2}x^{2} + a_{4}x + a_{6}$ with $a_{1}, a_{2}, a_{3}, a_{4},
+    a_{6} \in k$.
+  kind: theorem
+  location: Section 23.2
+  name: Theorem 23.3
+- description: Every genus one curve $C/k$ with a rational point is isomorphic to
+    a plane cubic curve.
+  kind: corollary
+  location: Section 23.2
+  name: Corollary 23.4
+- description: Suppose $\phi$ is an automorphism of $\mathbb{P}^{1}$ that fixes more
+    than 2 points in $\mathbb{P}^{1}(\bar{k})$. Then $\phi$ is the identity map.
+  kind: lemma
+  location: Section 23.2
+  name: Lemma 23.7
+- description: Equation (1) in Theorem 23.3, namely $y^{2} + a_{1}xy + a_{3}y = x^{3}
+    + a_{2}x^{2} + a_{4}x + a_{6}$, is called a Weierstrass equation.
+  kind: definition
+  location: Section 23.2
+  name: Definition 23.9
+- description: Let $C/k$ be a curve defined by a Weierstrass equation $y^{2} + a_{1}xy
+    + a_{3}y = x^{3} + a_{2}x^{2} + a_{4}x + a_{6}$. If the characteristic of $k$
+    is not 2 (resp. not 2 or 3) then $a_{1}$ and $a_{3}$ (resp. $a_{1}$, $a_{2}$,
+    and $a_{3}$) can be made zero via a linear change of coordinates.
+  kind: lemma
+  location: Section 23.2
+  name: Lemma 23.11
+- description: A Weierstrass equation with $a_{1}=a_{2}=a_{3}=0$ is a short Weierstrass
+    equation.
+  kind: definition
+  location: Section 23
+  name: Definition 23.12
+- description: The short Weierstrass equation $y^{2}=x^{3}-a_{4} x-a_{6}$ defines
+    a genus one curve if and only if $4a_{4}^{3}+27a_{6}^{2} \neq 0$.
+  kind: lemma
+  location: Section 23
+  name: Lemma 23.13
+- description: 'An elliptic curve $E / k$ is a genus one curve with a distinguished
+    rational point $O$. Equivalently, an elliptic curve is a curve $E / k$ defined
+    by a Weierstrass equation with the distinguished rational point $O=(0: 1: 0)$.'
+  kind: definition
+  location: Section 23.3
+  name: Definition 23.14
+- description: Let $E / k$ be an elliptic curve with distinguished point $O$. The
+    map $\phi$ that sends the point $P \in E(k)$ to the class of the divisor $P-O$
+    in $\operatorname{Pic}_{k}^{0}(E)$ is a bijection. This induces a commutative
+    group operation on $E(k)$ defined by $P_{1}+P_{2}:=\phi^{-1}(\phi(P_{1})+\phi(P_{2}))$
+    in which $O$ acts as the identity element.
+  kind: theorem
+  location: Section 23.3
+  name: Theorem 23.16
+- description: Let $E / k$ be an elliptic curve in $\mathbb{P}^{2}$, and let $L_{1},
+    L_{2}$ be lines in $\mathbb{P}^{2}$ defined by linear homogeneous polynomials
+    $\ell_{1}, \ell_{2} \in k[x, y, z]$. Let $f \in k(E)$ be the image of $\ell_{1}
+    / \ell_{2}$ under the map $k(\mathbb{P}^{2}) \rightarrow k(E)$ induced by the
+    inclusion $E \subseteq \mathbb{P}^{2}$. Then $\operatorname{div} f=(L_{1} \cap
+    E)-(L_{2} \cap E)$.
+  kind: lemma
+  location: Section 23.3
+  name: Lemma 23.17
+- description: Let $E / k$ be an elliptic curve defined by a Weierstrass equation.
+    The sum of any three points in $E(k)$ that lie on a line is zero under the group
+    law on $E(k)$.
+  kind: corollary
+  location: Section 23.3
+  name: Corollary 23.18
+- description: Let $P$ and $Q$ be rational points on an elliptic curve embedded in
+    $\mathbb{P}^{2}$. Then $P \oplus Q$ is the negation of the third point in the
+    intersection of $E$ and the line uniquely determined by $P$ and $Q$.
+  kind: corollary
+  location: Section 23.3
+  name: Corollary 23.19 (Geometric group law)
+- description: 'Let $E / k$ be an elliptic curve given by the short Weierstrass equation
+    $y^{2}=x^{3}+a_{4} x+a_{6}$. If $P_{1}=(x_{1}: y_{1}: 1)$ and $P_{2}=(x_{2}: y_{2}:
+    1)$ are affine points whose sum is an affine point $P_{3}=(x_{3}: y_{3}: z_{3})$,
+    then $x_{3}=\lambda^{2}-x_{1}-x_{2}$ and $y_{3}=\lambda(x_{1}-x_{3})-y_{1}$ where
+    $\lambda=(y_{2}-y_{1})/(x_{2}-x_{1})$ if $P_{1} \neq P_{2}$ and $\lambda=(3x_{1}^{2}+a_{4})/(2y_{1})$
+    if $P_{1}=P_{2}$.'
+  kind: theorem
+  location: Section 23.3
+  name: Theorem 23.20 (Algebraic group law)
+- description: An abelian variety is a projective algebraic group.
+  kind: definition
+  location: Section 23.4
+  name: Definition 23.22
+- description: An abelian variety is an abelian group.
+  kind: theorem
+  location: Section 23.4
+  name: Theorem 23.23
+- description: 'Let $\phi: G \rightarrow H$ be a morphism of abelian varieties for
+    which $\phi(0)=0$. Then $\phi$ is a group homomorphism.'
+  kind: theorem
+  location: Section 23.4
+  name: Theorem 23.24
+- description: 'Let $E_{1} / k$ and $E_{2} / k$ be elliptic curves with distinguished
+    rational points $O_{1}$ and $O_{2}$, respectively. An isogeny $\varphi: E_{1}
+    \rightarrow E_{2}$ of elliptic curves is a surjective morphism that maps $O_{1}$
+    to $O_{2}$.'
+  kind: definition
+  location: Section 24.1
+  name: Definition 24.1
+- description: 'Let $E_{1} / k$ and $E_{2} / k$ be elliptic curves and let $\varphi:
+    E_{1} \rightarrow E_{2}$ be an isogeny defined over $k$. Then $\varphi$ is a group
+    homomorphism from $E_{1}(L)$ to $E_{2}(L)$, for any algebraic extension $L / k$.'
+  kind: theorem
+  location: Section 24.1
+  name: Theorem 24.2
+- description: 'Let $\varphi: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves
+    over $k$. The kernel of $\varphi$, denoted $\operatorname{ker} \varphi$, is the
+    kernel of the group homomorphism $\varphi: E_{1}(\bar{k}) \rightarrow E_{2}(\bar{k})$.'
+  kind: definition
+  location: Section 24.1
+  name: Definition 24.3
+- description: 'Let $\varphi: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves.
+    For each $P \in \operatorname{ker} \varphi$, the automorphism $\tau_{P}^{*}$ fixes
+    $\varphi^{*}(\bar{k}(E_{2}))$, and the map $\operatorname{ker} \varphi \rightarrow
+    \operatorname{Aut}(\bar{k}(E_{1}) / \varphi^{*}(\bar{k}(E_{2})))$ defined by $P
+    \mapsto \tau_{P}^{*}$ is an injective group homomorphism.'
+  kind: lemma
+  location: Section 24.1
+  name: Lemma 24.4
+- description: 'For any isogeny $\varphi: E_{1} \rightarrow E_{2}$ of elliptic curves,
+    $\# \operatorname{ker} \varphi$ divides $\operatorname{deg} \varphi$. In particular,
+    the kernel of an isogeny is finite.'
+  kind: corollary
+  location: Section 24.1
+  name: Corollary 24.5
+- description: 'Let $E/k$ be an elliptic curve and let $n$ be a positive integer.
+    The multiplication-by-$n$ map $[n]: E(\bar{k}) \rightarrow E(\bar{k})$ is the
+    group homomorphism defined by $nP = P \oplus P \oplus \cdots \oplus P$. The points
+    $P \in E(\bar{k})$ for which $nP = O$ are called $n$-torsion points. They form
+    a subgroup of $E(\bar{k})$ denoted $E[n]$.'
+  kind: definition
+  location: Section 24.2
+  name: Definition 24.7
+- description: The multiplication-by-$n$ map on an elliptic curve $E/k$ is an isogeny.
+  kind: theorem
+  location: Section 24.2
+  name: Theorem 24.8
+- description: Let $E/k$ be an elliptic curve. For any positive integer $n$, the number
+    of $n$-torsion points in $E(\bar{k})$ is finite.
+  kind: corollary
+  location: Section 24.2
+  name: Corollary 24.10
+- description: For $n>0$, each of the sets $E^{n+1}(\mathbb{Q}_{p})$ is an index $p$
+    subgroup of $E^{n}(\mathbb{Q}_{p})$.
+  kind: lemma
+  location: Section 24.3
+  name: Lemma 24.12
+- description: The infinite chain of groups $E^{0}(\mathbb{Q}_{p}) \supset E^{1}(\mathbb{Q}_{p})
+    \supset E^{2}(\mathbb{Q}_{p}) \supset \cdots$ is called the $p$-adic filtration
+    of $E / \mathbb{Q}$.
+  kind: definition
+  location: Section 24.3
+  name: Definition 24.13
+- description: Let $E/\mathbb{Q}$ be an elliptic curve and let $p$ be a prime not
+    dividing $\Delta(E)$. The $p$-adic filtration of $E$ satisfies (1) $E^{0}(\mathbb{Q}_{p})
+    / E^{1}(\mathbb{Q}_{p}) \simeq \bar{E}(\mathbb{F}_{p})$; (2) $E^{n}(\mathbb{Q}_{p})
+    / E^{n+1}(\mathbb{Q}_{p}) \simeq \mathbb{Z} / p\mathbb{Z}$ for all $n>0$; (3)
+    $\cap_{n} E^{n} = \{O\}$.
+  kind: theorem
+  location: Section 24.3
+  name: Theorem 24.14
+- description: 'Suppose $P=(x: y: 1)$ is an affine point in $E^{0}(\mathbb{Q}_{p})$
+    with finite order prime to $p$. Then $x, y \in \mathbb{Z}_{p}$.'
+  kind: corollary
+  location: Section 24.3
+  name: Corollary 24.16
+- description: 'Suppose $P_{1}, P_{2}, P_{3}$ are colinear points in $E^{n}(\mathbb{Q}_{p})$,
+    for some $n>0$, with $P_{i} = (x_{i}: 1: z_{i})$. Then $v_{p}(x_{1}+x_{2}+x_{3})
+    \geq 5n$.'
+  kind: lemma
+  location: Section 24.3
+  name: Lemma 24.17
+- description: The group $E^{1}(\mathbb{Q}_{p})$ is torsion-free.
+  kind: corollary
+  location: Section 24
+  name: Corollary 24.18
+- description: Let $E/\mathbb{Q}$ be an elliptic curve and let $p$ be a prime of good
+    reduction. The torsion subgroup of $E(\mathbb{Q})$ injects into $\bar{E}(\mathbb{F}_{p})$.
+    In particular, the torsion subgroup is finite.
+  kind: corollary
+  location: Section 24
+  name: Corollary 24.19
+- description: 'Let $E/\mathbb{Q}$ be an elliptic curve. The torsion subgroup of $E(\mathbb{Q})$
+    is isomorphic to one of the fifteen subgroups listed below: $\mathbb{Z}/n\mathbb{Z}$
+    ($n=1,2,3,\ldots,9,10,12$), $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2n\mathbb{Z}$
+    ($n=1,2,3,4$).'
+  kind: theorem
+  location: Section 24
+  name: Theorem 24.20 (Mazur)
+- description: 'Let $P=(x_{0}: y_{0}: 1)$ be an affine point of finite order on the
+    elliptic curve $y^{2}=x^{3}+a_{4}x+a_{6}$ over $\mathbb{Q}$, with $a_{4}, a_{6}
+    \in \mathbb{Z}$. Then $x_{0}, y_{0} \in \mathbb{Z}$, and if $y_{0} \neq 0$ then
+    $y_{0}^{2}$ divides $4a_{4}^{3}+27a_{6}^{2}$.'
+  kind: theorem
+  location: Section 24
+  name: Theorem 24.21 (Nagell-Lutz)
+- description: An affine point $(X,Y) \in E'(\mathbb{Q})$ lies in the image of $\varphi$
+    if and only if either $X \in \mathbb{Q}^{\times 2}$, or $X = 0$ and $a^2 - 4b
+    \in \mathbb{Q}^{\times 2}$.
+  kind: lemma
+  location: Section 25.4
+  name: Lemma 25.3
+- description: 'The map $\pi: E''(\mathbb{Q}) \rightarrow \mathbb{Q}^{\times}/\mathbb{Q}^{\times
+    2}$ is a group homomorphism.'
+  kind: lemma
+  location: Section 25.4
+  name: Lemma 25.4
+- description: 'The image of $\pi: E''(\mathbb{Q}) \rightarrow \mathbb{Q}^{\times}/\mathbb{Q}^{\times
+    2}$ is finite.'
+  kind: lemma
+  location: Section 25.4
+  name: Lemma 25.5
+- description: $E'(\mathbb{Q})/\varphi(E(\mathbb{Q}))$ and $E(\mathbb{Q})/\hat{\varphi}(E(\mathbb{Q}))$
+    are finite.
+  kind: corollary
+  location: Section 25.4
+  name: Corollary 25.6
+- description: $E(\mathbb{Q})/2E(\mathbb{Q})$ is finite.
+  kind: corollary
+  location: Section 25.4
+  name: Corollary 25.7
+- description: 'The (absolute) height of a projective point $P = (x_0 : \cdots : x_n)
+    \in \mathbb{P}^n(\overline{\mathbb{Q}})$ is $H(P) := \prod_{p \in \mathcal{P}_k}
+    \max_i |x_i|_p$ where $k = \mathbb{Q}(x_0, \ldots, x_n)$. For any $\lambda \in
+    \overline{\mathbb{Q}}^{\times}$, $H(P)$ is well defined (it does not depend on
+    a particular choice of $x_0, \ldots, x_n$). For $k = \mathbb{Q}$ we can write
+    $P = (x_0 : \cdots : x_n)$ with the $x_i \in \mathbb{Z}$ having no common factor.
+    Then $\max |x_i|_p = 1$ for $p < \infty$ and $H(P) = \max_i |x_i|_{\infty}$.'
+  kind: definition
+  location: Section 25.5
+  name: Definition 25.9
+- description: 'For all $P = (x_0 : \cdots : x_n) \in \mathbb{P}^n(\overline{\mathbb{Q}})$
+    we have $H(P) \geq 1$.'
+  kind: lemma
+  location: Section 25.5
+  name: Lemma 25.10
+- description: The logarithmic height of $P \in \mathbb{P}^n(\overline{\mathbb{Q}})$
+    is the nonnegative real number $h(P) := \log H(P)$.
+  kind: definition
+  location: Section 25.5
+  name: Definition 25.11
+- description: 'Let $k$ be a number field and let $\phi: \mathbb{P}^n \rightarrow
+    \mathbb{P}^m$ be a morphism $(\phi_0 : \cdots : \phi_n)$ defined by homogeneous
+    polynomials $\phi_i \in k[x_0, \ldots, x_n]$ of degree $d$. There is a constant
+    $c$ such that $h(\phi(P)) \leq d\, h(P) + c$ for all $P \in \mathbb{P}^n(\bar{k})$.'
+  kind: lemma
+  location: Section 25.5
+  name: Lemma 25.12
+- description: If $\phi$ is any automorphism of $\mathbb{P}^{n}$, then $h(\phi(P))=h(P)+O(1)$.
+  kind: corollary
+  location: Section 25
+  name: Corollary 25.13
+- description: 'Let $k$ be a number field and let $\phi: \mathbb{P}^{n} \rightarrow
+    \mathbb{P}^{m}$ be a morphism $(\phi_{0}: \cdots: \phi_{n})$ defined by homogeneous
+    polynomials $\phi_{i} \in k[x_{0}, \ldots, x_{n}]$ of degree $d$. Then $h(\phi(P))=d
+    h(P)+O(1)$.'
+  kind: theorem
+  location: Section 25
+  name: Theorem 25.14
+- description: Let $k/\mathbb{Q}$ be a finite Galois extension. Then $h(P^{\sigma})=h(P)$
+    for all $P \in \mathbb{P}^{n}(k)$ and $\sigma \in \operatorname{Gal}(k/\mathbb{Q})$.
+  kind: lemma
+  location: Section 25
+  name: Lemma 25.16
+- description: 'For any positive integers $B, d$, and $n$, the set $\{P \in \mathbb{P}^{n}(k):
+    h(P) \leq B \text{ and } [k:\mathbb{Q}] \leq d\}$ is finite.'
+  kind: theorem
+  location: Section 25
+  name: Theorem 25.18 (Northcott)
+- description: 'Let $S$ be a set and let $r>1$ a real number. Let $\phi: X \rightarrow
+    X$ and $h: X \rightarrow \mathbb{R}$ be functions such that $h \circ \phi=r h+O(1)$,
+    and let $\hat{h}_{\phi}(x):=\lim_{n \rightarrow \infty} \frac{1}{r^{n}} h(\phi^{n}(x))$.
+    Then $\hat{h}_{\phi}$ is the unique function $S \rightarrow \mathbb{R}$ for which
+    (i) $\hat{h}_{\phi}=h+O(1)$; (ii) $\hat{h}_{\phi} \circ \phi=r \hat{h}_{\phi}$.'
+  kind: theorem
+  location: Section 25.6
+  name: Theorem 25.19 (Tate)
+- description: 'Let $E$ be an elliptic curve over a number field $k$. The canonical
+    height $\hat{h}: E(\bar{k}) \rightarrow \mathbb{R}$ is the function $\hat{h}=\hat{h}_{\phi}
+    \circ \pi$, where $\hat{h}_{\phi}$ is the function given by Theorem 25.19, with
+    $\phi: \mathbb{P}^{1} \rightarrow \mathbb{P}^{1}$ as above and $h$ the absolute
+    height on $\mathbb{P}^{1}$. It satisfies $\hat{h}(2P)=4\hat{h}(P)$ for all $P
+    \in E(\mathbb{Q})$.'
+  kind: definition
+  location: Section 25.6
+  name: Definition 25.20
+- description: 'Let $E$ be an elliptic curve over a number field $k$. For any bound
+    $B$ the set $\{P \in E(k): \hat{h}(P) \leq B\}$ is finite.'
+  kind: theorem
+  location: Section 25.6
+  name: Theorem 25.21
+- description: Let $\hat{h}$ be the canonical height function of an elliptic curve
+    $E$ over a number field $k$. Then for all $P, Q \in E(\bar{k})$ we have $\hat{h}(P+Q)+\hat{h}(P-Q)=2\hat{h}(P)+2\hat{h}(Q)$.
+  kind: theorem
+  location: Section 25.6
+  name: Theorem 25.22 (Parallelogram Law)
+- description: Let $E/\mathbb{Q}$ be an elliptic curve with a rational point of order
+    2. Then $E(\mathbb{Q})$ is finitely generated.
+  kind: theorem
+  location: Section 25.7
+  name: Theorem 25.23
+- description: Two varieties defined over a field $k$ that are related by an isomorphism
+    defined over $\bar{k}$ are said to be twists of each other.
+  kind: definition
+  location: Section 26.3
+  name: Definition 26.1
+- description: Let $E/k$ be an elliptic curve with Weierstrass equation $y^{2}=x^{3}+a_{4}
+    x+a_{6}$. The $j$-invariant of $E$ is $$j(E):=1728 \frac{4 a_{4}^{3}}{4 a_{4}^{3}+27
+    a_{6}^{2}}$$
+  kind: definition
+  location: Section 26.3
+  name: Definition 26.2
+- description: For every $j \in k$ there exists an elliptic curve $E/k$ with $j(E)=j$.
+  kind: theorem
+  location: Section 26.3
+  name: Theorem 26.3
+- description: Two elliptic curves defined over $k$ have the same $j$-invariant if
+    and only if they are isomorphic over $\bar{k}$.
+  kind: theorem
+  location: Section 26.3
+  name: Theorem 26.4
+- description: Let $C/k$ be a genus one curve and let $O$ and $O'$ be any two points
+    in $C(\bar{k})$. Then the elliptic curves $(C, O)$ and $(C, O')$ over $\bar{k}$
+    have the same $j$-invariant.
+  kind: corollary
+  location: Section 26.3
+  name: Corollary 26.5
+- description: Let $C/k$ be a curve of genus one. The $j$-invariant $j(C)$ of $C$
+    is the $j$-invariant of the elliptic curve $(C, O)$ over $\bar{k}$, for any $O
+    \in C(\bar{k})$.
+  kind: definition
+  location: Section 26.3
+  name: Definition 26.6
+- description: Let $C/k$ be a curve of genus one. Then $j(C) \in k$.
+  kind: theorem
+  location: Section 26.3
+  name: Theorem 26.7
+- description: Every genus one curve $C/k$ is a twist of an elliptic curve $E/k$.
+  kind: corollary
+  location: Section 26.3
+  name: Corollary 26.8
+- description: 'Let $E: y^{2}=x^{3}+a_{4} x+a_{6}$ and $E'': y^{2}=x^{3}+a_{4}'' x+a_{6}''$
+    be elliptic curves defined over $k$, with $j(E)=j(E'')$. Then for some $\lambda
+    \in \bar{k}^{\times}$ we have $a_{4}''=\lambda^{4} a_{4}$ and $a_{6}''=\lambda^{6}
+    a_{6}$. Moreover, the degree of $k(\lambda)/k$ divides $2,4,6$ when $a_{4} a_{6}
+    \neq 0$, $a_{6}=0$, $a_{4}=0$, respectively.'
+  kind: lemma
+  location: Section 26.3
+  name: Lemma 26.9
+- description: An automorphism of an elliptic curve $E$ is an isomorphism $E \rightarrow
+    E$ that is also an isogeny. The set of automorphisms of $E$ form a group $\operatorname{Aut}(E)$
+    under composition.
+  kind: definition
+  location: Section 26.3
+  name: Definition 26.10
+- description: Let $k$ be a field of characteristic not equal to 2 or 3. The automorphism
+    group of an elliptic curve $E/k$ is a cyclic group of order 6, 4, or 2, depending
+    on whether $j(E)$ is equal to 0, 1728, or neither, respectively.
+  kind: theorem
+  location: Section 26.3
+  name: Theorem 26.11
+- description: 'Let $C/k$ be a genus one curve. There is an elliptic curve $E/k$ related
+    to $C/k$ by an isomorphism $\phi: C \rightarrow E$ such that for every automorphism
+    $\sigma \in \operatorname{Gal}(\bar{k}/k)$ the isomorphism $\varphi_{\sigma}:
+    E \rightarrow E$ defined by $\varphi_{\sigma}:=\phi^{\sigma} \circ \phi^{-1}$
+    is a translation-by-$P_{\sigma}$ map for some $P_{\sigma} \in E(\bar{k})$. The
+    curve $E$ is unique up to $k$-isomorphism.'
+  kind: theorem
+  location: Section 26.3
+  name: Theorem 26.12
+- description: The elliptic curve $E/k$ given by Theorem 26.12 is the Jacobian of
+    the genus one curve $C/k$; it is determined only up to $k$-isomorphism, so we
+    call any elliptic curve that is $k$-isomorphic to $E$ "the" Jacobian of $C$.
+  kind: definition
+  location: Section 26.3
+  name: Definition 26.13
+- description: A nonempty set $S$ equipped with a regular group action by an abelian
+    group $G$ is a principal homogeneous space for $G$, also known as a $G$-torsor.
+  kind: definition
+  location: Section 26.4
+  name: Definition 26.14
+- description: Let $E/k$ be an elliptic curve. A principal homogeneous space for $E$
+    (or $E$-torsor), is a genus one curve $C/k$ such that the set $C(\bar{k})$ is
+    an $E(\bar{k})$-torsor and the map $C \times E \rightarrow C$ defined by $(Q,
+    P) \mapsto Q+P$ is a morphism of varieties that is defined over $k$.
+  kind: definition
+  location: Section 26.5
+  name: Definition 26.15
+- description: Let $C/k$ be a curve of genus one and let $E/k$ be an elliptic curve.
+    Then $C$ is an $E$-torsor if and only if $E$ is the Jacobian of $C$.
+  kind: theorem
+  location: Section 26.5
+  name: Theorem 26.16
+- description: 'Let $C/k$ be an $E$-torsor and let $Q_0 \in C(\bar{k})$. The map $\pi:
+    \operatorname{Div}_{\bar{k}}^{0} C \rightarrow E(\bar{k})$ defined by $\sum_{i}
+    n_{i} P_{i} \mapsto \sum_{i} n(P_{i}-Q_{0})$ is a surjective homomorphism whose
+    kernel consists of the principal divisors, and it is independent of the choice
+    of $Q_0$. Moreover, for any extension $L/k$ in $\bar{k}$ the map $\pi$ commutes
+    with every element of $\operatorname{Gal}(\bar{k}/L)$ and therefore induces a
+    canonical isomorphism $\operatorname{Pic}_{L}^{0} C \simeq E(L)$.'
+  kind: theorem
+  location: Section 26.5
+  name: Theorem 26.17
+- description: 'Let $E/k$ be an elliptic curve. Two $E$-torsors $C/k$ and $C''/k$
+    are equivalent if there is an isomorphism $\theta: C \rightarrow C''$ defined
+    over $k$ that is compatible with the action of $E$. This means that $\theta(Q+P)=\theta(Q)+P$
+    holds for all $Q \in C(\bar{k})$ and $P \in E(\bar{k})$. The Weil-Châtelet group
+    $\mathrm{WC}(E/k)$ is the set of equivalence classes of $E$-torsors under this
+    equivalence relation.'
+  kind: definition
+  location: Section 26.6
+  name: Definition 26.18
+- description: 'If $\theta: C \rightarrow C''$ is an equivalence of $E$-torsors then
+    $\theta(P)-\theta(Q)=P-Q$ for all $P, Q \in C$. Conversely, if $\theta: C \rightarrow
+    C''$ is a $k$-isomorphism for which the above holds, then $\theta$ is an equivalence
+    of $E$-torsors.'
+  kind: lemma
+  location: Section 26.6
+  name: Lemma 26.19
+- description: 'A map $\alpha: \operatorname{Gal}(\bar{k}/k) \rightarrow E(\bar{k})$
+    that satisfies $\alpha(\tau \sigma)=\alpha(\tau)+\alpha(\sigma)^{\tau}$ for all
+    $\sigma, \tau \in \operatorname{Gal}(\bar{k}/k)$ is called a crossed homomorphism.'
+  kind: definition
+  location: Section 26.6
+  name: Definition 26.20
+- description: Crossed homomorphisms of the form $\sigma \mapsto P^{\sigma}-P$ with
+    $P \in E(\bar{k})$ are principal. The principal crossed homomorphisms form a subgroup,
+    as do the continuous principal crossed homomorphisms.
+  kind: definition
+  location: Section 26.6
+  name: Definition 26.21
+- description: Let $E/k$ be an elliptic curve. The group of continuous crossed homomorphisms
+    of $E/k$ modulo its subgroup of principal crossed homomorphisms is the first Galois-cohomology
+    group of $E(\bar{k})$. It is denoted by $H^{1}(\operatorname{Gal}(\bar{k}/k),
+    E(\bar{k}))$. For the sake of brevity we may also write $H^{1}(k, E)$.
+  kind: definition
+  location: Section 26.6
+  name: Definition 26.22
+- description: Let $E/k$ be an elliptic curve. There is a bijection between the Weil-Châtelet
+    group $\mathrm{WC}(E/k)$ of $E$ and its first cohomology group $H^{1}(k, E)$.
+  kind: theorem
+  location: Section 26.6
+  name: Theorem 26.24
+- description: Let $E/k$ be an elliptic curve. The Tate-Shafarevich group $\amalg(E)$
+    is the kernel of the map $$\mathrm{WC}(E/k) \rightarrow \prod_{p} \mathrm{WC}(E_{p}/k_{p})$$
+    where $k_{p}$ ranges over the completions of $k$ and $E_{p}$ denotes the base
+    extension of $E$ to $k_{p}$.
+  kind: definition
+  location: Section 26
+  name: Definition 26.26
+- description: A curve $C/k$ satisfies the local-global principle (or Hasse principle)
+    if either $C(k) \neq \emptyset$ or $C(k_{p}) = \emptyset$ for some completion
+    $k_{p}$.
+  kind: definition
+  location: Section 26
+  name: Definition 26.27
+- description: Let $C/k$ be a genus one curve with Jacobian $E/k$. A genus one curve
+    $C/k$ fails the local-global principle if and only if it represents a non-trivial
+    element of $\amalg(E)$.
+  kind: theorem
+  location: Section 26
+  name: Theorem 26.28
