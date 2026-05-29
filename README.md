@@ -22,7 +22,7 @@ autoformalization pipeline.
 
 ## Links
 
-- Companion paper: [Formalizing Mathematics at Scale](formalizing_mathematics_at_scale.pdf)
+- Companion paper: [Formalizing Mathematics at Scale](https://arxiv.org/abs/2605.29955)
 - Formalization harness: <https://github.com/facebookresearch/autoform-bot>
 - Earlier related work: [Formalization of Algebraic Combinatorics](https://github.com/faabian/algebraic-combinatorics)
 
