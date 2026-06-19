@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+# Pre-commit hook for ababber/atlas-lean (public fork)
+# Delegates to kit's publishable-fork-guard.sh to block internal vocabulary
+
+emulate -L zsh
+setopt ERR_EXIT NO_UNSET PIPE_FAIL
+
+typeset CURSOR_KIT_ROOT="${CURSOR_KIT_ROOT:-$HOME/cursor-custom-architecture}"
+typeset GUARD="$CURSOR_KIT_ROOT/cursor-scripts/publishable-fork-guard.sh"
+
+if [[ -x "$GUARD" ]]; then
+  exec "$GUARD"
+else
+  print -r -- "WARN: publishable-fork-guard.sh not found at $GUARD" >&2
+  exit 0
+fi
